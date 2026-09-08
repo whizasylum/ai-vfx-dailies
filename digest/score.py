@@ -68,6 +68,8 @@ def dedupe(items: list[Item]) -> list[Item]:
         winner.extra.setdefault("also_covered_by", []).append(loser.source)
         if len(loser.summary) > len(winner.summary):
             winner.summary = loser.summary
+        if not winner.extra.get("image") and loser.extra.get("image"):
+            winner.extra["image"] = loser.extra["image"]
 
     by_url: dict[str, Item] = {}
     for it in sorted(items, key=lambda i: -i.weight):

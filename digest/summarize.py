@@ -207,6 +207,7 @@ def summarize(
     # Re-attach real source records; never trust the model to echo URLs back.
     for story in result.get("stories", []):
         sources = []
+        image = None
         for sid in story.get("source_ids", []):
             if isinstance(sid, int) and 0 <= sid < len(items):
                 it = items[sid]
@@ -218,7 +219,12 @@ def summarize(
                         "video": it.extra.get("video", False),
                     }
                 )
+                # First image among the story's sources, most authoritative
+                # first (source_ids is already ordered that way).
+                if image is None and it.extra.get("image"):
+                    image = it.extra["image"]
         story["sources"] = sources
+        story["image"] = image
         story.pop("source_ids", None)
 
     result["stories"] = [s for s in result.get("stories", []) if s.get("sources")]

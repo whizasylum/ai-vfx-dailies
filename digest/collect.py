@@ -97,6 +97,34 @@ def _client() -> httpx.Client:
 # per-type collectors
 # --------------------------------------------------------------------------
 
+_IMG_TAG_RE = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.I)
+
+
+def _entry_image(e, raw_html: str = "") -> str | None:
+    """Best-effort thumbnail for an RSS/Atom entry.
+
+    Tries the Media RSS namespace first (what YouTube and most blogging
+    platforms use), then an enclosure link, then falls back to the first
+    <img> in whatever HTML the feed embedded. Feeds that offer nothing
+    usable just get no image -- the page already handles that gracefully.
+    """
+    if thumbs := getattr(e, "media_thumbnail", None):
+        if url := thumbs[0].get("url"):
+            return url
+    if media := getattr(e, "media_content", None):
+        for m in media:
+            if m.get("medium") == "image" or (m.get("type") or "").startswith("image/"):
+                if url := m.get("url"):
+                    return url
+    for link in getattr(e, "links", None) or []:
+        if link.get("rel") == "enclosure" and (link.get("type") or "").startswith("image/"):
+            if url := link.get("href"):
+                return url
+    if m := _IMG_TAG_RE.search(raw_html):
+        return m.group(1)
+    return None
+
+
 def from_rss(src: dict, cutoff: datetime) -> list[Item]:
     parsed = feedparser.parse(src["url"], agent=USER_AGENT)
     if parsed.bozo and not parsed.entries:
@@ -117,17 +145,20 @@ def from_rss(src: dict, cutoff: datetime) -> list[Item]:
         link = getattr(e, "link", None)
         if not link:
             continue
+        raw_summary = getattr(e, "summary", "") or getattr(e, "description", "")
+        extra = {}
+        if image := _entry_image(e, raw_summary):
+            extra["image"] = image
         items.append(
             Item(
                 title=_clean(getattr(e, "title", ""), 300),
                 url=canonical_url(link),
                 source=src["name"],
                 published=_iso(published),
-                summary=_clean(
-                    getattr(e, "summary", "") or getattr(e, "description", "")
-                ),
+                summary=_clean(raw_summary),
                 weight=float(src.get("weight", 1.0)),
                 channel=src.get("channel", "r"),
+                extra=extra,
             )
         )
     return items
@@ -161,6 +192,19 @@ def from_html(src: dict, cutoff: datetime) -> list[Item]:
         if url in seen:
             continue
         seen.add(url)
+
+        # A listing page's thumbnail usually isn't inside the headline <a>
+        # itself, but a couple of ancestors up in the same card -- look
+        # nearby rather than only inside the exact matched tag.
+        extra = {"undated": True}
+        img = a.find("img")
+        if img is None and (card := a.find_parent(["article", "li", "div"])):
+            img = card.find("img")
+        if img is not None:
+            img_src = img.get("src") or img.get("data-src")
+            if img_src:
+                extra["image"] = urljoin(src["url"], img_src)
+
         items.append(
             Item(
                 title=text,
@@ -169,7 +213,7 @@ def from_html(src: dict, cutoff: datetime) -> list[Item]:
                 published=_iso(now),
                 weight=float(src.get("weight", 1.0)),
                 channel=src.get("channel", "r"),
-                extra={"undated": True},
+                extra=extra,
             )
         )
     return items[:25]
@@ -272,6 +316,15 @@ def from_reddit(src: dict, cutoff: datetime) -> list[Item]:
             continue
         # Prefer the linked article over the reddit comment thread.
         url = d.get("url_overridden_by_dest") or f"https://reddit.com{d['permalink']}"
+        extra = {
+            "score": d.get("score"),
+            "discussion": f"https://reddit.com{d['permalink']}",
+        }
+        # "self", "default", "nsfw", "spoiler" etc are placeholder values,
+        # not URLs -- only trust it if it actually looks like an image link.
+        thumb = d.get("thumbnail", "")
+        if thumb.startswith("http"):
+            extra["image"] = thumb
         items.append(
             Item(
                 title=_clean(d.get("title", ""), 300),
@@ -281,10 +334,7 @@ def from_reddit(src: dict, cutoff: datetime) -> list[Item]:
                 summary=_clean(d.get("selftext", ""), 800),
                 weight=float(src.get("weight", 1.0)),
                 channel=src.get("channel", "r"),
-                extra={
-                    "score": d.get("score"),
-                    "discussion": f"https://reddit.com{d['permalink']}",
-                },
+                extra=extra,
             )
         )
     return items
