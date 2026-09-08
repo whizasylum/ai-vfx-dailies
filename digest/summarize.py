@@ -121,14 +121,19 @@ def _build_payload(items: list[Item]) -> str:
 def _extract_json(text: str) -> dict:
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.M).strip()
+    # strict=False: a body/why field copied or paraphrased from scraped web
+    # text can carry a literal newline or other control character instead of
+    # an escaped \n. That's invalid under strict JSON but harmless and
+    # common in LLM output -- accept it rather than reject an otherwise-good
+    # response over whitespace.
     try:
-        return json.loads(text)
+        return json.loads(text, strict=False)
     except json.JSONDecodeError:
         # Model occasionally wraps in prose; grab the outermost object.
         start, end = text.find("{"), text.rfind("}")
         if start == -1 or end == -1:
             raise
-        return json.loads(text[start : end + 1])
+        return json.loads(text[start : end + 1], strict=False)
 
 
 def summarize(
