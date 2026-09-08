@@ -17,7 +17,11 @@ model:
   # Sonnet handles clustering + summarising well and is the cost sweet spot.
   # Set to claude-opus-5 if you want sharper editorial judgement.
   name: "claude-sonnet-5"
-  max_tokens: 8000
+  # Generous headroom above what a 10-story JSON response actually needs
+  # (~2-3k tokens) -- the first live run hit exactly 8000/8000 output
+  # tokens and came back with nothing parseable, which means something
+  # ate the whole budget before the visible answer started.
+  max_tokens: 16000
 
 # Your interest profile, in plain language. This is fed to the summariser as
 # editorial direction -- it decides what leads and what gets cut. Rewrite it

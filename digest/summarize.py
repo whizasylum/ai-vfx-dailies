@@ -175,11 +175,20 @@ def summarize(
 
     usage = resp.usage
     log.info(
-        "model: %d in / %d out tokens", usage.input_tokens, usage.output_tokens
+        "model: %d in / %d out tokens, stop_reason=%s, blocks=%s",
+        usage.input_tokens, usage.output_tokens, resp.stop_reason,
+        [b.type for b in resp.content],
     )
 
     text = "".join(b.text for b in resp.content if b.type == "text")
-    result = _extract_json(text)
+    try:
+        result = _extract_json(text)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(
+            f"model did not return parseable JSON "
+            f"(stop_reason={resp.stop_reason}, output_tokens={usage.output_tokens}, "
+            f"text_len={len(text)}). First 500 chars: {text[:500]!r}"
+        ) from exc
 
     # Re-attach real source records; never trust the model to echo URLs back.
     for story in result.get("stories", []):
