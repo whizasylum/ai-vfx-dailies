@@ -36,20 +36,6 @@ def _env(root: Path) -> Environment:
     )
 
 
-def _rating_url(repo: str | None, sid: str, vote: str) -> str | None:
-    """A prefilled GitHub issue. Uses the reader's own GitHub session, so there
-    is no token in the page -- and only people with write access to the repo can
-    actually file one, which is the access control we want."""
-    if not repo:
-        return None
-    title = quote(f"rating {vote} {sid}")
-    body = quote("Submitted from the digest page. Closes automatically.")
-    return (
-        f"https://github.com/{repo}/issues/new"
-        f"?title={title}&labels=rating&body={body}"
-    )
-
-
 def render_html(
     result: dict,
     config: dict,
@@ -63,7 +49,7 @@ def render_html(
     share_cfg = config.get("sharing", {})
     tz = ZoneInfo(digest_cfg.get("timezone", "UTC"))
     now = datetime.now(tz)
-    repo = os.environ.get("GITHUB_REPOSITORY")
+    rating_endpoint = share_cfg.get("rating_endpoint") or ""
 
     stories = []
     for s in result.get("stories", []):
@@ -76,8 +62,6 @@ def render_html(
             "channel": ch,
             "color": CHANNELS[ch]["color"],
             "sid": sid,
-            "up_url": _rating_url(repo, sid, "+1"),
-            "down_url": _rating_url(repo, sid, "-1"),
         })
 
     channels = [
@@ -113,7 +97,8 @@ def render_html(
         sources_total=sources_total,
         archive=archive,
         rating_stats=rating_stats or {},
-        can_rate=bool(repo),
+        can_rate=bool(rating_endpoint),
+        rating_endpoint=rating_endpoint,
         noindex=share_cfg.get("noindex", True),
         page_url=(share_cfg.get("page_url") or "").rstrip("/"),
     )

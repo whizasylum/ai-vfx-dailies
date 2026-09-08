@@ -151,6 +151,10 @@ sharing:
   # Pinged in the Discord header. Use a role mention like "<@&123456789>",
   # or leave empty for no ping. Plain @everyone is deliberately not supported.
   discord_mention: ""
+  # Cloudflare Worker URL that turns a single tap into a GitHub issue (see
+  # cloudflare/rating-worker.js). Rating buttons only show up on the page
+  # once this is set -- empty means no ratings UI at all.
+  rating_endpoint: ""
 
 feedback:
   enabled: true

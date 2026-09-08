@@ -299,6 +299,12 @@
   .actions .down:hover  { color: var(--ch-r); border-color: var(--ch-r); }
   .actions .done        { color: var(--ch-g); }
 
+  .actions button:disabled {
+    opacity: 0.55;
+    cursor: default;
+  }
+  .actions button:disabled:hover { border-color: transparent; }
+
   .low-confidence {
     font-size: 0.78rem;
     color: var(--ink-faint);
@@ -402,10 +408,10 @@
         </ul>
         <div class="actions">
           {% if can_rate %}
-          <a class="up" href="{{ s.up_url }}" target="_blank" rel="noopener"
-             title="Mark useful — trains tomorrow's filter">Useful</a>
-          <a class="down" href="{{ s.down_url }}" target="_blank" rel="noopener"
-             title="Mark not useful — trains tomorrow's filter">Not useful</a>
+          <button type="button" class="up" data-sid="{{ s.sid }}" data-vote="+1"
+                  title="Mark useful — trains tomorrow's filter">Useful</button>
+          <button type="button" class="down" data-sid="{{ s.sid }}" data-vote="-1"
+                  title="Mark not useful — trains tomorrow's filter">Not useful</button>
           {% endif %}
           <button type="button" class="copy" data-anchor="{{ s.sid }}">Copy link</button>
         </div>
@@ -460,6 +466,30 @@
           btn.classList.remove('done');
         }, 1600);
       });
+    });
+  });
+
+  var RATING_ENDPOINT = {{ rating_endpoint|tojson }};
+  document.querySelectorAll('.actions .up, .actions .down').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var group = btn.closest('.actions');
+      var siblings = group.querySelectorAll('.up, .down');
+      siblings.forEach(function (b) { b.disabled = true; });
+
+      fetch(RATING_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sid: btn.dataset.sid, vote: btn.dataset.vote }),
+      })
+        .then(function (r) { if (!r.ok) throw new Error('rating failed'); })
+        .then(function () {
+          btn.textContent = btn.classList.contains('up') ? 'Marked useful' : 'Marked not useful';
+          btn.classList.add('done');
+        })
+        .catch(function () {
+          siblings.forEach(function (b) { b.disabled = false; });
+          btn.textContent = 'Try again';
+        });
     });
   });
 </script>

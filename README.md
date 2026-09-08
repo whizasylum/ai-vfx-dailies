@@ -83,9 +83,11 @@ Every story can be rated two ways:
 
 - **Discord** — tap the thumb. Both reactions are pre-seeded so it's one tap.
   The bot reads them back on the next run.
-- **The page** — the Useful / Not useful links open a prefilled GitHub issue.
-  One click, then Submit. The workflow reads it, applies it, and closes it.
-  No token lives in the page; it uses your own GitHub session.
+- **The page** — tap Useful / Not useful directly. A Cloudflare Worker
+  (`cloudflare/rating-worker.js`) files the GitHub issue on your behalf so
+  reading isn't interrupted by a GitHub page — set `sharing.rating_endpoint`
+  in `config.yaml` to its URL to turn this on. The workflow reads the issue,
+  applies it, and closes it, same as before.
 
 Ratings feed three things, weakest to strongest:
 
@@ -133,8 +135,13 @@ What's actually in place:
   out of search results. The link only spreads to people you send it to.
 - Every story has a stable anchor and a **Copy link** button, so you can send one
   colleague one story rather than the whole page.
-- Rating requires write access to the repo, so viewers can read but not train
-  your filter.
+- Rating no longer requires a GitHub account or repo access -- the Worker files
+  the issue itself, so anyone who can load the page (or the Worker URL
+  directly) can submit a rating. That trade was made deliberately for a
+  one-tap experience; the existing smoothing (`PRIOR_STRENGTH`,
+  `min_ratings_to_calibrate`) is what keeps a handful of stray or bad-faith
+  taps from swinging the filter. Same trust model as the Discord reactions
+  above, just without even needing channel membership.
 
 If you genuinely need the page restricted, the two real options are Cloudflare
 Access in front of a custom domain (free tier, proper auth, needs a domain), or
