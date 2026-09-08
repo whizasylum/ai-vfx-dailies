@@ -153,5 +153,49 @@
    "usd-compatible"
   ],
   "at": "2026-09-08T13:22:13.913529+00:00"
+ },
+ "2bc118ce97": {
+  "headline": "Blackmagic ships DaVinci Resolve 21.1",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "blackmagic",
+   "color",
+   "davinci",
+   "free",
+   "immediately.",
+   "pipelines",
+   "resolve",
+   "shift",
+   "studio",
+   "test"
+  ],
+  "at": "2026-09-08T20:39:03.458736+00:00"
+ },
+ "2bbf59e86b": {
+  "headline": "Vicon acquires facial capture firm Captive Devices",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "acquires",
+   "affects",
+   "alongside",
+   "captive",
+   "capture",
+   "devices",
+   "facial",
+   "firm",
+   "hardware",
+   "metahuman",
+   "pipelines.",
+   "roadmap",
+   "support",
+   "vendor"
+  ],
+  "at": "2026-09-08T20:39:03.458782+00:00"
  }
 }

@@ -66,6 +66,53 @@
    "channel": "r",
    "terms": [],
    "via": "page"
+  },
+  {
+   "story_id": "5a4dfbf476",
+   "at": "2026-09-08T20:38:07.665591+00:00",
+   "vote": 1,
+   "headline": "Pro Particles multi-physics toolkit released for Blender",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "b",
+   "terms": [
+    "blender",
+    "caches",
+    "consume.",
+    "exports",
+    "exposes",
+    "houdini",
+    "later",
+    "multi-physics",
+    "only",
+    "particles",
+    "pro",
+    "relevant",
+    "toolkit",
+    "usd-compatible"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "0123456789",
+   "at": "2026-09-08T20:38:07.898319+00:00",
+   "vote": -1,
+   "headline": "rating -1 0123456789",
+   "sources": [],
+   "channel": "r",
+   "terms": [],
+   "via": "page"
+  },
+  {
+   "story_id": "abcdef0123",
+   "at": "2026-09-08T20:38:08.173984+00:00",
+   "vote": 1,
+   "headline": "rating +1 abcdef0123",
+   "sources": [],
+   "channel": "r",
+   "terms": [],
+   "via": "page"
   }
  ]
 }
