@@ -162,6 +162,15 @@ def summarize(
         model=model_cfg.get("name", "claude-sonnet-5"),
         max_tokens=model_cfg.get("max_tokens", 8000),
         system=system,
+        # The API rejects assistant-turn prefill on this model with "This
+        # model does not support assistant message prefill" -- the standard
+        # sign that extended thinking is active by default. That also
+        # explains the earlier truncated/empty responses: thinking was
+        # consuming most or all of max_tokens before the visible JSON
+        # answer got a chance to be written. This is a clustering/writing
+        # task, not one that benefits from chain-of-thought, so turn it off
+        # rather than paying for it and budgeting around it.
+        thinking={"type": "disabled"},
         messages=[
             {
                 "role": "user",
@@ -170,12 +179,6 @@ def summarize(
                     f"{_build_payload(items)}"
                 ),
             },
-            # Prefill the assistant turn so the model continues straight into
-            # JSON with no room for a prose preamble -- cheaper and far more
-            # reliable than hoping "no prose" in the system prompt holds, and
-            # it stops a long analytical response from burning the token
-            # budget on reasoning-in-text before ever reaching the JSON.
-            {"role": "assistant", "content": "{"},
         ],
     )
 
@@ -186,7 +189,7 @@ def summarize(
         [b.type for b in resp.content],
     )
 
-    text = "{" + "".join(b.text for b in resp.content if b.type == "text")
+    text = "".join(b.text for b in resp.content if b.type == "text")
     try:
         result = _extract_json(text)
     except json.JSONDecodeError as exc:
