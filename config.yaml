@@ -143,7 +143,7 @@ delivery:
 sharing:
   # Public URL of the page, used for per-story permalinks and the Discord link.
   # Fill this in after your first Pages deploy.
-  page_url: ""
+  page_url: "https://whizasylum.github.io/ai-vfx-dailies/"
   # GitHub Pages on a free or Pro account cannot restrict who views a page --
   # see the sharing section of the README. This at least keeps it out of search
   # results so the link only spreads to people you send it to.
