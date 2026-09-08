@@ -100,6 +100,40 @@
 
   .stamp b { color: var(--ink); font-weight: 500; display: block; }
 
+  /* ---- timeline: jump to a previous day ------------------------------- */
+
+  .timeline {
+    display: flex;
+    gap: 0.4rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1.5rem;
+    scrollbar-width: thin;
+  }
+
+  .timeline a, .timeline .current {
+    flex: none;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    white-space: nowrap;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--rule-soft);
+    color: var(--ink-dim);
+    text-decoration: none;
+  }
+
+  .timeline a:hover {
+    color: var(--ink);
+    border-color: var(--rule);
+  }
+
+  .timeline .current {
+    color: var(--ground);
+    background: var(--ink);
+    border-color: var(--ink);
+    font-weight: 500;
+  }
+
   /* ---- levels readout: the day at a glance --------------------------- */
 
   .levels { padding-bottom: 2rem; }
@@ -339,13 +373,6 @@
   footer summary { cursor: pointer; color: var(--ink-dim); }
   footer ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
 
-  .archive-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.9rem;
-    margin-top: 0.6rem;
-  }
-
   @media (max-width: 34rem) {
     .reel { grid-template-columns: 1fr; gap: 1.25rem; }
     .stamp { text-align: left; }
@@ -362,6 +389,15 @@
       {{ story_count }} {{ 'story' if story_count == 1 else 'stories' }} from {{ candidate_count }} items
     </div>
   </header>
+
+  {% if archive %}
+  <nav class="timeline" aria-label="Previous days">
+    <span class="current" aria-current="page">{{ date_iso }}</span>
+    {%- for a in archive %}
+    <a href="{{ a.href }}">{{ a.label }}</a>
+    {%- endfor %}
+  </nav>
+  {% endif %}
 
   <section class="levels" aria-label="Distribution of today's stories by category">
     <div class="levels-bar">
@@ -434,11 +470,6 @@
       ({{ rating_stats.sources_adjusted }} sources reweighted,
        {{ rating_stats.terms_learned }} terms learned){% endif %}
     {%- if problems %} · {{ problems|length }} failed{% endif %}
-    {% if archive %}
-    <div class="archive-links">
-      {%- for a in archive %}<a href="{{ a.href }}">{{ a.label }}</a>{% endfor %}
-    </div>
-    {% endif %}
     {% if problems %}
     <details>
       <summary>{{ problems|length }} sources failed this run</summary>

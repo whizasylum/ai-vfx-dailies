@@ -79,7 +79,13 @@ def render_html(
     archive_dir.mkdir(parents=True, exist_ok=True)
 
     existing = sorted(archive_dir.glob("*.html"), reverse=True)[: ARCHIVE_KEEP - 1]
-    archive = [{"href": f"archive/{p.name}", "label": p.stem} for p in existing[:14]]
+    archive = [
+        {
+            "href": f"archive/{p.name}",
+            "label": datetime.strptime(p.stem, "%Y-%m-%d").strftime("%b %-d"),
+        }
+        for p in existing[:14]
+    ]
 
     html = _env(root).get_template("page.html").render(
         title=digest_cfg.get("title", "Dailies"),
