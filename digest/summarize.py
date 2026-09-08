@@ -169,7 +169,13 @@ def summarize(
                     f"Today's candidates ({len(items)} items):\n\n"
                     f"{_build_payload(items)}"
                 ),
-            }
+            },
+            # Prefill the assistant turn so the model continues straight into
+            # JSON with no room for a prose preamble -- cheaper and far more
+            # reliable than hoping "no prose" in the system prompt holds, and
+            # it stops a long analytical response from burning the token
+            # budget on reasoning-in-text before ever reaching the JSON.
+            {"role": "assistant", "content": "{"},
         ],
     )
 
@@ -180,7 +186,7 @@ def summarize(
         [b.type for b in resp.content],
     )
 
-    text = "".join(b.text for b in resp.content if b.type == "text")
+    text = "{" + "".join(b.text for b in resp.content if b.type == "text")
     try:
         result = _extract_json(text)
     except json.JSONDecodeError as exc:
