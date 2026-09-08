@@ -62,17 +62,23 @@
 # ---------------------------------------------------------------------------
 # DCC vendors -- release notes are where AI actually lands in your pipeline
 # ---------------------------------------------------------------------------
-- name: SideFX
-  type: rss
-  url: https://www.sidefx.com/rss/news.xml
-  weight: 1.6
-  channel: r
+# TODO: SideFX killed their /rss/news.xml feed and the current /news/ page
+# has no discoverable feed link and no server-rendered article list either
+# (client-rendered). Unrecoverable by static scrape; revisit if they ship a
+# feed again or if it's worth adding a headless-browser fetch just for this.
+# - name: SideFX
+#   type: rss
+#   url: https://www.sidefx.com/rss/news.xml
+#   weight: 1.6
+#   channel: r
 
-- name: Foundry
-  type: rss
-  url: https://www.foundry.com/rss/news
-  weight: 1.6
-  channel: r
+# TODO: Foundry's /rss/news feed is dead and /news-awards is entirely
+# client-rendered (empty body server-side) -- no static scrape possible.
+# - name: Foundry
+#   type: rss
+#   url: https://www.foundry.com/rss/news
+#   weight: 1.6
+#   channel: r
 
 - name: Blender
   type: rss
@@ -80,21 +86,28 @@
   weight: 1.0
   channel: r
 
-- name: Adobe Video & Motion
-  type: rss
-  url: https://blog.adobe.com/en/topics/video.rss
-  weight: 1.1
-  channel: r
+# TODO: Adobe's blog moved to a fragment/CaaS delivery system
+# (milo.adobe.com content-as-a-service) -- no server-rendered HTML and no
+# feed. Unrecoverable by static scrape.
+# - name: Adobe Video & Motion
+#   type: rss
+#   url: https://blog.adobe.com/en/topics/video.rss
+#   weight: 1.1
+#   channel: r
 
-- name: Maxon
-  type: rss
-  url: https://www.maxon.net/en/rss/news
-  weight: 0.9
-  channel: r
+# TODO: Maxon's site is a client-rendered Nuxt SPA (window.__NUXT__ state
+# blob present but no plain feed or server-rendered article list). Could
+# maybe be recovered by parsing that JSON state directly, but it's fragile
+# and out of scope for now.
+# - name: Maxon
+#   type: rss
+#   url: https://www.maxon.net/en/rss/news
+#   weight: 0.9
+#   channel: r
 
 - name: Chaos
   type: rss
-  url: https://www.chaos.com/blog/feed
+  url: https://blog.chaos.com/rss.xml
   weight: 0.9
   channel: r
 
@@ -117,8 +130,9 @@
   channel: r
 
 - name: Black Forest Labs
-  type: rss
-  url: https://bfl.ai/blog/rss.xml
+  type: html
+  url: https://bfl.ai/blog
+  link_selector: 'a[href^="/blog/"]'
   weight: 1.5
   channel: r
 
@@ -136,26 +150,29 @@
 
 - name: Stability AI
   type: rss
-  url: https://stability.ai/news?format=rss
+  url: https://stability.ai/news-updates?format=rss
   weight: 1.1
   channel: r
 
 - name: Lightricks / LTX
   type: html
-  url: https://www.lightricks.com/blog
-  link_selector: article a
+  url: https://ltx.studio/blog
+  link_selector: 'a[href^="/blog/"]'
   weight: 1.2
   channel: r
 
-- name: Topaz Labs
-  type: rss
-  url: https://www.topazlabs.com/blog/rss.xml
-  weight: 1.0
-  channel: r
+# TODO: Topaz's /blog is dead (404) and /news is client-rendered (nav chrome
+# only server-side, no article content). Unrecoverable by static scrape.
+# - name: Topaz Labs
+#   type: rss
+#   url: https://www.topazlabs.com/blog/rss.xml
+#   weight: 1.0
+#   channel: r
 
 - name: ElevenLabs
-  type: rss
-  url: https://elevenlabs.io/blog/rss.xml
+  type: html
+  url: https://elevenlabs.io/blog
+  link_selector: 'a[href^="/blog/"]:not([href*="/category/"])'
   weight: 0.7
   channel: r
 
@@ -175,8 +192,9 @@
   channel: g
 
 - name: Hugging Face daily papers
-  type: rss
-  url: https://huggingface.co/papers/feed
+  type: html
+  url: https://huggingface.co/papers
+  link_selector: 'a[href^="/papers/"]'
   weight: 1.3
   channel: g
 

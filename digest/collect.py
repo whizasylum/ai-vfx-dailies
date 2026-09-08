@@ -338,6 +338,9 @@ def _resolve_youtube_handle(handle: str, cache: dict) -> str | None:
         r = c.get(f"https://www.youtube.com/{handle}")
         r.raise_for_status()
         m = re.search(r'"channelId":"(UC[\w-]{22})"', r.text)
+        if not m:
+            # YouTube's page JSON now carries the id under externalId instead.
+            m = re.search(r'"externalId":"(UC[\w-]{22})"', r.text)
     if not m:
         return None
     cache[handle] = m.group(1)

@@ -22,6 +22,13 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def _setup_logging(verbose: bool) -> None:
+    # Scraped titles carry arbitrary Unicode (arrows, curly quotes, emoji from
+    # icon fonts). Windows consoles default stdout/stderr to the system
+    # codepage, which chokes on those -- force UTF-8 so `run --dry` doesn't
+    # crash on whatever a source happened to publish today.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     logging.basicConfig(
         level=logging.DEBUG if verbose else logging.INFO,
         format="%(levelname)-7s %(message)s",
