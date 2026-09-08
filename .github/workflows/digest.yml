@@ -1,0 +1,90 @@
+name: Daily digest
+
+on:
+  schedule:
+    # 18:00 UTC = 06:00 NZST (winter) / 07:00 NZDT (summer).
+    # GitHub cron is UTC only and does not follow DST, so the local time
+    # shifts by an hour twice a year. Change this if that bothers you.
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "Score only, skip the API call"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          python -m digest.cli run \
+            ${{ inputs.dry && '--dry' || '' }} \
+            --page-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+
+      - name: Commit page and state
+        if: ${{ !inputs.dry }}
+        run: |
+          git config user.name  "digest-bot"
+          git config user.email "digest-bot@users.noreply.github.com"
+          git add docs state
+          git diff --staged --quiet || git commit -m "digest $(date -u +%Y-%m-%d)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ !inputs.dry }}
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    if: ${{ !inputs.dry }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Runs weekly and opens nothing, just fails loudly in the Actions tab if
+  # sources have rotted. Feeds die quietly; this is how you find out.
+  validate:
+    if: github.event_name == 'schedule' && github.event.schedule == '0 18 * * 1'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m digest.cli validate

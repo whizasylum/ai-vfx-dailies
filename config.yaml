@@ -1,0 +1,152 @@
+# Tuning. Edit this file more often than any other -- it is what makes the
+# digest yours rather than a generic AI newsletter.
+
+digest:
+  title: "Dailies"
+  subtitle: "AI in VFX, image and video generation"
+  timezone: "Pacific/Auckland"
+  # How many clustered stories make the final page. 8-12 is a ~10 minute read.
+  max_stories: 10
+  # How many raw items get sent to Claude for clustering. Higher = better
+  # clustering, more cost. 60 is roughly 25-30k input tokens.
+  max_candidates: 60
+  # Items older than this are never considered, even if a feed re-publishes them.
+  max_age_hours: 36
+
+model:
+  # Sonnet handles clustering + summarising well and is the cost sweet spot.
+  # Set to claude-opus-5 if you want sharper editorial judgement.
+  name: "claude-sonnet-5"
+  max_tokens: 8000
+
+# Your interest profile, in plain language. This is fed to the summariser as
+# editorial direction -- it decides what leads and what gets cut. Rewrite it
+# the way you'd brief a researcher.
+profile: |
+  The reader is a technical artist and pipeline TD working in a USD-based
+  Houdini/Karma pipeline at a large VFX facility, and separately runs a small
+  boutique studio. He writes Python and VEX. He is not a machine-learning
+  researcher and does not want paper-summary noise -- but he does want to know
+  when a technique is about to become a tool.
+
+  Rank highly:
+    - Generative video/image models that are actually controllable: camera
+      control, first/last frame, reference conditioning, temporal consistency,
+      relighting, video-to-video restyle.
+    - Anything that lands inside a DCC or a pipeline: Houdini/Nuke/Maya plugins,
+      ComfyUI nodes that a studio could deploy, USD/Hydra integration, OpenColorIO
+      and colour-management implications, licensing terms that decide whether a
+      model is usable on client work.
+    - Open-weight model releases with permissive licences, local VRAM
+      requirements, and inference cost.
+    - Gaussian splatting, neural rendering, and photogrammetry when it reaches
+      production tooling.
+    - Studio adoption stories with technical substance -- what they actually
+      built, not that they "embraced AI".
+    - Legal, union, and rights developments that change what is deliverable.
+
+  Rank low or cut entirely:
+    - Model launches described only in marketing language with no technical
+      detail or availability.
+    - Funding rounds and valuations, unless they change a product's availability
+      or licence.
+    - Consumer/social AI app news with no production relevance.
+    - "AI will replace artists" opinion pieces with no new information.
+    - Benchmark leaderboard churn between near-identical models.
+
+# Cheap keyword prefilter, applied before anything reaches Claude.
+# Each match adds to the score; the top `max_candidates` items survive.
+keywords:
+  strong:   # +3.0
+    - houdini
+    - nuke
+    - comfyui
+    - openusd
+    - usd
+    - karma
+    - solaris
+    - gaussian splat
+    - open-weight
+    - open weights
+    - apache 2.0
+    - video-to-video
+    - temporal consistency
+    - camera control
+    - relight
+    - rotoscop
+    - matchmove
+    - openColorIO
+    - aces
+  medium:   # +1.5
+    - diffusion
+    - video generation
+    - image-to-video
+    - text-to-video
+    - neural render
+    - nerf
+    - photogrammetry
+    - lora
+    - controlnet
+    - inference
+    - vram
+    - upscal
+    - depth estimation
+    - segmentation
+    - pipeline
+    - vfx
+    - compositing
+    - previs
+    - virtual production
+  weak:     # +0.5
+    - generative
+    - model
+    - render
+    - animation
+    - 3d
+    - texture
+    - shader
+  negative: # -2.0
+    - funding round
+    - series a
+    - series b
+    - valuation
+    - stock price
+    - webinar
+    - discount
+    - black friday
+    - giveaway
+    - sponsored
+    - "top 10 best"
+    - horoscope
+
+delivery:
+  html: true
+  discord: true
+  # Only the top N stories get pushed to Discord, to keep the channel readable.
+  # The web page always carries everything.
+  discord_min_rank: 3
+  # "bot"     -- posts one message per story and seeds thumb reactions, so a tap
+  #              becomes a rating. Needs DISCORD_BOT_TOKEN + DISCORD_CHANNEL_ID.
+  # "webhook" -- simpler setup, one combined message, but no reaction ratings.
+  # Bot mode falls back to webhook automatically if the token is missing.
+  discord_mode: bot
+
+sharing:
+  # Public URL of the page, used for per-story permalinks and the Discord link.
+  # Fill this in after your first Pages deploy.
+  page_url: ""
+  # GitHub Pages on a free or Pro account cannot restrict who views a page --
+  # see the sharing section of the README. This at least keeps it out of search
+  # results so the link only spreads to people you send it to.
+  noindex: true
+  # Pinged in the Discord header. Use a role mention like "<@&123456789>",
+  # or leave empty for no ping. Plain @everyone is deliberately not supported.
+  discord_mention: ""
+
+feedback:
+  enabled: true
+  # Ratings only steer the summariser once there are at least this many.
+  # Below it, a couple of stray taps would swing the whole digest.
+  min_ratings_to_calibrate: 6
+  # How many liked / not-liked headlines go into the prompt as examples.
+  examples_per_side: 8

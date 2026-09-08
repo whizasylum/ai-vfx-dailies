@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dailies — Tuesday 8 September 2026</title>
+<meta name="description" content="AI in VFX, image and video generation. Compiled Tuesday 8 September 2026.">
+<meta name="robots" content="noindex, nofollow"><meta property="og:title" content="Dailies — Tuesday 8 September 2026">
+<meta property="og:description" content="Two releases worth acting on; the rest was noise.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground:     #2a2a2c;
+    --panel:      #323236;
+    --rule:       #45454a;
+    --rule-soft:  #3a3a3e;
+    --ink:        #e6e3de;
+    --ink-dim:    #97948f;
+    --ink-faint:  #6d6a66;
+
+    --ch-r: #d9484a;
+    --ch-g: #5ba86b;
+    --ch-b: #4e7fd0;
+    --ch-a: #cfcbc4;
+
+    --sans:  'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+    --gutter: clamp(1.15rem, 4vw, 2.5rem);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter) 5rem;
+  }
+
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--ch-b);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  /* ---- masthead ------------------------------------------------------ */
+
+  .masthead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    padding: 3rem 0 1.25rem;
+  }
+
+  .wordmark {
+    font-size: clamp(2.1rem, 7vw, 3.1rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    margin: 0;
+  }
+
+  .wordmark span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--ink-dim);
+    margin-top: 0.5rem;
+  }
+
+  .stamp {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--ink-dim);
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .stamp b { color: var(--ink); font-weight: 500; display: block; }
+
+  /* ---- levels readout: the day at a glance --------------------------- */
+
+  .levels { padding-bottom: 2rem; }
+
+  .levels-bar {
+    display: flex;
+    height: 2.75rem;
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+
+  .levels-bar div {
+    min-width: 2px;
+    position: relative;
+  }
+
+  .levels-bar div::after {
+    content: attr(data-count);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--ground);
+  }
+
+  .levels-bar div[data-count="0"]::after { content: ''; }
+
+  .levels-key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.4rem;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    color: var(--ink-dim);
+  }
+
+  .levels-key i {
+    font-style: normal;
+    display: inline-block;
+    width: 0.65rem;
+    height: 0.65rem;
+    margin-right: 0.45rem;
+    vertical-align: -0.02em;
+  }
+
+  .verdict {
+    font-family: var(--serif);
+    font-size: 1.22rem;
+    line-height: 1.55;
+    margin: 2.25rem 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink);
+    max-width: 42rem;
+  }
+
+  /* ---- stories ------------------------------------------------------- */
+
+  .reel { margin-top: 3rem; }
+
+  .story {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 2.1rem 0;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .story:first-child { border-top: 1px solid var(--rule); }
+
+  .rail {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    border-left: 3px solid var(--rail-color);
+    padding-left: 0.6rem;
+    line-height: 1.4;
+  }
+
+  .rail b {
+    display: block;
+    color: var(--rail-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .story-body { min-width: 0; }
+
+  .headline {
+    font-family: var(--sans);
+    font-size: 1.32rem;
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    line-height: 1.28;
+    margin: -0.15rem 0 0.55rem;
+    max-width: 34rem;
+  }
+
+  .why {
+    font-size: 0.92rem;
+    color: var(--rail-color);
+    margin: 0 0 0.85rem;
+    max-width: 34rem;
+    line-height: 1.45;
+  }
+
+  .body-text {
+    font-family: var(--serif);
+    font-size: 1.02rem;
+    line-height: 1.62;
+    color: #d3d0cb;
+    margin: 0 0 1.05rem;
+    max-width: 36rem;
+  }
+
+  .sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sources a {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--ink-dim);
+    text-decoration: none;
+    padding: 0.24rem 0.6rem;
+    border: 1px solid var(--rule-soft);
+    background: var(--panel);
+  }
+
+  .sources a:hover {
+    color: var(--ink);
+    border-color: var(--rail-color);
+  }
+
+  .sources a.video::before { content: '▶ '; color: var(--rail-color); }
+  .sources a.talk::before  { content: '❝ '; color: var(--ink-faint); }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.9rem;
+    opacity: 0;
+    transition: opacity .12s ease;
+  }
+
+  .story:hover .actions,
+  .actions:focus-within { opacity: 1; }
+
+  @media (hover: none) { .actions { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .actions { transition: none; } }
+
+  .actions a, .actions button {
+    font: inherit;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    background: none;
+    border: 1px solid transparent;
+    padding: 0.18rem 0.45rem;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.4;
+  }
+
+  .actions a:hover, .actions button:hover {
+    color: var(--ink);
+    border-color: var(--rule);
+  }
+
+  .actions .up:hover    { color: var(--ch-g); border-color: var(--ch-g); }
+  .actions .down:hover  { color: var(--ch-r); border-color: var(--ch-r); }
+  .actions .done        { color: var(--ch-g); }
+
+  .low-confidence {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    margin-top: 0.7rem;
+    font-style: italic;
+  }
+
+  /* ---- empty + footer ------------------------------------------------ */
+
+  .quiet {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--ink-dim);
+    padding: 3rem 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 2rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    line-height: 1.8;
+  }
+
+  footer a { color: var(--ink-dim); }
+
+  footer details { margin-top: 0.8rem; }
+  footer summary { cursor: pointer; color: var(--ink-dim); }
+  footer ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+
+  .archive-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 0.6rem;
+  }
+
+  @media (max-width: 34rem) {
+    .story { grid-template-columns: 1fr; gap: 0.85rem; }
+    .rail {
+      border-left: none;
+      border-top: 3px solid var(--rail-color);
+      padding: 0.5rem 0 0;
+      display: flex;
+      gap: 0.7rem;
+      align-items: baseline;
+    }
+    .rail b { display: inline; }
+    .stamp { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <h1 class="wordmark">Dailies<span>AI in VFX, image and video generation</span></h1>
+    <div class="stamp">
+      <b>Tuesday 8 September 2026</b>
+      4 stories from 47 items
+    </div>
+  </header>
+
+  <section class="levels" aria-label="Distribution of today's stories by category">
+    <div class="levels-bar">      <div style="background:#d9484a;flex:2"
+           data-count="2"
+           title="Models &amp; tools: 2"></div>      <div style="background:#5ba86b;flex:1"
+           data-count="1"
+           title="Research: 1"></div>      <div style="background:#4e7fd0;flex:0.12"
+           data-count="0"
+           title="Industry: 0"></div>      <div style="background:#cfcbc4;flex:1"
+           data-count="1"
+           title="Tutorials: 1"></div>    </div>
+    <div class="levels-key">      <span><i style="background:#d9484a"></i>Models &amp; tools</span>      <span><i style="background:#5ba86b"></i>Research</span>      <span><i style="background:#4e7fd0"></i>Industry</span>      <span><i style="background:#cfcbc4"></i>Tutorials</span>    </div>
+<p class="verdict">Two releases worth acting on; the rest was noise.</p>  </section>
+
+  <main class="reel">    <article class="story" id="1b810ff887" style="--rail-color:#d9484a">
+      <div class="rail">
+        <b>R</b>
+        01
+      </div>
+      <div class="story-body">
+        <h2 class="headline">Wan 2.7 ships with open weights and camera control</h2>
+<p class="why">First controllable video model you can legally run on a client show.</p>        <p class="body-text">Alibaba released Wan 2.7 under Apache 2.0 with first/last frame conditioning and explicit camera control. Weights are on Hugging Face and ComfyUI nodes shipped the same day. Vendor figures put 1080p at 24GB VRAM, untested independently. The permissive licence is the notable part: unlike most of the field this is usable on client work without a commercial tier.</p>
+        <ul class="sources">          <li><a href="https://cgchannel.com/x" rel="noopener"
+                 class="">CG Channel</a></li>          <li><a href="https://80.lv/x" rel="noopener"
+                 class="">80 Level</a></li>        </ul>
+        <div class="actions">
+          <a class="up" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20%2B1%201b810ff887&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark useful — trains tomorrow's filter">Useful</a>
+          <a class="down" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20-1%201b810ff887&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark not useful — trains tomorrow's filter">Not useful</a>
+          <button type="button" class="copy" data-anchor="1b810ff887">Copy link</button>
+        </div>
+      </div>
+    </article>    <article class="story" id="de5fc1abf0" style="--rail-color:#d9484a">
+      <div class="rail">
+        <b>R</b>
+        02
+      </div>
+      <div class="story-body">
+        <h2 class="headline">Houdini 21 adds a Gaussian splat SOP</h2>
+<p class="why">Removes the Postshot round trip from splat-to-render workflows.</p>        <p class="body-text">SideFX added native splat import and editing as a SOP with USD round-tripping through Solaris. Karma renders splats directly with no conversion step.</p>
+        <ul class="sources">          <li><a href="https://sidefx.com/x" rel="noopener"
+                 class="">SideFX</a></li>        </ul>
+        <div class="actions">
+          <a class="up" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20%2B1%20de5fc1abf0&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark useful — trains tomorrow's filter">Useful</a>
+          <a class="down" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20-1%20de5fc1abf0&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark not useful — trains tomorrow's filter">Not useful</a>
+          <button type="button" class="copy" data-anchor="de5fc1abf0">Copy link</button>
+        </div>
+      </div>
+    </article>    <article class="story" id="69d9935e3a" style="--rail-color:#5ba86b">
+      <div class="rail">
+        <b>G</b>
+        03
+      </div>
+      <div class="story-body">
+        <h2 class="headline">Latent warping cuts flicker in video diffusion</h2>
+<p class="why">Worth watching if it lands as a ComfyUI node.</p>        <p class="body-text">A new paper proposes latent-space warping to reduce temporal flicker without retraining the base model. Code is not yet released.</p>
+        <ul class="sources">          <li><a href="https://arxiv.org/x" rel="noopener"
+                 class="">arXiv</a></li>        </ul>
+        <div class="actions">
+          <a class="up" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20%2B1%2069d9935e3a&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark useful — trains tomorrow's filter">Useful</a>
+          <a class="down" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20-1%2069d9935e3a&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark not useful — trains tomorrow's filter">Not useful</a>
+          <button type="button" class="copy" data-anchor="69d9935e3a">Copy link</button>
+        </div>
+        <p class="low-confidence">Single unverified source. Treat as a rumour until confirmed.</p>
+      </div>
+    </article>    <article class="story" id="d079a2ef3d" style="--rail-color:#cfcbc4">
+      <div class="rail">
+        <b>A</b>
+        04
+      </div>
+      <div class="story-body">
+        <h2 class="headline">Nuke CopyCat roto assist breakdown</h2>
+<p class="why">Directly applicable if you are training per-shot roto models.</p>        <p class="body-text">Entagma walks through building a shot-specific roto model with CopyCat and inference nodes on real plates.</p>
+        <ul class="sources">          <li><a href="https://youtube.com/x" rel="noopener"
+                 class="video">Entagma</a></li>        </ul>
+        <div class="actions">
+          <a class="up" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20%2B1%20d079a2ef3d&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark useful — trains tomorrow's filter">Useful</a>
+          <a class="down" href="https://github.com/nico/ai-vfx-dailies/issues/new?title=rating%20-1%20d079a2ef3d&amp;labels=rating&amp;body=Submitted%20from%20the%20digest%20page.%20Closes%20automatically." target="_blank" rel="noopener"
+             title="Mark not useful — trains tomorrow's filter">Not useful</a>
+          <button type="button" class="copy" data-anchor="d079a2ef3d">Copy link</button>
+        </div>
+      </div>
+    </article>  </main>
+
+  <footer>
+    Compiled 2026-09-08 10:15 NZST · 43/44 sources responded · 24 ratings so far
+      (3 sources reweighted,
+       15 terms learned) · 1 failed    <div class="archive-links"><a href="2026-09-08.html">2026-09-08</a>    </div>
+    <details>
+      <summary>1 sources failed this run</summary>
+      <ul>        <li>Luma AI — HTTP 404 on /news</li>      </ul>
+    </details>
+  </footer>
+
+</div>
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var base = "https://nico.github.io/ai-vfx-dailies" || location.href.split('#')[0];
+      var url = base.replace(/\/$/, '') + '/#' + btn.dataset.anchor;
+      navigator.clipboard.writeText(url).then(function () {
+        var was = btn.textContent;
+        btn.textContent = 'Link copied';
+        btn.classList.add('done');
+        setTimeout(function () {
+          btn.textContent = was;
+          btn.classList.remove('done');
+        }, 1600);
+      });
+    });
+  });
+</script>
+</body>
+</html>

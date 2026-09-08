@@ -1,0 +1,305 @@
+# Source list for the AI/VFX dailies digest.
+#
+# weight: 0.0-2.0 multiplier on relevance score. Signal-dense sources score higher,
+#         press-release firehoses score lower. Tune these as you read the digest.
+# channel: r = models & tools | g = research | b = industry | a = tutorials
+#          (a hint, not a hard label -- the summariser can reclassify)
+#
+# Run `python -m digest.cli validate` after editing. Feeds rot constantly;
+# anything that 404s or goes silent for 60 days gets reported.
+
+# ---------------------------------------------------------------------------
+# VFX trade press -- highest signal for you, these people filter for us already
+# ---------------------------------------------------------------------------
+- name: befores & afters
+  type: rss
+  url: https://beforesandafters.com/feed/
+  weight: 1.8
+  channel: b
+
+- name: fxguide
+  type: rss
+  url: https://www.fxguide.com/feed/
+  weight: 1.8
+  channel: b
+
+- name: 80 Level
+  type: rss
+  url: https://80.lv/feed/
+  weight: 1.3
+  channel: b
+
+- name: CG Channel
+  type: rss
+  url: https://www.cgchannel.com/feed/
+  weight: 1.4
+  channel: r
+
+- name: VFX Voice
+  type: rss
+  url: https://www.vfxvoice.com/feed/
+  weight: 1.3
+  channel: b
+
+- name: Art of VFX
+  type: rss
+  url: https://www.artofvfx.com/feed/
+  weight: 1.0
+  channel: b
+
+- name: Animation World Network
+  type: rss
+  url: https://www.awn.com/rss.xml
+  weight: 0.9
+  channel: b
+
+- name: postPerspective
+  type: rss
+  url: https://postperspective.com/feed/
+  weight: 0.9
+  channel: b
+
+# ---------------------------------------------------------------------------
+# DCC vendors -- release notes are where AI actually lands in your pipeline
+# ---------------------------------------------------------------------------
+- name: SideFX
+  type: rss
+  url: https://www.sidefx.com/rss/news.xml
+  weight: 1.6
+  channel: r
+
+- name: Foundry
+  type: rss
+  url: https://www.foundry.com/rss/news
+  weight: 1.6
+  channel: r
+
+- name: Blender
+  type: rss
+  url: https://www.blender.org/feed/
+  weight: 1.0
+  channel: r
+
+- name: Adobe Video & Motion
+  type: rss
+  url: https://blog.adobe.com/en/topics/video.rss
+  weight: 1.1
+  channel: r
+
+- name: Maxon
+  type: rss
+  url: https://www.maxon.net/en/rss/news
+  weight: 0.9
+  channel: r
+
+- name: Chaos
+  type: rss
+  url: https://www.chaos.com/blog/feed
+  weight: 0.9
+  channel: r
+
+# ---------------------------------------------------------------------------
+# Generative model vendors -- the fast-moving end. Many have no RSS; those are
+# marked `type: html` and scraped for headline links off a changelog/news page.
+# ---------------------------------------------------------------------------
+- name: Runway
+  type: html
+  url: https://runwayml.com/research
+  link_selector: a[href*="/research/"]
+  weight: 1.7
+  channel: r
+
+- name: Luma AI
+  type: html
+  url: https://lumalabs.ai/news
+  link_selector: a[href*="/news/"]
+  weight: 1.5
+  channel: r
+
+- name: Black Forest Labs
+  type: rss
+  url: https://bfl.ai/blog/rss.xml
+  weight: 1.5
+  channel: r
+
+- name: Google DeepMind
+  type: rss
+  url: https://deepmind.google/blog/rss.xml
+  weight: 1.4
+  channel: g
+
+- name: OpenAI
+  type: rss
+  url: https://openai.com/news/rss.xml
+  weight: 1.2
+  channel: r
+
+- name: Stability AI
+  type: rss
+  url: https://stability.ai/news?format=rss
+  weight: 1.1
+  channel: r
+
+- name: Lightricks / LTX
+  type: html
+  url: https://www.lightricks.com/blog
+  link_selector: article a
+  weight: 1.2
+  channel: r
+
+- name: Topaz Labs
+  type: rss
+  url: https://www.topazlabs.com/blog/rss.xml
+  weight: 1.0
+  channel: r
+
+- name: ElevenLabs
+  type: rss
+  url: https://elevenlabs.io/blog/rss.xml
+  weight: 0.7
+  channel: r
+
+# ---------------------------------------------------------------------------
+# Research
+# ---------------------------------------------------------------------------
+- name: arXiv cs.GR
+  type: arxiv
+  query: cat:cs.GR
+  weight: 1.2
+  channel: g
+
+- name: arXiv cs.CV (generative video)
+  type: arxiv
+  query: cat:cs.CV AND (abs:"video generation" OR abs:"video diffusion" OR abs:"neural rendering" OR abs:"gaussian splatting")
+  weight: 1.4
+  channel: g
+
+- name: Hugging Face daily papers
+  type: rss
+  url: https://huggingface.co/papers/feed
+  weight: 1.3
+  channel: g
+
+# ---------------------------------------------------------------------------
+# Open-source ecosystem -- releases are the real signal here, not blog posts
+# ---------------------------------------------------------------------------
+- name: ComfyUI
+  type: github_releases
+  repo: comfyanonymous/ComfyUI
+  weight: 1.5
+  channel: r
+
+- name: ComfyUI Manager
+  type: github_releases
+  repo: Comfy-Org/ComfyUI-Manager
+  weight: 0.9
+  channel: r
+
+- name: Wan (Alibaba)
+  type: github_releases
+  repo: Wan-Video/Wan2.2
+  weight: 1.4
+  channel: r
+
+- name: LTX-Video
+  type: github_releases
+  repo: Lightricks/LTX-Video
+  weight: 1.3
+  channel: r
+
+- name: Nerfstudio
+  type: github_releases
+  repo: nerfstudio-project/nerfstudio
+  weight: 1.0
+  channel: g
+
+- name: OpenUSD
+  type: github_releases
+  repo: PixarAnimationStudios/OpenUSD
+  weight: 1.1
+  channel: r
+
+# ---------------------------------------------------------------------------
+# Community -- noisy, low weight, but catches things before the press does
+# ---------------------------------------------------------------------------
+- name: r/StableDiffusion
+  type: reddit
+  subreddit: StableDiffusion
+  min_score: 250
+  weight: 0.7
+  channel: r
+
+- name: r/comfyui
+  type: reddit
+  subreddit: comfyui
+  min_score: 120
+  weight: 0.8
+  channel: a
+
+- name: r/vfx
+  type: reddit
+  subreddit: vfx
+  min_score: 80
+  weight: 1.0
+  channel: b
+
+- name: r/Houdini
+  type: reddit
+  subreddit: Houdini
+  min_score: 60
+  weight: 0.9
+  channel: a
+
+- name: Hacker News (AI video/graphics)
+  type: hn
+  query: video generation OR diffusion OR gaussian splatting OR VFX
+  min_points: 100
+  weight: 0.8
+  channel: g
+
+# ---------------------------------------------------------------------------
+# YouTube -- `handle` is resolved to a channel_id once and cached in state/.
+# If resolution fails, put the channel_id in directly (View Source on the
+# channel page, search for "channelId").
+# ---------------------------------------------------------------------------
+- name: Two Minute Papers
+  type: youtube
+  handle: "@TwoMinutePapers"
+  weight: 1.0
+  channel: g
+
+- name: Corridor Crew
+  type: youtube
+  handle: "@CorridorCrew"
+  weight: 0.8
+  channel: a
+
+- name: Curious Refuge
+  type: youtube
+  handle: "@curiousrefuge"
+  weight: 0.9
+  channel: a
+
+- name: Mickmumpitz
+  type: youtube
+  handle: "@mickmumpitz"
+  weight: 1.1
+  channel: a
+
+- name: Nerdy Rodent
+  type: youtube
+  handle: "@NerdyRodent"
+  weight: 0.8
+  channel: a
+
+- name: Bilawal Sidhu
+  type: youtube
+  handle: "@bilawalsidhu"
+  weight: 0.9
+  channel: b
+
+- name: Entagma
+  type: youtube
+  handle: "@Entagma"
+  weight: 1.2
+  channel: a

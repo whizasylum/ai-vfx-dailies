@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} — {{ date_long }}</title>
+<meta name="description" content="{{ subtitle }}. Compiled {{ date_long }}.">
+{% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta property="og:title" content="{{ title }} — {{ date_long }}">
+<meta property="og:description" content="{{ verdict }}">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground:     #2a2a2c;
+    --panel:      #323236;
+    --rule:       #45454a;
+    --rule-soft:  #3a3a3e;
+    --ink:        #e6e3de;
+    --ink-dim:    #97948f;
+    --ink-faint:  #6d6a66;
+
+    --ch-r: #d9484a;
+    --ch-g: #5ba86b;
+    --ch-b: #4e7fd0;
+    --ch-a: #cfcbc4;
+
+    --sans:  'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+    --gutter: clamp(1.15rem, 4vw, 2.5rem);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter) 5rem;
+  }
+
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--ch-b);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  /* ---- masthead ------------------------------------------------------ */
+
+  .masthead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    padding: 3rem 0 1.25rem;
+  }
+
+  .wordmark {
+    font-size: clamp(2.1rem, 7vw, 3.1rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    margin: 0;
+  }
+
+  .wordmark span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--ink-dim);
+    margin-top: 0.5rem;
+  }
+
+  .stamp {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--ink-dim);
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .stamp b { color: var(--ink); font-weight: 500; display: block; }
+
+  /* ---- levels readout: the day at a glance --------------------------- */
+
+  .levels { padding-bottom: 2rem; }
+
+  .levels-bar {
+    display: flex;
+    height: 2.75rem;
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+
+  .levels-bar div {
+    min-width: 2px;
+    position: relative;
+  }
+
+  .levels-bar div::after {
+    content: attr(data-count);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--ground);
+  }
+
+  .levels-bar div[data-count="0"]::after { content: ''; }
+
+  .levels-key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.4rem;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    color: var(--ink-dim);
+  }
+
+  .levels-key i {
+    font-style: normal;
+    display: inline-block;
+    width: 0.65rem;
+    height: 0.65rem;
+    margin-right: 0.45rem;
+    vertical-align: -0.02em;
+  }
+
+  .verdict {
+    font-family: var(--serif);
+    font-size: 1.22rem;
+    line-height: 1.55;
+    margin: 2.25rem 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink);
+    max-width: 42rem;
+  }
+
+  /* ---- stories ------------------------------------------------------- */
+
+  .reel { margin-top: 3rem; }
+
+  .story {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 2.1rem 0;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .story:first-child { border-top: 1px solid var(--rule); }
+
+  .rail {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    border-left: 3px solid var(--rail-color);
+    padding-left: 0.6rem;
+    line-height: 1.4;
+  }
+
+  .rail b {
+    display: block;
+    color: var(--rail-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .story-body { min-width: 0; }
+
+  .headline {
+    font-family: var(--sans);
+    font-size: 1.32rem;
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    line-height: 1.28;
+    margin: -0.15rem 0 0.55rem;
+    max-width: 34rem;
+  }
+
+  .why {
+    font-size: 0.92rem;
+    color: var(--rail-color);
+    margin: 0 0 0.85rem;
+    max-width: 34rem;
+    line-height: 1.45;
+  }
+
+  .body-text {
+    font-family: var(--serif);
+    font-size: 1.02rem;
+    line-height: 1.62;
+    color: #d3d0cb;
+    margin: 0 0 1.05rem;
+    max-width: 36rem;
+  }
+
+  .sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sources a {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--ink-dim);
+    text-decoration: none;
+    padding: 0.24rem 0.6rem;
+    border: 1px solid var(--rule-soft);
+    background: var(--panel);
+  }
+
+  .sources a:hover {
+    color: var(--ink);
+    border-color: var(--rail-color);
+  }
+
+  .sources a.video::before { content: '▶ '; color: var(--rail-color); }
+  .sources a.talk::before  { content: '❝ '; color: var(--ink-faint); }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.9rem;
+    opacity: 0;
+    transition: opacity .12s ease;
+  }
+
+  .story:hover .actions,
+  .actions:focus-within { opacity: 1; }
+
+  @media (hover: none) { .actions { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .actions { transition: none; } }
+
+  .actions a, .actions button {
+    font: inherit;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    background: none;
+    border: 1px solid transparent;
+    padding: 0.18rem 0.45rem;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.4;
+  }
+
+  .actions a:hover, .actions button:hover {
+    color: var(--ink);
+    border-color: var(--rule);
+  }
+
+  .actions .up:hover    { color: var(--ch-g); border-color: var(--ch-g); }
+  .actions .down:hover  { color: var(--ch-r); border-color: var(--ch-r); }
+  .actions .done        { color: var(--ch-g); }
+
+  .low-confidence {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    margin-top: 0.7rem;
+    font-style: italic;
+  }
+
+  /* ---- empty + footer ------------------------------------------------ */
+
+  .quiet {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--ink-dim);
+    padding: 3rem 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 2rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    line-height: 1.8;
+  }
+
+  footer a { color: var(--ink-dim); }
+
+  footer details { margin-top: 0.8rem; }
+  footer summary { cursor: pointer; color: var(--ink-dim); }
+  footer ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+
+  .archive-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 0.6rem;
+  }
+
+  @media (max-width: 34rem) {
+    .story { grid-template-columns: 1fr; gap: 0.85rem; }
+    .rail {
+      border-left: none;
+      border-top: 3px solid var(--rail-color);
+      padding: 0.5rem 0 0;
+      display: flex;
+      gap: 0.7rem;
+      align-items: baseline;
+    }
+    .rail b { display: inline; }
+    .stamp { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <h1 class="wordmark">{{ title }}<span>{{ subtitle }}</span></h1>
+    <div class="stamp">
+      <b>{{ date_long }}</b>
+      {{ story_count }} {{ 'story' if story_count == 1 else 'stories' }} from {{ candidate_count }} items
+    </div>
+  </header>
+
+  <section class="levels" aria-label="Distribution of today's stories by category">
+    <div class="levels-bar">
+      {%- for ch in channels %}
+      <div style="background:{{ ch.color }};flex:{{ ch.count if ch.count else 0.12 }}"
+           data-count="{{ ch.count }}"
+           title="{{ ch.label }}: {{ ch.count }}"></div>
+      {%- endfor %}
+    </div>
+    <div class="levels-key">
+      {%- for ch in channels %}
+      <span><i style="background:{{ ch.color }}"></i>{{ ch.label }}</span>
+      {%- endfor %}
+    </div>
+    {% if verdict %}<p class="verdict">{{ verdict }}</p>{% endif %}
+  </section>
+
+  {% if stories %}
+  <main class="reel">
+    {%- for s in stories %}
+    <article class="story" id="{{ s.sid }}" style="--rail-color:{{ s.color }}">
+      <div class="rail">
+        <b>{{ s.channel|upper }}</b>
+        {{ '%02d'|format(loop.index) }}
+      </div>
+      <div class="story-body">
+        <h2 class="headline">{{ s.headline }}</h2>
+        {% if s.why %}<p class="why">{{ s.why }}</p>{% endif %}
+        <p class="body-text">{{ s.body }}</p>
+        <ul class="sources">
+          {%- for src in s.sources %}
+          <li><a href="{{ src.url }}" rel="noopener"
+                 class="{{ 'video' if src.video else '' }}">{{ src.name }}</a></li>
+          {%- if src.discussion %}
+          <li><a href="{{ src.discussion }}" rel="noopener" class="talk">discussion</a></li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+        <div class="actions">
+          {% if can_rate %}
+          <a class="up" href="{{ s.up_url }}" target="_blank" rel="noopener"
+             title="Mark useful — trains tomorrow's filter">Useful</a>
+          <a class="down" href="{{ s.down_url }}" target="_blank" rel="noopener"
+             title="Mark not useful — trains tomorrow's filter">Not useful</a>
+          {% endif %}
+          <button type="button" class="copy" data-anchor="{{ s.sid }}">Copy link</button>
+        </div>
+        {% if s.confidence == 'low' %}
+        <p class="low-confidence">Single unverified source. Treat as a rumour until confirmed.</p>
+        {% endif %}
+      </div>
+    </article>
+    {%- endfor %}
+  </main>
+  {% else %}
+  <p class="quiet">Nothing cleared the filter today. That happens, and it usually
+  means the day really was quiet rather than that something broke — check the
+  run log below if you want to be sure.</p>
+  {% endif %}
+
+  <footer>
+    Compiled {{ generated_at }} · {{ sources_ok }}/{{ sources_total }} sources responded
+    {%- if rating_stats.total %} · {{ rating_stats.total }} ratings so far
+      ({{ rating_stats.sources_adjusted }} sources reweighted,
+       {{ rating_stats.terms_learned }} terms learned){% endif %}
+    {%- if problems %} · {{ problems|length }} failed{% endif %}
+    {% if archive %}
+    <div class="archive-links">
+      {%- for a in archive %}<a href="{{ a.href }}">{{ a.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+    {% if problems %}
+    <details>
+      <summary>{{ problems|length }} sources failed this run</summary>
+      <ul>
+        {%- for p in problems %}
+        <li>{{ p.source }} — {{ p.error }}</li>
+        {%- endfor %}
+      </ul>
+    </details>
+    {% endif %}
+  </footer>
+
+</div>
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var base = {{ page_url|tojson }} || location.href.split('#')[0];
+      var url = base.replace(/\/$/, '') + '/#' + btn.dataset.anchor;
+      navigator.clipboard.writeText(url).then(function () {
+        var was = btn.textContent;
+        btn.textContent = 'Link copied';
+        btn.classList.add('done');
+        setTimeout(function () {
+          btn.textContent = was;
+          btn.classList.remove('done');
+        }, 1600);
+      });
+    });
+  });
+</script>
+</body>
+</html>
