@@ -201,6 +201,15 @@ def track_message(
 
 _ISSUE_TITLE = re.compile(r"^rating\s+([+-]1)\s+([0-9a-f]{10})\s*$", re.I)
 
+# A manual "I found this, the filter should have caught it" signal. Open an
+# issue titled e.g. "suggest: https://youtube.com/watch?v=... camera control
+# rig breakdown" -- treated as a liked example with the same weight as a real
+# thumbs-up, so it feeds calibration_examples() and term_bias() exactly like
+# any other rating. No new subsystem, just a second title pattern on the same
+# issue scan.
+_SUGGEST_TITLE = re.compile(r"^suggest:?\s+(.+)$", re.I)
+_URL_RE = re.compile(r"https?://\S+")
+
 
 def ingest_github_issues(state_dir: Path, ratings: list[dict]) -> int:
     token = os.environ.get("GITHUB_TOKEN")
@@ -235,22 +244,46 @@ def ingest_github_issues(state_dir: Path, ratings: list[dict]) -> int:
         for issue in r.json():
             if "pull_request" in issue:
                 continue
-            m = _ISSUE_TITLE.match(issue.get("title", "").strip())
-            if not m:
+            title = issue.get("title", "").strip()
+
+            if m := _ISSUE_TITLE.match(title):
+                vote, sid = (1 if m.group(1) == "+1" else -1), m.group(2)
+                meta = index.get(sid, {})
+                ratings.append({
+                    "story_id": sid,
+                    "at": datetime.now(timezone.utc).isoformat(),
+                    "vote": vote,
+                    "headline": meta.get("headline", title),
+                    "sources": meta.get("sources", []),
+                    "channel": meta.get("channel", "r"),
+                    "terms": meta.get("terms", []),
+                    "via": "page",
+                })
+                added += 1
+            elif m := _SUGGEST_TITLE.match(title):
+                text = m.group(1).strip()
+                # Strip any URL before pulling terms, so a raw link doesn't
+                # salt term_bias with junk tokens like "https" or "watch".
+                url = _URL_RE.search(text)
+                description = (
+                    (text[: url.start()] + text[url.end() :]).strip()
+                    if url else text
+                ).strip(" -:")
+                sid = hashlib.sha1(text.encode()).hexdigest()[:10]
+                ratings.append({
+                    "story_id": sid,
+                    "at": datetime.now(timezone.utc).isoformat(),
+                    "vote": 1,
+                    "headline": text,
+                    "sources": [],
+                    "channel": "r",
+                    "terms": terms_of({"headline": description or text}),
+                    "via": "suggestion",
+                })
+                added += 1
+            else:
                 continue
-            vote, sid = (1 if m.group(1) == "+1" else -1), m.group(2)
-            meta = index.get(sid, {})
-            ratings.append({
-                "story_id": sid,
-                "at": datetime.now(timezone.utc).isoformat(),
-                "vote": vote,
-                "headline": meta.get("headline", issue.get("title", "")),
-                "sources": meta.get("sources", []),
-                "channel": meta.get("channel", "r"),
-                "terms": meta.get("terms", []),
-                "via": "page",
-            })
-            added += 1
+
             c.patch(
                 f"https://api.github.com/repos/{repo}/issues/{issue['number']}",
                 json={"state": "closed", "state_reason": "completed"},

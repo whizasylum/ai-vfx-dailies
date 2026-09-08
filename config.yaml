@@ -117,11 +117,16 @@ keywords:
     - giveaway
     - sponsored
     - "top 10 best"
+    - "is it worth it"
+    - "best 5"
+    - "(compared)"
     - horoscope
 
 delivery:
   html: true
-  discord: true
+  # Off for now -- page-only delivery. Flip to true (and add either
+  # DISCORD_WEBHOOK_URL or the bot secrets) whenever you want it back.
+  discord: false
   # Only the top N stories get pushed to Discord, to keep the channel readable.
   # The web page always carries everything.
   discord_min_rank: 3

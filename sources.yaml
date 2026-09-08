@@ -158,7 +158,7 @@
   type: html
   url: https://ltx.studio/blog
   link_selector: 'a[href^="/blog/"]'
-  weight: 1.2
+  weight: 0.75
   channel: r
 
 # TODO: Topaz's /blog is dead (404) and /news is client-rendered (nav chrome
@@ -240,33 +240,37 @@
 # ---------------------------------------------------------------------------
 # Community -- noisy, low weight, but catches things before the press does
 # ---------------------------------------------------------------------------
-- name: r/StableDiffusion
-  type: reddit
-  subreddit: StableDiffusion
-  min_score: 250
-  weight: 0.7
-  channel: r
-
-- name: r/comfyui
-  type: reddit
-  subreddit: comfyui
-  min_score: 120
-  weight: 0.8
-  channel: a
-
-- name: r/vfx
-  type: reddit
-  subreddit: vfx
-  min_score: 80
-  weight: 1.0
-  channel: b
-
-- name: r/Houdini
-  type: reddit
-  subreddit: Houdini
-  min_score: 60
-  weight: 0.9
-  channel: a
+# Dropped 2026-09: Reddit blocks unauthenticated JSON scraping platform-wide
+# (both www.reddit.com and old.reddit.com return 403/an HTML interstitial
+# even with a browser UA). Reviving these needs a registered Reddit API app
+# (client_id/secret) -- decided not worth the extra secrets for now.
+# - name: r/StableDiffusion
+#   type: reddit
+#   subreddit: StableDiffusion
+#   min_score: 250
+#   weight: 0.7
+#   channel: r
+#
+# - name: r/comfyui
+#   type: reddit
+#   subreddit: comfyui
+#   min_score: 120
+#   weight: 0.8
+#   channel: a
+#
+# - name: r/vfx
+#   type: reddit
+#   subreddit: vfx
+#   min_score: 80
+#   weight: 1.0
+#   channel: b
+#
+# - name: r/Houdini
+#   type: reddit
+#   subreddit: Houdini
+#   min_score: 60
+#   weight: 0.9
+#   channel: a
 
 - name: Hacker News (AI video/graphics)
   type: hn
