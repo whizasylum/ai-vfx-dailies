@@ -154,7 +154,7 @@ sharing:
   # Cloudflare Worker URL that turns a single tap into a GitHub issue (see
   # cloudflare/rating-worker.js). Rating buttons only show up on the page
   # once this is set -- empty means no ratings UI at all.
-  rating_endpoint: ""
+  rating_endpoint: "https://ai-vfx-dailies-rating.falling-pine-24e5.workers.dev/"
 
 feedback:
   enabled: true
