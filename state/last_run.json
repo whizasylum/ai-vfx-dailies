@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-08T12:05:23.343806+00:00",
+  "ratings": {
+    "total": 0,
+    "up": 0,
+    "down": 0,
+    "sources_adjusted": 0,
+    "terms_learned": 0
+  },
+  "raw": 120,
+  "candidates": 60,
+  "stories": 5,
+  "usage": {
+    "input_tokens": 10026,
+    "output_tokens": 1461
+  },
+  "problems": [
+    {
+      "source": "postPerspective",
+      "type": "rss",
+      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
+    }
+  ]
+}
