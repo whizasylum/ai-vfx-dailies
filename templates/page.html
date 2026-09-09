@@ -134,60 +134,50 @@
     font-weight: 500;
   }
 
-  /* ---- levels readout: the day at a glance --------------------------- */
+  /* ---- levels readout: the day at a glance ---------------------------
+     A thin proportion strip, plus a counts line naming only the channels
+     that actually ran today. The old version spelled out all four labels
+     every day and printed the counts inside a 2.75rem bar, which was a lot
+     of furniture to say "one tools story, one industry story" -- something
+     the cards below already say with their own colour and letter. */
 
-  .levels { padding-bottom: 2rem; }
+  .levels { padding-bottom: 1.6rem; }
 
   .levels-bar {
     display: flex;
-    height: 2.75rem;
-    border: 1px solid var(--rule);
+    height: 0.5rem;
     overflow: hidden;
   }
 
-  .levels-bar div {
-    min-width: 2px;
-    position: relative;
-  }
-
-  .levels-bar div::after {
-    content: attr(data-count);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--ground);
-  }
-
-  .levels-bar div[data-count="0"]::after { content: ''; }
+  .levels-bar div { min-width: 2px; }
 
   .levels-key {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem 1.4rem;
-    margin-top: 0.7rem;
-    font-size: 0.8rem;
+    gap: 0.35rem 1.1rem;
+    margin-top: 0.75rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
     color: var(--ink-dim);
   }
 
   .levels-key i {
     font-style: normal;
     display: inline-block;
-    width: 0.65rem;
-    height: 0.65rem;
+    width: 0.55rem;
+    height: 0.55rem;
     margin-right: 0.45rem;
-    vertical-align: -0.02em;
+    vertical-align: 0.02em;
   }
+
+  .levels-key b { color: var(--ink); font-weight: 500; }
 
   .verdict {
     font-family: var(--serif);
     font-size: 1.22rem;
     line-height: 1.55;
-    margin: 2.25rem 0 0;
-    padding-top: 2rem;
+    margin: 1.6rem 0 0;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--rule);
     color: var(--ink);
     max-width: 42rem;
@@ -442,18 +432,19 @@
   {% endif %}
 
   <section class="levels" aria-label="Distribution of today's stories by category">
+    {% if story_count %}
     <div class="levels-bar">
-      {%- for ch in channels %}
-      <div style="background:{{ ch.color }};flex:{{ ch.count if ch.count else 0.12 }}"
-           data-count="{{ ch.count }}"
+      {%- for ch in channels %}{% if ch.count %}
+      <div style="background:{{ ch.color }};flex:{{ ch.count }}"
            title="{{ ch.label }}: {{ ch.count }}"></div>
-      {%- endfor %}
+      {%- endif %}{% endfor %}
     </div>
     <div class="levels-key">
-      {%- for ch in channels %}
-      <span><i style="background:{{ ch.color }}"></i>{{ ch.label }}</span>
-      {%- endfor %}
+      {%- for ch in channels %}{% if ch.count %}
+      <span><i style="background:{{ ch.color }}"></i><b>{{ ch.count }}</b> {{ ch.label|lower }}</span>
+      {%- endif %}{% endfor %}
     </div>
+    {% endif %}
     {% if verdict %}<p class="verdict">{{ verdict }}</p>{% endif %}
   </section>
 
