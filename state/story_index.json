@@ -197,5 +197,154 @@
    "vendor"
   ],
   "at": "2026-09-08T20:39:03.458782+00:00"
+ },
+ "13f91b1395": {
+  "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
+  "sources": [
+   "HF text-to-video",
+   "HF image-to-video",
+   "HF text-to-video",
+   "HF text-to-video",
+   "HF text-to-video",
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "checks",
+   "comfyui",
+   "comfyui-native",
+   "controlnet",
+   "could",
+   "ecosystem",
+   "evaluated",
+   "flf",
+   "gains",
+   "licence",
+   "loras",
+   "minimax-h3",
+   "open",
+   "out."
+  ],
+  "at": "2026-09-09T20:21:01.073031+00:00"
+ },
+ "c4543b629d": {
+  "headline": "ComfyUI v0.35.0 adds WAN3-Prime support, drops Veo 2/3, fixes HEVC remux",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "before",
+   "churn",
+   "codec",
+   "comfyui",
+   "drops",
+   "fixes",
+   "hevc",
+   "need",
+   "partner-node",
+   "production",
+   "remux",
+   "running",
+   "studios",
+   "support"
+  ],
+  "at": "2026-09-09T20:21:01.073082+00:00"
+ },
+ "15f4cf84fd": {
+  "headline": "Blackmagic ships free Fusion Studio 21.1 with new deep-comp and lens-correction updates",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "affect",
+   "already",
+   "blackmagic",
+   "changes",
+   "comp",
+   "deep-comp",
+   "directly",
+   "free",
+   "fusion",
+   "fusion.",
+   "lens-correction",
+   "studio",
+   "workflows"
+  ],
+  "at": "2026-09-09T20:21:01.073103+00:00"
+ },
+ "88d80139f2": {
+  "headline": "Chaos Cosmos adds image-to-3D generation and visual asset search",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "r",
+  "terms": [
+   "asset",
+   "asset-search",
+   "chaos",
+   "cosmos",
+   "could",
+   "existing",
+   "fit",
+   "formats",
+   "generation",
+   "image-to-3d",
+   "inside",
+   "library",
+   "lookdev",
+   "output"
+  ],
+  "at": "2026-09-09T20:21:01.073118+00:00"
+ },
+ "ac9ccf2f36": {
+  "headline": "GSComplete and CVT-GS advance Gaussian splat completion and simplification",
+  "sources": [
+   "arXiv cs.CV (generative video)",
+   "arXiv cs.CV (generative video)"
+  ],
+  "channel": "g",
+  "terms": [
+   "advance",
+   "assets.",
+   "being",
+   "blockers",
+   "completion",
+   "compression",
+   "cvt-gs",
+   "deployable",
+   "gaussian",
+   "gscomplete",
+   "scans",
+   "simplification",
+   "splat",
+   "stopping"
+  ],
+  "at": "2026-09-09T20:21:01.073131+00:00"
+ },
+ "69be45485c": {
+  "headline": "Marigold V2 revisits diffusion transformers for monocular depth estimation",
+  "sources": [
+   "Hugging Face daily papers"
+  ],
+  "channel": "g",
+  "terms": [
+   "compositing",
+   "depth",
+   "diffusion",
+   "estimation",
+   "feed",
+   "marigold",
+   "monocular",
+   "once",
+   "released.",
+   "revisits",
+   "rotoscoping",
+   "transformers",
+   "weights",
+   "workflows"
+  ],
+  "at": "2026-09-09T20:21:01.073172+00:00"
  }
 }
