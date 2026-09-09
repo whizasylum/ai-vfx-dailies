@@ -287,6 +287,98 @@ def from_github_releases(src: dict, cutoff: datetime) -> list[Item]:
     return items
 
 
+def from_hf_models(src: dict, cutoff: datetime) -> list[Item]:
+    """New and updated models on Hugging Face.
+
+    Several of the labs worth watching stopped shipping through GitHub --
+    Wan has never cut a tag or release, LTX-Video's last tag was Dec 2024 --
+    and publish weights on Hugging Face instead. Scope a source either to an
+    `author` (one lab) or a `pipeline_tag` (the whole ecosystem for a task,
+    which needs `min_likes` to stay out of the endless re-upload tail).
+
+    Sorted by lastModified rather than createdAt so a genuine weights update
+    to an existing repo still surfaces; both dates go into the summary so the
+    summariser can tell a new model from a touched README, and seen.json
+    stops the same model coming back twice.
+    """
+    params: dict[str, Any] = {
+        "sort": "lastModified",
+        "direction": -1,
+        "limit": int(src.get("limit", 30)),
+        "full": "true",
+    }
+    if author := src.get("author"):
+        params["author"] = author
+    if pipeline_tag := src.get("pipeline_tag"):
+        params["pipeline_tag"] = pipeline_tag
+    if not author and not pipeline_tag:
+        raise RuntimeError("hf_models needs an 'author' or a 'pipeline_tag'")
+
+    with _client() as c:
+        r = c.get("https://huggingface.co/api/models", params=params)
+        r.raise_for_status()
+        models = r.json()
+
+    min_likes = int(src.get("min_likes", 0))
+    items: list[Item] = []
+    for m in models:
+        if m.get("private"):
+            continue
+        if int(m.get("likes", 0)) < min_likes:
+            continue
+        modified = datetime.fromisoformat(
+            m["lastModified"].replace("Z", "+00:00")
+        )
+        if modified < cutoff:
+            continue
+
+        model_id = m.get("id", "")
+        tags = [t for t in m.get("tags", []) if isinstance(t, str)]
+        licence = next(
+            (t.split(":", 1)[1] for t in tags if t.startswith("license:")), None
+        )
+        base = next(
+            (t.split(":", 1)[1] for t in tags if t.startswith("base_model:")), None
+        )
+        # Descriptive tags only -- the namespaced ones are metadata we have
+        # already pulled out, and "region:us" and friends say nothing.
+        plain = [t for t in tags if ":" not in t][:10]
+
+        bits = []
+        if pt := m.get("pipeline_tag"):
+            bits.append(f"task {pt}")
+        if licence:
+            bits.append(f"licence {licence}")
+        if base:
+            bits.append(f"based on {base}")
+        if m.get("gated"):
+            bits.append("gated (must accept terms before download)")
+        if lib := m.get("library_name"):
+            bits.append(f"library {lib}")
+        bits.append(f"{m.get('likes', 0)} likes, {m.get('downloads', 0)} downloads")
+        if created := m.get("createdAt"):
+            bits.append(f"first published {created[:10]}, updated {m['lastModified'][:10]}")
+        if plain:
+            bits.append("tagged " + ", ".join(plain))
+
+        items.append(
+            Item(
+                title=f"{model_id} on Hugging Face",
+                url=canonical_url(f"https://huggingface.co/{model_id}"),
+                source=src["name"],
+                published=_iso(modified),
+                summary=_clean(". ".join(bits), 800),
+                weight=float(src.get("weight", 1.0)),
+                channel=src.get("channel", "r"),
+                extra={
+                    "likes": m.get("likes", 0),
+                    "downloads": m.get("downloads", 0),
+                },
+            )
+        )
+    return items
+
+
 def from_arxiv(src: dict, cutoff: datetime) -> list[Item]:
     with _client() as c:
         r = c.get(
@@ -449,6 +541,7 @@ COLLECTORS = {
     "rss": from_rss,
     "html": from_html,
     "github_releases": from_github_releases,
+    "hf_models": from_hf_models,
     "arxiv": from_arxiv,
     "reddit": from_reddit,
     "hn": from_hn,

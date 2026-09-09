@@ -213,17 +213,21 @@
   weight: 0.9
   channel: r
 
-- name: Wan (Alibaba)
-  type: github_releases
-  repo: Wan-Video/Wan2.2
-  weight: 1.4
-  channel: r
-
-- name: LTX-Video
-  type: github_releases
-  repo: Lightricks/LTX-Video
-  weight: 1.3
-  channel: r
+# Checked 2026-09-09: Wan-Video/Wan2.2 has never cut a GitHub release OR a
+# tag, and Lightricks/LTX-Video's most recent tag is from Dec 2024. Both labs
+# ship weights on Hugging Face now, so they are covered by the hf_models
+# sources below rather than here.
+# - name: Wan (Alibaba)
+#   type: github_releases
+#   repo: Wan-Video/Wan2.2
+#   weight: 1.4
+#   channel: r
+#
+# - name: LTX-Video
+#   type: github_releases
+#   repo: Lightricks/LTX-Video
+#   weight: 1.3
+#   channel: r
 
 - name: Nerfstudio
   type: github_releases
@@ -235,6 +239,44 @@
   type: github_releases
   repo: PixarAnimationStudios/OpenUSD
   weight: 1.1
+  channel: r
+
+# ---------------------------------------------------------------------------
+# Hugging Face -- where open weights actually land. Two shapes:
+#   author:       everything one lab publishes, no popularity bar needed
+#   pipeline_tag: the whole ecosystem for a task, which needs min_likes to
+#                 stay out of the endless re-upload/quantisation tail
+# ---------------------------------------------------------------------------
+- name: HF Wan-AI
+  type: hf_models
+  author: Wan-AI
+  weight: 1.4
+  channel: r
+
+- name: HF Lightricks (LTX)
+  type: hf_models
+  author: Lightricks
+  weight: 1.3
+  channel: r
+
+- name: HF Black Forest Labs
+  type: hf_models
+  author: black-forest-labs
+  weight: 1.4
+  channel: r
+
+- name: HF text-to-video
+  type: hf_models
+  pipeline_tag: text-to-video
+  min_likes: 40
+  weight: 1.2
+  channel: r
+
+- name: HF image-to-video
+  type: hf_models
+  pipeline_tag: image-to-video
+  min_likes: 40
+  weight: 1.2
   channel: r
 
 # ---------------------------------------------------------------------------
