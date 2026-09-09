@@ -209,12 +209,36 @@
     border: 1px solid var(--rule-soft);
     border-top: 3px solid var(--rail-color);
     min-width: 0;
+    transition: border-color .12s ease;
   }
 
+  .story:hover { border-color: var(--rule); border-top-color: var(--rail-color); }
+
+  @media (prefers-reduced-motion: reduce) { .story { transition: none; } }
+
+  /* Only about half of collected items carry a usable image. Rather than let
+     the grid go ragged, a card without one keeps the same silhouette and
+     fills the slot with its channel colour. */
   .thumb {
     aspect-ratio: 16 / 9;
     background: var(--rule-soft);
     overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+
+  .thumb-empty {
+    background: color-mix(in srgb, var(--rail-color) 10%, var(--ground));
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  .thumb-empty span {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--rail-color);
+    opacity: 0.32;
   }
 
   .thumb img {
@@ -222,7 +246,10 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: opacity .12s ease;
   }
+
+  .thumb a:hover img { opacity: 0.86; }
 
   .story-body {
     min-width: 0;
@@ -252,6 +279,18 @@
     letter-spacing: -0.015em;
     line-height: 1.28;
     margin: 0 0 0.5rem;
+  }
+
+  .headline a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .headline a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--rail-color);
   }
 
   .why {
@@ -376,6 +415,9 @@
   @media (max-width: 34rem) {
     .reel { grid-template-columns: 1fr; gap: 1.25rem; }
     .stamp { text-align: left; }
+    /* Single column, so cards no longer need to line up with a neighbour --
+       give the placeholder back some of that vertical space. */
+    .thumb-empty { aspect-ratio: 5 / 2; }
   }
 </style>
 </head>
@@ -392,7 +434,7 @@
 
   {% if archive %}
   <nav class="timeline" aria-label="Previous days">
-    <span class="current" aria-current="page">{{ date_iso }}</span>
+    <span class="current" aria-current="page">{{ date_short|default(date_iso) }}</span>
     {%- for a in archive %}
     <a href="{{ a.href }}">{{ a.label }}</a>
     {%- endfor %}
@@ -421,16 +463,25 @@
     <article class="story" id="{{ s.sid }}" style="--rail-color:{{ s.color }}">
       {% if s.image %}
       <div class="thumb">
-        <img src="{{ s.image }}" alt="" loading="lazy"
-             onerror="this.closest('.thumb').remove()">
+        {% if s.sources %}<a href="{{ s.sources[0].url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% endif %}
+        <img src="{{ s.image }}" alt="" loading="lazy" data-fallback-tried="0">
+        {% if s.sources %}</a>{% endif %}
       </div>
+      {% else %}
+      <div class="thumb thumb-empty" aria-hidden="true"><span>{{ s.channel|upper }}</span></div>
       {% endif %}
       <div class="story-body">
         <div class="tag">
           <b>{{ s.channel|upper }}</b>
           <i>{{ '%02d'|format(loop.index) }}</i>
         </div>
-        <h2 class="headline">{{ s.headline }}</h2>
+        <h2 class="headline">
+          {%- if s.sources -%}
+          <a href="{{ s.sources[0].url }}" target="_blank" rel="noopener">{{ s.headline }}</a>
+          {%- else -%}
+          {{ s.headline }}
+          {%- endif -%}
+        </h2>
         {% if s.why %}<p class="why">{{ s.why }}</p>{% endif %}
         <p class="body-text">{{ s.body }}</p>
         <ul class="sources">
@@ -484,6 +535,48 @@
 
 </div>
 <script>
+  document.querySelectorAll('.thumb img').forEach(function (img) {
+    // Keep the slot rather than removing it, so one dud image doesn't leave
+    // this card shorter than the rest of the row.
+    function drop() {
+      var thumb = img.closest('.thumb');
+      if (!thumb) return;
+      var story = thumb.closest('.story');
+      var tag = story && story.querySelector('.tag b');
+      var letter = document.createElement('span');
+      letter.textContent = tag ? tag.textContent : '';
+      thumb.innerHTML = '';
+      thumb.appendChild(letter);
+      thumb.classList.add('thumb-empty');
+      thumb.setAttribute('aria-hidden', 'true');
+    }
+
+    // Collection upgrades some thumbnails to a larger variant the host
+    // usually has (YouTube maxresdefault). "Usually" is not "always", so
+    // step back down to the original before giving up on the image.
+    function failed() {
+      if (img.dataset.fallbackTried === '0' && img.src.indexOf('maxresdefault') !== -1) {
+        img.dataset.fallbackTried = '1';
+        img.src = img.src.replace('maxresdefault', 'hqdefault');
+        return;
+      }
+      drop();
+    }
+
+    // Some feeds hand back a logo, avatar or tracking pixel as the entry's
+    // "thumbnail". Blown up to card width those read as artefacts, so drop
+    // anything too small to have been a real hero image. 260 keeps genuine
+    // small hero crops (AWN serves 300px wide) and cuts 200px avatars.
+    function check() {
+      if (img.naturalWidth === 0) { failed(); return; }
+      if (img.naturalWidth < 260) drop();
+    }
+
+    img.addEventListener('error', failed);
+    img.addEventListener('load', check);
+    if (img.complete) check();
+  });
+
   document.querySelectorAll('.copy').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var base = {{ page_url|tojson }} || location.href.split('#')[0];

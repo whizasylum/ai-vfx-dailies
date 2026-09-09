@@ -99,6 +99,34 @@ def _client() -> httpx.Client:
 
 _IMG_TAG_RE = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.I)
 
+# Some feeds put something in the thumbnail slot that is never a usable hero
+# image for a story card. Hugging Face's papers feed is the big one: it hands
+# back the *authors'* profile pictures.
+_IMG_REJECT_RE = re.compile(
+    r"cdn-avatars\.huggingface\.co|huggingface\.co/avatars/", re.I
+)
+
+# Feeds serve whatever derivative their CMS generates by default, which is
+# often far smaller than what the same host will happily serve. Both of these
+# were checked against the live hosts; if a rewritten URL ever 404s the page
+# falls back to the original rather than showing a broken image.
+_IMG_UPGRADES = (
+    (re.compile(r"(i\d?\.ytimg\.com/vi/[\w-]+/)hqdefault\.jpg"), r"\1maxresdefault.jpg"),
+    (
+        re.compile(r"(awn\.com/sites/default/files/styles/)small_featured(/)"),
+        r"\1large_featured\2",
+    ),
+)
+
+
+def _clean_image(url: str | None) -> str | None:
+    """Drop junk thumbnails, and upgrade known-small ones to a larger variant."""
+    if not url or _IMG_REJECT_RE.search(url):
+        return None
+    for pattern, replacement in _IMG_UPGRADES:
+        url = pattern.sub(replacement, url)
+    return url
+
 
 def _entry_image(e, raw_html: str = "") -> str | None:
     """Best-effort thumbnail for an RSS/Atom entry.
@@ -109,19 +137,19 @@ def _entry_image(e, raw_html: str = "") -> str | None:
     usable just get no image -- the page already handles that gracefully.
     """
     if thumbs := getattr(e, "media_thumbnail", None):
-        if url := thumbs[0].get("url"):
+        if url := _clean_image(thumbs[0].get("url")):
             return url
     if media := getattr(e, "media_content", None):
         for m in media:
             if m.get("medium") == "image" or (m.get("type") or "").startswith("image/"):
-                if url := m.get("url"):
+                if url := _clean_image(m.get("url")):
                     return url
     for link in getattr(e, "links", None) or []:
         if link.get("rel") == "enclosure" and (link.get("type") or "").startswith("image/"):
-            if url := link.get("href"):
+            if url := _clean_image(link.get("href")):
                 return url
     if m := _IMG_TAG_RE.search(raw_html):
-        return m.group(1)
+        return _clean_image(m.group(1))
     return None
 
 
@@ -202,8 +230,8 @@ def from_html(src: dict, cutoff: datetime) -> list[Item]:
             img = card.find("img")
         if img is not None:
             img_src = img.get("src") or img.get("data-src")
-            if img_src:
-                extra["image"] = urljoin(src["url"], img_src)
+            if img_src and (cleaned := _clean_image(urljoin(src["url"], img_src))):
+                extra["image"] = cleaned
 
         items.append(
             Item(
@@ -323,8 +351,8 @@ def from_reddit(src: dict, cutoff: datetime) -> list[Item]:
         # "self", "default", "nsfw", "spoiler" etc are placeholder values,
         # not URLs -- only trust it if it actually looks like an image link.
         thumb = d.get("thumbnail", "")
-        if thumb.startswith("http"):
-            extra["image"] = thumb
+        if thumb.startswith("http") and (cleaned := _clean_image(thumb)):
+            extra["image"] = cleaned
         items.append(
             Item(
                 title=_clean(d.get("title", ""), 300),

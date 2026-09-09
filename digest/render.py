@@ -78,7 +78,15 @@ def render_html(
     archive_dir = docs / "archive"
     archive_dir.mkdir(parents=True, exist_ok=True)
 
-    existing = sorted(archive_dir.glob("*.html"), reverse=True)[: ARCHIVE_KEEP - 1]
+    # Today's own dated copy is already on the archive dir when a run happens
+    # more than once in a day -- it belongs to the "current" pill in the
+    # timeline, not the list of previous days, so keep it out of both.
+    today_iso = now.strftime("%Y-%m-%d")
+    existing = [
+        p
+        for p in sorted(archive_dir.glob("*.html"), reverse=True)[: ARCHIVE_KEEP - 1]
+        if p.stem != today_iso
+    ]
     archive = [
         {
             "href": f"archive/{p.name}",
@@ -91,7 +99,8 @@ def render_html(
         title=digest_cfg.get("title", "Dailies"),
         subtitle=digest_cfg.get("subtitle", ""),
         date_long=now.strftime("%A %-d %B %Y"),
-        date_iso=now.strftime("%Y-%m-%d"),
+        date_iso=today_iso,
+        date_short=now.strftime("%b %-d"),
         generated_at=now.strftime("%Y-%m-%d %H:%M %Z"),
         verdict=result.get("verdict", ""),
         stories=stories,
