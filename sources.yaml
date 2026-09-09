@@ -325,3 +325,33 @@
   handle: "@Entagma"
   weight: 1.2
   channel: a
+
+# Open-source 3D AI workflows with VRAM numbers and ComfyUI graphs -- the
+# closest thing on YouTube to the "technique about to become a tool" beat.
+- name: PixelArtistry
+  type: youtube
+  handle: "@PixelArtistry_"
+  weight: 1.2
+  channel: a
+
+- name: Stefan 3D AI
+  type: youtube
+  handle: "@stefan_3d_ai"
+  weight: 1.0
+  channel: a
+
+# Vendor channel. Product announcements are worth catching, but most of the
+# feed is marketing/monetisation content and it posts near-daily, so it is
+# weighted to stay out of the way unless a release is genuinely notable.
+- name: Higgsfield AI
+  type: youtube
+  handle: "@HiggsfieldAI"
+  weight: 0.6
+  channel: r
+
+# AI art/design styles, posts infrequently, least pipeline-relevant of the set.
+- name: AI2Play (pixaroma)
+  type: youtube
+  handle: "@pixaroma"
+  weight: 0.6
+  channel: a
