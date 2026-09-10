@@ -346,5 +346,82 @@
    "workflows"
   ],
   "at": "2026-09-09T20:21:01.073172+00:00"
+ },
+ "01886a67b9": {
+  "headline": "Lightricks releases a batch of task-specific IC-LoRAs for LTX-2.5",
+  "sources": [
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "batch",
+   "close",
+   "hold.",
+   "ic-loras",
+   "licence",
+   "lightricks",
+   "loras",
+   "ltx-2.5",
+   "open",
+   "production-usable",
+   "relighting",
+   "restoration",
+   "task-specific",
+   "terms"
+  ],
+  "at": "2026-09-10T20:25:19.924379+00:00"
+ },
+ "ad201059ae": {
+  "headline": "MiniMax-H3-Turbo image-to-video model hits Apache-2.0 on Hugging Face",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "apache-2.0",
+   "client",
+   "face",
+   "genuinely",
+   "high-adoption",
+   "hits",
+   "hugging",
+   "image-to-video",
+   "licensing",
+   "minimax-h3-turbo",
+   "open-licence",
+   "risk.",
+   "usable",
+   "video"
+  ],
+  "at": "2026-09-10T20:25:19.924470+00:00"
+ },
+ "c9e48a6b37": {
+  "headline": "Maxon previews fall Cinema 4D, ZBrush and Redshift updates at IBC2026",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "act",
+   "actual",
+   "calendar",
+   "cinema",
+   "fall",
+   "ibc2026",
+   "lands.",
+   "maxon",
+   "note",
+   "nothing",
+   "october",
+   "previews",
+   "redshift",
+   "until"
+  ],
+  "at": "2026-09-10T20:25:19.924491+00:00"
  }
 }
