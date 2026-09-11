@@ -1,24 +1,18 @@
 {
-  "at": "2026-09-10T20:25:19.961027+00:00",
+  "at": "2026-09-11T20:23:15.252902+00:00",
   "ratings": {
-    "total": 24,
-    "up": 19,
-    "down": 5,
-    "sources_adjusted": 3,
-    "terms_learned": 0
+    "total": 35,
+    "up": 29,
+    "down": 6,
+    "sources_adjusted": 6,
+    "terms_learned": 11
   },
-  "raw": 77,
+  "raw": 70,
   "candidates": 60,
   "stories": 3,
   "usage": {
-    "input_tokens": 14401,
-    "output_tokens": 1183
+    "input_tokens": 14946,
+    "output_tokens": 892
   },
-  "problems": [
-    {
-      "source": "postPerspective",
-      "type": "rss",
-      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
-    }
-  ]
+  "problems": []
 }

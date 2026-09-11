@@ -471,6 +471,271 @@
    "channel": "r",
    "terms": [],
    "via": "page"
+  },
+  {
+   "story_id": "ac9ccf2f36",
+   "at": "2026-09-11T20:22:31.487167+00:00",
+   "vote": 1,
+   "headline": "GSComplete and CVT-GS advance Gaussian splat completion and simplification",
+   "sources": [
+    "arXiv cs.CV (generative video)",
+    "arXiv cs.CV (generative video)"
+   ],
+   "channel": "g",
+   "terms": [
+    "advance",
+    "assets.",
+    "being",
+    "blockers",
+    "completion",
+    "compression",
+    "cvt-gs",
+    "deployable",
+    "gaussian",
+    "gscomplete",
+    "scans",
+    "simplification",
+    "splat",
+    "stopping"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "15f4cf84fd",
+   "at": "2026-09-11T20:22:31.655488+00:00",
+   "vote": 1,
+   "headline": "Blackmagic ships free Fusion Studio 21.1 with new deep-comp and lens-correction updates",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "affect",
+    "already",
+    "blackmagic",
+    "changes",
+    "comp",
+    "deep-comp",
+    "directly",
+    "free",
+    "fusion",
+    "fusion.",
+    "lens-correction",
+    "studio",
+    "workflows"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "c4543b629d",
+   "at": "2026-09-11T20:22:31.844137+00:00",
+   "vote": 1,
+   "headline": "ComfyUI v0.35.0 adds WAN3-Prime support, drops Veo 2/3, fixes HEVC remux",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "before",
+    "churn",
+    "codec",
+    "comfyui",
+    "drops",
+    "fixes",
+    "hevc",
+    "need",
+    "partner-node",
+    "production",
+    "remux",
+    "running",
+    "studios",
+    "support"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "13f91b1395",
+   "at": "2026-09-11T20:22:32.007721+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
+   "sources": [
+    "HF text-to-video",
+    "HF image-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "checks",
+    "comfyui",
+    "comfyui-native",
+    "controlnet",
+    "could",
+    "ecosystem",
+    "evaluated",
+    "flf",
+    "gains",
+    "licence",
+    "loras",
+    "minimax-h3",
+    "open",
+    "out."
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "13f91b1395",
+   "at": "2026-09-11T20:22:32.323633+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
+   "sources": [
+    "HF text-to-video",
+    "HF image-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "checks",
+    "comfyui",
+    "comfyui-native",
+    "controlnet",
+    "could",
+    "ecosystem",
+    "evaluated",
+    "flf",
+    "gains",
+    "licence",
+    "loras",
+    "minimax-h3",
+    "open",
+    "out."
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "c4543b629d",
+   "at": "2026-09-11T20:22:32.499884+00:00",
+   "vote": 1,
+   "headline": "ComfyUI v0.35.0 adds WAN3-Prime support, drops Veo 2/3, fixes HEVC remux",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "before",
+    "churn",
+    "codec",
+    "comfyui",
+    "drops",
+    "fixes",
+    "hevc",
+    "need",
+    "partner-node",
+    "production",
+    "remux",
+    "running",
+    "studios",
+    "support"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "2bc118ce97",
+   "at": "2026-09-11T20:22:32.719288+00:00",
+   "vote": 1,
+   "headline": "Blackmagic ships DaVinci Resolve 21.1",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "blackmagic",
+    "color",
+    "davinci",
+    "free",
+    "immediately.",
+    "pipelines",
+    "resolve",
+    "shift",
+    "studio",
+    "test"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "2bc118ce97",
+   "at": "2026-09-11T20:22:32.947290+00:00",
+   "vote": 1,
+   "headline": "Blackmagic ships DaVinci Resolve 21.1",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "blackmagic",
+    "color",
+    "davinci",
+    "free",
+    "immediately.",
+    "pipelines",
+    "resolve",
+    "shift",
+    "studio",
+    "test"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "5a4dfbf476",
+   "at": "2026-09-11T20:22:33.163755+00:00",
+   "vote": 1,
+   "headline": "Pro Particles multi-physics toolkit released for Blender",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "b",
+   "terms": [
+    "blender",
+    "caches",
+    "consume.",
+    "exports",
+    "exposes",
+    "houdini",
+    "later",
+    "multi-physics",
+    "only",
+    "particles",
+    "pro",
+    "relevant",
+    "toolkit",
+    "usd-compatible"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "0123456789",
+   "at": "2026-09-11T20:22:33.330833+00:00",
+   "vote": -1,
+   "headline": "rating -1 0123456789",
+   "sources": [],
+   "channel": "r",
+   "terms": [],
+   "via": "page"
+  },
+  {
+   "story_id": "abcdef0123",
+   "at": "2026-09-11T20:22:33.492055+00:00",
+   "vote": 1,
+   "headline": "rating +1 abcdef0123",
+   "sources": [],
+   "channel": "r",
+   "terms": [],
+   "via": "page"
   }
  ]
 }

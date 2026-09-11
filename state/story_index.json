@@ -423,5 +423,77 @@
    "until"
   ],
   "at": "2026-09-10T20:25:19.924491+00:00"
+ },
+ "f074f3fc73": {
+  "headline": "SuperSplat Editor 3.0 ships with major performance overhaul for large Gaussian splats",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "browser-based",
+   "editor",
+   "free",
+   "gaussian",
+   "large",
+   "major",
+   "millions",
+   "overhaul",
+   "performance",
+   "pipelines.",
+   "points",
+   "real",
+   "scales",
+   "splat"
+  ],
+  "at": "2026-09-11T20:23:15.183681+00:00"
+ },
+ "91ea4462d5": {
+  "headline": "Rising Sun Pictures' REVIZE face and body replacement tool rolled out across sister studios",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "across",
+   "body",
+   "face",
+   "in-house",
+   "maturing",
+   "multi-studio",
+   "one-off.",
+   "pictures",
+   "pipeline",
+   "production",
+   "rather",
+   "replacement",
+   "revize",
+   "rising"
+  ],
+  "at": "2026-09-11T20:23:15.183718+00:00"
+ },
+ "1238ab7c39": {
+  "headline": "LTX-2.5 22B gets an IC-LoRA for video colorization and clean-plate work",
+  "sources": [
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "clean-plate",
+   "colorization",
+   "ic-lora",
+   "licence",
+   "lora",
+   "ltx-2.5",
+   "open",
+   "quality",
+   "real-world",
+   "terms",
+   "unverified.",
+   "vfx-tagged",
+   "video",
+   "work"
+  ],
+  "at": "2026-09-11T20:23:15.183730+00:00"
  }
 }
