@@ -1,18 +1,29 @@
 {
-  "at": "2026-09-11T20:23:15.252902+00:00",
+  "at": "2026-09-12T20:07:32.362393+00:00",
   "ratings": {
-    "total": 35,
-    "up": 29,
-    "down": 6,
+    "total": 46,
+    "up": 39,
+    "down": 7,
     "sources_adjusted": 6,
-    "terms_learned": 11
+    "terms_learned": 51
   },
-  "raw": 70,
-  "candidates": 60,
+  "raw": 18,
+  "candidates": 18,
   "stories": 3,
   "usage": {
-    "input_tokens": 14946,
-    "output_tokens": 892
+    "input_tokens": 6368,
+    "output_tokens": 770
   },
-  "problems": []
+  "problems": [
+    {
+      "source": "arXiv cs.GR",
+      "type": "arxiv",
+      "error": "The read operation timed out"
+    },
+    {
+      "source": "arXiv cs.CV (generative video)",
+      "type": "arxiv",
+      "error": "The read operation timed out"
+    }
+  ]
 }

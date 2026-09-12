@@ -495,5 +495,77 @@
    "work"
   ],
   "at": "2026-09-11T20:23:15.183730+00:00"
+ },
+ "9e3a40be0d": {
+  "headline": "MiniMax-H3 fine-tune adds HDR and video-to-video reference support, ships on Hugging Face under Apache-2.0",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "apache-2.0",
+   "comfyui",
+   "ecosystem",
+   "extends",
+   "face",
+   "fine-tune",
+   "hdr",
+   "hugging",
+   "minimax-h3",
+   "permissive-licence",
+   "reader",
+   "reference",
+   "support"
+  ],
+  "at": "2026-09-12T20:07:32.304487+00:00"
+ },
+ "fb14056002": {
+  "headline": "Free Blender add-on auto-rigs deform bones along stylized hair strands",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "a",
+  "terms": [
+   "add-on",
+   "along",
+   "auto-rigs",
+   "blender",
+   "bones",
+   "character",
+   "concrete",
+   "deform",
+   "free",
+   "hair",
+   "pipelines.",
+   "riggers",
+   "small",
+   "strands"
+  ],
+  "at": "2026-09-12T20:07:32.304535+00:00"
+ },
+ "3fbca0ce75": {
+  "headline": "Blender add-on brings jiggle physics to bodies, clothing and hair",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "a",
+  "terms": [
+   "add-on",
+   "blender",
+   "blender-based",
+   "bodies",
+   "character",
+   "cloth",
+   "clothing",
+   "hair",
+   "jiggle",
+   "physics",
+   "pipelines.",
+   "practical",
+   "secondary-motion",
+   "work"
+  ],
+  "at": "2026-09-12T20:07:32.304552+00:00"
  }
 }
