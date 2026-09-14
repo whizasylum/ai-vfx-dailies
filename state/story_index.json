@@ -591,5 +591,53 @@
    "roundup"
   ],
   "at": "2026-09-13T20:16:15.650131+00:00"
+ },
+ "1d839cb4cf": {
+  "headline": "DaVinci Resolve 21.1 adds AI assistant control and new Fusion 3D tools",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "r",
+  "terms": [
+   "affect",
+   "ai-assist",
+   "already",
+   "assistant",
+   "comp",
+   "control",
+   "davinci",
+   "directly",
+   "edit",
+   "free",
+   "fusion",
+   "pipelines",
+   "resolve",
+   "resolve."
+  ],
+  "at": "2026-09-14T21:25:46.511459+00:00"
+ },
+ "458569c4f5": {
+  "headline": "Blender Studio releases OVERGROWN teaser as open-pipeline test case",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "b",
+  "terms": [
+   "become",
+   "blender",
+   "case",
+   "choices",
+   "open",
+   "open-pipeline",
+   "overgrown",
+   "pipeline",
+   "production",
+   "reusable",
+   "studio",
+   "teaser",
+   "test",
+   "tooling."
+  ],
+  "at": "2026-09-14T21:25:46.511505+00:00"
  }
 }
