@@ -1,34 +1,18 @@
 {
-  "at": "2026-09-14T21:25:46.557807+00:00",
+  "at": "2026-09-15T20:49:06.125026+00:00",
   "ratings": {
-    "total": 71,
-    "up": 62,
-    "down": 9,
+    "total": 85,
+    "up": 75,
+    "down": 10,
     "sources_adjusted": 6,
-    "terms_learned": 53
+    "terms_learned": 75
   },
-  "raw": 49,
-  "candidates": 47,
-  "stories": 2,
+  "raw": 86,
+  "candidates": 60,
+  "stories": 3,
   "usage": {
-    "input_tokens": 11143,
-    "output_tokens": 673
+    "input_tokens": 14166,
+    "output_tokens": 789
   },
-  "problems": [
-    {
-      "source": "postPerspective",
-      "type": "rss",
-      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
-    },
-    {
-      "source": "arXiv cs.GR",
-      "type": "arxiv",
-      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    },
-    {
-      "source": "arXiv cs.CV (generative video)",
-      "type": "arxiv",
-      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+%28abs%3A%22video+generation%22+OR+abs%3A%22video+diffusion%22+OR+abs%3A%22neural+rendering%22+OR+abs%3A%22gaussian+splatting%22%29&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    }
-  ]
+  "problems": []
 }

@@ -639,5 +639,78 @@
    "tooling."
   ],
   "at": "2026-09-14T21:25:46.511505+00:00"
+ },
+ "d7875f04eb": {
+  "headline": "Canva ships Affinity 3.3 with new scripting system and AI features",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "affinity",
+   "alternative",
+   "automation.",
+   "canva",
+   "editor",
+   "features",
+   "free",
+   "image",
+   "photoshop",
+   "pipeline",
+   "scriptable",
+   "scripting",
+   "small",
+   "studios"
+  ],
+  "at": "2026-09-15T20:49:06.081516+00:00"
+ },
+ "0dfb351f2e": {
+  "headline": "Blender's ReFace retopology tool reaches version 2.0, adds scan and AI-mesh support",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "ai-generated",
+   "ai-mesh",
+   "automated",
+   "before",
+   "blender",
+   "cleanup",
+   "manual",
+   "meshes",
+   "reaches",
+   "reduces",
+   "reface",
+   "retopo",
+   "retopology",
+   "rigging."
+  ],
+  "at": "2026-09-15T20:49:06.081570+00:00"
+ },
+ "40dbac2350": {
+  "headline": "Colorfront debuts Automated Timeline Comparison and Dolby Vision 2 tools at IBC",
+  "sources": [
+   "postPerspective",
+   "postPerspective"
+  ],
+  "channel": "b",
+  "terms": [
+   "automated",
+   "colorfront",
+   "comparison",
+   "could",
+   "cut",
+   "debuts",
+   "delivery",
+   "dolby",
+   "finishing",
+   "handling",
+   "ibc",
+   "masters.",
+   "pipelines",
+   "time"
+  ],
+  "at": "2026-09-15T20:49:06.081589+00:00"
  }
 }
