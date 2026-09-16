@@ -712,5 +712,119 @@
    "time"
   ],
   "at": "2026-09-15T20:49:06.081589+00:00"
+ },
+ "c634ff943f": {
+  "headline": "ComfyUI v0.36.0 released with new model blueprints and partner node updates",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "blueprints",
+   "comfyui",
+   "fixes.",
+   "node",
+   "partner",
+   "pick",
+   "pipelines",
+   "running",
+   "should",
+   "studios",
+   "v0.36.0",
+   "vram"
+  ],
+  "at": "2026-09-16T20:51:08.984557+00:00"
+ },
+ "e246306113": {
+  "headline": "NVIDIA ships Cosmos3-Super-Image2Video on Hugging Face",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "before",
+   "client",
+   "cosmos3-super-image2video",
+   "face",
+   "hugging",
+   "licence",
+   "nvidia",
+   "standard-permissive",
+   "terms",
+   "touching",
+   "verify",
+   "work."
+  ],
+  "at": "2026-09-16T20:51:08.984589+00:00"
+ },
+ "5ab3f45206": {
+  "headline": "Free Maya toolset KeyFlow adds animation review tool",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "addition",
+   "animation",
+   "free",
+   "keyflow",
+   "maya",
+   "no-cost",
+   "quick",
+   "review",
+   "toolkit",
+   "toolset",
+   "trial.",
+   "worth"
+  ],
+  "at": "2026-09-16T20:51:08.984601+00:00"
+ },
+ "b0133a126e": {
+  "headline": "Lightstorm Vision acquires Outsyders, folding ML stereo conversion into native 3D pipeline",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "acquires",
+   "conversion",
+   "folding",
+   "in-house",
+   "lightstorm",
+   "ml-based",
+   "moving",
+   "native",
+   "outsyders",
+   "owned",
+   "pipeline",
+   "pipeline.",
+   "signals",
+   "stereo"
+  ],
+  "at": "2026-09-16T20:51:08.984613+00:00"
+ },
+ "ea563b0a14": {
+  "headline": "texLab plugin packs PBR maps natively inside UE5 preview",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "b",
+  "terms": [
+   "adapt",
+   "conventions.",
+   "extensible",
+   "inside",
+   "json",
+   "maps",
+   "means",
+   "natively",
+   "packs",
+   "pbr",
+   "plugin",
+   "preview",
+   "schema",
+   "studio-specific"
+  ],
+  "at": "2026-09-16T20:51:08.984622+00:00"
  }
 }
