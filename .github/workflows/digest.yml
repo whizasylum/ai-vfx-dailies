@@ -12,11 +12,19 @@ on:
         description: "Score only, skip the API call"
         type: boolean
         default: false
+      test_video_url:
+        description: "Test the video watcher on one YouTube URL instead of a full run -- no state writes, no page changes"
+        type: string
+        default: ""
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  # feedback.ingest_github_issues() closes each rating issue after reading
+  # it. Without this, every close attempt gets a silent 403 and the same
+  # issues get re-ingested as fresh ratings on every run forever.
+  issues: write
 
 concurrency:
   group: digest
@@ -24,6 +32,7 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ inputs.test_video_url == '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -65,7 +74,7 @@ jobs:
 
   deploy:
     needs: build
-    if: ${{ !inputs.dry }}
+    if: ${{ !inputs.dry && inputs.test_video_url == '' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -73,6 +82,24 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # One-off: check what the watcher makes of a single video without
+  # touching state/watched.json or the page. Triggered by filling in
+  # test_video_url on a manual run instead of the full pipeline above.
+  test-video:
+    if: ${{ inputs.test_video_url != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Watch one video
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m digest.cli watch --url "${{ inputs.test_video_url }}"
 
   # Runs weekly and opens nothing, just fails loudly in the Actions tab if
   # sources have rotted. Feeds die quietly; this is how you find out.
