@@ -36,9 +36,7 @@ log = logging.getLogger(__name__)
 WATCHED_RETENTION_DAYS = 120
 
 _VIDEO_ID_RE = re.compile(r"^[\w-]{11}$")
-_LENGTH_RE = re.compile(r'"lengthSeconds":"(\d+)"')
-_LIVE_RE = re.compile(r'"isLive"\s*:\s*true')
-_UPCOMING_RE = re.compile(r'"isUpcoming"\s*:\s*true')
+_API_KEY_RE = re.compile(r'"INNERTUBE_API_KEY":"([^"]+)"')
 
 CATEGORY_CHANNEL = {
     "tool_release": "r",
@@ -171,75 +169,77 @@ def video_id_from_url(url: str) -> str | None:
     return vid if vid and _VIDEO_ID_RE.match(vid) else None
 
 
-_UNAVAILABLE_RE = re.compile(r'"status"\s*:\s*"ERROR"[^}]*"reason"\s*:\s*"([^"]+)"')
-
-# YouTube's bot-detection treats a plain non-browser UA from a datacenter IP
-# (GitHub Actions runners included) more aggressively than the same request
-# from a residential/office IP -- observed here as a 200 response with no
-# lengthSeconds at all for a genuinely public, available video, from the
-# exact request that works fine from a normal connection. A realistic
-# desktop Chrome UA is the standard mitigation for this specific request;
-# collect.py's channel-id resolver hits a different page (the channel page,
-# not a watch page) and hasn't shown the symptom, so this is scoped to just
-# the watch-page probe rather than changed repo-wide.
-_BROWSER_UA = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-)
+_INNERTUBE_URL = "https://www.youtube.com/youtubei/v1/player"
+_INNERTUBE_CONTEXT = {"client": {"clientName": "WEB", "clientVersion": "2.20240101.00.00"}}
 
 
 def _client() -> httpx.Client:
     return httpx.Client(
-        timeout=TIMEOUT, follow_redirects=True, headers={"User-Agent": _BROWSER_UA}
+        timeout=TIMEOUT, follow_redirects=True, headers={"User-Agent": USER_AGENT}
     )
 
 
 def probe_metadata(video_id: str) -> dict[str, Any] | None:
-    """Duration and live/upcoming status, scraped off the watch page.
+    """Duration and live/upcoming status, via YouTube's own internal player
+    API -- the same endpoint the web player itself calls to hydrate.
 
-    No YouTube Data API key exists in this repo, so this is the lightweight
-    fallback the handoff calls for: the same ytInitialPlayerResponse JSON
-    collect.py's channel-id resolver already scrapes, just reading different
-    fields out of it. Returns None on a fetch failure so the caller can defer
-    rather than guess.
+    This repo originally scraped the watch page's embedded JSON directly
+    (the same ytInitialPlayerResponse blob collect.py's channel-id resolver
+    reads). That turned out to be unreliable specifically from GitHub
+    Actions runners: a same-size, entirely normal-looking 200 response came
+    back with videoDetails missing lengthSeconds, for a video that resolves
+    fine from a residential connection -- evidently a different server-side
+    rendering variant for that vantage point, not a hard block (the page's
+    own INNERTUBE_API_KEY was still right there in it). This endpoint
+    returns the full structured object directly regardless of that variant,
+    at the cost of one extra request to pull the (public, unauthenticated,
+    embedded-in-every-page) API key.
+
+    playabilityStatus is deliberately not the signal used here: a bare WEB
+    client context routinely comes back "UNPLAYABLE" for videos that stream
+    fine in a real browser, because actual playback needs a signature/bot
+    check this context doesn't satisfy. videoDetails itself is still
+    populated correctly regardless -- it's genuinely absent only when the
+    video really is gone, which is the check this function relies on.
     """
     try:
         with _client() as c:
             r = c.get(f"https://www.youtube.com/watch?v={video_id}")
             r.raise_for_status()
-            text = r.text
+            m = _API_KEY_RE.search(r.text)
+            if not m:
+                log.warning("probe %s: no INNERTUBE_API_KEY on the watch page", video_id)
+                return None
+
+            r2 = c.post(
+                _INNERTUBE_URL,
+                params={"key": m.group(1)},
+                json={"videoId": video_id, "context": _INNERTUBE_CONTEXT},
+            )
+            r2.raise_for_status()
+            data = r2.json()
     except httpx.HTTPError as exc:
         log.warning("probe %s: %s", video_id, exc)
         return None
 
-    live = bool(_LIVE_RE.search(text))
-    upcoming = bool(_UPCOMING_RE.search(text))
-    m = _LENGTH_RE.search(text)
+    video_details = data.get("videoDetails") or {}
+    if not video_details:
+        reason = data.get("playabilityStatus", {}).get("reason", "no videoDetails")
+        log.info("probe %s: video unavailable (%s)", video_id, reason)
+        return {"duration_s": None, "live": False, "upcoming": False}
+
+    live = bool(video_details.get("isLive"))
+    upcoming = bool(video_details.get("isUpcoming"))
+    length = video_details.get("lengthSeconds")
     # A currently-live broadcast reports lengthSeconds "0" -- not a real
     # duration, so treat live/upcoming as duration-unknown rather than 0s.
-    duration_s = int(m.group(1)) if m and not (live or upcoming) else None
+    duration_s = int(length) if length and not (live or upcoming) else None
 
     if duration_s is None and not live and not upcoming:
-        # Two very different situations produce the same "no length found"
-        # result -- tell them apart in the log so a genuinely gone video
-        # doesn't get mistaken for the scrape itself failing, or vice versa.
-        if unavail := _UNAVAILABLE_RE.search(text):
-            log.info("probe %s: video unavailable (%s)", video_id, unavail.group(1))
-        else:
-            # TEMPORARY: diagnosing a CI-only miss (2026-09-18) -- home
-            # connection gets lengthSeconds reliably, GitHub Actions runners
-            # get a same-size response without it. Dump enough to tell a
-            # consent/bot-check page apart from a differently-shaped but
-            # still genuine watch page, then remove once explained.
-            consent = "consent.youtube.com" in text or "Before you continue" in text
-            captcha = "recaptcha" in text.lower() or "unusual traffic" in text.lower()
-            idx = text.find("ytInitialPlayerResponse")
-            snippet = text[idx : idx + 200] if idx != -1 else "(marker not found at all)"
-            log.warning(
-                "probe %s: no lengthSeconds in a %d-byte 200 response "
-                "(consent=%s captcha=%s) -- snippet: %r",
-                video_id, len(text), consent, captcha, snippet,
-            )
+        log.warning(
+            "probe %s: videoDetails present but no usable lengthSeconds (%r)",
+            video_id, length,
+        )
 
     return {"duration_s": duration_s, "live": live, "upcoming": upcoming}
 
