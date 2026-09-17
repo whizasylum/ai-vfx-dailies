@@ -6,7 +6,7 @@
 <title>Dailies — Thursday 17 September 2026</title>
 <meta name="description" content="AI in VFX, image and video generation. Compiled Thursday 17 September 2026.">
 <meta name="robots" content="noindex, nofollow"><meta property="og:title" content="Dailies — Thursday 17 September 2026">
-<meta property="og:description" content="A quiet day dominated by arXiv paper noise and trailer/marketing filler; only a handful of items have real pipeline relevance.">
+<meta property="og:description" content="A quiet day: mostly research-paper noise and thin industry churn, with one real ecosystem update (MiniMax-H3 on ComfyUI) worth a look.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,18 +128,25 @@
 
   .stamp b { color: var(--ink); font-weight: 500; display: block; }
 
-  /* ---- timeline: jump to a previous day ------------------------------- */
+  /* ---- timeline: jump to any day, not just an earlier one ------------- */
 
   .timeline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .timeline-pills {
     display: flex;
     gap: 0.4rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 1.5rem;
     scrollbar-width: thin;
+    min-width: 0;
   }
 
-  .timeline a, .timeline .current {
+  .timeline-pills a, .timeline-pills .current {
     flex: none;
     font-family: var(--mono);
     font-size: 0.78rem;
@@ -153,16 +160,47 @@
     text-decoration: none;
   }
 
-  .timeline a:hover {
+  .timeline-pills a:hover {
     color: var(--ink);
     border-color: var(--rule);
   }
 
-  .timeline .current {
+  .timeline-pills .current {
     color: #16161a;
     background: rgba(255, 255, 255, 0.92);
     border-color: transparent;
     font-weight: 500;
+  }
+
+  /* Sit outside the scrollable pill strip so they never scroll out of
+     reach -- the whole reason the old version left you stuck on an old day
+     with no way forward except the browser's own Back button. */
+  .tl-arrow {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    font-family: var(--mono);
+    font-size: 1.05rem;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: var(--ink-dim);
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: color .12s ease, border-color .12s ease;
+  }
+
+  a.tl-arrow:hover {
+    color: var(--ink);
+    border-color: var(--rail-color, var(--ch-b));
+  }
+
+  .tl-arrow-disabled {
+    opacity: 0.28;
+    cursor: default;
   }
 
   /* ---- levels readout: the day at a glance ---------------------------
@@ -251,7 +289,7 @@
      with GPU acceleration disabled land here. */
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .story { background: var(--panel-solid); }
-    .timeline a, .timeline .current { background: var(--panel-solid); }
+    .timeline-pills a, .timeline-pills .current, .tl-arrow { background: var(--panel-solid); }
   }
 
   .story:hover {
@@ -451,6 +489,51 @@
     font-style: italic;
   }
 
+  /* A story Gemini watched frame-by-frame rather than one Claude clustered
+     from feed text -- tagged distinctly since the extra fields (what tools
+     chained together, what's actually transferable) are worth surfacing on
+     their own, not folded into body-text prose. */
+  .watched-badge {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    padding: 0.1rem 0.55rem;
+    margin-left: auto;
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0 0 0.8rem;
+    list-style: none;
+  }
+
+  .tools li {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--rail-color);
+    background: color-mix(in srgb, var(--rail-color) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--rail-color) 30%, transparent);
+    border-radius: 6px;
+    padding: 0.16rem 0.5rem;
+  }
+
+  .transferable {
+    font-family: var(--serif);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #d3d0cb;
+    margin: 0 0 0.9rem;
+    padding-left: 1.1rem;
+  }
+
+  .transferable li { margin-bottom: 0.3rem; }
+
   /* ---- empty + footer ------------------------------------------------ */
 
   .quiet {
@@ -506,130 +589,70 @@
     <h1 class="wordmark">Dailies<span>AI in VFX, image and video generation</span></h1>
     <div class="stamp">
       <b>Thursday 17 September 2026</b>
-      5 stories from 59 items
+      2 stories from 47 items
     </div>
   </header>
 
-  <nav class="timeline" aria-label="Previous days">
-    <span class="current" aria-current="page">Sep 17</span>    <a href="archive/2026-09-16.html">Sep 16</a>    <a href="archive/2026-09-15.html">Sep 15</a>    <a href="archive/2026-09-14.html">Sep 14</a>    <a href="archive/2026-09-13.html">Sep 13</a>    <a href="archive/2026-09-12.html">Sep 12</a>    <a href="archive/2026-09-11.html">Sep 11</a>    <a href="archive/2026-09-10.html">Sep 10</a>    <a href="archive/2026-09-09.html">Sep 9</a>    <a href="archive/2026-09-08.html">Sep 8</a>  </nav>
+  <nav class="timeline" aria-label="Day navigation">
+    <a class="tl-arrow tl-arrow-prev" href="archive/2026-09-16.html" aria-label="Previous day" title="Previous day (←)">‹</a>
+    <div class="timeline-pills">
+      <span class="current" aria-current="page">Sep 17</span>      <a href="archive/2026-09-16.html">Sep 16</a>      <a href="archive/2026-09-15.html">Sep 15</a>      <a href="archive/2026-09-14.html">Sep 14</a>      <a href="archive/2026-09-13.html">Sep 13</a>      <a href="archive/2026-09-12.html">Sep 12</a>      <a href="archive/2026-09-11.html">Sep 11</a>      <a href="archive/2026-09-10.html">Sep 10</a>      <a href="archive/2026-09-09.html">Sep 9</a>      <a href="archive/2026-09-08.html">Sep 8</a>    </div>
+    <span class="tl-arrow tl-arrow-next tl-arrow-disabled" aria-hidden="true">›</span>
+  </nav>
 
   <section class="levels" aria-label="Distribution of today's stories by category">
-    <div class="levels-bar">      <div style="background:#d9484a;flex:3"
-           title="Models &amp; tools: 3"></div>      <div style="background:#4e7fd0;flex:2"
-           title="Industry: 2"></div>    </div>
-    <div class="levels-key">      <span><i style="background:#d9484a"></i><b>3</b> models &amp; tools</span>      <span><i style="background:#4e7fd0"></i><b>2</b> industry</span>    </div>
-<p class="verdict">A quiet day dominated by arXiv paper noise and trailer/marketing filler; only a handful of items have real pipeline relevance.</p>  </section>
+    <div class="levels-bar">      <div style="background:#d9484a;flex:2"
+           title="Models &amp; tools: 2"></div>    </div>
+    <div class="levels-key">      <span><i style="background:#d9484a"></i><b>2</b> models &amp; tools</span>    </div>
+<p class="verdict">A quiet day: mostly research-paper noise and thin industry churn, with one real ecosystem update (MiniMax-H3 on ComfyUI) worth a look.</p>  </section>
 
-  <main class="reel">    <article class="story" id="c634ff943f" style="--rail-color:#d9484a">
+  <main class="reel">    <article class="story" id="146e0e85d2" style="--rail-color:#d9484a">
       <div class="thumb thumb-empty" aria-hidden="true"><span>R</span></div>
       <div class="story-body">
         <div class="tag">
           <b>R</b>
           <i>01</i>
         </div>
-        <h2 class="headline"><a href="https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.36.0" target="_blank" rel="noopener">ComfyUI v0.36.0 released with new model blueprints and partner node updates</a></h2>
-<p class="why">Studios running ComfyUI pipelines should update to pick up node and VRAM fixes.</p>        <p class="body-text">ComfyUI&#39;s latest release reorganizes subgraph categories, adds new model blueprints, bumps AMD Windows VRAM quota to 4TB, and adds partner nodes for Microsoft mai-image-2.6 and Gemini 3.8 Flash. Also drops dead ROCm triton code. Open source, free to deploy. Incremental but steady maintenance release rather than a major feature drop.</p>
-        <ul class="sources">          <li><a href="https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.36.0" target="_blank" rel="noopener"
-                 class="">ComfyUI</a></li>        </ul>
+        <h2 class="headline"><a href="https://huggingface.co/TaoLiveAIGC/TaoMate-H3" target="_blank" rel="noopener">MiniMax-H3 video model gets a ComfyUI-native community fork with LoRA and FLF support</a></h2>
+<p class="why">If the licence checks out, this is a controllable open video model you could actually wire into a ComfyUI pipeline.</p>        <p class="body-text">TaoLiveAIGC has published TaoMate-H3 on Hugging Face, a MiniMax-H3-based text-to-video model tagged for ComfyUI workflows including LoRA, first/last-frame conditioning, and streaming. Licence listed as &#34;other&#34; (not standard permissive), so check terms before client use. 527 downloads, updated as of Sep 17. This follows the broader trend of MiniMax-H3 gaining ComfyUI-native tooling reported this week.</p>
+        <ul class="sources">          <li><a href="https://huggingface.co/TaoLiveAIGC/TaoMate-H3" target="_blank" rel="noopener"
+                 class="">HF text-to-video</a></li>        </ul>
         <div class="actions">
-          <button type="button" class="up" data-sid="c634ff943f" data-vote="+1"
+          <button type="button" class="up" data-sid="146e0e85d2" data-vote="+1"
                   title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="c634ff943f" data-vote="-1"
+          <button type="button" class="down" data-sid="146e0e85d2" data-vote="-1"
                   title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="c634ff943f">Copy link</button>
+          <button type="button" class="copy" data-anchor="146e0e85d2">Copy link</button>
         </div>
       </div>
-    </article>    <article class="story" id="e246306113" style="--rail-color:#d9484a">
-      <div class="thumb thumb-empty" aria-hidden="true"><span>R</span></div>
+    </article>    <article class="story" id="f5b38c69fb" style="--rail-color:#d9484a">
+      <div class="thumb">
+<a href="https://blog.chaos.com/corona-15-my-3-key-features" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">        <img src="https://blog.chaos.com/hubfs/Ciro-corona15-hero.jpg" alt="" loading="lazy" data-fallback-tried="0">
+</a>      </div>
       <div class="story-body">
         <div class="tag">
           <b>R</b>
           <i>02</i>
         </div>
-        <h2 class="headline"><a href="https://huggingface.co/nvidia/Cosmos3-Super-Image2Video" target="_blank" rel="noopener">NVIDIA ships Cosmos3-Super-Image2Video on Hugging Face</a></h2>
-<p class="why">Licence is not standard-permissive, so verify terms before touching client work.</p>        <p class="body-text">NVIDIA published Cosmos3-Super-Image2Video, an image-to-video model on Hugging Face under a custom (non-permissive, &#39;other&#39;) licence. It has seen significant uptake already, with 47,699 downloads and 155 likes since first publication in May, updated this week. Integrates with diffusers, vllm-omni and sglang-diffusion stacks. Licence terms need checking before any client-facing use.</p>
-        <ul class="sources">          <li><a href="https://huggingface.co/nvidia/Cosmos3-Super-Image2Video" target="_blank" rel="noopener"
-                 class="">HF image-to-video</a></li>        </ul>
+        <h2 class="headline"><a href="https://blog.chaos.com/corona-15-my-3-key-features" target="_blank" rel="noopener">Chaos previews three new features in Corona 15</a></h2>
+<p class="why">Renderer update relevant to anyone bridging Houdini/Karma output with Chaos tools, but too thin to act on yet.</p>        <p class="body-text">A Chaos blog post highlights three upcoming Corona 15 features touching lighting, AI-assisted creative tools, and interactivity, framed as workflow-level changes rather than incremental tweaks. No release date, pricing, or technical spec given beyond marketing framing. Worth a second look once Chaos publishes actual documentation or a release note with specifics.</p>
+        <ul class="sources">          <li><a href="https://blog.chaos.com/corona-15-my-3-key-features" target="_blank" rel="noopener"
+                 class="">Chaos</a></li>        </ul>
         <div class="actions">
-          <button type="button" class="up" data-sid="e246306113" data-vote="+1"
+          <button type="button" class="up" data-sid="f5b38c69fb" data-vote="+1"
                   title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="e246306113" data-vote="-1"
+          <button type="button" class="down" data-sid="f5b38c69fb" data-vote="-1"
                   title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="e246306113">Copy link</button>
+          <button type="button" class="copy" data-anchor="f5b38c69fb">Copy link</button>
         </div>
-      </div>
-    </article>    <article class="story" id="5ab3f45206" style="--rail-color:#d9484a">
-      <div class="thumb thumb-empty" aria-hidden="true"><span>R</span></div>
-      <div class="story-body">
-        <div class="tag">
-          <b>R</b>
-          <i>03</i>
-        </div>
-        <h2 class="headline"><a href="https://www.cgchannel.com/2026/09/check-out-free-maya-animation-productivity-toolset-keyflow" target="_blank" rel="noopener">Free Maya toolset KeyFlow adds animation review tool</a></h2>
-<p class="why">A free, no-cost addition to a Maya animation toolkit worth a quick trial.</p>        <p class="body-text">Games animator Sebastian Jaksan released KeyFlow, a free Maya animation productivity add-on, alongside KeyFlow Studio, a lightweight standalone shot review tool. No pricing or licence complications since it is free; details on feature scope are limited to the announcement itself.</p>
-        <ul class="sources">          <li><a href="https://www.cgchannel.com/2026/09/check-out-free-maya-animation-productivity-toolset-keyflow" target="_blank" rel="noopener"
-                 class="">CG Channel</a></li>        </ul>
-        <div class="actions">
-          <button type="button" class="up" data-sid="5ab3f45206" data-vote="+1"
-                  title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="5ab3f45206" data-vote="-1"
-                  title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="5ab3f45206">Copy link</button>
-        </div>
-      </div>
-    </article>    <article class="story" id="b0133a126e" style="--rail-color:#4e7fd0">
-      <div class="thumb">
-<a href="https://www.awn.com/news/james-camerons-lightstorm-vision-acquires-outsyders-3d-conversion-studio" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">        <img src="https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/lightstorm-outsyders_burdick-cameron-becker-1280.jpg?itok=N4toV1A_" alt="" loading="lazy" data-fallback-tried="0">
-</a>      </div>
-      <div class="story-body">
-        <div class="tag">
-          <b>B</b>
-          <i>04</i>
-        </div>
-        <h2 class="headline"><a href="https://www.awn.com/news/james-camerons-lightstorm-vision-acquires-outsyders-3d-conversion-studio" target="_blank" rel="noopener">Lightstorm Vision acquires Outsyders, folding ML stereo conversion into native 3D pipeline</a></h2>
-<p class="why">Signals ML-based stereo conversion is moving from vendor tool to owned in-house pipeline.</p>        <p class="body-text">James Cameron&#39;s Lightstorm Vision has acquired Outsyders, the studio whose machine-learning stereoscopic conversion pipeline turned Disney&#39;s 2D &#39;Lilo &amp; Stitch&#39; into 3D in eight weeks. The deal combines that ML conversion tech with Lightstorm&#39;s native 3D capture into one end-to-end production system, though no technical specifics on the pipeline integration were disclosed.
-</p>
-        <ul class="sources">          <li><a href="https://www.awn.com/news/james-camerons-lightstorm-vision-acquires-outsyders-3d-conversion-studio" target="_blank" rel="noopener"
-                 class="">Animation World Network</a></li>        </ul>
-        <div class="actions">
-          <button type="button" class="up" data-sid="b0133a126e" data-vote="+1"
-                  title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="b0133a126e" data-vote="-1"
-                  title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="b0133a126e">Copy link</button>
-        </div>
-      </div>
-    </article>    <article class="story" id="ea563b0a14" style="--rail-color:#4e7fd0">
-      <div class="thumb">
-<a href="https://80.lv/articles/texlab-packing-pbr-maps-inside-ue5-without-lying-about-the-preview" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">        <img src="https://cdn.80.lv/api/upload/post/41607/images/6aaaab95a58b7/cover_800x800.jpg" alt="" loading="lazy" data-fallback-tried="0">
-</a>      </div>
-      <div class="story-body">
-        <div class="tag">
-          <b>B</b>
-          <i>05</i>
-        </div>
-        <h2 class="headline"><a href="https://80.lv/articles/texlab-packing-pbr-maps-inside-ue5-without-lying-about-the-preview" target="_blank" rel="noopener">texLab plugin packs PBR maps natively inside UE5 preview</a></h2>
-<p class="why">Extensible JSON schema means TDs can adapt it to studio-specific texture conventions.</p>        <p class="body-text">Pavel Kuzmenko detailed texLab, a native C++ Unreal Engine 5 plugin for packing PBR texture maps with an accurate in-editor preview, built on a JSON-based semantic database that pipeline TDs can extend. No pricing or availability details given beyond the developer walkthrough.</p>
-        <ul class="sources">          <li><a href="https://80.lv/articles/texlab-packing-pbr-maps-inside-ue5-without-lying-about-the-preview" target="_blank" rel="noopener"
-                 class="">80 Level</a></li>        </ul>
-        <div class="actions">
-          <button type="button" class="up" data-sid="ea563b0a14" data-vote="+1"
-                  title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="ea563b0a14" data-vote="-1"
-                  title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="ea563b0a14">Copy link</button>
-        </div>
+        <p class="low-confidence">Single unverified source. Treat as a rumour until confirmed.</p>
       </div>
     </article>  </main>
 
   <footer>
-    Compiled 2026-09-17 08:51 NZST · 41/42 sources responded · 99 ratings so far
+    Compiled 2026-09-17 23:59 NZST · 42/42 sources responded · 116 ratings so far
       (7 sources reweighted,
-       75 terms learned) · 1 failed    <details>
-      <summary>1 sources failed this run</summary>
-      <ul>        <li>postPerspective — unparseable feed: &lt;urlopen error [Errno 110] Connection timed out&gt;</li>      </ul>
-    </details>
-  </footer>
+       75 terms learned)  </footer>
 
 </div>
 <script>
@@ -713,6 +736,20 @@
           btn.textContent = 'Try again';
         });
     });
+  });
+
+  /* daynav: left/right arrow keys walk the timeline, same targets as the
+     prev/next buttons -- querying the DOM rather than duplicating hrefs
+     here means this stays correct without edits if the markup changes. */
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var selector = e.key === 'ArrowLeft' ? '.tl-arrow-prev[href]'
+                 : e.key === 'ArrowRight' ? '.tl-arrow-next[href]' : null;
+    if (!selector) return;
+    var link = document.querySelector(selector);
+    if (link) { e.preventDefault(); location.href = link.getAttribute('href'); }
   });
 </script>
 </body>

@@ -826,5 +826,53 @@
    "studio-specific"
   ],
   "at": "2026-09-16T20:51:08.984622+00:00"
+ },
+ "146e0e85d2": {
+  "headline": "MiniMax-H3 video model gets a ComfyUI-native community fork with LoRA and FLF support",
+  "sources": [
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "actually",
+   "checks",
+   "comfyui",
+   "comfyui-native",
+   "community",
+   "controllable",
+   "could",
+   "flf",
+   "fork",
+   "licence",
+   "lora",
+   "minimax-h3",
+   "open",
+   "pipeline."
+  ],
+  "at": "2026-09-17T11:59:40.248311+00:00"
+ },
+ "f5b38c69fb": {
+  "headline": "Chaos previews three new features in Corona 15",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "r",
+  "terms": [
+   "act",
+   "anyone",
+   "bridging",
+   "chaos",
+   "corona",
+   "features",
+   "houdini",
+   "karma",
+   "output",
+   "previews",
+   "relevant",
+   "renderer",
+   "thin",
+   "three"
+  ],
+  "at": "2026-09-17T11:59:40.248352+00:00"
  }
 }

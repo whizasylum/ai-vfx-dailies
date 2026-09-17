@@ -463,6 +463,20 @@
       });
     });
   });
+
+  /* daynav: left/right arrow keys walk the timeline, same targets as the
+     prev/next buttons -- querying the DOM rather than duplicating hrefs
+     here means this stays correct without edits if the markup changes. */
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var selector = e.key === 'ArrowLeft' ? '.tl-arrow-prev[href]'
+                 : e.key === 'ArrowRight' ? '.tl-arrow-next[href]' : null;
+    if (!selector) return;
+    var link = document.querySelector(selector);
+    if (link) { e.preventDefault(); location.href = link.getAttribute('href'); }
+  });
 </script>
 </body>
 </html>

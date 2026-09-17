@@ -2304,6 +2304,429 @@
    "channel": "r",
    "terms": [],
    "via": "page"
+  },
+  {
+   "story_id": "e246306113",
+   "at": "2026-09-17T11:58:59.522382+00:00",
+   "vote": 1,
+   "headline": "NVIDIA ships Cosmos3-Super-Image2Video on Hugging Face",
+   "sources": [
+    "HF image-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "before",
+    "client",
+    "cosmos3-super-image2video",
+    "face",
+    "hugging",
+    "licence",
+    "nvidia",
+    "standard-permissive",
+    "terms",
+    "touching",
+    "verify",
+    "work."
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "b0133a126e",
+   "at": "2026-09-17T11:58:59.643314+00:00",
+   "vote": 1,
+   "headline": "Lightstorm Vision acquires Outsyders, folding ML stereo conversion into native 3D pipeline",
+   "sources": [
+    "Animation World Network"
+   ],
+   "channel": "b",
+   "terms": [
+    "acquires",
+    "conversion",
+    "folding",
+    "in-house",
+    "lightstorm",
+    "ml-based",
+    "moving",
+    "native",
+    "outsyders",
+    "owned",
+    "pipeline",
+    "pipeline.",
+    "signals",
+    "stereo"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "c634ff943f",
+   "at": "2026-09-17T11:58:59.727003+00:00",
+   "vote": 1,
+   "headline": "ComfyUI v0.36.0 released with new model blueprints and partner node updates",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "blueprints",
+    "comfyui",
+    "fixes.",
+    "node",
+    "partner",
+    "pick",
+    "pipelines",
+    "running",
+    "should",
+    "studios",
+    "v0.36.0",
+    "vram"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "9ca1ea243f",
+   "at": "2026-09-17T11:58:59.837511+00:00",
+   "vote": 1,
+   "headline": "CG Channel roundup covers HDR Light Studio update, free Maya rigging toolset mGear, and Beeble's SwitchX VFX model",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "beeble",
+    "channel",
+    "check",
+    "covers",
+    "fit.",
+    "follow-up",
+    "free",
+    "hdr",
+    "light",
+    "maya",
+    "mgear",
+    "pipeline",
+    "rigging",
+    "roundup"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "1238ab7c39",
+   "at": "2026-09-17T11:58:59.922547+00:00",
+   "vote": 1,
+   "headline": "LTX-2.5 22B gets an IC-LoRA for video colorization and clean-plate work",
+   "sources": [
+    "HF Lightricks (LTX)"
+   ],
+   "channel": "r",
+   "terms": [
+    "clean-plate",
+    "colorization",
+    "ic-lora",
+    "licence",
+    "lora",
+    "ltx-2.5",
+    "open",
+    "quality",
+    "real-world",
+    "terms",
+    "unverified.",
+    "vfx-tagged",
+    "video",
+    "work"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "f074f3fc73",
+   "at": "2026-09-17T11:59:00.020983+00:00",
+   "vote": 1,
+   "headline": "SuperSplat Editor 3.0 ships with major performance overhaul for large Gaussian splats",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "browser-based",
+    "editor",
+    "free",
+    "gaussian",
+    "large",
+    "major",
+    "millions",
+    "overhaul",
+    "performance",
+    "pipelines.",
+    "points",
+    "real",
+    "scales",
+    "splat"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "ac9ccf2f36",
+   "at": "2026-09-17T11:59:00.116932+00:00",
+   "vote": 1,
+   "headline": "GSComplete and CVT-GS advance Gaussian splat completion and simplification",
+   "sources": [
+    "arXiv cs.CV (generative video)",
+    "arXiv cs.CV (generative video)"
+   ],
+   "channel": "g",
+   "terms": [
+    "advance",
+    "assets.",
+    "being",
+    "blockers",
+    "completion",
+    "compression",
+    "cvt-gs",
+    "deployable",
+    "gaussian",
+    "gscomplete",
+    "scans",
+    "simplification",
+    "splat",
+    "stopping"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "15f4cf84fd",
+   "at": "2026-09-17T11:59:00.202896+00:00",
+   "vote": 1,
+   "headline": "Blackmagic ships free Fusion Studio 21.1 with new deep-comp and lens-correction updates",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "affect",
+    "already",
+    "blackmagic",
+    "changes",
+    "comp",
+    "deep-comp",
+    "directly",
+    "free",
+    "fusion",
+    "fusion.",
+    "lens-correction",
+    "studio",
+    "workflows"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "c4543b629d",
+   "at": "2026-09-17T11:59:00.294436+00:00",
+   "vote": 1,
+   "headline": "ComfyUI v0.35.0 adds WAN3-Prime support, drops Veo 2/3, fixes HEVC remux",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "before",
+    "churn",
+    "codec",
+    "comfyui",
+    "drops",
+    "fixes",
+    "hevc",
+    "need",
+    "partner-node",
+    "production",
+    "remux",
+    "running",
+    "studios",
+    "support"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "13f91b1395",
+   "at": "2026-09-17T11:59:00.405321+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
+   "sources": [
+    "HF text-to-video",
+    "HF image-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "checks",
+    "comfyui",
+    "comfyui-native",
+    "controlnet",
+    "could",
+    "ecosystem",
+    "evaluated",
+    "flf",
+    "gains",
+    "licence",
+    "loras",
+    "minimax-h3",
+    "open",
+    "out."
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "13f91b1395",
+   "at": "2026-09-17T11:59:00.497910+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
+   "sources": [
+    "HF text-to-video",
+    "HF image-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video",
+    "HF text-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "checks",
+    "comfyui",
+    "comfyui-native",
+    "controlnet",
+    "could",
+    "ecosystem",
+    "evaluated",
+    "flf",
+    "gains",
+    "licence",
+    "loras",
+    "minimax-h3",
+    "open",
+    "out."
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "c4543b629d",
+   "at": "2026-09-17T11:59:00.588573+00:00",
+   "vote": 1,
+   "headline": "ComfyUI v0.35.0 adds WAN3-Prime support, drops Veo 2/3, fixes HEVC remux",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "before",
+    "churn",
+    "codec",
+    "comfyui",
+    "drops",
+    "fixes",
+    "hevc",
+    "need",
+    "partner-node",
+    "production",
+    "remux",
+    "running",
+    "studios",
+    "support"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "2bc118ce97",
+   "at": "2026-09-17T11:59:00.684194+00:00",
+   "vote": 1,
+   "headline": "Blackmagic ships DaVinci Resolve 21.1",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "blackmagic",
+    "color",
+    "davinci",
+    "free",
+    "immediately.",
+    "pipelines",
+    "resolve",
+    "shift",
+    "studio",
+    "test"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "2bc118ce97",
+   "at": "2026-09-17T11:59:00.766098+00:00",
+   "vote": 1,
+   "headline": "Blackmagic ships DaVinci Resolve 21.1",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "blackmagic",
+    "color",
+    "davinci",
+    "free",
+    "immediately.",
+    "pipelines",
+    "resolve",
+    "shift",
+    "studio",
+    "test"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "5a4dfbf476",
+   "at": "2026-09-17T11:59:00.872192+00:00",
+   "vote": 1,
+   "headline": "Pro Particles multi-physics toolkit released for Blender",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "b",
+   "terms": [
+    "blender",
+    "caches",
+    "consume.",
+    "exports",
+    "exposes",
+    "houdini",
+    "later",
+    "multi-physics",
+    "only",
+    "particles",
+    "pro",
+    "relevant",
+    "toolkit",
+    "usd-compatible"
+   ],
+   "via": "page"
+  },
+  {
+   "story_id": "0123456789",
+   "at": "2026-09-17T11:59:00.961728+00:00",
+   "vote": -1,
+   "headline": "rating -1 0123456789",
+   "sources": [],
+   "channel": "r",
+   "terms": [],
+   "via": "page"
+  },
+  {
+   "story_id": "abcdef0123",
+   "at": "2026-09-17T11:59:01.065895+00:00",
+   "vote": 1,
+   "headline": "rating +1 abcdef0123",
+   "sources": [],
+   "channel": "r",
+   "terms": [],
+   "via": "page"
   }
  ]
 }
