@@ -452,6 +452,51 @@
     font-style: italic;
   }
 
+  /* A story Gemini watched frame-by-frame rather than one Claude clustered
+     from feed text -- tagged distinctly since the extra fields (what tools
+     chained together, what's actually transferable) are worth surfacing on
+     their own, not folded into body-text prose. */
+  .watched-badge {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    padding: 0.1rem 0.55rem;
+    margin-left: auto;
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0 0 0.8rem;
+    list-style: none;
+  }
+
+  .tools li {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--rail-color);
+    background: color-mix(in srgb, var(--rail-color) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--rail-color) 30%, transparent);
+    border-radius: 6px;
+    padding: 0.16rem 0.5rem;
+  }
+
+  .transferable {
+    font-family: var(--serif);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #d3d0cb;
+    margin: 0 0 0.9rem;
+    padding-left: 1.1rem;
+  }
+
+  .transferable li { margin-bottom: 0.3rem; }
+
   /* ---- empty + footer ------------------------------------------------ */
 
   .quiet {
@@ -554,6 +599,7 @@
         <div class="tag">
           <b>{{ s.channel|upper }}</b>
           <i>{{ '%02d'|format(loop.index) }}</i>
+          {% if s.watched %}<span class="watched-badge">watched by Gemini</span>{% endif %}
         </div>
         <h2 class="headline">
           {%- if s.sources -%}
@@ -564,6 +610,20 @@
         </h2>
         {% if s.why %}<p class="why">{{ s.why }}</p>{% endif %}
         <p class="body-text">{{ s.body }}</p>
+        {% if s.tools_and_platforms %}
+        <ul class="tools">
+          {%- for t in s.tools_and_platforms %}
+          <li title="{{ t.used_for }}">{{ t.name }}</li>
+          {%- endfor %}
+        </ul>
+        {% endif %}
+        {% if s.whats_transferable %}
+        <ul class="transferable">
+          {%- for point in s.whats_transferable %}
+          <li>{{ point }}</li>
+          {%- endfor %}
+        </ul>
+        {% endif %}
         <ul class="sources">
           {%- for src in s.sources %}
           <li><a href="{{ src.url }}" target="_blank" rel="noopener"

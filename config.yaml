@@ -23,6 +23,31 @@ model:
   # ate the whole budget before the visible answer started.
   max_tokens: 16000
 
+# Watch YouTube videos directly with Gemini rather than judging them by feed
+# metadata alone. Catches the videos where the *creator* wasn't making
+# anything VFX-related but the workflow underneath is -- a game devlog that
+# happens to chain three AI tools together, say -- which the keyword pass
+# above would score near zero and never surface. Needs GEMINI_API_KEY.
+video_watch:
+  enabled: true
+  model: "models/gemini-3-flash-preview"
+  # Publish if either axis clears this bar. See the JSON contract in
+  # digest/watch.py for what topic_relevance and transferable_craft mean.
+  publish_threshold: 6
+  # Below this, it's a short or a trailer -- not enough runtime to extract a
+  # workflow from.
+  min_duration_seconds: 90
+  # Above this it's not watched unless the channel is marked
+  # `long_form_ok: true` in sources.yaml.
+  max_duration_minutes: 40
+  # Cuts token cost on long videos. Best-effort -- see the comment in
+  # watch.py if this stops having any effect after a google-genai upgrade.
+  media_resolution_low_after_minutes: 20
+  # Gemini's free tier caps at 8h of YouTube video *duration* processed per
+  # day, not per call -- track cumulative minutes, not video count. Raise
+  # this once billing is turned on for the project.
+  daily_quota_minutes: 480
+
 # Your interest profile, in plain language. This is fed to the summariser as
 # editorial direction -- it decides what leads and what gets cut. Rewrite it
 # the way you'd brief a researcher.

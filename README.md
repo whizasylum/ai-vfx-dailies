@@ -9,17 +9,30 @@ Designed to be read in under ten minutes and then closed.
 ## How it works
 
 ```
-sources.yaml ──▶ collect ──▶ dedupe ──▶ keyword score ──▶ shortlist (60)
-                                                              │
-                                                              ▼
-                    docs/index.html  ◀── render ◀── Claude (cluster + write)
-                    Discord webhook                            │
-                                                        state/seen.json
+sources.yaml ──▶ collect ──┬─▶ dedupe ──▶ keyword score ──▶ shortlist (60)
+                            │                                    │
+                            │                                    ▼
+                            │       docs/index.html  ◀── render ◀── Claude (cluster + write)
+                            │       Discord webhook                            │
+                            │                                          state/seen.json
+                            │
+                            └─▶ (youtube items) ──▶ Gemini watch ──▶ publish or log
+                                                                          │
+                                                                  state/watched.json
 ```
 
 The keyword pass exists to control cost. Sixty sources produce several hundred
 items a day; only the top 60 ever reach the API, which is roughly 25-30k input
 tokens per run. At current Sonnet pricing that's a few cents a day.
+
+YouTube items skip the keyword pass entirely. A title like "I made my dream
+game using Astra 6, Blender and Unity" scores near zero on VFX keywords even
+when the video itself is a masterclass in chaining AI tools together --
+`digest/watch.py` hands Gemini the actual video (frames + audio, no download)
+and judges the *method*, not the title. See the `video_watch` block in
+`config.yaml` for the publish threshold, duration caps, and daily quota, and
+`python -m digest.cli watch --url <URL>` to try it on one video without
+touching any state.
 
 ## Setup
 
@@ -35,6 +48,7 @@ Settings → Secrets and variables → Actions:
 | Secret | Where to get it |
 | --- | --- |
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API keys |
+| `GEMINI_API_KEY` | aistudio.google.com → Get API key. Optional -- the video watcher (`digest/watch.py`) just skips itself if unset. |
 | `DISCORD_BOT_TOKEN` | discord.com/developers → New Application → Bot → Reset Token |
 | `DISCORD_CHANNEL_ID` | Discord → enable Developer Mode → right-click channel → Copy Channel ID |
 | `DISCORD_WEBHOOK_URL` | Optional fallback. Channel settings → Integrations → Webhooks |

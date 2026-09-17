@@ -3,6 +3,8 @@
     python -m digest.cli run          full pipeline, writes page + posts Discord
     python -m digest.cli run --dry    collect and score only, no API spend
     python -m digest.cli validate     check every source responds
+    python -m digest.cli watch --url URL   test the Gemini video watcher on
+                                            one or more videos, no state writes
 """
 
 from __future__ import annotations
@@ -10,13 +12,14 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import yaml
 
-from . import collect, feedback, render, score, summarize
+from . import collect, feedback, render, score, summarize, watch
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -102,6 +105,13 @@ def cmd_run(args: argparse.Namespace) -> int:
     )
     print(f"collected {len(items)} raw items", file=sys.stderr)
 
+    # Videos take a separate path entirely: Gemini judges each one on its own
+    # merits and either publishes or logs it to state/watched.json, rather
+    # than competing for the keyword-scored shortlist. Pulled out here so
+    # the two pipelines never see each other's items.
+    video_items = [it for it in items if it.extra.get("video")]
+    items = [it for it in items if not it.extra.get("video")]
+
     seen = score.load_seen(seen_path)
     items = score.drop_seen(items, seen)
     items = score.dedupe(items)
@@ -118,7 +128,11 @@ def cmd_run(args: argparse.Namespace) -> int:
             hits = ",".join(it.extra.get("keyword_hits", [])[:4])
             print(f"{it.score:7.2f}  [{it.channel}] {it.source[:22]:22}  "
                   f"{it.title[:70]}  ({hits})")
-        print(f"\n{len(candidates)} candidates, no API call made.", file=sys.stderr)
+        print(
+            f"\n{len(candidates)} candidates, {len(video_items)} videos pending "
+            f"watch, no API call made.",
+            file=sys.stderr,
+        )
         return 0
 
     examples = None
@@ -128,6 +142,23 @@ def cmd_run(args: argparse.Namespace) -> int:
         )
     result = summarize.summarize(candidates, config, examples)
     print(f"model returned {len(result.get('stories', []))} stories", file=sys.stderr)
+
+    long_form_channels = {
+        s["name"] for s in sources
+        if s.get("type") == "youtube" and s.get("long_form_ok")
+    }
+    video_stories, video_stats = watch.run(
+        video_items, config, long_form_channels, state_dir, examples
+    )
+    print(
+        f"videos: {video_stats['watched']} watched, "
+        f"{video_stats['published']} published, "
+        f"{video_stats['rejected']} rejected, "
+        f"{video_stats['deferred']} deferred, "
+        f"{video_stats['errors']} errors",
+        file=sys.stderr,
+    )
+    result["stories"] = result.get("stories", []) + video_stories
 
     # Record what each story was, so a rating from the page can be attributed
     # back to its sources and terms later.
@@ -161,11 +192,63 @@ def cmd_run(args: argparse.Namespace) -> int:
                 "candidates": len(candidates),
                 "stories": len(result.get("stories", [])),
                 "usage": result.get("usage", {}),
+                "video_watch": video_stats,
                 "problems": problems,
             },
             indent=2,
         )
     )
+    return 0
+
+
+def cmd_watch(args: argparse.Namespace) -> int:
+    """Try the watcher on specific videos without touching any state.
+
+    For testing the Gemini call and scoring on real videos -- e.g. one that
+    the keyword pipeline would never surface -- before trusting it to run
+    unattended. Never writes to state/watched.json and never joins a digest.
+    """
+    config, _ = _load()
+    cfg = config.get("video_watch", {})
+    if not os.environ.get("GEMINI_API_KEY"):
+        print("GEMINI_API_KEY is not set.", file=sys.stderr)
+        return 1
+
+    for url in args.url:
+        video_id = watch.video_id_from_url(url)
+        if not video_id:
+            print(f"\n{url}\n  could not extract a video id, skipping")
+            continue
+
+        meta = watch.probe_metadata(video_id)
+        print(f"\n{url}  ({video_id})")
+        print(f"  metadata: {meta}")
+
+        if meta is None:
+            print("  probe failed, skipping the Gemini call")
+            continue
+        action, reason = watch._gate(meta, cfg, long_form_ok=args.long_form)
+        print(f"  mechanical gate: {action}" + (f" -- {reason}" if reason else ""))
+        if action != "go" and not args.force:
+            print("  (pass --force to call Gemini anyway)")
+            continue
+
+        try:
+            verdict = watch.watch_video(
+                url, video_id, args.channel, cfg, meta.get("duration_s"),
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(f"  gemini call failed: {exc}")
+            continue
+
+        print(json.dumps(verdict, indent=2))
+        threshold = float(cfg.get("publish_threshold", 6))
+        topic = float(verdict.get("topic_relevance", 0) or 0)
+        craft = float(verdict.get("transferable_craft", 0) or 0)
+        published = topic >= threshold or craft >= threshold
+        print(f"  => {'PUBLISH' if published else 'cut'} "
+              f"(topic={topic:.0f} craft={craft:.0f}, threshold={threshold:.0f})")
+
     return 0
 
 
@@ -232,6 +315,19 @@ def main() -> int:
 
     val = sub.add_parser("validate", help="check every source still responds")
     val.set_defaults(func=cmd_validate)
+
+    wt = sub.add_parser(
+        "watch", help="test the Gemini video watcher on specific URLs"
+    )
+    wt.add_argument("--url", action="append", required=True,
+                     help="a YouTube video URL; repeat for more than one")
+    wt.add_argument("--channel", default="test",
+                     help="channel name to show the model (cosmetic only)")
+    wt.add_argument("--long-form", action="store_true",
+                     help="treat the video as exempt from the duration cap")
+    wt.add_argument("--force", action="store_true",
+                     help="call Gemini even if the mechanical gate would skip it")
+    wt.set_defaults(func=cmd_watch)
 
     fb = sub.add_parser("feedback", help="show what your ratings have learned")
     fb.add_argument("--offline", action="store_true",
