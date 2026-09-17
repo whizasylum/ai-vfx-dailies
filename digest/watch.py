@@ -171,9 +171,26 @@ def video_id_from_url(url: str) -> str | None:
     return vid if vid and _VIDEO_ID_RE.match(vid) else None
 
 
+_UNAVAILABLE_RE = re.compile(r'"status"\s*:\s*"ERROR"[^}]*"reason"\s*:\s*"([^"]+)"')
+
+# YouTube's bot-detection treats a plain non-browser UA from a datacenter IP
+# (GitHub Actions runners included) more aggressively than the same request
+# from a residential/office IP -- observed here as a 200 response with no
+# lengthSeconds at all for a genuinely public, available video, from the
+# exact request that works fine from a normal connection. A realistic
+# desktop Chrome UA is the standard mitigation for this specific request;
+# collect.py's channel-id resolver hits a different page (the channel page,
+# not a watch page) and hasn't shown the symptom, so this is scoped to just
+# the watch-page probe rather than changed repo-wide.
+_BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+)
+
+
 def _client() -> httpx.Client:
     return httpx.Client(
-        timeout=TIMEOUT, follow_redirects=True, headers={"User-Agent": USER_AGENT}
+        timeout=TIMEOUT, follow_redirects=True, headers={"User-Agent": _BROWSER_UA}
     )
 
 
@@ -201,6 +218,20 @@ def probe_metadata(video_id: str) -> dict[str, Any] | None:
     # A currently-live broadcast reports lengthSeconds "0" -- not a real
     # duration, so treat live/upcoming as duration-unknown rather than 0s.
     duration_s = int(m.group(1)) if m and not (live or upcoming) else None
+
+    if duration_s is None and not live and not upcoming:
+        # Two very different situations produce the same "no length found"
+        # result -- tell them apart in the log so a genuinely gone video
+        # doesn't get mistaken for the scrape itself failing, or vice versa.
+        if unavail := _UNAVAILABLE_RE.search(text):
+            log.info("probe %s: video unavailable (%s)", video_id, unavail.group(1))
+        else:
+            log.warning(
+                "probe %s: no lengthSeconds in a %d-byte 200 response -- "
+                "YouTube may be serving a different page to this IP/UA",
+                video_id, len(text),
+            )
+
     return {"duration_s": duration_s, "live": live, "upcoming": upcoming}
 
 
