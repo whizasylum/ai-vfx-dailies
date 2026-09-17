@@ -129,18 +129,25 @@
 
   .stamp b { color: var(--ink); font-weight: 500; display: block; }
 
-  /* ---- timeline: jump to a previous day ------------------------------- */
+  /* ---- timeline: jump to any day, not just an earlier one ------------- */
 
   .timeline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .timeline-pills {
     display: flex;
     gap: 0.4rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 1.5rem;
     scrollbar-width: thin;
+    min-width: 0;
   }
 
-  .timeline a, .timeline .current {
+  .timeline-pills a, .timeline-pills .current {
     flex: none;
     font-family: var(--mono);
     font-size: 0.78rem;
@@ -154,16 +161,47 @@
     text-decoration: none;
   }
 
-  .timeline a:hover {
+  .timeline-pills a:hover {
     color: var(--ink);
     border-color: var(--rule);
   }
 
-  .timeline .current {
+  .timeline-pills .current {
     color: #16161a;
     background: rgba(255, 255, 255, 0.92);
     border-color: transparent;
     font-weight: 500;
+  }
+
+  /* Sit outside the scrollable pill strip so they never scroll out of
+     reach -- the whole reason the old version left you stuck on an old day
+     with no way forward except the browser's own Back button. */
+  .tl-arrow {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    font-family: var(--mono);
+    font-size: 1.05rem;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: var(--ink-dim);
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: color .12s ease, border-color .12s ease;
+  }
+
+  a.tl-arrow:hover {
+    color: var(--ink);
+    border-color: var(--rail-color, var(--ch-b));
+  }
+
+  .tl-arrow-disabled {
+    opacity: 0.28;
+    cursor: default;
   }
 
   /* ---- levels readout: the day at a glance ---------------------------
@@ -252,7 +290,7 @@
      with GPU acceleration disabled land here. */
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .story { background: var(--panel-solid); }
-    .timeline a, .timeline .current { background: var(--panel-solid); }
+    .timeline-pills a, .timeline-pills .current, .tl-arrow { background: var(--panel-solid); }
   }
 
   .story:hover {
@@ -557,11 +595,15 @@
   </header>
 
   {% if archive %}
-  <nav class="timeline" aria-label="Previous days">
-    <span class="current" aria-current="page">{{ date_short|default(date_iso) }}</span>
-    {%- for a in archive %}
-    <a href="{{ a.href }}">{{ a.label }}</a>
-    {%- endfor %}
+  <nav class="timeline" aria-label="Day navigation">
+    {{ tl_arrow('prev', tl_prev_href)|safe }}
+    <div class="timeline-pills">
+      <span class="current" aria-current="page">{{ date_short|default(date_iso) }}</span>
+      {%- for a in archive %}
+      <a href="{{ a.href }}">{{ a.label }}</a>
+      {%- endfor %}
+    </div>
+    {{ tl_arrow('next', tl_next_href)|safe }}
   </nav>
   {% endif %}
 
@@ -755,6 +797,20 @@
           btn.textContent = 'Try again';
         });
     });
+  });
+
+  /* daynav: left/right arrow keys walk the timeline, same targets as the
+     prev/next buttons -- querying the DOM rather than duplicating hrefs
+     here means this stays correct without edits if the markup changes. */
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var selector = e.key === 'ArrowLeft' ? '.tl-arrow-prev[href]'
+                 : e.key === 'ArrowRight' ? '.tl-arrow-next[href]' : null;
+    if (!selector) return;
+    var link = document.querySelector(selector);
+    if (link) { e.preventDefault(); location.href = link.getAttribute('href'); }
   });
 </script>
 </body>

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import os
+import re
 import time
 from datetime import datetime
 from pathlib import Path
@@ -28,12 +29,96 @@ DISCORD_API = "https://discord.com/api/v10"
 
 
 def _env(root: Path) -> Environment:
-    return Environment(
+    env = Environment(
         loader=FileSystemLoader(root / "templates"),
         autoescape=select_autoescape(["html"]),
         trim_blocks=True,
         lstrip_blocks=True,
     )
+    env.globals["tl_arrow"] = _arrow
+    return env
+
+
+# --------------------------------------------------------------------------
+# timeline prev/next -- shared between today's Jinja render and the daily
+# backfill pass over every other archived page still on disk (see
+# _backfill_timeline_nav below for why archived pages need patching at all).
+# --------------------------------------------------------------------------
+
+def _arrow(direction: str, href: str | None) -> str:
+    """One prev/next control. A plain function rather than template markup
+    so _backfill_timeline_nav can produce byte-identical output when patching
+    a page that isn't going through Jinja at all."""
+    glyph = "\N{SINGLE LEFT-POINTING ANGLE QUOTATION MARK}" if direction == "prev" \
+        else "\N{SINGLE RIGHT-POINTING ANGLE QUOTATION MARK}"
+    if not href:
+        return (
+            f'<span class="tl-arrow tl-arrow-{direction} tl-arrow-disabled" '
+            f'aria-hidden="true">{glyph}</span>'
+        )
+    label = "Previous day" if direction == "prev" else "Next day"
+    key = "\N{LEFTWARDS ARROW}" if direction == "prev" else "\N{RIGHTWARDS ARROW}"
+    return (
+        f'<a class="tl-arrow tl-arrow-{direction}" href="{href}" '
+        f'aria-label="{label}" title="{label} ({key})">{glyph}</a>'
+    )
+
+
+_TIMELINE_BLOCK_RE = re.compile(r'(<nav class="timeline"[^>]*>)([\s\S]*?)(</nav>)')
+_TL_ARROW_RE = re.compile(r'<(a|span) class="tl-arrow[^"]*"[^>]*>[\s\S]*?</\1>')
+_DAYNAV_SCRIPT_MARKER = "/* daynav:"
+_DAYNAV_SCRIPT = """
+  /* daynav: left/right arrow keys walk the timeline, same targets as the
+     prev/next buttons -- querying the DOM rather than duplicating hrefs
+     here means this stays correct without edits if the markup changes. */
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    var selector = e.key === 'ArrowLeft' ? '.tl-arrow-prev[href]'
+                 : e.key === 'ArrowRight' ? '.tl-arrow-next[href]' : null;
+    if (!selector) return;
+    var link = document.querySelector(selector);
+    if (link) { e.preventDefault(); location.href = link.getAttribute('href'); }
+  });
+"""
+
+
+def _backfill_timeline_nav(path: Path, prev_href: str | None, next_href: str | None) -> None:
+    """Refresh the prev/next controls on a page that already exists on disk.
+
+    Archived pages are immutable snapshots from the day they were generated,
+    and never had a "next day" link -- the next day genuinely didn't exist
+    yet when they were written, so the only way forward was the browser's
+    own Back button. Run daily against every kept archive file so each one's
+    arrows stay correct as newer days are added, without re-rendering
+    content that isn't stored anywhere outside the HTML itself.
+
+    Idempotent: strips whatever arrows and daynav script a previous run
+    already added before adding fresh ones, so re-running this daily never
+    nests or duplicates anything -- and it applies equally to the
+    pre-migration pages that never had arrows or the script at all.
+    """
+    if not path.exists():
+        return
+    html = path.read_text(encoding="utf-8")
+
+    def rebuild_nav(m: re.Match) -> str:
+        pills = _TL_ARROW_RE.sub("", m.group(2))
+        pills = pills.replace('<div class="timeline-pills">', "").replace("</div>", "")
+        return (
+            m.group(1)
+            + _arrow("prev", prev_href)
+            + f'<div class="timeline-pills">{pills.strip()}</div>'
+            + _arrow("next", next_href)
+            + m.group(3)
+        )
+
+    patched = _TIMELINE_BLOCK_RE.sub(rebuild_nav, html, count=1)
+    if _DAYNAV_SCRIPT_MARKER not in patched:
+        patched = patched.replace("</script>", _DAYNAV_SCRIPT + "</script>", 1)
+    if patched != html:
+        path.write_text(patched, encoding="utf-8")
 
 
 def render_html(
@@ -94,8 +179,14 @@ def render_html(
         }
         for p in existing[:14]
     ]
+    # `existing` is sorted newest-first, so its head is the day right before
+    # today -- today's own "prev". There is never a "next" for today; that
+    # only exists once a later run makes today's own page someone else's prev.
+    tl_prev_href = f"archive/{existing[0].name}" if existing else None
 
     html = _env(root).get_template("page.html").render(
+        tl_prev_href=tl_prev_href,
+        tl_next_href=None,
         title=digest_cfg.get("title", "Dailies"),
         subtitle=digest_cfg.get("subtitle", ""),
         date_long=now.strftime("%A %-d %B %Y"),
@@ -126,6 +217,18 @@ def render_html(
 
     for old in sorted(archive_dir.glob("*.html"), reverse=True)[ARCHIVE_KEEP:]:
         old.unlink()
+
+    # Every other kept archive page needs its own prev/next recomputed --
+    # today's arrival gives yesterday's page a "next" it never had, and
+    # patching the whole window on every run keeps all of them correct
+    # regardless of what state they were left in (see _backfill_timeline_nav).
+    kept = sorted(archive_dir.glob("*.html"), key=lambda p: p.stem)
+    for i, p in enumerate(kept):
+        if p.stem == today_iso:
+            continue
+        prev_href = f"{kept[i - 1].name}" if i > 0 else None
+        next_href = f"{kept[i + 1].name}" if i < len(kept) - 1 else None
+        _backfill_timeline_nav(p, prev_href, next_href)
 
     (docs / ".nojekyll").touch()
     robots = docs / "robots.txt"
