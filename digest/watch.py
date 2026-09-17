@@ -226,10 +226,19 @@ def probe_metadata(video_id: str) -> dict[str, Any] | None:
         if unavail := _UNAVAILABLE_RE.search(text):
             log.info("probe %s: video unavailable (%s)", video_id, unavail.group(1))
         else:
+            # TEMPORARY: diagnosing a CI-only miss (2026-09-18) -- home
+            # connection gets lengthSeconds reliably, GitHub Actions runners
+            # get a same-size response without it. Dump enough to tell a
+            # consent/bot-check page apart from a differently-shaped but
+            # still genuine watch page, then remove once explained.
+            consent = "consent.youtube.com" in text or "Before you continue" in text
+            captcha = "recaptcha" in text.lower() or "unusual traffic" in text.lower()
+            idx = text.find("ytInitialPlayerResponse")
+            snippet = text[idx : idx + 200] if idx != -1 else "(marker not found at all)"
             log.warning(
-                "probe %s: no lengthSeconds in a %d-byte 200 response -- "
-                "YouTube may be serving a different page to this IP/UA",
-                video_id, len(text),
+                "probe %s: no lengthSeconds in a %d-byte 200 response "
+                "(consent=%s captcha=%s) -- snippet: %r",
+                video_id, len(text), consent, captcha, snippet,
             )
 
     return {"duration_s": duration_s, "live": live, "upcoming": upcoming}
