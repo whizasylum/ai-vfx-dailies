@@ -874,5 +874,53 @@
    "three"
   ],
   "at": "2026-09-17T11:59:40.248352+00:00"
+ },
+ "1a19acf129": {
+  "headline": "sigmaPBR tool converts 3D scans into relightable PBR materials",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "g",
+  "terms": [
+   "conversion",
+   "converts",
+   "could",
+   "export",
+   "formats.",
+   "materials",
+   "pbr",
+   "relightable",
+   "scan-to-material",
+   "scans",
+   "shortcut",
+   "sigmapbr",
+   "texture",
+   "usable"
+  ],
+  "at": "2026-09-17T20:56:14.167793+00:00"
+ },
+ "c248d46204": {
+  "headline": "Flanders Scientific and Pomfort add four-channel LUT support for XMP monitors",
+  "sources": [
+   "postPerspective"
+  ],
+  "channel": "a",
+  "terms": [
+   "colour",
+   "direct",
+   "flanders",
+   "four-channel",
+   "fsi",
+   "impact",
+   "lut",
+   "monitors",
+   "monitors.",
+   "multi-camera",
+   "on-set",
+   "pipeline",
+   "pomfort",
+   "productions"
+  ],
+  "at": "2026-09-17T20:56:14.167841+00:00"
  }
 }

@@ -1,0 +1,29 @@
+{
+ "videos": {
+  "-kzSQgxzD5c": {
+   "title": "New Course: AI for Micro-Dramas",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/shorts/-kzSQgxzD5c",
+   "at": "2026-09-17T20:55:03.598104+00:00",
+   "duration_s": 96,
+   "topic_relevance": 1.0,
+   "transferable_craft": 1.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": "The video is a promotional advertisement for a paid course. It lists curriculum topics like 'Advanced Agent Workflows' and 'Visual Consistency' but does not demonstrate the technical methods or provide actionable code/configurations for a TD to implement."
+  },
+  "6CyTBskrqSE": {
+   "title": "Monitoring Traffic & CCTV with God\u2019s Eye View (Open Source)",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/6CyTBskrqSE",
+   "at": "2026-09-17T20:55:17.514076+00:00",
+   "duration_s": 63,
+   "published": false,
+   "reason_if_low": "under 90s (63s)"
+  }
+ },
+ "quota": {
+  "date": "2026-09-17",
+  "minutes": 1.6
+ }
+}
