@@ -179,28 +179,84 @@ def _client() -> httpx.Client:
     )
 
 
+_YT_DATA_API_URL = "https://www.googleapis.com/youtube/v3/videos"
+_ISO8601_DURATION_RE = re.compile(
+    r"^PT(?:(?P<hours>\d+)H)?(?:(?P<minutes>\d+)M)?(?:(?P<seconds>\d+)S)?$"
+)
+
+
+def _parse_iso8601_duration(text: str) -> int | None:
+    m = _ISO8601_DURATION_RE.match(text or "")
+    if not m:
+        return None
+    hours, minutes, seconds = (int(g) if g else 0 for g in m.groups())
+    return hours * 3600 + minutes * 60 + seconds
+
+
 def probe_metadata(video_id: str) -> dict[str, Any] | None:
-    """Duration and live/upcoming status, via YouTube's own internal player
-    API -- the same endpoint the web player itself calls to hydrate.
+    """Duration and live/upcoming status for one video.
 
-    This repo originally scraped the watch page's embedded JSON directly
-    (the same ytInitialPlayerResponse blob collect.py's channel-id resolver
-    reads). That turned out to be unreliable specifically from GitHub
-    Actions runners: a same-size, entirely normal-looking 200 response came
-    back with videoDetails missing lengthSeconds, for a video that resolves
-    fine from a residential connection -- evidently a different server-side
-    rendering variant for that vantage point, not a hard block (the page's
-    own INNERTUBE_API_KEY was still right there in it). This endpoint
-    returns the full structured object directly regardless of that variant,
-    at the cost of one extra request to pull the (public, unauthenticated,
-    embedded-in-every-page) API key.
+    Uses the official YouTube Data API when a key is configured, falling
+    back to an unofficial scrape otherwise -- see _probe_via_innertube for
+    why that fallback is known to fail specifically on GitHub Actions.
+    """
+    if api_key := os.environ.get("YOUTUBE_API_KEY"):
+        return _probe_via_data_api(video_id, api_key)
+    return _probe_via_innertube(video_id)
 
-    playabilityStatus is deliberately not the signal used here: a bare WEB
-    client context routinely comes back "UNPLAYABLE" for videos that stream
-    fine in a real browser, because actual playback needs a signature/bot
-    check this context doesn't satisfy. videoDetails itself is still
-    populated correctly regardless -- it's genuinely absent only when the
-    video really is gone, which is the check this function relies on.
+
+def _probe_via_data_api(video_id: str, api_key: str) -> dict[str, Any] | None:
+    """The sanctioned way to get this: no scraping, no bot-check, works the
+    same from any IP. videos.list costs 1 quota unit regardless of how many
+    parts are requested, against a 10,000/day free default -- nowhere close
+    to a constraint at 5-15 videos/day."""
+    try:
+        with _client() as c:
+            r = c.get(
+                _YT_DATA_API_URL,
+                params={"id": video_id, "part": "contentDetails,snippet", "key": api_key},
+            )
+            r.raise_for_status()
+            data = r.json()
+    except httpx.HTTPError as exc:
+        log.warning("probe %s (data api): %s", video_id, exc)
+        return None
+
+    items = data.get("items") or []
+    if not items:
+        # A gone/private/deleted video simply isn't in the response at all,
+        # rather than coming back as an error -- this is that case.
+        log.info("probe %s: video unavailable (not returned by Data API)", video_id)
+        return {"duration_s": None, "live": False, "upcoming": False}
+
+    item = items[0]
+    broadcast = item.get("snippet", {}).get("liveBroadcastContent", "none")
+    live = broadcast == "live"
+    upcoming = broadcast == "upcoming"
+    duration_s = None
+    if not live and not upcoming:
+        duration_s = _parse_iso8601_duration(item.get("contentDetails", {}).get("duration"))
+        if duration_s is None:
+            log.warning(
+                "probe %s: unparseable duration from Data API: %r",
+                video_id, item.get("contentDetails", {}).get("duration"),
+            )
+    return {"duration_s": duration_s, "live": live, "upcoming": upcoming}
+
+
+def _probe_via_innertube(video_id: str) -> dict[str, Any] | None:
+    """Fallback when no YOUTUBE_API_KEY is configured: YouTube's own
+    internal player API, the same endpoint the web player itself calls to
+    hydrate.
+
+    Known broken specifically on GitHub Actions runners: confirmed by
+    testing (2026-09-18) that this returns "Sign in to confirm you're not a
+    bot" -- the same wall yt-dlp and most other YouTube scrapers hit from
+    well-known cloud/CI IP ranges, not something fixable with a different
+    user-agent or endpoint. It still works from a normal residential/office
+    connection, which is the only reason it's kept at all rather than
+    removed -- useful for `cli.py watch` run locally, useless in production
+    without YOUTUBE_API_KEY set.
     """
     try:
         with _client() as c:

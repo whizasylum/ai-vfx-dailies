@@ -28,6 +28,14 @@ model:
 # anything VFX-related but the workflow underneath is -- a game devlog that
 # happens to chain three AI tools together, say -- which the keyword pass
 # above would score near zero and never surface. Needs GEMINI_API_KEY.
+#
+# Also wants YOUTUBE_API_KEY (the official YouTube Data API) for the
+# duration/live-status check that runs before spending a Gemini call --
+# without it, digest/watch.py falls back to an unofficial scrape that works
+# fine locally but is confirmed broken on GitHub Actions specifically
+# (YouTube's "sign in to confirm you're not a bot" gate on datacenter IPs,
+# not something a different user-agent or endpoint works around). Every
+# video defers forever without one when run on schedule.
 video_watch:
   enabled: true
   model: "models/gemini-3-flash-preview"

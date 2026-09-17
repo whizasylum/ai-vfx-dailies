@@ -49,6 +49,7 @@ Settings → Secrets and variables → Actions:
 | --- | --- |
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API keys |
 | `GEMINI_API_KEY` | aistudio.google.com → Get API key. Optional -- the video watcher (`digest/watch.py`) just skips itself if unset. |
+| `YOUTUBE_API_KEY` | console.cloud.google.com → enable "YouTube Data API v3" → Credentials → Create API key. Optional but effectively required for the video watcher to do anything on the schedule: without it, duration/live-status checks fall back to a scrape that's confirmed blocked on GitHub Actions ("sign in to confirm you're not a bot" from YouTube's bot-detection on datacenter IPs) -- every video just defers forever. Free tier (10,000 units/day, 1 unit per video) is nowhere near a constraint at 5-15 videos/day. |
 | `DISCORD_BOT_TOKEN` | discord.com/developers → New Application → Bot → Reset Token |
 | `DISCORD_CHANNEL_ID` | Discord → enable Developer Mode → right-click channel → Copy Channel ID |
 | `DISCORD_WEBHOOK_URL` | Optional fallback. Channel settings → Integrations → Webhooks |
