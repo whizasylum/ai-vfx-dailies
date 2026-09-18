@@ -20,10 +20,55 @@
    "duration_s": 63,
    "published": false,
    "reason_if_low": "under 90s (63s)"
+  },
+  "vIHw_2VjSUw": {
+   "title": "DeepSeek\u2019s Insane New Architecture",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=vIHw_2VjSUw",
+   "at": "2026-09-18T20:19:48.380513+00:00",
+   "duration_s": 311,
+   "topic_relevance": 3.0,
+   "transferable_craft": 3.0,
+   "category": "tool_release",
+   "published": false,
+   "reason_if_low": "While powerful for general coding, it is not a purpose-built VFX tool; the transferable value lies in its high-speed scripting and GLSL generation capabilities for pipeline automation."
+  },
+  "_lgyED4IkJg": {
+   "title": "Multiview 3D AI Finally Runs Locally (Free & Local, 8GB VRAM)",
+   "channel": "PixelArtistry",
+   "url": "https://www.youtube.com/watch?v=_lgyED4IkJg",
+   "at": "2026-09-18T20:20:04.202813+00:00",
+   "duration_s": 1064,
+   "topic_relevance": 4.0,
+   "transferable_craft": 4.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": null
+  },
+  "1vw39QCcQjg": {
+   "title": "AI Just Solved UV Unwrapping and It's Crazy Good - Smart UV",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=1vw39QCcQjg",
+   "at": "2026-09-18T20:21:18.169750+00:00",
+   "duration_s": 846,
+   "topic_relevance": 3.0,
+   "transferable_craft": 3.0,
+   "category": "tool_release",
+   "published": false,
+   "reason_if_low": "While 'Smart UV' is a significant step, the tool is a proprietary web service rather than a local plugin, limiting its utility in secure or highly customized VFX pipelines."
+  },
+  "rz-9Lq4uso8": {
+   "title": "How to Build Ad Campaigns in Seconds #marketing #tutorial #ads",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/rz-9Lq4uso8",
+   "at": "2026-09-18T20:22:07.919648+00:00",
+   "duration_s": 74,
+   "published": false,
+   "reason_if_low": "under 90s (74s)"
   }
  },
  "quota": {
-  "date": "2026-09-17",
-  "minutes": 1.6
+  "date": "2026-09-18",
+  "minutes": 37.016666666666666
  }
 }

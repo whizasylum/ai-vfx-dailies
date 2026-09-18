@@ -922,5 +922,56 @@
    "productions"
   ],
   "at": "2026-09-17T20:56:14.167841+00:00"
+ },
+ "b6e69b7a84": {
+  "headline": "Blender 5.3 adding native 3D Gaussian splat support",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "adding",
+   "asset",
+   "blender",
+   "could",
+   "dcc",
+   "gaussian",
+   "major",
+   "native",
+   "novelty",
+   "pipeline",
+   "real",
+   "shift",
+   "splat",
+   "splats"
+  ],
+  "at": "2026-09-18T20:22:07.920431+00:00"
+ },
+ "2f7bfcd120": {
+  "headline": "Gaussian splatting research cluster: pruning, PBR materials, SLAM, and physics",
+  "sources": [
+   "arXiv cs.CV (generative video)",
+   "arXiv cs.CV (generative video)",
+   "arXiv cs.CV (generative video)",
+   "arXiv cs.CV (generative video)"
+  ],
+  "channel": "g",
+  "terms": [
+   "before",
+   "cluster",
+   "compaction",
+   "decomposition",
+   "follow-on",
+   "gaussian",
+   "materials",
+   "need",
+   "pbr",
+   "physics",
+   "pieces",
+   "pruning",
+   "renderer-ready.",
+   "research"
+  ],
+  "at": "2026-09-18T20:22:07.920476+00:00"
  }
 }
