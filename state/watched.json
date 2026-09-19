@@ -65,10 +65,52 @@
    "duration_s": 74,
    "published": false,
    "reason_if_low": "under 90s (74s)"
+  },
+  "6QC6nOotxrU": {
+   "title": "This AI Trick Magically Creates New Camera Angles",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=6QC6nOotxrU",
+   "at": "2026-09-19T19:59:14.973108+00:00",
+   "duration_s": 966,
+   "topic_relevance": 4.0,
+   "transferable_craft": 4.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": null
+  },
+  "VeOU0FnTjjc": {
+   "title": "Creating 3D Character with AI in 1 Min vs 1 H vs 10 H",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=VeOU0FnTjjc",
+   "at": "2026-09-19T19:59:31.661653+00:00",
+   "duration_s": 864,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null
+  },
+  "YMmdkBZ7PMI": {
+   "title": "Smart UV: AI Just Solved UV Unwrapping (And It's Crazy Good)",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/YMmdkBZ7PMI",
+   "at": "2026-09-19T20:00:01.097859+00:00",
+   "duration_s": 31,
+   "published": false,
+   "reason_if_low": "under 90s (31s)"
+  },
+  "RUXYWv40QTk": {
+   "title": "Build With GPT-6 Astra x Higgsfield API | From Idea to AI Apps",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/RUXYWv40QTk",
+   "at": "2026-09-19T20:00:01.200800+00:00",
+   "duration_s": 81,
+   "published": false,
+   "reason_if_low": "under 90s (81s)"
   }
  },
  "quota": {
-  "date": "2026-09-18",
-  "minutes": 37.016666666666666
+  "date": "2026-09-19",
+  "minutes": 30.5
  }
 }
