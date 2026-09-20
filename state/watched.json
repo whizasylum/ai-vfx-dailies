@@ -107,10 +107,34 @@
    "duration_s": 81,
    "published": false,
    "reason_if_low": "under 90s (81s)"
+  },
+  "tZnL7_V_ki0": {
+   "title": "Tripo Smart UV, Meshy 4K & GPT-6 Astra Animates 3D - 3D AI News #20",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=tZnL7_V_ki0",
+   "at": "2026-09-20T20:16:27.242902+00:00",
+   "duration_s": 808,
+   "topic_relevance": 4.0,
+   "transferable_craft": 3.0,
+   "category": "tool_release",
+   "published": false,
+   "reason_if_low": "n/a"
+  },
+  "4uy8X28k49U": {
+   "title": "How to Make Realistic 3D Character in Less Than a Day with AI",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=4uy8X28k49U",
+   "at": "2026-09-20T20:17:13.047534+00:00",
+   "duration_s": 1006,
+   "topic_relevance": 5.0,
+   "transferable_craft": 4.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": null
   }
  },
  "quota": {
-  "date": "2026-09-19",
-  "minutes": 30.5
+  "date": "2026-09-20",
+  "minutes": 30.233333333333334
  }
 }
