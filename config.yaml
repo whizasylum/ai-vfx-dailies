@@ -196,3 +196,13 @@ feedback:
   min_ratings_to_calibrate: 6
   # How many liked / not-liked headlines go into the prompt as examples.
   examples_per_side: 8
+
+# Optional GPT Image illustrations for stories whose feeds provide no image.
+# Adding OPENAI_API_KEY as an Actions secret activates this. No key = free
+# built-in editorial graphics. Source images are always preferred.
+thumbnails:
+  enabled: true
+  model: "gpt-image-2.5-flare"
+  quality: "low"
+  # Attempts, including failures, across all reruns in the digest's local day.
+  max_per_day: 2

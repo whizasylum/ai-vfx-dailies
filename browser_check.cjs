@@ -5,7 +5,7 @@ const fs = require('fs');
  const page=await browser.newPage({viewport:{width:1440,height:1100}});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  fs.mkdirSync('design-previews/screenshots',{recursive:true});
- for(const mode of ['screening','editorial','workstation']){
+ for(const mode of ['screening','screening-rust','editorial','workstation']){
   await page.goto('http://127.0.0.1:8938/design-previews/'+mode+'.html');
   await page.waitForSelector('.story');await page.waitForLoadState('networkidle');await page.evaluate(()=>document.fonts.ready);
   await page.screenshot({path:'design-previews/screenshots/'+mode+'.png',fullPage:true});
@@ -46,6 +46,6 @@ const fs = require('fs');
  await page.screenshot({path:'design-previews/screenshots/timeline-mobile.png',fullPage:true});
  if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('timeline mobile overflow');
  if(errors.length)throw Error(errors.join('\n'));
- console.log('Browser checks passed: 3 desktop/mobile previews, filters, both timeline stops, keyboard navigation, dated share link.');
+ console.log('Browser checks passed: 4 desktop/mobile previews, filters, both timeline stops, keyboard navigation, dated share link.');
  await browser.close();
 })();

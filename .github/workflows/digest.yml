@@ -45,6 +45,7 @@ jobs:
 
       - name: Build digest
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
@@ -63,10 +64,10 @@ jobs:
         run: |
           git config user.name "digest-bot"
           git config user.email "digest-bot@users.noreply.github.com"
-          for path in state/watched.json state/editions; do
+          for path in state/watched.json state/editions state/thumbnails.json docs/images/generated; do
             if [ -e "$path" ]; then git add "$path"; fi
           done
-          git diff --staged --quiet || git commit -m "preserve pending video assessments"
+          git diff --staged --quiet || git commit -m "preserve pending assessments and thumbnail cache"
           git push
 
       - name: Commit page and state

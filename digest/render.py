@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 import httpx
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import feedback, navigation
+from . import feedback, navigation, thumbnails
 
 log = logging.getLogger(__name__)
 
@@ -115,6 +115,7 @@ def render_html(
         old.unlink()
 
     navigation.refresh(root)
+    thumbnails.refresh(root)
 
     (docs / ".nojekyll").touch()
     robots = docs / "robots.txt"

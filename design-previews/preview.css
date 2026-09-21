@@ -8,3 +8,17 @@
 @media(prefers-reduced-motion:no-preference){.story{animation:appear .25s ease-out}@keyframes appear{from{opacity:.5;transform:translateY(6px)}to{opacity:1;transform:none}}}
 
 .visual { min-width:0; width:100%; max-width:100%; }
+
+/* Screening Room / Rust: the same layout in warm charcoal and burnt orange. */
+.screening-rust{--bg:#1b1310;--panel:#2a1c16;--ink:#f7eee7;--muted:#c5aca0;--rule:#50362a;--accent:#f5a66d}
+.screening-rust .review-bar{background:#2b1b14;border-color:#50362a;color:#f7eee7}
+.screening-rust .review-bar>div a,.screening-rust .preview-note{color:#c5aca0}
+.screening-rust .review-bar>div a.selected{background:#ee9a60;color:#27160e}
+.screening-rust .visual{background:radial-gradient(ellipse at 20% 60%,#844325,transparent 65%),linear-gradient(130deg,#362018,#21130f)}
+.palette-switch{display:none;align-items:center;gap:6px;padding-top:20px;font:10px var(--mono);letter-spacing:.06em;color:var(--muted)}
+.screening .palette-switch,.screening-rust .palette-switch{display:flex}
+.palette-switch span{margin-right:auto}.palette-switch a{padding:6px 13px;border:1px solid var(--rule);border-radius:20px;text-decoration:none}
+.palette-switch [aria-current]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.screening .intro,.screening-rust .intro{padding-top:28px}
+
+.visual .thumbnail-art{object-fit:contain;background:#201915}.image-credit{display:block;margin-top:7px;font-size:10px;opacity:.8}

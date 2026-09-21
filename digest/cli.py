@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
-from . import collect, feedback, render, score, summarize, watch, editions, navigation
+from . import collect, feedback, render, score, summarize, watch, editions, navigation, thumbnails
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -167,6 +167,8 @@ def cmd_run(args: argparse.Namespace) -> int:
     result["stories"] = result.get("stories", []) + video_stories
     day = datetime.now(ZoneInfo(digest_cfg.get("timezone", "UTC"))).date().isoformat()
     result = editions.merge(ROOT, day, result)
+    thumbnails.prepare(result.get("stories", []), config, ROOT, day)
+    editions.save(ROOT, day, result)
 
     # Record what each story was, so a rating from the page can be attributed
     # back to its sources and terms later.
@@ -353,6 +355,8 @@ def main() -> int:
 
     nav = sub.add_parser("refresh-navigation", help="repair all page navigation without model calls")
     nav.set_defaults(func=lambda args: (navigation.refresh(ROOT), 0)[1])
+    thumbs = sub.add_parser("refresh-thumbnails", help="refresh offline thumbnail fallbacks without API calls")
+    thumbs.set_defaults(func=lambda args: (thumbnails.refresh(ROOT), 0)[1])
     ack = sub.add_parser("ack-feedback", help="close rating issues after state has been committed")
     ack.set_defaults(func=lambda args: feedback.acknowledge_github_issues(ROOT / "state"))
 

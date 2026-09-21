@@ -47,6 +47,7 @@ Settings → Secrets and variables → Actions:
 
 | Secret | Where to get it |
 | --- | --- |
+| `OPENAI_API_KEY` | Optional: platform.openai.com → API keys. Enables capped GPT Image thumbnails; requires funded API access. Without it, editorial graphics work automatically. |
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API keys |
 | `GEMINI_API_KEY` | aistudio.google.com → Get API key. Optional -- the video watcher (`digest/watch.py`) just skips itself if unset. |
 | `YOUTUBE_API_KEY` | console.cloud.google.com → enable "YouTube Data API v3" → Credentials → Create API key. Optional but effectively required for the video watcher to do anything on the schedule: without it, duration/live-status checks fall back to a scrape that's confirmed blocked on GitHub Actions ("sign in to confirm you're not a bot" from YouTube's bot-detection on datacenter IPs) -- every video just defers forever. Free tier (10,000 units/day, 1 unit per video) is nowhere near a constraint at 5-15 videos/day. |
@@ -262,3 +263,36 @@ expansion work; ratings stay in session storage. This directory is outside `docs
 and is not included in GitHub Pages deployment. Rebuild the preview content with
 `python build_previews.py`. Browser checks can be run with `node browser_check.cjs`
 when Playwright and Chrome are installed and the local server is running.
+
+## Thumbnail fallback
+
+Source thumbnails take priority. For a story with no supplied image, the daily
+build can generate a conceptual illustration with GPT Image. Add an
+`OPENAI_API_KEY` Actions secret from an OpenAI API project with image-model
+access and billing to enable it. The key stays in Actions, never in the page.
+The model and quality are configurable in `config.yaml`; the default is
+`gpt-image-2.5-flare` at low quality, with at most **two attempts per edition day**
+across reruns. Set `thumbnails.enabled: false` or remove the secret to disable
+paid generation. Set project spending controls in the OpenAI API dashboard too.
+
+Successful WebP images are committed to `docs/images/generated` and reused.
+They carry an **AI illustration** label so they are not mistaken for actual
+results from the reported tool. The page never triggers API requests.
+Missing credentials, exhausted credits, unavailable models, moderation,
+timeouts and provider errors all retain the local editorial graphic. After
+an error the provider is paused for that day; the next day's build can retry.
+The workflow preserves the image cache and reserved attempts if a later build
+step fails (a hard cancellation before that save cannot guarantee recovery).
+
+A supplied image that fails in the reader's browser first tries YouTube's
+smaller thumbnail, where applicable, then reveals the editorial graphic.
+This is deliberately free and immediate. It does not make a new paid request.
+Every fallback is a self-contained SVG; it needs no external service, fonts,
+subscription or credits. `python -m digest.cli refresh-thumbnails` upgrades
+all existing archive slots without any AI calls. Old editions are not sent
+for bulk image generation.
+
+API reference: https://developers.openai.com/api/docs/guides/image-generation
+
+The separate Screening Room preview includes an Olive/Rust palette switch:
+`design-previews/screening-rust.html`. It is not part of the published site.

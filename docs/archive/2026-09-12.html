@@ -510,6 +510,16 @@
 .edition-nav .at-latest { color:var(--ink-dim); }
 @media(max-width:620px) { .edition-nav { display:grid; grid-template-columns:1fr 1fr; gap:.2rem .7rem; } .edition-nav .day-track { grid-row:2; grid-column:1/-1; } .edition-nav .next { justify-self:end; } .edition-nav .day-latest { grid-row:3; grid-column:1/-1; text-align:center; border-left:0; padding:.45rem; } }
 </style>
+<style id="thumbnail-fallbacks">
+.thumb.thumbnail-cover{position:relative;display:block;aspect-ratio:16/9;background:#201915}
+.thumbnail-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumbnail-cover .thumbnail-art{object-fit:contain}
+.thumbnail-cover .thumbnail-label{position:absolute;z-index:1;left:12px;bottom:12px;padding:4px 8px;border:1px solid #ffffff35;border-radius:4px;background:#201915d9;color:#f7eee7;font:10px/1.4 system-ui,sans-serif;letter-spacing:.04em}
+.thumbnail-label:empty{display:none}
+
+.thumbnail-link{position:absolute;inset:0;display:block}.thumbnail-label{pointer-events:none}
+
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -532,7 +542,7 @@
 <p class="verdict">Quiet day for production-relevant news: mostly arXiv research chaff, festival/PR filler, and one thin studio-tooling item worth a mention, plus a splatting tool update.</p>  </section>
 
   <main class="reel">    <article class="story" id="f074f3fc73" style="--rail-color:#d9484a">
-      <div class="thumb thumb-empty" aria-hidden="true"><span>R</span></div>
+      <div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://www.cgchannel.com/2026/09/playcanvas-releases-supersplat-editor-3-0" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2812%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3EMODELS%20%26%20TOOLS%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3ESuperSplat%20Editor%203.0%20ships%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Ewith%20major%20performance%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Eoverhaul%20for%20large%20Gaussian%E2%80%A6%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"></a><span class="thumbnail-label"></span></div>
       <div class="story-body">
         <div class="tag">
           <b>R</b>
@@ -551,9 +561,7 @@
         </div>
       </div>
     </article>    <article class="story" id="91ea4462d5" style="--rail-color:#4e7fd0">
-      <div class="thumb">
-<a href="https://www.awn.com/news/pitch-black-rolls-out-revize-machine-learning-across-its-global-studios" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">        <img src="https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/logo_black_-_revize-1280.jpg?itok=-8i6RTqT" alt="" loading="lazy" data-fallback-tried="0">
-</a>      </div>
+      <div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://www.awn.com/news/pitch-black-rolls-out-revize-machine-learning-across-its-global-studios" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2826%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3EINDUSTRY%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3ERising%20Sun%20Pictures%26%23x27%3B%20REVIZE%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Eface%20and%20body%20replacement%20tool%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Erolled%20out%20across%20sister%E2%80%A6%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"><img class="thumbnail-source" src="https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/logo_black_-_revize-1280.jpg?itok=-8i6RTqT" alt="" loading="lazy" data-kind="source"></a><span class="thumbnail-label"></span></div>
       <div class="story-body">
         <div class="tag">
           <b>B</b>
@@ -573,7 +581,7 @@
         </div>
       </div>
     </article>    <article class="story" id="1238ab7c39" style="--rail-color:#d9484a">
-      <div class="thumb thumb-empty" aria-hidden="true"><span>R</span></div>
+      <div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Colorization" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2834%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3EMODELS%20%26%20TOOLS%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3ELTX-2.5%2022B%20gets%20an%20IC-LoRA%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Efor%20video%20colorization%20and%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Eclean-plate%20work%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"></a><span class="thumbnail-label"></span></div>
       <div class="story-body">
         <div class="tag">
           <b>R</b>
@@ -601,47 +609,7 @@
 
 </div>
 <script>
-  document.querySelectorAll('.thumb img').forEach(function (img) {
-    // Keep the slot rather than removing it, so one dud image doesn't leave
-    // this card shorter than the rest of the row.
-    function drop() {
-      var thumb = img.closest('.thumb');
-      if (!thumb) return;
-      var story = thumb.closest('.story');
-      var tag = story && story.querySelector('.tag b');
-      var letter = document.createElement('span');
-      letter.textContent = tag ? tag.textContent : '';
-      thumb.innerHTML = '';
-      thumb.appendChild(letter);
-      thumb.classList.add('thumb-empty');
-      thumb.setAttribute('aria-hidden', 'true');
-    }
 
-    // Collection upgrades some thumbnails to a larger variant the host
-    // usually has (YouTube maxresdefault). "Usually" is not "always", so
-    // step back down to the original before giving up on the image.
-    function failed() {
-      if (img.dataset.fallbackTried === '0' && img.src.indexOf('maxresdefault') !== -1) {
-        img.dataset.fallbackTried = '1';
-        img.src = img.src.replace('maxresdefault', 'hqdefault');
-        return;
-      }
-      drop();
-    }
-
-    // Some feeds hand back a logo, avatar or tracking pixel as the entry's
-    // "thumbnail". Blown up to card width those read as artefacts, so drop
-    // anything too small to have been a real hero image. 260 keeps genuine
-    // small hero crops (AWN serves 300px wide) and cuts 200px avatars.
-    function check() {
-      if (img.naturalWidth === 0) { failed(); return; }
-      if (img.naturalWidth < 260) drop();
-    }
-
-    img.addEventListener('error', failed);
-    img.addEventListener('load', check);
-    if (img.complete) check();
-  });
 
   var RATING_ENDPOINT = "https://ai-vfx-dailies-rating.falling-pine-24e5.workers.dev/";
   document.querySelectorAll('.actions .up, .actions .down').forEach(function (btn) {
@@ -695,6 +663,24 @@
     });
   });
 })();
+</script>
+<script id="thumbnail-fallbacks">
+(() => {
+  document.querySelectorAll('.thumbnail-source').forEach(img => {
+    const label = img.closest('.thumbnail-cover').querySelector('.thumbnail-label');
+    function fallback() { img.remove(); if (label) label.textContent = ''; }
+    function failed() {
+      if (!img.dataset.retried && img.src.includes('maxresdefault')) {
+        img.dataset.retried = '1'; img.src = img.src.replace('maxresdefault','hqdefault');
+      } else fallback();
+    }
+    function check() { if (!img.naturalWidth || img.naturalWidth < 260) failed(); }
+    img.addEventListener('error', failed);
+    img.addEventListener('load', check);
+    if (img.complete) check();
+  });
+})();
+
 </script>
 </body>
 </html>

@@ -26,12 +26,13 @@ def read_html(path: Path) -> dict:
                 continue
             sources.append({"name": link.get_text(strip=True), "url": link["href"],
                             "video": "video" in link.get("class", [])})
-        img = card.select_one(".thumb img")
+        img = card.select_one(".thumb img:not(.thumbnail-art)")
         stories.append({
             "headline": text(".headline"), "body": text(".body-text"),
             "why": text(".why"), "channel": text(".tag b").lower(),
             "confidence": "low" if card.select_one(".low-confidence") else "medium",
-            "sources": sources, "image": img.get("src") if img else None,
+            "sources": sources, "image": img.get("src", "").removeprefix("../") if img else None,
+            "image_kind": img.get("data-kind", "source") if img else None,
             "watched": bool(card.select_one(".watched-badge")),
             "tools_and_platforms": [{"name": n.get_text(strip=True),
                                       "used_for": n.get("title", "")}
@@ -61,8 +62,13 @@ def merge(root: Path, day: str, result: dict) -> dict:
                                else f"{len(stories)} stories collected across today's updates.")
     elif combined["stories"] and not result.get("editorial_stories", True):
         combined["verdict"] = f"{len(stories)} video workflows worth a closer look."
+    save(root, day, combined)
+    return combined
+
+
+def save(root: Path, day: str, edition: dict) -> None:
+    path = root / "state" / "editions" / f"{day}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(".tmp")
-    temporary.write_text(json.dumps(combined, indent=2, ensure_ascii=False), encoding="utf-8")
+    temporary.write_text(json.dumps(edition, indent=2, ensure_ascii=False), encoding="utf-8")
     temporary.replace(path)
-    return combined

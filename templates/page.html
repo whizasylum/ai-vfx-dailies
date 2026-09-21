@@ -620,7 +620,7 @@
       {% if s.image %}
       <div class="thumb">
         {% if s.sources %}<a href="{{ s.sources[0].url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% endif %}
-        <img src="{{ s.image }}" alt="" loading="lazy" data-fallback-tried="0">
+        <img src="{{ s.image }}" alt="" loading="lazy" data-fallback-tried="0" data-kind="{{ s.image_kind|default('source', true) }}">
         {% if s.sources %}</a>{% endif %}
       </div>
       {% else %}
