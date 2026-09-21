@@ -43,7 +43,7 @@ def fallback_image(story: dict) -> str:
 <path d="M-120-105 25-160 160-50 15 10Z M-120-105V80L15 195V10 M160-50V135L15 195 M25-160V25L160 135 M-120 80 25 25" stroke-width="2" stroke-opacity=".8"/>
 <circle r="260" stroke-dasharray="3 14" stroke-opacity=".22"/></g>
 <path d="M85 115H145" stroke="#f5a66d" stroke-width="4"/>
-<text x="85" y="155" fill="#e7ad87" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">{label}</text>
+<text x="85" y="155" fill="#e7ad87" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">{html.escape(label)}</text>
 <text x="85" y="370" fill="#f7eee7" font-family="Arial,sans-serif" font-size="42">{words}</text>
 <text x="85" y="600" fill="#c5aca0" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">DAILIES / EDITORIAL GRAPHIC</text></svg>'''
     return "data:image/svg+xml," + quote(svg, safe="")

@@ -1,597 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dailies — Friday 18 September 2026</title>
 <meta name="description" content="AI in VFX, image and video generation. Compiled Friday 18 September 2026.">
-<meta name="robots" content="noindex, nofollow"><meta property="og:title" content="Dailies — Friday 18 September 2026">
-<meta property="og:description" content="A quiet day: mostly game dev diaries, VFX breakdown puff pieces and industry gossip, with only a couple of items that pass the bar for a working TD.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ground:     #131315;
-    --panel:      rgba(255, 255, 255, 0.045);
-    --panel-solid:#1d1d21;
-    --rule:       #33333a;
-    --rule-soft:  rgba(255, 255, 255, 0.09);
-    --ink:        #f0ede8;
-    --ink-dim:    #a4a099;
-    --ink-faint:  #75716b;
-
-    --ch-r: #d9484a;
-    --ch-g: #5ba86b;
-    --ch-b: #4e7fd0;
-    --ch-a: #cfcbc4;
-
-    --sans:  'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-    --mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
-
-    --gutter: clamp(1.15rem, 4vw, 2.5rem);
-  }
-
-  *, *::before, *::after { box-sizing: border-box; }
-
-  html { -webkit-text-size-adjust: 100%; }
-
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* Slow-drifting ambient light behind everything. The blur is applied once
-     to a static layer and only `transform` animates, so the compositor can
-     cache it rather than re-blurring every frame. */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: -25%;
-    z-index: -1;
-    pointer-events: none;
-    background:
-      radial-gradient(36rem 30rem at 30% 8%,  rgba(217, 72, 74, 0.42), transparent 64%),
-      radial-gradient(34rem 30rem at 72% 16%, rgba(78, 127, 208, 0.40), transparent 64%),
-      radial-gradient(30rem 26rem at 50% 52%, rgba(91, 168, 107, 0.20), transparent 64%),
-      radial-gradient(28rem 24rem at 15% 62%, rgba(150, 90, 200, 0.20), transparent 64%);
-    filter: blur(36px);
-    animation: ambient-drift 30s ease-in-out infinite alternate;
-  }
-
-  @keyframes ambient-drift {
-    from { transform: translate3d(0, 0, 0) scale(1); }
-    to   { transform: translate3d(3%, -3.5%, 0) scale(1.1); }
-  }
-
-  .wrap {
-    max-width: 62rem;
-    margin: 0 auto;
-    padding: 0 var(--gutter) 5rem;
-  }
-
-  a { color: inherit; }
-
-  :focus-visible {
-    outline: 2px solid var(--ch-b);
-    outline-offset: 3px;
-    border-radius: 1px;
-  }
-
-  /* ---- masthead ------------------------------------------------------ */
-
-  .masthead {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.75rem 1.5rem;
-    padding: 4rem 0 1.3rem;
-  }
-
-  .wordmark {
-    font-size: clamp(2.9rem, 10vw, 4.6rem);
-    font-weight: 700;
-    letter-spacing: -0.055em;
-    line-height: 0.95;
-    margin: 0;
-    background: linear-gradient(175deg, #ffffff 15%, #8e8b93 95%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .wordmark span {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 400;
-    letter-spacing: 0;
-    color: var(--ink-dim);
-    -webkit-text-fill-color: var(--ink-dim);
-    margin-top: 0.5rem;
-  }
-
-  .stamp {
-    font-family: var(--mono);
-    font-size: 0.82rem;
-    color: var(--ink-dim);
-    text-align: right;
-    line-height: 1.7;
-  }
-
-  .stamp b { color: var(--ink); font-weight: 500; display: block; }
-
-  /* ---- timeline: jump to any day, not just an earlier one ------------- */
-
-  .timeline {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .timeline-pills {
-    display: flex;
-    gap: 0.4rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    min-width: 0;
-  }
-
-  .timeline-pills a, .timeline-pills .current {
-    flex: none;
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    white-space: nowrap;
-    padding: 0.36rem 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 999px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: var(--ink-dim);
-    text-decoration: none;
-  }
-
-  .timeline-pills a:hover {
-    color: var(--ink);
-    border-color: var(--rule);
-  }
-
-  .timeline-pills .current {
-    color: #16161a;
-    background: rgba(255, 255, 255, 0.92);
-    border-color: transparent;
-    font-weight: 500;
-  }
-
-  /* Sit outside the scrollable pill strip so they never scroll out of
-     reach -- the whole reason the old version left you stuck on an old day
-     with no way forward except the browser's own Back button. */
-  .tl-arrow {
-    flex: none;
-    display: grid;
-    place-items: center;
-    width: 1.9rem;
-    height: 1.9rem;
-    font-family: var(--mono);
-    font-size: 1.05rem;
-    line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 999px;
-    color: var(--ink-dim);
-    text-decoration: none;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: color .12s ease, border-color .12s ease;
-  }
-
-  a.tl-arrow:hover {
-    color: var(--ink);
-    border-color: var(--rail-color, var(--ch-b));
-  }
-
-  .tl-arrow-disabled {
-    opacity: 0.28;
-    cursor: default;
-  }
-
-  /* ---- levels readout: the day at a glance ---------------------------
-     A thin proportion strip, plus a counts line naming only the channels
-     that actually ran today. The old version spelled out all four labels
-     every day and printed the counts inside a 2.75rem bar, which was a lot
-     of furniture to say "one tools story, one industry story" -- something
-     the cards below already say with their own colour and letter. */
-
-  .levels { padding-bottom: 1.6rem; }
-
-  .levels-bar {
-    display: flex;
-    height: 0.4rem;
-    border-radius: 999px;
-    overflow: hidden;
-  }
-
-  .levels-bar div {
-    min-width: 2px;
-    transform-origin: left center;
-    animation: level-grow .9s cubic-bezier(.2, .7, .3, 1) both;
-  }
-
-  @keyframes level-grow { from { transform: scaleX(0); } to { transform: none; } }
-
-  .levels-key {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 1.1rem;
-    margin-top: 0.75rem;
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    color: var(--ink-dim);
-  }
-
-  .levels-key i {
-    font-style: normal;
-    display: inline-block;
-    width: 0.55rem;
-    height: 0.55rem;
-    margin-right: 0.45rem;
-    vertical-align: 0.02em;
-  }
-
-  .levels-key b { color: var(--ink); font-weight: 500; }
-
-  .verdict {
-    font-family: var(--serif);
-    font-size: 1.36rem;
-    line-height: 1.5;
-    margin: 1.9rem 0 0;
-    color: var(--ink);
-    max-width: 42rem;
-  }
-
-  /* ---- stories (tile grid) -------------------------------------------- */
-
-  .reel {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-    gap: 1.7rem;
-  }
-
-  /* Translucent so the ambient light behind the page shows through and each
-     card picks up a slightly different cast depending on where it sits. */
-  .story {
-    display: flex;
-    flex-direction: column;
-    background: var(--panel);
-    backdrop-filter: blur(16px) saturate(1.25);
-    -webkit-backdrop-filter: blur(16px) saturate(1.25);
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    border-top: 2px solid var(--rail-color);
-    border-radius: 15px;
-    overflow: hidden;
-    min-width: 0;
-    box-shadow: 0 16px 44px -22px rgba(0, 0, 0, 0.9);
-    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-    animation: card-in .55s cubic-bezier(.2, .7, .3, 1) both;
-  }
-
-  /* Without backdrop-filter the translucent panel reads as muddy, so fall
-     back to a solid one. Firefox on some setups, older Safari, and anything
-     with GPU acceleration disabled land here. */
-  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-    .story { background: var(--panel-solid); }
-    .timeline-pills a, .timeline-pills .current, .tl-arrow { background: var(--panel-solid); }
-  }
-
-  .story:hover {
-    transform: translateY(-4px);
-    border-color: color-mix(in srgb, var(--rail-color) 45%, transparent);
-    border-top-color: var(--rail-color);
-    box-shadow:
-      0 24px 60px -24px rgba(0, 0, 0, 0.95),
-      0 0 34px -12px color-mix(in srgb, var(--rail-color) 55%, transparent);
-  }
-
-  @keyframes card-in {
-    from { opacity: 0; transform: translateY(16px) scale(.985); }
-    to   { opacity: 1; transform: none; }
-  }
-
-  /* Stagger, so the grid assembles rather than snapping in at once. */
-  .story:nth-child(1) { animation-delay: .06s; }
-  .story:nth-child(2) { animation-delay: .13s; }
-  .story:nth-child(3) { animation-delay: .20s; }
-  .story:nth-child(4) { animation-delay: .27s; }
-  .story:nth-child(5) { animation-delay: .34s; }
-  .story:nth-child(6) { animation-delay: .41s; }
-  .story:nth-child(7) { animation-delay: .48s; }
-  .story:nth-child(8) { animation-delay: .55s; }
-
-  /* Only about half of collected items carry a usable image. Rather than let
-     the grid go ragged, a card without one keeps the same silhouette and
-     fills the slot with its channel colour. */
-  .thumb {
-    aspect-ratio: 16 / 9;
-    background: rgba(255, 255, 255, 0.05);
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-  }
-
-  .thumb-empty {
-    background: color-mix(in srgb, var(--rail-color) 14%, transparent);
-    border-bottom: 1px solid var(--rule-soft);
-  }
-
-  .thumb-empty span {
-    font-family: var(--mono);
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    color: var(--rail-color);
-    opacity: 0.32;
-  }
-
-  .thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform .55s cubic-bezier(.2, .7, .3, 1), opacity .12s ease;
-  }
-
-  .thumb a:hover img { opacity: 0.92; }
-  .story:hover .thumb img { transform: scale(1.045); }
-
-  .story-body {
-    min-width: 0;
-    padding: 1.3rem 1.4rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .tag {
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    color: var(--rail-color);
-    display: flex;
-    gap: 0.55rem;
-    align-items: baseline;
-    margin-bottom: 0.6rem;
-  }
-
-  .tag b { font-weight: 500; }
-  .tag i { font-style: normal; color: var(--ink-faint); }
-
-  .headline {
-    font-family: var(--sans);
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: -0.022em;
-    line-height: 1.24;
-    margin: 0 0 0.5rem;
-  }
-
-  .headline a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .headline a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    text-decoration-color: var(--rail-color);
-  }
-
-  .why {
-    font-size: 0.9rem;
-    color: var(--rail-color);
-    margin: 0 0 0.8rem;
-    line-height: 1.42;
-  }
-
-  .body-text {
-    font-family: var(--serif);
-    font-size: 0.98rem;
-    line-height: 1.58;
-    color: #d3d0cb;
-    margin: 0 0 1.05rem;
-  }
-
-  .sources {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .sources a {
-    display: inline-block;
-    font-size: 0.78rem;
-    color: var(--ink-dim);
-    text-decoration: none;
-    padding: 0.24rem 0.7rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-  }
-
-  .sources a:hover {
-    color: var(--ink);
-    border-color: var(--rail-color);
-  }
-
-  .sources a.video::before { content: '▶ '; color: var(--rail-color); }
-  .sources a.talk::before  { content: '❝ '; color: var(--ink-faint); }
-
-  .actions {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-    margin-top: auto;
-    padding-top: 0.9rem;
-    opacity: 0;
-    transition: opacity .12s ease;
-  }
-
-  .story:hover .actions,
-  .actions:focus-within { opacity: 1; }
-
-  @media (hover: none) { .actions { opacity: 1; } }
-  @media (prefers-reduced-motion: reduce) { .actions { transition: none; } }
-
-  .actions a, .actions button {
-    font: inherit;
-    font-size: 0.78rem;
-    color: var(--ink-faint);
-    background: none;
-    border: 1px solid transparent;
-    padding: 0.18rem 0.45rem;
-    cursor: pointer;
-    text-decoration: none;
-    line-height: 1.4;
-  }
-
-  .actions a:hover, .actions button:hover {
-    color: var(--ink);
-    border-color: var(--rule);
-  }
-
-  .actions .up:hover    { color: var(--ch-g); border-color: var(--ch-g); }
-  .actions .down:hover  { color: var(--ch-r); border-color: var(--ch-r); }
-  .actions .done        { color: var(--ch-g); }
-
-  .actions button:disabled {
-    opacity: 0.55;
-    cursor: default;
-  }
-  .actions button:disabled:hover { border-color: transparent; }
-
-  .low-confidence {
-    font-size: 0.78rem;
-    color: var(--ink-faint);
-    margin-top: 0.7rem;
-    font-style: italic;
-  }
-
-  /* A story Gemini watched frame-by-frame rather than one Claude clustered
-     from feed text -- tagged distinctly since the extra fields (what tools
-     chained together, what's actually transferable) are worth surfacing on
-     their own, not folded into body-text prose. */
-  .watched-badge {
-    font-family: var(--mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.04em;
-    color: var(--ink-faint);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 999px;
-    padding: 0.1rem 0.55rem;
-    margin-left: auto;
-  }
-
-  .tools {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    padding: 0;
-    margin: 0 0 0.8rem;
-    list-style: none;
-  }
-
-  .tools li {
-    font-family: var(--mono);
-    font-size: 0.74rem;
-    color: var(--rail-color);
-    background: color-mix(in srgb, var(--rail-color) 12%, transparent);
-    border: 1px solid color-mix(in srgb, var(--rail-color) 30%, transparent);
-    border-radius: 6px;
-    padding: 0.16rem 0.5rem;
-  }
-
-  .transferable {
-    font-family: var(--serif);
-    font-size: 0.92rem;
-    line-height: 1.5;
-    color: #d3d0cb;
-    margin: 0 0 0.9rem;
-    padding-left: 1.1rem;
-  }
-
-  .transferable li { margin-bottom: 0.3rem; }
-
-  /* ---- empty + footer ------------------------------------------------ */
-
-  .quiet {
-    font-family: var(--serif);
-    font-size: 1.1rem;
-    color: var(--ink-dim);
-    padding: 3rem 0;
-    border-top: 1px solid var(--rule);
-    margin-top: 2rem;
-  }
-
-  footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--rule-soft);
-    font-family: var(--mono);
-    font-size: 0.76rem;
-    color: var(--ink-faint);
-    line-height: 1.8;
-  }
-
-  footer a { color: var(--ink-dim); }
-
-  footer details { margin-top: 0.8rem; }
-  footer summary { cursor: pointer; color: var(--ink-dim); }
-  footer ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
-
-  @media (max-width: 34rem) {
-    .reel { grid-template-columns: 1fr; gap: 1.25rem; }
-    .stamp { text-align: left; }
-    /* Single column, so cards no longer need to line up with a neighbour --
-       give the placeholder back some of that vertical space. */
-    .thumb-empty { aspect-ratio: 5 / 2; }
-  }
-
-  /* Everything decorative stops here: the drifting background, the card
-     entrance, the bar draw, and both hover transforms. The layout and the
-     colour coding are unaffected. */
-  @media (prefers-reduced-motion: reduce) {
-    body::before { animation: none; }
-    .story { animation: none; transition: none; }
-    .story:hover { transform: none; }
-    .story:hover .thumb img { transform: none; }
-    .levels-bar div { animation: none; }
-    .thumb img { transition: none; }
-  }
-</style>
-<style id="edition-navigation">.edition-nav { display:flex; align-items:center; gap:.6rem; margin:0 0 1.6rem; padding:.8rem; border:1px solid var(--rule-soft); border-radius:14px; background:var(--panel-solid); }
-.edition-nav a { text-decoration:none; }
-.edition-nav .day-step, .edition-nav .day-latest { flex:none; white-space:nowrap; font:500 .76rem var(--mono); padding:.65rem .45rem; color:var(--ink); }
-.edition-nav [aria-disabled="true"] { color:var(--ink-faint); opacity:.5; cursor:default; }
-.edition-nav .day-track { display:flex; gap:.3rem; min-width:0; overflow-x:auto; padding:.35rem; scrollbar-width:thin; overscroll-behavior-x:contain; }
-.edition-nav .day-track a, .edition-nav .current { flex:none; white-space:nowrap; font:.76rem var(--mono); padding:.6rem .75rem; border:1px solid var(--rule-soft); border-radius:8px; color:var(--ink-dim); }
-.edition-nav .current { background:var(--ink); color:var(--ground); font-weight:500; }
-.edition-nav a:hover { color:var(--ink); background:rgba(255,255,255,.08); }
-.edition-nav .day-latest { border-left:1px solid var(--rule-soft); padding-left:.8rem; }
-.edition-nav .at-latest { color:var(--ink-dim); }
-@media(max-width:620px) { .edition-nav { display:grid; grid-template-columns:1fr 1fr; gap:.2rem .7rem; } .edition-nav .day-track { grid-row:2; grid-column:1/-1; } .edition-nav .next { justify-self:end; } .edition-nav .day-latest { grid-row:3; grid-column:1/-1; text-align:center; border-left:0; padding:.45rem; } }
+<meta name="robots" content="noindex, nofollow"><meta property="og:title" content="Dailies — Friday 18 September 2026"><meta property="og:description" content="A quiet day: mostly game dev diaries, VFX breakdown puff pieces and industry gossip, with only a couple of items that pass the bar for a working TD."><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{color-scheme:dark;--bg:#121413;--panel:#1c201e;--ink:#f0f2e9;--muted:#b1b7ae;--rule:#343b35;--accent:#d6f38b;--mono:'Space Grotesk',sans-serif;--sans:'DM Sans',sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans)}a{color:inherit}button{font:inherit;cursor:pointer}button:disabled{opacity:.35;cursor:default}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button,a,summary{-webkit-tap-highlight-color:transparent}.review-bar{min-height:58px;background:#20231f;border-bottom:1px solid #3a4037;display:flex;justify-content:space-between;align-items:center;padding:12px 28px;gap:20px;font:11px var(--mono);color:#e9ecdf;position:relative;z-index:2}.review-bar a{text-decoration:none}.review-home{letter-spacing:.12em}.review-home span{opacity:.6}.review-bar>div{display:flex;gap:6px}.review-bar>div a{padding:8px 12px;border-radius:4px;color:#b5bcad}.review-bar>div a.selected{background:#d6f38b;color:#202619}.preview-note{color:#b5bcad}.shell{max-width:1220px;margin:auto;padding:0 46px}.mast{display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid var(--rule);gap:30px}.brand{font:600 40px/1 var(--mono);letter-spacing:-3px;text-decoration:none}.brand-dot{color:var(--accent)}.mast-note{font-size:12px;line-height:1.5;margin-right:auto;color:var(--muted)}.issue{font:10px var(--mono);letter-spacing:.1em}.status-dot{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%;margin-left:16px}.intro{padding:48px 0 30px;display:flex;justify-content:space-between;align-items:flex-end;gap:25px}.eyebrow{font:11px var(--mono);letter-spacing:.15em;color:var(--accent);margin-bottom:14px}h1{font:500 clamp(40px,5.2vw,68px)/1.02 var(--mono);letter-spacing:-.055em;margin:0}.dek{font-size:14px;color:var(--muted);max-width:500px;margin:17px 0 0}.date-block{min-width:155px;border-left:1px solid var(--rule);padding-left:32px;display:flex;flex-direction:column;font:11px var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.12em}.date-block strong{font:400 72px/1.2 var(--mono);letter-spacing:-.08em;color:var(--ink)}.date-nav{display:flex;align-items:center;gap:8px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0}.date-nav button{background:none;color:var(--muted);border:0;font:11px var(--mono);white-space:nowrap;padding:10px}.date-nav .days{display:flex;flex:1;overflow:auto;gap:3px;scrollbar-width:thin;min-width:0;overscroll-behavior-x:contain;padding:3px}.date-nav .days button{padding:10px 13px;border-radius:5px}.date-nav .days .active{color:var(--bg);background:var(--accent)}.reading-head{display:flex;justify-content:space-between;align-items:center;margin:26px 0 20px;gap:15px}.filters{display:flex;gap:5px;flex-wrap:wrap}.filters button{background:none;border:1px solid transparent;color:var(--muted);padding:7px 12px;border-radius:25px;font-size:12px}.filters .active{border-color:var(--rule);color:var(--ink);background:var(--panel)}#story-count{font:10px var(--mono);white-space:nowrap;color:var(--muted)}.story{background:var(--panel);border:1px solid var(--rule);border-radius:13px;overflow:hidden;display:grid;grid-template-columns:1.07fr 1fr;margin-bottom:24px}.visual{position:relative;min-height:390px;background:radial-gradient(ellipse at 20% 60%,#526252,transparent 65%),linear-gradient(130deg,#172c32,#202b1d);overflow:hidden}.visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.visual::after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.55));pointer-events:none}.image-caption{position:absolute;bottom:20px;left:25px;right:25px;z-index:1;display:flex;justify-content:space-between;color:#fff;font:11px var(--mono)}.image-caption .play{border:1px solid #ffffff70;padding:7px 11px;border-radius:20px;text-decoration:none}.story-content{padding:30px}.story-meta{display:flex;justify-content:space-between;font:10px var(--mono);letter-spacing:.12em;color:var(--accent);margin-bottom:17px}.story h2{font:500 clamp(22px,2.5vw,31px)/1.15 var(--mono);letter-spacing:-.035em;margin:0 0 16px}.story h2 a{text-decoration:none}.story h2 a:hover{text-decoration:underline;text-underline-offset:5px}.body{font-size:13px;color:var(--muted);line-height:1.7;margin:0 0 16px}.takeaway{border-left:2px solid var(--accent);padding:0 0 0 15px;font-size:13px;margin:22px 0}.takeaway b{display:block;font:10px var(--mono);letter-spacing:.12em;color:var(--accent);margin-bottom:7px}.tools{display:flex;gap:5px;flex-wrap:wrap;padding:0;margin:18px 0;list-style:none}.tools li{font-size:10px;border:1px solid var(--rule);padding:3px 8px;border-radius:4px;color:var(--muted)}details{margin:15px 0;font-size:12px;color:var(--muted)}summary{cursor:pointer;color:var(--ink);font:11px var(--mono);padding:6px 0}details ul{padding-left:17px}details li{margin-bottom:8px}.story-actions{border-top:1px solid var(--rule);padding-top:15px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.story-actions a{font:11px var(--mono);text-decoration:none;color:var(--accent);margin-right:auto}.story-actions button{border:1px solid var(--rule);border-radius:5px;background:none;color:var(--muted);font-size:11px;padding:6px 10px}.story-actions button.chosen{background:var(--accent);color:var(--bg)}.earlier{margin:42px 0 60px}.section-label{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule);padding-bottom:15px;margin-bottom:22px}.section-label h2{font:400 20px var(--mono);margin:0;letter-spacing:-.03em}.section-label span{font:10px var(--mono);color:var(--muted)}.earlier-stories{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.earlier-card{padding-right:20px;border-right:1px solid var(--rule)}.earlier-card:last-child{border:0}.earlier-card small{font:10px var(--mono);color:var(--accent)}.earlier-card h3{font:500 18px/1.25 var(--mono);letter-spacing:-.02em}.earlier-card a{text-decoration:none}.earlier-card p{color:var(--muted);font-size:12px}.empty{padding:60px;text-align:center;border:1px dashed var(--rule);color:var(--muted)}footer{display:flex;justify-content:space-between;gap:20px;padding:25px 0;border-top:1px solid var(--rule);color:var(--muted);font:10px var(--mono)}
+@media(max-width:850px){.review-bar{flex-wrap:wrap;padding:12px 20px;gap:10px}.preview-note{display:none}.review-bar>div{margin-left:auto}.shell,.workstation .shell{padding:0 24px}.issue{display:none}.story,.editorial .story{grid-template-columns:1fr;gap:0}.visual,.editorial .visual{grid-column:1;grid-row:auto;min-height:240px;aspect-ratio:16/9}.editorial .story-content{grid-column:1;grid-row:auto;padding-top:25px}.workstation .story{grid-template-columns:180px 1fr}.workstation .story-content{display:block;padding:20px}.workstation .takeaway{margin:15px 0;padding-left:15px}.workstation .visual{aspect-ratio:auto}.workstation .visual img{height:150px}.workstation .image-caption{top:180px}.earlier-stories{gap:16px}.earlier-card{padding-right:12px}}
+@media(max-width:550px){.review-bar{position:static}.review-home{font-size:10px}.review-bar>div{margin:0;width:100%;justify-content:space-between}.review-bar>div a{padding:8px 6px;font-size:10px}.shell,.workstation .shell{padding:0 18px}.mast{padding:22px 0;gap:18px}.brand{font-size:36px}.mast-note{font-size:10px}.intro{padding:30px 0 24px;align-items:center}.date-block{min-width:70px;padding-left:15px;font-size:9px}.date-block strong{font-size:52px}.date-block #weekday{display:none}h1{font-size:43px}.dek{font-size:12px;max-width:255px}.editorial h1{font-size:45px}.eyebrow{font-size:9px}.date-nav{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}.date-nav .days{grid-column:1/-1;grid-row:2;width:100%}.date-nav #older{justify-self:start}.date-nav #newer{justify-self:center}.date-nav #latest{justify-self:end}.reading-head{align-items:flex-start}.filters{gap:2px}.filters button{font-size:11px;padding:5px 8px}#story-count{font-size:9px;margin-top:8px}.story-content{padding:22px}.story h2{font-size:27px}.earlier-stories{grid-template-columns:1fr}.earlier-card{border-right:0;border-bottom:1px solid var(--rule);padding:0 0 12px}.earlier{margin-top:30px}.section-label h2{font-size:18px}.section-label span{font-size:9px}.workstation .story{grid-template-columns:1fr}.workstation .visual{height:200px;min-height:0}.workstation .visual img{inset:0;width:100%;height:200px;object-fit:cover}.workstation .image-caption{top:auto;bottom:15px;flex-direction:row;justify-content:space-between}.workstation .date-block{display:none}.workstation .story h2{font-size:25px}.workstation h1{font-size:34px}.editorial .story h2{font-size:32px}footer{flex-direction:column;gap:8px;line-height:1.5}}
+@media(prefers-reduced-motion:no-preference){.story{animation:appear .25s ease-out}@keyframes appear{from{opacity:.5;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+.visual { min-width:0; width:100%; max-width:100%; }
+
+/* Screening Room / Rust: the same layout in warm charcoal and burnt orange. */
+.screening-rust{--bg:#1b1310;--panel:#2a1c16;--ink:#f7eee7;--muted:#c5aca0;--rule:#50362a;--accent:#f5a66d}
+.screening-rust .review-bar{background:#2b1b14;border-color:#50362a;color:#f7eee7}
+.screening-rust .review-bar>div a,.screening-rust .preview-note{color:#c5aca0}
+.screening-rust .review-bar>div a.selected{background:#ee9a60;color:#27160e}
+.screening-rust .visual{background:radial-gradient(ellipse at 20% 60%,#844325,transparent 65%),linear-gradient(130deg,#362018,#21130f)}
+.palette-switch{display:none;align-items:center;gap:6px;padding-top:20px;font:10px var(--mono);letter-spacing:.06em;color:var(--muted)}
+.screening .palette-switch,.screening-rust .palette-switch{display:flex}
+.palette-switch span{margin-right:auto}.palette-switch a{padding:6px 13px;border:1px solid var(--rule);border-radius:20px;text-decoration:none}
+.palette-switch [aria-current]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.screening .intro,.screening-rust .intro{padding-top:28px}
+
+.visual .thumbnail-art{object-fit:contain;background:#201915;padding-bottom:50px}.image-credit{display:block;margin-top:7px;font-size:10px;opacity:.8}
+
+/* Live edition: source links, durable ratings and archive navigation. */
+[hidden]{display:none!important}.skip-link{position:absolute;top:-80px;left:20px;z-index:5;background:var(--accent);color:var(--bg);padding:12px}.skip-link:focus{top:12px}
+.screening-rust .intro{padding-top:48px}.story{scroll-margin-top:24px}.visual .thumb.thumbnail-cover{position:absolute;inset:0;aspect-ratio:auto}
+.visual .thumbnail-art{padding-bottom:50px;object-fit:contain;background:#201915}.visual .thumbnail-label{top:18px;bottom:auto;left:20px}.image-caption{align-items:center;gap:12px;pointer-events:none}.image-caption a{pointer-events:auto}.image-caption .creator{text-decoration:none;max-width:50%;line-height:1.4}
+.tag b[hidden]{display:none}.tag i{font-style:normal}.why{margin:0}.sources{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px;padding:0;margin:20px 0 14px;font:11px var(--mono);color:var(--muted)}.sources a{text-decoration:none}.sources a:hover{text-decoration:underline}.sources .video:before{content:'▶ ';font-size:8px}.sources .talk{opacity:.8}
+.actions button.done{background:var(--accent);color:var(--bg);opacity:1}.story-actions .copy{margin-left:auto}.rating-status{font-size:11px;color:var(--muted);margin:8px 0 0}.rating-status:empty{display:none}.low-confidence{font-size:11px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px}
+footer{align-items:start}.footer-brand{max-width:350px;line-height:1.6}.edition-notes{margin:0;max-width:650px;font:11px/1.7 var(--sans)}.edition-notes summary{padding:0}.edition-notes .verdict{color:var(--ink)}.run-notes details{margin-bottom:0}.run-notes ul{padding-left:18px}
+.filter-empty{padding:55px 20px;text-align:center;color:var(--muted);border:1px dashed var(--rule)}.quiet{padding:60px 25px;border:1px solid var(--rule);border-radius:12px;color:var(--muted)}.reset-filter{color:var(--accent);border:0;background:none;text-decoration:underline;padding:10px}
+@media(max-width:550px){.screening-rust .intro{padding-top:30px}.image-caption{left:20px;right:20px;bottom:18px}.story-actions .copy{margin-left:0}.story-actions{gap:7px}.story-actions a{width:100%;margin-bottom:5px}footer{gap:15px}.story-meta{gap:10px}.story-meta>span:last-child{white-space:nowrap}}</style>
+<style id="edition-navigation">.edition-nav{display:flex;align-items:center;gap:8px;margin:0;padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.edition-nav a{text-decoration:none}.edition-nav .day-step,.edition-nav .day-latest{flex:none;white-space:nowrap;font:11px var(--mono);padding:10px;color:var(--muted)}
+.edition-nav [aria-disabled="true"]{opacity:.35;cursor:default}.edition-nav .day-track{display:flex;flex:1;gap:3px;min-width:0;overflow-x:auto;padding:3px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.edition-nav .day-track a,.edition-nav .current{flex:none;white-space:nowrap;font:11px var(--mono);padding:10px 13px;border-radius:5px;color:var(--muted)}
+.edition-nav .current{background:var(--accent);color:var(--bg)}.edition-nav a:hover{color:var(--ink);background:var(--panel)}.edition-nav .at-latest{opacity:.35}
+@media(max-width:550px){.edition-nav{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}.edition-nav .day-track{grid-column:1/-1;grid-row:2;width:100%}.edition-nav .prev{justify-self:start}.edition-nav .next{justify-self:center}.edition-nav .day-latest{justify-self:end}}
 </style>
 <style id="thumbnail-fallbacks">
 .thumb.thumbnail-cover{position:relative;display:block;aspect-ratio:16/9;background:#201915}
@@ -603,108 +53,97 @@
 .thumbnail-link{position:absolute;inset:0;display:block}.thumbnail-label{pointer-events:none}
 
 </style>
-</head>
-<body>
-<div class="wrap">
-
-  <header class="masthead">
-    <h1 class="wordmark">Dailies<span>AI in VFX, image and video generation</span></h1>
-    <div class="stamp">
-      <b>Friday 18 September 2026</b>
-      2 stories from 19 items
-    </div>
-  </header>
-
-  <nav class="edition-nav" aria-label="Daily editions" data-edition="2026-09-18"><a class="day-step prev" href="2026-09-17.html" aria-label="Older edition" rel="prev">← Older</a><div class="day-track" tabindex="0" aria-label="Dates, oldest to newest"><a href="2026-09-08.html"><time datetime="2026-09-08">Sep 8</time></a><a href="2026-09-09.html"><time datetime="2026-09-09">Sep 9</time></a><a href="2026-09-10.html"><time datetime="2026-09-10">Sep 10</time></a><a href="2026-09-11.html"><time datetime="2026-09-11">Sep 11</time></a><a href="2026-09-12.html"><time datetime="2026-09-12">Sep 12</time></a><a href="2026-09-13.html"><time datetime="2026-09-13">Sep 13</time></a><a href="2026-09-14.html"><time datetime="2026-09-14">Sep 14</time></a><a href="2026-09-15.html"><time datetime="2026-09-15">Sep 15</time></a><a href="2026-09-16.html"><time datetime="2026-09-16">Sep 16</time></a><a href="2026-09-17.html"><time datetime="2026-09-17">Sep 17</time></a><span class="current" aria-current="page"><time datetime="2026-09-18">Sep 18</time></span><a href="2026-09-19.html"><time datetime="2026-09-19">Sep 19</time></a><a href="2026-09-20.html"><time datetime="2026-09-20">Sep 20</time></a><a href="2026-09-21.html"><time datetime="2026-09-21">Sep 21</time></a></div><a class="day-step next" href="2026-09-19.html" aria-label="Newer edition" rel="next">Newer →</a><a class="day-latest" href="2026-09-21.html">Latest ↗</a></nav>
-
-  <section class="levels" aria-label="Distribution of today's stories by category">
-    <div class="levels-bar">      <div style="background:#5ba86b;flex:1"
-           title="Research: 1"></div>      <div style="background:#cfcbc4;flex:1"
-           title="Tutorials: 1"></div>    </div>
-    <div class="levels-key">      <span><i style="background:#5ba86b"></i><b>1</b> research</span>      <span><i style="background:#cfcbc4"></i><b>1</b> tutorials</span>    </div>
-<p class="verdict">A quiet day: mostly game dev diaries, VFX breakdown puff pieces and industry gossip, with only a couple of items that pass the bar for a working TD.</p>  </section>
-
-  <main class="reel">    <article class="story" id="1a19acf129" style="--rail-color:#5ba86b">
-      <div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2814%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3ERESEARCH%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3EsigmaPBR%20tool%20converts%203D%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Escans%20into%20relightable%20PBR%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Ematerials%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"><img class="thumbnail-source" src="https://cdn.80.lv/api/upload/post/41649/images/6aac0730333a5/cover_800x800.jpg" alt="" loading="lazy" data-kind="source"></a><span class="thumbnail-label"></span></div>
-      <div class="story-body">
-        <div class="tag">
-          <b>G</b>
-          <i>01</i>
-        </div>
-        <h2 class="headline"><a href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener">sigmaPBR tool converts 3D scans into relightable PBR materials</a></h2>
-<p class="why">Relightable scan-to-material conversion could shortcut texture work if it ships with usable export formats.</p>        <p class="body-text">A CD Projekt Red technical artist released sigmaPBR, a solver that turns photogrammetry captures into relightable material sets rather than baked textures. Details on availability, licence, and integration with existing DCC pipelines are thin in the writeup, so treat this as one to watch rather than adopt yet. Worth checking the tool&#39;s actual release channel before assuming it&#39;s production-ready.</p>
-        <ul class="sources">          <li><a href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener"
-                 class="">80 Level</a></li>        </ul>
-        <div class="actions">
-          <button type="button" class="up" data-sid="1a19acf129" data-vote="+1"
-                  title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="1a19acf129" data-vote="-1"
-                  title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="1a19acf129">Copy link</button>
-        </div>
-        <p class="low-confidence">Single unverified source. Treat as a rumour until confirmed.</p>
-      </div>
-    </article>    <article class="story" id="c248d46204" style="--rail-color:#cfcbc4">
-      <div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2830%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3EWORKFLOW%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3EFlanders%20Scientific%20and%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3EPomfort%20add%20four-channel%20LUT%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Esupport%20for%20XMP%20monitors%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"></a><span class="thumbnail-label"></span></div>
-      <div class="story-body">
-        <div class="tag">
-          <b>A</b>
-          <i>02</i>
-        </div>
-        <h2 class="headline"><a href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener">Flanders Scientific and Pomfort add four-channel LUT support for XMP monitors</a></h2>
-<p class="why">Direct impact on on-set colour pipeline for multi-camera productions using FSI monitors.</p>        <p class="body-text">Pomfort Livegrade 7.2 now drives four independent LUT channels across SDI camera feeds on a single FSI XMP Series monitor, combining Livegrade&#39;s look management with the monitor&#39;s built-in processing. This is a concrete on-set colour tooling integration aimed at DITs and DPs managing multi-camera shoots with per-camera looks.</p>
-        <ul class="sources">          <li><a href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener"
-                 class="">postPerspective</a></li>        </ul>
-        <div class="actions">
-          <button type="button" class="up" data-sid="c248d46204" data-vote="+1"
-                  title="Mark useful — trains tomorrow's filter">Useful</button>
-          <button type="button" class="down" data-sid="c248d46204" data-vote="-1"
-                  title="Mark not useful — trains tomorrow's filter">Not useful</button>
-          <button type="button" class="copy" data-anchor="c248d46204">Copy link</button>
-        </div>
-      </div>
-    </article>  </main>
-
-  <footer>
-    Compiled 2026-09-18 08:56 NZST · 42/42 sources responded · 31 ratings so far
+</head><body class="screening-rust" data-design="screening-rust" data-rating-endpoint="https://ai-vfx-dailies-rating.falling-pine-24e5.workers.dev/">
+<a class="skip-link" href="#stories">Skip to stories</a>
+<div class="shell">
+<header class="mast"><a href="../index.html" class="brand" aria-label="Dailies — latest edition">dailies<span class="brand-dot">.</span></a><div class="mast-note">AI, image & motion.<br>For the people building the pipeline.</div><span class="issue">A PERSONAL RESEARCH DIGEST <span class="status-dot"></span></span></header>
+<section class="intro"><div><div class="eyebrow">DAILY EDITION / Sep 18 2026</div><h1>A method worth<br>taking apart.</h1><p class="dek">AI tools, techniques and workflows. A short read, then back to making things.</p></div><div class="date-block"><span id="weekday">Friday</span><strong>18</strong><span>September 2026</span></div></section>
+<nav class="edition-nav" aria-label="Daily editions" data-edition="2026-09-18"><a class="day-step prev" href="2026-09-17.html" aria-label="Older edition" rel="prev">← Older</a><div class="day-track" tabindex="0" aria-label="Dates, oldest to newest"><a href="2026-09-08.html"><time datetime="2026-09-08">Sep 8</time></a><a href="2026-09-09.html"><time datetime="2026-09-09">Sep 9</time></a><a href="2026-09-10.html"><time datetime="2026-09-10">Sep 10</time></a><a href="2026-09-11.html"><time datetime="2026-09-11">Sep 11</time></a><a href="2026-09-12.html"><time datetime="2026-09-12">Sep 12</time></a><a href="2026-09-13.html"><time datetime="2026-09-13">Sep 13</time></a><a href="2026-09-14.html"><time datetime="2026-09-14">Sep 14</time></a><a href="2026-09-15.html"><time datetime="2026-09-15">Sep 15</time></a><a href="2026-09-16.html"><time datetime="2026-09-16">Sep 16</time></a><a href="2026-09-17.html"><time datetime="2026-09-17">Sep 17</time></a><span class="current" aria-current="page"><time datetime="2026-09-18">Sep 18</time></span><a href="2026-09-19.html"><time datetime="2026-09-19">Sep 19</time></a><a href="2026-09-20.html"><time datetime="2026-09-20">Sep 20</time></a><a href="2026-09-21.html"><time datetime="2026-09-21">Sep 21</time></a></div><a class="day-step next" href="2026-09-19.html" aria-label="Newer edition" rel="next">Newer →</a><a class="day-latest" href="2026-09-21.html">Latest ↗</a></nav>
+<p class="stamp" hidden>2 stories from 19 items</p>
+<div class="reading-head"><div class="filters" aria-label="Filter stories" hidden><button type="button" class="active" data-filter="all" aria-pressed="true">All stories</button><button type="button" data-filter="a" aria-pressed="false">Workflows</button><button type="button" data-filter="r" aria-pressed="false">Models & tools</button><button type="button" data-filter="g" aria-pressed="false">Research</button><button type="button" data-filter="b" aria-pressed="false">Industry</button></div><span id="story-count" aria-live="polite" data-date="SEP 18">2 STORIES / SEP 18</span></div>
+<main id="stories" class="stories" tabindex="-1">
+<article class="story" id="1a19acf129" data-channel="g">
+<div class="visual"><div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2814%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3ERESEARCH%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3EsigmaPBR%20tool%20converts%203D%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Escans%20into%20relightable%20PBR%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Ematerials%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"><img class="thumbnail-source" src="https://cdn.80.lv/api/upload/post/41649/images/6aac0730333a5/cover_800x800.jpg" alt="" loading="lazy" data-kind="source"></a><span class="thumbnail-label"></span></div>
+<div class="image-caption"><a class="creator" href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener">80 Level</a><a class="play" href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener">↗ Read source</a></div></div>
+<div class="story-content story-body">
+<div class="story-meta tag"><span><b hidden>G</b>RESEARCH / <i>01</i></span><span>IN THE DIGEST</span></div>
+<h2 class="headline"><a href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener">sigmaPBR tool converts 3D scans into relightable PBR materials</a></h2>
+<p class="body body-text">A CD Projekt Red technical artist released sigmaPBR, a solver that turns photogrammetry captures into relightable material sets rather than baked textures. Details on availability, licence, and integration with existing DCC pipelines are thin in the writeup, so treat this as one to watch rather than adopt yet. Worth checking the tool&#39;s actual release channel before assuming it&#39;s production-ready.</p>
+<div class="takeaway"><b>WHY IT MATTERS</b><p class="why">Relightable scan-to-material conversion could shortcut texture work if it ships with usable export formats.</p></div><ul class="sources"><li><a href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener" class="">80 Level</a></li></ul>
+<div class="story-actions actions">
+<a href="https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans" target="_blank" rel="noopener">Open original ↗</a><button type="button" class="up" data-sid="1a19acf129" data-vote="+1" aria-label="Mark useful: sigmaPBR tool converts 3D scans into relightable PBR materials">Useful</button><button type="button" class="down" data-sid="1a19acf129" data-vote="-1" aria-label="Mark not useful: sigmaPBR tool converts 3D scans into relightable PBR materials">Not for me</button><button type="button" class="copy" data-anchor="1a19acf129">Copy link</button></div>
+<p class="rating-status" role="status"></p>
+<p class="low-confidence">Single unverified source. Treat as a rumour until confirmed.</p></div></article>
+<article class="story" id="c248d46204" data-channel="a">
+<div class="visual"><div class="thumb thumbnail-cover"><a class="thumbnail-link" href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumbnail-art" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22675%22%20viewBox%3D%220%200%201200%20675%22%3E%0A%3Cdefs%3E%3CradialGradient%20id%3D%22glow%22%3E%3Cstop%20stop-color%3D%22%23994a2a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23201915%22%2F%3E%3C%2FradialGradient%3E%0A%3Cpattern%20id%3D%22grid%22%20width%3D%2260%22%20height%3D%2260%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Cpath%20d%3D%22M60%200H0V60%22%20fill%3D%22none%22%20stroke%3D%22%23efb084%22%20stroke-opacity%3D%22.08%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23glow%29%22%2F%3E%3Crect%20width%3D%221200%22%20height%3D%22675%22%20fill%3D%22url%28%23grid%29%22%2F%3E%0A%3Cg%20transform%3D%22translate%28910%20295%29%20rotate%2830%29%22%20fill%3D%22none%22%20stroke%3D%22%23f5a66d%22%3E%0A%3Cellipse%20rx%3D%22175%22%20ry%3D%22220%22%20stroke-opacity%3D%22.28%22%2F%3E%3Cellipse%20rx%3D%22215%22%20ry%3D%22110%22%20stroke-opacity%3D%22.48%22%2F%3E%0A%3Cpath%20d%3D%22M-120-105%2025-160%20160-50%2015%2010Z%20M-120-105V80L15%20195V10%20M160-50V135L15%20195%20M25-160V25L160%20135%20M-120%2080%2025%2025%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.8%22%2F%3E%0A%3Ccircle%20r%3D%22260%22%20stroke-dasharray%3D%223%2014%22%20stroke-opacity%3D%22.22%22%2F%3E%3C%2Fg%3E%0A%3Cpath%20d%3D%22M85%20115H145%22%20stroke%3D%22%23f5a66d%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22155%22%20fill%3D%22%23e7ad87%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20letter-spacing%3D%224%22%3EWORKFLOW%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22370%22%20fill%3D%22%23f7eee7%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2242%22%3E%3Ctspan%20x%3D%2285%22%20dy%3D%220%22%3EFlanders%20Scientific%20and%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3EPomfort%20add%20four-channel%20LUT%3C%2Ftspan%3E%3Ctspan%20x%3D%2285%22%20dy%3D%2248%22%3Esupport%20for%20XMP%20monitors%3C%2Ftspan%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%2285%22%20y%3D%22600%22%20fill%3D%22%23c5aca0%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2217%22%20letter-spacing%3D%223%22%3EDAILIES%20%2F%20EDITORIAL%20GRAPHIC%3C%2Ftext%3E%3C%2Fsvg%3E" alt="" loading="lazy"></a><span class="thumbnail-label"></span></div>
+<div class="image-caption"><a class="creator" href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener">postPerspective</a><a class="play" href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener">↗ Read source</a></div></div>
+<div class="story-content story-body">
+<div class="story-meta tag"><span><b hidden>A</b>WORKFLOW / <i>02</i></span><span>IN THE DIGEST</span></div>
+<h2 class="headline"><a href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener">Flanders Scientific and Pomfort add four-channel LUT support for XMP monitors</a></h2>
+<p class="body body-text">Pomfort Livegrade 7.2 now drives four independent LUT channels across SDI camera feeds on a single FSI XMP Series monitor, combining Livegrade&#39;s look management with the monitor&#39;s built-in processing. This is a concrete on-set colour tooling integration aimed at DITs and DPs managing multi-camera shoots with per-camera looks.</p>
+<div class="takeaway"><b>WHY IT MATTERS</b><p class="why">Direct impact on on-set colour pipeline for multi-camera productions using FSI monitors.</p></div><ul class="sources"><li><a href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener" class="">postPerspective</a></li></ul>
+<div class="story-actions actions">
+<a href="https://postperspective.com/flanders-and-pomfort-team-four-lut-channels-on-xmp-monitors" target="_blank" rel="noopener">Open original ↗</a><button type="button" class="up" data-sid="c248d46204" data-vote="+1" aria-label="Mark useful: Flanders Scientific and Pomfort add four-channel LUT support for XMP monitors">Useful</button><button type="button" class="down" data-sid="c248d46204" data-vote="-1" aria-label="Mark not useful: Flanders Scientific and Pomfort add four-channel LUT support for XMP monitors">Not for me</button><button type="button" class="copy" data-anchor="c248d46204">Copy link</button></div>
+<p class="rating-status" role="status"></p>
+</div></article>
+<p class="filter-empty" hidden>No stories in this category for this edition.<br><button type="button" class="reset-filter">Show all stories</button></p>
+</main>
+<section class="earlier"><div class="section-label"><h2>Earlier on the reel</h2><span>From previous editions</span></div><div class="earlier-stories"><article class="earlier-card"><small>17 SEP</small><h3><a href="2026-09-17.html">MiniMax-H3 video model gets a ComfyUI-native community fork with LoRA and FLF support</a></h3><p>If the licence checks out, this is a controllable open video model you could actually wire into a ComfyUI pipeline.</p></article><article class="earlier-card"><small>16 SEP</small><h3><a href="2026-09-16.html">Canva ships Affinity 3.3 with new scripting system and AI features</a></h3><p>A free, scriptable image editor is a viable Photoshop alternative for small studios and pipeline automation.</p></article><article class="earlier-card"><small>15 SEP</small><h3><a href="2026-09-15.html">DaVinci Resolve 21.1 adds AI assistant control and new Fusion 3D tools</a></h3><p>Free Fusion 3D and AI-assist updates directly affect comp and edit pipelines already using Resolve.</p></article></div></section><footer><div class="footer-brand">DAILIES / An independent view of AI for VFX.</div><details class="edition-notes"><summary>About this edition</summary><p class="verdict">A quiet day: mostly game dev diaries, VFX breakdown puff pieces and industry gossip, with only a couple of items that pass the bar for a working TD.</p><div class="run-notes">Compiled 2026-09-18 08:56 NZST · 42/42 sources responded · 31 ratings so far
       (5 sources reweighted,
-       3 terms learned)  </footer>
-
-</div>
-<script>
-
-
-  var RATING_ENDPOINT = "https://ai-vfx-dailies-rating.falling-pine-24e5.workers.dev/";
-  document.querySelectorAll('.actions .up, .actions .down').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var group = btn.closest('.actions');
-      var siblings = group.querySelectorAll('.up, .down');
-      siblings.forEach(function (b) { b.disabled = true; });
-
-      fetch(RATING_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sid: btn.dataset.sid, vote: btn.dataset.vote }),
-      })
-        .then(function (r) { if (!r.ok) throw new Error('rating failed'); })
-        .then(function () {
-          btn.textContent = btn.classList.contains('up') ? 'Marked useful' : 'Marked not useful';
-          btn.classList.add('done');
-        })
-        .catch(function () {
-          siblings.forEach(function (b) { b.disabled = false; });
-          btn.textContent = 'Try again';
-        });
+       3 terms learned)</div></details></footer>
+</div><script>(() => {
+  const cards = [...document.querySelectorAll('article.story')];
+  const filters = document.querySelector('.filters');
+  const count = document.getElementById('story-count');
+  const empty = document.querySelector('.filter-empty');
+  function filter(category) {
+    let visible = 0;
+    cards.forEach(card => { card.hidden = category !== 'all' && card.dataset.channel !== category; if (!card.hidden) visible++; });
+    filters.querySelectorAll('button').forEach(button => {
+      const selected = button.dataset.filter === category;
+      button.classList.toggle('active', selected); button.setAttribute('aria-pressed', String(selected));
+    });
+    count.textContent = `${visible} ${visible === 1 ? 'STORY' : 'STORIES'} / ${count.dataset.date}`;
+    empty.hidden = category === 'all' || visible > 0;
+  }
+  filters.hidden = cards.length === 0;
+  filters.querySelectorAll('button').forEach(button => button.addEventListener('click', () => filter(button.dataset.filter)));
+  document.querySelector('.reset-filter').addEventListener('click', () => { filter('all'); filters.querySelector('button').focus(); });
+  // A shared story link must stay visible after changing the category filter.
+  addEventListener('hashchange', () => {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target?.matches('article.story') && target.hidden) { filter('all'); target.scrollIntoView(); }
+  });
+  const endpoint = document.body.dataset.ratingEndpoint;
+  document.querySelectorAll('.actions .up, .actions .down').forEach(button => {
+    button.addEventListener('click', async () => {
+      const card = button.closest('.story');
+      const siblings = card.querySelectorAll('.up, .down');
+      const status = card.querySelector('.rating-status');
+      siblings.forEach(b => b.disabled = true);
+      status.textContent = 'Saving rating…';
+      try {
+        const response = await fetch(endpoint, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sid:button.dataset.sid,vote:button.dataset.vote})});
+        if (!response.ok) throw Error('rating failed');
+        button.classList.add('done');
+        button.textContent = button.dataset.vote === '+1' ? 'Marked useful' : 'Marked not useful';
+        status.textContent = 'Rating saved. It will help shape future editions.';
+      } catch (_) {
+        siblings.forEach(b => b.disabled = false);
+        status.textContent = 'Could not save your rating. Please try again.';
+      }
     });
   });
-
-</script>
-<script id="edition-navigation">(() => {
+})();</script><script id="edition-navigation">(() => {
   const nav = document.querySelector('.edition-nav');
   if (!nav) return;
   const track = nav.querySelector('.day-track');
   const current = nav.querySelector('[aria-current="page"]');
-  if (track && current) track.scrollLeft = current.offsetLeft - track.offsetLeft - (track.clientWidth - current.clientWidth) / 2;
+  function centerDate() {
+    if (track && current) track.scrollLeft = current.offsetLeft - track.offsetLeft - (track.clientWidth - current.clientWidth) / 2;
+  }
+  centerDate();
+  if (track && typeof ResizeObserver !== 'undefined') new ResizeObserver(centerDate).observe(track);
   document.addEventListener('keydown', event => {
     if (event.defaultPrevented || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
     const focused = document.activeElement;
@@ -745,5 +184,4 @@
 })();
 
 </script>
-</body>
-</html>
+</body></html>

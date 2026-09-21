@@ -353,6 +353,8 @@ def main() -> int:
                     help="show stored ratings without fetching new ones")
     fb.set_defaults(func=cmd_feedback)
 
+    design = sub.add_parser("refresh-design", help="apply the site design to all retained editions without API calls")
+    design.set_defaults(func=lambda args: (render.refresh_design(ROOT, _load()[0]), 0)[1])
     nav = sub.add_parser("refresh-navigation", help="repair all page navigation without model calls")
     nav.set_defaults(func=lambda args: (navigation.refresh(ROOT), 0)[1])
     thumbs = sub.add_parser("refresh-thumbnails", help="refresh offline thumbnail fallbacks without API calls")

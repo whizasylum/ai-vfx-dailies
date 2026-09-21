@@ -3,7 +3,11 @@
   if (!nav) return;
   const track = nav.querySelector('.day-track');
   const current = nav.querySelector('[aria-current="page"]');
-  if (track && current) track.scrollLeft = current.offsetLeft - track.offsetLeft - (track.clientWidth - current.clientWidth) / 2;
+  function centerDate() {
+    if (track && current) track.scrollLeft = current.offsetLeft - track.offsetLeft - (track.clientWidth - current.clientWidth) / 2;
+  }
+  centerDate();
+  if (track && typeof ResizeObserver !== 'undefined') new ResizeObserver(centerDate).observe(track);
   document.addEventListener('keydown', event => {
     if (event.defaultPrevented || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
     const focused = document.activeElement;

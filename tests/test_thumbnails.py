@@ -4,6 +4,7 @@ import os
 import shutil
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from unittest.mock import patch
 from urllib.parse import unquote
@@ -121,6 +122,9 @@ class ThumbnailTests(unittest.TestCase):
         self.assertNotIn('<image',svg)
         self.assertNotIn('https:',svg)
         self.assertIn('&lt;script&gt;',svg)
+        for channel in ('a', 'r', 'g', 'b'):
+            art=thumbnails.fallback_image(story(channel=channel))
+            ET.fromstring(unquote(art.split(',',1)[1]))
 
     def test_render_migration_and_readback_preserve_source_and_ai_provenance(self):
         stories=[story(1),story(2,image='images/generated/abcdef.webp',image_kind='ai'),story(3,image='https://example.com/photo.jpg')]

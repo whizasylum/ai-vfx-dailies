@@ -253,6 +253,20 @@ Source changes on main run the tests and publish the existing pages through the
 `Verify and publish site fixes` workflow, without collecting news or spending API
 quota. The daily workflow continues to generate new editions on its schedule.
 
+## Live page design
+
+The published page uses the rust Screening Room design: warm charcoal and
+copper, large source images, category filters, and chronological navigation.
+Ratings post to the configured endpoint; shared story links stay pinned to an
+edition. Earlier-story links are refreshed when old editions are pruned.
+
+Apply template changes to all retained editions without collecting news or
+calling any paid services with `python -m digest.cli refresh-design`.
+This preserves story content, IDs, source links, dates and original run notes.
+The site-fixes workflow runs this command before publishing. Browser checks for
+the live layout and mocked rating success/failure paths are in
+`node screening_browser_check.cjs`.
+
 ## Design studies (separate from the live site)
 
 `design-previews/index.html` compares three directions using real archived content:

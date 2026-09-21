@@ -29,7 +29,7 @@ def read_html(path: Path) -> dict:
         img = card.select_one(".thumb img:not(.thumbnail-art)")
         stories.append({
             "headline": text(".headline"), "body": text(".body-text"),
-            "why": text(".why"), "channel": text(".tag b").lower(),
+            "why": text(".why"), "channel": text(".tag b, .rail b").lower(),
             "confidence": "low" if card.select_one(".low-confidence") else "medium",
             "sources": sources, "image": img.get("src", "").removeprefix("../") if img else None,
             "image_kind": img.get("data-kind", "source") if img else None,
