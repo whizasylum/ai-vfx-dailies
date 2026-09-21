@@ -17,6 +17,11 @@
     const tools = story.tools_and_platforms || [];
     return `<article class="story"><div class="visual"><img class="thumbnail-art" src="${escape(story.fallback_image)}" alt="" loading="lazy">${story.image ? `<img class="thumbnail-source" src="${imageUrl(story.image)}" alt="${story.image_kind === 'ai' ? 'AI illustration' : 'Thumbnail from ' + escape(source.name)}" loading="lazy">` : ''}<div class="image-caption"><span>${escape(source.name)}${story.image_kind === 'ai' ? '<small class="image-credit">AI illustration</small>' : ''}</span><a class="play" href="${safeUrl(source.url)}" target="_blank" rel="noopener">${source.video?'▶ Watch video':'↗ Read source'}</a></div></div><div class="story-content"><div class="story-meta"><span>${labels[story.channel] || 'STORY'} / ${String(index+1).padStart(2,'0')}</span><span>${story.watched?'VIDEO REVIEW':'IN THE DIGEST'}</span></div><h2><a href="${safeUrl(source.url)}" target="_blank" rel="noopener">${escape(story.headline)}</a></h2><p class="body">${escape(story.body)}</p>${story.why?`<div class="takeaway"><b>WHY IT MATTERS</b>${escape(story.why)}</div>`:''}${tools.length?`<ul class="tools">${tools.map(t=>`<li title="${escape(t.used_for)}">${escape(t.name)}</li>`).join('')}</ul>`:''}${story.whats_transferable?.length?`<details><summary>Inside the workflow · ${story.whats_transferable.length} takeaways</summary><ul>${story.whats_transferable.map(t=>`<li>${escape(t)}</li>`).join('')}</ul></details>`:''}<div class="story-actions"><a href="${safeUrl(source.url)}" target="_blank" rel="noopener">Open original ↗</a><button data-vote="useful" data-key="${escape(day+index)}">Useful</button><button data-vote="skip" data-key="${escape(day+index)}">Not for me</button></div></div></article>`;
   }
+  function centerDate() {
+    const track=document.getElementById('days'), active=track.querySelector('.active');
+    if(active)track.scrollLeft=active.offsetLeft-track.offsetLeft-(track.clientWidth-active.clientWidth)/2;
+  }
+  new ResizeObserver(centerDate).observe(document.getElementById('days'));
   function show() {
     const i = dates.indexOf(day);
     const date = new Date(day + 'T12:00:00');
@@ -32,8 +37,7 @@
     document.getElementById('latest').disabled = i === dates.length-1;
     document.getElementById('days').innerHTML = dates.map(d=>`<button data-day="${d}" ${d===day?'class="active" aria-current="date"':''}>${fmt(d)}</button>`).join('');
     document.querySelectorAll('[data-day]').forEach(button=>button.onclick=()=>{day=button.dataset.day;show();});
-    const track=document.getElementById('days'), active=track.querySelector('.active');
-    track.scrollLeft=active.offsetLeft-track.offsetLeft-(track.clientWidth-active.clientWidth)/2;
+    centerDate();
     const stories = editions[day].stories.filter(s => filter==='all' || s.channel===filter);
     document.getElementById('story-count').textContent = `${stories.length} ${stories.length===1?'STORY':'STORIES'} / ${fmt(day).toUpperCase()}`;
     document.getElementById('stories').innerHTML = stories.length ? stories.map(storyHTML).join('') : '<p class="empty">No stories in this category for this edition.<br>Try All stories or another date.</p>';

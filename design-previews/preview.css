@@ -21,4 +21,4 @@
 .palette-switch [aria-current]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
 .screening .intro,.screening-rust .intro{padding-top:28px}
 
-.visual .thumbnail-art{object-fit:contain;background:#201915}.image-credit{display:block;margin-top:7px;font-size:10px;opacity:.8}
+.visual .thumbnail-art{object-fit:contain;background:#201915;padding-bottom:50px}.image-credit{display:block;margin-top:7px;font-size:10px;opacity:.8}
