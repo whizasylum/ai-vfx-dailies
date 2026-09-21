@@ -382,7 +382,68 @@
    ],
    "via": "page",
    "issue_ids": [
-    18
+    18,
+    20
+   ]
+  },
+  {
+   "story_id": "b6e69b7a84",
+   "at": "2026-09-21T21:38:04.479552+00:00",
+   "vote": 1,
+   "headline": "Blender 5.3 adding native 3D Gaussian splat support",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "r",
+   "terms": [
+    "adding",
+    "asset",
+    "blender",
+    "could",
+    "dcc",
+    "gaussian",
+    "major",
+    "native",
+    "novelty",
+    "pipeline",
+    "real",
+    "shift",
+    "splat",
+    "splats"
+   ],
+   "via": "page",
+   "issue_ids": [
+    21
+   ]
+  },
+  {
+   "story_id": "36ca61f09d",
+   "at": "2026-09-21T21:38:04.479582+00:00",
+   "vote": 1,
+   "headline": "ComfyUI v0.37.0 released with disk-speed auto-detection and partner node fixes",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "already",
+    "any",
+    "auto-detection",
+    "comfyui",
+    "direct",
+    "disk-speed",
+    "fixes",
+    "node",
+    "nodes",
+    "partner",
+    "pipeline-relevant",
+    "production.",
+    "running",
+    "studio"
+   ],
+   "via": "page",
+   "issue_ids": [
+    19
    ]
   }
  ]

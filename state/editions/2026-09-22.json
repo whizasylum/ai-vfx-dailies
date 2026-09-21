@@ -1,0 +1,137 @@
+{
+  "verdict": "A quiet day: mostly studio PR breakdowns, gaming news, and thin research paper listings, with nothing that lands as a usable tool or technique for a USD/Houdini pipeline.",
+  "stories": [
+    {
+      "headline": "DNEG delivered 302 VFX shots for Motor City using concept-art projection onto period environments",
+      "body": "DNEG was sole VFX vendor on Potsy Ponciroli's 1970s revenge thriller Motor City, delivering 302 shots across 15 sequences in 7 months. The studio projected VFX supervisor Serkan Selzele's own concept art directly onto period Detroit environments, tracked gore through a multi-stage elevator fight, and simulated a thermite shower for the climax. Released theatrically July 24.",
+      "why": "Concept-art-as-projection-texture is a workable technique worth understanding for fast turnaround period work.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/vfxworld/dneg-takes-motor-city-back-bloody-1970s",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/moc_elf_0160_comp_v008.1047-1280.jpg?itok=sk3dN238"
+    },
+    {
+      "headline": "Junior FX artist recreates Wētā's Lagrangian wave research in Houdini",
+      "body": "Fred Bello, a junior FX artist, shared a breakdown of a Houdini water simulation setup based on Wētā's published research into Lagrangian wave modeling. The piece walks through his own implementation rather than reproducing Wētā's proprietary tools. No plugin or downloadable asset is mentioned, just a technique writeup.",
+      "why": "Useful reference if building custom ocean or wave FX setups in Houdini VEX.",
+      "channel": "g",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/hypnotizing-fluid-simulation-based-on-w-t-s-research-on-lagrangian-waves",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41685/images/6ab13d03b2c55/cover_800x800.jpg"
+    },
+    {
+      "headline": "My Full AI Workspace - A Year in the Making, Now Yours for Free",
+      "body": "The release of Mr. Mak Workspace, an open-source environment designed to orchestrate multiple terminal-based AI agents within a visual project management frontend for 3D workflows.",
+      "why": "This workspace serves as a local orchestration layer. A VFX TD could adapt the MCP pattern to write Houdini-specific servers, allowing agents to manipulate .hip files or USD stages directly through the terminal interface.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=gV23ON8BgwU",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/gV23ON8BgwU/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Codex CLI",
+          "used_for": "Terminal-based AI agent interaction"
+        },
+        {
+          "name": "Claude Code CLI",
+          "used_for": "Terminal-based AI agent interaction"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Target DCC for AI-assisted modeling and animation"
+        },
+        {
+          "name": "Higgsfield MCP",
+          "used_for": "Bridging AI agents with Blender via Model Context Protocol"
+        },
+        {
+          "name": "Tripo / Meshy / Hunyuan",
+          "used_for": "AI generation APIs for 3D assets and video"
+        }
+      ],
+      "whats_transferable": [
+        "Architecture for a multi-agent orchestration layer that handles session persistence",
+        "Model Context Protocol (MCP) implementation for connecting LLMs to local 3D software",
+        "Method for mapping drag-and-drop file inputs to CLI-based agent contexts",
+        "Systematizing AI prompts into Skills and Knowledge folders for pipeline consistency"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    },
+    {
+      "headline": "GPT-6 Astra + After Effects Creates Motion Graphics in Minutes!",
+      "body": "Integration of an agentic LLM (Astra) directly with the After Effects API, allowing users to describe complex motion tasks (physics, rigging, re-layouts) which are then executed as native, editable AE layers and keyframes.",
+      "why": "While AE-focused, the logic of using an agent with specific 'skills' (scripts/plugins) to handle boilerplate rigging and layout tasks is highly applicable to Houdini or Maya pipelines. A VFX TD could implement similar agentic patterns using the Houdini Python API to automate recurring setup tasks or variations.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=W3-RIZ-Ps64",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/W3-RIZ-Ps64/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield AI",
+          "used_for": "Generative video and image asset creation"
+        },
+        {
+          "name": "Astra (GPT-agent)",
+          "used_for": "DCC control, task planning, and custom script generation"
+        },
+        {
+          "name": "Adobe After Effects",
+          "used_for": "Primary motion graphics and composition environment"
+        },
+        {
+          "name": "Python",
+          "used_for": "Custom ASCII video conversion script generation"
+        },
+        {
+          "name": "Figma",
+          "used_for": "UI/Storyboard layout before AE conversion"
+        }
+      ],
+      "whats_transferable": [
+        "Agentic DCC control: Using specialized LLM 'skills' to translate natural language into specific software API calls.",
+        "Automated ASCII conversion: Mapping brightness values of a source video to a grid of characters generated via an AI-authored script.",
+        "AI-driven physics simulation: Automating fall/rotate/bounce/settle keyframes for 2D layers without manual curve editing.",
+        "Dynamic re-layout: Using an agent to maintain spatial relationships and parent-child constraints when changing aspect ratios across multiple compositions."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 7632,
+    "output_tokens": 707
+  },
+  "candidate_count": 32,
+  "editorial_stories": true
+}

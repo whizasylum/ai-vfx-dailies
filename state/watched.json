@@ -131,10 +131,242 @@
    "category": "workflow",
    "published": false,
    "reason_if_low": null
+  },
+  "an7MMwcPX7I": {
+   "title": "God\u2019s Eye View of Typhoon Dujuan Heading to Japan",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/an7MMwcPX7I",
+   "at": "2026-09-21T21:40:58.864310+00:00",
+   "duration_s": 19,
+   "published": false,
+   "reason_if_low": "under 90s (19s)"
+  },
+  "gV23ON8BgwU": {
+   "title": "My Full AI Workspace - A Year in the Making, Now Yours for Free",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=gV23ON8BgwU",
+   "at": "2026-09-21T21:40:58.999575+00:00",
+   "duration_s": 804,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "gV23ON8BgwU",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Codex CLI",
+      "used_for": "Terminal-based AI agent interaction"
+     },
+     {
+      "name": "Claude Code CLI",
+      "used_for": "Terminal-based AI agent interaction"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Target DCC for AI-assisted modeling and animation"
+     },
+     {
+      "name": "Higgsfield MCP",
+      "used_for": "Bridging AI agents with Blender via Model Context Protocol"
+     },
+     {
+      "name": "Tripo / Meshy / Hunyuan",
+      "used_for": "AI generation APIs for 3D assets and video"
+     }
+    ],
+    "whats_new": "The release of Mr. Mak Workspace, an open-source environment designed to orchestrate multiple terminal-based AI agents within a visual project management frontend for 3D workflows.",
+    "whats_transferable": [
+     "Architecture for a multi-agent orchestration layer that handles session persistence",
+     "Model Context Protocol (MCP) implementation for connecting LLMs to local 3D software",
+     "Method for mapping drag-and-drop file inputs to CLI-based agent contexts",
+     "Systematizing AI prompts into Skills and Knowledge folders for pipeline consistency"
+    ],
+    "pipeline_notes": "This workspace serves as a local orchestration layer. A VFX TD could adapt the MCP pattern to write Houdini-specific servers, allowing agents to manipulate .hip files or USD stages directly through the terminal interface.",
+    "visual_quality_notes": "Demonstrates high-fidelity character generation and motion testing for 3D animation using integrated AI APIs.",
+    "category": "tool_release",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Open-source workspace integrating terminal agents like Claude Code and Codex with a visual project dashboard.",
+     "Features persistent sessions where terminal state is preserved across application restarts.",
+     "Utilizes MCP to bridge AI agents with Blender, enabling direct software manipulation via natural language.",
+     "Automates file-path and image injection into terminal windows via drag-and-drop and screenshot pasting.",
+     "Centralizes project-specific AI Skills and research history in a local, Git-compatible folder structure."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "My Full AI Workspace - A Year in the Making, Now Yours for Free",
+    "body": "The release of Mr. Mak Workspace, an open-source environment designed to orchestrate multiple terminal-based AI agents within a visual project management frontend for 3D workflows.",
+    "why": "This workspace serves as a local orchestration layer. A VFX TD could adapt the MCP pattern to write Houdini-specific servers, allowing agents to manipulate .hip files or USD stages directly through the terminal interface.",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=gV23ON8BgwU",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/gV23ON8BgwU/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Codex CLI",
+      "used_for": "Terminal-based AI agent interaction"
+     },
+     {
+      "name": "Claude Code CLI",
+      "used_for": "Terminal-based AI agent interaction"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Target DCC for AI-assisted modeling and animation"
+     },
+     {
+      "name": "Higgsfield MCP",
+      "used_for": "Bridging AI agents with Blender via Model Context Protocol"
+     },
+     {
+      "name": "Tripo / Meshy / Hunyuan",
+      "used_for": "AI generation APIs for 3D assets and video"
+     }
+    ],
+    "whats_transferable": [
+     "Architecture for a multi-agent orchestration layer that handles session persistence",
+     "Model Context Protocol (MCP) implementation for connecting LLMs to local 3D software",
+     "Method for mapping drag-and-drop file inputs to CLI-based agent contexts",
+     "Systematizing AI prompts into Skills and Knowledge folders for pipeline consistency"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-09-21T21:44:12.786831+00:00"
+  },
+  "shPT5MNK22Y": {
+   "title": "Build a K-Drama App With GPT-6 Astra x Higgsfield API",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/shPT5MNK22Y",
+   "at": "2026-09-21T21:42:06.575488+00:00",
+   "duration_s": 66,
+   "published": false,
+   "reason_if_low": "under 90s (66s)"
+  },
+  "W3-RIZ-Ps64": {
+   "title": "GPT-6 Astra + After Effects Creates Motion Graphics in Minutes!",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=W3-RIZ-Ps64",
+   "at": "2026-09-21T21:42:06.701739+00:00",
+   "duration_s": 694,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "W3-RIZ-Ps64",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generative video and image asset creation"
+     },
+     {
+      "name": "Astra (GPT-agent)",
+      "used_for": "DCC control, task planning, and custom script generation"
+     },
+     {
+      "name": "Adobe After Effects",
+      "used_for": "Primary motion graphics and composition environment"
+     },
+     {
+      "name": "Python",
+      "used_for": "Custom ASCII video conversion script generation"
+     },
+     {
+      "name": "Figma",
+      "used_for": "UI/Storyboard layout before AE conversion"
+     }
+    ],
+    "whats_new": "Integration of an agentic LLM (Astra) directly with the After Effects API, allowing users to describe complex motion tasks (physics, rigging, re-layouts) which are then executed as native, editable AE layers and keyframes.",
+    "whats_transferable": [
+     "Agentic DCC control: Using specialized LLM 'skills' to translate natural language into specific software API calls.",
+     "Automated ASCII conversion: Mapping brightness values of a source video to a grid of characters generated via an AI-authored script.",
+     "AI-driven physics simulation: Automating fall/rotate/bounce/settle keyframes for 2D layers without manual curve editing.",
+     "Dynamic re-layout: Using an agent to maintain spatial relationships and parent-child constraints when changing aspect ratios across multiple compositions."
+    ],
+    "pipeline_notes": "While AE-focused, the logic of using an agent with specific 'skills' (scripts/plugins) to handle boilerplate rigging and layout tasks is highly applicable to Houdini or Maya pipelines. A VFX TD could implement similar agentic patterns using the Houdini Python API to automate recurring setup tasks or variations.",
+    "visual_quality_notes": "The motion graphics are professional-grade, though the character animation is typical for 2D puppet rigging. The standout is the ASCII converter, which preserves high-frequency motion data through dense character mapping.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates an agent-led workflow for Adobe After Effects using a custom GPT-based tool called Astra.",
+     "Shows how AI can convert storyboards from Figma into native, keyframed AE projects.",
+     "Features a custom Python-based ASCII video converter that translates source video brightness into character-based transparent PNG sequences.",
+     "Automates complex 2D rigging and physics simulations (gravity and collisions) through natural language prompts.",
+     "Demonstrates massive time savings in 'versioning' tasks like project localization and aspect ratio adaptation (15 minutes vs 3 hours manual estimate)."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "GPT-6 Astra + After Effects Creates Motion Graphics in Minutes!",
+    "body": "Integration of an agentic LLM (Astra) directly with the After Effects API, allowing users to describe complex motion tasks (physics, rigging, re-layouts) which are then executed as native, editable AE layers and keyframes.",
+    "why": "While AE-focused, the logic of using an agent with specific 'skills' (scripts/plugins) to handle boilerplate rigging and layout tasks is highly applicable to Houdini or Maya pipelines. A VFX TD could implement similar agentic patterns using the Houdini Python API to automate recurring setup tasks or variations.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=W3-RIZ-Ps64",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/W3-RIZ-Ps64/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generative video and image asset creation"
+     },
+     {
+      "name": "Astra (GPT-agent)",
+      "used_for": "DCC control, task planning, and custom script generation"
+     },
+     {
+      "name": "Adobe After Effects",
+      "used_for": "Primary motion graphics and composition environment"
+     },
+     {
+      "name": "Python",
+      "used_for": "Custom ASCII video conversion script generation"
+     },
+     {
+      "name": "Figma",
+      "used_for": "UI/Storyboard layout before AE conversion"
+     }
+    ],
+    "whats_transferable": [
+     "Agentic DCC control: Using specialized LLM 'skills' to translate natural language into specific software API calls.",
+     "Automated ASCII conversion: Mapping brightness values of a source video to a grid of characters generated via an AI-authored script.",
+     "AI-driven physics simulation: Automating fall/rotate/bounce/settle keyframes for 2D layers without manual curve editing.",
+     "Dynamic re-layout: Using an agent to maintain spatial relationships and parent-child constraints when changing aspect ratios across multiple compositions."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-09-21T21:44:12.786855+00:00"
   }
  },
  "quota": {
-  "date": "2026-09-20",
-  "minutes": 30.233333333333334
+  "date": "2026-09-21",
+  "minutes": 24.96666666666667
  }
 }
