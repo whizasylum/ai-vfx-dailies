@@ -88,13 +88,30 @@ def _load(path: Path, default: Any) -> Any:
 
 
 def load_ratings(state_dir: Path) -> list[dict]:
-    return _load(state_dir / "feedback.json", {"ratings": []})["ratings"]
+    return dedupe_ratings(_load(state_dir / "feedback.json", {"ratings": []})["ratings"])
+
+
+def dedupe_ratings(ratings: list[dict]) -> list[dict]:
+    """One personal preference per story/source/direction, with issue receipts.
+
+    The page has no voter identity. Repeated taps must not amplify the same
+    signal. Opposite directions and Discord votes remain distinct.
+    """
+    unique = {}
+    for rating in sorted(ratings, key=lambda r: r["at"]):
+        key = (rating["story_id"], rating["via"], rating["vote"])
+        if key not in unique:
+            unique[key] = {**rating, "issue_ids": list(rating.get("issue_ids", []))}
+        else:
+            kept = unique[key]
+            kept["issue_ids"] = sorted(set(kept["issue_ids"] + rating.get("issue_ids", [])))
+    return list(unique.values())
 
 
 def save_ratings(state_dir: Path, ratings: list[dict]) -> None:
     cutoff = datetime.now(timezone.utc) - timedelta(days=RATING_RETENTION_DAYS)
     kept = [
-        r for r in ratings
+        r for r in dedupe_ratings(ratings)
         if datetime.fromisoformat(r["at"]) >= cutoff
     ]
     (state_dir / "feedback.json").write_text(
@@ -236,12 +253,21 @@ def ingest_github_issues(state_dir: Path, ratings: list[dict]) -> int:
         # new-issue URL is silently dropped if that label doesn't exist yet,
         # which would break ratings on day one with no visible error. The title
         # pattern is strict enough to identify these on its own.
-        r = c.get(
-            f"https://api.github.com/repos/{repo}/issues",
-            params={"state": "open", "per_page": 100},
-        )
-        r.raise_for_status()
-        for issue in r.json():
+        issues = []
+        page = 1
+        while True:
+            r = c.get(f"https://api.github.com/repos/{repo}/issues",
+                      params={"state": "open", "per_page": 100, "page": page})
+            r.raise_for_status()
+            batch = r.json()
+            issues.extend(batch)
+            if len(batch) < 100:
+                break
+            page += 1
+        received = {n for r in ratings for n in r.get("issue_ids", [])}
+        for issue in issues:
+            if issue["number"] in received:
+                continue
             if "pull_request" in issue:
                 continue
             title = issue.get("title", "").strip()
@@ -258,6 +284,7 @@ def ingest_github_issues(state_dir: Path, ratings: list[dict]) -> int:
                     "channel": meta.get("channel", "r"),
                     "terms": meta.get("terms", []),
                     "via": "page",
+                    "issue_ids": [issue["number"]],
                 })
                 added += 1
             elif m := _SUGGEST_TITLE.match(title):
@@ -279,19 +306,48 @@ def ingest_github_issues(state_dir: Path, ratings: list[dict]) -> int:
                     "channel": "r",
                     "terms": terms_of({"headline": description or text}),
                     "via": "suggestion",
+                    "issue_ids": [issue["number"]],
                 })
                 added += 1
             else:
                 continue
 
-            c.patch(
-                f"https://api.github.com/repos/{repo}/issues/{issue['number']}",
-                json={"state": "closed", "state_reason": "completed"},
-            )
+            received.add(issue["number"])
 
     if added:
+        ratings[:] = dedupe_ratings(ratings)
         log.info("ingested %d ratings from the page", added)
     return added
+
+
+def acknowledge_github_issues(state_dir: Path) -> int:
+    """Close received issues only after Actions has pushed their saved ratings."""
+    token, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    if not token or not repo:
+        return 1
+    received = {n for r in load_ratings(state_dir) for n in r.get("issue_ids", [])}
+    failed = False
+    with httpx.Client(timeout=20, headers={"Authorization": f"Bearer {token}"}) as c:
+        issues, page = [], 1
+        while True:
+            response = c.get(f"https://api.github.com/repos/{repo}/issues",
+                             params={"state": "open", "per_page": 100, "page": page})
+            response.raise_for_status()
+            batch = response.json()
+            issues.extend(batch)
+            if len(batch) < 100:
+                break
+            page += 1
+        for issue in issues:
+            if issue["number"] not in received or "pull_request" in issue:
+                continue
+            response = c.patch(f"https://api.github.com/repos/{repo}/issues/{issue['number']}",
+                               json={"state": "closed", "state_reason": "completed"})
+            if response.is_error:
+                log.error("Could not close saved rating issue #%s: HTTP %s",
+                          issue["number"], response.status_code)
+                failed = True
+    return 1 if failed else 0
 
 
 def index_stories(state_dir: Path, stories: list[dict]) -> None:

@@ -21,9 +21,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  # feedback.ingest_github_issues() closes each rating issue after reading
-  # it. Without this, every close attempt gets a silent 403 and the same
-  # issues get re-ingested as fresh ratings on every run forever.
+  # Acknowledge issues only after their rating receipts are committed.
   issues: write
 
 concurrency:
@@ -34,6 +32,7 @@ jobs:
   build:
     if: ${{ inputs.test_video_url == '' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -59,6 +58,17 @@ jobs:
             ${{ inputs.dry && '--dry' || '' }} \
             --page-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
 
+      - name: Preserve assessments after a failed build
+        if: ${{ failure() && !inputs.dry }}
+        run: |
+          git config user.name "digest-bot"
+          git config user.email "digest-bot@users.noreply.github.com"
+          for path in state/watched.json state/editions; do
+            if [ -e "$path" ]; then git add "$path"; fi
+          done
+          git diff --staged --quiet || git commit -m "preserve pending video assessments"
+          git push
+
       - name: Commit page and state
         if: ${{ !inputs.dry }}
         run: |
@@ -67,6 +77,13 @@ jobs:
           git add docs state
           git diff --staged --quiet || git commit -m "digest $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Acknowledge saved ratings
+        if: ${{ !inputs.dry }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -m digest.cli ack-feedback
 
       - uses: actions/upload-pages-artifact@v3
         if: ${{ !inputs.dry }}
@@ -77,6 +94,7 @@ jobs:
     needs: build
     if: ${{ !inputs.dry && inputs.test_video_url == '' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -90,6 +108,7 @@ jobs:
   test-video:
     if: ${{ inputs.test_video_url != '' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -101,13 +120,15 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: python -m digest.cli watch --url "${{ inputs.test_video_url }}"
+          TEST_VIDEO_URL: ${{ inputs.test_video_url }}
+        run: python -u -m digest.cli watch --url "$TEST_VIDEO_URL"
 
   # Runs weekly and opens nothing, just fails loudly in the Actions tab if
   # sources have rotted. Feeds die quietly; this is how you find out.
   validate:
     if: github.event_name == 'schedule' && github.event.schedule == '0 18 * * 1'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4

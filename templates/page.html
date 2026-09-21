@@ -594,18 +594,7 @@
     </div>
   </header>
 
-  {% if archive %}
-  <nav class="timeline" aria-label="Day navigation">
-    {{ tl_arrow('prev', tl_prev_href)|safe }}
-    <div class="timeline-pills">
-      <span class="current" aria-current="page">{{ date_short|default(date_iso) }}</span>
-      {%- for a in archive %}
-      <a href="{{ a.href }}">{{ a.label }}</a>
-      {%- endfor %}
-    </div>
-    {{ tl_arrow('next', tl_next_href)|safe }}
-  </nav>
-  {% endif %}
+  <nav class="edition-nav" aria-label="Daily editions"></nav>
 
   <section class="levels" aria-label="Distribution of today's stories by category">
     {% if story_count %}
@@ -759,22 +748,6 @@
     if (img.complete) check();
   });
 
-  document.querySelectorAll('.copy').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var base = {{ page_url|tojson }} || location.href.split('#')[0];
-      var url = base.replace(/\/$/, '') + '/#' + btn.dataset.anchor;
-      navigator.clipboard.writeText(url).then(function () {
-        var was = btn.textContent;
-        btn.textContent = 'Link copied';
-        btn.classList.add('done');
-        setTimeout(function () {
-          btn.textContent = was;
-          btn.classList.remove('done');
-        }, 1600);
-      });
-    });
-  });
-
   var RATING_ENDPOINT = {{ rating_endpoint|tojson }};
   document.querySelectorAll('.actions .up, .actions .down').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -799,19 +772,6 @@
     });
   });
 
-  /* daynav: left/right arrow keys walk the timeline, same targets as the
-     prev/next buttons -- querying the DOM rather than duplicating hrefs
-     here means this stays correct without edits if the markup changes. */
-  document.addEventListener('keydown', function (e) {
-    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
-    var tag = (document.activeElement || {}).tagName;
-    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
-    var selector = e.key === 'ArrowLeft' ? '.tl-arrow-prev[href]'
-                 : e.key === 'ArrowRight' ? '.tl-arrow-next[href]' : null;
-    if (!selector) return;
-    var link = document.querySelector(selector);
-    if (link) { e.preventDefault(); location.href = link.getAttribute('href'); }
-  });
 </script>
 </body>
 </html>

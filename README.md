@@ -217,3 +217,48 @@ otherwise and you won't notice the digest quietly getting thinner.
 - **Undated feeds** get stamped with the fetch time, so a vendor feed that
   republishes old posts can resurface them once. `seen.json` stops repeats
   after the first occurrence.
+
+## Reliability and archive navigation
+
+Daily runs retain complete editions in `state/editions/YYYY-MM-DD.json`.
+A same-day rerun merges new stories by their source-derived story ID, preserving
+existing stories. Older editions are recovered from their HTML on the first
+rerun. Accepted video assessments are saved with their full result and replayed
+until delivery succeeds; Actions preserves these checkpoints after a failed build.
+
+Video assessment uses an explicit 0–10 rubric on two independent axes. Responses
+must pass schema validation, including a substantive explanation when both scores
+fall below the publish threshold. The manual `watch` test exits unsuccessfully if
+it cannot evaluate the requested video. A valid low score is a completed test.
+Stored assessments from before this change keep their original scores; they have
+not been silently rescored. New records carry `rubric_version: 2`.
+
+The personal rating model counts one signal per story, capture channel, and vote
+direction. Repeated anonymous taps do not amplify that signal. Opposite votes are
+retained. GitHub issue numbers are stored as receipts; issues are only closed by
+`python -m digest.cli ack-feedback` after Actions pushes the feedback state.
+
+Every archive shares a chronological date strip: Older moves left, Newer moves
+right, with disabled controls at both ends and a separate Latest link. Sharing a
+story copies its dated archive URL. Refresh all existing navigation without model
+calls or rewriting articles with:
+
+```bash
+python -m digest.cli refresh-navigation
+python -m unittest discover -s tests -v
+```
+
+Source changes on main run the tests and publish the existing pages through the
+`Verify and publish site fixes` workflow, without collecting news or spending API
+quota. The daily workflow continues to generate new editions on its schedule.
+
+## Design studies (separate from the live site)
+
+`design-previews/index.html` compares three directions using real archived content:
+Screening room, Field notes, and Workbench. Serve the repository with
+`python -m http.server 8938 --bind 127.0.0.1` and open
+`http://127.0.0.1:8938/design-previews/`. Dates, categories, source links, and workflow
+expansion work; ratings stay in session storage. This directory is outside `docs/`
+and is not included in GitHub Pages deployment. Rebuild the preview content with
+`python build_previews.py`. Browser checks can be run with `node browser_check.cjs`
+when Playwright and Chrome are installed and the local server is running.

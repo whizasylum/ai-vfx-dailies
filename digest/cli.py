@@ -16,10 +16,11 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import yaml
 
-from . import collect, feedback, render, score, summarize, watch
+from . import collect, feedback, render, score, summarize, watch, editions, navigation
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -89,11 +90,13 @@ def cmd_run(args: argparse.Namespace) -> int:
     # Pull in yesterday's ratings before scoring, so they apply today.
     fb_cfg = config.get("feedback", {})
     ratings = feedback.load_ratings(state_dir)
-    if fb_cfg.get("enabled", True) and not args.no_feedback:
+    if fb_cfg.get("enabled", True) and not args.no_feedback and not args.dry:
         n = feedback.ingest_discord(state_dir, ratings)
         n += feedback.ingest_github_issues(state_dir, ratings)
         if n:
             feedback.save_ratings(state_dir, ratings)
+    if not args.dry:
+        feedback.save_ratings(state_dir, ratings)
     stats = feedback.summary(ratings)
     print(
         f"ratings: {stats['total']} ({stats['up']}+ / {stats['down']}-)",
@@ -112,6 +115,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     video_items = [it for it in items if it.extra.get("video")]
     items = [it for it in items if not it.extra.get("video")]
 
+    raw_count = len(items) + len(video_items)
     seen = score.load_seen(seen_path)
     items = score.drop_seen(items, seen)
     items = score.dedupe(items)
@@ -158,7 +162,11 @@ def cmd_run(args: argparse.Namespace) -> int:
         f"{video_stats['errors']} errors",
         file=sys.stderr,
     )
+    result["candidate_count"] = len(candidates) + video_stats["watched"]
+    result["editorial_stories"] = bool(result.get("stories"))
     result["stories"] = result.get("stories", []) + video_stories
+    day = datetime.now(ZoneInfo(digest_cfg.get("timezone", "UTC"))).date().isoformat()
+    result = editions.merge(ROOT, day, result)
 
     # Record what each story was, so a rating from the page can be attributed
     # back to its sources and terms later.
@@ -168,11 +176,13 @@ def cmd_run(args: argparse.Namespace) -> int:
 
     if config.get("delivery", {}).get("html", True):
         render.render_html(
-            result, config, ROOT, len(candidates), problems, len(sources), stats
+            result, config, ROOT, result["candidate_count"], problems, len(sources), stats
         )
 
     if config.get("delivery", {}).get("discord", False) and not args.no_discord:
         render.post_discord(result, config, state_dir, page_url)
+
+    watch.mark_delivered(state_dir, video_stories)
 
     # Only mark items seen after a successful run, so a crash doesn't silently
     # swallow a day of news.
@@ -188,7 +198,7 @@ def cmd_run(args: argparse.Namespace) -> int:
             {
                 "at": now,
                 "ratings": stats,
-                "raw": len(items),
+                "raw": raw_count,
                 "candidates": len(candidates),
                 "stories": len(result.get("stories", [])),
                 "usage": result.get("usage", {}),
@@ -214,10 +224,12 @@ def cmd_watch(args: argparse.Namespace) -> int:
         print("GEMINI_API_KEY is not set.", file=sys.stderr)
         return 1
 
+    failed = False
     for url in args.url:
         video_id = watch.video_id_from_url(url)
         if not video_id:
             print(f"\n{url}\n  could not extract a video id, skipping")
+            failed = True
             continue
 
         meta = watch.probe_metadata(video_id)
@@ -226,19 +238,24 @@ def cmd_watch(args: argparse.Namespace) -> int:
 
         if meta is None:
             print("  probe failed, skipping the Gemini call")
+            failed = True
             continue
         action, reason = watch._gate(meta, cfg, long_form_ok=args.long_form)
         print(f"  mechanical gate: {action}" + (f" -- {reason}" if reason else ""))
         if action != "go" and not args.force:
             print("  (pass --force to call Gemini anyway)")
+            failed = True
             continue
 
+        url = f"https://www.youtube.com/watch?v={video_id}"
         try:
             verdict = watch.watch_video(
                 url, video_id, args.channel, cfg, meta.get("duration_s"),
             )
+            verdict = watch.validate_verdict(verdict, float(cfg.get("publish_threshold", 6)))
         except Exception as exc:  # noqa: BLE001
             print(f"  gemini call failed: {exc}")
+            failed = True
             continue
 
         print(json.dumps(verdict, indent=2))
@@ -249,7 +266,7 @@ def cmd_watch(args: argparse.Namespace) -> int:
         print(f"  => {'PUBLISH' if published else 'cut'} "
               f"(topic={topic:.0f} craft={craft:.0f}, threshold={threshold:.0f})")
 
-    return 0
+    return 1 if failed else 0
 
 
 def cmd_feedback(args: argparse.Namespace) -> int:
@@ -333,6 +350,11 @@ def main() -> int:
     fb.add_argument("--offline", action="store_true",
                     help="show stored ratings without fetching new ones")
     fb.set_defaults(func=cmd_feedback)
+
+    nav = sub.add_parser("refresh-navigation", help="repair all page navigation without model calls")
+    nav.set_defaults(func=lambda args: (navigation.refresh(ROOT), 0)[1])
+    ack = sub.add_parser("ack-feedback", help="close rating issues after state has been committed")
+    ack.set_defaults(func=lambda args: feedback.acknowledge_github_issues(ROOT / "state"))
 
     args = parser.parse_args()
     _setup_logging(args.verbose)

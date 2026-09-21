@@ -498,6 +498,18 @@
     .thumb img { transition: none; }
   }
 </style>
+<style id="edition-navigation">.edition-nav { display:flex; align-items:center; gap:.6rem; margin:0 0 1.6rem; padding:.8rem; border:1px solid var(--rule-soft); border-radius:14px; background:var(--panel-solid); }
+.edition-nav a { text-decoration:none; }
+.edition-nav .day-step, .edition-nav .day-latest { flex:none; white-space:nowrap; font:500 .76rem var(--mono); padding:.65rem .45rem; color:var(--ink); }
+.edition-nav [aria-disabled="true"] { color:var(--ink-faint); opacity:.5; cursor:default; }
+.edition-nav .day-track { display:flex; gap:.3rem; min-width:0; overflow-x:auto; padding:.35rem; scrollbar-width:thin; overscroll-behavior-x:contain; }
+.edition-nav .day-track a, .edition-nav .current { flex:none; white-space:nowrap; font:.76rem var(--mono); padding:.6rem .75rem; border:1px solid var(--rule-soft); border-radius:8px; color:var(--ink-dim); }
+.edition-nav .current { background:var(--ink); color:var(--ground); font-weight:500; }
+.edition-nav a:hover { color:var(--ink); background:rgba(255,255,255,.08); }
+.edition-nav .day-latest { border-left:1px solid var(--rule-soft); padding-left:.8rem; }
+.edition-nav .at-latest { color:var(--ink-dim); }
+@media(max-width:620px) { .edition-nav { display:grid; grid-template-columns:1fr 1fr; gap:.2rem .7rem; } .edition-nav .day-track { grid-row:2; grid-column:1/-1; } .edition-nav .next { justify-self:end; } .edition-nav .day-latest { grid-row:3; grid-column:1/-1; text-align:center; border-left:0; padding:.45rem; } }
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -510,7 +522,7 @@
     </div>
   </header>
 
-  <nav class="timeline" aria-label="Previous days"><a class="tl-arrow tl-arrow-prev" href="2026-09-13.html" aria-label="Previous day" title="Previous day (←)">‹</a><div class="timeline-pills"><span class="current" aria-current="page">Sep 14</span>    <a href="2026-09-13.html">Sep 13</a>    <a href="2026-09-12.html">Sep 12</a>    <a href="2026-09-11.html">Sep 11</a>    <a href="2026-09-10.html">Sep 10</a>    <a href="2026-09-09.html">Sep 9</a>    <a href="2026-09-08.html">Sep 8</a></div><a class="tl-arrow tl-arrow-next" href="2026-09-15.html" aria-label="Next day" title="Next day (→)">›</a></nav>
+  <nav class="edition-nav" aria-label="Daily editions" data-edition="2026-09-14"><a class="day-step prev" href="2026-09-13.html" aria-label="Older edition" rel="prev">← Older</a><div class="day-track" tabindex="0" aria-label="Dates, oldest to newest"><a href="2026-09-08.html"><time datetime="2026-09-08">Sep 8</time></a><a href="2026-09-09.html"><time datetime="2026-09-09">Sep 9</time></a><a href="2026-09-10.html"><time datetime="2026-09-10">Sep 10</time></a><a href="2026-09-11.html"><time datetime="2026-09-11">Sep 11</time></a><a href="2026-09-12.html"><time datetime="2026-09-12">Sep 12</time></a><a href="2026-09-13.html"><time datetime="2026-09-13">Sep 13</time></a><span class="current" aria-current="page"><time datetime="2026-09-14">Sep 14</time></span><a href="2026-09-15.html"><time datetime="2026-09-15">Sep 15</time></a><a href="2026-09-16.html"><time datetime="2026-09-16">Sep 16</time></a><a href="2026-09-17.html"><time datetime="2026-09-17">Sep 17</time></a><a href="2026-09-18.html"><time datetime="2026-09-18">Sep 18</time></a><a href="2026-09-19.html"><time datetime="2026-09-19">Sep 19</time></a><a href="2026-09-20.html"><time datetime="2026-09-20">Sep 20</time></a><a href="2026-09-21.html"><time datetime="2026-09-21">Sep 21</time></a></div><a class="day-step next" href="2026-09-15.html" aria-label="Newer edition" rel="next">Newer →</a><a class="day-latest" href="2026-09-21.html">Latest ↗</a></nav>
 
   <section class="levels" aria-label="Distribution of today's stories by category">
     <div class="levels-bar">      <div style="background:#d9484a;flex:1"
@@ -593,22 +605,6 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
     if (img.complete) check();
   });
 
-  document.querySelectorAll('.copy').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var base = "https://whizasylum.github.io/ai-vfx-dailies" || location.href.split('#')[0];
-      var url = base.replace(/\/$/, '') + '/#' + btn.dataset.anchor;
-      navigator.clipboard.writeText(url).then(function () {
-        var was = btn.textContent;
-        btn.textContent = 'Link copied';
-        btn.classList.add('done');
-        setTimeout(function () {
-          btn.textContent = was;
-          btn.classList.remove('done');
-        }, 1600);
-      });
-    });
-  });
-
   var RATING_ENDPOINT = "https://ai-vfx-dailies-rating.falling-pine-24e5.workers.dev/";
   document.querySelectorAll('.actions .up, .actions .down').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -633,19 +629,34 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
     });
   });
 
-  /* daynav: left/right arrow keys walk the timeline, same targets as the
-     prev/next buttons -- querying the DOM rather than duplicating hrefs
-     here means this stays correct without edits if the markup changes. */
-  document.addEventListener('keydown', function (e) {
-    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
-    var tag = (document.activeElement || {}).tagName;
-    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
-    var selector = e.key === 'ArrowLeft' ? '.tl-arrow-prev[href]'
-                 : e.key === 'ArrowRight' ? '.tl-arrow-next[href]' : null;
-    if (!selector) return;
-    var link = document.querySelector(selector);
-    if (link) { e.preventDefault(); location.href = link.getAttribute('href'); }
+</script>
+<script id="edition-navigation">(() => {
+  const nav = document.querySelector('.edition-nav');
+  if (!nav) return;
+  const track = nav.querySelector('.day-track');
+  const current = nav.querySelector('[aria-current="page"]');
+  if (track && current) track.scrollLeft = current.offsetLeft - track.offsetLeft - (track.clientWidth - current.clientWidth) / 2;
+  document.addEventListener('keydown', event => {
+    if (event.defaultPrevented || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    const focused = document.activeElement;
+    if (focused && (focused.isContentEditable || focused.closest('input,textarea,select,button,a,[role="slider"],.day-track'))) return;
+    const direction = event.key === 'ArrowLeft' ? 'prev' : event.key === 'ArrowRight' ? 'next' : null;
+    const link = direction && nav.querySelector('a.day-step.' + direction);
+    if (link) { event.preventDefault(); location.assign(link.href); }
   });
+  document.querySelectorAll('.copy').forEach(button => {
+    button.addEventListener('click', async () => {
+      const path = location.pathname.includes('/archive/') ? location.pathname : new URL('archive/' + nav.dataset.edition + '.html', location.href).pathname;
+      const url = new URL(path, location.origin);
+      url.hash = button.dataset.anchor;
+      try {
+        await navigator.clipboard.writeText(url.href);
+        button.textContent = 'Link copied';
+      } catch (_) { button.textContent = 'Copy unavailable'; }
+      setTimeout(() => { button.textContent = 'Copy link'; }, 1800);
+    });
+  });
+})();
 </script>
 </body>
 </html>

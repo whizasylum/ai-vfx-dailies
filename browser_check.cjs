@@ -1,0 +1,51 @@
+const { chromium } = require('playwright');
+const fs = require('fs');
+(async()=>{
+ const browser=await chromium.launch({channel:'chrome',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1100}});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ fs.mkdirSync('design-previews/screenshots',{recursive:true});
+ for(const mode of ['screening','editorial','workstation']){
+  await page.goto('http://127.0.0.1:8938/design-previews/'+mode+'.html');
+  await page.waitForSelector('.story');await page.waitForLoadState('networkidle');await page.evaluate(()=>document.fonts.ready);
+  await page.screenshot({path:'design-previews/screenshots/'+mode+'.png',fullPage:true});
+  await page.getByRole('button',{name:'Research',exact:true}).click();
+  if(!await page.locator('.empty').isVisible())throw Error('filter empty state failed');
+  await page.getByRole('button',{name:'All stories',exact:true}).click();
+  await page.getByRole('button',{name:'Latest',exact:false}).click();
+  if(!await page.locator('#newer').isDisabled())throw Error('Newer should be disabled at latest');
+  await page.locator('[data-day="2026-09-08"]').click();
+  if(!await page.locator('#older').isDisabled())throw Error('Older should be disabled at start');
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('http://127.0.0.1:8938/design-previews/'+mode+'.html?day=2026-09-20');
+  await page.waitForSelector('.story');await page.waitForLoadState('networkidle');
+  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+  if(overflow)throw Error(mode+' mobile overflow');
+  await page.screenshot({path:'design-previews/screenshots/'+mode+'-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1440,height:1100});
+ }
+ await page.goto('http://127.0.0.1:8938/docs/index.html');
+ const newest=await page.locator('.edition-nav').getAttribute('data-edition');
+ if(await page.locator('a.day-step.next').count())throw Error('Latest has next link');
+ await page.locator('a.day-step.prev').click();
+ await page.waitForURL('**/archive/2026-09-20.html');
+ await page.keyboard.press('ArrowRight');
+ await page.waitForURL('**/archive/'+newest+'.html');
+ await page.keyboard.press('ArrowRight');
+ if(!page.url().endsWith(newest+'.html'))throw Error('wrapped at end');
+ await page.goto('http://127.0.0.1:8938/docs/archive/2026-09-08.html');
+ await page.keyboard.press('ArrowLeft');
+ if(!page.url().endsWith('2026-09-08.html'))throw Error('wrapped at beginning');
+ // Mock only the clipboard sink to assert the link that the real click handler builds.
+ await page.goto('http://127.0.0.1:8938/docs/archive/2026-09-15.html');
+ await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{value:{writeText:async value=>window.copied=value}}));
+ const copy=page.locator('.copy').first();await copy.click();
+ const copied=await page.evaluate(()=>window.copied);
+ if(!copied.includes('/archive/2026-09-15.html#'))throw Error('share link not pinned');
+ await page.setViewportSize({width:390,height:844});
+ await page.screenshot({path:'design-previews/screenshots/timeline-mobile.png',fullPage:true});
+ if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('timeline mobile overflow');
+ if(errors.length)throw Error(errors.join('\n'));
+ console.log('Browser checks passed: 3 desktop/mobile previews, filters, both timeline stops, keyboard navigation, dated share link.');
+ await browser.close();
+})();
