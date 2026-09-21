@@ -1019,6 +1019,54 @@
    "production",
    "relevance."
   ],
-  "at": "2026-09-20T20:18:14.359861+00:00"
+  "at": "2026-09-21T11:41:49.606328+00:00"
+ },
+ "36ca61f09d": {
+  "headline": "ComfyUI v0.37.0 released with disk-speed auto-detection and partner node fixes",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "any",
+   "auto-detection",
+   "comfyui",
+   "direct",
+   "disk-speed",
+   "fixes",
+   "node",
+   "nodes",
+   "partner",
+   "pipeline-relevant",
+   "production.",
+   "running",
+   "studio"
+  ],
+  "at": "2026-09-21T11:41:49.606358+00:00"
+ },
+ "be93d8e034": {
+  "headline": "Chaos details ICX and profile-guided optimization work in V-Ray",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "r",
+  "terms": [
+   "chaos",
+   "details",
+   "icx",
+   "optimization",
+   "performance",
+   "pipeline",
+   "profile-guided",
+   "renderer",
+   "shippable",
+   "specifics.",
+   "thin",
+   "tracking",
+   "v-ray",
+   "work"
+  ],
+  "at": "2026-09-21T11:41:49.606374+00:00"
  }
 }

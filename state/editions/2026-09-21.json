@@ -1,0 +1,62 @@
+{
+  "verdict": "3 stories collected across today's updates.",
+  "stories": [
+    {
+      "headline": "Community LoRA for MiniMax-H3 adds martial-arts action motion",
+      "body": "A user-published LoRA (Jojocodex/wushu-action-v7) fine-tunes MiniMax-H3 for wushu/martial-arts action sequences, supporting image-to-video and reference-to-video with first/last frame control. It has notable traction (14.5k downloads) which signals the MiniMax-H3 ComfyUI ecosystem is still growing, but this specific LoRA is a narrow niche asset with an 'other' licence that needs checking before any studio use.",
+      "why": "Confirms MiniMax-H3's open ecosystem is active, but the LoRA itself has no production relevance.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Jojocodex/wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
+          "video": false
+        }
+      ],
+      "image": null,
+      "image_kind": null,
+      "watched": false,
+      "tools_and_platforms": [],
+      "whats_transferable": []
+    },
+    {
+      "headline": "ComfyUI v0.37.0 released with disk-speed auto-detection and partner node fixes",
+      "body": "ComfyUI's latest release adds auto-detection for fast disks to enable --fast-disk mode, transparent background support for GPT Image 2 via OpenAI partner nodes, CFG control for the YuE2 music node, and a fix preventing empty GLB/FBX outputs from Tripo nodes. Text encoder now stays on GPU when dynamic VRAM is enabled. Open source, free to deploy.",
+      "why": "Direct pipeline-relevant update for any studio already running ComfyUI nodes in production.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Chaos details ICX and profile-guided optimization work in V-Ray",
+      "body": "Chaos published a technical writeup, co-authored with Intel engineers, on ICX and profile-guided optimization (PGO) improvements in V-Ray for Maya. The piece covers engineering rationale and performance methodology rather than a specific shipped feature or benchmark number. No pricing or version details given.",
+      "why": "Renderer performance work worth tracking if V-Ray is in the pipeline, but thin on shippable specifics.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/icx-profile-guided-optimization-vray",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/20_V-Ray5.0_VFB_End-2100x1181-5a788aea-8528-44c0-9970-7c5dcaabece4.jpg"
+    }
+  ],
+  "usage": {
+    "input_tokens": 7594,
+    "output_tokens": 559
+  },
+  "candidate_count": 38,
+  "editorial_stories": true
+}

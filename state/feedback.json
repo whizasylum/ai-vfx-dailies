@@ -354,6 +354,36 @@
    ],
    "via": "page",
    "issue_ids": []
+  },
+  {
+   "story_id": "cb1c7209b6",
+   "at": "2026-09-21T11:38:55.318272+00:00",
+   "vote": 1,
+   "headline": "Creating 3D Character with AI in 1 Min vs 1 H vs 10 H",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "aligns",
+    "approach",
+    "architecture",
+    "assets.",
+    "between",
+    "body",
+    "bridges",
+    "character",
+    "component",
+    "context",
+    "creating",
+    "different",
+    "gap",
+    "gear"
+   ],
+   "via": "page",
+   "issue_ids": [
+    18
+   ]
   }
  ]
 }
