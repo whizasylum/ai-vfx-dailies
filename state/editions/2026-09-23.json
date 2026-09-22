@@ -1,0 +1,43 @@
+{
+  "verdict": "A thin day: mostly arXiv paper noise, Luma AI SEO-prompt spam, and studio PR pieces, with one genuine gaussian-splatting production item and a couple of items worth a glance for licence and legal reasons.",
+  "stories": [
+    {
+      "headline": "IBC 2026 show floor report covers Gaussian splatting and scene-aware camera tracking",
+      "body": "postPerspective's IBC 2026 walkaround notes splatting and synchronized scene-aware camera tools were a recurring theme among exhibitors this year, alongside broader optimism despite a down production market. No specific vendor names or product details are given in this summary, so treat as a trend signal rather than a tool announcement worth acting on immediately.",
+      "why": "Signals gaussian splatting is moving from research demos toward broadcast/production tooling vendors are actively building.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/ibc-2026-splats-sync-and-scene-aware-cameras",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "A24's V/H/S: SCP spinoff reportedly made without contacting SCP Foundation's creators",
+      "body": "80 Level reports A24 never contacted the original authors of the collaboratively-written SCP Foundation universe before producing a film based on it, and that a licensing arrangement limits how much the studio can profit from the project. Details on the underlying rights structure (SCP content is CC-BY-SA licensed by its community) are not fully spelled out in the source.",
+      "why": "A live example of how open-licence fan-created IP creates ambiguous rights exposure for studios adapting it.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/a24-reportedly-never-contacted-scp-foundation-authors-over-film",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41706/images/6ab2b81343747/cover_800x800.jpg"
+    }
+  ],
+  "usage": {
+    "input_tokens": 12572,
+    "output_tokens": 580
+  },
+  "candidate_count": 57,
+  "editorial_stories": true
+}
