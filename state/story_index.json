@@ -1212,5 +1212,77 @@
    "open-licence"
   ],
   "at": "2026-09-22T20:49:44.987497+00:00"
+ },
+ "07d3071e00": {
+  "headline": "Wan 2.2 Animate 14B repackaged for ComfyUI passes 5.7M downloads",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "animate",
+   "comfyui",
+   "deployment.",
+   "direct",
+   "downloads",
+   "image-to-video",
+   "licensed",
+   "open",
+   "packaged",
+   "passes",
+   "permissively",
+   "repackaged",
+   "wan"
+  ],
+  "at": "2026-09-23T21:10:46.724395+00:00"
+ },
+ "58c60ae1be": {
+  "headline": "LTX-2.5 IC-LoRA adds head-swap video-to-video capability",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "capability",
+   "extending",
+   "face",
+   "head-swap",
+   "ic-lora",
+   "ltx",
+   "ltx-2.5",
+   "mechanism",
+   "pipeline.",
+   "relevant",
+   "shows",
+   "video-to-video",
+   "workflows"
+  ],
+  "at": "2026-09-23T21:10:46.724445+00:00"
+ },
+ "762e86c2a7": {
+  "headline": "Yes, Jev Is Insane, But There's A Catch",
+  "sources": [
+   "Two Minute Papers"
+  ],
+  "channel": "g",
+  "terms": [
+   "agents",
+   "assembly",
+   "asset",
+   "automated",
+   "autonomous",
+   "catch",
+   "checks",
+   "could",
+   "discrete",
+   "during",
+   "environment.",
+   "fast",
+   "handle",
+   "high-volume"
+  ],
+  "at": "2026-09-23T21:10:46.724466+00:00"
  }
 }

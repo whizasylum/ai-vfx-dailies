@@ -1,0 +1,81 @@
+{
+  "verdict": "A quiet day for production-relevant tooling: mostly arXiv research chatter, OpenAI marketing posts, and studio breakdowns, with only a couple of items worth the reader's ten minutes.",
+  "stories": [
+    {
+      "headline": "Wan 2.2 Animate 14B repackaged for ComfyUI passes 5.7M downloads",
+      "body": "Comfy-Org's repackaged build of Wan-AI's Wan2.2-Animate-14B image-to-video model is on Hugging Face under Apache-2.0, using the diffusion-single-file format for direct ComfyUI loading. It has over 5.7 million downloads and 883 likes, suggesting wide adoption as a drop-in node for animation-style image-to-video work in existing ComfyUI graphs.",
+      "why": "Open, permissively licensed image-to-video model already packaged for direct ComfyUI deployment.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "LTX-2.5 IC-LoRA adds head-swap video-to-video capability",
+      "body": "A community LoRA (BFS-Best-Face-Swap-Video) built on Lightricks' LTX-2.3/2.5 adds IC-LoRA-based head-swap for video, using the diffusers library. Licence is listed as 'other', not permissive open-source, and download counts are modest (689) versus 419 likes. Worth noting as an extension pattern for LTX rather than a vetted production tool.\n",
+      "why": "Shows LTX-2.5's IC-LoRA mechanism extending to face/head-swap workflows, relevant if already using LTX in pipeline.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap-Video",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Yes, Jev Is Insane, But There's A Catch",
+      "body": "Jev is a specialized AI model from TypeSafe AI designed for fast decision-making instead of text generation. It uses Reinforcement Learning for Calibrated Decisions (RLCD) and parallel sampling to evaluate all potential answers simultaneously, making it up to 200x faster and significantly cheaper than traditional LLMs.",
+      "why": "For a USD/Houdini TD, this model type could handle high-volume discrete logic tasks such as asset tagging, metadata validation, or automated QC checks during scene assembly without the latency of a standard LLM. It serves as a fast logic layer for autonomous agents in a production environment.",
+      "channel": "g",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Two Minute Papers",
+          "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/qBBRRsH0rQc/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Jev",
+          "used_for": "Fast decision-making and classification"
+        },
+        {
+          "name": "Laya",
+          "used_for": "Open-source local alternative to Jev"
+        },
+        {
+          "name": "Lambda",
+          "used_for": "GPU compute for training and inference"
+        }
+      ],
+      "whats_transferable": [
+        "Architectural separation of 'generative' tasks from 'decision' tasks to improve pipeline automation speed.",
+        "Implementation of calibrated confidence values to trigger human intervention or higher-fidelity fallbacks in automated scripts.",
+        "Offloading simple binary or multiple-choice logic from slow LLMs to fast, specialized classification models."
+      ],
+      "topic_relevance": 5.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 12878,
+    "output_tokens": 632
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}

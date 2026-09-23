@@ -399,10 +399,124 @@
    "duration_s": 42,
    "published": false,
    "reason_if_low": "under 90s (42s)"
+  },
+  "qBBRRsH0rQc": {
+   "title": "Yes, Jev Is Insane, But There's A Catch",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
+   "at": "2026-09-23T21:03:29.442798+00:00",
+   "duration_s": 316,
+   "topic_relevance": 5.0,
+   "transferable_craft": 6.0,
+   "category": "research",
+   "published": true,
+   "reason_if_low": "While the decision-speed is impressive, the focus is on game agents and coding assistants rather than direct 3D/VFX production workflows.",
+   "assessment": {
+    "video_id": "qBBRRsH0rQc",
+    "channel": "Two Minute Papers",
+    "tools_and_platforms": [
+     {
+      "name": "Jev",
+      "used_for": "Fast decision-making and classification"
+     },
+     {
+      "name": "Laya",
+      "used_for": "Open-source local alternative to Jev"
+     },
+     {
+      "name": "Lambda",
+      "used_for": "GPU compute for training and inference"
+     }
+    ],
+    "whats_new": "Jev is a specialized AI model from TypeSafe AI designed for fast decision-making instead of text generation. It uses Reinforcement Learning for Calibrated Decisions (RLCD) and parallel sampling to evaluate all potential answers simultaneously, making it up to 200x faster and significantly cheaper than traditional LLMs.",
+    "whats_transferable": [
+     "Architectural separation of 'generative' tasks from 'decision' tasks to improve pipeline automation speed.",
+     "Implementation of calibrated confidence values to trigger human intervention or higher-fidelity fallbacks in automated scripts.",
+     "Offloading simple binary or multiple-choice logic from slow LLMs to fast, specialized classification models."
+    ],
+    "pipeline_notes": "For a USD/Houdini TD, this model type could handle high-volume discrete logic tasks such as asset tagging, metadata validation, or automated QC checks during scene assembly without the latency of a standard LLM. It serves as a fast logic layer for autonomous agents in a production environment.",
+    "visual_quality_notes": "The video demos focus on real-time response in low-fidelity games like Doom and Tetris; the relevance is purely on the speed of the decision logic rather than visual fidelity or rendering quality.",
+    "category": "research",
+    "topic_relevance": 5.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": "While the decision-speed is impressive, the focus is on game agents and coding assistants rather than direct 3D/VFX production workflows.",
+    "summary_bullets": [
+     "Jev is a decision-only model that avoids token generation to maximize speed and minimize token cost.",
+     "It employs RLCD to ensure that confidence scores represent actual probability of being correct, enabling reliable automated branching logic.",
+     "The model is built for System One (fast, intuitive) tasks, allowing heavier generative models to focus on complex reasoning."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Yes, Jev Is Insane, But There's A Catch",
+    "body": "Jev is a specialized AI model from TypeSafe AI designed for fast decision-making instead of text generation. It uses Reinforcement Learning for Calibrated Decisions (RLCD) and parallel sampling to evaluate all potential answers simultaneously, making it up to 200x faster and significantly cheaper than traditional LLMs.",
+    "why": "For a USD/Houdini TD, this model type could handle high-volume discrete logic tasks such as asset tagging, metadata validation, or automated QC checks during scene assembly without the latency of a standard LLM. It serves as a fast logic layer for autonomous agents in a production environment.",
+    "channel": "g",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Two Minute Papers",
+      "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/qBBRRsH0rQc/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Jev",
+      "used_for": "Fast decision-making and classification"
+     },
+     {
+      "name": "Laya",
+      "used_for": "Open-source local alternative to Jev"
+     },
+     {
+      "name": "Lambda",
+      "used_for": "GPU compute for training and inference"
+     }
+    ],
+    "whats_transferable": [
+     "Architectural separation of 'generative' tasks from 'decision' tasks to improve pipeline automation speed.",
+     "Implementation of calibrated confidence values to trigger human intervention or higher-fidelity fallbacks in automated scripts.",
+     "Offloading simple binary or multiple-choice logic from slow LLMs to fast, specialized classification models."
+    ],
+    "topic_relevance": 5.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-09-23T21:10:47.668428+00:00"
+  },
+  "-EhJfhZRUGY": {
+   "title": "Is this how higher dimensional beings see our reality? 4D reconstruction of space and time",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/-EhJfhZRUGY",
+   "at": "2026-09-23T21:04:45.271047+00:00",
+   "duration_s": 20,
+   "published": false,
+   "reason_if_low": "under 90s (20s)"
+  },
+  "KYgzXSRfVsw": {
+   "title": "Advanced Setups: SDF Hacks",
+   "channel": "Entagma",
+   "url": "https://www.youtube.com/shorts/KYgzXSRfVsw",
+   "at": "2026-09-23T21:04:45.383206+00:00",
+   "duration_s": 26,
+   "published": false,
+   "reason_if_low": "under 90s (26s)"
+  },
+  "dtKeRKeZ57A": {
+   "title": "Can GPT-6 Astra Build a Full Blender Scene From One Reference?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/dtKeRKeZ57A",
+   "at": "2026-09-23T21:04:45.504492+00:00",
+   "duration_s": 69,
+   "published": false,
+   "reason_if_low": "under 90s (69s)"
   }
  },
  "quota": {
-  "date": "2026-09-22",
-  "minutes": 5.266666666666667
+  "date": "2026-09-23",
+  "minutes": 64.83333333333334
  }
 }
