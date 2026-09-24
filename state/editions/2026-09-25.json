@@ -1,0 +1,123 @@
+{
+  "verdict": "A quiet day dominated by research-paper noise and trade-press filler; only the Adobe/Topaz deal, Mari 8.0 beta, and a couple of vendor tool updates carry real pipeline weight.",
+  "stories": [
+    {
+      "headline": "Adobe completes acquisition of Topaz Labs",
+      "body": "Adobe has closed its acquisition of Topaz Labs, the AI upscaling and video enhancement company. Topaz's models are already integrated into Firefly and Photoshop, and its standalone apps remain on sale. CEO Eric Yang joins Adobe's Digital Video and Audio team. This consolidates a widely used upscaling toolset under Adobe, with implications for licensing and future availability of Topaz's standalone products for studios on client work.",
+      "why": "Determines whether Topaz's upscaling tools stay independently licensable or get locked into Adobe's ecosystem.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/09/adobe-to-acquire-topaz-labs",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/adobe-completes-topaz-labs-acquisition",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/adobe_x_topaz-1280.jpg?itok=oYIcGMfU"
+    },
+    {
+      "headline": "Foundry releases Mari 8.0 in open beta with tri-planar and hex tile texturing nodes",
+      "body": "Foundry's Mari 8.0 open beta (now at Beta 2) adds new Tri-Planar Tiled and Hex Tile nodes for 3D texture painting, plus A/B comparison support. This is a direct update to production texturing tooling used alongside Houdini/USD pipelines, available now to beta testers.",
+      "why": "Directly affects texture-painting workflows that feed USD look-dev pipelines.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/09/foundry-releases-mari-8-0-in-open-beta",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Beeble ships SwitchX 2.0 with native 4K and 20-second clips",
+      "body": "Beeble's video-to-video relighting model SwitchX 2.0 now outputs native 4K, supports clips up to 20 seconds at 24fps, and adds 10-bit color depth. The tool lets artists modify lighting, backgrounds and props while preserving subject and performance, aimed at VFX relighting and compositing work.",
+      "why": "A controllable relighting v2v model with longer clips is directly usable in restyle/relight pipelines.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/beebles-switchx-2-0-native-4k-longer-clips-enhanced-motion",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Otoy ships OctaneRender 2027.1 alpha with SDF-to-mesh baking",
+      "body": "OctaneRender 2027.1 Alpha 3 adds the ability to bake signed distance fields to meshes, usable as proxy geometry in simulations. This is a GPU renderer feature update relevant to sim and lookdev pipelines that use Octane alongside Houdini.",
+      "why": "SDF-to-mesh baking gives a new proxy-geo option for simulation setups.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/09/otoy-releases-octanerender-2027-1-in-alpha",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "How To Animate a Short Film with Blender + Higgsfield (Full Breakdown)",
+      "body": "A production-tested hybrid animation pipeline that uses 3D layout as a motion reference for AI video generation, combined with highly structured 'system prompts' that explicitly include the 12 principles of animation.",
+      "why": "This workflow bridges the gap between traditional layout/animation and AI rendering. In a USD pipeline, this would effectively replace the lighting/rendering/compositing stage with an AI 'stylization' pass conditioned on Anim/Layout exports.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=reFzEtCG_m8",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/reFzEtCG_m8/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Blender",
+          "used_for": "3D previz, layout, camera blocking, and generating motion guides for AI conditioning"
+        },
+        {
+          "name": "Claude",
+          "used_for": "Structured prompt engineering and expanding short descriptions into technical 'skill' prompts"
+        },
+        {
+          "name": "Photoshop",
+          "used_for": "Manual paintovers and asset refinement to fix AI hallucinations or missing accessories"
+        },
+        {
+          "name": "Soul 2.0 / Seedream 5.0",
+          "used_for": "Higgsfield proprietary diffusion models for image and video generation"
+        }
+      ],
+      "whats_transferable": [
+        "Structuring prompts into blocks: Scene Context, Active References, Shot Structure, and Constraints",
+        "Using grayscale 3D blocking videos as the primary motion signal for AI to control camera and character timing",
+        "Iterative keyframe correction where AI outputs are manually fixed in Photoshop and fed back as image references"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 12737,
+    "output_tokens": 1152
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}

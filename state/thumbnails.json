@@ -11,6 +11,10 @@
     "2026-09-24": {
       "attempts": 1,
       "paused": true
+    },
+    "2026-09-25": {
+      "attempts": 1,
+      "paused": true
     }
   }
 }

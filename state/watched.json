@@ -513,10 +513,125 @@
    "duration_s": 69,
    "published": false,
    "reason_if_low": "under 90s (69s)"
+  },
+  "2_l_2-0WvA4": {
+   "title": "Walking through the world, leaving a 3d snapshot of every moment exactly where it happened",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/2_l_2-0WvA4",
+   "at": "2026-09-24T21:07:12.396266+00:00",
+   "duration_s": 14,
+   "published": false,
+   "reason_if_low": "under 90s (14s)"
+  },
+  "9loDDILgssM": {
+   "title": "Claude Opus 5.5 x Higgsfield MCP | Build a Monster Truck",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/9loDDILgssM",
+   "at": "2026-09-24T21:11:02.306867+00:00",
+   "duration_s": 42,
+   "published": false,
+   "reason_if_low": "under 90s (42s)"
+  },
+  "reFzEtCG_m8": {
+   "title": "How To Animate a Short Film with Blender + Higgsfield (Full Breakdown)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=reFzEtCG_m8",
+   "at": "2026-09-24T21:11:02.409964+00:00",
+   "duration_s": 1686,
+   "topic_relevance": 8.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "reFzEtCG_m8",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Blender",
+      "used_for": "3D previz, layout, camera blocking, and generating motion guides for AI conditioning"
+     },
+     {
+      "name": "Claude",
+      "used_for": "Structured prompt engineering and expanding short descriptions into technical 'skill' prompts"
+     },
+     {
+      "name": "Photoshop",
+      "used_for": "Manual paintovers and asset refinement to fix AI hallucinations or missing accessories"
+     },
+     {
+      "name": "Soul 2.0 / Seedream 5.0",
+      "used_for": "Higgsfield proprietary diffusion models for image and video generation"
+     }
+    ],
+    "whats_new": "A production-tested hybrid animation pipeline that uses 3D layout as a motion reference for AI video generation, combined with highly structured 'system prompts' that explicitly include the 12 principles of animation.",
+    "whats_transferable": [
+     "Structuring prompts into blocks: Scene Context, Active References, Shot Structure, and Constraints",
+     "Using grayscale 3D blocking videos as the primary motion signal for AI to control camera and character timing",
+     "Iterative keyframe correction where AI outputs are manually fixed in Photoshop and fed back as image references"
+    ],
+    "pipeline_notes": "This workflow bridges the gap between traditional layout/animation and AI rendering. In a USD pipeline, this would effectively replace the lighting/rendering/compositing stage with an AI 'stylization' pass conditioned on Anim/Layout exports.",
+    "visual_quality_notes": "Achieves high temporal consistency for stylized characters by locking character sheets and 3D guides, though subtle character acting remains a bottleneck for the AI models.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Adopts an 'asset-first' approach where character, prop, and location sheets are finalized and 'locked' before any video generation begins.",
+     "Utilizes a dual-path workflow: simple shots use direct text-to-video, while complex actions utilize Blender-based previs as video-to-video input.",
+     "Introduces the 'System Prompt' concept to Claude, creating a reusable structure that dictates style rules and physics for the AI model across the entire sequence.",
+     "Manages texture density conflicts by simplifying moving assets (clean 3D style) while maintaining complex textures (watercolor) for static backgrounds.",
+     "Demonstrates how 'subtle acting' gaps are currently the hardest part of the AI transition, requiring manual overrides or simplified shot designs."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "How To Animate a Short Film with Blender + Higgsfield (Full Breakdown)",
+    "body": "A production-tested hybrid animation pipeline that uses 3D layout as a motion reference for AI video generation, combined with highly structured 'system prompts' that explicitly include the 12 principles of animation.",
+    "why": "This workflow bridges the gap between traditional layout/animation and AI rendering. In a USD pipeline, this would effectively replace the lighting/rendering/compositing stage with an AI 'stylization' pass conditioned on Anim/Layout exports.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=reFzEtCG_m8",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/reFzEtCG_m8/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Blender",
+      "used_for": "3D previz, layout, camera blocking, and generating motion guides for AI conditioning"
+     },
+     {
+      "name": "Claude",
+      "used_for": "Structured prompt engineering and expanding short descriptions into technical 'skill' prompts"
+     },
+     {
+      "name": "Photoshop",
+      "used_for": "Manual paintovers and asset refinement to fix AI hallucinations or missing accessories"
+     },
+     {
+      "name": "Soul 2.0 / Seedream 5.0",
+      "used_for": "Higgsfield proprietary diffusion models for image and video generation"
+     }
+    ],
+    "whats_transferable": [
+     "Structuring prompts into blocks: Scene Context, Active References, Shot Structure, and Constraints",
+     "Using grayscale 3D blocking videos as the primary motion signal for AI to control camera and character timing",
+     "Iterative keyframe correction where AI outputs are manually fixed in Photoshop and fed back as image references"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-09-24T21:13:23.217794+00:00"
   }
  },
  "quota": {
-  "date": "2026-09-23",
-  "minutes": 64.83333333333334
+  "date": "2026-09-24",
+  "minutes": 85.08333333333333
  }
 }
