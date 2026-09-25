@@ -445,6 +445,66 @@
    "issue_ids": [
     19
    ]
+  },
+  {
+   "story_id": "1df88483c2",
+   "at": "2026-09-25T21:02:03.535736+00:00",
+   "vote": 1,
+   "headline": "How To Animate a Short Film with Blender + Higgsfield (Full Breakdown)",
+   "sources": [
+    "Higgsfield AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "anim",
+    "animate",
+    "animation",
+    "between",
+    "blender",
+    "breakdown",
+    "bridges",
+    "compositing",
+    "conditioned",
+    "effectively",
+    "exports.",
+    "film",
+    "full",
+    "gap"
+   ],
+   "via": "page",
+   "issue_ids": [
+    23
+   ]
+  },
+  {
+   "story_id": "729a3176ae",
+   "at": "2026-09-25T21:02:03.535783+00:00",
+   "vote": 1,
+   "headline": "Adobe completes acquisition of Topaz Labs",
+   "sources": [
+    "CG Channel",
+    "Animation World Network"
+   ],
+   "channel": "b",
+   "terms": [
+    "acquisition",
+    "adobe",
+    "completes",
+    "determines",
+    "ecosystem.",
+    "independently",
+    "labs",
+    "licensable",
+    "locked",
+    "stay",
+    "topaz",
+    "upscaling",
+    "whether"
+   ],
+   "via": "page",
+   "issue_ids": [
+    22
+   ]
   }
  ]
 }

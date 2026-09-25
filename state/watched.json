@@ -628,10 +628,325 @@
     "transferable_craft": 8.0
    },
    "delivered_at": "2026-09-24T21:13:23.217794+00:00"
+  },
+  "iJoo2RuAfZ0": {
+   "title": "Qwen Image 2.1 - Runs Locally in ComfyUI",
+   "channel": "Nerdy Rodent",
+   "url": "https://www.youtube.com/watch?v=iJoo2RuAfZ0",
+   "at": "2026-09-25T21:05:02.814936+00:00",
+   "duration_s": 1014,
+   "topic_relevance": 8.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "iJoo2RuAfZ0",
+    "channel": "Nerdy Rodent",
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Node-based orchestration of the AI image generation pipeline."
+     },
+     {
+      "name": "Qwen-Image-2.1",
+      "used_for": "Multimodal LLM-based image generation and editing model supporting up to 10 image inputs."
+     },
+     {
+      "name": "KJ Nodes",
+      "used_for": "Custom nodes for image comparison and visual feedback."
+     },
+     {
+      "name": "RGThree nodes",
+      "used_for": "Logic switches and workflow organization."
+     }
+    ],
+    "whats_new": "Integration of the Qwen-Image-2.1 multimodal model into ComfyUI, allowing for complex multi-image reference prompting (extracting pose, face, and background from separate sources) within a single node.",
+    "whats_transferable": [
+     "Multi-image prompting to synthesize a final image from discrete visual components (pose from image A, character from image B, background from image C).",
+     "Prompt-based upscaling and editing (e.g., 'remove background from image1') which uses the model's reasoning instead of isolated CV algorithms.",
+     "Direct integration of depth and pose maps as image-based references in a multimodal LLM workflow."
+    ],
+    "pipeline_notes": "Sits in the concept and texture/matte-painting stage. Could be integrated into a USD pipeline by using ComfyUI's API to generate assets for specific geometry bounds or as look-dev iterations for environment backplates.",
+    "visual_quality_notes": "High fidelity in rendering technical diagrams and small text labels. Significant issues with hand anatomy (extra/fused fingers) and notable color shifting when using prompt-based upscaling compared to standard sampling.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates Qwen-Image-2.1 integration for unified multimodal image generation and editing in ComfyUI.",
+     "Showcases 'RODENT' method for modular, readable node workflows in complex AI pipelines.",
+     "Compares prompt-driven model upscaling against traditional latent upscaling methods.",
+     "Provides examples of combining depth maps and OpenPose data with textual instructions for precise control.",
+     "Analyzes the model's ability to handle up to 10 reference images simultaneously for complex scene synthesis."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Qwen Image 2.1 - Runs Locally in ComfyUI",
+    "body": "Integration of the Qwen-Image-2.1 multimodal model into ComfyUI, allowing for complex multi-image reference prompting (extracting pose, face, and background from separate sources) within a single node.",
+    "why": "Sits in the concept and texture/matte-painting stage. Could be integrated into a USD pipeline by using ComfyUI's API to generate assets for specific geometry bounds or as look-dev iterations for environment backplates.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Nerdy Rodent",
+      "url": "https://www.youtube.com/watch?v=iJoo2RuAfZ0",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/iJoo2RuAfZ0/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Node-based orchestration of the AI image generation pipeline."
+     },
+     {
+      "name": "Qwen-Image-2.1",
+      "used_for": "Multimodal LLM-based image generation and editing model supporting up to 10 image inputs."
+     },
+     {
+      "name": "KJ Nodes",
+      "used_for": "Custom nodes for image comparison and visual feedback."
+     },
+     {
+      "name": "RGThree nodes",
+      "used_for": "Logic switches and workflow organization."
+     }
+    ],
+    "whats_transferable": [
+     "Multi-image prompting to synthesize a final image from discrete visual components (pose from image A, character from image B, background from image C).",
+     "Prompt-based upscaling and editing (e.g., 'remove background from image1') which uses the model's reasoning instead of isolated CV algorithms.",
+     "Direct integration of depth and pose maps as image-based references in a multimodal LLM workflow."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-09-25T21:07:50.105625+00:00"
+  },
+  "WPRSBgdgaI4": {
+   "title": "Walking through the same place at two different times - simultaneously summer and winter!",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/WPRSBgdgaI4",
+   "at": "2026-09-25T21:05:46.827516+00:00",
+   "duration_s": 13,
+   "published": false,
+   "reason_if_low": "under 90s (13s)"
+  },
+  "Hq51jUlgIjo": {
+   "title": "Can GPT-6 Astra Vibe Code Blender Add-ons in 1 Hour?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/Hq51jUlgIjo",
+   "at": "2026-09-25T21:05:46.901773+00:00",
+   "duration_s": 61,
+   "published": false,
+   "reason_if_low": "under 90s (61s)"
+  },
+  "yna3aOREpmI": {
+   "title": "Blender to Seedance 2.5: Can GPT-6 Astra Direct an AI Film?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/yna3aOREpmI",
+   "at": "2026-09-25T21:05:47.011929+00:00",
+   "duration_s": 61,
+   "published": false,
+   "reason_if_low": "under 90s (61s)"
+  },
+  "2M1TEH6JPKc": {
+   "title": "Claude Opus 5.5 Is the New KING of 3D Design & Blender",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=2M1TEH6JPKc",
+   "at": "2026-09-25T21:05:47.125845+00:00",
+   "duration_s": 1004,
+   "topic_relevance": 9.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "2M1TEH6JPKc",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Blender MCP Server",
+      "used_for": "Connecting LLMs to Blender's Python API for agentic scene manipulation."
+     },
+     {
+      "name": "Higgsfield",
+      "used_for": "Integrated 3D, image, and video generation platform within the DCC environment."
+     },
+     {
+      "name": "Three.js",
+      "used_for": "Real-time web rendering for AI-generated game logic and VFX tests."
+     },
+     {
+      "name": "Claude Opus 5.5 & GPT-6 Astra",
+      "used_for": "High-level reasoning and code generation for procedural 3D tasks."
+     }
+    ],
+    "whats_new": "Comparative benchmarking of agentic LLM workflows for complex 3D tasks including procedural modeling, UV unwrapping, automated rigging/animation, and logic-based game generation.",
+    "whats_transferable": [
+     "Implementation of Model Context Protocol (MCP) to allow LLMs to directly interact with DCC scene graphs via Python.",
+     "Agentic rigging workflows where the model generates bone hierarchies and weight data procedurally.",
+     "Single-prompt generation of interactive physics-based simulations using 3JS."
+    ],
+    "pipeline_notes": "The demonstrated workflow utilizes an MCP server to bridge AI agents with Blender's API. This is directly applicable to USD-based pipelines (Houdini/Solaris) for automated scene assembly, greyboxing, and generating HDA logic. It treats the DCC as an execution environment for agentic reasoning.",
+    "visual_quality_notes": "Models primarily generate procedural primitives; while layout and logic are strong, the geometric detail and UV layouts are currently insufficient for hero assets without manual cleanup. Claude demonstrates a significantly higher 'artistic' sensibility in VFX placement and camera animation compared to GPT.",
+    "category": "workflow",
+    "topic_relevance": 9.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Tested Claude Opus 5.5 and GPT-6 Astra in 'Max Effort' mode for end-to-end 3D asset and scene creation.",
+     "Demonstrated a successful 'VFX Gauntlet' where agents generated complex magic circle shaders, particles, and synchronized camera movements.",
+     "Analyzed AI-driven UV unwrapping performance, finding significant issues with island packing and orientation despite correct mesh segmentation.",
+     "Showcased procedural character rigging and animation of non-humanoid creatures, with Claude outperforming GPT in 'jump' and 'attack' logic.",
+     "Proved the feasibility of generating playable real-time mini-games from single text prompts by synthesizing 3.js code and procedural assets."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Claude Opus 5.5 Is the New KING of 3D Design & Blender",
+    "body": "Comparative benchmarking of agentic LLM workflows for complex 3D tasks including procedural modeling, UV unwrapping, automated rigging/animation, and logic-based game generation.",
+    "why": "The demonstrated workflow utilizes an MCP server to bridge AI agents with Blender's API. This is directly applicable to USD-based pipelines (Houdini/Solaris) for automated scene assembly, greyboxing, and generating HDA logic. It treats the DCC as an execution environment for agentic reasoning.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=2M1TEH6JPKc",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/2M1TEH6JPKc/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Blender MCP Server",
+      "used_for": "Connecting LLMs to Blender's Python API for agentic scene manipulation."
+     },
+     {
+      "name": "Higgsfield",
+      "used_for": "Integrated 3D, image, and video generation platform within the DCC environment."
+     },
+     {
+      "name": "Three.js",
+      "used_for": "Real-time web rendering for AI-generated game logic and VFX tests."
+     },
+     {
+      "name": "Claude Opus 5.5 & GPT-6 Astra",
+      "used_for": "High-level reasoning and code generation for procedural 3D tasks."
+     }
+    ],
+    "whats_transferable": [
+     "Implementation of Model Context Protocol (MCP) to allow LLMs to directly interact with DCC scene graphs via Python.",
+     "Agentic rigging workflows where the model generates bone hierarchies and weight data procedurally.",
+     "Single-prompt generation of interactive physics-based simulations using 3JS."
+    ],
+    "topic_relevance": 9.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-09-25T21:07:50.105658+00:00"
+  },
+  "Vr_KyUr5iOQ": {
+   "title": "Higgsfield Production Skills Bundle for Claude Opus 5.5",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/Vr_KyUr5iOQ",
+   "at": "2026-09-25T21:06:18.663234+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "hvUQd6F8zKM": {
+   "title": "10 Free Gemini Photography Gems for Nano Banana 2",
+   "channel": "AI2Play (pixaroma)",
+   "url": "https://www.youtube.com/watch?v=hvUQd6F8zKM",
+   "at": "2026-09-25T21:06:18.762207+00:00",
+   "duration_s": 1143,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "hvUQd6F8zKM",
+    "channel": "AI2Play (pixaroma)",
+    "tools_and_platforms": [
+     {
+      "name": "Google Gemini (Custom Gems)",
+      "used_for": "Automated technical photography prompt expansion including lens, lighting, and aperture settings."
+     },
+     {
+      "name": "Google Flow",
+      "used_for": "Image generation interface and platform for managing AI models."
+     },
+     {
+      "name": "Nano Banana 2 / Pro",
+      "used_for": "High-photorealism image generation models."
+     }
+    ],
+    "whats_new": "Usage of specialized Google Gemini 'Gems' acting as technical photography consultants to generate highly detailed prompts for specific AI image models (Nano Banana 2).",
+    "whats_transferable": [
+     "Prompt chaining: using a specialized LLM agent to expand simple concepts into technical photography specifications (f-stop, focal length, lighting setups) before passing to an image generator.",
+     "Categorized keyword sets for different photographic genres: dark food photography, macro insect photography, and cinematic period drama styles."
+    ],
+    "pipeline_notes": "This is a hosted web-based workflow. While not directly integrable into a USD-based Houdini/Maya pipeline, the logic of using a dedicated LLM 'prompt engineer' could be scripted as a Python node to generate prompt inputs for Stable Diffusion or Midjourney APIs within an asset creation or look-dev pipeline.",
+    "visual_quality_notes": "Achieves high photorealism in close-up and medium shots (food, products, portraits). Notable weakness in distant environment details (foliage, buildings) which exhibit common AI 'mushiness'. Superior handling of legible text on product labels compared to older models.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a two-step AI pipeline: concept expansion via Gemini Gems followed by generation in Google Flow.",
+     "Shows how to enforce specific technical photography parameters (e.g., 50mm f/1.8 lens, Hasselblad settings) to improve image grounding.",
+     "Provides a methodology for generating product mockups with controlled branding, typography, and props via detailed text-to-image prompts."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "10 Free Gemini Photography Gems for Nano Banana 2",
+    "body": "Usage of specialized Google Gemini 'Gems' acting as technical photography consultants to generate highly detailed prompts for specific AI image models (Nano Banana 2).",
+    "why": "This is a hosted web-based workflow. While not directly integrable into a USD-based Houdini/Maya pipeline, the logic of using a dedicated LLM 'prompt engineer' could be scripted as a Python node to generate prompt inputs for Stable Diffusion or Midjourney APIs within an asset creation or look-dev pipeline.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "AI2Play (pixaroma)",
+      "url": "https://www.youtube.com/watch?v=hvUQd6F8zKM",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/hvUQd6F8zKM/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Google Gemini (Custom Gems)",
+      "used_for": "Automated technical photography prompt expansion including lens, lighting, and aperture settings."
+     },
+     {
+      "name": "Google Flow",
+      "used_for": "Image generation interface and platform for managing AI models."
+     },
+     {
+      "name": "Nano Banana 2 / Pro",
+      "used_for": "High-photorealism image generation models."
+     }
+    ],
+    "whats_transferable": [
+     "Prompt chaining: using a specialized LLM agent to expand simple concepts into technical photography specifications (f-stop, focal length, lighting setups) before passing to an image generator.",
+     "Categorized keyword sets for different photographic genres: dark food photography, macro insect photography, and cinematic period drama styles."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-09-25T21:07:50.105678+00:00"
   }
  },
  "quota": {
-  "date": "2026-09-24",
-  "minutes": 85.08333333333333
+  "date": "2026-09-25",
+  "minutes": 52.68333333333334
  }
 }

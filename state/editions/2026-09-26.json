@@ -1,0 +1,180 @@
+{
+  "verdict": "A quiet day: mostly arXiv research chaff and press-junket VFX trailers, with nothing that lands directly in a Houdini/USD pipeline this week.",
+  "stories": [
+    {
+      "headline": "Blender marks 20 years of Open Movies with community retrospective",
+      "body": "Blender Foundation published a retrospective on its Open Movies program, which has run for two decades and shaped much of the studio's open-source pipeline development (Sintel, Spring, etc). No new tool or release attached, just a thank-you post to the community. Relevant mainly as context for where Blender's production-grade tooling investment has come from and may continue to go.",
+      "why": "Signals continued Foundation commitment to production-grade open tooling, relevant to studios evaluating Blender adoption.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Blender",
+          "url": "https://www.blender.org/press/20-years-open-movies",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Skin texture and lighting breakdown for Stranger Things' Demogorgon",
+      "body": "Artist Nikhil K S detailed a lookdev approach for recreating the Demogorgon's skin: real-world texture reference gathering, a note that added displacement doesn't automatically read as more realistic, and a lighting setup designed to keep the creature dark while still revealing slimy skin detail. Practical, technique-level detail rather than marketing copy.",
+      "why": "Concrete lookdev and lighting technique applicable to creature shading work in Houdini/Karma.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/exploring-thin-pale-slimy-skin-texture-by-recreating-the-demogorgon-from-stranger-things",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41744/images/6ab59122eb92a/cover_800x800.jpg"
+    },
+    {
+      "headline": "Free SVBRDF-scanned texture pack released by colormass",
+      "body": "Colormass released 177 SVBRDF-scanned material textures covering wood, glass, paint, and ceramic, available for free download. No licensing detail beyond 'free' given in the source, worth checking terms before use on client work.",
+      "why": "Free scanned material data usable directly in lookdev libraries, pending licence check.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/get-these-177-svbrdf-scanned-textures-for-free",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41754/images/6ab68ec80d7ee/cover_800x800.jpg"
+    },
+    {
+      "headline": "Qwen Image 2.1 - Runs Locally in ComfyUI",
+      "body": "Integration of the Qwen-Image-2.1 multimodal model into ComfyUI, allowing for complex multi-image reference prompting (extracting pose, face, and background from separate sources) within a single node.",
+      "why": "Sits in the concept and texture/matte-painting stage. Could be integrated into a USD pipeline by using ComfyUI's API to generate assets for specific geometry bounds or as look-dev iterations for environment backplates.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Nerdy Rodent",
+          "url": "https://www.youtube.com/watch?v=iJoo2RuAfZ0",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/iJoo2RuAfZ0/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ComfyUI",
+          "used_for": "Node-based orchestration of the AI image generation pipeline."
+        },
+        {
+          "name": "Qwen-Image-2.1",
+          "used_for": "Multimodal LLM-based image generation and editing model supporting up to 10 image inputs."
+        },
+        {
+          "name": "KJ Nodes",
+          "used_for": "Custom nodes for image comparison and visual feedback."
+        },
+        {
+          "name": "RGThree nodes",
+          "used_for": "Logic switches and workflow organization."
+        }
+      ],
+      "whats_transferable": [
+        "Multi-image prompting to synthesize a final image from discrete visual components (pose from image A, character from image B, background from image C).",
+        "Prompt-based upscaling and editing (e.g., 'remove background from image1') which uses the model's reasoning instead of isolated CV algorithms.",
+        "Direct integration of depth and pose maps as image-based references in a multimodal LLM workflow."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "Claude Opus 5.5 Is the New KING of 3D Design & Blender",
+      "body": "Comparative benchmarking of agentic LLM workflows for complex 3D tasks including procedural modeling, UV unwrapping, automated rigging/animation, and logic-based game generation.",
+      "why": "The demonstrated workflow utilizes an MCP server to bridge AI agents with Blender's API. This is directly applicable to USD-based pipelines (Houdini/Solaris) for automated scene assembly, greyboxing, and generating HDA logic. It treats the DCC as an execution environment for agentic reasoning.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=2M1TEH6JPKc",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/2M1TEH6JPKc/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Blender MCP Server",
+          "used_for": "Connecting LLMs to Blender's Python API for agentic scene manipulation."
+        },
+        {
+          "name": "Higgsfield",
+          "used_for": "Integrated 3D, image, and video generation platform within the DCC environment."
+        },
+        {
+          "name": "Three.js",
+          "used_for": "Real-time web rendering for AI-generated game logic and VFX tests."
+        },
+        {
+          "name": "Claude Opus 5.5 & GPT-6 Astra",
+          "used_for": "High-level reasoning and code generation for procedural 3D tasks."
+        }
+      ],
+      "whats_transferable": [
+        "Implementation of Model Context Protocol (MCP) to allow LLMs to directly interact with DCC scene graphs via Python.",
+        "Agentic rigging workflows where the model generates bone hierarchies and weight data procedurally.",
+        "Single-prompt generation of interactive physics-based simulations using 3JS."
+      ],
+      "topic_relevance": 9.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "10 Free Gemini Photography Gems for Nano Banana 2",
+      "body": "Usage of specialized Google Gemini 'Gems' acting as technical photography consultants to generate highly detailed prompts for specific AI image models (Nano Banana 2).",
+      "why": "This is a hosted web-based workflow. While not directly integrable into a USD-based Houdini/Maya pipeline, the logic of using a dedicated LLM 'prompt engineer' could be scripted as a Python node to generate prompt inputs for Stable Diffusion or Midjourney APIs within an asset creation or look-dev pipeline.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "AI2Play (pixaroma)",
+          "url": "https://www.youtube.com/watch?v=hvUQd6F8zKM",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/hvUQd6F8zKM/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Google Gemini (Custom Gems)",
+          "used_for": "Automated technical photography prompt expansion including lens, lighting, and aperture settings."
+        },
+        {
+          "name": "Google Flow",
+          "used_for": "Image generation interface and platform for managing AI models."
+        },
+        {
+          "name": "Nano Banana 2 / Pro",
+          "used_for": "High-photorealism image generation models."
+        }
+      ],
+      "whats_transferable": [
+        "Prompt chaining: using a specialized LLM agent to expand simple concepts into technical photography specifications (f-stop, focal length, lighting setups) before passing to an image generator.",
+        "Categorized keyword sets for different photographic genres: dark food photography, macro insect photography, and cinematic period drama styles."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 10870,
+    "output_tokens": 725
+  },
+  "candidate_count": 48,
+  "editorial_stories": true
+}

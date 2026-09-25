@@ -1400,5 +1400,149 @@
    "gap"
   ],
   "at": "2026-09-24T21:13:22.255258+00:00"
+ },
+ "ebdaacb8ad": {
+  "headline": "Blender marks 20 years of Open Movies with community retrospective",
+  "sources": [
+   "Blender"
+  ],
+  "channel": "b",
+  "terms": [
+   "adoption.",
+   "blender",
+   "commitment",
+   "community",
+   "continued",
+   "evaluating",
+   "foundation",
+   "marks",
+   "movies",
+   "open",
+   "production-grade",
+   "relevant",
+   "retrospective",
+   "signals"
+  ],
+  "at": "2026-09-25T21:07:48.586034+00:00"
+ },
+ "953983a2d2": {
+  "headline": "Skin texture and lighting breakdown for Stranger Things' Demogorgon",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "a",
+  "terms": [
+   "applicable",
+   "breakdown",
+   "concrete",
+   "creature",
+   "demogorgon",
+   "houdini",
+   "karma.",
+   "lighting",
+   "lookdev",
+   "shading",
+   "skin",
+   "stranger",
+   "technique",
+   "texture"
+  ],
+  "at": "2026-09-25T21:07:48.586065+00:00"
+ },
+ "0bd3c2046b": {
+  "headline": "Free SVBRDF-scanned texture pack released by colormass",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "check.",
+   "colormass",
+   "data",
+   "directly",
+   "free",
+   "libraries",
+   "licence",
+   "lookdev",
+   "material",
+   "pack",
+   "pending",
+   "scanned",
+   "svbrdf-scanned",
+   "texture"
+  ],
+  "at": "2026-09-25T21:07:48.586079+00:00"
+ },
+ "6bbf5d6374": {
+  "headline": "Qwen Image 2.1 - Runs Locally in ComfyUI",
+  "sources": [
+   "Nerdy Rodent"
+  ],
+  "channel": "a",
+  "terms": [
+   "api",
+   "assets",
+   "backplates.",
+   "bounds",
+   "comfyui",
+   "concept",
+   "could",
+   "environment",
+   "generate",
+   "geometry",
+   "image",
+   "integrated",
+   "iterations",
+   "locally"
+  ],
+  "at": "2026-09-25T21:07:48.586097+00:00"
+ },
+ "b98f376751": {
+  "headline": "Claude Opus 5.5 Is the New KING of 3D Design & Blender",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "agentic",
+   "agents",
+   "api.",
+   "applicable",
+   "assembly",
+   "automated",
+   "blender",
+   "bridge",
+   "claude",
+   "dcc",
+   "demonstrated",
+   "design",
+   "directly",
+   "environment"
+  ],
+  "at": "2026-09-25T21:07:48.586116+00:00"
+ },
+ "08691d1aec": {
+  "headline": "10 Free Gemini Photography Gems for Nano Banana 2",
+  "sources": [
+   "AI2Play (pixaroma)"
+  ],
+  "channel": "a",
+  "terms": [
+   "apis",
+   "asset",
+   "banana",
+   "could",
+   "creation",
+   "dedicated",
+   "diffusion",
+   "directly",
+   "engineer",
+   "free",
+   "gemini",
+   "gems",
+   "generate",
+   "hosted"
+  ],
+  "at": "2026-09-25T21:07:48.586135+00:00"
  }
 }
