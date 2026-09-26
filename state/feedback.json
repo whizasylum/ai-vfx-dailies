@@ -473,7 +473,8 @@
    ],
    "via": "page",
    "issue_ids": [
-    23
+    23,
+    28
    ]
   },
   {
@@ -503,7 +504,128 @@
    ],
    "via": "page",
    "issue_ids": [
-    22
+    22,
+    27
+   ]
+  },
+  {
+   "story_id": "08691d1aec",
+   "at": "2026-09-26T20:35:20.427626+00:00",
+   "vote": 1,
+   "headline": "10 Free Gemini Photography Gems for Nano Banana 2",
+   "sources": [
+    "AI2Play (pixaroma)"
+   ],
+   "channel": "a",
+   "terms": [
+    "apis",
+    "asset",
+    "banana",
+    "could",
+    "creation",
+    "dedicated",
+    "diffusion",
+    "directly",
+    "engineer",
+    "free",
+    "gemini",
+    "gems",
+    "generate",
+    "hosted"
+   ],
+   "via": "page",
+   "issue_ids": [
+    29
+   ]
+  },
+  {
+   "story_id": "b98f376751",
+   "at": "2026-09-26T20:35:20.427670+00:00",
+   "vote": 1,
+   "headline": "Claude Opus 5.5 Is the New KING of 3D Design & Blender",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "agentic",
+    "agents",
+    "api.",
+    "applicable",
+    "assembly",
+    "automated",
+    "blender",
+    "bridge",
+    "claude",
+    "dcc",
+    "demonstrated",
+    "design",
+    "directly",
+    "environment"
+   ],
+   "via": "page",
+   "issue_ids": [
+    26
+   ]
+  },
+  {
+   "story_id": "6bbf5d6374",
+   "at": "2026-09-26T20:35:20.427674+00:00",
+   "vote": 1,
+   "headline": "Qwen Image 2.1 - Runs Locally in ComfyUI",
+   "sources": [
+    "Nerdy Rodent"
+   ],
+   "channel": "a",
+   "terms": [
+    "api",
+    "assets",
+    "backplates.",
+    "bounds",
+    "comfyui",
+    "concept",
+    "could",
+    "environment",
+    "generate",
+    "geometry",
+    "image",
+    "integrated",
+    "iterations",
+    "locally"
+   ],
+   "via": "page",
+   "issue_ids": [
+    25
+   ]
+  },
+  {
+   "story_id": "953983a2d2",
+   "at": "2026-09-26T20:35:20.427678+00:00",
+   "vote": 1,
+   "headline": "Skin texture and lighting breakdown for Stranger Things' Demogorgon",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "a",
+   "terms": [
+    "applicable",
+    "breakdown",
+    "concrete",
+    "creature",
+    "demogorgon",
+    "houdini",
+    "karma.",
+    "lighting",
+    "lookdev",
+    "shading",
+    "skin",
+    "stranger",
+    "technique",
+    "texture"
+   ],
+   "via": "page",
+   "issue_ids": [
+    24
    ]
   }
  ]

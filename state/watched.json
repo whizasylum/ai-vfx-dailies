@@ -943,10 +943,235 @@
     "transferable_craft": 6.0
    },
    "delivered_at": "2026-09-25T21:07:50.105678+00:00"
+  },
+  "uvyrdJ71NJE": {
+   "title": "Seeing past, present and future all at once. Is this how higher dimensions might see our reality?",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/uvyrdJ71NJE",
+   "at": "2026-09-26T20:38:03.277026+00:00",
+   "duration_s": 12,
+   "published": false,
+   "reason_if_low": "under 90s (12s)"
+  },
+  "CINFu5UbYAQ": {
+   "title": "AI Retopology & UVs Just Got a Big Upgrade (Tripo P2.0)",
+   "channel": "PixelArtistry",
+   "url": "https://www.youtube.com/watch?v=CINFu5UbYAQ",
+   "at": "2026-09-26T20:38:03.402181+00:00",
+   "duration_s": 1019,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "CINFu5UbYAQ",
+    "channel": "PixelArtistry",
+    "tools_and_platforms": [
+     {
+      "name": "Tripo P2.0",
+      "used_for": "AI-driven 3D generation, quad retopology, and automatic UV unwrapping"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Mesh assembly, texel density evaluation, and manual cleanup"
+     }
+    ],
+    "whats_new": "AI-powered quad-mesh retopology and 'Smart UV' that automatically places seams in hidden areas, attempting to mimic professional artist logic.",
+    "whats_transferable": [
+     "Modular asset generation workflow: generating characters in separate parts (head, torso, boots) as distinct AI prompts to overcome texture resolution and geometric complexity limits of monolithic generation.",
+     "Partial mesh regeneration using bounding boxes to fix local artifacts without rerunning the entire generation process."
+    ],
+    "pipeline_notes": "The output is GLB/OBJ based. In a USD pipeline, this tool serves as a rapid background-prop generator or a base for high-poly sculpting. The quad output makes it significantly more viable for Houdini/Maya workflows than previous triangle-heavy AI models, though hero assets will still require a manual pass to fix specific edge loops.",
+    "visual_quality_notes": "Quad topology is relatively clean but still produces occasional triangles in high-curvature areas. UV utilization is high (approx 75-80%), but the AI still struggles with readable text and fine surface markings, resulting in 'melty' texture details on small knobs and labels.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Introduction of Tripo P2.0 features specifically targeting production-ready outputs like quad topology and logical UV seams.",
+     "Demonstration of local mesh editing to patch holes or errors by selecting specific regions for regeneration.",
+     "Validation of AI-generated UV layouts using Blender's Texel Density Checker to ensure efficient use of texture space.",
+     "Workflow for 'Modular Character' creation by prompt-isolating armor pieces and body parts to maintain high detail across the final assembly."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "AI Retopology & UVs Just Got a Big Upgrade (Tripo P2.0)",
+    "body": "AI-powered quad-mesh retopology and 'Smart UV' that automatically places seams in hidden areas, attempting to mimic professional artist logic.",
+    "why": "The output is GLB/OBJ based. In a USD pipeline, this tool serves as a rapid background-prop generator or a base for high-poly sculpting. The quad output makes it significantly more viable for Houdini/Maya workflows than previous triangle-heavy AI models, though hero assets will still require a manual pass to fix specific edge loops.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "PixelArtistry",
+      "url": "https://www.youtube.com/watch?v=CINFu5UbYAQ",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/CINFu5UbYAQ/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Tripo P2.0",
+      "used_for": "AI-driven 3D generation, quad retopology, and automatic UV unwrapping"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Mesh assembly, texel density evaluation, and manual cleanup"
+     }
+    ],
+    "whats_transferable": [
+     "Modular asset generation workflow: generating characters in separate parts (head, torso, boots) as distinct AI prompts to overcome texture resolution and geometric complexity limits of monolithic generation.",
+     "Partial mesh regeneration using bounding boxes to fix local artifacts without rerunning the entire generation process."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-09-26T20:40:37.758158+00:00"
+  },
+  "UBjgJM6D18A": {
+   "title": "Building My Dream Game With AI - Characters & Animations",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=UBjgJM6D18A",
+   "at": "2026-09-26T20:38:46.251612+00:00",
+   "duration_s": 1906,
+   "topic_relevance": 7.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "UBjgJM6D18A",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Tripo3D (P2)",
+      "used_for": "HD 3D model generation, low-poly retopology, and automated UV unwrapping."
+     },
+     {
+      "name": "ChatGPT (GPT-6 Astra)",
+      "used_for": "Agentic automation of rigging, animation retargeting, and Blender scripting."
+     },
+     {
+      "name": "QuickMagic",
+      "used_for": "AI-powered video-to-motion (mocap) extraction."
+     },
+     {
+      "name": "Seedness 2.5 / MiniMax",
+      "used_for": "Generating video references to provide as source material for mocap tools."
+     },
+     {
+      "name": "Mixamo",
+      "used_for": "Basic skeleton rigging for humanoid units."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Asset assembly, skinning, and execution of AI-generated scripts."
+     },
+     {
+      "name": "Unreal Engine 5.8",
+      "used_for": "Markerless mocap testing (noted as a free alternative)."
+     }
+    ],
+    "whats_new": "Introduction of 'agentic' workflows for character animation, specifically using an LLM to interpret reference videos and automate bone-level rotations and pose corrections in Blender.",
+    "whats_transferable": [
+     "Using AI video generators (MiniMax/Seedness) to create 'ideal' reference motion that is then fed into markerless mocap tools.",
+     "LLM-driven retargeting for non-humanoid skeletons (wolves, scorpions) by providing the agent with coordinate references and motion descriptions.",
+     "Prototyping complex game UI as HTML/CSS via LLM then translating that logic to the target engine."
+    ],
+    "pipeline_notes": "The 'agentic' Blender workflow is highly compatible with Houdini-based pipelines. A technical artist could wrap these LLM calls into Python nodes to automate USD asset validation or basic layout chores. The reliance on AI-generated video as a mocap source bridges the gap between purely generative and purely manual animation.",
+    "visual_quality_notes": "The assets are designed for RTS distance; the texturing is decent but the primary strength is the automated low-poly retopology from high-density generative meshes.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a full character pipeline costing approx. $25 per character using generative 3D and mocap tools.",
+     "Shows how to leverage AI agents to handle the 'nightmare' of retargeting motion from human mocap to quadrupeds and multi-legged creatures.",
+     "Introduces a workflow for creating custom animation reference footage via video AI to solve specific pose requirements.",
+     "Provides a method for automating UI development by using HTML prototypes generated by LLMs as the source of truth for game HUDs."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Building My Dream Game With AI - Characters & Animations",
+    "body": "Introduction of 'agentic' workflows for character animation, specifically using an LLM to interpret reference videos and automate bone-level rotations and pose corrections in Blender.",
+    "why": "The 'agentic' Blender workflow is highly compatible with Houdini-based pipelines. A technical artist could wrap these LLM calls into Python nodes to automate USD asset validation or basic layout chores. The reliance on AI-generated video as a mocap source bridges the gap between purely generative and purely manual animation.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=UBjgJM6D18A",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/UBjgJM6D18A/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Tripo3D (P2)",
+      "used_for": "HD 3D model generation, low-poly retopology, and automated UV unwrapping."
+     },
+     {
+      "name": "ChatGPT (GPT-6 Astra)",
+      "used_for": "Agentic automation of rigging, animation retargeting, and Blender scripting."
+     },
+     {
+      "name": "QuickMagic",
+      "used_for": "AI-powered video-to-motion (mocap) extraction."
+     },
+     {
+      "name": "Seedness 2.5 / MiniMax",
+      "used_for": "Generating video references to provide as source material for mocap tools."
+     },
+     {
+      "name": "Mixamo",
+      "used_for": "Basic skeleton rigging for humanoid units."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Asset assembly, skinning, and execution of AI-generated scripts."
+     },
+     {
+      "name": "Unreal Engine 5.8",
+      "used_for": "Markerless mocap testing (noted as a free alternative)."
+     }
+    ],
+    "whats_transferable": [
+     "Using AI video generators (MiniMax/Seedness) to create 'ideal' reference motion that is then fed into markerless mocap tools.",
+     "LLM-driven retargeting for non-humanoid skeletons (wolves, scorpions) by providing the agent with coordinate references and motion descriptions.",
+     "Prototyping complex game UI as HTML/CSS via LLM then translating that logic to the target engine."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-09-26T20:40:37.758184+00:00"
+  },
+  "9Pbg-_ptBcE": {
+   "title": "Higgsfield x Claude Opus 5.5 for Motion Design | Editable After Effects Projects",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/9Pbg-_ptBcE",
+   "at": "2026-09-26T20:40:36.016658+00:00",
+   "duration_s": 73,
+   "published": false,
+   "reason_if_low": "under 90s (73s)"
+  },
+  "FW_tIpEBJ0U": {
+   "title": "Hybrid Production With Higgsfield Genjutsu | From Studio to Any Scene",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/FW_tIpEBJ0U",
+   "at": "2026-09-26T20:40:36.133149+00:00",
+   "duration_s": 56,
+   "published": false,
+   "reason_if_low": "under 90s (56s)"
   }
  },
  "quota": {
-  "date": "2026-09-25",
-  "minutes": 52.68333333333334
+  "date": "2026-09-26",
+  "minutes": 48.75
  }
 }

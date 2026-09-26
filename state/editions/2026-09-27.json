@@ -1,0 +1,98 @@
+{
+  "verdict": "2 video workflows worth a closer look.",
+  "stories": [
+    {
+      "headline": "AI Retopology & UVs Just Got a Big Upgrade (Tripo P2.0)",
+      "body": "AI-powered quad-mesh retopology and 'Smart UV' that automatically places seams in hidden areas, attempting to mimic professional artist logic.",
+      "why": "The output is GLB/OBJ based. In a USD pipeline, this tool serves as a rapid background-prop generator or a base for high-poly sculpting. The quad output makes it significantly more viable for Houdini/Maya workflows than previous triangle-heavy AI models, though hero assets will still require a manual pass to fix specific edge loops.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "PixelArtistry",
+          "url": "https://www.youtube.com/watch?v=CINFu5UbYAQ",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/CINFu5UbYAQ/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Tripo P2.0",
+          "used_for": "AI-driven 3D generation, quad retopology, and automatic UV unwrapping"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Mesh assembly, texel density evaluation, and manual cleanup"
+        }
+      ],
+      "whats_transferable": [
+        "Modular asset generation workflow: generating characters in separate parts (head, torso, boots) as distinct AI prompts to overcome texture resolution and geometric complexity limits of monolithic generation.",
+        "Partial mesh regeneration using bounding boxes to fix local artifacts without rerunning the entire generation process."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    },
+    {
+      "headline": "Building My Dream Game With AI - Characters & Animations",
+      "body": "Introduction of 'agentic' workflows for character animation, specifically using an LLM to interpret reference videos and automate bone-level rotations and pose corrections in Blender.",
+      "why": "The 'agentic' Blender workflow is highly compatible with Houdini-based pipelines. A technical artist could wrap these LLM calls into Python nodes to automate USD asset validation or basic layout chores. The reliance on AI-generated video as a mocap source bridges the gap between purely generative and purely manual animation.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=UBjgJM6D18A",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/UBjgJM6D18A/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Tripo3D (P2)",
+          "used_for": "HD 3D model generation, low-poly retopology, and automated UV unwrapping."
+        },
+        {
+          "name": "ChatGPT (GPT-6 Astra)",
+          "used_for": "Agentic automation of rigging, animation retargeting, and Blender scripting."
+        },
+        {
+          "name": "QuickMagic",
+          "used_for": "AI-powered video-to-motion (mocap) extraction."
+        },
+        {
+          "name": "Seedness 2.5 / MiniMax",
+          "used_for": "Generating video references to provide as source material for mocap tools."
+        },
+        {
+          "name": "Mixamo",
+          "used_for": "Basic skeleton rigging for humanoid units."
+        },
+        {
+          "name": "Blender",
+          "used_for": "Asset assembly, skinning, and execution of AI-generated scripts."
+        },
+        {
+          "name": "Unreal Engine 5.8",
+          "used_for": "Markerless mocap testing (noted as a free alternative)."
+        }
+      ],
+      "whats_transferable": [
+        "Using AI video generators (MiniMax/Seedness) to create 'ideal' reference motion that is then fed into markerless mocap tools.",
+        "LLM-driven retargeting for non-humanoid skeletons (wolves, scorpions) by providing the agent with coordinate references and motion descriptions.",
+        "Prototyping complex game UI as HTML/CSS via LLM then translating that logic to the target engine."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 2751,
+    "output_tokens": 72
+  },
+  "candidate_count": 7,
+  "editorial_stories": false
+}
