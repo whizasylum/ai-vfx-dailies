@@ -1,0 +1,10 @@
+{
+  "verdict": "Nothing today: the only candidate is a festival awards story with no technical or pipeline relevance.",
+  "stories": [],
+  "usage": {
+    "input_tokens": 2106,
+    "output_tokens": 52
+  },
+  "candidate_count": 1,
+  "editorial_stories": false
+}
