@@ -565,7 +565,8 @@
    ],
    "via": "page",
    "issue_ids": [
-    26
+    26,
+    32
    ]
   },
   {
@@ -626,6 +627,66 @@
    "via": "page",
    "issue_ids": [
     24
+   ]
+  },
+  {
+   "story_id": "32d1ea153d",
+   "at": "2026-09-28T22:53:30.223812+00:00",
+   "vote": 1,
+   "headline": "Building My Dream Game With AI - Characters & Animations",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "agentic",
+    "ai-generated",
+    "animation.",
+    "animations",
+    "artist",
+    "asset",
+    "automate",
+    "basic",
+    "between",
+    "blender",
+    "bridges",
+    "building",
+    "calls",
+    "characters"
+   ],
+   "via": "page",
+   "issue_ids": [
+    31
+   ]
+  },
+  {
+   "story_id": "a912fb4350",
+   "at": "2026-09-28T22:53:30.223819+00:00",
+   "vote": 1,
+   "headline": "AI Retopology & UVs Just Got a Big Upgrade (Tripo P2.0)",
+   "sources": [
+    "PixelArtistry"
+   ],
+   "channel": "a",
+   "terms": [
+    "assets",
+    "background-prop",
+    "base",
+    "based.",
+    "big",
+    "edge",
+    "fix",
+    "generator",
+    "glb",
+    "got",
+    "hero",
+    "high-poly",
+    "houdini",
+    "loops."
+   ],
+   "via": "page",
+   "issue_ids": [
+    30
    ]
   }
  ]

@@ -1168,10 +1168,195 @@
    "duration_s": 56,
    "published": false,
    "reason_if_low": "under 90s (56s)"
+  },
+  "doR2RhsneRA": {
+   "title": "This Is What $2,175 of Opus 5.5 Tokens Can Do...",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=doR2RhsneRA",
+   "at": "2026-09-28T22:54:11.534795+00:00",
+   "duration_s": 1236,
+   "topic_relevance": 7.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "doR2RhsneRA",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Core orchestrator/agent for project management, coding, and tool invocation"
+     },
+     {
+      "name": "Unity MCP",
+      "used_for": "Model Context Protocol bridge between Claude and the Unity game engine"
+     },
+     {
+      "name": "Blender MCP",
+      "used_for": "Model Context Protocol bridge between Claude and Blender for asset generation and animation"
+     },
+     {
+      "name": "Higgsfield API",
+      "used_for": "Generating 2D images and 3D models via various sub-models (Tripo, Nano Banana)"
+     },
+     {
+      "name": "Tripo H3.1",
+      "used_for": "Image-to-3D asset generation within the pipeline"
+     },
+     {
+      "name": "Mixamo",
+      "used_for": "Used by the agent for automated rigging and animation clips"
+     }
+    ],
+    "whats_new": "Demonstrates an autonomous agentic workflow using Claude Opus 5.5 to build a complex software project (an MMO slice) by calling external APIs and manipulating local DCC software (Unity and Blender) via the Model Context Protocol (MCP).",
+    "whats_transferable": [
+     "Using MCP (Model Context Protocol) to let an LLM agent interact directly with local file systems and DCC command structures",
+     "Multi-agent task distribution where a master agent (Claude) delegates specific asset generation tasks to specialized sub-agents/APIs",
+     "Iterative 'greybox-to-polished' workflow where the agent validates functionality with primitives before requesting final high-fidelity assets"
+    ],
+    "pipeline_notes": "While the end product is a Unity game, the orchestration of Blender via MCP is highly relevant. A technical artist could replace the Unity bridge with a Houdini/USD bridge to automate scene population, look-dev assignments, or USD stage composition using natural language and automated feedback loops.",
+    "visual_quality_notes": "The visuals are stylistically consistent (stylized WoW-like) but geometry generated via Tripo and Nano Banana still suffers from some procedural blobby-ness and texture stretching compared to hand-authored assets.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Claude Opus 5.5 acted as an autonomous technical director, managing a 36-hour build process for a stylized MMO project.",
+     "Integrated Blender and Unity directly into the LLM's context window using Model Context Protocol (MCP) servers.",
+     "Utilized a hierarchical prompt structure ('The Brief') that pre-approved 70 reference shots to guide aesthetic consistency.",
+     "Automated the creation of 303 unique 3D models and 609 textures via Higgsfield and Tripo APIs.",
+     "The system handled its own debugging, re-running shell commands and C# scripts when compilation errors occurred in Unity.",
+     "Cost analysis shows an equivalent API spend of ~$2,175 for the orchestration of ~7.85 billion tokens."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "This Is What $2,175 of Opus 5.5 Tokens Can Do...",
+    "body": "Demonstrates an autonomous agentic workflow using Claude Opus 5.5 to build a complex software project (an MMO slice) by calling external APIs and manipulating local DCC software (Unity and Blender) via the Model Context Protocol (MCP).",
+    "why": "While the end product is a Unity game, the orchestration of Blender via MCP is highly relevant. A technical artist could replace the Unity bridge with a Houdini/USD bridge to automate scene population, look-dev assignments, or USD stage composition using natural language and automated feedback loops.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=doR2RhsneRA",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/doR2RhsneRA/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Core orchestrator/agent for project management, coding, and tool invocation"
+     },
+     {
+      "name": "Unity MCP",
+      "used_for": "Model Context Protocol bridge between Claude and the Unity game engine"
+     },
+     {
+      "name": "Blender MCP",
+      "used_for": "Model Context Protocol bridge between Claude and Blender for asset generation and animation"
+     },
+     {
+      "name": "Higgsfield API",
+      "used_for": "Generating 2D images and 3D models via various sub-models (Tripo, Nano Banana)"
+     },
+     {
+      "name": "Tripo H3.1",
+      "used_for": "Image-to-3D asset generation within the pipeline"
+     },
+     {
+      "name": "Mixamo",
+      "used_for": "Used by the agent for automated rigging and animation clips"
+     }
+    ],
+    "whats_transferable": [
+     "Using MCP (Model Context Protocol) to let an LLM agent interact directly with local file systems and DCC command structures",
+     "Multi-agent task distribution where a master agent (Claude) delegates specific asset generation tasks to specialized sub-agents/APIs",
+     "Iterative 'greybox-to-polished' workflow where the agent validates functionality with primitives before requesting final high-fidelity assets"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-09-28T23:04:19.727434+00:00"
+  },
+  "UQDM-ZigvGo": {
+   "title": "Anerneq | AI Generated Short Film | Higgsfield Originals (2026)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=UQDM-ZigvGo",
+   "at": "2026-09-28T23:02:03.858974+00:00",
+   "duration_s": 1206,
+   "topic_relevance": 8.0,
+   "transferable_craft": 2.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": "The content is a final narrative output (a short film) without a technical breakdown, workflow walkthrough, or tool UI demonstration. A technical artist cannot replicate the results or integrate the method into a pipeline without additional documentation.",
+   "assessment": {
+    "video_id": "UQDM-ZigvGo",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Cinema Studio 4",
+      "used_for": "Generative AI video synthesis and cinematic storytelling"
+     }
+    ],
+    "whats_new": "Cinema Studio 4 model release, demonstrating significantly improved temporal stability, complex character performance, and environmental interaction consistency.",
+    "whats_transferable": [
+     "Visual benchmarking of AI temporal consistency in high-motion and high-contrast (fire/snow) scenes",
+     "Reference for AI-driven emotional character performance in narrative context"
+    ],
+    "pipeline_notes": "Serves as an end-to-end output showcase; however, it lacks technical details on integrating these AI-generated plates into a USD-based environment or using them as reference for Houdini simulations.",
+    "visual_quality_notes": "Remarkable stability in character facial topology across shots; fire and smoke dynamics show reduced artifacting compared to previous versions; lighting consistency in high-contrast firelit scenes is production-grade.",
+    "category": "tool_release",
+    "topic_relevance": 8.0,
+    "transferable_craft": 2.0,
+    "reason_if_low": "The content is a final narrative output (a short film) without a technical breakdown, workflow walkthrough, or tool UI demonstration. A technical artist cannot replicate the results or integrate the method into a pipeline without additional documentation.",
+    "summary_bullets": [
+     "Cinematic short film 'The Kele' produced to showcase the capabilities of Higgsfield Cinema Studio 4.",
+     "Features complex AI-generated sequences including underwater struggle, fire dynamics, and long-range character motion.",
+     "Demonstrates high character consistency for the protagonists Tyne and Gyronav across varied environments.",
+     "Showcases emotional narrative depth and stable lip-syncing for native-style dialogue.",
+     "Directs viewers to the Higgsfield platform for the full series, emphasizing professional generative video workflows."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Anerneq | AI Generated Short Film | Higgsfield Originals (2026)",
+    "body": "Cinema Studio 4 model release, demonstrating significantly improved temporal stability, complex character performance, and environmental interaction consistency.",
+    "why": "Serves as an end-to-end output showcase; however, it lacks technical details on integrating these AI-generated plates into a USD-based environment or using them as reference for Houdini simulations.",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=UQDM-ZigvGo",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/UQDM-ZigvGo/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Cinema Studio 4",
+      "used_for": "Generative AI video synthesis and cinematic storytelling"
+     }
+    ],
+    "whats_transferable": [
+     "Visual benchmarking of AI temporal consistency in high-motion and high-contrast (fire/snow) scenes",
+     "Reference for AI-driven emotional character performance in narrative context"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 2.0
+   },
+   "delivered_at": "2026-09-28T23:04:19.727458+00:00"
   }
  },
  "quota": {
-  "date": "2026-09-27",
-  "minutes": 13.316666666666666
+  "date": "2026-09-28",
+  "minutes": 54.01666666666667
  }
 }

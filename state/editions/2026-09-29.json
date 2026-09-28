@@ -1,0 +1,154 @@
+{
+  "verdict": "A thin day: mostly research-paper noise, marketing trailers, and industry filler, with one genuinely deployable model release and a couple of workflow items worth a skim.",
+  "stories": [
+    {
+      "headline": "Skywork releases Matrix-Game-2.0, an MIT-licensed image-to-video model on Hugging Face",
+      "body": "Matrix-Game-2.0 is available on Hugging Face under an MIT licence, built on Skywork's SkyReels-V2-I2V-1.3B-540P base and using the diffusers library. It has 298 likes and 258 downloads at time of writing. Permissive licensing and diffusers compatibility mean it can be dropped into existing ComfyUI or Python pipelines for image-to-video generation without legal friction, though real-world quality and VRAM needs aren't detailed in the listing.",
+      "why": "Permissive-licence open-weight video model that a studio could actually test on client work.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Skywork/Matrix-Game-2.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Multi-Layered RBD workflow lets Houdini artists refine destruction without redoing approved sims",
+      "body": "Former Pixar FX TD Jae Jun Yi describes a Multi-Layered RBD simulation workflow in Houdini that separates approved primary destruction motion from secondary fracture and detail passes, letting artists add richness without re-simulating and re-approving the base layer. It's a workflow technique rather than a plugin release, but it addresses a real production bottleneck in FX review cycles.",
+      "why": "Directly applicable Houdini FX technique for iterating destruction shots without breaking approvals.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/former-pixar-fx-artist-reveals-a-smarter-way-to-refine-destruction",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41775/images/6abac8ebc8bc2/cover_800x800.jpg"
+    },
+    {
+      "headline": "SGO launches browser-based Workflows Slate for burn-ins and metadata slates",
+      "body": "SGO's new Workflows Slate is a web app for creating burn-ins and slate templates from metadata, moving that task out of edit and finishing tools not built for it. It's aimed at post facilities managing delivery specs across shows. No pricing or availability detail is given beyond the announcement.",
+      "why": "A dedicated metadata-driven slate tool could simplify delivery QC outside Nuke or Resolve.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/sgos-workflows-slate-burn-in-and-slate-template-creation",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Digital Anarchy adds ML-based teeth and eye whitening to Beauty Box 6.5",
+      "body": "Digital Anarchy's Beauty Box, a real-time skin retouching plugin for video editors, now includes a machine-learning filter that automatically identifies and whitens teeth and eyes, alongside existing shine removal. Version 6.5 targets editorial rather than VFX finishing, with no VRAM or pricing specifics given.",
+      "why": "Minor but concrete ML feature landing in a shipping retouching plugin, not just a demo.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/digital-anarchy-adds-teeth-and-eye-whitening-to-updated-beauty-box",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "This Is What $2,175 of Opus 5.5 Tokens Can Do...",
+      "body": "Demonstrates an autonomous agentic workflow using Claude Opus 5.5 to build a complex software project (an MMO slice) by calling external APIs and manipulating local DCC software (Unity and Blender) via the Model Context Protocol (MCP).",
+      "why": "While the end product is a Unity game, the orchestration of Blender via MCP is highly relevant. A technical artist could replace the Unity bridge with a Houdini/USD bridge to automate scene population, look-dev assignments, or USD stage composition using natural language and automated feedback loops.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=doR2RhsneRA",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/doR2RhsneRA/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Claude Opus 5.5",
+          "used_for": "Core orchestrator/agent for project management, coding, and tool invocation"
+        },
+        {
+          "name": "Unity MCP",
+          "used_for": "Model Context Protocol bridge between Claude and the Unity game engine"
+        },
+        {
+          "name": "Blender MCP",
+          "used_for": "Model Context Protocol bridge between Claude and Blender for asset generation and animation"
+        },
+        {
+          "name": "Higgsfield API",
+          "used_for": "Generating 2D images and 3D models via various sub-models (Tripo, Nano Banana)"
+        },
+        {
+          "name": "Tripo H3.1",
+          "used_for": "Image-to-3D asset generation within the pipeline"
+        },
+        {
+          "name": "Mixamo",
+          "used_for": "Used by the agent for automated rigging and animation clips"
+        }
+      ],
+      "whats_transferable": [
+        "Using MCP (Model Context Protocol) to let an LLM agent interact directly with local file systems and DCC command structures",
+        "Multi-agent task distribution where a master agent (Claude) delegates specific asset generation tasks to specialized sub-agents/APIs",
+        "Iterative 'greybox-to-polished' workflow where the agent validates functionality with primitives before requesting final high-fidelity assets"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "Anerneq | AI Generated Short Film | Higgsfield Originals (2026)",
+      "body": "Cinema Studio 4 model release, demonstrating significantly improved temporal stability, complex character performance, and environmental interaction consistency.",
+      "why": "Serves as an end-to-end output showcase; however, it lacks technical details on integrating these AI-generated plates into a USD-based environment or using them as reference for Houdini simulations.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=UQDM-ZigvGo",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/UQDM-ZigvGo/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield Cinema Studio 4",
+          "used_for": "Generative AI video synthesis and cinematic storytelling"
+        }
+      ],
+      "whats_transferable": [
+        "Visual benchmarking of AI temporal consistency in high-motion and high-contrast (fire/snow) scenes",
+        "Reference for AI-driven emotional character performance in narrative context"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 2.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 9535,
+    "output_tokens": 1069
+  },
+  "candidate_count": 46,
+  "editorial_stories": true
+}
