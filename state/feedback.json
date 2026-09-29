@@ -688,6 +688,66 @@
    "issue_ids": [
     30
    ]
+  },
+  {
+   "story_id": "bc84ade913",
+   "at": "2026-09-29T21:47:24.112374+00:00",
+   "vote": 1,
+   "headline": "This Is What $2,175 of Opus 5.5 Tokens Can Do...",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "artist",
+    "assignments",
+    "automate",
+    "automated",
+    "blender",
+    "bridge",
+    "composition",
+    "could",
+    "do...",
+    "end",
+    "feedback",
+    "game",
+    "highly",
+    "houdini"
+   ],
+   "via": "page",
+   "issue_ids": [
+    34
+   ]
+  },
+  {
+   "story_id": "8b3a200af1",
+   "at": "2026-09-29T21:47:24.112401+00:00",
+   "vote": 1,
+   "headline": "Multi-Layered RBD workflow lets Houdini artists refine destruction without redoing approved sims",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "a",
+   "terms": [
+    "applicable",
+    "approvals.",
+    "approved",
+    "artists",
+    "breaking",
+    "destruction",
+    "directly",
+    "houdini",
+    "iterating",
+    "lets",
+    "multi-layered",
+    "rbd",
+    "redoing",
+    "refine"
+   ],
+   "via": "page",
+   "issue_ids": [
+    33
+   ]
   }
  ]
 }

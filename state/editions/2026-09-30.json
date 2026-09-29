@@ -1,0 +1,210 @@
+{
+  "verdict": "A quiet day: mostly arXiv paper churn and SEO listicles, with one genuine pipeline-relevant release (ComfyUI's Qwen 2.1 support) and a couple of light production-culture pieces worth a skim.",
+  "stories": [
+    {
+      "headline": "ComfyUI 0.38.0 adds Qwen Image 2.1 transformer compilation and per-block attention config",
+      "body": "ComfyUI's latest release improves KV cache handling and adds compiled transformer blocks for Qwen Image 2.1, plus a mechanism letting model files specify which attention implementation to use per block. Also drops the torchaudio dependency. Practical effect: faster, more configurable local inference for Qwen 2.1 workflows already popular with this reader's community. Open source, free, immediate availability via git pull or the standard installer.",
+      "why": "Directly speeds up a model he already runs locally in ComfyUI this week.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Lightricks releases LTX-2.5 IC-LoRA restoration model for video-to-video colorization and archive repair",
+      "body": "Lightricks published an IC-LoRA add-on for LTX-2.3/2.5 targeting video restoration, colorization, and archive footage repair, tagged explicitly for VFX use. Gated on Hugging Face under a custom (non-standard) licence, requiring acceptance of terms before download. Only 2 downloads and 8 likes so far, so real-world results are unverified. Worth checking the licence terms before considering it for client work.",
+      "why": "A video-to-video restoration LoRA could matter for archival/restoration work if the licence permits commercial use.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Restore",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "ILM VFX supervisor discusses Hulk work on Spider-Man: Brand New Day",
+      "body": "Art of VFX interviewed ILM's Mark Bakowski about the studio's approach to the Hulk in the upcoming Spider-Man film, following his prior work on Gladiator II. The piece is a behind-the-scenes supervisor interview rather than a technical breakdown, light on pipeline specifics but relevant for tracking how major facilities are structuring character-heavy VFX work.",
+      "why": "Useful context on how a top facility structures creature/character VFX supervision.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/spider-man-brand-new-day-mark-bakowski-vfx-supervisor-ilm",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Blender Conference talk breaks down Blender pipeline used on feature 'Backrooms'",
+      "body": "Associate VFX supervisor Calvin Romeyn presented at Blender Conference 2026 on how Blender was used across production of the film 'Backrooms'. Covered by befores & afters as a notable studio-adoption talk; details are in the conference presentation rather than the article itself, but it signals continued real production use of Blender at feature scale.",
+      "why": "A concrete case of Blender displacing traditional DCC tools on a real shoot, not marketing talk.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "befores & afters",
+          "url": "https://beforesandafters.com/2026/09/29/this-breakdown-of-how-blender-was-used-on-backrooms-is-awesome",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "The Best AI Workflow for a 2D + Live Action Film",
+      "body": "The integration of character turnaround and expression sheets as persistent visual references in video-to-video diffusion models (Seedance 2.5) to maintain character consistency across a live-action edit.",
+      "why": "This represents a 2D 'over-paint' or replacement workflow. In a USD pipeline, this would be a post-rendering process. The method of using low-res proxy geometry or physical props on set to drive the AI replacement mirrors traditional CG integration but replaces the path-traced render with a neural generation pass.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=084IvH5k0E8",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/084IvH5k0E8/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Magnific AI",
+          "used_for": "Video-to-video generation using Seedance 2.5 and image generation for character turnarounds."
+        },
+        {
+          "name": "Crampet",
+          "used_for": "A custom web-based tool for composing complex, time-coded text prompts for AI video generators."
+        },
+        {
+          "name": "DaVinci Resolve",
+          "used_for": "Initial edit, color grading, and final assembly of the hybrid live-action/AI sequence."
+        },
+        {
+          "name": "Adobe Photoshop",
+          "used_for": "Refining character turnaround sheets and expression sheets for use as AI reference."
+        },
+        {
+          "name": "Adobe After Effects",
+          "used_for": "Post-AI cleanup, specifically fixing visual inconsistencies and handling depth-of-field matches."
+        }
+      ],
+      "whats_transferable": [
+        "Using low-fidelity physical stand-ins (plushes, real bottles) on set to establish scale, shadows, and interaction for AI character replacement.",
+        "Prompt engineering strategy using 'Crampet' to define frame-specific actions within a single generation clip.",
+        "Pre-grading live-action footage before AI generation to ensure the lighting and environment of the generated characters matches the final edit.",
+        "Correcting AI artifacts (like disappearing objects) using traditional freeze-frame masking and motion tracking in After Effects."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "How Much of Filmmaking Can AI Agents Actually Do?",
+      "body": "The use of an AI desktop agent (GPT Astra) to perform complex assistant-editor tasks by directly manipulating DCC interfaces. It interprets natural language prompts to perform bin organization, assembly edits, and multi-step VFX workflows across different software packages without custom scripting.",
+      "why": "This represents an 'agentic UI' alternative to standard Python-based pipeline automation. Instead of writing a custom ingest script for Nuke or Maya, a TD could potentially prompt an agent to 'Import these assets and set up a standard comp.' While the demonstrated VFX quality was low, the automation of tedious manual assembly tasks is directly applicable to pipeline 'prep' work.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=JWEAmLHp7Sg",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/JWEAmLHp7Sg/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "GPT Astra",
+          "used_for": "AI Agent for machine takeover and multi-software automation"
+        },
+        {
+          "name": "Adobe Premiere Pro",
+          "used_for": "Project organization, binning, and non-linear editing"
+        },
+        {
+          "name": "Adobe After Effects",
+          "used_for": "VFX object removal and motion tracking"
+        },
+        {
+          "name": "Seedance 2.5",
+          "used_for": "Image-to-video generation and generative inpainting"
+        },
+        {
+          "name": "ElevenLabs",
+          "used_for": "AI sound effect and music generation"
+        }
+      ],
+      "whats_transferable": [
+        "Automating binning and metadata organization in Premiere Pro via natural language agent prompts",
+        "Chaining generative sound (ElevenLabs) and video (Seedance) through a central agent to build a scene assembly",
+        "Using agents to drive 'Assistant Editor' tasks like rough cuts based on script/storyboard references"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 6.0
+    },
+    {
+      "headline": "What If You Could See Every Moment at Once?",
+      "body": "Introduction of a '4D reconstruction' workflow that stacks sequential 3D Gaussian Splat frames to visualize persistent motion paths and aligns legacy 2D media with modern 3D geospatial environments.",
+      "why": "Highly relevant for set reconstruction and forensics. Dynamic 3D assets generated via sequential Gaussians can be ingested into Houdini as point cloud sequences (VDB/Alembic) for FX reference or as base geometry for dynamic set extensions in a USD pipeline.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Bilawal Sidhu",
+          "url": "https://www.youtube.com/watch?v=rVlRQakpOME",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/rVlRQakpOME/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "3D Gaussian Splatting",
+          "used_for": "Generating sequential per-frame volumetric reconstructions to create persistent motion trails (4D reconstruction)."
+        },
+        {
+          "name": "gods-eye-view (GitHub)",
+          "used_for": "Open-source geospatial intelligence platform for 3D globe visualization and temporal data integration."
+        },
+        {
+          "name": "Camera Pose Estimation",
+          "used_for": "Aligning historical 2D video and disparate photo archives with contemporary 3D scans."
+        },
+        {
+          "name": "Depth Estimation Models",
+          "used_for": "Lifting 2D photographs into 3D volumes for spatial event reconstruction."
+        }
+      ],
+      "whats_transferable": [
+        "Using per-frame Gaussian Splatting to extract dynamic subjects as temporal point sequences.",
+        "Projecting 2D archival video into 3D scenes by solving historical camera poses against modern photogrammetry.",
+        "Crowdsourcing event reconstructions by spatializing disparate photo sources using depth-lifting and metadata alignment."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 14415,
+    "output_tokens": 1125
+  },
+  "candidate_count": 63,
+  "editorial_stories": true
+}

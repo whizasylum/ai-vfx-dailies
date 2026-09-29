@@ -1353,10 +1353,344 @@
     "transferable_craft": 2.0
    },
    "delivered_at": "2026-09-28T23:04:19.727458+00:00"
+  },
+  "084IvH5k0E8": {
+   "title": "The Best AI Workflow for a 2D + Live Action Film",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=084IvH5k0E8",
+   "at": "2026-09-29T21:50:23.121337+00:00",
+   "duration_s": 2088,
+   "topic_relevance": 7.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "084IvH5k0E8",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Magnific AI",
+      "used_for": "Video-to-video generation using Seedance 2.5 and image generation for character turnarounds."
+     },
+     {
+      "name": "Crampet",
+      "used_for": "A custom web-based tool for composing complex, time-coded text prompts for AI video generators."
+     },
+     {
+      "name": "DaVinci Resolve",
+      "used_for": "Initial edit, color grading, and final assembly of the hybrid live-action/AI sequence."
+     },
+     {
+      "name": "Adobe Photoshop",
+      "used_for": "Refining character turnaround sheets and expression sheets for use as AI reference."
+     },
+     {
+      "name": "Adobe After Effects",
+      "used_for": "Post-AI cleanup, specifically fixing visual inconsistencies and handling depth-of-field matches."
+     }
+    ],
+    "whats_new": "The integration of character turnaround and expression sheets as persistent visual references in video-to-video diffusion models (Seedance 2.5) to maintain character consistency across a live-action edit.",
+    "whats_transferable": [
+     "Using low-fidelity physical stand-ins (plushes, real bottles) on set to establish scale, shadows, and interaction for AI character replacement.",
+     "Prompt engineering strategy using 'Crampet' to define frame-specific actions within a single generation clip.",
+     "Pre-grading live-action footage before AI generation to ensure the lighting and environment of the generated characters matches the final edit.",
+     "Correcting AI artifacts (like disappearing objects) using traditional freeze-frame masking and motion tracking in After Effects."
+    ],
+    "pipeline_notes": "This represents a 2D 'over-paint' or replacement workflow. In a USD pipeline, this would be a post-rendering process. The method of using low-res proxy geometry or physical props on set to drive the AI replacement mirrors traditional CG integration but replaces the path-traced render with a neural generation pass.",
+    "visual_quality_notes": "The video highlights Seedance 2.5's ability to maintain fairly consistent 2D cartoon styles, though it notes issues with sound pollution in prompts and occasional disappearing objects that require manual cleanup.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a complete pipeline for replacing live-action actors/props with consistent 2D cartoon characters using Magnific Seedance.",
+     "Introduces 'Crampet', a tool for time-mapping text prompts to video frames to manage complex character interactions.",
+     "Explains the importance of generating character turnaround and expression sheets to provide 'visual anchors' for the AI model.",
+     "Details a 'hybrid' approach where AI is used for the heavy lifting of animation, while traditional VFX tools (After Effects, Resolve) handle grading, blurring, and artifact correction."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "The Best AI Workflow for a 2D + Live Action Film",
+    "body": "The integration of character turnaround and expression sheets as persistent visual references in video-to-video diffusion models (Seedance 2.5) to maintain character consistency across a live-action edit.",
+    "why": "This represents a 2D 'over-paint' or replacement workflow. In a USD pipeline, this would be a post-rendering process. The method of using low-res proxy geometry or physical props on set to drive the AI replacement mirrors traditional CG integration but replaces the path-traced render with a neural generation pass.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=084IvH5k0E8",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/084IvH5k0E8/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Magnific AI",
+      "used_for": "Video-to-video generation using Seedance 2.5 and image generation for character turnarounds."
+     },
+     {
+      "name": "Crampet",
+      "used_for": "A custom web-based tool for composing complex, time-coded text prompts for AI video generators."
+     },
+     {
+      "name": "DaVinci Resolve",
+      "used_for": "Initial edit, color grading, and final assembly of the hybrid live-action/AI sequence."
+     },
+     {
+      "name": "Adobe Photoshop",
+      "used_for": "Refining character turnaround sheets and expression sheets for use as AI reference."
+     },
+     {
+      "name": "Adobe After Effects",
+      "used_for": "Post-AI cleanup, specifically fixing visual inconsistencies and handling depth-of-field matches."
+     }
+    ],
+    "whats_transferable": [
+     "Using low-fidelity physical stand-ins (plushes, real bottles) on set to establish scale, shadows, and interaction for AI character replacement.",
+     "Prompt engineering strategy using 'Crampet' to define frame-specific actions within a single generation clip.",
+     "Pre-grading live-action footage before AI generation to ensure the lighting and environment of the generated characters matches the final edit.",
+     "Correcting AI artifacts (like disappearing objects) using traditional freeze-frame masking and motion tracking in After Effects."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-09-29T21:53:25.416529+00:00"
+  },
+  "JWEAmLHp7Sg": {
+   "title": "How Much of Filmmaking Can AI Agents Actually Do?",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=JWEAmLHp7Sg",
+   "at": "2026-09-29T21:50:59.461483+00:00",
+   "duration_s": 1354,
+   "topic_relevance": 8.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "JWEAmLHp7Sg",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "GPT Astra",
+      "used_for": "AI Agent for machine takeover and multi-software automation"
+     },
+     {
+      "name": "Adobe Premiere Pro",
+      "used_for": "Project organization, binning, and non-linear editing"
+     },
+     {
+      "name": "Adobe After Effects",
+      "used_for": "VFX object removal and motion tracking"
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Image-to-video generation and generative inpainting"
+     },
+     {
+      "name": "ElevenLabs",
+      "used_for": "AI sound effect and music generation"
+     }
+    ],
+    "whats_new": "The use of an AI desktop agent (GPT Astra) to perform complex assistant-editor tasks by directly manipulating DCC interfaces. It interprets natural language prompts to perform bin organization, assembly edits, and multi-step VFX workflows across different software packages without custom scripting.",
+    "whats_transferable": [
+     "Automating binning and metadata organization in Premiere Pro via natural language agent prompts",
+     "Chaining generative sound (ElevenLabs) and video (Seedance) through a central agent to build a scene assembly",
+     "Using agents to drive 'Assistant Editor' tasks like rough cuts based on script/storyboard references"
+    ],
+    "pipeline_notes": "This represents an 'agentic UI' alternative to standard Python-based pipeline automation. Instead of writing a custom ingest script for Nuke or Maya, a TD could potentially prompt an agent to 'Import these assets and set up a standard comp.' While the demonstrated VFX quality was low, the automation of tedious manual assembly tasks is directly applicable to pipeline 'prep' work.",
+    "visual_quality_notes": "The object removal performed by the agent in After Effects was extremely poor, resulting in uncanny 'porcelain' hallucinations. However, direct generative video replacement (Seedance) yielded much higher realism for the same task. Color grading results were hampered by 8-bit source material limitations.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrated a machine-takeover AI agent (Astra) organizing film assets into structured folder hierarchies in Premiere Pro.",
+     "Showcased the agent generating a rough cut assembly by interpreting a script and storyboard, though pacing required manual human refinement.",
+     "Compared agent-driven manual VFX (content-aware fill/tracking in AE) against generative video inpainting, showing the latter is currently superior for object removal.",
+     "Explored style-based color grading where the agent analyzes reference stills (e.g., The Godfather) and applies Lumetri settings automatically.",
+     "Timed and costed the workflow, showing that while the agent saves human labor, it currently introduces high latency due to 'thinking' time during complex UI tasks."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "How Much of Filmmaking Can AI Agents Actually Do?",
+    "body": "The use of an AI desktop agent (GPT Astra) to perform complex assistant-editor tasks by directly manipulating DCC interfaces. It interprets natural language prompts to perform bin organization, assembly edits, and multi-step VFX workflows across different software packages without custom scripting.",
+    "why": "This represents an 'agentic UI' alternative to standard Python-based pipeline automation. Instead of writing a custom ingest script for Nuke or Maya, a TD could potentially prompt an agent to 'Import these assets and set up a standard comp.' While the demonstrated VFX quality was low, the automation of tedious manual assembly tasks is directly applicable to pipeline 'prep' work.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=JWEAmLHp7Sg",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/JWEAmLHp7Sg/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "GPT Astra",
+      "used_for": "AI Agent for machine takeover and multi-software automation"
+     },
+     {
+      "name": "Adobe Premiere Pro",
+      "used_for": "Project organization, binning, and non-linear editing"
+     },
+     {
+      "name": "Adobe After Effects",
+      "used_for": "VFX object removal and motion tracking"
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Image-to-video generation and generative inpainting"
+     },
+     {
+      "name": "ElevenLabs",
+      "used_for": "AI sound effect and music generation"
+     }
+    ],
+    "whats_transferable": [
+     "Automating binning and metadata organization in Premiere Pro via natural language agent prompts",
+     "Chaining generative sound (ElevenLabs) and video (Seedance) through a central agent to build a scene assembly",
+     "Using agents to drive 'Assistant Editor' tasks like rough cuts based on script/storyboard references"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-09-29T21:53:25.416558+00:00"
+  },
+  "rVlRQakpOME": {
+   "title": "What If You Could See Every Moment at Once?",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/watch?v=rVlRQakpOME",
+   "at": "2026-09-29T21:52:18.159177+00:00",
+   "duration_s": 646,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "rVlRQakpOME",
+    "channel": "Bilawal Sidhu",
+    "tools_and_platforms": [
+     {
+      "name": "3D Gaussian Splatting",
+      "used_for": "Generating sequential per-frame volumetric reconstructions to create persistent motion trails (4D reconstruction)."
+     },
+     {
+      "name": "gods-eye-view (GitHub)",
+      "used_for": "Open-source geospatial intelligence platform for 3D globe visualization and temporal data integration."
+     },
+     {
+      "name": "Camera Pose Estimation",
+      "used_for": "Aligning historical 2D video and disparate photo archives with contemporary 3D scans."
+     },
+     {
+      "name": "Depth Estimation Models",
+      "used_for": "Lifting 2D photographs into 3D volumes for spatial event reconstruction."
+     }
+    ],
+    "whats_new": "Introduction of a '4D reconstruction' workflow that stacks sequential 3D Gaussian Splat frames to visualize persistent motion paths and aligns legacy 2D media with modern 3D geospatial environments.",
+    "whats_transferable": [
+     "Using per-frame Gaussian Splatting to extract dynamic subjects as temporal point sequences.",
+     "Projecting 2D archival video into 3D scenes by solving historical camera poses against modern photogrammetry.",
+     "Crowdsourcing event reconstructions by spatializing disparate photo sources using depth-lifting and metadata alignment."
+    ],
+    "pipeline_notes": "Highly relevant for set reconstruction and forensics. Dynamic 3D assets generated via sequential Gaussians can be ingested into Houdini as point cloud sequences (VDB/Alembic) for FX reference or as base geometry for dynamic set extensions in a USD pipeline.",
+    "visual_quality_notes": "Impressive spatial alignment between 2D legacy footage and 3D scans; temporal consistency in the 4D motion trails is high despite single-camera source material.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates 4D reconstruction using sequential per-frame 3D Gaussian Splatting to create motion trails.",
+     "Projects historical 2D video onto modern 3D environments through solved camera poses for temporal visualization.",
+     "Maps disparate event photography to a unified 3D 'Memory Palace' using depth-estimation and spatial metadata.",
+     "Integrates satellite imagery and flight tracking data into a photorealistic 3D globe for geospatial forensics and set building."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "What If You Could See Every Moment at Once?",
+    "body": "Introduction of a '4D reconstruction' workflow that stacks sequential 3D Gaussian Splat frames to visualize persistent motion paths and aligns legacy 2D media with modern 3D geospatial environments.",
+    "why": "Highly relevant for set reconstruction and forensics. Dynamic 3D assets generated via sequential Gaussians can be ingested into Houdini as point cloud sequences (VDB/Alembic) for FX reference or as base geometry for dynamic set extensions in a USD pipeline.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Bilawal Sidhu",
+      "url": "https://www.youtube.com/watch?v=rVlRQakpOME",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/rVlRQakpOME/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "3D Gaussian Splatting",
+      "used_for": "Generating sequential per-frame volumetric reconstructions to create persistent motion trails (4D reconstruction)."
+     },
+     {
+      "name": "gods-eye-view (GitHub)",
+      "used_for": "Open-source geospatial intelligence platform for 3D globe visualization and temporal data integration."
+     },
+     {
+      "name": "Camera Pose Estimation",
+      "used_for": "Aligning historical 2D video and disparate photo archives with contemporary 3D scans."
+     },
+     {
+      "name": "Depth Estimation Models",
+      "used_for": "Lifting 2D photographs into 3D volumes for spatial event reconstruction."
+     }
+    ],
+    "whats_transferable": [
+     "Using per-frame Gaussian Splatting to extract dynamic subjects as temporal point sequences.",
+     "Projecting 2D archival video into 3D scenes by solving historical camera poses against modern photogrammetry.",
+     "Crowdsourcing event reconstructions by spatializing disparate photo sources using depth-lifting and metadata alignment."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-09-29T21:53:25.416570+00:00"
+  },
+  "gIsr4zNltL8": {
+   "title": "OpenAI Dots x Higgsfield | Your Always-On Creative Crew",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/gIsr4zNltL8",
+   "at": "2026-09-29T21:53:22.421066+00:00",
+   "duration_s": 60,
+   "published": false,
+   "reason_if_low": "under 90s (60s)"
+  },
+  "eBr0E0RYIY4": {
+   "title": "Why I Switched to This 3-Day Animation Workflow",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/eBr0E0RYIY4",
+   "at": "2026-09-29T21:53:22.523148+00:00",
+   "duration_s": 23,
+   "published": false,
+   "reason_if_low": "under 90s (23s)"
+  },
+  "alLb94peqE4": {
+   "title": "Get your credits back: Higgsfield celebration\ud83e\udde9",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/alLb94peqE4",
+   "at": "2026-09-29T21:53:22.638206+00:00",
+   "duration_s": 20,
+   "published": false,
+   "reason_if_low": "under 90s (20s)"
   }
  },
  "quota": {
-  "date": "2026-09-28",
-  "minutes": 54.01666666666667
+  "date": "2026-09-29",
+  "minutes": 68.13333333333333
  }
 }

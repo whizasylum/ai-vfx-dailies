@@ -1,203 +1,4 @@
 {
- "3467294157": {
-  "headline": "Runway announces Gen-4.5 video model and GWM-1 world model",
-  "sources": [
-   "Runway",
-   "Runway",
-   "Runway",
-   "Runway",
-   "Runway",
-   "Runway"
-  ],
-  "channel": "r",
-  "terms": [
-   "deployable",
-   "gen-4.5",
-   "gwm-1",
-   "heading",
-   "interactive",
-   "nothing",
-   "runway",
-   "signals",
-   "simulation",
-   "toward",
-   "video",
-   "where",
-   "world",
-   "yet."
-  ],
-  "at": "2026-09-08T12:05:23.299797+00:00"
- },
- "7e2fa01901": {
-  "headline": "Black Forest Labs ships FLUX Upscale for 4K video",
-  "sources": [
-   "Black Forest Labs",
-   "Black Forest Labs",
-   "Black Forest Labs",
-   "Black Forest Labs",
-   "Black Forest Labs",
-   "Black Forest Labs"
-  ],
-  "channel": "r",
-  "terms": [
-   "black",
-   "check",
-   "cost",
-   "delivery",
-   "endpoint",
-   "flux",
-   "forest",
-   "labs",
-   "licensing",
-   "out.",
-   "plate-restoration",
-   "plausible",
-   "step",
-   "upscale"
-  ],
-  "at": "2026-09-08T12:05:23.299855+00:00"
- },
- "50d35c1a92": {
-  "headline": "CG Channel rounds up new tools including RealityScan Mobile and 3DGS Render for Blender",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "add-on",
-   "blender",
-   "channel",
-   "dgs",
-   "five-minute",
-   "free",
-   "gaussian",
-   "including",
-   "mobile",
-   "reaching",
-   "realityscan",
-   "render",
-   "rounds",
-   "splatting"
-  ],
-  "at": "2026-09-08T12:05:23.299875+00:00"
- },
- "9f5c0055cf": {
-  "headline": "Bilawal Sidhu demos GPT-6 Astra converting a photogrammetry scan into an editable Blender scene",
-  "sources": [
-   "Bilawal Sidhu"
-  ],
-  "channel": "g",
-  "terms": [
-   "astra",
-   "bilawal",
-   "blender",
-   "capability.",
-   "converting",
-   "demo",
-   "demos",
-   "editable",
-   "gpt-6",
-   "inverse-graphics-from-scan",
-   "matures",
-   "photogrammetry",
-   "scan",
-   "scene"
-  ],
-  "at": "2026-09-08T12:05:23.299890+00:00"
- },
- "389bd8c473": {
-  "headline": "Spider-Noir cancelled after one season despite Emmy wins for its dual black-and-white/colour VFX pipeline",
-  "sources": [
-   "Animation World Network",
-   "befores & afters"
-  ],
-  "channel": "b",
-  "terms": [
-   "after",
-   "awarded",
-   "black-and-white",
-   "cancelled",
-   "case",
-   "colour",
-   "contract.",
-   "despite",
-   "dual",
-   "emmy",
-   "one",
-   "pipeline",
-   "renewed",
-   "season"
-  ],
-  "at": "2026-09-08T12:05:23.299911+00:00"
- },
- "5a4dfbf476": {
-  "headline": "Pro Particles multi-physics toolkit released for Blender",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "b",
-  "terms": [
-   "blender",
-   "caches",
-   "consume.",
-   "exports",
-   "exposes",
-   "houdini",
-   "later",
-   "multi-physics",
-   "only",
-   "particles",
-   "pro",
-   "relevant",
-   "toolkit",
-   "usd-compatible"
-  ],
-  "at": "2026-09-08T13:22:13.913529+00:00"
- },
- "2bc118ce97": {
-  "headline": "Blackmagic ships DaVinci Resolve 21.1",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "blackmagic",
-   "color",
-   "davinci",
-   "free",
-   "immediately.",
-   "pipelines",
-   "resolve",
-   "shift",
-   "studio",
-   "test"
-  ],
-  "at": "2026-09-08T20:39:03.458736+00:00"
- },
- "2bbf59e86b": {
-  "headline": "Vicon acquires facial capture firm Captive Devices",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "acquires",
-   "affects",
-   "alongside",
-   "captive",
-   "capture",
-   "devices",
-   "facial",
-   "firm",
-   "hardware",
-   "metahuman",
-   "pipelines.",
-   "roadmap",
-   "support",
-   "vendor"
-  ],
-  "at": "2026-09-08T20:39:03.458782+00:00"
- },
  "13f91b1395": {
   "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
   "sources": [
@@ -1736,5 +1537,173 @@
    "output"
   ],
   "at": "2026-09-28T23:04:17.960695+00:00"
+ },
+ "22ffb62450": {
+  "headline": "ComfyUI 0.38.0 adds Qwen Image 2.1 transformer compilation and per-block attention config",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "attention",
+   "comfyui",
+   "compilation",
+   "config",
+   "directly",
+   "image",
+   "locally",
+   "per-block",
+   "qwen",
+   "runs",
+   "speeds",
+   "transformer",
+   "week."
+  ],
+  "at": "2026-09-29T21:53:23.675234+00:00"
+ },
+ "6ebe8376fa": {
+  "headline": "Lightricks releases LTX-2.5 IC-LoRA restoration model for video-to-video colorization and archive repair",
+  "sources": [
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "archival",
+   "archive",
+   "colorization",
+   "commercial",
+   "could",
+   "ic-lora",
+   "licence",
+   "lightricks",
+   "lora",
+   "ltx-2.5",
+   "matter",
+   "permits",
+   "repair",
+   "restoration"
+  ],
+  "at": "2026-09-29T21:53:23.675267+00:00"
+ },
+ "86070c309b": {
+  "headline": "ILM VFX supervisor discusses Hulk work on Spider-Man: Brand New Day",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "brand",
+   "character",
+   "context",
+   "creature",
+   "day",
+   "discusses",
+   "facility",
+   "hulk",
+   "ilm",
+   "spider-man",
+   "structures",
+   "supervision.",
+   "supervisor",
+   "useful"
+  ],
+  "at": "2026-09-29T21:53:23.675282+00:00"
+ },
+ "d7f8df5866": {
+  "headline": "Blender Conference talk breaks down Blender pipeline used on feature 'Backrooms'",
+  "sources": [
+   "befores & afters"
+  ],
+  "channel": "b",
+  "terms": [
+   "backrooms",
+   "blender",
+   "breaks",
+   "case",
+   "concrete",
+   "conference",
+   "dcc",
+   "displacing",
+   "down",
+   "feature",
+   "marketing",
+   "pipeline",
+   "real",
+   "shoot"
+  ],
+  "at": "2026-09-29T21:53:23.675295+00:00"
+ },
+ "544460adbb": {
+  "headline": "The Best AI Workflow for a 2D + Live Action Film",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "action",
+   "drive",
+   "film",
+   "generation",
+   "geometry",
+   "integration",
+   "live",
+   "low-res",
+   "method",
+   "mirrors",
+   "neural",
+   "over-paint",
+   "pass.",
+   "path-traced"
+  ],
+  "at": "2026-09-29T21:53:23.675316+00:00"
+ },
+ "ab0471967b": {
+  "headline": "How Much of Filmmaking Can AI Agents Actually Do?",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "actually",
+   "agent",
+   "agentic",
+   "agents",
+   "alternative",
+   "applicable",
+   "assembly",
+   "assets",
+   "automation",
+   "automation.",
+   "comp.",
+   "could",
+   "custom",
+   "demonstrated"
+  ],
+  "at": "2026-09-29T21:53:23.675337+00:00"
+ },
+ "ab97c153ae": {
+  "headline": "What If You Could See Every Moment at Once?",
+  "sources": [
+   "Bilawal Sidhu"
+  ],
+  "channel": "a",
+  "terms": [
+   "alembic",
+   "assets",
+   "base",
+   "cloud",
+   "could",
+   "dynamic",
+   "every",
+   "extensions",
+   "forensics.",
+   "gaussians",
+   "generated",
+   "geometry",
+   "highly",
+   "houdini"
+  ],
+  "at": "2026-09-29T21:53:23.675354+00:00"
  }
 }
