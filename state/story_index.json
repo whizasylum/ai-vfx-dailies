@@ -1,153 +1,4 @@
 {
- "13f91b1395": {
-  "headline": "MiniMax-H3 video model gains ComfyUI-native ecosystem: LoRAs, FLF, controlnet workflows",
-  "sources": [
-   "HF text-to-video",
-   "HF image-to-video",
-   "HF text-to-video",
-   "HF text-to-video",
-   "HF text-to-video",
-   "HF text-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "checks",
-   "comfyui",
-   "comfyui-native",
-   "controlnet",
-   "could",
-   "ecosystem",
-   "evaluated",
-   "flf",
-   "gains",
-   "licence",
-   "loras",
-   "minimax-h3",
-   "open",
-   "out."
-  ],
-  "at": "2026-09-09T20:21:01.073031+00:00"
- },
- "c4543b629d": {
-  "headline": "ComfyUI v0.35.0 adds WAN3-Prime support, drops Veo 2/3, fixes HEVC remux",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "before",
-   "churn",
-   "codec",
-   "comfyui",
-   "drops",
-   "fixes",
-   "hevc",
-   "need",
-   "partner-node",
-   "production",
-   "remux",
-   "running",
-   "studios",
-   "support"
-  ],
-  "at": "2026-09-09T20:21:01.073082+00:00"
- },
- "15f4cf84fd": {
-  "headline": "Blackmagic ships free Fusion Studio 21.1 with new deep-comp and lens-correction updates",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "affect",
-   "already",
-   "blackmagic",
-   "changes",
-   "comp",
-   "deep-comp",
-   "directly",
-   "free",
-   "fusion",
-   "fusion.",
-   "lens-correction",
-   "studio",
-   "workflows"
-  ],
-  "at": "2026-09-09T20:21:01.073103+00:00"
- },
- "88d80139f2": {
-  "headline": "Chaos Cosmos adds image-to-3D generation and visual asset search",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "r",
-  "terms": [
-   "asset",
-   "asset-search",
-   "chaos",
-   "cosmos",
-   "could",
-   "existing",
-   "fit",
-   "formats",
-   "generation",
-   "image-to-3d",
-   "inside",
-   "library",
-   "lookdev",
-   "output"
-  ],
-  "at": "2026-09-09T20:21:01.073118+00:00"
- },
- "ac9ccf2f36": {
-  "headline": "GSComplete and CVT-GS advance Gaussian splat completion and simplification",
-  "sources": [
-   "arXiv cs.CV (generative video)",
-   "arXiv cs.CV (generative video)"
-  ],
-  "channel": "g",
-  "terms": [
-   "advance",
-   "assets.",
-   "being",
-   "blockers",
-   "completion",
-   "compression",
-   "cvt-gs",
-   "deployable",
-   "gaussian",
-   "gscomplete",
-   "scans",
-   "simplification",
-   "splat",
-   "stopping"
-  ],
-  "at": "2026-09-09T20:21:01.073131+00:00"
- },
- "69be45485c": {
-  "headline": "Marigold V2 revisits diffusion transformers for monocular depth estimation",
-  "sources": [
-   "Hugging Face daily papers"
-  ],
-  "channel": "g",
-  "terms": [
-   "compositing",
-   "depth",
-   "diffusion",
-   "estimation",
-   "feed",
-   "marigold",
-   "monocular",
-   "once",
-   "released.",
-   "revisits",
-   "rotoscoping",
-   "transformers",
-   "weights",
-   "workflows"
-  ],
-  "at": "2026-09-09T20:21:01.073172+00:00"
- },
  "01886a67b9": {
   "headline": "Lightricks releases a batch of task-specific IC-LoRAs for LTX-2.5",
   "sources": [
@@ -1705,5 +1556,174 @@
    "houdini"
   ],
   "at": "2026-09-29T21:53:23.675354+00:00"
+ },
+ "d8877eefc0": {
+  "headline": "Apple Studios VFX crew ratifies first IATSE contract",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "ai-use",
+   "apple",
+   "clauses",
+   "client",
+   "contract",
+   "contracts",
+   "crew",
+   "deal",
+   "iatse",
+   "pipelines.",
+   "ratifies",
+   "require",
+   "shape",
+   "studios"
+  ],
+  "at": "2026-09-30T21:51:38.555994+00:00"
+ },
+ "78ace017f8": {
+  "headline": "Chaos ships Vantage 3.4 with OpenPBR and updated fire/smoke sim support",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "affects",
+   "between",
+   "chaos",
+   "fire",
+   "karma",
+   "material",
+   "openpbr",
+   "other",
+   "portability",
+   "renderers.",
+   "sim",
+   "smoke",
+   "support",
+   "usd-based"
+  ],
+  "at": "2026-09-30T21:51:38.556022+00:00"
+ },
+ "31a8b2606d": {
+  "headline": "Cinema 4D 2026.4 adds an MCP server for Claude/ChatGPT control",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "chatgpt",
+   "cinema",
+   "claude",
+   "control",
+   "dcc",
+   "endpoint",
+   "expose",
+   "houdini",
+   "mainstream",
+   "mcp",
+   "nuke",
+   "parity.",
+   "pattern",
+   "server"
+  ],
+  "at": "2026-09-30T21:51:38.556037+00:00"
+ },
+ "f7abfcfc2a": {
+  "headline": "LTX-2.5 gets an IC-LoRA for SDR-to-HDR video conversion",
+  "sources": [
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "conversion",
+   "delivery",
+   "first.",
+   "ic-lora",
+   "ltx-2.5",
+   "needs",
+   "ocio",
+   "pipelines",
+   "sdr-to-hdr",
+   "touch",
+   "verification",
+   "video",
+   "working",
+   "would"
+  ],
+  "at": "2026-09-30T21:51:38.556049+00:00"
+ },
+ "f53ae2d769": {
+  "headline": "Framestore and Koala FX breakdowns: CG battlefield and mountain environment extensions",
+  "sources": [
+   "CG Channel",
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "battlefield",
+   "breakdowns",
+   "comparable",
+   "concrete",
+   "environment",
+   "extensions",
+   "framestore",
+   "koala",
+   "mountain",
+   "reference",
+   "shots.",
+   "sim",
+   "studios",
+   "useful"
+  ],
+  "at": "2026-09-30T21:51:38.556062+00:00"
+ },
+ "cfc60ca88f": {
+  "headline": "I Tested AI Agents Against a Real AI Artist",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "against",
+   "agents",
+   "artist",
+   "artist.",
+   "black",
+   "box",
+   "camera",
+   "component",
+   "control",
+   "currently",
+   "film",
+   "granular",
+   "houdini",
+   "integration"
+  ],
+  "at": "2026-09-30T21:51:38.556091+00:00"
+ },
+ "509691da56": {
+  "headline": "AI Can Now Create VFX Fro YouR Game & Characters",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "between",
+   "blender",
+   "bridge",
+   "characters",
+   "could",
+   "create",
+   "dcc",
+   "deformation.",
+   "directly",
+   "edge-flow",
+   "engine.",
+   "facilitates",
+   "files.",
+   "fro"
+  ],
+  "at": "2026-09-30T21:51:38.556114+00:00"
  }
 }

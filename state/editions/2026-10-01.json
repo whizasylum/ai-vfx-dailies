@@ -1,0 +1,181 @@
+{
+  "verdict": "A thin day for production-relevant news: mostly arXiv research chaff, a handful of solid studio breakdowns, one real legal story, and a couple of tool releases worth a glance.",
+  "stories": [
+    {
+      "headline": "Apple Studios VFX crew ratifies first IATSE contract",
+      "body": "Apple Studios VFX workers, two years after unionizing, have landed their first IATSE agreement. It includes minimum rates, employer-paid health care and pension, overtime and rest protections, and the AI safeguards from the IATSE-AMPTP Basic Agreement. This is the first contract of its kind at a major streamer-owned VFX shop and sets a template other facilities may be pushed to match.",
+      "why": "AI-use clauses in this deal will shape what client contracts require of vendor pipelines.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/apple-studios-vfx-workers-land-first-iatse-deal",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/iatse-appletv_1280x720_0.jpg?itok=HvLP5XpO"
+    },
+    {
+      "headline": "Chaos ships Vantage 3.4 with OpenPBR and updated fire/smoke sim support",
+      "body": "Chaos has released Vantage 3.4, its real-time ray tracing renderer, adding OpenPBR material support and updates to smoke and fire simulation rendering. OpenPBR support matters for studios standardising material interchange across renderers. Details beyond the feature list are thin in the source, but this is a direct production-tool update rather than a research paper.",
+      "why": "OpenPBR support affects material portability between Vantage, Karma and other USD-based renderers.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/09/chaos-releases-vantage-3-4",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Cinema 4D 2026.4 adds an MCP server for Claude/ChatGPT control",
+      "body": "Maxon's Cinema 4D 2026.4 release adds a Model Context Protocol server, letting Claude or ChatGPT drive tasks inside the software directly. This is an LLM-to-DCC control integration rather than a generative content feature. No pricing or licensing changes are mentioned, and technical depth on what tasks are actually controllable is limited in the announcement.",
+      "why": "First mainstream DCC to expose an MCP endpoint, a pattern worth watching for Houdini/Nuke parity.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/09/maxon-releases-cinema-4d-2026-4-with-a-new-mcp-server",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "LTX-2.5 gets an IC-LoRA for SDR-to-HDR video conversion",
+      "body": "Lightricks published an IC-LoRA adapter for its LTX-2.5-22b model that converts SDR video to HDR, available gated on Hugging Face under LTX's own licence. Low adoption so far (24 downloads, 5 likes) and no independent verification of quality. Relevant to colour pipelines if it proves usable, but this is an early, unproven community-scale release.",
+      "why": "A working SDR-to-HDR video model would touch OCIO and delivery pipelines, but this needs verification first.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-SDR-To-HDR",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Framestore and Koala FX breakdowns: CG battlefield and mountain environment extensions",
+      "body": "CG Channel covers Framestore's CG battlefield, matte painting and explosion sims for Lioness Season 3, and Art of VFX covers Koala FX's environment extension work on Fall 2: Deadpoint, including vertiginous mountain and cliff environments. Both are standard studio breakdown pieces with some technical detail on simulation and environment-building approach, useful for benchmarking against in-house techniques.",
+      "why": "Concrete environment and sim breakdowns from working studios, useful reference for comparable shots.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/09/see-how-framestore-created-a-cg-battlefield-for-lioness-season-3",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/fall-2-deadpoint-vertiginous-heights-with-koala-fx",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "I Tested AI Agents Against a Real AI Artist",
+      "body": "A side-by-side comparison of human-directed AI filmmaking versus fully autonomous AI agents following a creative brief and shot list.",
+      "why": "Currently, these agents operate as 'black box' solutions. They lack the granular parameter control (seed locking, camera pathing, USD stage integration) required for a technical artist. They are most useful at the 'Mood Film' or 'Pitch' stage rather than as a component in a Houdini/Maya pipeline.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=aVVxF88J2co",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/aVVxF88J2co/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Luma Dream Machine Agents",
+          "used_for": "Autonomous storyboarding, video generation, and editing from a text prompt."
+        },
+        {
+          "name": "ChatGPT-6 Sol / GPT Astra",
+          "used_for": "High-effort agentic orchestration using data connectors to external video tools."
+        },
+        {
+          "name": "Runway Gen-3 Alpha",
+          "used_for": "Video generation via API/connector within the ChatGPT workflow."
+        }
+      ],
+      "whats_transferable": [
+        "The use of structured PDF creative briefs as multi-modal context for LLM-driven video tools",
+        "Integrating Runway and other generation APIs directly into agentic workflows to bypass manual prompting",
+        "Evaluation of 'high-effort' vs 'light' compute modes in LLM agents for creative tasks"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 4.0
+    },
+    {
+      "headline": "AI Can Now Create VFX Fro YouR Game & Characters",
+      "body": "Integration of agentic AI (GPT-6 Astra) to handle the rigging and weighting of complex, organic non-humanoid meshes (like creeping roots) which typically require manual authoring.",
+      "why": "The workflow positions AI as a task-coordinator between Blender and the engine. In a USD-based pipeline, the Tripo 2.0 quad-mesh output could be ingested directly into Houdini/Solaris for lookdev, provided the retopology meets edge-flow standards for deformation. The 'Mr. Mak' workspace facilitates a 'human-in-the-loop' bridge between LLM reasoning and local DCC files.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=ZksPNRPupWs",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/ZksPNRPupWs/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "GPT-6 Astra",
+          "used_for": "Rigging complex non-humanoid structures and coordinating animation logic"
+        },
+        {
+          "name": "Tripo 2.0",
+          "used_for": "Image-to-3D generation, quad-retopology, and smart UV unwrapping"
+        },
+        {
+          "name": "Mr. Mak Workspace",
+          "used_for": "Local desktop agent workspace for coordinating AI tasks and file management"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Final assembly, manual texture painting, and leaf/branch distribution"
+        },
+        {
+          "name": "AccuRig / Mixamo",
+          "used_for": "Standard humanoid rigging components"
+        }
+      ],
+      "whats_transferable": [
+        "Multi-layered VFX methodology using AI-generated 3D props (leaves, branches) as discrete particle or mesh-fx components",
+        "Agent-driven rigging workflows for non-humanoid anatomy that standard auto-riggers cannot parse",
+        "Iterative 2D-to-3D concepting where interactive AI-generated mockups define the timing and behavior of 3D assets"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 15229,
+    "output_tokens": 1333
+  },
+  "candidate_count": 62,
+  "editorial_stories": true
+}

@@ -748,6 +748,96 @@
    "issue_ids": [
     33
    ]
+  },
+  {
+   "story_id": "ab0471967b",
+   "at": "2026-09-30T21:48:47.283314+00:00",
+   "vote": 1,
+   "headline": "How Much of Filmmaking Can AI Agents Actually Do?",
+   "sources": [
+    "Curious Refuge"
+   ],
+   "channel": "a",
+   "terms": [
+    "actually",
+    "agent",
+    "agentic",
+    "agents",
+    "alternative",
+    "applicable",
+    "assembly",
+    "assets",
+    "automation",
+    "automation.",
+    "comp.",
+    "could",
+    "custom",
+    "demonstrated"
+   ],
+   "via": "page",
+   "issue_ids": [
+    37
+   ]
+  },
+  {
+   "story_id": "544460adbb",
+   "at": "2026-09-30T21:48:47.283346+00:00",
+   "vote": 1,
+   "headline": "The Best AI Workflow for a 2D + Live Action Film",
+   "sources": [
+    "Curious Refuge"
+   ],
+   "channel": "a",
+   "terms": [
+    "action",
+    "drive",
+    "film",
+    "generation",
+    "geometry",
+    "integration",
+    "live",
+    "low-res",
+    "method",
+    "mirrors",
+    "neural",
+    "over-paint",
+    "pass.",
+    "path-traced"
+   ],
+   "via": "page",
+   "issue_ids": [
+    36
+   ]
+  },
+  {
+   "story_id": "22ffb62450",
+   "at": "2026-09-30T21:48:47.283354+00:00",
+   "vote": 1,
+   "headline": "ComfyUI 0.38.0 adds Qwen Image 2.1 transformer compilation and per-block attention config",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "already",
+    "attention",
+    "comfyui",
+    "compilation",
+    "config",
+    "directly",
+    "image",
+    "locally",
+    "per-block",
+    "qwen",
+    "runs",
+    "speeds",
+    "transformer",
+    "week."
+   ],
+   "via": "page",
+   "issue_ids": [
+    35
+   ]
   }
  ]
 }

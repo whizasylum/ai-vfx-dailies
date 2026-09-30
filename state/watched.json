@@ -1687,10 +1687,258 @@
    "duration_s": 20,
    "published": false,
    "reason_if_low": "under 90s (20s)"
+  },
+  "aVVxF88J2co": {
+   "title": "I Tested AI Agents Against a Real AI Artist",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=aVVxF88J2co",
+   "at": "2026-09-30T21:49:42.690459+00:00",
+   "duration_s": 879,
+   "topic_relevance": 7.0,
+   "transferable_craft": 4.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": "The video provides a high-level comparison of autonomous tools but lacks specific technical settings, prompting strategies, or integration steps that a TD could use to improve an existing professional VFX pipeline.",
+   "assessment": {
+    "video_id": "aVVxF88J2co",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Luma Dream Machine Agents",
+      "used_for": "Autonomous storyboarding, video generation, and editing from a text prompt."
+     },
+     {
+      "name": "ChatGPT-6 Sol / GPT Astra",
+      "used_for": "High-effort agentic orchestration using data connectors to external video tools."
+     },
+     {
+      "name": "Runway Gen-3 Alpha",
+      "used_for": "Video generation via API/connector within the ChatGPT workflow."
+     }
+    ],
+    "whats_new": "A side-by-side comparison of human-directed AI filmmaking versus fully autonomous AI agents following a creative brief and shot list.",
+    "whats_transferable": [
+     "The use of structured PDF creative briefs as multi-modal context for LLM-driven video tools",
+     "Integrating Runway and other generation APIs directly into agentic workflows to bypass manual prompting",
+     "Evaluation of 'high-effort' vs 'light' compute modes in LLM agents for creative tasks"
+    ],
+    "pipeline_notes": "Currently, these agents operate as 'black box' solutions. They lack the granular parameter control (seed locking, camera pathing, USD stage integration) required for a technical artist. They are most useful at the 'Mood Film' or 'Pitch' stage rather than as a component in a Houdini/Maya pipeline.",
+    "visual_quality_notes": "Autonomous agents suffer from severe consistency failures: incorrect brand logos, distorted anatomy (faces/hands), and 'montage-style' editing that lacks narrative pacing. Human-steered versions remain significantly superior in quality.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 4.0,
+    "reason_if_low": "The video provides a high-level comparison of autonomous tools but lacks specific technical settings, prompting strategies, or integration steps that a TD could use to improve an existing professional VFX pipeline.",
+    "summary_bullets": [
+     "Tests the ability of Luma and GPT Astra agents to create a 30-second Converse ad from a PDF brief.",
+     "Compares agentic output against a human-directed project created by artist Luis S\u00e1nchez.",
+     "Identifies a current 'quality ceiling' where agents can automate labor but fail at creative nuances like irony or emotional resonance.",
+     "Notes that agentic workflows currently cost approximately $20 per 30-second spot in compute/API credits.",
+     "Concludes that while agents can now handle 'rough assembly' via JavaScript or data connectors, they cannot yet replace professional art direction."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Tested AI Agents Against a Real AI Artist",
+    "body": "A side-by-side comparison of human-directed AI filmmaking versus fully autonomous AI agents following a creative brief and shot list.",
+    "why": "Currently, these agents operate as 'black box' solutions. They lack the granular parameter control (seed locking, camera pathing, USD stage integration) required for a technical artist. They are most useful at the 'Mood Film' or 'Pitch' stage rather than as a component in a Houdini/Maya pipeline.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=aVVxF88J2co",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/aVVxF88J2co/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Luma Dream Machine Agents",
+      "used_for": "Autonomous storyboarding, video generation, and editing from a text prompt."
+     },
+     {
+      "name": "ChatGPT-6 Sol / GPT Astra",
+      "used_for": "High-effort agentic orchestration using data connectors to external video tools."
+     },
+     {
+      "name": "Runway Gen-3 Alpha",
+      "used_for": "Video generation via API/connector within the ChatGPT workflow."
+     }
+    ],
+    "whats_transferable": [
+     "The use of structured PDF creative briefs as multi-modal context for LLM-driven video tools",
+     "Integrating Runway and other generation APIs directly into agentic workflows to bypass manual prompting",
+     "Evaluation of 'high-effort' vs 'light' compute modes in LLM agents for creative tasks"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 4.0
+   },
+   "delivered_at": "2026-09-30T21:51:40.597737+00:00"
+  },
+  "TesovSv5CR4": {
+   "title": "Replaying FlyDubai Cockpit Attack Using Real Flight Tracking Data In God\u2019s Eye View",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/TesovSv5CR4",
+   "at": "2026-09-30T21:50:21.842172+00:00",
+   "duration_s": 14,
+   "published": false,
+   "reason_if_low": "under 90s (14s)"
+  },
+  "lVL5qz9v23k": {
+   "title": "Free Tutorial: Gsplat Segmentation",
+   "channel": "Entagma",
+   "url": "https://www.youtube.com/shorts/lVL5qz9v23k",
+   "at": "2026-09-30T21:50:21.977743+00:00",
+   "duration_s": 17,
+   "published": false,
+   "reason_if_low": "under 90s (17s)"
+  },
+  "ShKPX5LOf4A": {
+   "title": "Can AI Make VFX for My Game? Claude Opus 5.5 vs GPT-6 Astra",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/ShKPX5LOf4A",
+   "at": "2026-09-30T21:50:59.070874+00:00",
+   "duration_s": 76,
+   "published": false,
+   "reason_if_low": "under 90s (76s)"
+  },
+  "KL2mVfXzKoU": {
+   "title": "Claude Opus 5.5 vs GPT-6 Astra: Who Builds the Better DeLorean Scene?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/KL2mVfXzKoU",
+   "at": "2026-09-30T21:50:59.173241+00:00",
+   "duration_s": 67,
+   "published": false,
+   "reason_if_low": "under 90s (67s)"
+  },
+  "ZksPNRPupWs": {
+   "title": "AI Can Now Create VFX Fro YouR Game & Characters",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=ZksPNRPupWs",
+   "at": "2026-09-30T21:50:59.269725+00:00",
+   "duration_s": 1168,
+   "topic_relevance": 8.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "ZksPNRPupWs",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "GPT-6 Astra",
+      "used_for": "Rigging complex non-humanoid structures and coordinating animation logic"
+     },
+     {
+      "name": "Tripo 2.0",
+      "used_for": "Image-to-3D generation, quad-retopology, and smart UV unwrapping"
+     },
+     {
+      "name": "Mr. Mak Workspace",
+      "used_for": "Local desktop agent workspace for coordinating AI tasks and file management"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Final assembly, manual texture painting, and leaf/branch distribution"
+     },
+     {
+      "name": "AccuRig / Mixamo",
+      "used_for": "Standard humanoid rigging components"
+     }
+    ],
+    "whats_new": "Integration of agentic AI (GPT-6 Astra) to handle the rigging and weighting of complex, organic non-humanoid meshes (like creeping roots) which typically require manual authoring.",
+    "whats_transferable": [
+     "Multi-layered VFX methodology using AI-generated 3D props (leaves, branches) as discrete particle or mesh-fx components",
+     "Agent-driven rigging workflows for non-humanoid anatomy that standard auto-riggers cannot parse",
+     "Iterative 2D-to-3D concepting where interactive AI-generated mockups define the timing and behavior of 3D assets"
+    ],
+    "pipeline_notes": "The workflow positions AI as a task-coordinator between Blender and the engine. In a USD-based pipeline, the Tripo 2.0 quad-mesh output could be ingested directly into Houdini/Solaris for lookdev, provided the retopology meets edge-flow standards for deformation. The 'Mr. Mak' workspace facilitates a 'human-in-the-loop' bridge between LLM reasoning and local DCC files.",
+    "visual_quality_notes": "Significantly improved topology over previous generative models; quads are mostly regular, allowing for better weighting and animation of organic assets. Texture quality still benefits from manual 'painting-over' using image references within the generator.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a complete pipeline from 2D interactive concepting to fully rigged and animated 3D game assets using AI agents",
+     "Highlights the use of Tripo 2.0 for generating quad-ready meshes and automated UV mapping to accelerate character creation",
+     "Shows how to use AI to rig complex organic elements like tree roots that humanoid-only riggers ignore",
+     "Explains a layered VFX strategy where 3D meshes are generated as components for complex spell effects",
+     "Introduces the Mr. Mak Workspace for local AI agent coordination and asset management"
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "AI Can Now Create VFX Fro YouR Game & Characters",
+    "body": "Integration of agentic AI (GPT-6 Astra) to handle the rigging and weighting of complex, organic non-humanoid meshes (like creeping roots) which typically require manual authoring.",
+    "why": "The workflow positions AI as a task-coordinator between Blender and the engine. In a USD-based pipeline, the Tripo 2.0 quad-mesh output could be ingested directly into Houdini/Solaris for lookdev, provided the retopology meets edge-flow standards for deformation. The 'Mr. Mak' workspace facilitates a 'human-in-the-loop' bridge between LLM reasoning and local DCC files.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=ZksPNRPupWs",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/ZksPNRPupWs/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "GPT-6 Astra",
+      "used_for": "Rigging complex non-humanoid structures and coordinating animation logic"
+     },
+     {
+      "name": "Tripo 2.0",
+      "used_for": "Image-to-3D generation, quad-retopology, and smart UV unwrapping"
+     },
+     {
+      "name": "Mr. Mak Workspace",
+      "used_for": "Local desktop agent workspace for coordinating AI tasks and file management"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Final assembly, manual texture painting, and leaf/branch distribution"
+     },
+     {
+      "name": "AccuRig / Mixamo",
+      "used_for": "Standard humanoid rigging components"
+     }
+    ],
+    "whats_transferable": [
+     "Multi-layered VFX methodology using AI-generated 3D props (leaves, branches) as discrete particle or mesh-fx components",
+     "Agent-driven rigging workflows for non-humanoid anatomy that standard auto-riggers cannot parse",
+     "Iterative 2D-to-3D concepting where interactive AI-generated mockups define the timing and behavior of 3D assets"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-09-30T21:51:40.597762+00:00"
+  },
+  "UukY37NYpSU": {
+   "title": "Is this the easiest way to make AI videos? \ud83e\udd16 #higgsfield #chatgpt #tutorial",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/UukY37NYpSU",
+   "at": "2026-09-30T21:51:37.545285+00:00",
+   "duration_s": 76,
+   "published": false,
+   "reason_if_low": "under 90s (76s)"
+  },
+  "pY5l3gA6rhc": {
+   "title": "Is This the Most Advanced AI Voice Technology?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/pY5l3gA6rhc",
+   "at": "2026-09-30T21:51:37.672560+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
   }
  },
  "quota": {
-  "date": "2026-09-29",
-  "minutes": 68.13333333333333
+  "date": "2026-09-30",
+  "minutes": 60.650000000000006
  }
 }
