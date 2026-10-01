@@ -1935,10 +1935,162 @@
    "duration_s": 44,
    "published": false,
    "reason_if_low": "under 90s (44s)"
+  },
+  "WuPoIxYtLEc": {
+   "title": "God\u2019s Eye View of Our Entire Lives? Kurt Vonnegut\u2019s Aliens View Us As Great Millipedes",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/WuPoIxYtLEc",
+   "at": "2026-10-01T22:22:25.428593+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "dmDrktqyT5o": {
+   "title": "3D AI Models Are Finally Watertight (6GB VRAM, Free & Local)",
+   "channel": "PixelArtistry",
+   "url": "https://www.youtube.com/watch?v=dmDrktqyT5o",
+   "at": "2026-10-01T22:22:25.537620+00:00",
+   "duration_s": 1592,
+   "topic_relevance": 8.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "dmDrktqyT5o",
+    "channel": "PixelArtistry",
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Orchestrating the AI node graph for 3D generation and processing"
+     },
+     {
+      "name": "Trellis 2",
+      "used_for": "Image-to-3D mesh generation"
+     },
+     {
+      "name": "Pixal 3D",
+      "used_for": "High-accuracy image-to-3D generation"
+     },
+     {
+      "name": "MostAadTech Nodes",
+      "used_for": "Custom nodes for watertight mesh reconstruction, decimation, and baking"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Mesh verification using 3D Print Toolbox and manual vertex cleanup"
+     }
+    ],
+    "whats_new": "A specific integration of Trellis 2 and Pixal 3D within ComfyUI using the MostAadTech node suite to automate the creation of watertight, manifold meshes. It specifically addresses common AI mesh issues like internal faces, holes, and high polygon counts by chaining voxel reconstruction (WTiVo) and automated baking into a single low-poly output workflow.",
+    "whats_transferable": [
+     "Voxel-based mesh reconstruction technique to ensure manifold 'watertight' geometry from noisy AI outputs",
+     "High-to-low poly baking pipeline orchestrated entirely within a ComfyUI node graph",
+     "Parameter tuning strategies for balancing proxy points and voxel resolution based on available VRAM (6GB to 16GB+)",
+     "Method for bypassing standard quad-reconstruction nodes for 2K resolution assets to avoid processing artifacts"
+    ],
+    "pipeline_notes": "This workflow is highly relevant for initial asset ingest in a USD pipeline, particularly for background props or base meshes for Houdini simulation work. The automated watertightness fixes issues that typically break Houdini VDB or Boolean SOPs. Output is standard GLB/GLTF, making it compatible with modern staging tools.",
+    "visual_quality_notes": "Geometry generation is robust for organic and hard-surface shapes, though hero features like eyes often suffer from texture warping. Manual vertex merging in Blender is still required to clean up small floating fragments that decimation nodes sometimes miss.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a three-stage ComfyUI workflow: Image-to-3D, Watertight Processing, and Game-Ready LOD generation.",
+     "Utilizes the WTiVo node to convert raw AI meshes into manifold surfaces by removing internal faces and closing holes.",
+     "Provides specific resolution settings for 1024, 1536, and 2048 (2K) mesh generation based on GPU hardware tiers.",
+     "Automates the UV unwrapping and PBR texture baking (AO, Metallic, Roughness) from the high-poly AI source to a decimated low-poly mesh.",
+     "Introduces a one-click installer and a series of JSON workflows available via GitHub to replicate the production pipeline."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "3D AI Models Are Finally Watertight (6GB VRAM, Free & Local)",
+    "body": "A specific integration of Trellis 2 and Pixal 3D within ComfyUI using the MostAadTech node suite to automate the creation of watertight, manifold meshes. It specifically addresses common AI mesh issues like internal faces, holes, and high polygon counts by chaining voxel reconstruction (WTiVo) and automated baking into a single low-poly output workflow.",
+    "why": "This workflow is highly relevant for initial asset ingest in a USD pipeline, particularly for background props or base meshes for Houdini simulation work. The automated watertightness fixes issues that typically break Houdini VDB or Boolean SOPs. Output is standard GLB/GLTF, making it compatible with modern staging tools.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "PixelArtistry",
+      "url": "https://www.youtube.com/watch?v=dmDrktqyT5o",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/dmDrktqyT5o/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Orchestrating the AI node graph for 3D generation and processing"
+     },
+     {
+      "name": "Trellis 2",
+      "used_for": "Image-to-3D mesh generation"
+     },
+     {
+      "name": "Pixal 3D",
+      "used_for": "High-accuracy image-to-3D generation"
+     },
+     {
+      "name": "MostAadTech Nodes",
+      "used_for": "Custom nodes for watertight mesh reconstruction, decimation, and baking"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Mesh verification using 3D Print Toolbox and manual vertex cleanup"
+     }
+    ],
+    "whats_transferable": [
+     "Voxel-based mesh reconstruction technique to ensure manifold 'watertight' geometry from noisy AI outputs",
+     "High-to-low poly baking pipeline orchestrated entirely within a ComfyUI node graph",
+     "Parameter tuning strategies for balancing proxy points and voxel resolution based on available VRAM (6GB to 16GB+)",
+     "Method for bypassing standard quad-reconstruction nodes for 2K resolution assets to avoid processing artifacts"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-10-01T22:26:43.990060+00:00"
+  },
+  "n5ZNsnzyIus": {
+   "title": "Walk, Jump, Attack: Can AI Animate My Game Creature? Opus 5.5 vs GPT-6",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/n5ZNsnzyIus",
+   "at": "2026-10-01T22:26:40.230537+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "kpnsM4sfTJI": {
+   "title": "Blender UV Unwrapping: Can Opus 5.5 or GPT-6 Astra Do It?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/kpnsM4sfTJI",
+   "at": "2026-10-01T22:26:40.342767+00:00",
+   "duration_s": 38,
+   "published": false,
+   "reason_if_low": "under 90s (38s)"
+  },
+  "zMg6uWJv_f8": {
+   "title": "How I run ads with ChatGPT",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/zMg6uWJv_f8",
+   "at": "2026-10-01T22:26:40.506582+00:00",
+   "duration_s": 75,
+   "published": false,
+   "reason_if_low": "under 90s (75s)"
+  },
+  "3CRRUYIm8wo": {
+   "title": "How To Restyle Your Videod Instantly",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/3CRRUYIm8wo",
+   "at": "2026-10-01T22:26:40.662369+00:00",
+   "duration_s": 30,
+   "published": false,
+   "reason_if_low": "under 90s (30s)"
   }
  },
  "quota": {
-  "date": "2026-09-30",
-  "minutes": 60.650000000000006
+  "date": "2026-10-01",
+  "minutes": 39.0
  }
 }

@@ -838,6 +838,36 @@
    "issue_ids": [
     35
    ]
+  },
+  {
+   "story_id": "d8877eefc0",
+   "at": "2026-10-01T22:16:37.198533+00:00",
+   "vote": 1,
+   "headline": "Apple Studios VFX crew ratifies first IATSE contract",
+   "sources": [
+    "Animation World Network"
+   ],
+   "channel": "b",
+   "terms": [
+    "ai-use",
+    "apple",
+    "clauses",
+    "client",
+    "contract",
+    "contracts",
+    "crew",
+    "deal",
+    "iatse",
+    "pipelines.",
+    "ratifies",
+    "require",
+    "shape",
+    "studios"
+   ],
+   "via": "page",
+   "issue_ids": [
+    38
+   ]
   }
  ]
 }

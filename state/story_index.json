@@ -1,81 +1,4 @@
 {
- "01886a67b9": {
-  "headline": "Lightricks releases a batch of task-specific IC-LoRAs for LTX-2.5",
-  "sources": [
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "batch",
-   "close",
-   "hold.",
-   "ic-loras",
-   "licence",
-   "lightricks",
-   "loras",
-   "ltx-2.5",
-   "open",
-   "production-usable",
-   "relighting",
-   "restoration",
-   "task-specific",
-   "terms"
-  ],
-  "at": "2026-09-10T20:25:19.924379+00:00"
- },
- "ad201059ae": {
-  "headline": "MiniMax-H3-Turbo image-to-video model hits Apache-2.0 on Hugging Face",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "apache-2.0",
-   "client",
-   "face",
-   "genuinely",
-   "high-adoption",
-   "hits",
-   "hugging",
-   "image-to-video",
-   "licensing",
-   "minimax-h3-turbo",
-   "open-licence",
-   "risk.",
-   "usable",
-   "video"
-  ],
-  "at": "2026-09-10T20:25:19.924470+00:00"
- },
- "c9e48a6b37": {
-  "headline": "Maxon previews fall Cinema 4D, ZBrush and Redshift updates at IBC2026",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "act",
-   "actual",
-   "calendar",
-   "cinema",
-   "fall",
-   "ibc2026",
-   "lands.",
-   "maxon",
-   "note",
-   "nothing",
-   "october",
-   "previews",
-   "redshift",
-   "until"
-  ],
-  "at": "2026-09-10T20:25:19.924491+00:00"
- },
  "f074f3fc73": {
   "headline": "SuperSplat Editor 3.0 ships with major performance overhaul for large Gaussian splats",
   "sources": [
@@ -1725,5 +1648,128 @@
    "fro"
   ],
   "at": "2026-09-30T21:51:38.556114+00:00"
+ },
+ "3c2b96ef18": {
+  "headline": "LTX-2.5 gets layout-to-render IC-LoRA and character LoRA training guide",
+  "sources": [
+   "HF Lightricks (LTX)",
+   "Lightricks / LTX",
+   "Lightricks / LTX"
+  ],
+  "channel": "r",
+  "terms": [
+   "character",
+   "concrete",
+   "controllable",
+   "existing",
+   "gives",
+   "guide",
+   "ic-lora",
+   "inside",
+   "layout-to-render",
+   "lora",
+   "lora-based",
+   "ltx-2.5",
+   "open",
+   "stack."
+  ],
+  "at": "2026-10-01T22:26:41.792175+00:00"
+ },
+ "d769bbde8e": {
+  "headline": "DNEG details full-CG car crash and 80-second oner for Citadel Season 2",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "breakdown",
+   "car",
+   "citadel",
+   "concrete",
+   "crash",
+   "details",
+   "digital-double",
+   "dneg",
+   "fire",
+   "full-cg",
+   "oner",
+   "oner-stitching",
+   "reference",
+   "relevant"
+  ],
+  "at": "2026-10-01T22:26:41.792199+00:00"
+ },
+ "8418ed1346": {
+  "headline": "Utopai Studios launches script-to-shot production platform with its own video model",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "compress",
+   "could",
+   "details",
+   "full",
+   "kind",
+   "once",
+   "own",
+   "pipeline",
+   "platform",
+   "previs",
+   "production",
+   "script-to-shot",
+   "studios",
+   "surface."
+  ],
+  "at": "2026-10-01T22:26:41.792215+00:00"
+ },
+ "c4a4fe1187": {
+  "headline": "Luma ships Variants feature",
+  "sources": [
+   "Luma AI",
+   "Luma AI"
+  ],
+  "channel": "r",
+  "terms": [
+   "act",
+   "case",
+   "clarify",
+   "control",
+   "details",
+   "feature",
+   "flag",
+   "integration",
+   "later.",
+   "luma",
+   "only",
+   "options",
+   "thin",
+   "too"
+  ],
+  "at": "2026-10-01T22:26:41.792226+00:00"
+ },
+ "1c0e2bcd33": {
+  "headline": "3D AI Models Are Finally Watertight (6GB VRAM, Free & Local)",
+  "sources": [
+   "PixelArtistry"
+  ],
+  "channel": "a",
+  "terms": [
+   "asset",
+   "automated",
+   "background",
+   "base",
+   "boolean",
+   "break",
+   "compatible",
+   "finally",
+   "fixes",
+   "free",
+   "glb",
+   "gltf",
+   "highly",
+   "houdini"
+  ],
+  "at": "2026-10-01T22:26:41.792248+00:00"
  }
 }

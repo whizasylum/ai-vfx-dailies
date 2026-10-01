@@ -1,0 +1,140 @@
+{
+  "verdict": "A thin day: mostly arXiv noise and AWN trailer/listing filler, with a handful of items worth a glance on LTX LoRA tooling, a studio tech breakdown, and a Luma product update.",
+  "stories": [
+    {
+      "headline": "LTX-2.5 gets layout-to-render IC-LoRA and character LoRA training guide",
+      "body": "Lightricks published an IC-LoRA model (Layout-To-Render) for its LTX-2.5 video model on Hugging Face, plus a companion tutorial on training character LoRAs for LTX-2.5. The model is gated under a non-standard licence (must accept terms before download), low adoption so far (9 downloads). Useful if the studio is already on LTX-2.5 for video-to-video work with camera control tags, but licence terms need checking before client use.",
+      "why": "Gives a concrete LoRA-based workflow for controllable video-to-video inside an existing open model stack.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/how-to-train-a-character-lora",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/what-is-id-lora",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "DNEG details full-CG car crash and 80-second oner for Citadel Season 2",
+      "body": "DNEG's VFX supervisor Daniel Baldwin describes the technical build for Prime Video's Citadel: a full-CG car crash in a rebuilt Frankfurt, exploding satellites over a CG Earth, an 80-second drone-to-Steadicam oner stitched from multiple takes in 3D, and a burning-man sequence built from mannequin fire reference plus a digital double.",
+      "why": "Concrete breakdown of oner-stitching and digital-double fire work, relevant reference for similar sequences.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/vfxworld/dneg-burns-crashes-and-explodes-its-way-through-citadel-season-2-vfx",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/202_001_fa_7250_comp_dng_v0013.1026-1280.jpg?itok=5npqO1WI"
+    },
+    {
+      "headline": "Utopai Studios launches script-to-shot production platform with its own video model",
+      "body": "Utopai Studios released PAI, a platform that breaks a screenplay into scenes and shots and maintains character/location consistency across a project while its in-house Utopai X video model generates footage. Already in use, per the vendor, on an animated feature. No technical detail on the model architecture, licence, or availability was given; claims are vendor-supplied and unverified.",
+      "why": "A full script-to-shot AI pipeline is the kind of tool that could compress previs, worth tracking once details surface.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/utopai-studios-launches-pai-production-platform-and-utopai-x-video-model",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/utopai1-1280.jpg?itok=cm5BYPfG"
+    },
+    {
+      "headline": "Luma ships Variants feature",
+      "body": "Luma AI announced 'Luma Variants' is live, alongside an unrelated marketing post on AI packaging-design tools for CPG brands. The Variants announcement gives no technical detail on what it generates, what controls it, or pricing and availability, so it cannot be assessed for pipeline relevance yet.",
+      "why": "Too thin to act on; flag only in case feature details clarify control or integration options later.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Luma AI",
+          "url": "https://lumalabs.ai/news/introducing-luma-variants",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Luma AI",
+          "url": "https://lumalabs.ai/news/best-ai-packaging-design-tools-cpg-brands",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "3D AI Models Are Finally Watertight (6GB VRAM, Free & Local)",
+      "body": "A specific integration of Trellis 2 and Pixal 3D within ComfyUI using the MostAadTech node suite to automate the creation of watertight, manifold meshes. It specifically addresses common AI mesh issues like internal faces, holes, and high polygon counts by chaining voxel reconstruction (WTiVo) and automated baking into a single low-poly output workflow.",
+      "why": "This workflow is highly relevant for initial asset ingest in a USD pipeline, particularly for background props or base meshes for Houdini simulation work. The automated watertightness fixes issues that typically break Houdini VDB or Boolean SOPs. Output is standard GLB/GLTF, making it compatible with modern staging tools.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "PixelArtistry",
+          "url": "https://www.youtube.com/watch?v=dmDrktqyT5o",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/dmDrktqyT5o/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ComfyUI",
+          "used_for": "Orchestrating the AI node graph for 3D generation and processing"
+        },
+        {
+          "name": "Trellis 2",
+          "used_for": "Image-to-3D mesh generation"
+        },
+        {
+          "name": "Pixal 3D",
+          "used_for": "High-accuracy image-to-3D generation"
+        },
+        {
+          "name": "MostAadTech Nodes",
+          "used_for": "Custom nodes for watertight mesh reconstruction, decimation, and baking"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Mesh verification using 3D Print Toolbox and manual vertex cleanup"
+        }
+      ],
+      "whats_transferable": [
+        "Voxel-based mesh reconstruction technique to ensure manifold 'watertight' geometry from noisy AI outputs",
+        "High-to-low poly baking pipeline orchestrated entirely within a ComfyUI node graph",
+        "Parameter tuning strategies for balancing proxy points and voxel resolution based on available VRAM (6GB to 16GB+)",
+        "Method for bypassing standard quad-reconstruction nodes for 2K resolution assets to avoid processing artifacts"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 13977,
+    "output_tokens": 1062
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}
