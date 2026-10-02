@@ -868,6 +868,36 @@
    "issue_ids": [
     38
    ]
+  },
+  {
+   "story_id": "1c0e2bcd33",
+   "at": "2026-10-02T21:45:33.453731+00:00",
+   "vote": 1,
+   "headline": "3D AI Models Are Finally Watertight (6GB VRAM, Free & Local)",
+   "sources": [
+    "PixelArtistry"
+   ],
+   "channel": "a",
+   "terms": [
+    "asset",
+    "automated",
+    "background",
+    "base",
+    "boolean",
+    "break",
+    "compatible",
+    "finally",
+    "fixes",
+    "free",
+    "glb",
+    "gltf",
+    "highly",
+    "houdini"
+   ],
+   "via": "page",
+   "issue_ids": [
+    39
+   ]
   }
  ]
 }

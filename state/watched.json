@@ -2087,10 +2087,276 @@
    "duration_s": 30,
    "published": false,
    "reason_if_low": "under 90s (30s)"
+  },
+  "BFsVW1DrLng": {
+   "title": "How to Create a Depth Map Using AI + FREE Tool Download",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=BFsVW1DrLng",
+   "at": "2026-10-02T21:46:13.727225+00:00",
+   "duration_s": 198,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "BFsVW1DrLng",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Depth Anything",
+      "used_for": "Generating depth maps from 2D source video to guide AI video generation."
+     },
+     {
+      "name": "fal.ai",
+      "used_for": "Cloud-based aggregator for running Depth Anything V2."
+     },
+     {
+      "name": "Magnific AI",
+      "used_for": "Video generation via the Seedance 2.5 model using depth maps as motion references."
+     },
+     {
+      "name": "Python / Shell Script",
+      "used_for": "Running Depth Anything V2 locally on macOS (Apple Silicon)."
+     }
+    ],
+    "whats_new": "The integration of depth maps as a explicit structural 'motion reference' in Magnific's Seedance 2.5 video model, allowing for higher fidelity style transfer that adheres strictly to source silhouettes.",
+    "whats_transferable": [
+     "Using depth maps as a structural bridge between a low-fi plate (greybox) and a high-fi AI-generated environment.",
+     "Local execution of SOTA depth estimation models on macOS to bypass cloud API latency and costs."
+    ],
+    "pipeline_notes": "This workflow can be integrated into a Nuke or Houdini pipeline as a rapid look-dev tool. A TD could render a simple depth pass from a USD stage and use it as a structural guide for AI-based style explorations before committing to full 3D asset builds.",
+    "visual_quality_notes": "The depth-constrained generation significantly reduces the 'shimmering' and silhouette-drift common in basic img2vid/vid2vid workflows, particularly with hair and limb movement.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Outlines a workflow for generating depth maps using Depth Anything V2 to act as a structural anchor.",
+     "Demonstrates using these depth maps as 'motion references' within the Magnific Seedance 2.5 model.",
+     "Provides instructions for running depth estimation locally on macOS using a Python-based shell command.",
+     "Combines a static style reference image with a temporal depth reference to produce high-fidelity cinematic video.",
+     "Shows how greybox studio footage can be translated into complex environments while maintaining actor performance geometry."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "How to Create a Depth Map Using AI + FREE Tool Download",
+    "body": "The integration of depth maps as a explicit structural 'motion reference' in Magnific's Seedance 2.5 video model, allowing for higher fidelity style transfer that adheres strictly to source silhouettes.",
+    "why": "This workflow can be integrated into a Nuke or Houdini pipeline as a rapid look-dev tool. A TD could render a simple depth pass from a USD stage and use it as a structural guide for AI-based style explorations before committing to full 3D asset builds.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=BFsVW1DrLng",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/BFsVW1DrLng/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Depth Anything",
+      "used_for": "Generating depth maps from 2D source video to guide AI video generation."
+     },
+     {
+      "name": "fal.ai",
+      "used_for": "Cloud-based aggregator for running Depth Anything V2."
+     },
+     {
+      "name": "Magnific AI",
+      "used_for": "Video generation via the Seedance 2.5 model using depth maps as motion references."
+     },
+     {
+      "name": "Python / Shell Script",
+      "used_for": "Running Depth Anything V2 locally on macOS (Apple Silicon)."
+     }
+    ],
+    "whats_transferable": [
+     "Using depth maps as a structural bridge between a low-fi plate (greybox) and a high-fi AI-generated environment.",
+     "Local execution of SOTA depth estimation models on macOS to bypass cloud API latency and costs."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-02T21:49:51.226613+00:00"
+  },
+  "0yv0r5UyzCY": {
+   "title": "AI Sound Design Is Here\u2026 But Is It Any Good?",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=0yv0r5UyzCY",
+   "at": "2026-10-02T21:46:26.211801+00:00",
+   "duration_s": 748,
+   "topic_relevance": 3.0,
+   "transferable_craft": 3.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": "The demonstration focuses on proprietary cloud services and unreleased AI agents. It lacks technical depth, API documentation, or reusable code that a VFX TD could realistically test or integrate into a professional studio pipeline.",
+   "assessment": {
+    "video_id": "0yv0r5UyzCY",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Invideo Editor 4.1",
+      "used_for": "Cloud-based video editing with 'Agentic Sound Design' features for automated timeline population."
+     },
+     {
+      "name": "ChatGPT Astra",
+      "used_for": "Multi-modal AI agent capable of interacting with local software and web interfaces via scripts."
+     },
+     {
+      "name": "Adobe Premiere Pro",
+      "used_for": "Professional NLE used as a destination for AI-placed sound design components."
+     }
+    ],
+    "whats_new": "The introduction of 'Agentic Sound Design,' where AI agents analyze video content and automatically place synced sound effects and music directly onto a video editor's timeline based on text prompts.",
+    "whats_transferable": [
+     "The conceptual workflow of using high-level LLM agents to execute layout tasks (SFX placement) in professional software via Javascript or internal APIs."
+    ],
+    "pipeline_notes": "These tools are currently oriented toward cloud-based or consumer-level NLEs. They do not offer integration with USD-based scene assembly or procedural audio in Houdini. The core 'agent' logic is a black box that cannot yet be integrated into a local VFX TD's automation scripts.",
+    "visual_quality_notes": "The AI's ability to 'read' the scene for sound is currently poor, resulting in bad timing, inappropriate sound selection, and a lack of the complex layering found in professional human-authored foley.",
+    "category": "workflow",
+    "topic_relevance": 3.0,
+    "transferable_craft": 3.0,
+    "reason_if_low": "The demonstration focuses on proprietary cloud services and unreleased AI agents. It lacks technical depth, API documentation, or reusable code that a VFX TD could realistically test or integrate into a professional studio pipeline.",
+    "summary_bullets": [
+     "Tests Invideo's 'Agentic Sound Design' agents against professional human editors and OpenAI's ChatGPT Astra.",
+     "Finds that current AI sound design agents struggle with context-aware foley and precise sync with visual cues.",
+     "Details that ChatGPT Astra can interact with local applications like Premiere Pro, although its sound design quality is currently 'unusable' for professional standards.",
+     "Notes that the time and monetary cost of using AI agents for sound design often rivals or exceeds human labor without achieving comparable quality."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "FVKisberkpA": {
+   "title": "Replaying FlyDubai Attack Using God\u2019s Eye View and Real Flight Tracking Data",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/FVKisberkpA",
+   "at": "2026-10-02T21:47:07.084361+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
+  },
+  "RMzFYoZML2w": {
+   "title": "Realistic Characters From Simple Sketches #AI #Animation #Design",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/RMzFYoZML2w",
+   "at": "2026-10-02T21:47:07.228299+00:00",
+   "duration_s": 25,
+   "published": false,
+   "reason_if_low": "under 90s (25s)"
+  },
+  "kOoC3yhUyDQ": {
+   "title": "How I Use GPT-6 Astra for My Entire Post-Production (Edit 5X Faster!)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=kOoC3yhUyDQ",
+   "at": "2026-10-02T21:47:07.354296+00:00",
+   "duration_s": 697,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "kOoC3yhUyDQ",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generative video model for creating source character and environment assets from prompts."
+     },
+     {
+      "name": "Astra (AI Agent)",
+      "used_for": "Autonomous orchestration of editing tasks across multiple applications using a 'skill' framework."
+     },
+     {
+      "name": "DaVinci Resolve",
+      "used_for": "Host application for automated multi-cam editing, color grading nodes, and audio track organization."
+     },
+     {
+      "name": "After Effects",
+      "used_for": "Host application for agent-driven motion graphics assembly via automated ExtendScript execution."
+     }
+    ],
+    "whats_new": "Demonstration of an AI agent (Astra) capable of interpreting a script and providing command-level automation for professional NLE and motion graphics software, rather than just generating standalone clips.",
+    "whats_transferable": [
+     "Using structured 'skill' files and reference libraries (fonts, LUTs, project files) to ground AI agent behavior in a specific house style.",
+     "Automating the generation of ExtendScript/Python code via LLM to handle repetitive layout and composition tasks within a DCC.",
+     "Creating modular color grading node structures programmatically to allow for manual '20%' artist adjustments on top of AI-generated looks."
+    ],
+    "pipeline_notes": "Astra operates as an automation bridge between the production script and industry-standard DCCs. In a USD context, this methodology is highly relevant for 'Agentic Scene Assembly,' where an agent could theoretically parse a layout script to populate stages in Houdini or Solaris, provided it is fed the appropriate USD asset library and 'skill' constraints.",
+    "visual_quality_notes": "While the generative clips exhibit common temporal flickering and morphing artifacts, the editorial and technical application (node-based grading, multi-track audio alignment, and motion graphics layering) is high-quality and follows industry conventions.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Showcases an AI agent (Astra) performing automated editorial assembly, grading, and sound design in DaVinci Resolve based on a text prompt.",
+     "Demonstrates an automated workflow for motion graphics where the AI agent writes and executes code inside After Effects to build branded visuals.",
+     "Defines a hybrid '80/20' model: AI handles the bulk of technical assembly while the human artist performs the final creative polish and quality control.",
+     "Emphasizes the use of high-quality context (reference project files and style packs) to ensure the AI agent operates within professional production standards."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "How I Use GPT-6 Astra for My Entire Post-Production (Edit 5X Faster!)",
+    "body": "Demonstration of an AI agent (Astra) capable of interpreting a script and providing command-level automation for professional NLE and motion graphics software, rather than just generating standalone clips.",
+    "why": "Astra operates as an automation bridge between the production script and industry-standard DCCs. In a USD context, this methodology is highly relevant for 'Agentic Scene Assembly,' where an agent could theoretically parse a layout script to populate stages in Houdini or Solaris, provided it is fed the appropriate USD asset library and 'skill' constraints.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=kOoC3yhUyDQ",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/kOoC3yhUyDQ/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generative video model for creating source character and environment assets from prompts."
+     },
+     {
+      "name": "Astra (AI Agent)",
+      "used_for": "Autonomous orchestration of editing tasks across multiple applications using a 'skill' framework."
+     },
+     {
+      "name": "DaVinci Resolve",
+      "used_for": "Host application for automated multi-cam editing, color grading nodes, and audio track organization."
+     },
+     {
+      "name": "After Effects",
+      "used_for": "Host application for agent-driven motion graphics assembly via automated ExtendScript execution."
+     }
+    ],
+    "whats_transferable": [
+     "Using structured 'skill' files and reference libraries (fonts, LUTs, project files) to ground AI agent behavior in a specific house style.",
+     "Automating the generation of ExtendScript/Python code via LLM to handle repetitive layout and composition tasks within a DCC.",
+     "Creating modular color grading node structures programmatically to allow for manual '20%' artist adjustments on top of AI-generated looks."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-02T21:49:51.226639+00:00"
+  },
+  "JuzTv8h3Qa4": {
+   "title": "FLUX 3 Image on Higgsfield | Bring Your Ideas to Life",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/JuzTv8h3Qa4",
+   "at": "2026-10-02T21:49:47.961102+00:00",
+   "duration_s": 23,
+   "published": false,
+   "reason_if_low": "under 90s (23s)"
   }
  },
  "quota": {
-  "date": "2026-10-01",
-  "minutes": 39.0
+  "date": "2026-10-02",
+  "minutes": 27.383333333333333
  }
 }

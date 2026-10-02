@@ -1,0 +1,148 @@
+{
+  "verdict": "A quiet day: mostly arXiv paper noise, SEO listicles, and routine studio news, with one real pipeline-relevant item (Maxon's Cinema 4D MCP server) and a couple of production/tooling items worth a glance.",
+  "stories": [
+    {
+      "headline": "Maxon adds an MCP server to Cinema 4D for natural-language scene control",
+      "body": "Cinema 4D 2026.4 ships a built-in MCP (Model Context Protocol) server on Windows and macOS, letting AI assistants like Claude or ChatGPT organize scenes, build material variations, and prepare multipass renders via natural language. It is shipped switched off by default. This is a DCC vendor building a direct LLM-to-scene-graph bridge rather than a bolt-on plugin, which is the kind of integration that tends to get copied across the pipeline.",
+      "why": "First major DCC to ship a native LLM control surface, worth testing before competitors follow.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/maxon-adds-mcp-server-cinema-4d",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/mcp-hero_banner-1280.jpg?itok=lIJA-2TR"
+    },
+    {
+      "headline": "Lightricks ships an LTX-2.5 IC-LoRA for video alpha matting and background removal",
+      "body": "Lightricks published an IC-LoRA built on LTX-2.5-22b specifically tagged for alpha-matte, matting, background-removal, and general VFX video-to-video work. It is gated on Hugging Face under Lightricks' own licence terms, not fully open. Early release with only 2 downloads recorded, so real-world results are unverified, but a matting-focused LoRA on an open video backbone is directly relevant to comp workflows if the licence allows client work.\n",
+      "why": "A purpose-built matting LoRA could shortcut rotoscoping if the licence clears for client delivery.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Tripo's chief scientist discusses SmartMesh and open-source direction after $350M raise",
+      "body": "Yanpei Cao of Tripo AI discusses SmartMesh and how the company's generative 3D tools are being used for reference, blockouts, and previs, following a SIGGRAPH Real-Time Live Best in Show award and a $350 million funding round. The piece is mostly interview and strategy talk, light on new technical specifics beyond what's already shipped in Tripo's existing tools.",
+      "why": "Context for a vendor whose retopology tools already matter to this reader's workflow.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/animationworld/tripo-ais-yanpei-cao-talks-smartmesh-open-source-and-previs",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/dsc07842_2-opq4846368210-1280.jpg?itok=nFff4yp2"
+    },
+    {
+      "headline": "How to Create a Depth Map Using AI + FREE Tool Download",
+      "body": "The integration of depth maps as a explicit structural 'motion reference' in Magnific's Seedance 2.5 video model, allowing for higher fidelity style transfer that adheres strictly to source silhouettes.",
+      "why": "This workflow can be integrated into a Nuke or Houdini pipeline as a rapid look-dev tool. A TD could render a simple depth pass from a USD stage and use it as a structural guide for AI-based style explorations before committing to full 3D asset builds.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=BFsVW1DrLng",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/BFsVW1DrLng/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Depth Anything",
+          "used_for": "Generating depth maps from 2D source video to guide AI video generation."
+        },
+        {
+          "name": "fal.ai",
+          "used_for": "Cloud-based aggregator for running Depth Anything V2."
+        },
+        {
+          "name": "Magnific AI",
+          "used_for": "Video generation via the Seedance 2.5 model using depth maps as motion references."
+        },
+        {
+          "name": "Python / Shell Script",
+          "used_for": "Running Depth Anything V2 locally on macOS (Apple Silicon)."
+        }
+      ],
+      "whats_transferable": [
+        "Using depth maps as a structural bridge between a low-fi plate (greybox) and a high-fi AI-generated environment.",
+        "Local execution of SOTA depth estimation models on macOS to bypass cloud API latency and costs."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    },
+    {
+      "headline": "How I Use GPT-6 Astra for My Entire Post-Production (Edit 5X Faster!)",
+      "body": "Demonstration of an AI agent (Astra) capable of interpreting a script and providing command-level automation for professional NLE and motion graphics software, rather than just generating standalone clips.",
+      "why": "Astra operates as an automation bridge between the production script and industry-standard DCCs. In a USD context, this methodology is highly relevant for 'Agentic Scene Assembly,' where an agent could theoretically parse a layout script to populate stages in Houdini or Solaris, provided it is fed the appropriate USD asset library and 'skill' constraints.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=kOoC3yhUyDQ",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/kOoC3yhUyDQ/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield AI",
+          "used_for": "Generative video model for creating source character and environment assets from prompts."
+        },
+        {
+          "name": "Astra (AI Agent)",
+          "used_for": "Autonomous orchestration of editing tasks across multiple applications using a 'skill' framework."
+        },
+        {
+          "name": "DaVinci Resolve",
+          "used_for": "Host application for automated multi-cam editing, color grading nodes, and audio track organization."
+        },
+        {
+          "name": "After Effects",
+          "used_for": "Host application for agent-driven motion graphics assembly via automated ExtendScript execution."
+        }
+      ],
+      "whats_transferable": [
+        "Using structured 'skill' files and reference libraries (fonts, LUTs, project files) to ground AI agent behavior in a specific house style.",
+        "Automating the generation of ExtendScript/Python code via LLM to handle repetitive layout and composition tasks within a DCC.",
+        "Creating modular color grading node structures programmatically to allow for manual '20%' artist adjustments on top of AI-generated looks."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 910
+  },
+  "candidate_count": 63,
+  "editorial_stories": true
+}
