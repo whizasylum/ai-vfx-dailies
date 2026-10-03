@@ -1,0 +1,27 @@
+{
+  "verdict": "A quiet day: mostly game-industry filler and low-signal model listings, with one incremental open-weight video model update worth a flag and nothing that lands in a pipeline this week.",
+  "stories": [
+    {
+      "headline": "LTX-2.5 video model updated on Hugging Face, now at 1.6M downloads",
+      "body": "Lightricks' LTX-2.5 image-to-video and text-to-video model has been updated on Hugging Face, gated under a custom non-commercial-style licence requiring terms acceptance. It now shows 1.6 million downloads and supports image-to-video, video-to-video, and audio-to-video tasks. No changelog or technical detail accompanies this update, so it's unclear what changed from the prior version.",
+      "why": "Worth monitoring as an open video model with broad task coverage, but licence terms need checking before any client use.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 4320,
+    "output_tokens": 558
+  },
+  "candidate_count": 12,
+  "editorial_stories": true
+}

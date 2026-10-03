@@ -1,76 +1,4 @@
 {
- "9e3a40be0d": {
-  "headline": "MiniMax-H3 fine-tune adds HDR and video-to-video reference support, ships on Hugging Face under Apache-2.0",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "apache-2.0",
-   "comfyui",
-   "ecosystem",
-   "extends",
-   "face",
-   "fine-tune",
-   "hdr",
-   "hugging",
-   "minimax-h3",
-   "permissive-licence",
-   "reader",
-   "reference",
-   "support"
-  ],
-  "at": "2026-09-12T20:07:32.304487+00:00"
- },
- "fb14056002": {
-  "headline": "Free Blender add-on auto-rigs deform bones along stylized hair strands",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "a",
-  "terms": [
-   "add-on",
-   "along",
-   "auto-rigs",
-   "blender",
-   "bones",
-   "character",
-   "concrete",
-   "deform",
-   "free",
-   "hair",
-   "pipelines.",
-   "riggers",
-   "small",
-   "strands"
-  ],
-  "at": "2026-09-12T20:07:32.304535+00:00"
- },
- "3fbca0ce75": {
-  "headline": "Blender add-on brings jiggle physics to bodies, clothing and hair",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "a",
-  "terms": [
-   "add-on",
-   "blender",
-   "blender-based",
-   "bodies",
-   "character",
-   "cloth",
-   "clothing",
-   "hair",
-   "jiggle",
-   "physics",
-   "pipelines.",
-   "practical",
-   "secondary-motion",
-   "work"
-  ],
-  "at": "2026-09-12T20:07:32.304552+00:00"
- },
  "9ca1ea243f": {
   "headline": "CG Channel roundup covers HDR Light Studio update, free Maya rigging toolset mGear, and Beeble's SwitchX VFX model",
   "sources": [
@@ -1820,5 +1748,29 @@
    "edit"
   ],
   "at": "2026-10-02T21:49:48.832999+00:00"
+ },
+ "04ce1345cd": {
+  "headline": "LTX-2.5 video model updated on Hugging Face, now at 1.6M downloads",
+  "sources": [
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "any",
+   "before",
+   "broad",
+   "checking",
+   "client",
+   "coverage",
+   "downloads",
+   "face",
+   "hugging",
+   "licence",
+   "ltx-2.5",
+   "monitoring",
+   "need",
+   "open"
+  ],
+  "at": "2026-10-03T20:35:58.697484+00:00"
  }
 }
