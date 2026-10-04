@@ -1,28 +1,4 @@
 {
- "9ca1ea243f": {
-  "headline": "CG Channel roundup covers HDR Light Studio update, free Maya rigging toolset mGear, and Beeble's SwitchX VFX model",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "beeble",
-   "channel",
-   "check",
-   "covers",
-   "fit.",
-   "follow-up",
-   "free",
-   "hdr",
-   "light",
-   "maya",
-   "mgear",
-   "pipeline",
-   "rigging",
-   "roundup"
-  ],
-  "at": "2026-09-13T20:16:15.650131+00:00"
- },
  "1d839cb4cf": {
   "headline": "DaVinci Resolve 21.1 adds AI assistant control and new Fusion 3D tools",
   "sources": [
@@ -1772,5 +1748,109 @@
    "open"
   ],
   "at": "2026-10-03T20:35:58.697484+00:00"
+ },
+ "46b1bedbea": {
+  "headline": "LTX publishes a batch of blog guides for its LTX-2.5 video model",
+  "sources": [
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX",
+   "Lightricks / LTX"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "batch",
+   "blog",
+   "changes",
+   "committed",
+   "decisions.",
+   "guides",
+   "ltx",
+   "ltx-2.5",
+   "nothing",
+   "only",
+   "pipeline",
+   "publishes",
+   "skim"
+  ],
+  "at": "2026-10-04T20:52:46.962474+00:00"
+ },
+ "76c8cd1e2d": {
+  "headline": "New Open-Source AI Animation is Here!",
+  "sources": [
+   "PixelArtistry"
+  ],
+  "channel": "r",
+  "terms": [
+   "allegedly",
+   "animation",
+   "assets",
+   "blocker",
+   "brought",
+   "commercial",
+   "contains",
+   "data",
+   "deployment",
+   "evil",
+   "exists",
+   "fbx",
+   "games",
+   "glb"
+  ],
+  "at": "2026-10-04T20:52:46.962517+00:00"
+ },
+ "7c150f6a3e": {
+  "headline": "AI Can Do Everything in Blender Now - Mixar",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "r",
+  "terms": [
+   "allows",
+   "asset",
+   "blend",
+   "blender",
+   "blender.",
+   "blocking",
+   "compatibility",
+   "everything",
+   "export",
+   "feed",
+   "files",
+   "functions",
+   "generation",
+   "high-level"
+  ],
+  "at": "2026-10-04T20:52:46.962539+00:00"
+ },
+ "46829a3ae0": {
+  "headline": "AI Built My Game in 47 Hours So I Can Destroy Everything",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "adapted",
+   "agent",
+   "agentic",
+   "assembly.",
+   "automate",
+   "based",
+   "brief.",
+   "built",
+   "claude",
+   "code",
+   "could",
+   "destroy",
+   "everything",
+   "game"
+  ],
+  "at": "2026-10-04T20:52:46.962559+00:00"
  }
 }

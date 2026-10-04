@@ -1,0 +1,215 @@
+{
+  "verdict": "Quiet day: a single vendor's content-marketing blitz from LTX and three unrelated ML papers with no production relevance, nothing worth the reader's ten minutes.",
+  "stories": [
+    {
+      "headline": "LTX publishes a batch of blog guides for its LTX-2.5 video model",
+      "body": "Lightricks posted eight separate blog posts on the same day covering LTX-2.5 workflows: ComfyUI cloud setup, voice cloning, anime LoRAs, speed comparisons against Veo/Kling/Seedance, music video generation, retake/extend/reframe editing, a Gemma 4 prompt enhancer, first/last frame guides, and running LTX on Mac. All are vendor blog content with no independent benchmarks, pricing detail, or licence terms given.",
+      "why": "Worth a skim only if already committed to LTX, nothing here changes pipeline decisions.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/comfyui-cloud-setup-for-ltx-2-5",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/first-last-frame-ai-video",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/ai-video-model-speed-comparison",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/how-to-edit-ai-videos",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/ltx-2-5-prompt-enhancer",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/how-to-run-ltx-on-a-mac",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/voice-cloning-with-ltx",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/ai-anime-video",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/how-to-make-an-ai-music-video",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "New Open-Source AI Animation is Here!",
+      "body": "UniMate is an open-source (MIT) skeletal-agnostic motion model that can perform zero-shot in-betweening and motion expansion across diverse skeleton types, not just bipeds.",
+      "why": "UniMate provides FBX/GLB outputs that can be brought into Houdini or Maya. However, a significant legal blocker exists: the training data (Truebones ZOO) contains assets allegedly ripped from commercial games (Skyrim, Resident Evil), making commercial deployment of UniMate weights risky until resolved.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "PixelArtistry",
+          "url": "https://www.youtube.com/watch?v=x-WSSlHNcJQ",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/x-WSSlHNcJQ/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "UniMate",
+          "used_for": "Text-to-motion generation for arbitrary skeletons including quadrupeds, plants, and articulated objects."
+        },
+        {
+          "name": "Auto Unwrap",
+          "used_for": "Blender add-on for AI-assisted UV unwrapping of organic and hard-surface meshes."
+        },
+        {
+          "name": "Smart Remesh 3",
+          "used_for": "Blender add-on for converting high-poly scans or AI meshes into clean quad-based topology."
+        },
+        {
+          "name": "BTC3D",
+          "used_for": "Research paper method for enhancing texture and geometry detail in image-to-3D pipelines."
+        }
+      ],
+      "whats_transferable": [
+        "Topology-aware Diffusion Transformer method for animating non-standard skeletons via text prompts",
+        "Workflow for chaining AI-generated 3D assets through local retopology and UV unwrapping tools for clean mesh delivery",
+        "Motion editing technique that preserves specific joints while resynthesizing others"
+      ],
+      "topic_relevance": 9.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "AI Can Do Everything in Blender Now - Mixar",
+      "body": "Mixar is an open-source Blender fork that integrates AI agents directly into the 3D viewport, allowing for multi-agent task execution, sketch-based scene editing, and native support for various AI generation APIs via the Model Context Protocol.",
+      "why": "Mixar functions as an orchestration layer on top of Blender. While not native USD, its compatibility with .blend files allows it to serve as a high-level asset generation or scene blocking tool that can feed into traditional USD/Houdini pipelines via standard export paths.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=Z8xhELifAVs",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/Z8xhELifAVs/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Mixar",
+          "used_for": "AI-first 3D editor and Blender fork for agent-driven content creation"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Base engine for Mixar's 3D operations and file compatibility"
+        },
+        {
+          "name": "Model Context Protocol (MCP)",
+          "used_for": "Connecting external LLMs like Claude or GPT-6 to the 3D environment"
+        },
+        {
+          "name": "Tripo",
+          "used_for": "Image-to-3D and Text-to-3D generation within the tool"
+        },
+        {
+          "name": "WorldLabs Marble",
+          "used_for": "3D Gaussian Splatting and high-quality environment generation"
+        }
+      ],
+      "whats_transferable": [
+        "Sketch-based viewport annotation as a method for guiding LLM agents in 3D space",
+        "Agentic workflows for automating character rigging and control rig generation",
+        "Multi-agent task queuing for parallel 3D scene assembly and refinement",
+        "Integrating LLMs with 3D DCC tools via MCP for flexible AI provider switching"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    },
+    {
+      "headline": "AI Built My Game in 47 Hours So I Can Destroy Everything",
+      "body": "The use of Claude Code as a persistent agent to manage a multi-day build across different software packages (Blender/Unity), handling over 2,000 asset generations and layout tasks without manual intervention.",
+      "why": "This represents a shift toward agentic layout and assembly. In a USD pipeline, this method could be adapted to have Claude Code or a similar agent generate Python scripts for Houdini/Solaris to automate the variation and placement of thousands of USD layers based on a textual brief.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=cJH4UgCWrT8",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/cJH4UgCWrT8/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Claude Code / Opus 5.5",
+          "used_for": "Agentic orchestration of Blender and Unity via CLI to execute the project brief."
+        },
+        {
+          "name": "Blender",
+          "used_for": "Mesh cleaning, rigging, and UV unwrapping of AI-generated assets."
+        },
+        {
+          "name": "Unity (URP)",
+          "used_for": "Game engine for scene assembly, destruction physics, and rendering."
+        },
+        {
+          "name": "Tripo P2.0 API",
+          "used_for": "Generating character meshes with specific UV and texture requirements."
+        },
+        {
+          "name": "Higgsfield",
+          "used_for": "Large-scale generation of 3D assets, images, and video loops."
+        },
+        {
+          "name": "ElevenLabs",
+          "used_for": "Automated voiceover generation for game UI and feedback."
+        }
+      ],
+      "whats_transferable": [
+        "Agentic Python scripting to bridge 3D generation APIs (Tripo) with DCC-based cleaning and staging.",
+        "Prompts for generating custom UV layouts and emissive maps from AI-generated base colors.",
+        "Automated 'turntable' and quality check pipelines for high-volume AI asset generation.",
+        "Workflow for orchestrating scene layout via coding agents instead of manual placement."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 3428,
+    "output_tokens": 380
+  },
+  "candidate_count": 16,
+  "editorial_stories": true
+}
