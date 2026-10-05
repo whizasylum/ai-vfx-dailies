@@ -898,6 +898,96 @@
    "issue_ids": [
     39
    ]
+  },
+  {
+   "story_id": "46829a3ae0",
+   "at": "2026-10-05T23:39:20.117617+00:00",
+   "vote": 1,
+   "headline": "AI Built My Game in 47 Hours So I Can Destroy Everything",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "adapted",
+    "agent",
+    "agentic",
+    "assembly.",
+    "automate",
+    "based",
+    "brief.",
+    "built",
+    "claude",
+    "code",
+    "could",
+    "destroy",
+    "everything",
+    "game"
+   ],
+   "via": "page",
+   "issue_ids": [
+    42
+   ]
+  },
+  {
+   "story_id": "7c150f6a3e",
+   "at": "2026-10-05T23:39:20.117635+00:00",
+   "vote": 1,
+   "headline": "AI Can Do Everything in Blender Now - Mixar",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "r",
+   "terms": [
+    "allows",
+    "asset",
+    "blend",
+    "blender",
+    "blender.",
+    "blocking",
+    "compatibility",
+    "everything",
+    "export",
+    "feed",
+    "files",
+    "functions",
+    "generation",
+    "high-level"
+   ],
+   "via": "page",
+   "issue_ids": [
+    41
+   ]
+  },
+  {
+   "story_id": "76c8cd1e2d",
+   "at": "2026-10-05T23:39:20.117641+00:00",
+   "vote": 1,
+   "headline": "New Open-Source AI Animation is Here!",
+   "sources": [
+    "PixelArtistry"
+   ],
+   "channel": "r",
+   "terms": [
+    "allegedly",
+    "animation",
+    "assets",
+    "blocker",
+    "brought",
+    "commercial",
+    "contains",
+    "data",
+    "deployment",
+    "evil",
+    "exists",
+    "fbx",
+    "games",
+    "glb"
+   ],
+   "via": "page",
+   "issue_ids": [
+    40
+   ]
   }
  ]
 }

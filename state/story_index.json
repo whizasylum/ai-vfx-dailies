@@ -1,52 +1,4 @@
 {
- "1d839cb4cf": {
-  "headline": "DaVinci Resolve 21.1 adds AI assistant control and new Fusion 3D tools",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "r",
-  "terms": [
-   "affect",
-   "ai-assist",
-   "already",
-   "assistant",
-   "comp",
-   "control",
-   "davinci",
-   "directly",
-   "edit",
-   "free",
-   "fusion",
-   "pipelines",
-   "resolve",
-   "resolve."
-  ],
-  "at": "2026-09-14T21:25:46.511459+00:00"
- },
- "458569c4f5": {
-  "headline": "Blender Studio releases OVERGROWN teaser as open-pipeline test case",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "b",
-  "terms": [
-   "become",
-   "blender",
-   "case",
-   "choices",
-   "open",
-   "open-pipeline",
-   "overgrown",
-   "pipeline",
-   "production",
-   "reusable",
-   "studio",
-   "teaser",
-   "test",
-   "tooling."
-  ],
-  "at": "2026-09-14T21:25:46.511505+00:00"
- },
  "d7875f04eb": {
   "headline": "Canva ships Affinity 3.3 with new scripting system and AI features",
   "sources": [
@@ -1852,5 +1804,195 @@
    "game"
   ],
   "at": "2026-10-04T20:52:46.962559+00:00"
+ },
+ "5f3adf76cc": {
+  "headline": "ComfyUI 0.39.0 adds MiniMax-H3 VAE support and higher quality default video encoding",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "comfyui",
+   "default",
+   "direct",
+   "encoding",
+   "higher",
+   "minimax-h3",
+   "path",
+   "pipelines.",
+   "production",
+   "quality",
+   "running",
+   "studios",
+   "support"
+  ],
+  "at": "2026-10-05T23:45:08.123185+00:00"
+ },
+ "1d7912e535": {
+  "headline": "MiniMax-H3 motion enhancer released on Hugging Face under Apache 2.0",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "apache",
+   "diffusers",
+   "enhancer",
+   "face",
+   "friction.",
+   "hugging",
+   "legal",
+   "licence",
+   "mean",
+   "minimax-h3",
+   "motion",
+   "permissive",
+   "pipelines",
+   "production"
+  ],
+  "at": "2026-10-05T23:45:08.123209+00:00"
+ },
+ "b3a1660b6e": {
+  "headline": "LTX generative video model adds VFX-oriented features, per CG Channel roundup",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "channel",
+   "features",
+   "first.",
+   "generative",
+   "ltx",
+   "ones",
+   "per",
+   "roundup",
+   "testing",
+   "vfx-oriented",
+   "vfx-specific",
+   "video",
+   "worth"
+  ],
+  "at": "2026-10-05T23:45:08.123224+00:00"
+ },
+ "6d42158a37": {
+  "headline": "Modeler 26.3 for Houdini reworks subdivision workflow for Houdini 22",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "before",
+   "compatibility",
+   "h22",
+   "houdini",
+   "modeler",
+   "modeling",
+   "need",
+   "reworks",
+   "subdivision",
+   "toolkit",
+   "upgrading.",
+   "users",
+   "workflow"
+  ],
+  "at": "2026-10-05T23:45:08.123236+00:00"
+ },
+ "bd6c6dc0e0": {
+  "headline": "The Billion Dollar AI Advantage Is Disappearing",
+  "sources": [
+   "Two Minute Papers"
+  ],
+  "channel": "g",
+  "terms": [
+   "advantage",
+   "artist",
+   "before",
+   "billion",
+   "custom",
+   "disappearing",
+   "dollar",
+   "environment",
+   "generate",
+   "houdini",
+   "lightweight",
+   "like",
+   "logic",
+   "maya."
+  ],
+  "at": "2026-10-05T23:45:08.123254+00:00"
+ },
+ "3b5b01e05d": {
+  "headline": "Free Tutorial: Gaussian Splat Segmentation",
+  "sources": [
+   "Entagma"
+  ],
+  "channel": "a",
+  "terms": [
+   "applicable",
+   "architecture",
+   "between",
+   "bridges",
+   "cleanup",
+   "copernicus",
+   "data",
+   "environment",
+   "feedback",
+   "free",
+   "gap",
+   "gaussian",
+   "highly",
+   "houdini"
+  ],
+  "at": "2026-10-05T23:45:08.123272+00:00"
+ },
+ "dff23b60bc": {
+  "headline": "From Idea to Game in ONE Day with AI - Fastest Character Workflow",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "assembly",
+   "assets",
+   "between",
+   "blender",
+   "bridges",
+   "brought",
+   "character",
+   "components",
+   "cops",
+   "could",
+   "day",
+   "extraction",
+   "fastest",
+   "game"
+  ],
+  "at": "2026-10-05T23:45:08.123290+00:00"
+ },
+ "08b855d758": {
+  "headline": "I Tried Fixing Bad VFX Using AI (feat. \u2068\u2068@erikdoesvfx\u2069)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "agent",
+   "api",
+   "assets",
+   "astra",
+   "automate",
+   "bad",
+   "could",
+   "digital",
+   "erikdoesvfx",
+   "feat.",
+   "fixing",
+   "functions",
+   "hdas",
+   "high-level"
+  ],
+  "at": "2026-10-05T23:45:08.123314+00:00"
  }
 }

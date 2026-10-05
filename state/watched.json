@@ -2762,10 +2762,418 @@
    },
    "rubric_version": 2,
    "story": null
+  },
+  "ZHVNTTKu9fU": {
+   "title": "The Billion Dollar AI Advantage Is Disappearing",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
+   "at": "2026-10-05T23:42:17.909829+00:00",
+   "duration_s": 223,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "research",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "ZHVNTTKu9fU",
+    "channel": "Two Minute Papers",
+    "tools_and_platforms": [
+     {
+      "name": "Claude 3.5 Sonnet",
+      "used_for": "Code generation and implementation of complex physics solvers from research papers"
+     },
+     {
+      "name": "three.js",
+      "used_for": "Rendering real-time 3D physics simulations and ray tracing in the browser"
+     },
+     {
+      "name": "Lambda",
+      "used_for": "Cloud GPU compute for training and running AI inference experiments"
+     }
+    ],
+    "whats_new": "The release of Claude 3.5 Sonnet demonstrates a major leap in the ability of mid-sized AI models to correctly implement high-tier physics research (AVBD, XPBD) and complex rendering math (caustics, photon mapping) into functional, single-file prototypes.",
+    "whats_transferable": [
+     "Using LLMs like Sonnet 3.5 to translate abstract research papers or legacy C++/CUDA code into modern Python/VEX/GLSL snippets for custom tool development."
+    ],
+    "pipeline_notes": "This would sit at the R&D and tool-prototyping stage. A technical artist can use the model to generate the first pass of a custom solver in a lightweight environment (like three.js or a Python node) before porting the logic to a production pipeline in Houdini or Maya.",
+    "visual_quality_notes": "The generated simulations show impressive stability for many-object systems and correct light transport for caustics, though they are currently limited to real-time/web-quality visual fidelity.",
+    "category": "research",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates Claude 3.5 Sonnet reproducing 'Augmented Vertex Block Descent' (AVBD) physics simulations.",
+     "Shows successful implementation of advanced rendering techniques including photon mapping and volumetric caustics from AI-generated code.",
+     "Highlights the rapid decrease in cost and size for models capable of complex technical engineering and coding tasks."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "The Billion Dollar AI Advantage Is Disappearing",
+    "body": "The release of Claude 3.5 Sonnet demonstrates a major leap in the ability of mid-sized AI models to correctly implement high-tier physics research (AVBD, XPBD) and complex rendering math (caustics, photon mapping) into functional, single-file prototypes.",
+    "why": "This would sit at the R&D and tool-prototyping stage. A technical artist can use the model to generate the first pass of a custom solver in a lightweight environment (like three.js or a Python node) before porting the logic to a production pipeline in Houdini or Maya.",
+    "channel": "g",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Two Minute Papers",
+      "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/ZHVNTTKu9fU/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Claude 3.5 Sonnet",
+      "used_for": "Code generation and implementation of complex physics solvers from research papers"
+     },
+     {
+      "name": "three.js",
+      "used_for": "Rendering real-time 3D physics simulations and ray tracing in the browser"
+     },
+     {
+      "name": "Lambda",
+      "used_for": "Cloud GPU compute for training and running AI inference experiments"
+     }
+    ],
+    "whats_transferable": [
+     "Using LLMs like Sonnet 3.5 to translate abstract research papers or legacy C++/CUDA code into modern Python/VEX/GLSL snippets for custom tool development."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-05T23:45:10.704714+00:00"
+  },
+  "WdHFQF3pZA0": {
+   "title": "Free Tutorial: Gaussian Splat Segmentation",
+   "channel": "Entagma",
+   "url": "https://www.youtube.com/watch?v=WdHFQF3pZA0",
+   "at": "2026-10-05T23:42:34.013183+00:00",
+   "duration_s": 1397,
+   "topic_relevance": 9.0,
+   "transferable_craft": 9.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "WdHFQF3pZA0",
+    "channel": "Entagma",
+    "tools_and_platforms": [
+     {
+      "name": "Houdini Copernicus",
+      "used_for": "Interactive 2D image processing and rasterization within Houdini."
+     },
+     {
+      "name": "SAM 2 (Segment Anything Model 2)",
+      "used_for": "Neural segmentation of objects in a 2D view via the neural_layertomask node."
+     },
+     {
+      "name": "Gaussian Splatting",
+      "used_for": "Importing and manipulating scan-based 3D environments."
+     }
+    ],
+    "whats_new": "Integration of SAM 2 (Segment Anything Model 2) within Houdini's new Copernicus (COPs) context to interactively segment and isolate objects from 3D Gaussian Splats using simple viewport clicks.",
+    "whats_transferable": [
+     "Workflow for importing and rasterizing Gaussian Splats in COPs.",
+     "Method for re-projecting 2D masks back onto 3D point data using camera-based UV projections.",
+     "Technique for cleaning up masks by converting mono layers to SDFs for controlled expansion/contraction.",
+     "Logic for combining multiple camera projections to resolve depth/occlusion artifacts like shadows being masked with objects.",
+     "Clamping UV coordinates in a Point Wrangle to prevent 2D mask tiling during 3D re-projection.",
+     "HDA architecture using 'dive targets' for interactive node access."
+    ],
+    "pipeline_notes": "This workflow bridges the gap between 2D AI segmentation and 3D environment layout. It is highly applicable to environment cleanup or layout modification tasks for pipelines using scan data or Gaussian Splats. It leverages the new Copernicus architecture in Houdini to maintain an interactive feedback loop.",
+    "visual_quality_notes": "The resulting segmentation is highly precise for complex silhouettes (like trees), though Gaussian Splat 'floaters' still require manual mask expansion (dilation) to fully capture or remove.",
+    "category": "workflow",
+    "topic_relevance": 9.0,
+    "transferable_craft": 9.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Interactively segment 3D Gaussian Splats by clicking objects in a 2D rasterized view using SAM 2.",
+     "Use Copernicus' neural_layertomask node to generate masks that follow object boundaries automatically.",
+     "Map 2D masks back to 3D point clouds via 'Perspective from Camera' UV textures on the splat geometry.",
+     "Combine selections from multiple camera angles to isolate objects from their 2D shadows and background projections.",
+     "Implement a robust HDA with custom parameters and dive targets to allow for rapid scene cleanup in large environments."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Free Tutorial: Gaussian Splat Segmentation",
+    "body": "Integration of SAM 2 (Segment Anything Model 2) within Houdini's new Copernicus (COPs) context to interactively segment and isolate objects from 3D Gaussian Splats using simple viewport clicks.",
+    "why": "This workflow bridges the gap between 2D AI segmentation and 3D environment layout. It is highly applicable to environment cleanup or layout modification tasks for pipelines using scan data or Gaussian Splats. It leverages the new Copernicus architecture in Houdini to maintain an interactive feedback loop.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Entagma",
+      "url": "https://www.youtube.com/watch?v=WdHFQF3pZA0",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/WdHFQF3pZA0/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Houdini Copernicus",
+      "used_for": "Interactive 2D image processing and rasterization within Houdini."
+     },
+     {
+      "name": "SAM 2 (Segment Anything Model 2)",
+      "used_for": "Neural segmentation of objects in a 2D view via the neural_layertomask node."
+     },
+     {
+      "name": "Gaussian Splatting",
+      "used_for": "Importing and manipulating scan-based 3D environments."
+     }
+    ],
+    "whats_transferable": [
+     "Workflow for importing and rasterizing Gaussian Splats in COPs.",
+     "Method for re-projecting 2D masks back onto 3D point data using camera-based UV projections.",
+     "Technique for cleaning up masks by converting mono layers to SDFs for controlled expansion/contraction.",
+     "Logic for combining multiple camera projections to resolve depth/occlusion artifacts like shadows being masked with objects.",
+     "Clamping UV coordinates in a Point Wrangle to prevent 2D mask tiling during 3D re-projection.",
+     "HDA architecture using 'dive targets' for interactive node access."
+    ],
+    "topic_relevance": 9.0,
+    "transferable_craft": 9.0
+   },
+   "delivered_at": "2026-10-05T23:45:10.704735+00:00"
+  },
+  "CgslUZIAl4s": {
+   "title": "From Idea to Game in ONE Day with AI - Fastest Character Workflow",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=CgslUZIAl4s",
+   "at": "2026-10-05T23:43:39.370594+00:00",
+   "duration_s": 795,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "CgslUZIAl4s",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Tripo P2.0",
+      "used_for": "Image-to-3D generation with specific polycount control and quad topology."
+     },
+     {
+      "name": "Mr. Mak Workspace",
+      "used_for": "A custom CLI/GUI wrapper for AI agents (Claude/GPT) to manage 3D tasks and pipeline handoffs."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Asset assembly, sculpting cleanup, and PBR map integration."
+     },
+     {
+      "name": "Mixamo",
+      "used_for": "Auto-rigging of the humanoid body components."
+     },
+     {
+      "name": "Modif",
+      "used_for": "Mentioned as an alternative AI tool for addressing texture artifacts."
+     }
+    ],
+    "whats_new": "A 'split-and-assemble' workflow for AI characters that avoids the 'blob' topology of single-mesh generation by creating limbs, head, and gear as separate objects with controlled polycounts.",
+    "whats_transferable": [
+     "Dividing complex character designs into discrete components for individual AI mesh generation to improve topological fidelity.",
+     "Using vision-language agents (GPT/Claude) to derive PBR maps (Normal, Roughness, Metallic) directly from a generated 2D color texture.",
+     "Prompting AI models to ignore lighting during texture generation to create flatter, more usable base-color maps.",
+     "The use of 'Smart UV' generation early in the AI process to enable downstream texture editing and mask creation."
+    ],
+    "pipeline_notes": "This workflow bridges the gap between raw AI generation and production-ready assets by inserting a Blender assembly stage. In a USD pipeline, these components would be brought in as separate prims. The vision-agent texture extraction could be replicated in a Python-based Houdini COPs or Nuke script.",
+    "visual_quality_notes": "The resulting assets are optimized for RTS or mid-range third-person views. High-frequency detail on the wings is managed through texture-driven normal maps rather than heavy geometry to maintain performance.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a component-based approach to 3D character generation, breaking a harpy design into head, torso, wings, and armor.",
+     "Explains a method for finding optimal mesh density by generating four variants of a model at different polycounts simultaneously.",
+     "Details a technique for generating secondary PBR maps from base color textures using AI vision models to interpret material properties (e.g., leather vs. gem).",
+     "Utilizes a custom 'AI Agent' integration in Blender to automate repetitive tasks like connecting texture nodes and adjusting weights.",
+     "Shows an animation/VFX blueprinting phase where AI descriptions are converted into motion references for the final unit behavior in engine."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "From Idea to Game in ONE Day with AI - Fastest Character Workflow",
+    "body": "A 'split-and-assemble' workflow for AI characters that avoids the 'blob' topology of single-mesh generation by creating limbs, head, and gear as separate objects with controlled polycounts.",
+    "why": "This workflow bridges the gap between raw AI generation and production-ready assets by inserting a Blender assembly stage. In a USD pipeline, these components would be brought in as separate prims. The vision-agent texture extraction could be replicated in a Python-based Houdini COPs or Nuke script.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=CgslUZIAl4s",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/CgslUZIAl4s/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Tripo P2.0",
+      "used_for": "Image-to-3D generation with specific polycount control and quad topology."
+     },
+     {
+      "name": "Mr. Mak Workspace",
+      "used_for": "A custom CLI/GUI wrapper for AI agents (Claude/GPT) to manage 3D tasks and pipeline handoffs."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Asset assembly, sculpting cleanup, and PBR map integration."
+     },
+     {
+      "name": "Mixamo",
+      "used_for": "Auto-rigging of the humanoid body components."
+     },
+     {
+      "name": "Modif",
+      "used_for": "Mentioned as an alternative AI tool for addressing texture artifacts."
+     }
+    ],
+    "whats_transferable": [
+     "Dividing complex character designs into discrete components for individual AI mesh generation to improve topological fidelity.",
+     "Using vision-language agents (GPT/Claude) to derive PBR maps (Normal, Roughness, Metallic) directly from a generated 2D color texture.",
+     "Prompting AI models to ignore lighting during texture generation to create flatter, more usable base-color maps.",
+     "The use of 'Smart UV' generation early in the AI process to enable downstream texture editing and mask creation."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-05T23:45:10.704745+00:00"
+  },
+  "utm1F5csc7k": {
+   "title": "How to make an AI influencer from scratch #tutorial #ai #shorts",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/utm1F5csc7k",
+   "at": "2026-10-05T23:44:15.083514+00:00",
+   "duration_s": 50,
+   "published": false,
+   "reason_if_low": "under 90s (50s)"
+  },
+  "uZkGA1EuIHI": {
+   "title": "I Tried Fixing Bad VFX Using AI (feat. \u2068\u2068@erikdoesvfx\u2069)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=uZkGA1EuIHI",
+   "at": "2026-10-05T23:44:15.192102+00:00",
+   "duration_s": 496,
+   "topic_relevance": 9.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "uZkGA1EuIHI",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Astra",
+      "used_for": "Agentic orchestration of VFX workflows across multiple DCC applications via LLM."
+     },
+     {
+      "name": "Houdini",
+      "used_for": "Particle simulations and destruction effects (tank explosion)."
+     },
+     {
+      "name": "Blender",
+      "used_for": "3D modeling and animation of the tank asset."
+     },
+     {
+      "name": "After Effects",
+      "used_for": "Compositing, rotoscoping, and sky replacement."
+     },
+     {
+      "name": "DaVinci Resolve",
+      "used_for": "Footage prep and final assembly."
+     },
+     {
+      "name": "Seedress 2.5/5",
+      "used_for": "Base video generation and AI-driven VFX shots."
+     }
+    ],
+    "whats_new": "The introduction of Astra, an AI agent capable of writing scripts and controlling the UI of professional DCC tools (Blender, Houdini, AE) to execute complex VFX sequences from natural language prompts.",
+    "whats_transferable": [
+     "Agentic scripting for DCC automation",
+     "Video-to-video character consistency using a 360-degree video character sheet as an identity reference",
+     "Prompt-based orchestration of physics simulations",
+     "Reconciling AI generation with live-action plates through rotoscoping and depth-mapping automation"
+    ],
+    "pipeline_notes": "Astra functions as a high-level orchestration layer. In a USD-based pipeline, this agent could theoretically be used to automate stage layouts in Solaris or set parameters on Houdini Digital Assets (HDAs) by interfacing with the Python API rather than manual mouse-and-click operations.",
+    "visual_quality_notes": "The video highlights that while pure generative AI is faster, the agent-driven DCC approach (Houdini/Blender) produces superior visual integration, realistic physics, and much higher resolution control required for professional work.",
+    "category": "workflow",
+    "topic_relevance": 9.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates an AI agent (Astra) that bridges multiple professional creative applications to perform complex VFX tasks.",
+     "Shows automated 3D modeling in Blender and particle sim execution in Houdini based on text-driven revisions.",
+     "Introduces 'video character sheets' as a technique for maintaining temporal and identity consistency in generative AI.",
+     "Compares a 15-minute pure AI generation workflow against a 90-minute AI-orchestrated DCC workflow for high-fidelity control."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Tried Fixing Bad VFX Using AI (feat. \u2068\u2068@erikdoesvfx\u2069)",
+    "body": "The introduction of Astra, an AI agent capable of writing scripts and controlling the UI of professional DCC tools (Blender, Houdini, AE) to execute complex VFX sequences from natural language prompts.",
+    "why": "Astra functions as a high-level orchestration layer. In a USD-based pipeline, this agent could theoretically be used to automate stage layouts in Solaris or set parameters on Houdini Digital Assets (HDAs) by interfacing with the Python API rather than manual mouse-and-click operations.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=uZkGA1EuIHI",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/uZkGA1EuIHI/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Astra",
+      "used_for": "Agentic orchestration of VFX workflows across multiple DCC applications via LLM."
+     },
+     {
+      "name": "Houdini",
+      "used_for": "Particle simulations and destruction effects (tank explosion)."
+     },
+     {
+      "name": "Blender",
+      "used_for": "3D modeling and animation of the tank asset."
+     },
+     {
+      "name": "After Effects",
+      "used_for": "Compositing, rotoscoping, and sky replacement."
+     },
+     {
+      "name": "DaVinci Resolve",
+      "used_for": "Footage prep and final assembly."
+     },
+     {
+      "name": "Seedress 2.5/5",
+      "used_for": "Base video generation and AI-driven VFX shots."
+     }
+    ],
+    "whats_transferable": [
+     "Agentic scripting for DCC automation",
+     "Video-to-video character consistency using a 360-degree video character sheet as an identity reference",
+     "Prompt-based orchestration of physics simulations",
+     "Reconciling AI generation with live-action plates through rotoscoping and depth-mapping automation"
+    ],
+    "topic_relevance": 9.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-10-05T23:45:10.704755+00:00"
   }
  },
  "quota": {
-  "date": "2026-10-04",
-  "minutes": 51.4
+  "date": "2026-10-05",
+  "minutes": 48.516666666666666
  }
 }
