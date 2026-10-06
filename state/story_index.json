@@ -1,77 +1,4 @@
 {
- "d7875f04eb": {
-  "headline": "Canva ships Affinity 3.3 with new scripting system and AI features",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "affinity",
-   "alternative",
-   "automation.",
-   "canva",
-   "editor",
-   "features",
-   "free",
-   "image",
-   "photoshop",
-   "pipeline",
-   "scriptable",
-   "scripting",
-   "small",
-   "studios"
-  ],
-  "at": "2026-09-15T20:49:06.081516+00:00"
- },
- "0dfb351f2e": {
-  "headline": "Blender's ReFace retopology tool reaches version 2.0, adds scan and AI-mesh support",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "r",
-  "terms": [
-   "ai-generated",
-   "ai-mesh",
-   "automated",
-   "before",
-   "blender",
-   "cleanup",
-   "manual",
-   "meshes",
-   "reaches",
-   "reduces",
-   "reface",
-   "retopo",
-   "retopology",
-   "rigging."
-  ],
-  "at": "2026-09-15T20:49:06.081570+00:00"
- },
- "40dbac2350": {
-  "headline": "Colorfront debuts Automated Timeline Comparison and Dolby Vision 2 tools at IBC",
-  "sources": [
-   "postPerspective",
-   "postPerspective"
-  ],
-  "channel": "b",
-  "terms": [
-   "automated",
-   "colorfront",
-   "comparison",
-   "could",
-   "cut",
-   "debuts",
-   "delivery",
-   "dolby",
-   "finishing",
-   "handling",
-   "ibc",
-   "masters.",
-   "pipelines",
-   "time"
-  ],
-  "at": "2026-09-15T20:49:06.081589+00:00"
- },
  "c634ff943f": {
   "headline": "ComfyUI v0.36.0 released with new model blueprints and partner node updates",
   "sources": [
@@ -1994,5 +1921,75 @@
    "high-level"
   ],
   "at": "2026-10-05T23:45:08.123314+00:00"
+ },
+ "89178cc786": {
+  "headline": "SAG-AFTRA TV animation contract with AI guardrails goes to member vote",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "animation",
+   "changes",
+   "contract",
+   "contractually",
+   "goes",
+   "guardrails",
+   "member",
+   "permitted",
+   "productions.",
+   "sag-aftra",
+   "union",
+   "vote"
+  ],
+  "at": "2026-10-06T22:16:50.355998+00:00"
+ },
+ "979fbaf6bd": {
+  "headline": "Dark Slope acquires Pixomondo's virtual production LED volume assets",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "acquires",
+   "assets",
+   "dark",
+   "equipment",
+   "landing",
+   "led",
+   "pixomondo",
+   "post-closure.",
+   "production",
+   "signals",
+   "slope",
+   "stages",
+   "usable",
+   "virtual"
+  ],
+  "at": "2026-10-06T22:16:50.356017+00:00"
+ },
+ "c78c899ffc": {
+  "headline": "LOFTAPPS to show generative AI production system LOFT at VIEW 2026",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "conference.",
+   "generative",
+   "glance",
+   "loft",
+   "loftapps",
+   "only",
+   "production",
+   "show",
+   "specifics",
+   "surface",
+   "system",
+   "technical",
+   "view",
+   "worth"
+  ],
+  "at": "2026-10-06T22:16:50.356029+00:00"
  }
 }

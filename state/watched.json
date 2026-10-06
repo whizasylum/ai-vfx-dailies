@@ -3170,6 +3170,69 @@
     "transferable_craft": 8.0
    },
    "delivered_at": "2026-10-05T23:45:10.704755+00:00"
+  },
+  "fYmlAZB7u6o": {
+   "title": "$2,200 in Claude Tokens: Is This AI Game Worth It?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/fYmlAZB7u6o",
+   "at": "2026-10-06T22:16:49.704536+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
+  },
+  "Wi3r0hzuqoo": {
+   "title": "How Does Claude Code Build a Whole Game? 10 Agents, Zero Code From Me",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/Wi3r0hzuqoo",
+   "at": "2026-10-06T22:16:49.801243+00:00",
+   "duration_s": 60,
+   "published": false,
+   "reason_if_low": "under 90s (60s)"
+  },
+  "MyhtuRLaZe4": {
+   "title": "What Can Claude Max Build in 36 Hours? A Full MMO RPG Game",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/MyhtuRLaZe4",
+   "at": "2026-10-06T22:16:49.892445+00:00",
+   "duration_s": 19,
+   "published": false,
+   "reason_if_low": "under 90s (19s)"
+  },
+  "WLHkKvbpm1Q": {
+   "title": "Faster & Better: Nano Banana 2.1 is Live #higgsfield #ai",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/WLHkKvbpm1Q",
+   "at": "2026-10-06T22:16:49.987387+00:00",
+   "duration_s": 14,
+   "published": false,
+   "reason_if_low": "under 90s (14s)"
+  },
+  "U7UP0Eq_Mm0": {
+   "title": "One Take, Three Camera Angles | Higgsfield + ChatGPT Tutorial",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/U7UP0Eq_Mm0",
+   "at": "2026-10-06T22:16:50.127204+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "l5BvSCfu7jQ": {
+   "title": "How To Change Anything in Your Videos with AI #ai #higgsfield #editinghacks",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/l5BvSCfu7jQ",
+   "at": "2026-10-06T22:16:50.253549+00:00",
+   "duration_s": 27,
+   "published": false,
+   "reason_if_low": "under 90s (27s)"
+  },
+  "zephnQwGbBE": {
+   "title": "Higgsfield Ads Studio in ChatGPT | Try It for Free",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/zephnQwGbBE",
+   "at": "2026-10-06T22:16:50.351520+00:00",
+   "duration_s": 76,
+   "published": false,
+   "reason_if_low": "under 90s (76s)"
   }
  },
  "quota": {

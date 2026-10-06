@@ -1,0 +1,59 @@
+{
+  "verdict": "A quiet day: mostly arXiv research chaff, SEO-farmed Luma listicles, and VFX trade-press fluff, with one real union/legal update and one notable tooling acquisition.",
+  "stories": [
+    {
+      "headline": "SAG-AFTRA TV animation contract with AI guardrails goes to member vote",
+      "body": "SAG-AFTRA's Executive Committee unanimously approved a four-year TV animation agreement including 3% annual raises, expanded AI guardrails, and higher streaming residuals. Member voting closes October 29. This follows the pattern of IATSE-style contract wins that directly affect what AI-assisted work is permitted on union productions and under what consent and compensation terms.",
+      "why": "Changes what AI use is contractually permitted on union animation productions.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/sag-aftra-tv-animation-contract-goes-member-vote",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/1017570-sag-aftra-reaches-deal-animation-contracts_0_0_2_0_0_0_0.jpg?itok=lOKlT9ff"
+    },
+    {
+      "headline": "Dark Slope acquires Pixomondo's virtual production LED volume assets",
+      "body": "Toronto studio Dark Slope, known for LED volume work on The Boys and Heated Rivalry, has acquired virtual production equipment built for several Star Trek series. The deal comes six months after Sony closed Pixomondo's VFX operation. This consolidates existing LED volume hardware into a studio with a working virtual production pipeline rather than new tech.",
+      "why": "Signals where usable virtual-production stages and equipment are landing post-closure.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/dark-slope-acquires-pixomondos-virtual-production-assets",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/darkslope1-1280.jpg?itok=qA1bo9K2"
+    },
+    {
+      "headline": "LOFTAPPS to show generative AI production system LOFT at VIEW 2026",
+      "body": "Berkeley-based LOFTAPPS will give the European premiere of its LOFT generative AI production software at VIEW Conference in Turin, October 12-16, alongside a panel with Phil Tippett previewing his Mad God sequel. Details on LOFT's actual capabilities, licensing, or integration are not given in the announcement; this is a vendor-supplied conference teaser.",
+      "why": "Worth a glance only if LOFT's technical specifics surface at the conference.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/loftapps-debut-loft-software-and-peek-phil-tippetts-mad-god-sequel-view-2026",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/image_20from_20_e2_80_9cmad_20god_e2_80_9d_20sequel_20produced_20with_20the_20loft_20os-1280.jpg?itok=dYotB4iM"
+    }
+  ],
+  "usage": {
+    "input_tokens": 13542,
+    "output_tokens": 789
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
