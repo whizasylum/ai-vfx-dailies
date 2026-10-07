@@ -3233,10 +3233,337 @@
    "duration_s": 76,
    "published": false,
    "reason_if_low": "under 90s (76s)"
+  },
+  "2MzCkYrvDaI": {
+   "title": "I turned myself into a pig with AI [Free & Local VFX Tutorial]",
+   "channel": "Mickmumpitz",
+   "url": "https://www.youtube.com/watch?v=2MzCkYrvDaI",
+   "at": "2026-10-07T22:40:45.268126+00:00",
+   "duration_s": 690,
+   "topic_relevance": 9.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "2MzCkYrvDaI",
+    "channel": "Mickmumpitz",
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Node-based workflow orchestration for AI video generation."
+     },
+     {
+      "name": "MiniMax-H3",
+      "used_for": "Primary video model for video-to-video performance capture and inpainting."
+     },
+     {
+      "name": "KREA 2",
+      "used_for": "Generating character sheets with varied emotions to provide visual consistency references."
+     },
+     {
+      "name": "SAM (Segment Anything Model)",
+      "used_for": "Automated masking within the pipeline to isolate heads, bodies, or equipment."
+     },
+     {
+      "name": "H3-Upscaler",
+      "used_for": "Increasing output resolution to 2K within the ComfyUI workflow."
+     }
+    ],
+    "whats_new": "The demonstration of MiniMax-H3's ability to handle multiple conditioning inputs (original video performance, character reference sheets, audio, and timed prompt cues) in a single pass to perform high-fidelity character replacement.",
+    "whats_transferable": [
+     "Timed Emotion Cues: Embedding timestamps directly into text prompts to synchronize AI-generated expressions with the source video performance.",
+     "Character Sheet Conditioning: Using a grid of character views/emotions as a reference image to maintain identity across video frames.",
+     "Inpainting for Plate Preservation: Restricting the AI model to a specific mask to keep the original background and body movements intact while swapping only the head.",
+     "SAM-to-Video-Pipeline: Integrating Segment Anything Model to automatically generate masks for complex objects (like head-mounted camera rigs) for removal."
+    ],
+    "pipeline_notes": "This workflow functions as a high-end neural rendering pass. In a USD/Houdini pipeline, it would sit post-animation/lighting as a 2D replacement tool or be used in early pre-viz for realistic performance evaluation without full 3D rigging. It bridges the gap between 2D plate editing and 3D character integration.",
+    "visual_quality_notes": "Significant improvement over previous models in temporal stability. The upscaler adds fine detail to textures (scales/fur). However, some 'floating' head issues persist if the mask isn't meticulously tuned or the character scale isn't addressed in the prompt.",
+    "category": "workflow",
+    "topic_relevance": 9.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Comprehensive guide to local AI performance capture using the MiniMax-H3 video model and ComfyUI.",
+     "Demonstrates character-to-character replacement using multi-view character sheets for consistent visual identity.",
+     "Explains a 'timed prompting' technique where specific timecodes in the prompt trigger changes in the AI's emotional output.",
+     "Compares single-camera vs. dual-camera (head-cam) performance capture, concluding that the AI's internal logic often renders the second camera redundant for gaze direction.",
+     "Includes a workflow for automated masking of production gear and head-rigs to ensure clean character integration."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I turned myself into a pig with AI [Free & Local VFX Tutorial]",
+    "body": "The demonstration of MiniMax-H3's ability to handle multiple conditioning inputs (original video performance, character reference sheets, audio, and timed prompt cues) in a single pass to perform high-fidelity character replacement.",
+    "why": "This workflow functions as a high-end neural rendering pass. In a USD/Houdini pipeline, it would sit post-animation/lighting as a 2D replacement tool or be used in early pre-viz for realistic performance evaluation without full 3D rigging. It bridges the gap between 2D plate editing and 3D character integration.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Mickmumpitz",
+      "url": "https://www.youtube.com/watch?v=2MzCkYrvDaI",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/2MzCkYrvDaI/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Node-based workflow orchestration for AI video generation."
+     },
+     {
+      "name": "MiniMax-H3",
+      "used_for": "Primary video model for video-to-video performance capture and inpainting."
+     },
+     {
+      "name": "KREA 2",
+      "used_for": "Generating character sheets with varied emotions to provide visual consistency references."
+     },
+     {
+      "name": "SAM (Segment Anything Model)",
+      "used_for": "Automated masking within the pipeline to isolate heads, bodies, or equipment."
+     },
+     {
+      "name": "H3-Upscaler",
+      "used_for": "Increasing output resolution to 2K within the ComfyUI workflow."
+     }
+    ],
+    "whats_transferable": [
+     "Timed Emotion Cues: Embedding timestamps directly into text prompts to synchronize AI-generated expressions with the source video performance.",
+     "Character Sheet Conditioning: Using a grid of character views/emotions as a reference image to maintain identity across video frames.",
+     "Inpainting for Plate Preservation: Restricting the AI model to a specific mask to keep the original background and body movements intact while swapping only the head.",
+     "SAM-to-Video-Pipeline: Integrating Segment Anything Model to automatically generate masks for complex objects (like head-mounted camera rigs) for removal."
+    ],
+    "topic_relevance": 9.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-10-07T22:43:38.829534+00:00"
+  },
+  "h-s2TjWqEpA": {
+   "title": "Ukraine War God\u2019s Eye View - 4.5 Years of Satellite Fire Detections",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/h-s2TjWqEpA",
+   "at": "2026-10-07T22:41:29.102594+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
+  },
+  "X_Hq2zAh4oc": {
+   "title": "Can GPT-6.1 Sol Create a Scary Horror Game?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=X_Hq2zAh4oc",
+   "at": "2026-10-07T22:42:04.322173+00:00",
+   "duration_s": 920,
+   "topic_relevance": 4.0,
+   "transferable_craft": 3.0,
+   "category": "industry",
+   "published": false,
+   "reason_if_low": "The video is a speculative concept or satirical piece featuring non-existent software (GPT-6.1). While it mentions real tools like Higgsfield and Tripo, the orchestration workflow is fictionalized for a 'what-if' narrative, making the specific results and benchmarks impossible to replicate in a real production environment today.",
+   "assessment": {
+    "video_id": "X_Hq2zAh4oc",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield",
+      "used_for": "Blender plugin for prompt-based 3D model and character animation generation"
+     },
+     {
+      "name": "Tripo P2",
+      "used_for": "AI generation of character meshes from reference sheets"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Main DCC for asset staging and hosting the Higgsfield plugin"
+     },
+     {
+      "name": "Unity",
+      "used_for": "Target game engine for asset integration and volumetric lighting"
+     },
+     {
+      "name": "fal.ai",
+      "used_for": "Generating materials, sound layers, and music assets"
+     }
+    ],
+    "whats_new": "A conceptual demonstration of agent-led game development using speculative 'GPT-6.1 Astra' and 'Sol' models, combined with the real-world Higgsfield API for 3D generation.",
+    "whats_transferable": [
+     "Use of Higgsfield's Blender plugin to generate rigged character animations from prompts",
+     "Workflow for generating watertight character meshes using Tripo P2",
+     "Integrating AI-generated audio and material layers via the fal.ai API into a standard DCC/Engine pipeline"
+    ],
+    "pipeline_notes": "The video demonstrates a 'black box' agentic workflow where an LLM coordinates multiple asset-gen APIs. For a USD/Houdini pipeline, the craft value is limited by the lack of direct mesh-topology control and the reliance on Unity-specific integration for the final result.",
+    "visual_quality_notes": "The resulting assets are of 'indie game' or mobile quality; meshes lack high-frequency detail, and animations generated by AI remain jittery or physically inaccurate compared to hand-authored VFX standards.",
+    "category": "industry",
+    "topic_relevance": 4.0,
+    "transferable_craft": 3.0,
+    "reason_if_low": "The video is a speculative concept or satirical piece featuring non-existent software (GPT-6.1). While it mentions real tools like Higgsfield and Tripo, the orchestration workflow is fictionalized for a 'what-if' narrative, making the specific results and benchmarks impossible to replicate in a real production environment today.",
+    "summary_bullets": [
+     "Showcases a speculative 'future' workflow where high-tier AI agents (GPT-6 concept) orchestrate a complete game build.",
+     "Highlights the Higgsfield Blender plugin for generating 3D assets and character animations via text and image prompts.",
+     "Compares the efficiency of reasoning-heavy models (Claude 3.5) vs. speculative high-speed agents for complex task recovery.",
+     "Details the use of Tripo P2 and fal.ai for automated character and environment asset creation.",
+     "Concludes that current agentic workflows for 3D are still prone to significant mesh errors and high token costs for subpar visual results."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "Gk5WdLh7th4": {
+   "title": "AI Built a Full MMORPG in 36 Hours: Complete AI Game Development Run",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/Gk5WdLh7th4",
+   "at": "2026-10-07T22:43:13.409109+00:00",
+   "duration_s": 19,
+   "published": false,
+   "reason_if_low": "under 90s (19s)"
+  },
+  "pKUSkcZWdfk": {
+   "title": "Is this the fastest way to scale ad creatives?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/pKUSkcZWdfk",
+   "at": "2026-10-07T22:43:13.558395+00:00",
+   "duration_s": 63,
+   "published": false,
+   "reason_if_low": "under 90s (63s)"
+  },
+  "aXPrQw1gfj8": {
+   "title": "Why you only need one camera for your videos #contentcreation #ai",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/aXPrQw1gfj8",
+   "at": "2026-10-07T22:43:13.682010+00:00",
+   "duration_s": 27,
+   "published": false,
+   "reason_if_low": "under 90s (27s)"
+  },
+  "aRIV7AUxRQA": {
+   "title": "ChatGPT Can Do WHAT Now? \ud83e\udd2f #chatgpt #tech",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/aRIV7AUxRQA",
+   "at": "2026-10-07T22:43:13.846855+00:00",
+   "duration_s": 23,
+   "published": false,
+   "reason_if_low": "under 90s (23s)"
+  },
+  "kFKpcCHkuPI": {
+   "title": "3-Step Workflow To Master AI Realism (Full Tutorial)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=kFKpcCHkuPI",
+   "at": "2026-10-07T22:43:13.981787+00:00",
+   "duration_s": 1023,
+   "topic_relevance": 8.0,
+   "transferable_craft": 9.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "kFKpcCHkuPI",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Cinema Studio 4",
+      "used_for": "Project and asset organization"
+     },
+     {
+      "name": "Soul Cinema",
+      "used_for": "Character and location generation from prompts"
+     },
+     {
+      "name": "SeeDream 5.0 Pro",
+      "used_for": "Image-to-image editing for visual consistency and texture refinement"
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Video generation with timed prompts and camera movement"
+     },
+     {
+      "name": "Claude",
+      "used_for": "Prompt engineering and blocking script generation"
+     }
+    ],
+    "whats_new": "Higgsfield SeeDream 5.0 Pro and Seedance 2.5 release, focusing on cinematic consistency through 'blocking maps' and location-anchored prompting.",
+    "whats_transferable": [
+     "Creation of 3-panel character sheets (close-up, front, back) to lock actor appearance",
+     "Top-down blocking diagrams mapped to prompts to control spatial character placement",
+     "Use of specific background 'anchors' (skylights, lamps) to maintain continuity across reverse angles",
+     "Employing 'character-back wipes' to hide temporal discontinuities between AI video cuts"
+    ],
+    "pipeline_notes": "Currently a proprietary, web-hosted ecosystem. While it doesn't ingest USD directly, the method of using schematic blocking maps to drive prompt-spatial awareness is highly applicable to any multi-character generative workflow.",
+    "visual_quality_notes": "Displays high temporal stability for short clips, though SeeDream 5.0 Pro is specifically used to address the 'over-smoothed' look common in AI skin by re-introducing texture.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 9.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Outlines a full production workflow from character sheet creation to final pack-shot generation.",
+     "Introduces 'Location Anchors'\u2014defining static background landmarks to stabilize geometry when switching camera perspectives.",
+     "Demonstrates how to use a hand-drawn or schematic 'Blocking Map' to assign character positions in the prompt space.",
+     "Shows practical use of Claude for generating 'timed prompts'\u2014specific instructions that change at defined second marks in the generation.",
+     "Provides a real-world cost analysis in 'credits' for generating a 30-second commercial with multiple takes."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "3-Step Workflow To Master AI Realism (Full Tutorial)",
+    "body": "Higgsfield SeeDream 5.0 Pro and Seedance 2.5 release, focusing on cinematic consistency through 'blocking maps' and location-anchored prompting.",
+    "why": "Currently a proprietary, web-hosted ecosystem. While it doesn't ingest USD directly, the method of using schematic blocking maps to drive prompt-spatial awareness is highly applicable to any multi-character generative workflow.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=kFKpcCHkuPI",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/kFKpcCHkuPI/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Cinema Studio 4",
+      "used_for": "Project and asset organization"
+     },
+     {
+      "name": "Soul Cinema",
+      "used_for": "Character and location generation from prompts"
+     },
+     {
+      "name": "SeeDream 5.0 Pro",
+      "used_for": "Image-to-image editing for visual consistency and texture refinement"
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Video generation with timed prompts and camera movement"
+     },
+     {
+      "name": "Claude",
+      "used_for": "Prompt engineering and blocking script generation"
+     }
+    ],
+    "whats_transferable": [
+     "Creation of 3-panel character sheets (close-up, front, back) to lock actor appearance",
+     "Top-down blocking diagrams mapped to prompts to control spatial character placement",
+     "Use of specific background 'anchors' (skylights, lamps) to maintain continuity across reverse angles",
+     "Employing 'character-back wipes' to hide temporal discontinuities between AI video cuts"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 9.0
+   },
+   "delivered_at": "2026-10-07T22:43:38.829555+00:00"
+  },
+  "UlBDRHLAfUY": {
+   "title": "Change Your Look with AI in 3 Steps | Higgsfield Tutorial",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/UlBDRHLAfUY",
+   "at": "2026-10-07T22:43:35.627789+00:00",
+   "duration_s": 38,
+   "published": false,
+   "reason_if_low": "under 90s (38s)"
   }
  },
  "quota": {
-  "date": "2026-10-05",
-  "minutes": 48.516666666666666
+  "date": "2026-10-07",
+  "minutes": 89.1
  }
 }

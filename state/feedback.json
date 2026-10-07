@@ -988,6 +988,95 @@
    "issue_ids": [
     40
    ]
+  },
+  {
+   "story_id": "6d42158a37",
+   "at": "2026-10-07T22:35:31.640416+00:00",
+   "vote": 1,
+   "headline": "Modeler 26.3 for Houdini reworks subdivision workflow for Houdini 22",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "before",
+    "compatibility",
+    "h22",
+    "houdini",
+    "modeler",
+    "modeling",
+    "need",
+    "reworks",
+    "subdivision",
+    "toolkit",
+    "upgrading.",
+    "users",
+    "workflow"
+   ],
+   "via": "page",
+   "issue_ids": [
+    45
+   ]
+  },
+  {
+   "story_id": "1d7912e535",
+   "at": "2026-10-07T22:35:31.640440+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 motion enhancer released on Hugging Face under Apache 2.0",
+   "sources": [
+    "HF image-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "apache",
+    "diffusers",
+    "enhancer",
+    "face",
+    "friction.",
+    "hugging",
+    "legal",
+    "licence",
+    "mean",
+    "minimax-h3",
+    "motion",
+    "permissive",
+    "pipelines",
+    "production"
+   ],
+   "via": "page",
+   "issue_ids": [
+    44
+   ]
+  },
+  {
+   "story_id": "5f3adf76cc",
+   "at": "2026-10-07T22:35:31.640448+00:00",
+   "vote": 1,
+   "headline": "ComfyUI 0.39.0 adds MiniMax-H3 VAE support and higher quality default video encoding",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "already",
+    "comfyui",
+    "default",
+    "direct",
+    "encoding",
+    "higher",
+    "minimax-h3",
+    "path",
+    "pipelines.",
+    "production",
+    "quality",
+    "running",
+    "studios",
+    "support"
+   ],
+   "via": "page",
+   "issue_ids": [
+    43
+   ]
   }
  ]
 }

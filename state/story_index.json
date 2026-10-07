@@ -1,118 +1,4 @@
 {
- "c634ff943f": {
-  "headline": "ComfyUI v0.36.0 released with new model blueprints and partner node updates",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "blueprints",
-   "comfyui",
-   "fixes.",
-   "node",
-   "partner",
-   "pick",
-   "pipelines",
-   "running",
-   "should",
-   "studios",
-   "v0.36.0",
-   "vram"
-  ],
-  "at": "2026-09-16T20:51:08.984557+00:00"
- },
- "e246306113": {
-  "headline": "NVIDIA ships Cosmos3-Super-Image2Video on Hugging Face",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "before",
-   "client",
-   "cosmos3-super-image2video",
-   "face",
-   "hugging",
-   "licence",
-   "nvidia",
-   "standard-permissive",
-   "terms",
-   "touching",
-   "verify",
-   "work."
-  ],
-  "at": "2026-09-16T20:51:08.984589+00:00"
- },
- "5ab3f45206": {
-  "headline": "Free Maya toolset KeyFlow adds animation review tool",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "addition",
-   "animation",
-   "free",
-   "keyflow",
-   "maya",
-   "no-cost",
-   "quick",
-   "review",
-   "toolkit",
-   "toolset",
-   "trial.",
-   "worth"
-  ],
-  "at": "2026-09-16T20:51:08.984601+00:00"
- },
- "b0133a126e": {
-  "headline": "Lightstorm Vision acquires Outsyders, folding ML stereo conversion into native 3D pipeline",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "acquires",
-   "conversion",
-   "folding",
-   "in-house",
-   "lightstorm",
-   "ml-based",
-   "moving",
-   "native",
-   "outsyders",
-   "owned",
-   "pipeline",
-   "pipeline.",
-   "signals",
-   "stereo"
-  ],
-  "at": "2026-09-16T20:51:08.984613+00:00"
- },
- "ea563b0a14": {
-  "headline": "texLab plugin packs PBR maps natively inside UE5 preview",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "b",
-  "terms": [
-   "adapt",
-   "conventions.",
-   "extensible",
-   "inside",
-   "json",
-   "maps",
-   "means",
-   "natively",
-   "packs",
-   "pbr",
-   "plugin",
-   "preview",
-   "schema",
-   "studio-specific"
-  ],
-  "at": "2026-09-16T20:51:08.984622+00:00"
- },
  "146e0e85d2": {
   "headline": "MiniMax-H3 video model gets a ComfyUI-native community fork with LoRA and FLF support",
   "sources": [
@@ -1991,5 +1877,101 @@
    "worth"
   ],
   "at": "2026-10-06T22:16:50.356029+00:00"
+ },
+ "befffe6086": {
+  "headline": "Enscape adds real-time rendering plugin workflow guide for Revit BIM users",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "a",
+  "terms": [
+   "alongside",
+   "bim",
+   "enscape",
+   "ever",
+   "guide",
+   "plugin",
+   "real-time",
+   "reference",
+   "rendering",
+   "revit",
+   "studio",
+   "touches",
+   "useful",
+   "users"
+  ],
+  "at": "2026-10-07T22:43:36.478728+00:00"
+ },
+ "a83c950a76": {
+  "headline": "Flow Studio adds a 3D Editor for staging characters, CG worlds and cameras",
+  "sources": [
+   "befores & afters"
+  ],
+  "channel": "r",
+  "terms": [
+   "act",
+   "already",
+   "cameras",
+   "characters",
+   "detail",
+   "editor",
+   "flow",
+   "glance",
+   "pipeline",
+   "staging",
+   "studio",
+   "technical",
+   "worlds",
+   "worth"
+  ],
+  "at": "2026-10-07T22:43:36.478764+00:00"
+ },
+ "6d1399bcc2": {
+  "headline": "I turned myself into a pig with AI [Free & Local VFX Tutorial]",
+  "sources": [
+   "Mickmumpitz"
+  ],
+  "channel": "a",
+  "terms": [
+   "between",
+   "bridges",
+   "character",
+   "early",
+   "editing",
+   "evaluation",
+   "free",
+   "full",
+   "functions",
+   "gap",
+   "high-end",
+   "houdini",
+   "integration.",
+   "lighting"
+  ],
+  "at": "2026-10-07T22:43:36.478792+00:00"
+ },
+ "0aaa3b6b71": {
+  "headline": "3-Step Workflow To Master AI Realism (Full Tutorial)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "any",
+   "applicable",
+   "awareness",
+   "blocking",
+   "currently",
+   "directly",
+   "doesn",
+   "drive",
+   "ecosystem.",
+   "full",
+   "generative",
+   "highly",
+   "ingest",
+   "maps"
+  ],
+  "at": "2026-10-07T22:43:36.478812+00:00"
  }
 }

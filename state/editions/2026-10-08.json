@@ -1,0 +1,137 @@
+{
+  "verdict": "A thin day: mostly arXiv research chaff and studio-of-the-week press releases, with one real production tool item (Enscape for Revit) and little else that changes what to do this week.",
+  "stories": [
+    {
+      "headline": "Enscape adds real-time rendering plugin workflow guide for Revit BIM users",
+      "body": "Chaos published a workflow guide for Enscape running as a live plugin inside Revit, covering what to configure before client walkthroughs and how the integration behaves during a design review. This is adjacent to VFX work but relevant where studios touch BIM/AEC visualization pipelines or use Enscape-adjacent real-time tools. No new version or licence change mentioned, just workflow documentation from Chaos.",
+      "why": "Useful reference if the studio ever touches real-time BIM visualization work alongside VFX.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/enscape-for-revit",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/Screenshot%202026-10-07%20at%2014.32.51.png"
+    },
+    {
+      "headline": "Flow Studio adds a 3D Editor for staging characters, CG worlds and cameras",
+      "body": "befores & afters covered a new 3D Editor feature in Flow Studio that lets users stage scenes with characters, CG environments and controllable cameras, described as a director's-seat tool. Details are thin, this reads as a vendor feature announcement rather than a technical breakdown, and it's unclear what engine or export path underlies it.",
+      "why": "Worth a glance if Flow Studio is already in the pipeline, but no technical detail to act on yet.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "befores & afters",
+          "url": "https://beforesandafters.com/2026/10/07/step-into-the-directors-seat-with-3d-editor-in-flow-studio",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "I turned myself into a pig with AI [Free & Local VFX Tutorial]",
+      "body": "The demonstration of MiniMax-H3's ability to handle multiple conditioning inputs (original video performance, character reference sheets, audio, and timed prompt cues) in a single pass to perform high-fidelity character replacement.",
+      "why": "This workflow functions as a high-end neural rendering pass. In a USD/Houdini pipeline, it would sit post-animation/lighting as a 2D replacement tool or be used in early pre-viz for realistic performance evaluation without full 3D rigging. It bridges the gap between 2D plate editing and 3D character integration.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Mickmumpitz",
+          "url": "https://www.youtube.com/watch?v=2MzCkYrvDaI",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/2MzCkYrvDaI/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ComfyUI",
+          "used_for": "Node-based workflow orchestration for AI video generation."
+        },
+        {
+          "name": "MiniMax-H3",
+          "used_for": "Primary video model for video-to-video performance capture and inpainting."
+        },
+        {
+          "name": "KREA 2",
+          "used_for": "Generating character sheets with varied emotions to provide visual consistency references."
+        },
+        {
+          "name": "SAM (Segment Anything Model)",
+          "used_for": "Automated masking within the pipeline to isolate heads, bodies, or equipment."
+        },
+        {
+          "name": "H3-Upscaler",
+          "used_for": "Increasing output resolution to 2K within the ComfyUI workflow."
+        }
+      ],
+      "whats_transferable": [
+        "Timed Emotion Cues: Embedding timestamps directly into text prompts to synchronize AI-generated expressions with the source video performance.",
+        "Character Sheet Conditioning: Using a grid of character views/emotions as a reference image to maintain identity across video frames.",
+        "Inpainting for Plate Preservation: Restricting the AI model to a specific mask to keep the original background and body movements intact while swapping only the head.",
+        "SAM-to-Video-Pipeline: Integrating Segment Anything Model to automatically generate masks for complex objects (like head-mounted camera rigs) for removal."
+      ],
+      "topic_relevance": 9.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "3-Step Workflow To Master AI Realism (Full Tutorial)",
+      "body": "Higgsfield SeeDream 5.0 Pro and Seedance 2.5 release, focusing on cinematic consistency through 'blocking maps' and location-anchored prompting.",
+      "why": "Currently a proprietary, web-hosted ecosystem. While it doesn't ingest USD directly, the method of using schematic blocking maps to drive prompt-spatial awareness is highly applicable to any multi-character generative workflow.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=kFKpcCHkuPI",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/kFKpcCHkuPI/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield Cinema Studio 4",
+          "used_for": "Project and asset organization"
+        },
+        {
+          "name": "Soul Cinema",
+          "used_for": "Character and location generation from prompts"
+        },
+        {
+          "name": "SeeDream 5.0 Pro",
+          "used_for": "Image-to-image editing for visual consistency and texture refinement"
+        },
+        {
+          "name": "Seedance 2.5",
+          "used_for": "Video generation with timed prompts and camera movement"
+        },
+        {
+          "name": "Claude",
+          "used_for": "Prompt engineering and blocking script generation"
+        }
+      ],
+      "whats_transferable": [
+        "Creation of 3-panel character sheets (close-up, front, back) to lock actor appearance",
+        "Top-down blocking diagrams mapped to prompts to control spatial character placement",
+        "Use of specific background 'anchors' (skylights, lamps) to maintain continuity across reverse angles",
+        "Employing 'character-back wipes' to hide temporal discontinuities between AI video cuts"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 9.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 14211,
+    "output_tokens": 566
+  },
+  "candidate_count": 63,
+  "editorial_stories": true
+}
