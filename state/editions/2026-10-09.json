@@ -1,0 +1,91 @@
+{
+  "verdict": "A quiet day: mostly raw arXiv abstracts, studio PR and trade-press filler, with almost nothing that lands as a usable tool or pipeline-relevant release.",
+  "stories": [
+    {
+      "headline": "RizomUV 2027 ships with faster unfolding, headless mode and full UI customization",
+      "body": "Rizom-Lab released RizomUV 2027.0, a major update to the UV unwrapping and packing tool. New features include scene-level UV management, improved texture-budget tools, headless operation for pipeline automation, live updates, and full UI customization, with support across Windows, macOS and Linux. Covered independently by two outlets, both describing the same vendor release with consistent technical detail.",
+      "why": "Headless mode and scene-level UV management are directly usable in a studio batch pipeline.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/rizom-lab-releases-rizom-uv-2027-0",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/rizomuv-2027-introduces-faster-unfolding-live-updates-full-ui-customization",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41824/images/6abeca4e93c28/cover_800x800.jpg"
+    },
+    {
+      "headline": "LTX-2.5 text/image/video diffusion model updated on Hugging Face",
+      "body": "Lightricks updated its LTX-2.5-Diffusers model on Hugging Face, a gated release under a custom (non-standard) license requiring acceptance of terms. It supports text-to-video, image-to-video, video-to-video and audio-to-video/audio tasks via the diffusers library, with 46,636 downloads to date. No new capability details are given beyond the existing tag list; this is an update to an already-known model.",
+      "why": "Gated, non-permissive license limits usability on client work until terms are checked.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-Diffusers",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "I Fixed Pixal3D's Biggest Weakness (Free Local 3D AI)",
+      "body": "A specific two-step 2D-to-3D pipeline that solves the multiview consistency problem by using Qwen-Image to generate a 4-view turnaround from a single initial T-pose generation before feeding it to the 3D modeler.",
+      "why": "This workflow acts as a 'zero-cost' asset generator for background props or base meshes. In a USD/Houdini pipeline, this would reside at the concept/blocking stage. The GLB output would require conversion to USD and likely manual retopology for hero assets, but the texture baking step saves significant look-dev time for non-hero items.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "PixelArtistry",
+          "url": "https://www.youtube.com/watch?v=PpuNKVoSYB4",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/PpuNKVoSYB4/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ComfyUI",
+          "used_for": "Orchestrating the multi-stage AI image and 3D generation workflow."
+        },
+        {
+          "name": "Qwen-Image 2.1",
+          "used_for": "Generating the initial T-pose character image and expanding it into a consistent 4-view turnaround sheet."
+        },
+        {
+          "name": "Pixal3D / Trellis",
+          "used_for": "Generating 3D meshes with PBR textures from multiview image sheets."
+        },
+        {
+          "name": "GitHub",
+          "used_for": "Hosting the workflow JSON and model downloader scripts."
+        }
+      ],
+      "whats_transferable": [
+        "A structured prompt formula for 3D-ready subjects: [Subject] + [Proportions] + [Outfit & Materials] + [Pose] + [Camera & Framing] + [Lighting] + [Style] + [Clean-up] + [Background].",
+        "Method for creating consistent turnaround sheets from a single reference image using image-to-image/editing nodes.",
+        "Automated model management using batch scripts for complex local AI installations."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 14616,
+    "output_tokens": 861
+  },
+  "candidate_count": 62,
+  "editorial_stories": true
+}

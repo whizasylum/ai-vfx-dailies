@@ -3560,10 +3560,188 @@
    "duration_s": 38,
    "published": false,
    "reason_if_low": "under 90s (38s)"
+  },
+  "Wkaw03p3BrM": {
+   "title": "DeepMind's New AI Just Cracked The Code Of Life",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=Wkaw03p3BrM",
+   "at": "2026-10-08T22:48:21.896344+00:00",
+   "duration_s": 1997,
+   "topic_relevance": 1.0,
+   "transferable_craft": 1.0,
+   "category": "research",
+   "published": false,
+   "reason_if_low": "The content focuses exclusively on computational biology and genomic variation prediction, offering no methodologies or tools applicable to VFX asset creation, simulation, or rendering.",
+   "assessment": {
+    "video_id": "Wkaw03p3BrM",
+    "channel": "Two Minute Papers",
+    "tools_and_platforms": [
+     {
+      "name": "AlphaGenome",
+      "used_for": "Predicting genomic variation effects"
+     },
+     {
+      "name": "Gemini",
+      "used_for": "Physics simulation concept demonstration"
+     }
+    ],
+    "whats_new": "AlphaGenome is a machine learning model that predicts the effects of genomic variations at base-pair resolution with a 1 million base-pair context window, utilizing transfer learning between species to understand biological mechanisms.",
+    "whats_transferable": [
+     "The conceptual use of transfer learning (training on related but distinct datasets like human vs. mouse) to improve model generalization in specialized predictive tasks."
+    ],
+    "pipeline_notes": "This work is entirely outside of a USD or Houdini-based VFX pipeline. It belongs to the field of computational biology and does not interact with DCC tools or rendering workflows.",
+    "visual_quality_notes": "The video features a high-quality interview format with graphical overlays for biological data and a brief demonstration of 2D physics simulations generated via Gemini.",
+    "category": "research",
+    "topic_relevance": 1.0,
+    "transferable_craft": 1.0,
+    "reason_if_low": "The content focuses exclusively on computational biology and genomic variation prediction, offering no methodologies or tools applicable to VFX asset creation, simulation, or rendering.",
+    "summary_bullets": [
+     "Google DeepMind introduced AlphaGenome, a model for predicting the physiological impact of genetic mutations.",
+     "The model operates at high resolution (base-pair level) and considers a large neighborhood of 1 million base pairs for predictions.",
+     "AlphaGenome Atlas provides a precomputed dataset of 9 billion single-nucleotide variations, 30 times larger than the AlphaFold database.",
+     "The researchers used transfer learning between human and mouse genomes to force the model to learn general biological principles rather than mere statistical correlations.",
+     "A brief mention is made of Gemini's ability to generate simple physics simulations from text prompts for educational demonstrations."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "PpuNKVoSYB4": {
+   "title": "I Fixed Pixal3D's Biggest Weakness (Free Local 3D AI)",
+   "channel": "PixelArtistry",
+   "url": "https://www.youtube.com/watch?v=PpuNKVoSYB4",
+   "at": "2026-10-08T22:49:18.899083+00:00",
+   "duration_s": 716,
+   "topic_relevance": 8.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "PpuNKVoSYB4",
+    "channel": "PixelArtistry",
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Orchestrating the multi-stage AI image and 3D generation workflow."
+     },
+     {
+      "name": "Qwen-Image 2.1",
+      "used_for": "Generating the initial T-pose character image and expanding it into a consistent 4-view turnaround sheet."
+     },
+     {
+      "name": "Pixal3D / Trellis",
+      "used_for": "Generating 3D meshes with PBR textures from multiview image sheets."
+     },
+     {
+      "name": "GitHub",
+      "used_for": "Hosting the workflow JSON and model downloader scripts."
+     }
+    ],
+    "whats_new": "A specific two-step 2D-to-3D pipeline that solves the multiview consistency problem by using Qwen-Image to generate a 4-view turnaround from a single initial T-pose generation before feeding it to the 3D modeler.",
+    "whats_transferable": [
+     "A structured prompt formula for 3D-ready subjects: [Subject] + [Proportions] + [Outfit & Materials] + [Pose] + [Camera & Framing] + [Lighting] + [Style] + [Clean-up] + [Background].",
+     "Method for creating consistent turnaround sheets from a single reference image using image-to-image/editing nodes.",
+     "Automated model management using batch scripts for complex local AI installations."
+    ],
+    "pipeline_notes": "This workflow acts as a 'zero-cost' asset generator for background props or base meshes. In a USD/Houdini pipeline, this would reside at the concept/blocking stage. The GLB output would require conversion to USD and likely manual retopology for hero assets, but the texture baking step saves significant look-dev time for non-hero items.",
+    "visual_quality_notes": "Produces 'stylized hero-shooter' aesthetics. Quality is high for AI but shows typical artifacts around complex junctions like the neck and shoulders. Limited to 4 views (no top/bottom), which can result in less detail on the underside of assets.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Introduces a local ComfyUI workflow for turning a single text prompt into a textured 3D GLB model.",
+     "Utilizes Qwen-Image 2.1 to bridge the gap between single-view generation and the multiview requirements of local 3D AI generators.",
+     "Provides a modular prompting strategy designed to ensure AI output is suitable for 3D conversion (e.g., T-pose, orthographic views, neutral lighting).",
+     "Demonstrates the generation of both organic characters and hard-surface props (e.g., sci-fi jetpack).",
+     "Includes a GitHub repository with a downloader script to simplify the setup of required large-scale models (approx 25GB+)."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Fixed Pixal3D's Biggest Weakness (Free Local 3D AI)",
+    "body": "A specific two-step 2D-to-3D pipeline that solves the multiview consistency problem by using Qwen-Image to generate a 4-view turnaround from a single initial T-pose generation before feeding it to the 3D modeler.",
+    "why": "This workflow acts as a 'zero-cost' asset generator for background props or base meshes. In a USD/Houdini pipeline, this would reside at the concept/blocking stage. The GLB output would require conversion to USD and likely manual retopology for hero assets, but the texture baking step saves significant look-dev time for non-hero items.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "PixelArtistry",
+      "url": "https://www.youtube.com/watch?v=PpuNKVoSYB4",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/PpuNKVoSYB4/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ComfyUI",
+      "used_for": "Orchestrating the multi-stage AI image and 3D generation workflow."
+     },
+     {
+      "name": "Qwen-Image 2.1",
+      "used_for": "Generating the initial T-pose character image and expanding it into a consistent 4-view turnaround sheet."
+     },
+     {
+      "name": "Pixal3D / Trellis",
+      "used_for": "Generating 3D meshes with PBR textures from multiview image sheets."
+     },
+     {
+      "name": "GitHub",
+      "used_for": "Hosting the workflow JSON and model downloader scripts."
+     }
+    ],
+    "whats_transferable": [
+     "A structured prompt formula for 3D-ready subjects: [Subject] + [Proportions] + [Outfit & Materials] + [Pose] + [Camera & Framing] + [Lighting] + [Style] + [Clean-up] + [Background].",
+     "Method for creating consistent turnaround sheets from a single reference image using image-to-image/editing nodes.",
+     "Automated model management using batch scripts for complex local AI installations."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-10-08T22:51:01.509959+00:00"
+  },
+  "Q9ZI8FEf1-c": {
+   "title": "Claude Code Game Development: My Laptop Crashed, It Rebuilt Everything",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/Q9ZI8FEf1-c",
+   "at": "2026-10-08T22:50:00.766194+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "-LNDXx__ZT0": {
+   "title": "Introducing Higgsfield Katana | Claude Motion",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/-LNDXx__ZT0",
+   "at": "2026-10-08T22:50:00.882417+00:00",
+   "duration_s": 78,
+   "published": false,
+   "reason_if_low": "under 90s (78s)"
+  },
+  "biDzR-ExEu8": {
+   "title": "Change Your Entire Video With One Prompt",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/biDzR-ExEu8",
+   "at": "2026-10-08T22:50:21.650802+00:00",
+   "duration_s": 23,
+   "published": false,
+   "reason_if_low": "under 90s (23s)"
+  },
+  "YdZbUA0JO28": {
+   "title": "You Need to Try This AI Depth Hack #ai #shorts",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/YdZbUA0JO28",
+   "at": "2026-10-08T22:50:21.730038+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
   }
  },
  "quota": {
-  "date": "2026-10-07",
-  "minutes": 89.1
+  "date": "2026-10-08",
+  "minutes": 61.18333333333334
  }
 }

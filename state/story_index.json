@@ -1,100 +1,4 @@
 {
- "146e0e85d2": {
-  "headline": "MiniMax-H3 video model gets a ComfyUI-native community fork with LoRA and FLF support",
-  "sources": [
-   "HF text-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "actually",
-   "checks",
-   "comfyui",
-   "comfyui-native",
-   "community",
-   "controllable",
-   "could",
-   "flf",
-   "fork",
-   "licence",
-   "lora",
-   "minimax-h3",
-   "open",
-   "pipeline."
-  ],
-  "at": "2026-09-17T11:59:40.248311+00:00"
- },
- "f5b38c69fb": {
-  "headline": "Chaos previews three new features in Corona 15",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "r",
-  "terms": [
-   "act",
-   "anyone",
-   "bridging",
-   "chaos",
-   "corona",
-   "features",
-   "houdini",
-   "karma",
-   "output",
-   "previews",
-   "relevant",
-   "renderer",
-   "thin",
-   "three"
-  ],
-  "at": "2026-09-17T11:59:40.248352+00:00"
- },
- "1a19acf129": {
-  "headline": "sigmaPBR tool converts 3D scans into relightable PBR materials",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "g",
-  "terms": [
-   "conversion",
-   "converts",
-   "could",
-   "export",
-   "formats.",
-   "materials",
-   "pbr",
-   "relightable",
-   "scan-to-material",
-   "scans",
-   "shortcut",
-   "sigmapbr",
-   "texture",
-   "usable"
-  ],
-  "at": "2026-09-17T20:56:14.167793+00:00"
- },
- "c248d46204": {
-  "headline": "Flanders Scientific and Pomfort add four-channel LUT support for XMP monitors",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "a",
-  "terms": [
-   "colour",
-   "direct",
-   "flanders",
-   "four-channel",
-   "fsi",
-   "impact",
-   "lut",
-   "monitors",
-   "monitors.",
-   "multi-camera",
-   "on-set",
-   "pipeline",
-   "pomfort",
-   "productions"
-  ],
-  "at": "2026-09-17T20:56:14.167841+00:00"
- },
  "b6e69b7a84": {
   "headline": "Blender 5.3 adding native 3D Gaussian splat support",
   "sources": [
@@ -1973,5 +1877,78 @@
    "maps"
   ],
   "at": "2026-10-07T22:43:36.478812+00:00"
+ },
+ "9a762c94c2": {
+  "headline": "RizomUV 2027 ships with faster unfolding, headless mode and full UI customization",
+  "sources": [
+   "CG Channel",
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "batch",
+   "customization",
+   "directly",
+   "faster",
+   "full",
+   "headless",
+   "management",
+   "mode",
+   "pipeline.",
+   "rizomuv",
+   "scene-level",
+   "studio",
+   "unfolding",
+   "usable"
+  ],
+  "at": "2026-10-08T22:50:58.801450+00:00"
+ },
+ "99420cecf1": {
+  "headline": "LTX-2.5 text/image/video diffusion model updated on Hugging Face",
+  "sources": [
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "checked.",
+   "client",
+   "diffusion",
+   "face",
+   "gated",
+   "hugging",
+   "image",
+   "license",
+   "limits",
+   "ltx-2.5",
+   "non-permissive",
+   "terms",
+   "text",
+   "until"
+  ],
+  "at": "2026-10-08T22:50:58.801482+00:00"
+ },
+ "ecb8bab1e7": {
+  "headline": "I Fixed Pixal3D's Biggest Weakness (Free Local 3D AI)",
+  "sources": [
+   "PixelArtistry"
+  ],
+  "channel": "a",
+  "terms": [
+   "acts",
+   "asset",
+   "assets",
+   "background",
+   "baking",
+   "base",
+   "biggest",
+   "blocking",
+   "concept",
+   "conversion",
+   "fixed",
+   "free",
+   "generator",
+   "glb"
+  ],
+  "at": "2026-10-08T22:50:58.801506+00:00"
  }
 }
