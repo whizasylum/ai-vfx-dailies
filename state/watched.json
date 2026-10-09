@@ -3738,10 +3738,37 @@
    "duration_s": 44,
    "published": false,
    "reason_if_low": "under 90s (44s)"
+  },
+  "6EcfoTsldS0": {
+   "title": "Unity + Blender AI Workflow: Can AI Build a 3D City and Character on Its Own?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/6EcfoTsldS0",
+   "at": "2026-10-09T22:11:08.053560+00:00",
+   "duration_s": 27,
+   "published": false,
+   "reason_if_low": "under 90s (27s)"
+  },
+  "t5BQA2bV_nE": {
+   "title": "How Far Can AI Game Dev Go? Destruction Physics and 2,000+ Assets in 38 Hours",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/t5BQA2bV_nE",
+   "at": "2026-10-09T22:11:08.153852+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "tIP8Q_-1bTo": {
+   "title": "AI Game Development: Can AI Build a Fully Destructible City in 47 Hours?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/tIP8Q_-1bTo",
+   "at": "2026-10-09T22:11:08.247152+00:00",
+   "duration_s": 27,
+   "published": false,
+   "reason_if_low": "under 90s (27s)"
   }
  },
  "quota": {
-  "date": "2026-10-08",
-  "minutes": 61.18333333333334
+  "date": "2026-10-09",
+  "minutes": 15.966666666666665
  }
 }

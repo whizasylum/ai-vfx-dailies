@@ -1,55 +1,4 @@
 {
- "b6e69b7a84": {
-  "headline": "Blender 5.3 adding native 3D Gaussian splat support",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "r",
-  "terms": [
-   "adding",
-   "asset",
-   "blender",
-   "could",
-   "dcc",
-   "gaussian",
-   "major",
-   "native",
-   "novelty",
-   "pipeline",
-   "real",
-   "shift",
-   "splat",
-   "splats"
-  ],
-  "at": "2026-09-18T20:22:07.920431+00:00"
- },
- "2f7bfcd120": {
-  "headline": "Gaussian splatting research cluster: pruning, PBR materials, SLAM, and physics",
-  "sources": [
-   "arXiv cs.CV (generative video)",
-   "arXiv cs.CV (generative video)",
-   "arXiv cs.CV (generative video)",
-   "arXiv cs.CV (generative video)"
-  ],
-  "channel": "g",
-  "terms": [
-   "before",
-   "cluster",
-   "compaction",
-   "decomposition",
-   "follow-on",
-   "gaussian",
-   "materials",
-   "need",
-   "pbr",
-   "physics",
-   "pieces",
-   "pruning",
-   "renderer-ready.",
-   "research"
-  ],
-  "at": "2026-09-18T20:22:07.920476+00:00"
- },
  "cb1c7209b6": {
   "headline": "Creating 3D Character with AI in 1 Min vs 1 H vs 10 H",
   "sources": [
@@ -1950,5 +1899,53 @@
    "glb"
   ],
   "at": "2026-10-08T22:50:58.801506+00:00"
+ },
+ "9638c6eaa0": {
+  "headline": "Apple Studios VFX crew ratifies first IATSE contract",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "apple",
+   "bargaining",
+   "changes",
+   "conditions",
+   "contract",
+   "crew",
+   "iatse",
+   "major",
+   "ratifies",
+   "staff",
+   "studio.",
+   "studios",
+   "terms",
+   "vfx"
+  ],
+  "at": "2026-10-09T22:13:05.243344+00:00"
+ },
+ "c0aee7a2bd": {
+  "headline": "SoulX-FlashHead image-to-video model updated on Hugging Face",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "beyond",
+   "card.",
+   "client",
+   "face",
+   "glance",
+   "hugging",
+   "image-to-video",
+   "licence",
+   "only",
+   "permit",
+   "soulx-flashhead",
+   "terms",
+   "unverified",
+   "work"
+  ],
+  "at": "2026-10-09T22:13:05.243369+00:00"
  }
 }

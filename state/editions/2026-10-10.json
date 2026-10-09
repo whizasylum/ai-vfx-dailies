@@ -1,0 +1,43 @@
+{
+  "verdict": "A quiet day: mostly unreleased research papers and routine VFX breakdowns, nothing that lands as a usable tool or changes pipeline decisions this week.",
+  "stories": [
+    {
+      "headline": "Apple Studios VFX crew ratifies first IATSE contract",
+      "body": "Apple Studios' in-house VFX crew has ratified its first contract under IATSE, establishing union terms for visual effects work at Apple's production arm. This is a labor and rights development, not a technical one, but it sets precedent for how VFX work is organized at a major streamer-studio and affects staffing terms on future Apple productions.",
+      "why": "Changes bargaining terms and working conditions for VFX staff at a major studio.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/how-to-make-a-killing-union-vfx-creates-invisible-effects-and-explosive-action",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "SoulX-FlashHead image-to-video model updated on Hugging Face",
+      "body": "Soul-AILab's SoulX-FlashHead-1_3B, a Wan-based image-to-video diffusion model, received an update on Hugging Face. It uses a non-standard ('other') licence, runs via diffusers/safetensors, and has modest community traction (63 likes, ~3,300 downloads). No release notes or benchmark details were provided, so capability claims are unverified.",
+      "why": "Worth a glance only if the licence terms permit client work; unverified beyond the model card.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Soul-AILab/SoulX-FlashHead-1_3B",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 15261,
+    "output_tokens": 713
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
