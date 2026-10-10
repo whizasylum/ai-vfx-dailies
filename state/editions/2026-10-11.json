@@ -1,0 +1,162 @@
+{
+  "verdict": "A quiet day: mostly unrelated entertainment news and raw research papers with nothing deployable, so the digest is short.",
+  "stories": [
+    {
+      "headline": "Research papers on egocentric video generation and 3D world looping show no pipeline path yet",
+      "body": "Two Hugging Face papers, LEGO (exocentric-to-egocentric video generation) and OuroWorld (turning 3D scenes into looping cinemagraphs), describe new techniques but offer no code release, licence, or availability information. Both are early-stage research with no indication of inference cost, VRAM needs, or integration path into existing tools. Worth a glance if you track the research trajectory toward controllable video generation, but nothing to test or deploy this week.",
+      "why": "Signals where controllable video generation research is heading, but nothing usable yet.",
+      "channel": "g",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Hugging Face daily papers",
+          "url": "https://huggingface.co/papers/2610.12442",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Hugging Face daily papers",
+          "url": "https://huggingface.co/papers/2610.12461",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "This New Trick Can Save a Ton on AI Video Generations",
+      "body": "The introduction of Seedance 2.5 'Draft mode' which allows for 480p video generation at 25% of the cost of standard high-resolution renders, facilitating a blocking-first workflow.",
+      "why": "For a VFX TD, this mirrors a traditional layout-to-lighting pipeline. The 'Draft mode' acts as a low-res flipbook for client approval. The seed-locked high-res render is more useful than simple upscalers like Topaz because it re-computes detail based on the initial motion vectors. This fits into conceptual/pre-viz stages where AI plates are used as temporal references.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=h4MKJAJvins",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/h4MKJAJvins/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Magnific",
+          "used_for": "Cloud-based aggregator platform for running video models and high-resolution re-renders."
+        },
+        {
+          "name": "Seedance 2.5",
+          "used_for": "High-fidelity video generation with a specific 'Draft mode' for low-cost iteration."
+        },
+        {
+          "name": "MiniMax H3 Max",
+          "used_for": "Fast, low-credit video generation used for initial blocking and composition tests."
+        },
+        {
+          "name": "ChatGPT",
+          "used_for": "Generation of detailed character reference sheets to maintain visual consistency."
+        }
+      ],
+      "whats_transferable": [
+        "Tiered resolution workflow: performing all timing and blocking iterations at 480p before committing to 1080p final pixels.",
+        "Seed-locked re-rendering: using the same generation seed to transition from a low-res draft to a high-res master rather than simple post-upscaling.",
+        "Asset consistency via reference sheets: using multi-view character identity sheets (face, build, wardrobe) to anchor generative output across different shots.",
+        "Hybrid blocking: using a faster, cheaper model to refine prompts before switching to a high-fidelity model for final physics and performance."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    },
+    {
+      "headline": "God’s Eye View Just Got a Massive Upgrade",
+      "body": "The release of significant updates to the 'God's Eye View' open-source simulator, including local SDR aircraft tracking, live transit data overlays, and a 'Director Mode' for scripted camera paths and event reconstruction.",
+      "why": "Highly relevant for environment TDs and pre-viz artists. The ability to pull 3D Tiles and satellite change-detection data is directly applicable to digital twin construction or terrain workflows in Houdini. The data fusion approach can be mimicked for internal intelligence-agency style UI/UX for production.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Bilawal Sidhu",
+          "url": "https://www.youtube.com/watch?v=g3toZwkrQQE",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/g3toZwkrQQE/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "CesiumJS",
+          "used_for": "Geospatial 3D engine for web visualization"
+        },
+        {
+          "name": "Google 3D Tiles",
+          "used_for": "Streaming high-fidelity 3D environment assets"
+        },
+        {
+          "name": "NASA FIRMS",
+          "used_for": "Real-time fire and thermal anomaly data"
+        },
+        {
+          "name": "Sentinel-2 / Landsat 8/9",
+          "used_for": "Source imagery for environment change detection"
+        },
+        {
+          "name": "RTL-SDR",
+          "used_for": "Hardware radio signal ingestion for tracking planes and ships"
+        }
+      ],
+      "whats_transferable": [
+        "Workflow for A/B satellite imagery comparison to generate time-based environment textures",
+        "Identification of GTFS Realtime and NASA FIRMS as accessible data streams for environment animation",
+        "JSON-based scene description format for camera scripting and annotations in geospatial space"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 5.0
+    },
+    {
+      "headline": "I Made a Ready Player One Game And Everyone Can Win $10,000",
+      "body": "Project O is an AI-native browser world that utilizes LLMs to generate 3D assets, animations, and interactive game logic in real-time based on natural language prompts.",
+      "why": "The methodology of grounding generative agents with a 'skill.md' file containing technical constraints is highly transferable to building internal Houdini or Maya tools that use LLMs to generate valid scene-assembly scripts or attribute wrangles.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=Ad-4puMB_Js",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/Ad-4puMB_Js/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Tripo 3D",
+          "used_for": "Generative mesh creation including automated rigging and texturing"
+        },
+        {
+          "name": "Higgfield",
+          "used_for": "AI generation API for 3D models and video content"
+        },
+        {
+          "name": "Claude / GPT-4",
+          "used_for": "Logic orchestration and code generation for game objects"
+        },
+        {
+          "name": "Solana",
+          "used_for": "Blockchain ledger for tracking asset ownership and provenance"
+        }
+      ],
+      "whats_transferable": [
+        "The 'skill file' grounding technique: providing LLMs with a structured markdown technical manual (APIs, bone limits, shader specs) to ensure generated output is compatible with a specific pipeline."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 4302,
+    "output_tokens": 328
+  },
+  "candidate_count": 17,
+  "editorial_stories": true
+}

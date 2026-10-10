@@ -3765,10 +3765,344 @@
    "duration_s": 27,
    "published": false,
    "reason_if_low": "under 90s (27s)"
+  },
+  "h4MKJAJvins": {
+   "title": "This New Trick Can Save a Ton on AI Video Generations",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=h4MKJAJvins",
+   "at": "2026-10-10T21:07:07.575544+00:00",
+   "duration_s": 927,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "h4MKJAJvins",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Magnific",
+      "used_for": "Cloud-based aggregator platform for running video models and high-resolution re-renders."
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "High-fidelity video generation with a specific 'Draft mode' for low-cost iteration."
+     },
+     {
+      "name": "MiniMax H3 Max",
+      "used_for": "Fast, low-credit video generation used for initial blocking and composition tests."
+     },
+     {
+      "name": "ChatGPT",
+      "used_for": "Generation of detailed character reference sheets to maintain visual consistency."
+     }
+    ],
+    "whats_new": "The introduction of Seedance 2.5 'Draft mode' which allows for 480p video generation at 25% of the cost of standard high-resolution renders, facilitating a blocking-first workflow.",
+    "whats_transferable": [
+     "Tiered resolution workflow: performing all timing and blocking iterations at 480p before committing to 1080p final pixels.",
+     "Seed-locked re-rendering: using the same generation seed to transition from a low-res draft to a high-res master rather than simple post-upscaling.",
+     "Asset consistency via reference sheets: using multi-view character identity sheets (face, build, wardrobe) to anchor generative output across different shots.",
+     "Hybrid blocking: using a faster, cheaper model to refine prompts before switching to a high-fidelity model for final physics and performance."
+    ],
+    "pipeline_notes": "For a VFX TD, this mirrors a traditional layout-to-lighting pipeline. The 'Draft mode' acts as a low-res flipbook for client approval. The seed-locked high-res render is more useful than simple upscalers like Topaz because it re-computes detail based on the initial motion vectors. This fits into conceptual/pre-viz stages where AI plates are used as temporal references.",
+    "visual_quality_notes": "Seedance 2.5 exhibits significantly better temporal consistency and physics (e.g., liquid in a glass, lip-sync) compared to MiniMax H3. The draft mode provides enough clarity for blocking, while the standard mode provides production-ready texture and lighting detail.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a 66% reduction in compute costs by leveraging tiered resolution workflows in generative video.",
+     "Compares MiniMax H3 and Seedance 2.5 for physics accuracy and character performance.",
+     "Explains how to use locked-seed re-rendering to upgrade draft quality without losing composition or timing.",
+     "Provides a methodology for maintaining character consistency across disparate generative shots using identity reference sheets."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "This New Trick Can Save a Ton on AI Video Generations",
+    "body": "The introduction of Seedance 2.5 'Draft mode' which allows for 480p video generation at 25% of the cost of standard high-resolution renders, facilitating a blocking-first workflow.",
+    "why": "For a VFX TD, this mirrors a traditional layout-to-lighting pipeline. The 'Draft mode' acts as a low-res flipbook for client approval. The seed-locked high-res render is more useful than simple upscalers like Topaz because it re-computes detail based on the initial motion vectors. This fits into conceptual/pre-viz stages where AI plates are used as temporal references.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=h4MKJAJvins",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/h4MKJAJvins/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Magnific",
+      "used_for": "Cloud-based aggregator platform for running video models and high-resolution re-renders."
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "High-fidelity video generation with a specific 'Draft mode' for low-cost iteration."
+     },
+     {
+      "name": "MiniMax H3 Max",
+      "used_for": "Fast, low-credit video generation used for initial blocking and composition tests."
+     },
+     {
+      "name": "ChatGPT",
+      "used_for": "Generation of detailed character reference sheets to maintain visual consistency."
+     }
+    ],
+    "whats_transferable": [
+     "Tiered resolution workflow: performing all timing and blocking iterations at 480p before committing to 1080p final pixels.",
+     "Seed-locked re-rendering: using the same generation seed to transition from a low-res draft to a high-res master rather than simple post-upscaling.",
+     "Asset consistency via reference sheets: using multi-view character identity sheets (face, build, wardrobe) to anchor generative output across different shots.",
+     "Hybrid blocking: using a faster, cheaper model to refine prompts before switching to a high-fidelity model for final physics and performance."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-10T21:09:21.521572+00:00"
+  },
+  "g3toZwkrQQE": {
+   "title": "God\u2019s Eye View Just Got a Massive Upgrade",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/watch?v=g3toZwkrQQE",
+   "at": "2026-10-10T21:07:38.402164+00:00",
+   "duration_s": 1518,
+   "topic_relevance": 7.0,
+   "transferable_craft": 5.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": "The video is primarily a feature tour and product demonstration. While it identifies specific actionable data sources (GTFS, NASA FIRMS), it does not provide the technical code implementation or API details required for a direct craft transfer without consulting the GitHub repository.",
+   "assessment": {
+    "video_id": "g3toZwkrQQE",
+    "channel": "Bilawal Sidhu",
+    "tools_and_platforms": [
+     {
+      "name": "CesiumJS",
+      "used_for": "Geospatial 3D engine for web visualization"
+     },
+     {
+      "name": "Google 3D Tiles",
+      "used_for": "Streaming high-fidelity 3D environment assets"
+     },
+     {
+      "name": "NASA FIRMS",
+      "used_for": "Real-time fire and thermal anomaly data"
+     },
+     {
+      "name": "Sentinel-2 / Landsat 8/9",
+      "used_for": "Source imagery for environment change detection"
+     },
+     {
+      "name": "RTL-SDR",
+      "used_for": "Hardware radio signal ingestion for tracking planes and ships"
+     }
+    ],
+    "whats_new": "The release of significant updates to the 'God's Eye View' open-source simulator, including local SDR aircraft tracking, live transit data overlays, and a 'Director Mode' for scripted camera paths and event reconstruction.",
+    "whats_transferable": [
+     "Workflow for A/B satellite imagery comparison to generate time-based environment textures",
+     "Identification of GTFS Realtime and NASA FIRMS as accessible data streams for environment animation",
+     "JSON-based scene description format for camera scripting and annotations in geospatial space"
+    ],
+    "pipeline_notes": "Highly relevant for environment TDs and pre-viz artists. The ability to pull 3D Tiles and satellite change-detection data is directly applicable to digital twin construction or terrain workflows in Houdini. The data fusion approach can be mimicked for internal intelligence-agency style UI/UX for production.",
+    "visual_quality_notes": "Features an impressive 'tactical' HUD UI. Environment quality relies on Google 3D Tiles which offer high-fidelity photogrammetry for many urban areas.",
+    "category": "tool_release",
+    "topic_relevance": 7.0,
+    "transferable_craft": 5.0,
+    "reason_if_low": "The video is primarily a feature tour and product demonstration. While it identifies specific actionable data sources (GTFS, NASA FIRMS), it does not provide the technical code implementation or API details required for a direct craft transfer without consulting the GitHub repository.",
+    "summary_bullets": [
+     "Demo of God's Eye View, an open-source platform for geospatial intelligence and environment visualization.",
+     "Showcases real-time data fusion of weather models, public transit movements (GTFS), and fire tracking.",
+     "Introduces SDR hardware integration to pipe local radio signals directly into a 3D browser-based scene.",
+     "Demonstrates 'Director Mode' for creating scripted camera sequences and 3D annotations for event reconstruction.",
+     "Highlights tools for satellite imagery change detection, useful for referencing real-world damage or development over time."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "God\u2019s Eye View Just Got a Massive Upgrade",
+    "body": "The release of significant updates to the 'God's Eye View' open-source simulator, including local SDR aircraft tracking, live transit data overlays, and a 'Director Mode' for scripted camera paths and event reconstruction.",
+    "why": "Highly relevant for environment TDs and pre-viz artists. The ability to pull 3D Tiles and satellite change-detection data is directly applicable to digital twin construction or terrain workflows in Houdini. The data fusion approach can be mimicked for internal intelligence-agency style UI/UX for production.",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Bilawal Sidhu",
+      "url": "https://www.youtube.com/watch?v=g3toZwkrQQE",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/g3toZwkrQQE/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "CesiumJS",
+      "used_for": "Geospatial 3D engine for web visualization"
+     },
+     {
+      "name": "Google 3D Tiles",
+      "used_for": "Streaming high-fidelity 3D environment assets"
+     },
+     {
+      "name": "NASA FIRMS",
+      "used_for": "Real-time fire and thermal anomaly data"
+     },
+     {
+      "name": "Sentinel-2 / Landsat 8/9",
+      "used_for": "Source imagery for environment change detection"
+     },
+     {
+      "name": "RTL-SDR",
+      "used_for": "Hardware radio signal ingestion for tracking planes and ships"
+     }
+    ],
+    "whats_transferable": [
+     "Workflow for A/B satellite imagery comparison to generate time-based environment textures",
+     "Identification of GTFS Realtime and NASA FIRMS as accessible data streams for environment animation",
+     "JSON-based scene description format for camera scripting and annotations in geospatial space"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 5.0
+   },
+   "delivered_at": "2026-10-10T21:09:21.521598+00:00"
+  },
+  "Ad-4puMB_Js": {
+   "title": "I Made a Ready Player One Game And Everyone Can Win $10,000",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=Ad-4puMB_Js",
+   "at": "2026-10-10T21:08:18.179405+00:00",
+   "duration_s": 642,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "Ad-4puMB_Js",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Tripo 3D",
+      "used_for": "Generative mesh creation including automated rigging and texturing"
+     },
+     {
+      "name": "Higgfield",
+      "used_for": "AI generation API for 3D models and video content"
+     },
+     {
+      "name": "Claude / GPT-4",
+      "used_for": "Logic orchestration and code generation for game objects"
+     },
+     {
+      "name": "Solana",
+      "used_for": "Blockchain ledger for tracking asset ownership and provenance"
+     }
+    ],
+    "whats_new": "Project O is an AI-native browser world that utilizes LLMs to generate 3D assets, animations, and interactive game logic in real-time based on natural language prompts.",
+    "whats_transferable": [
+     "The 'skill file' grounding technique: providing LLMs with a structured markdown technical manual (APIs, bone limits, shader specs) to ensure generated output is compatible with a specific pipeline."
+    ],
+    "pipeline_notes": "The methodology of grounding generative agents with a 'skill.md' file containing technical constraints is highly transferable to building internal Houdini or Maya tools that use LLMs to generate valid scene-assembly scripts or attribute wrangles.",
+    "visual_quality_notes": "Standard quality for current 3D generative APIs; meshes are suitable for background assets or rapid prototyping but often lack the topology precision required for primary hero assets in high-end VFX.",
+    "category": "tool_release",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Introduces Project O, a persistent sandbox world where players use AI agents to claim lots and generate interactive content.",
+     "Demonstrates the use of a technical 'skill file' to guide AI agents in producing assets that adhere to specific bone counts and poly limits.",
+     "Shows a complete asset generation workflow (concept to playable 3D model) in approximately 30 minutes using LLM-orchestrated tools.",
+     "Includes a $10,000 prize for an Easter Egg hunt designed to stress-test the world's generative and interactive capabilities."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Made a Ready Player One Game And Everyone Can Win $10,000",
+    "body": "Project O is an AI-native browser world that utilizes LLMs to generate 3D assets, animations, and interactive game logic in real-time based on natural language prompts.",
+    "why": "The methodology of grounding generative agents with a 'skill.md' file containing technical constraints is highly transferable to building internal Houdini or Maya tools that use LLMs to generate valid scene-assembly scripts or attribute wrangles.",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=Ad-4puMB_Js",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/Ad-4puMB_Js/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Tripo 3D",
+      "used_for": "Generative mesh creation including automated rigging and texturing"
+     },
+     {
+      "name": "Higgfield",
+      "used_for": "AI generation API for 3D models and video content"
+     },
+     {
+      "name": "Claude / GPT-4",
+      "used_for": "Logic orchestration and code generation for game objects"
+     },
+     {
+      "name": "Solana",
+      "used_for": "Blockchain ledger for tracking asset ownership and provenance"
+     }
+    ],
+    "whats_transferable": [
+     "The 'skill file' grounding technique: providing LLMs with a structured markdown technical manual (APIs, bone limits, shader specs) to ensure generated output is compatible with a specific pipeline."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-10T21:09:21.521611+00:00"
+  },
+  "e1_flwp9QMI": {
+   "title": "$1,000,000 Higgsfield Global Film Festival | Shortlist Revealed",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/e1_flwp9QMI",
+   "at": "2026-10-10T21:09:03.107122+00:00",
+   "duration_s": 148,
+   "topic_relevance": 4.0,
+   "transferable_craft": 1.0,
+   "category": "industry",
+   "published": false,
+   "reason_if_low": "The video is a promotional sizzle reel for a film festival. While it showcases diverse artistic results (2D, 3D, and live-action), it provides zero information regarding the tools, pipelines, or technical methodologies used by the creators. There is no actionable information for a VFX Technical Artist to test or adapt.",
+   "assessment": {
+    "video_id": "e1_flwp9QMI",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Host platform and AI video generation engine for the featured entries"
+     }
+    ],
+    "whats_new": "Announcement of the 'Shortlist' for the Higgsfield Global Film Festival, featuring a $1M prize fund.",
+    "whats_transferable": [
+     "None. The video is a rapid montage of various short films without any technical breakdown or method description."
+    ],
+    "pipeline_notes": "Not applicable. The video functions as a sizzle reel and does not disclose the underlying pipelines (e.g., whether entries were purely AI-generated, hybrid, or if USD/traditional tools were involved).",
+    "visual_quality_notes": "The quality varies significantly across the featured clips, ranging from high-fidelity 3D and 2D animation to live-action plates with AI-driven temporal inconsistencies and morphing artifacts common in generative video.",
+    "category": "industry",
+    "topic_relevance": 4.0,
+    "transferable_craft": 1.0,
+    "reason_if_low": "The video is a promotional sizzle reel for a film festival. While it showcases diverse artistic results (2D, 3D, and live-action), it provides zero information regarding the tools, pipelines, or technical methodologies used by the creators. There is no actionable information for a VFX Technical Artist to test or adapt.",
+    "summary_bullets": [
+     "Higgsfield AI showcases the shortlist for its Global Film Festival.",
+     "The reel features a variety of styles, including 2D anime, stylized 3D, and AI-augmented live-action.",
+     "The content is purely promotional, lacking any technical insight or workflow documentation for production use."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
   }
  },
  "quota": {
-  "date": "2026-10-09",
-  "minutes": 15.966666666666665
+  "date": "2026-10-10",
+  "minutes": 53.91666666666667
  }
 }

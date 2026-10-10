@@ -1,28 +1,4 @@
 {
- "cb1c7209b6": {
-  "headline": "Creating 3D Character with AI in 1 Min vs 1 H vs 10 H",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "aligns",
-   "approach",
-   "architecture",
-   "assets.",
-   "between",
-   "body",
-   "bridges",
-   "character",
-   "component",
-   "context",
-   "creating",
-   "different",
-   "gap",
-   "gear"
-  ],
-  "at": "2026-09-19T20:00:01.201669+00:00"
- },
  "f4dedff663": {
   "headline": "Community LoRA for MiniMax-H3 adds martial-arts action motion",
   "sources": [
@@ -1947,5 +1923,102 @@
    "work"
   ],
   "at": "2026-10-09T22:13:05.243369+00:00"
+ },
+ "b53ea79cbd": {
+  "headline": "Research papers on egocentric video generation and 3D world looping show no pipeline path yet",
+  "sources": [
+   "Hugging Face daily papers",
+   "Hugging Face daily papers"
+  ],
+  "channel": "g",
+  "terms": [
+   "controllable",
+   "egocentric",
+   "generation",
+   "heading",
+   "looping",
+   "nothing",
+   "papers",
+   "path",
+   "pipeline",
+   "research",
+   "show",
+   "signals",
+   "usable",
+   "video"
+  ],
+  "at": "2026-10-10T21:09:18.683978+00:00"
+ },
+ "dfc97cd847": {
+  "headline": "This New Trick Can Save a Ton on AI Video Generations",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "acts",
+   "approval.",
+   "based",
+   "because",
+   "client",
+   "conceptual",
+   "detail",
+   "draft",
+   "fits",
+   "flipbook",
+   "generations",
+   "high-res",
+   "initial",
+   "layout-to-lighting"
+  ],
+  "at": "2026-10-10T21:09:18.684026+00:00"
+ },
+ "60acc69cd8": {
+  "headline": "God\u2019s Eye View Just Got a Massive Upgrade",
+  "sources": [
+   "Bilawal Sidhu"
+  ],
+  "channel": "r",
+  "terms": [
+   "ability",
+   "applicable",
+   "approach",
+   "artists.",
+   "change-detection",
+   "construction",
+   "data",
+   "digital",
+   "directly",
+   "environment",
+   "eye",
+   "fusion",
+   "god",
+   "got"
+  ],
+  "at": "2026-10-10T21:09:18.684056+00:00"
+ },
+ "f2df56f048": {
+  "headline": "I Made a Ready Player One Game And Everyone Can Win $10,000",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "r",
+  "terms": [
+   "agents",
+   "attribute",
+   "building",
+   "constraints",
+   "containing",
+   "everyone",
+   "file",
+   "game",
+   "generate",
+   "generative",
+   "grounding",
+   "highly",
+   "houdini",
+   "internal"
+  ],
+  "at": "2026-10-10T21:09:18.684076+00:00"
  }
 }
