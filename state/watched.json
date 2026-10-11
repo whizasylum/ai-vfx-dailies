@@ -4099,10 +4099,196 @@
    },
    "rubric_version": 2,
    "story": null
+  },
+  "4fLVq6HJsKc": {
+   "title": "DeepSeek Solved AI\u2019s Memory Problem",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
+   "at": "2026-10-11T21:27:41.384663+00:00",
+   "duration_s": 338,
+   "topic_relevance": 3.0,
+   "transferable_craft": 4.0,
+   "category": "research",
+   "published": false,
+   "reason_if_low": "The content is an academic summary of an OCR optimization paper. While the vision-encoder architecture is technically interesting, it offers no direct application for 3D asset creation, rendering, or compositing workflows relevant to a VFX Technical Artist.",
+   "assessment": {
+    "video_id": "4fLVq6HJsKc",
+    "channel": "Two Minute Papers",
+    "tools_and_platforms": [
+     {
+      "name": "DeepSeek-OCR",
+      "used_for": "Open-source vision-language model for high-efficiency optical character recognition."
+     },
+     {
+      "name": "SAM (Segment Anything Model)",
+      "used_for": "Utilized within the encoder for local window attention in text processing."
+     },
+     {
+      "name": "CLIP",
+      "used_for": "Global vision processing to capture document-wide context."
+     },
+     {
+      "name": "VitDet",
+      "used_for": "Object detection backbone used as part of the encoder architecture."
+     }
+    ],
+    "whats_new": "DeepSeek-OCR introduces 'Context Optical Compression,' a method that renders long text as images and uses a vision encoder to squeeze the content into a small number of vision tokens. This allows AI to 'remember' vast amounts of text with significantly less compute and memory overhead than standard tokenization.",
+    "whats_transferable": [
+     "Encoder architecture for processing high-resolution visual documents using local window attention and convolutional downsampling.",
+     "Use of vision-based encoders to extract structured data from high-resolution scans without per-word tokenization."
+    ],
+    "pipeline_notes": "The methodology is primarily useful for asset management and ingest pipelines (e.g., indexing thousands of concept art pieces, storyboards, or script pages). It does not integrate with geometry or shading pipelines in USD/Houdini.",
+    "visual_quality_notes": "The model maintains high text recovery (96%+) at 10x compression. At 20x compression, visual fidelity degrades and the model relies on linguistic priors (autofill) rather than visual evidence.",
+    "category": "research",
+    "topic_relevance": 3.0,
+    "transferable_craft": 4.0,
+    "reason_if_low": "The content is an academic summary of an OCR optimization paper. While the vision-encoder architecture is technically interesting, it offers no direct application for 3D asset creation, rendering, or compositing workflows relevant to a VFX Technical Artist.",
+    "summary_bullets": [
+     "Introduces context optical compression to reduce the 'token tax' of long documents in AI memory.",
+     "Renders text as images and uses a hybrid encoder (SAM, CLIP, and VitDet) to compress text data up to 20x.",
+     "Demonstrates that a 3B parameter model can recover 96% of text from highly compressed vision tokens.",
+     "Capable of generating synthetic training data for other VLMs at speeds of 200,000+ pages per day on a single A100 GPU."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "AZKpchSaSjg": {
+   "title": "I Recreated SF Fleet Week 2026 Using God\u2019s Eye View and Plane Tracking Data",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/AZKpchSaSjg",
+   "at": "2026-10-11T21:28:04.253302+00:00",
+   "duration_s": 39,
+   "published": false,
+   "reason_if_low": "under 90s (39s)"
+  },
+  "n5WQ1kOJ7aY": {
+   "title": "\ud83d\udd34Whole Game City Created By Players - Building with AI & Chatting",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=n5WQ1kOJ7aY",
+   "at": "2026-10-11T21:28:04.374901+00:00",
+   "duration_s": 9919,
+   "published": false,
+   "reason_if_low": "over 40min cap (165min)"
+  },
+  "_bxs3pIA7bk": {
+   "title": "How I Made VFX for My Game Character With AI",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/_bxs3pIA7bk",
+   "at": "2026-10-11T21:29:00.355096+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
+  },
+  "sGsL9yCXNEg": {
+   "title": "Stop Reshooting. AI Can Change Your Camera Angle",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/sGsL9yCXNEg",
+   "at": "2026-10-11T21:29:00.491970+00:00",
+   "duration_s": 24,
+   "published": false,
+   "reason_if_low": "under 90s (24s)"
+  },
+  "rZvF_EWZoHw": {
+   "title": "How to Make $3000/Month On Clipping Videos With AI (Full Workflow)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=rZvF_EWZoHw",
+   "at": "2026-10-11T21:29:00.608626+00:00",
+   "duration_s": 805,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "rZvF_EWZoHw",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Claude 3.5 Opus",
+      "used_for": "Acting as the natural language interface for directing video editing tasks via prompts."
+     },
+     {
+      "name": "Higgsfield Katana",
+      "used_for": "Underlying AI engine for video analysis, clipping, asset generation, and rendering."
+     },
+     {
+      "name": "MCP (Model Context Protocol)",
+      "used_for": "The bridge connecting the LLM (Claude) to the specialized video processing tool (Katana)."
+     }
+    ],
+    "whats_new": "Higgsfield Katana integrates into Claude via MCP, allowing users to perform complex video editing\u2014like style transfer, beat-matching to reference videos, and automated localization\u2014using natural language prompts rather than timeline-based software.",
+    "whats_transferable": [
+     "Using reference videos as temporal and stylistic templates for AI-driven automated editing.",
+     "Prompt-based orchestration of video assets, including analysis of narrative hooks in long-form content.",
+     "Automated multi-language localization workflows that handle both translated audio and re-timed captions within a single pass."
+    ],
+    "pipeline_notes": "While a proprietary cloud-based tool, the workflow demonstrates a shift toward 'agentic editing' where an LLM manages sub-tasks like shot selection and asset generation. For a USD/Houdini pipeline, the takeaway is the use of MCP to bridge high-level intent (Claude) with specific processing nodes (Katana), which is a viable model for automating studio pipeline tools.",
+    "visual_quality_notes": "Produces high-energy short-form edits with rapid transitions and stylized graphic overlays. The generated assets are optimized for social media 'aura' edits rather than photorealistic feature VFX, but the consistency across generated sequences is notable.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Introduction of Higgsfield Katana, a tool that uses the Model Context Protocol (MCP) to let Claude 3.5 direct video editing tasks.",
+     "Demonstrates automated 'aura farming' edits and teasers created by matching source footage to the pacing and rhythm of external reference videos.",
+     "Includes features for automatic identification of 'hooks' in podcasts and films to generate viral short-form content.",
+     "Provides built-in translation capabilities for both dialogue and text-on-screen, re-rendering video for different regional audiences."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "How to Make $3000/Month On Clipping Videos With AI (Full Workflow)",
+    "body": "Higgsfield Katana integrates into Claude via MCP, allowing users to perform complex video editing\u2014like style transfer, beat-matching to reference videos, and automated localization\u2014using natural language prompts rather than timeline-based software.",
+    "why": "While a proprietary cloud-based tool, the workflow demonstrates a shift toward 'agentic editing' where an LLM manages sub-tasks like shot selection and asset generation. For a USD/Houdini pipeline, the takeaway is the use of MCP to bridge high-level intent (Claude) with specific processing nodes (Katana), which is a viable model for automating studio pipeline tools.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=rZvF_EWZoHw",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/rZvF_EWZoHw/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Claude 3.5 Opus",
+      "used_for": "Acting as the natural language interface for directing video editing tasks via prompts."
+     },
+     {
+      "name": "Higgsfield Katana",
+      "used_for": "Underlying AI engine for video analysis, clipping, asset generation, and rendering."
+     },
+     {
+      "name": "MCP (Model Context Protocol)",
+      "used_for": "The bridge connecting the LLM (Claude) to the specialized video processing tool (Katana)."
+     }
+    ],
+    "whats_transferable": [
+     "Using reference videos as temporal and stylistic templates for AI-driven automated editing.",
+     "Prompt-based orchestration of video assets, including analysis of narrative hooks in long-form content.",
+     "Automated multi-language localization workflows that handle both translated audio and re-timed captions within a single pass."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-11T21:29:34.378077+00:00"
+  },
+  "G9qWZ0mNuUo": {
+   "title": "I changed the angle, the outfit and the room from ONE clip #AIediting",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/G9qWZ0mNuUo",
+   "at": "2026-10-11T21:29:32.737434+00:00",
+   "duration_s": 22,
+   "published": false,
+   "reason_if_low": "under 90s (22s)"
   }
  },
  "quota": {
-  "date": "2026-10-10",
-  "minutes": 53.91666666666667
+  "date": "2026-10-11",
+  "minutes": 36.733333333333334
  }
 }

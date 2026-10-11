@@ -1,0 +1,49 @@
+{
+  "verdict": "1 video workflows worth a closer look.",
+  "stories": [
+    {
+      "headline": "How to Make $3000/Month On Clipping Videos With AI (Full Workflow)",
+      "body": "Higgsfield Katana integrates into Claude via MCP, allowing users to perform complex video editing—like style transfer, beat-matching to reference videos, and automated localization—using natural language prompts rather than timeline-based software.",
+      "why": "While a proprietary cloud-based tool, the workflow demonstrates a shift toward 'agentic editing' where an LLM manages sub-tasks like shot selection and asset generation. For a USD/Houdini pipeline, the takeaway is the use of MCP to bridge high-level intent (Claude) with specific processing nodes (Katana), which is a viable model for automating studio pipeline tools.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=rZvF_EWZoHw",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/rZvF_EWZoHw/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Claude 3.5 Opus",
+          "used_for": "Acting as the natural language interface for directing video editing tasks via prompts."
+        },
+        {
+          "name": "Higgsfield Katana",
+          "used_for": "Underlying AI engine for video analysis, clipping, asset generation, and rendering."
+        },
+        {
+          "name": "MCP (Model Context Protocol)",
+          "used_for": "The bridge connecting the LLM (Claude) to the specialized video processing tool (Katana)."
+        }
+      ],
+      "whats_transferable": [
+        "Using reference videos as temporal and stylistic templates for AI-driven automated editing.",
+        "Prompt-based orchestration of video assets, including analysis of narrative hooks in long-form content.",
+        "Automated multi-language localization workflows that handle both translated audio and re-timed captions within a single pass."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 1971,
+    "output_tokens": 49
+  },
+  "candidate_count": 3,
+  "editorial_stories": false
+}
