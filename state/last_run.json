@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-13T00:08:32.989728+00:00",
+  "at": "2026-10-13T22:17:28.072171+00:00",
   "ratings": {
     "total": 40,
     "up": 39,
@@ -7,21 +7,21 @@
     "sources_adjusted": 9,
     "terms_learned": 5
   },
-  "raw": 142,
-  "candidates": 44,
-  "stories": 2,
+  "raw": 149,
+  "candidates": 50,
+  "stories": 6,
   "usage": {
-    "input_tokens": 9117,
-    "output_tokens": 597
+    "input_tokens": 10128,
+    "output_tokens": 1339
   },
   "video_watch": {
-    "candidates": 1,
+    "candidates": 0,
     "watched": 0,
     "published": 0,
     "rejected": 0,
     "deferred": 0,
     "errors": 0,
-    "already_watched": 1
+    "already_watched": 0
   },
   "problems": [
     {
@@ -30,14 +30,9 @@
       "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
     },
     {
-      "source": "arXiv cs.GR",
-      "type": "arxiv",
-      "error": "The read operation timed out"
-    },
-    {
-      "source": "arXiv cs.CV (generative video)",
-      "type": "arxiv",
-      "error": "The read operation timed out"
+      "source": "Two Minute Papers",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
     },
     {
       "source": "Corridor Crew",
@@ -46,6 +41,11 @@
     },
     {
       "source": "Curious Refuge",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Mickmumpitz",
       "type": "youtube",
       "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
     },

@@ -1,0 +1,107 @@
+{
+  "verdict": "A thin day: one real ComfyUI pipeline update, a couple of niche Houdini/Blender tool drops, and a lot of arXiv noise and trade filler that doesn't change anything this week.",
+  "stories": [
+    {
+      "headline": "ComfyUI 0.40.0 adds 3D export API and camera-info node",
+      "body": "ComfyUI 0.40.0 ships a local asset export API, standardized 3D model output reporting from 3D nodes, and a new CreateCameraInfo node with a CameraInfoState widget input, plus video metadata extraction and attention container support across more models. These are infrastructure additions aimed at 3D and camera-aware workflows rather than a single flashy feature.",
+      "why": "Camera-info and 3D-export nodes point toward tighter USD/DCC-style pipeline integration inside ComfyUI.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.40.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Fibric, a curve-based garment creation tool for Houdini, released",
+      "body": "Fibric is a new Houdini tool for building clothing and garments from curves, covered by 80 Level with no pricing or licence detail given beyond the announcement. It targets procedural garment construction directly inside Houdini rather than as an external DCC import.",
+      "why": "A native Houdini garment workflow is directly relevant to character/cloth pipeline work.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/new-curve-based-clothing-garment-creation-houdini-tool-released",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41921/images/6ac93e4fcecfe/cover_800x800.jpg"
+    },
+    {
+      "headline": "Apex claims better video generation quality from fewer latent tokens",
+      "body": "Lightricks/LTX published a technical blog on Apex, a method for extreme latent compression that it says improves generation quality while reducing token count for video generation. No benchmarks against competing models or open-weight release details are given in the summary; this is a vendor technical post, not an independent evaluation.",
+      "why": "Lower token counts mean cheaper, faster video generation if the claims hold up under testing.",
+      "channel": "g",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/apex-extreme-latent-compression",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "LTX Trainer gets a simplified setup workflow",
+      "body": "Lightricks published a blog post describing an easier way to use the LTX Trainer, the fine-tuning tool for its LTX-Video models. No specifics on what changed technically, new VRAM requirements, or licence terms are given beyond the announcement itself.",
+      "why": "Lowers the barrier for studios already fine-tuning LTX-Video models on their own footage.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/an-easier-way-to-use-ltx-trainer-is-here",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Reallusion and Escape.AI partner on AI video distribution",
+      "body": "Reallusion is partnering with John Gaeta's Escape.AI (Neo Cinema platform) to connect Reallusion's 3D character ecosystem to AI video generation and distribution. Described only at a strategic-alliance level with no technical integration details, pricing, or availability date given.",
+      "why": "Worth watching if it later surfaces as an actual iClone-to-video pipeline, but nothing shippable yet.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "befores & afters",
+          "url": "https://beforesandafters.com/2026/10/14/reallusion-and-escape-ai-partner-to-solve-ai-video-bottlenecks-and-expand-distribution",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Netflix reportedly cutting about 5% of staff",
+      "body": "Netflix is reportedly trimming roughly 5% of its roughly 16,000 full-time staff, with up to 800 cuts possibly landing this week, as the stock sits 46% below its summer 2025 high. Reported via unnamed sources, not confirmed by Netflix directly.",
+      "why": "A major streamer contracting affects commissioning volume and VFX vendor pipelines downstream.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/netflix-reportedly-trimming-5-staff-growth-slows",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081528-netflix-logo11.jpg?itok=GJASCZ1r"
+    }
+  ],
+  "usage": {
+    "input_tokens": 10128,
+    "output_tokens": 1339
+  },
+  "candidate_count": 50,
+  "editorial_stories": true
+}

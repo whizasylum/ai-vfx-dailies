@@ -1,52 +1,4 @@
 {
- "64817f3b88": {
-  "headline": "IBC 2026 show floor report covers Gaussian splatting and scene-aware camera tracking",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "b",
-  "terms": [
-   "actively",
-   "broadcast",
-   "building.",
-   "camera",
-   "covers",
-   "demos",
-   "floor",
-   "gaussian",
-   "ibc",
-   "moving",
-   "production",
-   "report",
-   "research",
-   "scene-aware"
-  ],
-  "at": "2026-09-22T20:49:44.987464+00:00"
- },
- "1806a0e742": {
-  "headline": "A24's V/H/S: SCP spinoff reportedly made without contacting SCP Foundation's creators",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "b",
-  "terms": [
-   "a24",
-   "adapting",
-   "ambiguous",
-   "contacting",
-   "creates",
-   "creators",
-   "example",
-   "exposure",
-   "fan-created",
-   "foundation",
-   "it.",
-   "live",
-   "made",
-   "open-licence"
-  ],
-  "at": "2026-09-22T20:49:44.987497+00:00"
- },
  "07d3071e00": {
   "headline": "Wan 2.2 Animate 14B repackaged for ComfyUI passes 5.7M downloads",
   "sources": [
@@ -1925,5 +1877,148 @@
    "shooter"
   ],
   "at": "2026-10-13T00:08:30.197027+00:00"
+ },
+ "d5925b076d": {
+  "headline": "ComfyUI 0.40.0 adds 3D export API and camera-info node",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "api",
+   "camera-info",
+   "comfyui",
+   "comfyui.",
+   "d-export",
+   "dcc-style",
+   "export",
+   "inside",
+   "integration",
+   "node",
+   "nodes",
+   "pipeline",
+   "point",
+   "tighter"
+  ],
+  "at": "2026-10-13T22:17:25.034542+00:00"
+ },
+ "22a49b8189": {
+  "headline": "Fibric, a curve-based garment creation tool for Houdini, released",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "character",
+   "cloth",
+   "creation",
+   "curve-based",
+   "directly",
+   "fibric",
+   "garment",
+   "houdini",
+   "native",
+   "pipeline",
+   "relevant",
+   "work.",
+   "workflow"
+  ],
+  "at": "2026-10-13T22:17:25.034569+00:00"
+ },
+ "4c0e2e58a3": {
+  "headline": "Apex claims better video generation quality from fewer latent tokens",
+  "sources": [
+   "Lightricks / LTX"
+  ],
+  "channel": "g",
+  "terms": [
+   "apex",
+   "better",
+   "cheaper",
+   "claims",
+   "counts",
+   "faster",
+   "fewer",
+   "generation",
+   "hold",
+   "latent",
+   "lower",
+   "mean",
+   "quality",
+   "testing."
+  ],
+  "at": "2026-10-13T22:17:25.034586+00:00"
+ },
+ "70c1ad8043": {
+  "headline": "LTX Trainer gets a simplified setup workflow",
+  "sources": [
+   "Lightricks / LTX"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "barrier",
+   "fine-tuning",
+   "footage.",
+   "lowers",
+   "ltx",
+   "ltx-video",
+   "own",
+   "setup",
+   "simplified",
+   "studios",
+   "their",
+   "trainer",
+   "workflow"
+  ],
+  "at": "2026-10-13T22:17:25.034598+00:00"
+ },
+ "a137c39fce": {
+  "headline": "Reallusion and Escape.AI partner on AI video distribution",
+  "sources": [
+   "befores & afters"
+  ],
+  "channel": "b",
+  "terms": [
+   "actual",
+   "distribution",
+   "escape.ai",
+   "iclone-to-video",
+   "later",
+   "nothing",
+   "partner",
+   "pipeline",
+   "reallusion",
+   "shippable",
+   "surfaces",
+   "video",
+   "watching",
+   "worth"
+  ],
+  "at": "2026-10-13T22:17:25.034609+00:00"
+ },
+ "afb6365476": {
+  "headline": "Netflix reportedly cutting about 5% of staff",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "about",
+   "affects",
+   "commissioning",
+   "contracting",
+   "cutting",
+   "downstream.",
+   "major",
+   "netflix",
+   "pipelines",
+   "reportedly",
+   "staff",
+   "streamer",
+   "vendor",
+   "vfx"
+  ],
+  "at": "2026-10-13T22:17:25.034620+00:00"
  }
 }
