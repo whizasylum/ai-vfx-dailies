@@ -1077,6 +1077,66 @@
    "issue_ids": [
     43
    ]
+  },
+  {
+   "story_id": "dfc97cd847",
+   "at": "2026-10-13T00:04:56.096210+00:00",
+   "vote": 1,
+   "headline": "This New Trick Can Save a Ton on AI Video Generations",
+   "sources": [
+    "Curious Refuge"
+   ],
+   "channel": "a",
+   "terms": [
+    "acts",
+    "approval.",
+    "based",
+    "because",
+    "client",
+    "conceptual",
+    "detail",
+    "draft",
+    "fits",
+    "flipbook",
+    "generations",
+    "high-res",
+    "initial",
+    "layout-to-lighting"
+   ],
+   "via": "page",
+   "issue_ids": [
+    47
+   ]
+  },
+  {
+   "story_id": "9638c6eaa0",
+   "at": "2026-10-13T00:04:56.096239+00:00",
+   "vote": 1,
+   "headline": "Apple Studios VFX crew ratifies first IATSE contract",
+   "sources": [
+    "Art of VFX"
+   ],
+   "channel": "b",
+   "terms": [
+    "apple",
+    "bargaining",
+    "changes",
+    "conditions",
+    "contract",
+    "crew",
+    "iatse",
+    "major",
+    "ratifies",
+    "staff",
+    "studio.",
+    "studios",
+    "terms",
+    "vfx"
+   ],
+   "via": "page",
+   "issue_ids": [
+    46
+   ]
   }
  ]
 }

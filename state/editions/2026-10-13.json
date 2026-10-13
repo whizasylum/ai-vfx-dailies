@@ -1,0 +1,43 @@
+{
+  "verdict": "A quiet day: mostly research-paper noise and entertainment press releases, with one real pipeline-relevant item (World Creator 4) and one legitimate industry-practice story (Epic's AI-first mandate) worth a glance.",
+  "stories": [
+    {
+      "headline": "World Creator 4 terrain generator adds full-planet generation",
+      "body": "BiteTheBytes released World Creator 4, a major update to its terrain generation tool, adding the ability to build complete planets alongside its existing large-scale terrain workflows. CG Channel reports new features and a release date but full technical specifics (licensing, DCC integration, pricing) weren't detailed in this report. Worth checking the vendor page if terrain/world-building is part of your environment pipeline.",
+      "why": "A terrain tool upgrade could affect environment generation workflows feeding Houdini or USD pipelines.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/bitethebytes-unveils-world-creator-4",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Epic Games reportedly tells staff to go 'AI-first', delays unannounced shooter",
+      "body": "Epic Games has told developers to adopt an 'AI-first' production model covering both code and artwork, and reportedly delayed an unannounced Marvel/Star Wars shooter as a result, according to 80 Level. Details on tooling, scope, or which AI systems are involved aren't specified. This is a studio-direction story, not a tool release, and the claims are unverified beyond the single report.",
+      "why": "Signals how a major studio may restructure production roles around AI, worth watching for pipeline precedent.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/epic-games-tells-devs-no-more-hand-written-code-to-adopt-an-ai-first-production-model",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/41935/images/6acd63152fb47/cover_800x800.png"
+    }
+  ],
+  "usage": {
+    "input_tokens": 9117,
+    "output_tokens": 597
+  },
+  "candidate_count": 44,
+  "editorial_stories": true
+}
