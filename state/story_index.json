@@ -1,76 +1,4 @@
 {
- "07d3071e00": {
-  "headline": "Wan 2.2 Animate 14B repackaged for ComfyUI passes 5.7M downloads",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "animate",
-   "comfyui",
-   "deployment.",
-   "direct",
-   "downloads",
-   "image-to-video",
-   "licensed",
-   "open",
-   "packaged",
-   "passes",
-   "permissively",
-   "repackaged",
-   "wan"
-  ],
-  "at": "2026-09-23T21:10:46.724395+00:00"
- },
- "58c60ae1be": {
-  "headline": "LTX-2.5 IC-LoRA adds head-swap video-to-video capability",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "capability",
-   "extending",
-   "face",
-   "head-swap",
-   "ic-lora",
-   "ltx",
-   "ltx-2.5",
-   "mechanism",
-   "pipeline.",
-   "relevant",
-   "shows",
-   "video-to-video",
-   "workflows"
-  ],
-  "at": "2026-09-23T21:10:46.724445+00:00"
- },
- "762e86c2a7": {
-  "headline": "Yes, Jev Is Insane, But There's A Catch",
-  "sources": [
-   "Two Minute Papers"
-  ],
-  "channel": "g",
-  "terms": [
-   "agents",
-   "assembly",
-   "asset",
-   "automated",
-   "autonomous",
-   "catch",
-   "checks",
-   "could",
-   "discrete",
-   "during",
-   "environment.",
-   "fast",
-   "handle",
-   "high-volume"
-  ],
-  "at": "2026-09-23T21:10:46.724466+00:00"
- },
  "729a3176ae": {
   "headline": "Adobe completes acquisition of Topaz Labs",
   "sources": [
@@ -2020,5 +1948,166 @@
    "vfx"
   ],
   "at": "2026-10-13T22:17:25.034620+00:00"
+ },
+ "30622d3b18": {
+  "headline": "mGear 5.4, free open-source Maya rigging toolset, adds unified facial rigging",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "deployable",
+   "directly",
+   "facial",
+   "free",
+   "maya",
+   "mgear",
+   "open-source",
+   "pipeline",
+   "rigging",
+   "today.",
+   "toolset",
+   "unified"
+  ],
+  "at": "2026-10-14T21:20:06.399233+00:00"
+ },
+ "8e323a026b": {
+  "headline": "Chaos publishes framework for using AI rendering in studio client pitches",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "b",
+  "terms": [
+   "addresses",
+   "already",
+   "chaos",
+   "client",
+   "framework",
+   "governance",
+   "pitches",
+   "pitches.",
+   "publishes",
+   "rendering",
+   "renders",
+   "risk",
+   "slipping",
+   "studio"
+  ],
+  "at": "2026-10-14T21:20:06.399260+00:00"
+ },
+ "e996ee79b9": {
+  "headline": "Hungry: Magic Dust VFX breakdown shows CG hippo creature and water sim work on limited budget",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "boutique-scale",
+   "breakdown",
+   "budget",
+   "case",
+   "concrete",
+   "creature",
+   "dust",
+   "fluid",
+   "hippo",
+   "hungry",
+   "limited",
+   "magic",
+   "production.",
+   "relevant"
+  ],
+  "at": "2026-10-14T21:20:06.399276+00:00"
+ },
+ "e4696ec440": {
+  "headline": "This Hack Fixes Your AI Character Consistency Issues (Pro Workflow)",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "asset",
+   "before",
+   "character",
+   "consistency",
+   "creation",
+   "fixes",
+   "formal",
+   "generative",
+   "hack",
+   "hand-authoring.",
+   "integrates",
+   "issues",
+   "pre-viz",
+   "pro"
+  ],
+  "at": "2026-10-14T21:20:06.399289+00:00"
+ },
+ "db5b8382f7": {
+  "headline": "You Can Now Create Modular 3D Character Without Blender",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "ai-generated",
+   "asset",
+   "blender",
+   "character",
+   "cleanup",
+   "create",
+   "current",
+   "direct",
+   "fbx",
+   "generation.",
+   "glb",
+   "intersections",
+   "lack",
+   "limits"
+  ],
+  "at": "2026-10-14T21:20:06.399306+00:00"
+ },
+ "a0d1d079fb": {
+  "headline": "Wait for the end of this AI office day \ud83d\udc80 #funny #ai #ytshorts",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "r",
+  "terms": [
+   "day",
+   "end",
+   "funny",
+   "integration.",
+   "office",
+   "plate-only",
+   "standalone",
+   "wait",
+   "ytshorts"
+  ],
+  "at": "2026-10-14T21:20:06.399321+00:00"
+ },
+ "bf05674ce3": {
+  "headline": "22 FREE Halloween Ideas with Nano Banana 2.1 (Google Flow)",
+  "sources": [
+   "AI2Play (pixaroma)"
+  ],
+  "channel": "a",
+  "terms": [
+   "asset",
+   "banana",
+   "closed",
+   "dcc",
+   "direct",
+   "flow",
+   "free",
+   "generation",
+   "google",
+   "halloween",
+   "ideas",
+   "integration",
+   "manual",
+   "nano"
+  ],
+  "at": "2026-10-14T21:20:06.399333+00:00"
  }
 }

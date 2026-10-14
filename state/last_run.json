@@ -1,26 +1,26 @@
 {
-  "at": "2026-10-13T22:17:28.072171+00:00",
+  "at": "2026-10-14T21:20:09.272060+00:00",
   "ratings": {
-    "total": 40,
-    "up": 39,
+    "total": 42,
+    "up": 41,
     "down": 1,
     "sources_adjusted": 9,
-    "terms_learned": 5
+    "terms_learned": 6
   },
-  "raw": 149,
-  "candidates": 50,
-  "stories": 6,
+  "raw": 182,
+  "candidates": 60,
+  "stories": 7,
   "usage": {
-    "input_tokens": 10128,
-    "output_tokens": 1339
+    "input_tokens": 11557,
+    "output_tokens": 900
   },
   "video_watch": {
-    "candidates": 0,
-    "watched": 0,
-    "published": 0,
-    "rejected": 0,
+    "candidates": 15,
+    "watched": 4,
+    "published": 4,
+    "rejected": 10,
     "deferred": 0,
-    "errors": 0,
+    "errors": 1,
     "already_watched": 0
   },
   "problems": [
@@ -30,59 +30,14 @@
       "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
     },
     {
-      "source": "Two Minute Papers",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+      "source": "arXiv cs.GR",
+      "type": "arxiv",
+      "error": "Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406"
     },
     {
-      "source": "Corridor Crew",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Curious Refuge",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Mickmumpitz",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Nerdy Rodent",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Bilawal Sidhu",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Entagma",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "PixelArtistry",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Stefan 3D AI",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "Higgsfield AI",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
-    },
-    {
-      "source": "AI2Play (pixaroma)",
-      "type": "youtube",
-      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+      "source": "arXiv cs.CV (generative video)",
+      "type": "arxiv",
+      "error": "Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+%28abs%3A%22video+generation%22+OR+abs%3A%22video+diffusion%22+OR+abs%3A%22neural+rendering%22+OR+abs%3A%22gaussian+splatting%22%29&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406"
     }
   ]
 }

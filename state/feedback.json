@@ -1137,6 +1137,65 @@
    "issue_ids": [
     46
    ]
+  },
+  {
+   "story_id": "d5925b076d",
+   "at": "2026-10-14T21:14:37.528681+00:00",
+   "vote": 1,
+   "headline": "ComfyUI 0.40.0 adds 3D export API and camera-info node",
+   "sources": [
+    "ComfyUI"
+   ],
+   "channel": "r",
+   "terms": [
+    "api",
+    "camera-info",
+    "comfyui",
+    "comfyui.",
+    "d-export",
+    "dcc-style",
+    "export",
+    "inside",
+    "integration",
+    "node",
+    "nodes",
+    "pipeline",
+    "point",
+    "tighter"
+   ],
+   "via": "page",
+   "issue_ids": [
+    49
+   ]
+  },
+  {
+   "story_id": "22a49b8189",
+   "at": "2026-10-14T21:14:37.528702+00:00",
+   "vote": 1,
+   "headline": "Fibric, a curve-based garment creation tool for Houdini, released",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "r",
+   "terms": [
+    "character",
+    "cloth",
+    "creation",
+    "curve-based",
+    "directly",
+    "fibric",
+    "garment",
+    "houdini",
+    "native",
+    "pipeline",
+    "relevant",
+    "work.",
+    "workflow"
+   ],
+   "via": "page",
+   "issue_ids": [
+    48
+   ]
   }
  ]
 }

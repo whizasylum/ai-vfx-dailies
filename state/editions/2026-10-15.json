@@ -1,0 +1,202 @@
+{
+  "verdict": "A quiet day: one real tool release (mGear 5.4), a few VFX breakdowns worth a glance, and a lot of SEO listicle noise and unrelated ML papers that don't belong in this digest.",
+  "stories": [
+    {
+      "headline": "mGear 5.4, free open-source Maya rigging toolset, adds unified facial rigging",
+      "body": "mGear 5.4 is out with unified facial rigging, a redesigned Anim Picker, and 3D onion skinning added to the open-source rigging framework for Maya. It remains free and open source, making it one of the few actively maintained community rigging toolsets usable directly on client work without licence concerns.",
+      "why": "Free rigging toolset update is directly deployable in a Maya pipeline today.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/get-free-maya-character-rigging-toolset-mgear-5-4",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Chaos publishes framework for using AI rendering in studio client pitches",
+      "body": "Chaos published an operational guide aimed at studio leads on where AI-generated visuals fit in architecture/vis pitch workflows, covering ownership and governance failures that can damage client trust. It's a process piece, not a tool release, but relevant for studios already using AI rendering in early-stage client communication.",
+      "why": "Addresses governance risk for studios already slipping AI renders into client pitches.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/ai-rendering-tools-architecture-pitches",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/Veras-lounge-modern-design.jpg"
+    },
+    {
+      "headline": "Hungry: Magic Dust VFX breakdown shows CG hippo creature and water sim work on limited budget",
+      "body": "UK studio Magic Dust VFX published a breakdown of its creature and water simulation work for the feature Hungry, detailing how it built and animated a CG hippopotamus with constrained resources. Useful as a case study in doing complex creature/fluid FX on a smaller-budget show rather than a big-tentpole pipeline.",
+      "why": "Concrete small-studio creature/fluid FX case study, relevant to boutique-scale production.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/hungry-how-magic-dust-vfx-brought-a-cg-hippopotamus-to-life",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "This Hack Fixes Your AI Character Consistency Issues (Pro Workflow)",
+      "body": "A comparison between 'headless' character sheets and robust multiview sheets for maintaining identity in AI video.",
+      "why": "Integrates into pre-viz or rapid prototyping stages for generative asset creation before formal hand-authoring.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=ktEt4n9VlF4",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/ktEt4n9VlF4/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Seedance 2.5",
+          "used_for": "AI video generation and character consistency testing"
+        },
+        {
+          "name": "Magnific",
+          "used_for": "AI video platform and image aggregator"
+        },
+        {
+          "name": "ChatGPT 2.5",
+          "used_for": "Generating multi-view character reference sheets"
+        }
+      ],
+      "whats_transferable": [
+        "The headless character sheet technique to isolate facial resolution from body identity",
+        "Using multi-angle character grids as temporal references for generative models"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    },
+    {
+      "headline": "You Can Now Create Modular 3D Character Without Blender",
+      "body": "The release of AI-driven modular character decomposition, allowing a single reference image to be split into discrete, animatable 3D parts automatically.",
+      "why": "Useful for rapid pre-vis asset generation. Current lack of direct USD support limits it to FBX/GLB workflows. Reconciling AI-generated UVs and intersections still requires manual cleanup in Blender/ZBrush.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=CFA8Pfw6OIs",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/CFA8Pfw6OIs/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "AssetHub Part Composer",
+          "used_for": "Automated 3D modular part segmentation from 2D images."
+        },
+        {
+          "name": "Tripo P2/P3.1",
+          "used_for": "Mesh generation and retopology."
+        },
+        {
+          "name": "Claude Agent",
+          "used_for": "Orchestrating Blender scripts for automated asset assembly."
+        }
+      ],
+      "whats_transferable": [
+        "Using LLM agents to generate and execute Blender Python scripts for rapid assembly of disparate asset parts.",
+        "Modular segmentation of 2D concept art for downstream 3D modeling workflows."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    },
+    {
+      "headline": "Wait for the end of this AI office day 💀 #funny #ai #ytshorts",
+      "body": "Character consistency in generative narratives.",
+      "why": "Standalone tool; plate-only integration.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/shorts/u73Y2_ZHaWU",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/u73Y2_ZHaWU/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield AI",
+          "used_for": "Video generation"
+        }
+      ],
+      "whats_transferable": [
+        "Consistent character benchmarking."
+      ],
+      "topic_relevance": 6.0,
+      "transferable_craft": 3.0
+    },
+    {
+      "headline": "22 FREE Halloween Ideas with Nano Banana 2.1 (Google Flow)",
+      "body": "Nano Banana 2.1 fine-tune specialized for high-detail text legibility and artistic coherence.",
+      "why": "Closed web-based generation requires manual asset transfer; no direct USD/DCC integration provided.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "AI2Play (pixaroma)",
+          "url": "https://www.youtube.com/watch?v=uWJHwCTFRek",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/uWJHwCTFRek/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Google Flow",
+          "used_for": "Diffusion generation interface"
+        },
+        {
+          "name": "Nano Banana 2.1",
+          "used_for": "Image and text generation model"
+        },
+        {
+          "name": "MiniMax H3",
+          "used_for": "Temporal motion generation"
+        },
+        {
+          "name": "RunningHub",
+          "used_for": "Cloud-based node hosting"
+        }
+      ],
+      "whats_transferable": [
+        "Coherence maintenance via reference image nodes",
+        "Quoted syntax for predictable text rendering in diffusion models"
+      ],
+      "topic_relevance": 6.0,
+      "transferable_craft": 4.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 11557,
+    "output_tokens": 900
+  },
+  "candidate_count": 64,
+  "editorial_stories": true
+}
