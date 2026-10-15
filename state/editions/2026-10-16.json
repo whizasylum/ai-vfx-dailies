@@ -1,0 +1,149 @@
+{
+  "verdict": "A quiet day: a couple of real tool releases (Mari 8, Cinema 4D) and model drops worth noting, but most of the feed is research noise or non-production industry chatter.",
+  "stories": [
+    {
+      "headline": "Foundry releases Mari 8.0 with Tri-Planar Tiled and Hex Tile nodes",
+      "body": "Foundry shipped Mari 8.0, the latest major version of its 3D texture painting software. New features include Tri-Planar Tiled and Hex Tile nodes for texturing, plus support for A/B comparisons when evaluating texture variants. This is a direct production tool update for texture artists already in a Mari-based pipeline.",
+      "why": "Direct workflow upgrade for texture artists on any studio already licensing Mari.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/foundry-releases-mari-8-0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Cinema 4D 2027.0 adds new object scattering system and liquid sim updates",
+      "body": "Maxon released Cinema 4D 2027.0 with a reworked object scattering system and updates to its liquid simulation toolset. The release note is light on deep technical specifics but confirms availability as the current shipping version for C4D users in motion graphics and look-dev pipelines that touch Houdini or Redshift workflows.",
+      "why": "Relevant if the studio bridges C4D and Houdini assets or uses C4D for motion graphics.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/maxon-releases-cinema-4d-2027-0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "FLUX 3 Image Klein ships as 5.6B parameter open-weights model with ComfyUI support",
+      "body": "Black Forest Labs released FLUX 3 Image Klein, a 5.6B parameter open-weights model for text-to-image, multi-reference generation and image editing, claiming leading blind-evaluation results (vendor claim, unverified). A ComfyUI-ready checkpoint is already on Hugging Face, gated behind a terms acceptance, using the diffusion-single-file format.",
+      "why": "Open-weight image model with day-one ComfyUI support is worth testing for concept and texture work.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://bfl.ai/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F2gpum2i6%2Fproduction%2F9897ba388ea1b943dcd51e3ba0bce3070f79d507-2400x1260.png&w=3840&q=75"
+    },
+    {
+      "headline": "MiniMax-H3 video LoRA and uncensored LTX-2.5 build circulate on Hugging Face",
+      "body": "Two community releases: TaoMate-H3-3Step, a 3-step LoRA built on MiniMaxAI/MiniMax-H3 for image-to-video (26k downloads), and an uncensored FP8/GGUF quantization of LTX-2.5 built on Lightricks' LTX-2.3 (100k downloads). Licences are murky: 'other' and 'unknown' respectively, so neither is cleared for client work without checking terms.\n      ",
+      "why": "Fast-moving open video model ecosystem worth watching, but licence terms block client use until clarified.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Netflix cuts roughly 1,000 jobs, 6% of workforce, in largest layoffs since 2022",
+      "body": "Netflix co-CEOs Ted Sarandos and Greg Peters announced cuts of about 1,000 roles, hitting product, tech, legal and HR hardest. This is the streamer's biggest reduction since 2022. No animation or VFX production units are named as directly affected, but the cuts touch departments that shape vendor and pipeline decisions.",
+      "why": "Signals tightening studio budgets that can affect vendor contracts and outsourced pipeline work.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/netflix-cuts-6-workforce-largest-layoffs-2022",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081539-1081528-netflix-logo11.jpg?itok=70CFjGqV"
+    },
+    {
+      "headline": "Google Is Back - Can Gemini 4 Argon Finally Do 3D Design & Blender?",
+      "body": "Introduction of Google's Gemini 4 Argon model with a focus on its capability to generate complex 3D scenes and procedural scripts for Blender.",
+      "why": "The demonstrated workflow suggests a bridge where LLMs generate the scene description or code, which is then executed in a DCC like Blender. For a USD pipeline, this would involve the LLM outputting USD snippets or Python scripts for USD composition.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=2hqcDHnyJaY",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/2hqcDHnyJaY/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Gemini 4 Argon",
+          "used_for": "AI reasoning and code generation"
+        },
+        {
+          "name": "Claude Opus 5.5",
+          "used_for": "Comparative AI reasoning and code generation"
+        },
+        {
+          "name": "Higgsfield.ai",
+          "used_for": "AI video and 3D generation platform"
+        },
+        {
+          "name": "Antigravity CLI",
+          "used_for": "Command-line interface for AI model interaction"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Final scene assembly and rendering"
+        }
+      ],
+      "whats_transferable": [
+        "Using LLMs to generate structured 3D scenes from 2D floor plans",
+        "Comparing cost-per-token versus quality for automated asset generation tasks",
+        "Integrating AI reasoning agents via CLI into local DCC environments"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 14361,
+    "output_tokens": 1424
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}

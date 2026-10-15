@@ -4706,10 +4706,159 @@
     "transferable_craft": 4.0
    },
    "delivered_at": "2026-10-14T21:20:09.267603+00:00"
+  },
+  "nfuZCLUgnIM": {
+   "title": "Most Overkill Way To Track Your Bus (God\u2019s Eye View Public Transit Mode)",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/nfuZCLUgnIM",
+   "at": "2026-10-15T20:55:51.723747+00:00",
+   "duration_s": 38,
+   "published": false,
+   "reason_if_low": "under 90s (38s)"
+  },
+  "LwLu4kSexdQ": {
+   "title": "Claude Code Game: What Will Your Agent Build in My Free 3D World?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/LwLu4kSexdQ",
+   "at": "2026-10-15T20:55:51.861166+00:00",
+   "duration_s": 41,
+   "published": false,
+   "reason_if_low": "under 90s (41s)"
+  },
+  "2hqcDHnyJaY": {
+   "title": "Google Is Back - Can Gemini 4 Argon Finally Do 3D Design & Blender?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=2hqcDHnyJaY",
+   "at": "2026-10-15T20:55:51.955517+00:00",
+   "duration_s": 1141,
+   "topic_relevance": 7.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "2hqcDHnyJaY",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Gemini 4 Argon",
+      "used_for": "AI reasoning and code generation"
+     },
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Comparative AI reasoning and code generation"
+     },
+     {
+      "name": "Higgsfield.ai",
+      "used_for": "AI video and 3D generation platform"
+     },
+     {
+      "name": "Antigravity CLI",
+      "used_for": "Command-line interface for AI model interaction"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Final scene assembly and rendering"
+     }
+    ],
+    "whats_new": "Introduction of Google's Gemini 4 Argon model with a focus on its capability to generate complex 3D scenes and procedural scripts for Blender.",
+    "whats_transferable": [
+     "Using LLMs to generate structured 3D scenes from 2D floor plans",
+     "Comparing cost-per-token versus quality for automated asset generation tasks",
+     "Integrating AI reasoning agents via CLI into local DCC environments"
+    ],
+    "pipeline_notes": "The demonstrated workflow suggests a bridge where LLMs generate the scene description or code, which is then executed in a DCC like Blender. For a USD pipeline, this would involve the LLM outputting USD snippets or Python scripts for USD composition.",
+    "visual_quality_notes": "Claude Opus 5.5 consistently outperformed Gemini 4 Argon in detail, lighting, and simulation accuracy, though at a significantly higher cost. Argon results appeared simplified and often missed secondary motion or realistic shading.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Evaluated Gemini 4 Argon's performance in generating 3D architecture from blueprints.",
+     "Compared AI model efficiency in creating animated characters and VFX elements like smoke.",
+     "Analyzed the cost-benefit ratio between high-end models like Opus 5.5 and budget-friendly options like Argon.",
+     "Demonstrated integration of AI agents into a 3D production environment via CLI and plugins."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Google Is Back - Can Gemini 4 Argon Finally Do 3D Design & Blender?",
+    "body": "Introduction of Google's Gemini 4 Argon model with a focus on its capability to generate complex 3D scenes and procedural scripts for Blender.",
+    "why": "The demonstrated workflow suggests a bridge where LLMs generate the scene description or code, which is then executed in a DCC like Blender. For a USD pipeline, this would involve the LLM outputting USD snippets or Python scripts for USD composition.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=2hqcDHnyJaY",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/2hqcDHnyJaY/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Gemini 4 Argon",
+      "used_for": "AI reasoning and code generation"
+     },
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Comparative AI reasoning and code generation"
+     },
+     {
+      "name": "Higgsfield.ai",
+      "used_for": "AI video and 3D generation platform"
+     },
+     {
+      "name": "Antigravity CLI",
+      "used_for": "Command-line interface for AI model interaction"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Final scene assembly and rendering"
+     }
+    ],
+    "whats_transferable": [
+     "Using LLMs to generate structured 3D scenes from 2D floor plans",
+     "Comparing cost-per-token versus quality for automated asset generation tasks",
+     "Integrating AI reasoning agents via CLI into local DCC environments"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-15T20:56:28.123047+00:00"
+  },
+  "1ihSzKtUXd8": {
+   "title": "How Much Clippers Get Paid for 100K Views",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/1ihSzKtUXd8",
+   "at": "2026-10-15T20:56:23.962916+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "wb0HqeQu1UQ": {
+   "title": "Those Aura Edits in Your Feed Are Paid Promotions",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/wb0HqeQu1UQ",
+   "at": "2026-10-15T20:56:24.050534+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "4rjiXEgXXpw": {
+   "title": "We Asked Claude to Make a Launch Video | Higgsfield Katana",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/4rjiXEgXXpw",
+   "at": "2026-10-15T20:56:24.233379+00:00",
+   "duration_s": 43,
+   "published": false,
+   "reason_if_low": "under 90s (43s)"
   }
  },
  "quota": {
-  "date": "2026-10-14",
-  "minutes": 50.650000000000006
+  "date": "2026-10-15",
+  "minutes": 19.016666666666666
  }
 }

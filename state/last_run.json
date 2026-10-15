@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-14T21:20:09.272060+00:00",
+  "at": "2026-10-15T20:56:28.127909+00:00",
   "ratings": {
     "total": 42,
     "up": 41,
@@ -7,37 +7,27 @@
     "sources_adjusted": 9,
     "terms_learned": 6
   },
-  "raw": 182,
+  "raw": 188,
   "candidates": 60,
-  "stories": 7,
+  "stories": 6,
   "usage": {
-    "input_tokens": 11557,
-    "output_tokens": 900
+    "input_tokens": 14361,
+    "output_tokens": 1424
   },
   "video_watch": {
-    "candidates": 15,
-    "watched": 4,
-    "published": 4,
-    "rejected": 10,
+    "candidates": 13,
+    "watched": 1,
+    "published": 1,
+    "rejected": 5,
     "deferred": 0,
-    "errors": 1,
-    "already_watched": 0
+    "errors": 0,
+    "already_watched": 7
   },
   "problems": [
     {
       "source": "postPerspective",
       "type": "rss",
       "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
-    },
-    {
-      "source": "arXiv cs.GR",
-      "type": "arxiv",
-      "error": "Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406"
-    },
-    {
-      "source": "arXiv cs.CV (generative video)",
-      "type": "arxiv",
-      "error": "Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+%28abs%3A%22video+generation%22+OR+abs%3A%22video+diffusion%22+OR+abs%3A%22neural+rendering%22+OR+abs%3A%22gaussian+splatting%22%29&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406"
     }
   ]
 }

@@ -2109,5 +2109,151 @@
    "nano"
   ],
   "at": "2026-10-14T21:20:06.399333+00:00"
+ },
+ "e4a70a0130": {
+  "headline": "Foundry releases Mari 8.0 with Tri-Planar Tiled and Hex Tile nodes",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "any",
+   "artists",
+   "direct",
+   "foundry",
+   "hex",
+   "licensing",
+   "mari",
+   "mari.",
+   "nodes",
+   "studio",
+   "texture",
+   "tile",
+   "tiled"
+  ],
+  "at": "2026-10-15T20:56:25.194418+00:00"
+ },
+ "ac009111aa": {
+  "headline": "Cinema 4D 2027.0 adds new object scattering system and liquid sim updates",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "assets",
+   "bridges",
+   "c4d",
+   "cinema",
+   "graphics.",
+   "houdini",
+   "liquid",
+   "motion",
+   "object",
+   "relevant",
+   "scattering",
+   "sim",
+   "studio",
+   "system"
+  ],
+  "at": "2026-10-15T20:56:25.194446+00:00"
+ },
+ "d0a00342ca": {
+  "headline": "FLUX 3 Image Klein ships as 5.6B parameter open-weights model with ComfyUI support",
+  "sources": [
+   "Black Forest Labs",
+   "HF Black Forest Labs"
+  ],
+  "channel": "r",
+  "terms": [
+   "comfyui",
+   "concept",
+   "day-one",
+   "flux",
+   "image",
+   "klein",
+   "open-weight",
+   "open-weights",
+   "parameter",
+   "support",
+   "testing",
+   "texture",
+   "work.",
+   "worth"
+  ],
+  "at": "2026-10-15T20:56:25.194461+00:00"
+ },
+ "f52692275e": {
+  "headline": "MiniMax-H3 video LoRA and uncensored LTX-2.5 build circulate on Hugging Face",
+  "sources": [
+   "HF image-to-video",
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "block",
+   "build",
+   "circulate",
+   "clarified.",
+   "client",
+   "ecosystem",
+   "face",
+   "fast-moving",
+   "hugging",
+   "licence",
+   "lora",
+   "ltx-2.5",
+   "minimax-h3",
+   "open"
+  ],
+  "at": "2026-10-15T20:56:25.194475+00:00"
+ },
+ "f24cde3dfd": {
+  "headline": "Netflix cuts roughly 1,000 jobs, 6% of workforce, in largest layoffs since 2022",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "affect",
+   "budgets",
+   "contracts",
+   "cuts",
+   "jobs",
+   "largest",
+   "layoffs",
+   "netflix",
+   "outsourced",
+   "pipeline",
+   "roughly",
+   "signals",
+   "since",
+   "studio"
+  ],
+  "at": "2026-10-15T20:56:25.194487+00:00"
+ },
+ "6cdc4ca022": {
+  "headline": "Google Is Back - Can Gemini 4 Argon Finally Do 3D Design & Blender?",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "argon",
+   "back",
+   "blender",
+   "blender.",
+   "bridge",
+   "code",
+   "composition.",
+   "dcc",
+   "demonstrated",
+   "description",
+   "design",
+   "executed",
+   "finally",
+   "gemini"
+  ],
+  "at": "2026-10-15T20:56:25.194507+00:00"
  }
 }
