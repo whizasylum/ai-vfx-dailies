@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-15T20:56:28.127909+00:00",
+  "at": "2026-10-16T20:28:32.613673+00:00",
   "ratings": {
     "total": 42,
     "up": 41,
@@ -7,27 +7,32 @@
     "sources_adjusted": 9,
     "terms_learned": 6
   },
-  "raw": 188,
-  "candidates": 60,
-  "stories": 6,
+  "raw": 178,
+  "candidates": 50,
+  "stories": 4,
   "usage": {
-    "input_tokens": 14361,
-    "output_tokens": 1424
+    "input_tokens": 11287,
+    "output_tokens": 875
   },
   "video_watch": {
-    "candidates": 13,
-    "watched": 1,
+    "candidates": 10,
+    "watched": 2,
     "published": 1,
-    "rejected": 5,
+    "rejected": 4,
     "deferred": 0,
     "errors": 0,
-    "already_watched": 7
+    "already_watched": 5
   },
   "problems": [
     {
-      "source": "postPerspective",
-      "type": "rss",
-      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
+      "source": "arXiv cs.GR",
+      "type": "arxiv",
+      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+    },
+    {
+      "source": "arXiv cs.CV (generative video)",
+      "type": "arxiv",
+      "error": "The read operation timed out"
     }
   ]
 }

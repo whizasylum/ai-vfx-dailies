@@ -1,0 +1,135 @@
+{
+  "verdict": "A quiet day: mostly routine model variant uploads and 80 Level filler, with one real ComfyUI release and a scattering of research papers irrelevant to production work.",
+  "stories": [
+    {
+      "headline": "ComfyUI 0.41.0 adds ImageSDRToHDR and ReferenceMultiLatent nodes",
+      "body": "ComfyUI's latest release adds a core ImageSDRToHDR node for tone-mapping conversions and a new ReferenceMultiLatent node with UX improvements, aimed at reference-conditioned generation workflows. LoRA stack nodes were briefly disabled pending frontend DynamicGroup support, then reverted. Open source, free to deploy in existing ComfyUI pipelines.",
+      "why": "New nodes extend what a studio can wire into ComfyUI-based generation pipelines without waiting on third-party packs.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "lightx2v ships a wave of Apache-2.0 distilled Wan and HunyuanVideo variants",
+      "body": "Several lightx2v releases on Hugging Face this week package distilled/quantized versions of Wan2.1, Wan2.2 and HunyuanVideo-1.5 for faster image-to-video and text-to-video inference, most under Apache 2.0 (one T2V variant is CC-BY-NC). All are tagged for direct ComfyUI use via diffusion-single-file loading. No independent benchmarks given; download counts are vendor-reported.",
+      "why": "Distilled checkpoints cut inference cost for Wan/HunyuanVideo pipelines already running in ComfyUI.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/lightx2v/Wan2.2-Distill-Loras",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/lightx2v/Wan2.2-I2V-A14B-Moe-Distill-Lightx2v",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/lightx2v/Hy1.5-Quantized-Models",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/lightx2v/Wan2.1-T2V-14B-CausVid",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/lightx2v/Wan2.1-T2V-14B-StepDistill-CfgDistill-Lightx2v",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Nvidia details RTX Spark local-AI desktops and laptops at Editor's Day",
+      "body": "Nvidia used its San Francisco Editor's Day to preview the RTX Spark line of Windows desktops and laptops, pitched around local AI processing for creative workflows. Coverage is a single trade-press recap of vendor presentations, with no pricing, availability date, or VRAM specs confirmed yet.",
+      "why": "Local inference hardware matters for VRAM-bound studio workstations, but details are too thin to act on yet.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/nvidias-editors-day-new-windows-based-rtx-spark-computers",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "This AI Camera Control Trick is HUGE",
+      "body": "A workflow utilizing the Model Context Protocol (MCP) to allow an LLM (Claude) to directly manipulate Blender. It enables 'natural language to 3D blocking' where the AI sets up walls, props, character rigs, and camera movements based on a text prompt to create an animatic for AI video generators.",
+      "why": "This represents an early stage layout or 'pre-vis' workflow. In a USD pipeline, this could be adapted by using an MCP server for Maya or Houdini to automate scene assembly from a director's description. The resulting 3D sequence (layout) then serves as a control input for diffusion-based rendering passes.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=BExtQ740QgM",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/BExtQ740QgM/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Blender",
+          "used_for": "3D scene blocking, camera setup, and animatic generation"
+        },
+        {
+          "name": "Claude Desktop",
+          "used_for": "Direct control of Blender via MCP and prompt orchestration"
+        },
+        {
+          "name": "Seedance 2.5",
+          "used_for": "Final AI video generation using the 3D animatic as reference"
+        },
+        {
+          "name": "Magnific",
+          "used_for": "Generating character turnaround sheets and environment reference images"
+        },
+        {
+          "name": "Model Context Protocol (MCP)",
+          "used_for": "Connecting the LLM to the local 3D software environment"
+        }
+      ],
+      "whats_transferable": [
+        "Using MCP to bridge LLMs with local creative applications for direct scene manipulation",
+        "Workflow for generating consistency in AI video by using low-fidelity 3D animatics as spatial and temporal anchors",
+        "Prompt engineering for character turnarounds and environment references to maintain visual continuity across multiple tools"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 11287,
+    "output_tokens": 875
+  },
+  "candidate_count": 52,
+  "editorial_stories": true
+}

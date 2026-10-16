@@ -1,120 +1,4 @@
 {
- "729a3176ae": {
-  "headline": "Adobe completes acquisition of Topaz Labs",
-  "sources": [
-   "CG Channel",
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "acquisition",
-   "adobe",
-   "completes",
-   "determines",
-   "ecosystem.",
-   "independently",
-   "labs",
-   "licensable",
-   "locked",
-   "stay",
-   "topaz",
-   "upscaling",
-   "whether"
-  ],
-  "at": "2026-09-24T21:13:22.255198+00:00"
- },
- "ca8ce86f32": {
-  "headline": "Foundry releases Mari 8.0 in open beta with tri-planar and hex tile texturing nodes",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "affects",
-   "beta",
-   "directly",
-   "feed",
-   "foundry",
-   "hex",
-   "look-dev",
-   "mari",
-   "nodes",
-   "open",
-   "pipelines.",
-   "texture-painting",
-   "texturing",
-   "tile"
-  ],
-  "at": "2026-09-24T21:13:22.255224+00:00"
- },
- "735a35e0b0": {
-  "headline": "Beeble ships SwitchX 2.0 with native 4K and 20-second clips",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "r",
-  "terms": [
-   "beeble",
-   "clips",
-   "controllable",
-   "directly",
-   "longer",
-   "native",
-   "pipelines.",
-   "relight",
-   "relighting",
-   "restyle",
-   "second",
-   "switchx",
-   "usable",
-   "v2v"
-  ],
-  "at": "2026-09-24T21:13:22.255236+00:00"
- },
- "7ed06d906e": {
-  "headline": "Otoy ships OctaneRender 2027.1 alpha with SDF-to-mesh baking",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "alpha",
-   "baking",
-   "gives",
-   "octanerender",
-   "option",
-   "otoy",
-   "proxy-geo",
-   "sdf-to-mesh",
-   "setups.",
-   "simulation"
-  ],
-  "at": "2026-09-24T21:13:22.255244+00:00"
- },
- "1df88483c2": {
-  "headline": "How To Animate a Short Film with Blender + Higgsfield (Full Breakdown)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "anim",
-   "animate",
-   "animation",
-   "between",
-   "blender",
-   "breakdown",
-   "bridges",
-   "compositing",
-   "conditioned",
-   "effectively",
-   "exports.",
-   "film",
-   "full",
-   "gap"
-  ],
-  "at": "2026-09-24T21:13:22.255258+00:00"
- },
  "ebdaacb8ad": {
   "headline": "Blender marks 20 years of Open Movies with community retrospective",
   "sources": [
@@ -2255,5 +2139,106 @@
    "gemini"
   ],
   "at": "2026-10-15T20:56:25.194507+00:00"
+ },
+ "f930bda976": {
+  "headline": "ComfyUI 0.41.0 adds ImageSDRToHDR and ReferenceMultiLatent nodes",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "comfyui",
+   "comfyui-based",
+   "extend",
+   "generation",
+   "imagesdrtohdr",
+   "nodes",
+   "packs.",
+   "pipelines",
+   "referencemultilatent",
+   "studio",
+   "third-party",
+   "waiting",
+   "wire",
+   "without"
+  ],
+  "at": "2026-10-16T20:28:30.521587+00:00"
+ },
+ "7d5a484f43": {
+  "headline": "lightx2v ships a wave of Apache-2.0 distilled Wan and HunyuanVideo variants",
+  "sources": [
+   "HF image-to-video",
+   "HF image-to-video",
+   "HF image-to-video",
+   "HF image-to-video",
+   "HF text-to-video",
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "apache-2.0",
+   "checkpoints",
+   "comfyui.",
+   "cost",
+   "cut",
+   "distilled",
+   "hunyuanvideo",
+   "inference",
+   "lightx2v",
+   "pipelines",
+   "running",
+   "variants",
+   "wan"
+  ],
+  "at": "2026-10-16T20:28:30.521614+00:00"
+ },
+ "adb27dd047": {
+  "headline": "Nvidia details RTX Spark local-AI desktops and laptops at Editor's Day",
+  "sources": [
+   "postPerspective"
+  ],
+  "channel": "b",
+  "terms": [
+   "act",
+   "day",
+   "desktops",
+   "details",
+   "editor",
+   "hardware",
+   "inference",
+   "laptops",
+   "local",
+   "local-ai",
+   "matters",
+   "nvidia",
+   "rtx",
+   "spark"
+  ],
+  "at": "2026-10-16T20:28:30.521629+00:00"
+ },
+ "e69d83eb25": {
+  "headline": "This AI Camera Control Trick is HUGE",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "adapted",
+   "assembly",
+   "automate",
+   "camera",
+   "control",
+   "could",
+   "description.",
+   "diffusion-based",
+   "director",
+   "early",
+   "houdini",
+   "huge",
+   "input",
+   "layout"
+  ],
+  "at": "2026-10-16T20:28:30.521648+00:00"
  }
 }

@@ -4855,10 +4855,181 @@
    "duration_s": 43,
    "published": false,
    "reason_if_low": "under 90s (43s)"
+  },
+  "BExtQ740QgM": {
+   "title": "This AI Camera Control Trick is HUGE",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=BExtQ740QgM",
+   "at": "2026-10-16T20:27:52.317419+00:00",
+   "duration_s": 1429,
+   "topic_relevance": 7.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "BExtQ740QgM",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Blender",
+      "used_for": "3D scene blocking, camera setup, and animatic generation"
+     },
+     {
+      "name": "Claude Desktop",
+      "used_for": "Direct control of Blender via MCP and prompt orchestration"
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Final AI video generation using the 3D animatic as reference"
+     },
+     {
+      "name": "Magnific",
+      "used_for": "Generating character turnaround sheets and environment reference images"
+     },
+     {
+      "name": "Model Context Protocol (MCP)",
+      "used_for": "Connecting the LLM to the local 3D software environment"
+     }
+    ],
+    "whats_new": "A workflow utilizing the Model Context Protocol (MCP) to allow an LLM (Claude) to directly manipulate Blender. It enables 'natural language to 3D blocking' where the AI sets up walls, props, character rigs, and camera movements based on a text prompt to create an animatic for AI video generators.",
+    "whats_transferable": [
+     "Using MCP to bridge LLMs with local creative applications for direct scene manipulation",
+     "Workflow for generating consistency in AI video by using low-fidelity 3D animatics as spatial and temporal anchors",
+     "Prompt engineering for character turnarounds and environment references to maintain visual continuity across multiple tools"
+    ],
+    "pipeline_notes": "This represents an early stage layout or 'pre-vis' workflow. In a USD pipeline, this could be adapted by using an MCP server for Maya or Houdini to automate scene assembly from a director's description. The resulting 3D sequence (layout) then serves as a control input for diffusion-based rendering passes.",
+    "visual_quality_notes": "Final output still exhibits typical temporal inconsistencies and 'video game' artifacts, but the spatial control over camera and character placement is significantly higher than text-to-video alone.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates direct control of Blender by Claude using the Model Context Protocol (MCP).",
+     "Automates the creation of 3D scene blocks including architecture, props, and rigged characters from natural language descriptions.",
+     "Uses a specialized 'Starter Kit' .blend file to provide the LLM with a library of assets and conventions.",
+     "Generates a low-fidelity animatic that is used as a motion/layout reference for the Seedance 2.5 video model.",
+     "Provides a bridge between loose creative intent and rigid spatial control for AI-assisted cinematography."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "This AI Camera Control Trick is HUGE",
+    "body": "A workflow utilizing the Model Context Protocol (MCP) to allow an LLM (Claude) to directly manipulate Blender. It enables 'natural language to 3D blocking' where the AI sets up walls, props, character rigs, and camera movements based on a text prompt to create an animatic for AI video generators.",
+    "why": "This represents an early stage layout or 'pre-vis' workflow. In a USD pipeline, this could be adapted by using an MCP server for Maya or Houdini to automate scene assembly from a director's description. The resulting 3D sequence (layout) then serves as a control input for diffusion-based rendering passes.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=BExtQ740QgM",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/BExtQ740QgM/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Blender",
+      "used_for": "3D scene blocking, camera setup, and animatic generation"
+     },
+     {
+      "name": "Claude Desktop",
+      "used_for": "Direct control of Blender via MCP and prompt orchestration"
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Final AI video generation using the 3D animatic as reference"
+     },
+     {
+      "name": "Magnific",
+      "used_for": "Generating character turnaround sheets and environment reference images"
+     },
+     {
+      "name": "Model Context Protocol (MCP)",
+      "used_for": "Connecting the LLM to the local 3D software environment"
+     }
+    ],
+    "whats_transferable": [
+     "Using MCP to bridge LLMs with local creative applications for direct scene manipulation",
+     "Workflow for generating consistency in AI video by using low-fidelity 3D animatics as spatial and temporal anchors",
+     "Prompt engineering for character turnarounds and environment references to maintain visual continuity across multiple tools"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-16T20:28:32.609927+00:00"
+  },
+  "PQ4kYRt5gDQ": {
+   "title": "Reconstructing Prime Air Cargo Plane Accident w/ God\u2019s Eye View",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/PQ4kYRt5gDQ",
+   "at": "2026-10-16T20:28:10.658599+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
+  },
+  "49SIJxDhDa0": {
+   "title": "Don\u2019t Let Your Stories Go Untold | Higgsfield",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/49SIJxDhDa0",
+   "at": "2026-10-16T20:28:10.800468+00:00",
+   "duration_s": 92,
+   "topic_relevance": 4.0,
+   "transferable_craft": 3.0,
+   "category": "tool_release",
+   "published": false,
+   "reason_if_low": "The video is a promotional brand advertisement with no technical breakdown or actionable workflow details for a VFX artist.",
+   "assessment": {
+    "video_id": "49SIJxDhDa0",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generative text-to-video and character-consistent animation."
+     }
+    ],
+    "whats_new": "A cinematic promotional reel demonstrating high-fidelity character consistency across diverse narrative genres using the Higgsfield model.",
+    "whats_transferable": [
+     "Conceptual use of AI for rapid narrative visualization."
+    ],
+    "pipeline_notes": "Proprietary cloud-based generator. Currently lacks direct USD or Houdini plugin support for professional pipeline integration.",
+    "visual_quality_notes": "Cinematic lighting and composition with high temporal stability, though minor structural morphing remains in complex motions.",
+    "category": "tool_release",
+    "topic_relevance": 4.0,
+    "transferable_craft": 3.0,
+    "reason_if_low": "The video is a promotional brand advertisement with no technical breakdown or actionable workflow details for a VFX artist.",
+    "summary_bullets": [
+     "Showcase of Higgsfield AI generative capabilities.",
+     "Focus on cross-genre storytelling and character persistence.",
+     "Marketing-heavy content without behind-the-scenes methodology."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "Fa4zwHybaSk": {
+   "title": "FLUX 3 Upscaler Is Live | 50% Faster, 50% Cheaper",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/Fa4zwHybaSk",
+   "at": "2026-10-16T20:28:29.366521+00:00",
+   "duration_s": 17,
+   "published": false,
+   "reason_if_low": "under 90s (17s)"
+  },
+  "tm5Ttk3bWCk": {
+   "title": "Halloween Wallpaper That Moves | MiniMax H3",
+   "channel": "AI2Play (pixaroma)",
+   "url": "https://www.youtube.com/shorts/tm5Ttk3bWCk",
+   "at": "2026-10-16T20:28:29.457014+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
   }
  },
  "quota": {
-  "date": "2026-10-15",
-  "minutes": 19.016666666666666
+  "date": "2026-10-16",
+  "minutes": 25.35
  }
 }
