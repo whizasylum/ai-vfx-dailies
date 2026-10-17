@@ -5026,10 +5026,127 @@
    "duration_s": 44,
    "published": false,
    "reason_if_low": "under 90s (44s)"
+  },
+  "Br7ImuqMldY": {
+   "title": "Free & Open Source Design with Ming Image in ComfyUI!",
+   "channel": "Nerdy Rodent",
+   "url": "https://www.youtube.com/watch?v=Br7ImuqMldY",
+   "at": "2026-10-17T20:03:29.953002+00:00",
+   "duration_s": 923,
+   "topic_relevance": 6.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "Br7ImuqMldY",
+    "channel": "Nerdy Rodent",
+    "tools_and_platforms": [
+     {
+      "name": "Ming-Image-0.1-Design",
+      "used_for": "UI/UX and text generation"
+     },
+     {
+      "name": "ComfyUI",
+      "used_for": "Node-based execution"
+     },
+     {
+      "name": "XENodes",
+      "used_for": "Workflow logic switches"
+     }
+    ],
+    "whats_new": "Release of Ming-Image-0.1-Design, a 6B parameter MIT-licensed model specialized for UI, posters, and legible text rendering.",
+    "whats_transferable": [
+     "Modular organization using Get/Set nodes to minimize graph complexity",
+     "Dynamic node selection logic using Any Switch for task branching",
+     "Targeted resolution management for preserving text fidelity",
+     "VAE bypass technique for generating stylistic variations"
+    ],
+    "pipeline_notes": "Applicable for automated screen replacement assets and UI texture generation in VFX workflows.",
+    "visual_quality_notes": "Superior text legibility at high resolutions; retains layout consistency during style transfers.",
+    "category": "workflow",
+    "topic_relevance": 6.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates open-source model for graphic design and UI",
+     "Explains modular node organization for complex workflows",
+     "Covers resolution optimization for text clarity",
+     "Details image-to-image and masking logic"
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Free & Open Source Design with Ming Image in ComfyUI!",
+    "body": "Release of Ming-Image-0.1-Design, a 6B parameter MIT-licensed model specialized for UI, posters, and legible text rendering.",
+    "why": "Applicable for automated screen replacement assets and UI texture generation in VFX workflows.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Nerdy Rodent",
+      "url": "https://www.youtube.com/watch?v=Br7ImuqMldY",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/Br7ImuqMldY/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Ming-Image-0.1-Design",
+      "used_for": "UI/UX and text generation"
+     },
+     {
+      "name": "ComfyUI",
+      "used_for": "Node-based execution"
+     },
+     {
+      "name": "XENodes",
+      "used_for": "Workflow logic switches"
+     }
+    ],
+    "whats_transferable": [
+     "Modular organization using Get/Set nodes to minimize graph complexity",
+     "Dynamic node selection logic using Any Switch for task branching",
+     "Targeted resolution management for preserving text fidelity",
+     "VAE bypass technique for generating stylistic variations"
+    ],
+    "topic_relevance": 6.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-17T20:05:10.367973+00:00"
+  },
+  "GUo5VKPwwh8": {
+   "title": "Tracking Storms in God\u2019s Eye View Is Insanely Cool",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/GUo5VKPwwh8",
+   "at": "2026-10-17T20:04:31.917795+00:00",
+   "duration_s": 34,
+   "published": false,
+   "reason_if_low": "under 90s (34s)"
+  },
+  "J7dN6yah6fY": {
+   "title": "Never Tried AI? Start Here | Higgsfield Academy",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/J7dN6yah6fY",
+   "at": "2026-10-17T20:05:08.221785+00:00",
+   "duration_s": 77,
+   "published": false,
+   "reason_if_low": "under 90s (77s)"
+  },
+  "KRdILbkK-UM": {
+   "title": "How to Change Any Character in Your Video | Higgsfield Genjutsu",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/KRdILbkK-UM",
+   "at": "2026-10-17T20:05:08.322897+00:00",
+   "duration_s": 34,
+   "published": false,
+   "reason_if_low": "under 90s (34s)"
   }
  },
  "quota": {
-  "date": "2026-10-16",
-  "minutes": 25.35
+  "date": "2026-10-17",
+  "minutes": 39.75
  }
 }

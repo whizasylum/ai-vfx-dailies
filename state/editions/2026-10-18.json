@@ -1,0 +1,51 @@
+{
+  "verdict": "1 video workflows worth a closer look.",
+  "stories": [
+    {
+      "headline": "Free & Open Source Design with Ming Image in ComfyUI!",
+      "body": "Release of Ming-Image-0.1-Design, a 6B parameter MIT-licensed model specialized for UI, posters, and legible text rendering.",
+      "why": "Applicable for automated screen replacement assets and UI texture generation in VFX workflows.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Nerdy Rodent",
+          "url": "https://www.youtube.com/watch?v=Br7ImuqMldY",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/Br7ImuqMldY/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Ming-Image-0.1-Design",
+          "used_for": "UI/UX and text generation"
+        },
+        {
+          "name": "ComfyUI",
+          "used_for": "Node-based execution"
+        },
+        {
+          "name": "XENodes",
+          "used_for": "Workflow logic switches"
+        }
+      ],
+      "whats_transferable": [
+        "Modular organization using Get/Set nodes to minimize graph complexity",
+        "Dynamic node selection logic using Any Switch for task branching",
+        "Targeted resolution management for preserving text fidelity",
+        "VAE bypass technique for generating stylistic variations"
+      ],
+      "topic_relevance": 6.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "stories_note": "No stories met the threshold for inclusion today.",
+  "usage": {
+    "input_tokens": 3266,
+    "output_tokens": 94
+  },
+  "candidate_count": 9,
+  "editorial_stories": false
+}
