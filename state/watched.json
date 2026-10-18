@@ -5143,10 +5143,91 @@
    "duration_s": 34,
    "published": false,
    "reason_if_low": "under 90s (34s)"
+  },
+  "PCrr3DgYiEs": {
+   "title": "God\u2019s Eye View Got Massive Updates Thanks To Your Contributions",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/PCrr3DgYiEs",
+   "at": "2026-10-18T20:00:57.816204+00:00",
+   "duration_s": 22,
+   "published": false,
+   "reason_if_low": "under 90s (22s)"
+  },
+  "6a5VLKPlJRo": {
+   "title": "This Game Was Built Only With AI in 11 Weeks",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=6a5VLKPlJRo",
+   "at": "2026-10-18T20:02:09.235180+00:00",
+   "duration_s": 1462,
+   "topic_relevance": 5.0,
+   "transferable_craft": 4.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": "While it shows impressive results for indie game dev, it functions mostly as a showcase. It lacks concrete, technical step-by-step instructions on prompt engineering or script reconciliation needed for a VFX TD to implement this week.",
+   "assessment": {
+    "video_id": "6a5VLKPlJRo",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Game logic coding, procedural asset generation scripts, and animation logic"
+     },
+     {
+      "name": "Tripo AI P2",
+      "used_for": "3D model generation from text/images with automated UV unwrapping"
+     },
+     {
+      "name": "Blender MCP",
+      "used_for": "Direct integration between Claude and Blender for asset creation"
+     },
+     {
+      "name": "Tripo Smart UV",
+      "used_for": "Automated AI-driven UV mapping for complex meshes"
+     }
+    ],
+    "whats_new": "The video showcases a collection of games where large language models like Claude Opus 5.5 are used to drive the entire production cycle, including scripting procedural environments and generating 3D assets via integrated Blender plugins.",
+    "whats_transferable": [
+     "Using LLMs to script procedural shaders and geometry in 3D software",
+     "Integrating 3D AI generators like Tripo into a character modeling pipeline to handle base meshes and UVs",
+     "Leveraging AI to generate variations of assets (e.g., team colors/styles) through texture re-processing"
+    ],
+    "pipeline_notes": "The demonstrated workflow of using Claude Opus 5.5 to write Blender scripts could be adapted to Houdini for automating HDA parameters or generating Python-based geometry. Tripo AI's automated UV unwrapping is relevant for fast background asset populating within a USD pipeline.",
+    "visual_quality_notes": "Varies from stylized pixel-art aesthetics to mid-tier 3D models. The quality of AI-generated character models is sufficient for background or crowd characters, but likely requires manual polish for hero assets.",
+    "category": "workflow",
+    "topic_relevance": 5.0,
+    "transferable_craft": 4.0,
+    "reason_if_low": "While it shows impressive results for indie game dev, it functions mostly as a showcase. It lacks concrete, technical step-by-step instructions on prompt engineering or script reconciliation needed for a VFX TD to implement this week.",
+    "summary_bullets": [
+     "Showcase of indie games developed using Claude Opus 5.5 for coding and asset generation.",
+     "Demonstrates the use of Tripo AI P2 for generating game-ready characters with automated UVs.",
+     "Highlights a workflow where LLMs write code to procedurally describe entire environments.",
+     "Features 'Project Zero', an environment where AI agents interact within user-created levels."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "ln4eoGwza3o": {
+   "title": "Two Clients = $1,000 a Month Clipping",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/ln4eoGwza3o",
+   "at": "2026-10-18T20:02:24.213686+00:00",
+   "duration_s": 34,
+   "published": false,
+   "reason_if_low": "under 90s (34s)"
+  },
+  "YZYgpafbGKU": {
+   "title": "I Made This Aura Edit in Two Clicks (and I Can't Edit)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/YZYgpafbGKU",
+   "at": "2026-10-18T20:02:24.346913+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
   }
  },
  "quota": {
-  "date": "2026-10-17",
-  "minutes": 39.75
+  "date": "2026-10-18",
+  "minutes": 43.733333333333334
  }
 }

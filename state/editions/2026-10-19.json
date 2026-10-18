@@ -1,0 +1,27 @@
+{
+  "verdict": "Quiet day: one genuine pipeline-relevant renderer update and one VFX breakdown with no technical substance given; little that demands action this week.",
+  "stories": [
+    {
+      "headline": "Redshift 2027.0 adds fur procedural, ACES 2 support, Redshift Live updates",
+      "body": "Maxon has released Redshift 2027.0, adding a new fur procedural, ACES 2 colour management support, and updates to the real-time Redshift Live render engine. This is a point release to an existing commercial GPU renderer used across Houdini, Maya, Cinema 4D and other DCCs. ACES 2 support is the detail worth checking against current studio colour pipelines; the fur procedural may affect grooming workflows.",
+      "why": "ACES 2 support changes colour-management decisions for studios already on Redshift.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/maxon-releases-redshift-2027-0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 2222,
+    "output_tokens": 330
+  },
+  "candidate_count": 3,
+  "editorial_stories": true
+}
