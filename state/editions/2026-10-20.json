@@ -1,0 +1,81 @@
+{
+  "verdict": "A quiet day for pipeline-relevant news: one real ComfyUI update and one DCC-adjacent tool release, buried in a pile of arXiv papers and entertainment trailers that don't belong in this digest.",
+  "stories": [
+    {
+      "headline": "ComfyUI 0.42.1 adds Krea 3 Image and MOSS-Image partner nodes",
+      "body": "ComfyUI's latest release adds a Krea 3 Image node and MOSS-Image support as partner nodes, plus updated workflow templates and documentation on the comfy quant format. Both are deployable node additions rather than experimental branches, meaning studios running ComfyUI pipelines can pull these in directly. No licence or VRAM specifics given for the new models themselves.",
+      "why": "Direct node additions to a tool studios already run in production pipelines.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Chaos Veras 5.3 adds node-based workflow builder for generative image and 3D tools",
+      "body": "Veras 5.3 introduces NODES, a visual workflow canvas for wiring together image/video generation, analysis, and parametric 3D geometry baked directly into Revit, Rhino, or SketchUp. An agent can auto-build workflows, and any setting can be exposed as a simple control. This targets AEC/viz pipelines rather than VFX, but shows the node-graph-as-GenAI-front-end pattern spreading into commercial DCC plugins.",
+      "why": "Shows vendors packaging generative pipelines as native DCC node graphs, a pattern worth tracking for Houdini/Nuke equivalents.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/veras-5.3",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/Veras%20Release%205.3.0.0%20Graphic.jpg"
+    },
+    {
+      "headline": "5 Best AI Side Hustles in 2026 (ft. Iman Gadzhi)",
+      "body": "Integration of Higgsfield AI's video generation engine directly into Claude using the Model Context Protocol (MCP), allowing for LLM-orchestrated video production.",
+      "why": "This represents a shift toward LLM-driven orchestration. While the video output is proprietary to Higgsfield, the logic of using MCP to connect an LLM to a production-ready video engine could be applied to internal USD-based tools for automated previz or reference generation.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=1dvM89NMK3s",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/1dvM89NMK3s/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Claude",
+          "used_for": "Orchestrating AI workflows via MCP (Model Context Protocol)"
+        },
+        {
+          "name": "Higgsfield AI",
+          "used_for": "Video generation, 3D motion ads, and product visualization"
+        },
+        {
+          "name": "MCP (Model Context Protocol)",
+          "used_for": "Connecting LLMs to external content generation tools"
+        }
+      ],
+      "whats_transferable": [
+        "Using MCP to chain LLM reasoning with high-fidelity video generation tools",
+        "Automated competitor analysis and script generation mapped directly to specific shot requests",
+        "3D walkthrough generation from 2D static images for environment visualization"
+      ],
+      "topic_relevance": 5.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 10942,
+    "output_tokens": 678
+  },
+  "candidate_count": 53,
+  "editorial_stories": true
+}

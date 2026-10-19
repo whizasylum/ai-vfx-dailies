@@ -1196,6 +1196,36 @@
    "issue_ids": [
     48
    ]
+  },
+  {
+   "story_id": "e8f266e332",
+   "at": "2026-10-19T21:57:08.199729+00:00",
+   "vote": 1,
+   "headline": "Free & Open Source Design with Ming Image in ComfyUI!",
+   "sources": [
+    "Nerdy Rodent"
+   ],
+   "channel": "a",
+   "terms": [
+    "applicable",
+    "assets",
+    "automated",
+    "comfyui",
+    "design",
+    "free",
+    "generation",
+    "image",
+    "ming",
+    "open",
+    "replacement",
+    "screen",
+    "source",
+    "texture"
+   ],
+   "via": "page",
+   "issue_ids": [
+    50
+   ]
   }
  ]
 }

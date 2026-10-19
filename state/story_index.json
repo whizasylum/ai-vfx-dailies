@@ -2094,5 +2094,77 @@
    "support"
   ],
   "at": "2026-10-18T20:02:25.316122+00:00"
+ },
+ "242c2b52a4": {
+  "headline": "ComfyUI 0.42.1 adds Krea 3 Image and MOSS-Image partner nodes",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "additions",
+   "already",
+   "comfyui",
+   "direct",
+   "image",
+   "krea",
+   "moss-image",
+   "node",
+   "nodes",
+   "partner",
+   "pipelines.",
+   "production",
+   "run",
+   "studios"
+  ],
+  "at": "2026-10-19T22:07:52.825535+00:00"
+ },
+ "403316e5dc": {
+  "headline": "Chaos Veras 5.3 adds node-based workflow builder for generative image and 3D tools",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "r",
+  "terms": [
+   "builder",
+   "chaos",
+   "dcc",
+   "equivalents.",
+   "generative",
+   "graphs",
+   "houdini",
+   "image",
+   "native",
+   "node",
+   "node-based",
+   "nuke",
+   "packaging",
+   "pattern"
+  ],
+  "at": "2026-10-19T22:07:52.825575+00:00"
+ },
+ "2bb576ff43": {
+  "headline": "5 Best AI Side Hustles in 2026 (ft. Iman Gadzhi)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "applied",
+   "automated",
+   "connect",
+   "could",
+   "engine",
+   "ft.",
+   "gadzhi",
+   "generation.",
+   "higgsfield",
+   "hustles",
+   "iman",
+   "internal",
+   "llm",
+   "llm-driven"
+  ],
+  "at": "2026-10-19T22:07:52.825592+00:00"
  }
 }
