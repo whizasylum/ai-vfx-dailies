@@ -1,148 +1,4 @@
 {
- "1e71d531e9": {
-  "headline": "Skywork releases Matrix-Game-2.0, an MIT-licensed image-to-video model on Hugging Face",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "actually",
-   "client",
-   "could",
-   "face",
-   "hugging",
-   "image-to-video",
-   "matrix-game-2.0",
-   "mit-licensed",
-   "open-weight",
-   "permissive-licence",
-   "skywork",
-   "studio",
-   "test",
-   "video"
-  ],
-  "at": "2026-09-28T23:04:17.960606+00:00"
- },
- "8b3a200af1": {
-  "headline": "Multi-Layered RBD workflow lets Houdini artists refine destruction without redoing approved sims",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "a",
-  "terms": [
-   "applicable",
-   "approvals.",
-   "approved",
-   "artists",
-   "breaking",
-   "destruction",
-   "directly",
-   "houdini",
-   "iterating",
-   "lets",
-   "multi-layered",
-   "rbd",
-   "redoing",
-   "refine"
-  ],
-  "at": "2026-09-28T23:04:17.960634+00:00"
- },
- "af11ec21c7": {
-  "headline": "SGO launches browser-based Workflows Slate for burn-ins and metadata slates",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "r",
-  "terms": [
-   "browser-based",
-   "burn-ins",
-   "could",
-   "dedicated",
-   "delivery",
-   "metadata",
-   "metadata-driven",
-   "nuke",
-   "outside",
-   "resolve.",
-   "sgo",
-   "simplify",
-   "slate",
-   "slates"
-  ],
-  "at": "2026-09-28T23:04:17.960648+00:00"
- },
- "3cc1d96a1b": {
-  "headline": "Digital Anarchy adds ML-based teeth and eye whitening to Beauty Box 6.5",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "r",
-  "terms": [
-   "anarchy",
-   "beauty",
-   "box",
-   "concrete",
-   "demo.",
-   "digital",
-   "eye",
-   "feature",
-   "landing",
-   "minor",
-   "ml-based",
-   "plugin",
-   "retouching",
-   "shipping"
-  ],
-  "at": "2026-09-28T23:04:17.960661+00:00"
- },
- "bc84ade913": {
-  "headline": "This Is What $2,175 of Opus 5.5 Tokens Can Do...",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "artist",
-   "assignments",
-   "automate",
-   "automated",
-   "blender",
-   "bridge",
-   "composition",
-   "could",
-   "do...",
-   "end",
-   "feedback",
-   "game",
-   "highly",
-   "houdini"
-  ],
-  "at": "2026-09-28T23:04:17.960681+00:00"
- },
- "01e43a85fc": {
-  "headline": "Anerneq | AI Generated Short Film | Higgsfield Originals (2026)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "r",
-  "terms": [
-   "ai-generated",
-   "anerneq",
-   "details",
-   "end-to-end",
-   "environment",
-   "film",
-   "generated",
-   "higgsfield",
-   "houdini",
-   "however",
-   "integrating",
-   "lacks",
-   "originals",
-   "output"
-  ],
-  "at": "2026-09-28T23:04:17.960695+00:00"
- },
  "22ffb62450": {
   "headline": "ComfyUI 0.38.0 adds Qwen Image 2.1 transformer compilation and per-block attention config",
   "sources": [
@@ -2166,5 +2022,77 @@
    "llm-driven"
   ],
   "at": "2026-10-19T22:07:52.825592+00:00"
+ },
+ "bf5a04c174": {
+  "headline": "MiniMax-H3 PDD distilled ComfyUI node published on Hugging Face",
+  "sources": [
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "ambiguity",
+   "another",
+   "before",
+   "comfyui",
+   "distilled",
+   "face",
+   "hugging",
+   "integration",
+   "licence",
+   "means",
+   "minimax-h3",
+   "node",
+   "pdd",
+   "point"
+  ],
+  "at": "2026-10-20T21:11:59.516239+00:00"
+ },
+ "7b5af40d27": {
+  "headline": "Plasticity 2026.2 CAD tool adds curvature analysis and reusable asset libraries",
+  "sources": [
+   "CG Channel",
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "analysis",
+   "asset",
+   "cad",
+   "curvature",
+   "feeding",
+   "houdini",
+   "libraries",
+   "modelers",
+   "pipelines.",
+   "plasticity",
+   "relevant",
+   "reusable",
+   "surfacing"
+  ],
+  "at": "2026-10-20T21:11:59.516270+00:00"
+ },
+ "c217769d1c": {
+  "headline": "Chaos Arena used to previsualize unbuilt Miami residential tower",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "b",
+  "terms": [
+   "arena",
+   "chaos",
+   "cloud",
+   "detail",
+   "miami",
+   "previsualize",
+   "production",
+   "real",
+   "rendering",
+   "residential",
+   "shows",
+   "studio",
+   "thin.",
+   "though"
+  ],
+  "at": "2026-10-20T21:11:59.516287+00:00"
  }
 }

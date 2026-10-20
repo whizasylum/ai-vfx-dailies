@@ -5397,10 +5397,64 @@
    "duration_s": 37,
    "published": false,
    "reason_if_low": "under 90s (37s)"
+  },
+  "Gk_9H9KGwJ0": {
+   "title": "This 4D Tech Feels Like a Geospatial Memory Palace of the TED conference",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/Gk_9H9KGwJ0",
+   "at": "2026-10-20T21:11:55.260943+00:00",
+   "duration_s": 73,
+   "published": false,
+   "reason_if_low": "under 90s (73s)"
+  },
+  "U9JTlWEkJUY": {
+   "title": "Claude Code Game: Can You Build and Race Your Own Vehicle?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/U9JTlWEkJUY",
+   "at": "2026-10-20T21:11:55.361198+00:00",
+   "duration_s": 38,
+   "published": false,
+   "reason_if_low": "under 90s (38s)"
+  },
+  "5iV2oeGPt4M": {
+   "title": "AI VFX for Games: Why Start With Concepts Before Coding?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/5iV2oeGPt4M",
+   "at": "2026-10-20T21:11:55.462747+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "P-OrdZNg56w": {
+   "title": "Claude Code Game: Can You Find 7 Keys and Win $10,000?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/P-OrdZNg56w",
+   "at": "2026-10-20T21:11:55.530388+00:00",
+   "duration_s": 31,
+   "published": false,
+   "reason_if_low": "under 90s (31s)"
+  },
+  "2kHxQ8Lda_E": {
+   "title": "One Edit, Three Platforms, Any Language",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/2kHxQ8Lda_E",
+   "at": "2026-10-20T21:11:58.388272+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "UvVYn8OVU2o": {
+   "title": "Aura Edit vs Teaser: What's the Difference?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/UvVYn8OVU2o",
+   "at": "2026-10-20T21:11:58.486247+00:00",
+   "duration_s": 52,
+   "published": false,
+   "reason_if_low": "under 90s (52s)"
   }
  },
  "quota": {
-  "date": "2026-10-19",
-  "minutes": 62.233333333333334
+  "date": "2026-10-20",
+  "minutes": 13.3
  }
 }

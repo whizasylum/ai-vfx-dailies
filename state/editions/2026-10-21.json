@@ -1,0 +1,65 @@
+{
+  "verdict": "A quiet day for pipeline-relevant news: mostly research-paper churn, VFX breakdown PR, and non-production arXiv/HF noise, with one modest ComfyUI model update and a CAD tool release worth a look.",
+  "stories": [
+    {
+      "headline": "MiniMax-H3 PDD distilled ComfyUI node published on Hugging Face",
+      "body": "A ComfyUI-ready distilled build of MiniMax-H3 (PDD variant) is live on Hugging Face, based on MiniMaxAI/MiniMax-H3, tagged for text-to-video with audio. It has 83 likes and over 26,000 downloads since its August publish, updated this week. Licence is listed only as \"other\", so usage terms need checking before deploying on client work.",
+      "why": "Another MiniMax-H3 ComfyUI integration point, but licence ambiguity means verify before production use.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/aptech0081/MiniMax-H3-PDD-ComfyUI",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Plasticity 2026.2 CAD tool adds curvature analysis and reusable asset libraries",
+      "body": "Plasticity 2026.2 is out, adding a Curvature Analysis shader, new Edge Align options, CV editing for PolySplines, and a system for building reusable asset libraries. Covered by both CG Channel and 80 Level as a vendor release with concrete feature detail. No pricing or licence change mentioned.",
+      "why": "A surfacing/CAD tool update relevant to modelers feeding Houdini pipelines.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/plasticity-2026-2-is-out",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/3d-modeling-cad-software-plasticity-2026-2-has-been-released",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/42005/images/6ad743eb9ac08/cover_800x800.jpg"
+    },
+    {
+      "headline": "Chaos Arena used to previsualize unbuilt Miami residential tower",
+      "body": "BINYAN Studios used Chaos's Arena cloud rendering platform to produce pre-construction visualisations of Faena Residences Miami. Vendor-supplied case study with limited technical detail beyond the tool name and use case. No numbers on render cost, turnaround, or pipeline integration specifics given.",
+      "why": "Shows a real studio production use of Chaos cloud rendering, though detail is thin.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/binyan-studios",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/BINYAN_Chaos_hero.jpg"
+    }
+  ],
+  "usage": {
+    "input_tokens": 14848,
+    "output_tokens": 805
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
