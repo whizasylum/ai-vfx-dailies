@@ -1226,6 +1226,36 @@
    "issue_ids": [
     50
    ]
+  },
+  {
+   "story_id": "bf5a04c174",
+   "at": "2026-10-21T21:10:38.969781+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 PDD distilled ComfyUI node published on Hugging Face",
+   "sources": [
+    "HF text-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "ambiguity",
+    "another",
+    "before",
+    "comfyui",
+    "distilled",
+    "face",
+    "hugging",
+    "integration",
+    "licence",
+    "means",
+    "minimax-h3",
+    "node",
+    "pdd",
+    "point"
+   ],
+   "via": "page",
+   "issue_ids": [
+    51
+   ]
   }
  ]
 }

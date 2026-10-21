@@ -1,0 +1,169 @@
+{
+  "verdict": "Quiet day for pipeline-relevant news: one real model-availability item worth noting, the rest is research-paper churn, marketing fluff, and VFX breakdown PR with no technical substance.",
+  "stories": [
+    {
+      "headline": "MiniMax-H3-Turbo weights published on Hugging Face, ComfyUI-tagged",
+      "body": "A Turbo variant of MiniMax-H3 was published to Hugging Face, based on MiniMaxAI/MiniMax-H3, using the diffusers library and tagged for ComfyUI compatibility. Licence is listed as \"other\" rather than a standard permissive licence, so usability on client work needs checking before adoption. No download or performance numbers are verified beyond the listing itself.",
+      "why": "Another MiniMax-H3 variant moving toward ComfyUI, but licence terms need verification before studio use.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/Wuli-art/MiniMax-H3-Turbo",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Substance 3D Painter 12.2 adds cage painting directly on the model",
+      "body": "Adobe's Substance 3D Painter 12.2 lets artists paint baking cages directly on the mesh, plus smarter Polygon Fill selections, texture-set highlighting, and improved real-time rendering for overlapping transparent materials. This is a texturing-tool update, not AI-driven, but it changes a concrete step in the baking workflow for anyone running Painter in production.",
+      "why": "Direct workflow change for texture artists baking cages, available now in a shipping tool update.",
+      "channel": "a",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/substance-3d-painter-12-2-lets-artists-paint-baking-cages-directly-on-models",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/42022/images/6ad9037c77442/cover_800x800.jpg"
+    },
+    {
+      "headline": "Moho 14.5 adds live webcam-driven rig performance mode",
+      "body": "A free update for Moho 14.5 owners adds Live Mode, which drives existing rigs via webcam face tracking, gamepad input, and live physics, streaming the performance to broadcast software. It also adds EXR and PNG export with colour profiles and improvements to the Batch Exporter. Relevant mainly to 2D animation pipelines rather than USD/Houdini work.",
+      "why": "Niche for this reader's pipeline but a concrete, shipping feature with real-time animation implications.",
+      "channel": "a",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/moho-145-showtime-puts-rigs-streams-virtual-webcam",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081569-showtimelogo-2-1280.jpg?itok=TN_4NX3O"
+    },
+    {
+      "headline": "I Used AI to Create a Massive 3D Printed D&D City",
+      "body": "Integrating Vision-LLMs to perform complex geometric tasks like model segmentation and interactive assembly documentation.",
+      "why": "The methodology of using LLMs to drive scene-management scripts can be adapted to Houdini for procedural kit-bashing and modular assembly.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=7hJ0wi2nEEA",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/7hJ0wi2nEEA/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ChatGPT (Astra/Vision)",
+          "used_for": "Planning, spatial segmentation logic, and generating assembly scripts"
+        },
+        {
+          "name": "3DAIStudio",
+          "used_for": "Unified interface for 3D generative models like Hi3D and Tripo"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Host environment for asset visualization and bridge for AI operations"
+        }
+      ],
+      "whats_transferable": [
+        "Automated script-based asset decomposition using LLM vision",
+        "Multi-model prop generation for background set dressing"
+      ],
+      "topic_relevance": 6.0,
+      "transferable_craft": 6.0
+    },
+    {
+      "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+      "body": "Plugin-based workflow linking LLM scripting to persistent character asset generation.",
+      "why": "Hosted proprietary tool; limited to previs ingestion and look-development reference.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=R71EM_tNGCU",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/R71EM_tNGCU/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield Soul/Seedance",
+          "used_for": "Multimodal image and video generation."
+        },
+        {
+          "name": "ChatGPT",
+          "used_for": "Scripting and prompt orchestration via plugin."
+        }
+      ],
+      "whats_transferable": [
+        "Character sheet configuration for visual consistency.",
+        "Facial masking technique to isolate detail sources.",
+        "Three-quarter camera angles for environment reference stability."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    },
+    {
+      "headline": "Nano Banana 2.1 in Google Flow: Full Tutorial for Beginners",
+      "body": "Introduction of Nano Banana 2.1 within the Google Flow ecosystem, offering improved text rendering and integrated character consistency tools.",
+      "why": "The hosted nature of Google Flow limits local script integration. It serves primarily as a high-speed pre-visualization or concept art tool before moving to USD-based surfacing or layout.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "AI2Play (pixaroma)",
+          "url": "https://www.youtube.com/watch?v=YGtyn1GKTu8",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/YGtyn1GKTu8/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Google Flow",
+          "used_for": "Cloud-based AI creation environment and interface"
+        },
+        {
+          "name": "Nano Banana 2.1",
+          "used_for": "Large-scale image generation model specializing in text and character consistency"
+        },
+        {
+          "name": "Veo",
+          "used_for": "AI video generation"
+        }
+      ],
+      "whats_transferable": [
+        "Using double-quote delimiters in prompts for high-fidelity text rendering.",
+        "Defining character-specific traits (age, clothing, features) to maintain identity across shots.",
+        "Applying reference images to guide placement of graphic elements like logos on 3D surfaces.",
+        "Utilizing consistent color naming conventions across a prompt set to maintain brand palette."
+      ],
+      "topic_relevance": 6.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 11902,
+    "output_tokens": 826
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}

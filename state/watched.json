@@ -5451,10 +5451,310 @@
    "duration_s": 52,
    "published": false,
    "reason_if_low": "under 90s (52s)"
+  },
+  "IdN3Wau5uD0": {
+   "title": "This Is Where God\u2019s Eye View Is Going Next",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/IdN3Wau5uD0",
+   "at": "2026-10-21T21:13:50.629431+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "IBfkHD_kgaI": {
+   "title": "New Open-Source AI Animation is here!",
+   "channel": "PixelArtistry",
+   "url": "https://www.youtube.com/shorts/IBfkHD_kgaI",
+   "at": "2026-10-21T21:13:50.740077+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "RVXeLAxziaI": {
+   "title": "Claude Code Game: Can You Build a Custom Vehicle in 30 Minutes?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/RVXeLAxziaI",
+   "at": "2026-10-21T21:13:50.880426+00:00",
+   "duration_s": 39,
+   "published": false,
+   "reason_if_low": "under 90s (39s)"
+  },
+  "7hJ0wi2nEEA": {
+   "title": "I Used AI to Create a Massive 3D Printed D&D City",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=7hJ0wi2nEEA",
+   "at": "2026-10-21T21:13:50.969987+00:00",
+   "duration_s": 1146,
+   "topic_relevance": 6.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "7hJ0wi2nEEA",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "ChatGPT (Astra/Vision)",
+      "used_for": "Planning, spatial segmentation logic, and generating assembly scripts"
+     },
+     {
+      "name": "3DAIStudio",
+      "used_for": "Unified interface for 3D generative models like Hi3D and Tripo"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Host environment for asset visualization and bridge for AI operations"
+     }
+    ],
+    "whats_new": "Integrating Vision-LLMs to perform complex geometric tasks like model segmentation and interactive assembly documentation.",
+    "whats_transferable": [
+     "Automated script-based asset decomposition using LLM vision",
+     "Multi-model prop generation for background set dressing"
+    ],
+    "pipeline_notes": "The methodology of using LLMs to drive scene-management scripts can be adapted to Houdini for procedural kit-bashing and modular assembly.",
+    "visual_quality_notes": "Meshes are watertight and detailed enough for mid-ground props, though they require retopology for hero animation work.",
+    "category": "workflow",
+    "topic_relevance": 6.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Coordinated diverse AI generators to create a library of architectural and organic assets.",
+     "Used LLM reasoning to decompose large models into manageable, printable segments.",
+     "Created a custom 3D web utility for asset tracking and assembly using AI-assisted coding."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Used AI to Create a Massive 3D Printed D&D City",
+    "body": "Integrating Vision-LLMs to perform complex geometric tasks like model segmentation and interactive assembly documentation.",
+    "why": "The methodology of using LLMs to drive scene-management scripts can be adapted to Houdini for procedural kit-bashing and modular assembly.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=7hJ0wi2nEEA",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/7hJ0wi2nEEA/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ChatGPT (Astra/Vision)",
+      "used_for": "Planning, spatial segmentation logic, and generating assembly scripts"
+     },
+     {
+      "name": "3DAIStudio",
+      "used_for": "Unified interface for 3D generative models like Hi3D and Tripo"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Host environment for asset visualization and bridge for AI operations"
+     }
+    ],
+    "whats_transferable": [
+     "Automated script-based asset decomposition using LLM vision",
+     "Multi-model prop generation for background set dressing"
+    ],
+    "topic_relevance": 6.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-21T21:16:21.505171+00:00"
+  },
+  "R71EM_tNGCU": {
+   "title": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=R71EM_tNGCU",
+   "at": "2026-10-21T21:14:42.954791+00:00",
+   "duration_s": 1076,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "tutorial",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "R71EM_tNGCU",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Soul/Seedance",
+      "used_for": "Multimodal image and video generation."
+     },
+     {
+      "name": "ChatGPT",
+      "used_for": "Scripting and prompt orchestration via plugin."
+     }
+    ],
+    "whats_new": "Plugin-based workflow linking LLM scripting to persistent character asset generation.",
+    "whats_transferable": [
+     "Character sheet configuration for visual consistency.",
+     "Facial masking technique to isolate detail sources.",
+     "Three-quarter camera angles for environment reference stability."
+    ],
+    "pipeline_notes": "Hosted proprietary tool; limited to previs ingestion and look-development reference.",
+    "visual_quality_notes": "Strong character persistence via sheets; temporal artifacts present in motion.",
+    "category": "tutorial",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Mask faces on character sheets to enforce portrait consistency.",
+     "Use three-quarter environment views for better model spatial logic.",
+     "Automate script-to-prompt conversion via ChatGPT skills.",
+     "Incorporate cinematic prompting to mitigate diffusion jitter."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+    "body": "Plugin-based workflow linking LLM scripting to persistent character asset generation.",
+    "why": "Hosted proprietary tool; limited to previs ingestion and look-development reference.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=R71EM_tNGCU",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/R71EM_tNGCU/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Soul/Seedance",
+      "used_for": "Multimodal image and video generation."
+     },
+     {
+      "name": "ChatGPT",
+      "used_for": "Scripting and prompt orchestration via plugin."
+     }
+    ],
+    "whats_transferable": [
+     "Character sheet configuration for visual consistency.",
+     "Facial masking technique to isolate detail sources.",
+     "Three-quarter camera angles for environment reference stability."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-21T21:16:21.505193+00:00"
+  },
+  "OHawD92HnN8": {
+   "title": "THE DISTANCE | An Eyewear Campaign on the Moon",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/OHawD92HnN8",
+   "at": "2026-10-21T21:15:44.890518+00:00",
+   "duration_s": 66,
+   "published": false,
+   "reason_if_low": "under 90s (66s)"
+  },
+  "1E96lnbXnds": {
+   "title": "We Gave Higgsfield to a Monkey | Higgsfield Academy",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/1E96lnbXnds",
+   "at": "2026-10-21T21:15:45.126358+00:00",
+   "duration_s": 80,
+   "published": false,
+   "reason_if_low": "under 90s (80s)"
+  },
+  "YGtyn1GKTu8": {
+   "title": "Nano Banana 2.1 in Google Flow: Full Tutorial for Beginners",
+   "channel": "AI2Play (pixaroma)",
+   "url": "https://www.youtube.com/watch?v=YGtyn1GKTu8",
+   "at": "2026-10-21T21:15:45.351146+00:00",
+   "duration_s": 539,
+   "topic_relevance": 6.0,
+   "transferable_craft": 6.0,
+   "category": "tutorial",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "YGtyn1GKTu8",
+    "channel": "AI2Play (pixaroma)",
+    "tools_and_platforms": [
+     {
+      "name": "Google Flow",
+      "used_for": "Cloud-based AI creation environment and interface"
+     },
+     {
+      "name": "Nano Banana 2.1",
+      "used_for": "Large-scale image generation model specializing in text and character consistency"
+     },
+     {
+      "name": "Veo",
+      "used_for": "AI video generation"
+     }
+    ],
+    "whats_new": "Introduction of Nano Banana 2.1 within the Google Flow ecosystem, offering improved text rendering and integrated character consistency tools.",
+    "whats_transferable": [
+     "Using double-quote delimiters in prompts for high-fidelity text rendering.",
+     "Defining character-specific traits (age, clothing, features) to maintain identity across shots.",
+     "Applying reference images to guide placement of graphic elements like logos on 3D surfaces.",
+     "Utilizing consistent color naming conventions across a prompt set to maintain brand palette."
+    ],
+    "pipeline_notes": "The hosted nature of Google Flow limits local script integration. It serves primarily as a high-speed pre-visualization or concept art tool before moving to USD-based surfacing or layout.",
+    "visual_quality_notes": "Strong text coherence and believable lighting. Maintains sharp details at 2K upscales, though the aesthetic retains a standard photorealistic AI sheen.",
+    "category": "tutorial",
+    "topic_relevance": 6.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Guides beginners through the Google Flow UI for image and video generation.",
+     "Demonstrates character identity persistence using a dedicated character-building tool.",
+     "Explains reference-based editing for swapping specific objects in a scene while maintaining context.",
+     "Shows successful in-image text generation for complex graphic design tasks."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Nano Banana 2.1 in Google Flow: Full Tutorial for Beginners",
+    "body": "Introduction of Nano Banana 2.1 within the Google Flow ecosystem, offering improved text rendering and integrated character consistency tools.",
+    "why": "The hosted nature of Google Flow limits local script integration. It serves primarily as a high-speed pre-visualization or concept art tool before moving to USD-based surfacing or layout.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "AI2Play (pixaroma)",
+      "url": "https://www.youtube.com/watch?v=YGtyn1GKTu8",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/YGtyn1GKTu8/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Google Flow",
+      "used_for": "Cloud-based AI creation environment and interface"
+     },
+     {
+      "name": "Nano Banana 2.1",
+      "used_for": "Large-scale image generation model specializing in text and character consistency"
+     },
+     {
+      "name": "Veo",
+      "used_for": "AI video generation"
+     }
+    ],
+    "whats_transferable": [
+     "Using double-quote delimiters in prompts for high-fidelity text rendering.",
+     "Defining character-specific traits (age, clothing, features) to maintain identity across shots.",
+     "Applying reference images to guide placement of graphic elements like logos on 3D surfaces.",
+     "Utilizing consistent color naming conventions across a prompt set to maintain brand palette."
+    ],
+    "topic_relevance": 6.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-21T21:16:21.505205+00:00"
   }
  },
  "quota": {
-  "date": "2026-10-20",
-  "minutes": 13.3
+  "date": "2026-10-21",
+  "minutes": 46.016666666666666
  }
 }

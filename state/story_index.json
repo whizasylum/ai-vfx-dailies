@@ -1,172 +1,4 @@
 {
- "22ffb62450": {
-  "headline": "ComfyUI 0.38.0 adds Qwen Image 2.1 transformer compilation and per-block attention config",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "attention",
-   "comfyui",
-   "compilation",
-   "config",
-   "directly",
-   "image",
-   "locally",
-   "per-block",
-   "qwen",
-   "runs",
-   "speeds",
-   "transformer",
-   "week."
-  ],
-  "at": "2026-09-29T21:53:23.675234+00:00"
- },
- "6ebe8376fa": {
-  "headline": "Lightricks releases LTX-2.5 IC-LoRA restoration model for video-to-video colorization and archive repair",
-  "sources": [
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "archival",
-   "archive",
-   "colorization",
-   "commercial",
-   "could",
-   "ic-lora",
-   "licence",
-   "lightricks",
-   "lora",
-   "ltx-2.5",
-   "matter",
-   "permits",
-   "repair",
-   "restoration"
-  ],
-  "at": "2026-09-29T21:53:23.675267+00:00"
- },
- "86070c309b": {
-  "headline": "ILM VFX supervisor discusses Hulk work on Spider-Man: Brand New Day",
-  "sources": [
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "brand",
-   "character",
-   "context",
-   "creature",
-   "day",
-   "discusses",
-   "facility",
-   "hulk",
-   "ilm",
-   "spider-man",
-   "structures",
-   "supervision.",
-   "supervisor",
-   "useful"
-  ],
-  "at": "2026-09-29T21:53:23.675282+00:00"
- },
- "d7f8df5866": {
-  "headline": "Blender Conference talk breaks down Blender pipeline used on feature 'Backrooms'",
-  "sources": [
-   "befores & afters"
-  ],
-  "channel": "b",
-  "terms": [
-   "backrooms",
-   "blender",
-   "breaks",
-   "case",
-   "concrete",
-   "conference",
-   "dcc",
-   "displacing",
-   "down",
-   "feature",
-   "marketing",
-   "pipeline",
-   "real",
-   "shoot"
-  ],
-  "at": "2026-09-29T21:53:23.675295+00:00"
- },
- "544460adbb": {
-  "headline": "The Best AI Workflow for a 2D + Live Action Film",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "action",
-   "drive",
-   "film",
-   "generation",
-   "geometry",
-   "integration",
-   "live",
-   "low-res",
-   "method",
-   "mirrors",
-   "neural",
-   "over-paint",
-   "pass.",
-   "path-traced"
-  ],
-  "at": "2026-09-29T21:53:23.675316+00:00"
- },
- "ab0471967b": {
-  "headline": "How Much of Filmmaking Can AI Agents Actually Do?",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "actually",
-   "agent",
-   "agentic",
-   "agents",
-   "alternative",
-   "applicable",
-   "assembly",
-   "assets",
-   "automation",
-   "automation.",
-   "comp.",
-   "could",
-   "custom",
-   "demonstrated"
-  ],
-  "at": "2026-09-29T21:53:23.675337+00:00"
- },
- "ab97c153ae": {
-  "headline": "What If You Could See Every Moment at Once?",
-  "sources": [
-   "Bilawal Sidhu"
-  ],
-  "channel": "a",
-  "terms": [
-   "alembic",
-   "assets",
-   "base",
-   "cloud",
-   "could",
-   "dynamic",
-   "every",
-   "extensions",
-   "forensics.",
-   "gaussians",
-   "generated",
-   "geometry",
-   "highly",
-   "houdini"
-  ],
-  "at": "2026-09-29T21:53:23.675354+00:00"
- },
  "d8877eefc0": {
   "headline": "Apple Studios VFX crew ratifies first IATSE contract",
   "sources": [
@@ -2094,5 +1926,148 @@
    "though"
   ],
   "at": "2026-10-20T21:11:59.516287+00:00"
+ },
+ "dd2d0bf07b": {
+  "headline": "MiniMax-H3-Turbo weights published on Hugging Face, ComfyUI-tagged",
+  "sources": [
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "another",
+   "before",
+   "comfyui",
+   "comfyui-tagged",
+   "face",
+   "hugging",
+   "licence",
+   "minimax-h3",
+   "minimax-h3-turbo",
+   "moving",
+   "need",
+   "published",
+   "studio",
+   "terms"
+  ],
+  "at": "2026-10-21T21:16:18.636854+00:00"
+ },
+ "a9e3f4c0d7": {
+  "headline": "Substance 3D Painter 12.2 adds cage painting directly on the model",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "a",
+  "terms": [
+   "artists",
+   "baking",
+   "cage",
+   "cages",
+   "change",
+   "direct",
+   "directly",
+   "painter",
+   "painting",
+   "shipping",
+   "substance",
+   "texture",
+   "update.",
+   "workflow"
+  ],
+  "at": "2026-10-21T21:16:18.636884+00:00"
+ },
+ "615e7a644a": {
+  "headline": "Moho 14.5 adds live webcam-driven rig performance mode",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "a",
+  "terms": [
+   "animation",
+   "concrete",
+   "feature",
+   "implications.",
+   "live",
+   "mode",
+   "moho",
+   "niche",
+   "performance",
+   "pipeline",
+   "reader",
+   "real-time",
+   "rig",
+   "shipping"
+  ],
+  "at": "2026-10-21T21:16:18.636898+00:00"
+ },
+ "7aa39a8939": {
+  "headline": "I Used AI to Create a Massive 3D Printed D&D City",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "adapted",
+   "assembly.",
+   "city",
+   "create",
+   "drive",
+   "houdini",
+   "kit-bashing",
+   "llms",
+   "massive",
+   "methodology",
+   "modular",
+   "printed",
+   "procedural",
+   "scene-management"
+  ],
+  "at": "2026-10-21T21:16:18.636910+00:00"
+ },
+ "59e6612966": {
+  "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "dramas",
+   "hosted",
+   "ingestion",
+   "limited",
+   "look-development",
+   "previs",
+   "proprietary",
+   "reference.",
+   "short",
+   "step",
+   "views",
+   "viral",
+   "workflow"
+  ],
+  "at": "2026-10-21T21:16:18.636921+00:00"
+ },
+ "df41cabaaa": {
+  "headline": "Nano Banana 2.1 in Google Flow: Full Tutorial for Beginners",
+  "sources": [
+   "AI2Play (pixaroma)"
+  ],
+  "channel": "a",
+  "terms": [
+   "art",
+   "banana",
+   "before",
+   "beginners",
+   "concept",
+   "flow",
+   "full",
+   "google",
+   "high-speed",
+   "hosted",
+   "integration.",
+   "layout.",
+   "limits",
+   "local"
+  ],
+  "at": "2026-10-21T21:16:18.636936+00:00"
  }
 }
