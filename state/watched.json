@@ -5751,10 +5751,167 @@
     "transferable_craft": 6.0
    },
    "delivered_at": "2026-10-21T21:16:21.505205+00:00"
+  },
+  "f1T3s4v30HU": {
+   "title": "Vellum 201 - Ep.09: Autostitcher",
+   "channel": "Entagma",
+   "url": "https://www.youtube.com/shorts/f1T3s4v30HU",
+   "at": "2026-10-22T21:11:34.517349+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
+  },
+  "RrJ53u3bdUQ": {
+   "title": "AI Game Development: How Far Can You Go With Opus 5.5?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/RrJ53u3bdUQ",
+   "at": "2026-10-22T21:11:34.607771+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "6MpHBHw30OE": {
+   "title": "I Reverse Engineered Mario 64 to Make My Own Game",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=6MpHBHw30OE",
+   "at": "2026-10-22T21:11:34.735253+00:00",
+   "duration_s": 1341,
+   "topic_relevance": 5.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "6MpHBHw30OE",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "REA (Reverse Engineer Anything)",
+      "used_for": "Extracting movement constants and logic from binary game files"
+     },
+     {
+      "name": "Claude-3.5 Sonnet / Opus",
+      "used_for": "Orchestrating agentic workflows for asset generation and code writing"
+     },
+     {
+      "name": "Godot",
+      "used_for": "Game engine for rapid iteration with multiple agent instances"
+     },
+     {
+      "name": "Higgsfield API",
+      "used_for": "Centralized access to video and 3D generation models"
+     },
+     {
+      "name": "Tripo AI / Meshy / Hunyuan",
+      "used_for": "Text-to-3D and Image-to-3D asset generation"
+     },
+     {
+      "name": "Flux / Seedream 5.0",
+      "used_for": "Image generation for reference and textures"
+     }
+    ],
+    "whats_new": "The creator demonstrates 'Reverse Engineer Anything' (REA) to extract exact animation and physics constants (jump heights, gravity, friction) from a legacy console binary to guide AI-driven asset and logic creation in a modern engine.",
+    "whats_transferable": [
+     "Using REA to capture precise animation timing and motion curves from existing media for reference in procedural tools",
+     "A multi-agent LLM workflow where Claude manages Godot instances to build levels and place assets based on high-level design briefs",
+     "Integrating 3D generation APIs (Tripo, Meshy) directly into an automated pipeline for rapid environment population"
+    ],
+    "pipeline_notes": "The primary transfer is 'agentic level building.' A TD could use a similar logic where an LLM orchestrates Houdini's Python API to assemble USD stages based on extracted legacy data or natural language prompts.",
+    "visual_quality_notes": "Stylized 'Nintendo 64' aesthetic, which hides many AI 3D generation artifacts. The consistency between generated NPCs is surprisingly high due to image-to-3D workflows guided by a unified reference style.",
+    "category": "workflow",
+    "topic_relevance": 5.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Reverse engineered movement constants from Super Mario 64 using the REA library to inform physics in a new project.",
+     "Utilized a multi-agent system in Claude to handle tasks including asset placement, code logic, and UI design.",
+     "Generated 182 3D models and over 400 sound files using automated API calls within a 45-hour timeframe.",
+     "Integrated Higgsfield API as a bridge for various generative models (Tripo, Hunyuan, Flux) to ensure a unified asset pipeline."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Reverse Engineered Mario 64 to Make My Own Game",
+    "body": "The creator demonstrates 'Reverse Engineer Anything' (REA) to extract exact animation and physics constants (jump heights, gravity, friction) from a legacy console binary to guide AI-driven asset and logic creation in a modern engine.",
+    "why": "The primary transfer is 'agentic level building.' A TD could use a similar logic where an LLM orchestrates Houdini's Python API to assemble USD stages based on extracted legacy data or natural language prompts.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=6MpHBHw30OE",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i3.ytimg.com/vi/6MpHBHw30OE/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "REA (Reverse Engineer Anything)",
+      "used_for": "Extracting movement constants and logic from binary game files"
+     },
+     {
+      "name": "Claude-3.5 Sonnet / Opus",
+      "used_for": "Orchestrating agentic workflows for asset generation and code writing"
+     },
+     {
+      "name": "Godot",
+      "used_for": "Game engine for rapid iteration with multiple agent instances"
+     },
+     {
+      "name": "Higgsfield API",
+      "used_for": "Centralized access to video and 3D generation models"
+     },
+     {
+      "name": "Tripo AI / Meshy / Hunyuan",
+      "used_for": "Text-to-3D and Image-to-3D asset generation"
+     },
+     {
+      "name": "Flux / Seedream 5.0",
+      "used_for": "Image generation for reference and textures"
+     }
+    ],
+    "whats_transferable": [
+     "Using REA to capture precise animation timing and motion curves from existing media for reference in procedural tools",
+     "A multi-agent LLM workflow where Claude manages Godot instances to build levels and place assets based on high-level design briefs",
+     "Integrating 3D generation APIs (Tripo, Meshy) directly into an automated pipeline for rapid environment population"
+    ],
+    "topic_relevance": 5.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-22T21:12:44.754917+00:00"
+  },
+  "MWQSBjaCvwM": {
+   "title": "You don't have to quit your job to start with AI",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/MWQSBjaCvwM",
+   "at": "2026-10-22T21:12:37.064276+00:00",
+   "duration_s": 26,
+   "published": false,
+   "reason_if_low": "under 90s (26s)"
+  },
+  "8JrvSsOsTBg": {
+   "title": "The easiest way to make viral what if videos",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/8JrvSsOsTBg",
+   "at": "2026-10-22T21:12:41.623007+00:00",
+   "duration_s": 62,
+   "published": false,
+   "reason_if_low": "under 90s (62s)"
+  },
+  "Fwar_yTBZWk": {
+   "title": "Pitch your first client with 3 free AI product photos",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/Fwar_yTBZWk",
+   "at": "2026-10-22T21:12:41.752910+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
   }
  },
  "quota": {
-  "date": "2026-10-21",
-  "minutes": 46.016666666666666
+  "date": "2026-10-22",
+  "minutes": 42.35
  }
 }

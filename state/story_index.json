@@ -1,173 +1,4 @@
 {
- "d8877eefc0": {
-  "headline": "Apple Studios VFX crew ratifies first IATSE contract",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "ai-use",
-   "apple",
-   "clauses",
-   "client",
-   "contract",
-   "contracts",
-   "crew",
-   "deal",
-   "iatse",
-   "pipelines.",
-   "ratifies",
-   "require",
-   "shape",
-   "studios"
-  ],
-  "at": "2026-09-30T21:51:38.555994+00:00"
- },
- "78ace017f8": {
-  "headline": "Chaos ships Vantage 3.4 with OpenPBR and updated fire/smoke sim support",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "affects",
-   "between",
-   "chaos",
-   "fire",
-   "karma",
-   "material",
-   "openpbr",
-   "other",
-   "portability",
-   "renderers.",
-   "sim",
-   "smoke",
-   "support",
-   "usd-based"
-  ],
-  "at": "2026-09-30T21:51:38.556022+00:00"
- },
- "31a8b2606d": {
-  "headline": "Cinema 4D 2026.4 adds an MCP server for Claude/ChatGPT control",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "chatgpt",
-   "cinema",
-   "claude",
-   "control",
-   "dcc",
-   "endpoint",
-   "expose",
-   "houdini",
-   "mainstream",
-   "mcp",
-   "nuke",
-   "parity.",
-   "pattern",
-   "server"
-  ],
-  "at": "2026-09-30T21:51:38.556037+00:00"
- },
- "f7abfcfc2a": {
-  "headline": "LTX-2.5 gets an IC-LoRA for SDR-to-HDR video conversion",
-  "sources": [
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "conversion",
-   "delivery",
-   "first.",
-   "ic-lora",
-   "ltx-2.5",
-   "needs",
-   "ocio",
-   "pipelines",
-   "sdr-to-hdr",
-   "touch",
-   "verification",
-   "video",
-   "working",
-   "would"
-  ],
-  "at": "2026-09-30T21:51:38.556049+00:00"
- },
- "f53ae2d769": {
-  "headline": "Framestore and Koala FX breakdowns: CG battlefield and mountain environment extensions",
-  "sources": [
-   "CG Channel",
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "battlefield",
-   "breakdowns",
-   "comparable",
-   "concrete",
-   "environment",
-   "extensions",
-   "framestore",
-   "koala",
-   "mountain",
-   "reference",
-   "shots.",
-   "sim",
-   "studios",
-   "useful"
-  ],
-  "at": "2026-09-30T21:51:38.556062+00:00"
- },
- "cfc60ca88f": {
-  "headline": "I Tested AI Agents Against a Real AI Artist",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "against",
-   "agents",
-   "artist",
-   "artist.",
-   "black",
-   "box",
-   "camera",
-   "component",
-   "control",
-   "currently",
-   "film",
-   "granular",
-   "houdini",
-   "integration"
-  ],
-  "at": "2026-09-30T21:51:38.556091+00:00"
- },
- "509691da56": {
-  "headline": "AI Can Now Create VFX Fro YouR Game & Characters",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "between",
-   "blender",
-   "bridge",
-   "characters",
-   "could",
-   "create",
-   "dcc",
-   "deformation.",
-   "directly",
-   "edge-flow",
-   "engine.",
-   "facilitates",
-   "files.",
-   "fro"
-  ],
-  "at": "2026-09-30T21:51:38.556114+00:00"
- },
  "3c2b96ef18": {
   "headline": "LTX-2.5 gets layout-to-render IC-LoRA and character LoRA training guide",
   "sources": [
@@ -2069,5 +1900,131 @@
    "local"
   ],
   "at": "2026-10-21T21:16:18.636936+00:00"
+ },
+ "ea41a4d416": {
+  "headline": "Lightricks ships a wide set of LTX-2.3/2.5 IC-LoRAs for video-to-video tasks",
+  "sources": [
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "comfyui",
+   "fast.",
+   "ic-loras",
+   "kind",
+   "lightricks",
+   "loras",
+   "ltx-2.3",
+   "open",
+   "pipeline",
+   "restyle",
+   "set",
+   "task-specific",
+   "tasks",
+   "thing"
+  ],
+  "at": "2026-10-22T21:12:42.668903+00:00"
+ },
+ "9abfdafa0f": {
+  "headline": "Brahma AI's Emmy-winning face replacement tech is heading into Nuke",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "brahma",
+   "budget",
+   "change",
+   "client",
+   "de-aging",
+   "emmy-winning",
+   "face",
+   "face-replacement",
+   "heading",
+   "jobs.",
+   "nuke",
+   "nuke-native",
+   "plugin",
+   "replacement"
+  ],
+  "at": "2026-10-22T21:12:42.668927+00:00"
+ },
+ "7f918991c1": {
+  "headline": "KeenTools launches KeenFace, photo-to-MetaHuman head generator",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "r",
+  "terms": [
+   "character",
+   "cleanup",
+   "could",
+   "direct",
+   "game",
+   "generator",
+   "head",
+   "keenface",
+   "keentools",
+   "manual",
+   "photo-to-metahuman",
+   "pipeline",
+   "previs",
+   "replace"
+  ],
+  "at": "2026-10-22T21:12:42.668938+00:00"
+ },
+ "dcc9c52819": {
+  "headline": "OpenUSD 26.11.1 released",
+  "sources": [
+   "OpenUSD"
+  ],
+  "channel": "r",
+  "terms": [
+   "across",
+   "affect",
+   "any",
+   "compatibility",
+   "hydra",
+   "openusd",
+   "point",
+   "schema",
+   "studio",
+   "toolchain.",
+   "usd",
+   "whole"
+  ],
+  "at": "2026-10-22T21:12:42.668945+00:00"
+ },
+ "c092efd3c9": {
+  "headline": "I Reverse Engineered Mario 64 to Make My Own Game",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "agentic",
+   "api",
+   "assemble",
+   "based",
+   "building.",
+   "could",
+   "data",
+   "engineered",
+   "extracted",
+   "game",
+   "houdini",
+   "language",
+   "legacy",
+   "level"
+  ],
+  "at": "2026-10-22T21:12:42.668958+00:00"
  }
 }

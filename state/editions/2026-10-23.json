@@ -1,0 +1,173 @@
+{
+  "verdict": "A quiet day dominated by SEO comparison spam and routine model-card updates; only a handful of items carry real pipeline relevance.",
+  "stories": [
+    {
+      "headline": "Lightricks ships a wide set of LTX-2.3/2.5 IC-LoRAs for video-to-video tasks",
+      "body": "Lightricks published a batch of task-specific LoRAs for its LTX-2.3 and LTX-2.5 video models: deblur, water simulation, pixel upscaling, instant-shave/character-consistency, cinemagraph, slow-motion control, and foley video-to-audio. All are gated under Lightricks' custom licence, distributed as diffusion-single-file checkpoints on Hugging Face. Several have thousands of downloads, suggesting real community uptake. No VRAM figures given; base models run at 22B parameters.",
+      "why": "Task-specific LoRAs on an open video model are the kind of thing that gets wired into a ComfyUI restyle pipeline fast.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Deblur",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Water-Simulation",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Pixel-Spatial-Upscaler",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Instant-Shave",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-nvfp4",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-LoRA-Foley-V2A",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Brahma AI's Emmy-winning face replacement tech is heading into Nuke",
+      "body": "Brahma AI co-founder Jo Plaete discussed the company's Neural Performance tech, which shared a 2026 Technology & Engineering Emmy with Disney Research, Digital Domain and Rising Sun Pictures. The company says a $150M round is funding work to turn the face-replacement and de-aging process into a tool that runs inside Nuke rather than a bespoke shot-by-shot service. Details are vendor-supplied and unverified beyond the interview.",
+      "why": "A Nuke-native face-replacement plugin would change how studios budget de-aging and face work on client jobs.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/vfxworld/nothing-hides-cinema-screen-jo-plaete-talks-brahma-ais-emmy-winning-face-replacement-tech",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/brahma2-1280.jpg?itok=besNjCj6"
+    },
+    {
+      "headline": "KeenTools launches KeenFace, photo-to-MetaHuman head generator",
+      "body": "KeenTools, maker of FaceBuilder, released KeenFace, a browser and API tool that builds production-ready heads in native MetaHuman topology from ordinary reference photos. It outputs 4K PBR maps, automated de-hairing, and a multicam Scan Reconstruction mode. Pricing is pay-as-you-go with free starter credits. Vendor-supplied claims, not independently verified.",
+      "why": "A direct photo-to-MetaHuman pipeline could replace manual scan cleanup for game and previs character work.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/keentools-keenface-turns-photos-metahuman-ready-3d-heads",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081582-kf-2026-hd-promo-1280.jpg?itok=bKr6fgeg"
+    },
+    {
+      "headline": "OpenUSD 26.11.1 released",
+      "body": "Pixar pushed a point release of OpenUSD, version 26.11.1, on GitHub. No changelog detail was included in the feed beyond the version tag. Anyone tracking USD compatibility in a Hydra/Houdini/Karma pipeline should check the release notes directly before upgrading.",
+      "why": "Any USD point release can affect schema or Hydra compatibility across a studio's whole toolchain.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "OpenUSD",
+          "url": "https://github.com/PixarAnimationStudios/OpenUSD/releases/tag/v26.11.1",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "I Reverse Engineered Mario 64 to Make My Own Game",
+      "body": "The creator demonstrates 'Reverse Engineer Anything' (REA) to extract exact animation and physics constants (jump heights, gravity, friction) from a legacy console binary to guide AI-driven asset and logic creation in a modern engine.",
+      "why": "The primary transfer is 'agentic level building.' A TD could use a similar logic where an LLM orchestrates Houdini's Python API to assemble USD stages based on extracted legacy data or natural language prompts.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=6MpHBHw30OE",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i3.ytimg.com/vi/6MpHBHw30OE/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "REA (Reverse Engineer Anything)",
+          "used_for": "Extracting movement constants and logic from binary game files"
+        },
+        {
+          "name": "Claude-3.5 Sonnet / Opus",
+          "used_for": "Orchestrating agentic workflows for asset generation and code writing"
+        },
+        {
+          "name": "Godot",
+          "used_for": "Game engine for rapid iteration with multiple agent instances"
+        },
+        {
+          "name": "Higgsfield API",
+          "used_for": "Centralized access to video and 3D generation models"
+        },
+        {
+          "name": "Tripo AI / Meshy / Hunyuan",
+          "used_for": "Text-to-3D and Image-to-3D asset generation"
+        },
+        {
+          "name": "Flux / Seedream 5.0",
+          "used_for": "Image generation for reference and textures"
+        }
+      ],
+      "whats_transferable": [
+        "Using REA to capture precise animation timing and motion curves from existing media for reference in procedural tools",
+        "A multi-agent LLM workflow where Claude manages Godot instances to build levels and place assets based on high-level design briefs",
+        "Integrating 3D generation APIs (Tripo, Meshy) directly into an automated pipeline for rapid environment population"
+      ],
+      "topic_relevance": 5.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 15498,
+    "output_tokens": 1353
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}

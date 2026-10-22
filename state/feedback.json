@@ -1256,6 +1256,66 @@
    "issue_ids": [
     51
    ]
+  },
+  {
+   "story_id": "7aa39a8939",
+   "at": "2026-10-22T21:08:32.046557+00:00",
+   "vote": 1,
+   "headline": "I Used AI to Create a Massive 3D Printed D&D City",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "adapted",
+    "assembly.",
+    "city",
+    "create",
+    "drive",
+    "houdini",
+    "kit-bashing",
+    "llms",
+    "massive",
+    "methodology",
+    "modular",
+    "printed",
+    "procedural",
+    "scene-management"
+   ],
+   "via": "page",
+   "issue_ids": [
+    53
+   ]
+  },
+  {
+   "story_id": "df41cabaaa",
+   "at": "2026-10-22T21:08:32.046582+00:00",
+   "vote": 1,
+   "headline": "Nano Banana 2.1 in Google Flow: Full Tutorial for Beginners",
+   "sources": [
+    "AI2Play (pixaroma)"
+   ],
+   "channel": "a",
+   "terms": [
+    "art",
+    "banana",
+    "before",
+    "beginners",
+    "concept",
+    "flow",
+    "full",
+    "google",
+    "high-speed",
+    "hosted",
+    "integration.",
+    "layout.",
+    "limits",
+    "local"
+   ],
+   "via": "page",
+   "issue_ids": [
+    52
+   ]
   }
  ]
 }

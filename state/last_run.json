@@ -1,43 +1,33 @@
 {
-  "at": "2026-10-21T21:16:21.510040+00:00",
+  "at": "2026-10-22T21:12:44.759023+00:00",
   "ratings": {
-    "total": 44,
-    "up": 43,
+    "total": 46,
+    "up": 45,
     "down": 1,
     "sources_adjusted": 9,
     "terms_learned": 6
   },
-  "raw": 178,
-  "candidates": 58,
-  "stories": 6,
+  "raw": 229,
+  "candidates": 60,
+  "stories": 5,
   "usage": {
-    "input_tokens": 11902,
-    "output_tokens": 826
+    "input_tokens": 15498,
+    "output_tokens": 1353
   },
   "video_watch": {
     "candidates": 14,
-    "watched": 3,
-    "published": 3,
+    "watched": 1,
+    "published": 1,
     "rejected": 5,
     "deferred": 0,
-    "errors": 0,
-    "already_watched": 6
+    "errors": 1,
+    "already_watched": 7
   },
   "problems": [
     {
       "source": "postPerspective",
       "type": "rss",
       "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
-    },
-    {
-      "source": "arXiv cs.GR",
-      "type": "arxiv",
-      "error": "Client error '429 Too Many Requests' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.GR&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    },
-    {
-      "source": "arXiv cs.CV (generative video)",
-      "type": "arxiv",
-      "error": "Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=cat%3Acs.CV+AND+%28abs%3A%22video+generation%22+OR+abs%3A%22video+diffusion%22+OR+abs%3A%22neural+rendering%22+OR+abs%3A%22gaussian+splatting%22%29&sortBy=submittedDate&sortOrder=descending&max_results=40'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
     }
   ]
 }
