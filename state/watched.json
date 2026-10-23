@@ -5908,10 +5908,146 @@
    "duration_s": 35,
    "published": false,
    "reason_if_low": "under 90s (35s)"
+  },
+  "-ENxmqDuMjo": {
+   "title": "The Geospatial Memory Palace",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/-ENxmqDuMjo",
+   "at": "2026-10-23T20:58:06.397311+00:00",
+   "duration_s": 22,
+   "published": false,
+   "reason_if_low": "under 90s (22s)"
+  },
+  "qN17_grXMpc": {
+   "title": "Why studio ads get scrolled past and UGC doesn't",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/qN17_grXMpc",
+   "at": "2026-10-23T20:58:06.474477+00:00",
+   "duration_s": 30,
+   "published": false,
+   "reason_if_low": "under 90s (30s)"
+  },
+  "TcYhTHMxZvw": {
+   "title": "Three AI content ideas for e-commerce brands",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/TcYhTHMxZvw",
+   "at": "2026-10-23T20:58:06.550985+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "5FdPO33_7aw": {
+   "title": "100 hooks, 100 AI actors, one afternoon",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/5FdPO33_7aw",
+   "at": "2026-10-23T20:58:06.625695+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
+  },
+  "cBxKZcalwkM": {
+   "title": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=cBxKZcalwkM",
+   "at": "2026-10-23T20:58:06.698337+00:00",
+   "duration_s": 1200,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "cBxKZcalwkM",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "ChatGPT",
+      "used_for": "Ideation, scriptwriting, and orchestrating the Higgsfield plugin"
+     },
+     {
+      "name": "Higgsfield Soul 2.0",
+      "used_for": "Ultra-realistic image generation for character and location assets"
+     },
+     {
+      "name": "Higgsfield Seedance 2.5",
+      "used_for": "Video generation with cinematic controls for lighting and camera"
+     }
+    ],
+    "whats_new": "Higgsfield's integration as a ChatGPT plugin, enabling a structured workflow from script to multi-shot video while maintaining character and location consistency through reference sheets and saved variables.",
+    "whats_transferable": [
+     "Construction of standardized character reference sheets (Front, Back, Face) on neutral gray backgrounds for better model inference.",
+     "Face-erasing technique on full-body front views to force the video model to pull facial features exclusively from the high-resolution close-up reference.",
+     "Prompting strategies for phonetic control of accents (e.g., describing a 'soft uvular r' to achieve a French accent).",
+     "Three-quarter view location generation to provide the model with enough spatial layout to maintain consistency across varying camera angles."
+    ],
+    "pipeline_notes": "Currently a web-based/plugin ecosystem. For a USD/Houdini pipeline, this workflow serves as a powerful rapid-storyboarding or layout-preview tool. The 'character sheet' logic is directly applicable to training LoRAs or using ControlNet/IP-Adapter setups in more traditional local pipelines like ComfyUI.",
+    "visual_quality_notes": "High realism in stills; video generation shows significant improvements in temporal stability but still requires iterative 'fixing' for physics-based interactions like falling.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a complete end-to-end workflow for AI-generated short films using Higgsfield's latest models.",
+     "Introduces specific 'Rules of Character Sheets' to maximize facial and costume consistency across shots.",
+     "Explains how to use gray backgrounds and specific multi-view layouts to optimize AI reference processing.",
+     "Details prompt engineering for cinematography, including camera moves, film grain, and lighting descriptors.",
+     "Shows iterative refinement of AI video shots by identifying and describing specific physics errors to ChatGPT for correction."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+    "body": "Higgsfield's integration as a ChatGPT plugin, enabling a structured workflow from script to multi-shot video while maintaining character and location consistency through reference sheets and saved variables.",
+    "why": "Currently a web-based/plugin ecosystem. For a USD/Houdini pipeline, this workflow serves as a powerful rapid-storyboarding or layout-preview tool. The 'character sheet' logic is directly applicable to training LoRAs or using ControlNet/IP-Adapter setups in more traditional local pipelines like ComfyUI.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=cBxKZcalwkM",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/cBxKZcalwkM/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ChatGPT",
+      "used_for": "Ideation, scriptwriting, and orchestrating the Higgsfield plugin"
+     },
+     {
+      "name": "Higgsfield Soul 2.0",
+      "used_for": "Ultra-realistic image generation for character and location assets"
+     },
+     {
+      "name": "Higgsfield Seedance 2.5",
+      "used_for": "Video generation with cinematic controls for lighting and camera"
+     }
+    ],
+    "whats_transferable": [
+     "Construction of standardized character reference sheets (Front, Back, Face) on neutral gray backgrounds for better model inference.",
+     "Face-erasing technique on full-body front views to force the video model to pull facial features exclusively from the high-resolution close-up reference.",
+     "Prompting strategies for phonetic control of accents (e.g., describing a 'soft uvular r' to achieve a French accent).",
+     "Three-quarter view location generation to provide the model with enough spatial layout to maintain consistency across varying camera angles."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-23T20:59:12.084956+00:00"
+  },
+  "JlS6SUISS7g": {
+   "title": "One Photo, Five Edits, One Line | Nano Banana #nanobanana #photoediting #googleflow",
+   "channel": "AI2Play (pixaroma)",
+   "url": "https://www.youtube.com/shorts/JlS6SUISS7g",
+   "at": "2026-10-23T20:59:08.514950+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
   }
  },
  "quota": {
-  "date": "2026-10-22",
-  "minutes": 42.35
+  "date": "2026-10-23",
+  "minutes": 20.0
  }
 }

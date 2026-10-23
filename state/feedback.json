@@ -1316,6 +1316,96 @@
    "issue_ids": [
     52
    ]
+  },
+  {
+   "story_id": "c092efd3c9",
+   "at": "2026-10-23T20:55:11.198853+00:00",
+   "vote": 1,
+   "headline": "I Reverse Engineered Mario 64 to Make My Own Game",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "agentic",
+    "api",
+    "assemble",
+    "based",
+    "building.",
+    "could",
+    "data",
+    "engineered",
+    "extracted",
+    "game",
+    "houdini",
+    "language",
+    "legacy",
+    "level"
+   ],
+   "via": "page",
+   "issue_ids": [
+    56
+   ]
+  },
+  {
+   "story_id": "9abfdafa0f",
+   "at": "2026-10-23T20:55:11.198879+00:00",
+   "vote": 1,
+   "headline": "Brahma AI's Emmy-winning face replacement tech is heading into Nuke",
+   "sources": [
+    "Animation World Network"
+   ],
+   "channel": "b",
+   "terms": [
+    "brahma",
+    "budget",
+    "change",
+    "client",
+    "de-aging",
+    "emmy-winning",
+    "face",
+    "face-replacement",
+    "heading",
+    "jobs.",
+    "nuke",
+    "nuke-native",
+    "plugin",
+    "replacement"
+   ],
+   "via": "page",
+   "issue_ids": [
+    55
+   ]
+  },
+  {
+   "story_id": "7f918991c1",
+   "at": "2026-10-23T20:55:11.198886+00:00",
+   "vote": 1,
+   "headline": "KeenTools launches KeenFace, photo-to-MetaHuman head generator",
+   "sources": [
+    "Animation World Network"
+   ],
+   "channel": "r",
+   "terms": [
+    "character",
+    "cleanup",
+    "could",
+    "direct",
+    "game",
+    "generator",
+    "head",
+    "keenface",
+    "keentools",
+    "manual",
+    "photo-to-metahuman",
+    "pipeline",
+    "previs",
+    "replace"
+   ],
+   "via": "page",
+   "issue_ids": [
+    54
+   ]
   }
  ]
 }

@@ -1,127 +1,4 @@
 {
- "3c2b96ef18": {
-  "headline": "LTX-2.5 gets layout-to-render IC-LoRA and character LoRA training guide",
-  "sources": [
-   "HF Lightricks (LTX)",
-   "Lightricks / LTX",
-   "Lightricks / LTX"
-  ],
-  "channel": "r",
-  "terms": [
-   "character",
-   "concrete",
-   "controllable",
-   "existing",
-   "gives",
-   "guide",
-   "ic-lora",
-   "inside",
-   "layout-to-render",
-   "lora",
-   "lora-based",
-   "ltx-2.5",
-   "open",
-   "stack."
-  ],
-  "at": "2026-10-01T22:26:41.792175+00:00"
- },
- "d769bbde8e": {
-  "headline": "DNEG details full-CG car crash and 80-second oner for Citadel Season 2",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "breakdown",
-   "car",
-   "citadel",
-   "concrete",
-   "crash",
-   "details",
-   "digital-double",
-   "dneg",
-   "fire",
-   "full-cg",
-   "oner",
-   "oner-stitching",
-   "reference",
-   "relevant"
-  ],
-  "at": "2026-10-01T22:26:41.792199+00:00"
- },
- "8418ed1346": {
-  "headline": "Utopai Studios launches script-to-shot production platform with its own video model",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "compress",
-   "could",
-   "details",
-   "full",
-   "kind",
-   "once",
-   "own",
-   "pipeline",
-   "platform",
-   "previs",
-   "production",
-   "script-to-shot",
-   "studios",
-   "surface."
-  ],
-  "at": "2026-10-01T22:26:41.792215+00:00"
- },
- "c4a4fe1187": {
-  "headline": "Luma ships Variants feature",
-  "sources": [
-   "Luma AI",
-   "Luma AI"
-  ],
-  "channel": "r",
-  "terms": [
-   "act",
-   "case",
-   "clarify",
-   "control",
-   "details",
-   "feature",
-   "flag",
-   "integration",
-   "later.",
-   "luma",
-   "only",
-   "options",
-   "thin",
-   "too"
-  ],
-  "at": "2026-10-01T22:26:41.792226+00:00"
- },
- "1c0e2bcd33": {
-  "headline": "3D AI Models Are Finally Watertight (6GB VRAM, Free & Local)",
-  "sources": [
-   "PixelArtistry"
-  ],
-  "channel": "a",
-  "terms": [
-   "asset",
-   "automated",
-   "background",
-   "base",
-   "boolean",
-   "break",
-   "compatible",
-   "finally",
-   "fixes",
-   "free",
-   "glb",
-   "gltf",
-   "highly",
-   "houdini"
-  ],
-  "at": "2026-10-01T22:26:41.792248+00:00"
- },
  "87a238415e": {
   "headline": "Maxon adds an MCP server to Cinema 4D for natural-language scene control",
   "sources": [
@@ -2026,5 +1903,128 @@
    "level"
   ],
   "at": "2026-10-22T21:12:42.668958+00:00"
+ },
+ "701c1a9dff": {
+  "headline": "Lightricks publishes LTX-2.3/2.5 IC-LoRA tools for clean-plate, decompression and character-consistency video work",
+  "sources": [
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "character-consistency",
+   "clean-plate",
+   "could",
+   "decompression",
+   "directly",
+   "ic-lora",
+   "lightricks",
+   "loras",
+   "ltx-2.3",
+   "open",
+   "prep",
+   "publishes",
+   "restoration",
+   "slot"
+  ],
+  "at": "2026-10-23T20:59:09.474342+00:00"
+ },
+ "0608dcadb8": {
+  "headline": "Brahma-style face tech aside, Lanterns VFX breakdown shows Accenture Song's practical approach to power effects",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "accenture",
+   "approach",
+   "aside",
+   "brahma-style",
+   "breakdown",
+   "build",
+   "deployable",
+   "effects",
+   "energy-effects",
+   "face",
+   "lanterns",
+   "power",
+   "practical",
+   "reference"
+  ],
+  "at": "2026-10-23T20:59:09.474373+00:00"
+ },
+ "0410d25203": {
+  "headline": "Territory Group launches Lux Meridian, an 'AI-native' feature and series studio using Adobe Firefly Foundry custom models",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "adobe",
+   "ai-native",
+   "around",
+   "building",
+   "custom",
+   "feature",
+   "firefly",
+   "formally",
+   "foundry",
+   "group",
+   "licensing",
+   "lux",
+   "major",
+   "meridian"
+  ],
+  "at": "2026-10-23T20:59:09.474391+00:00"
+ },
+ "3813afe13b": {
+  "headline": "Ziva-style muscle simulation plug-in for 3ds Max and Maya opens for testing",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "houdini",
+   "max",
+   "maya",
+   "muscle",
+   "opens",
+   "outside",
+   "plug-in",
+   "rare.",
+   "sim",
+   "simulation",
+   "since",
+   "testing",
+   "tooling",
+   "tracking"
+  ],
+  "at": "2026-10-23T20:59:09.474403+00:00"
+ },
+ "b14e7f0af6": {
+  "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "applicable",
+   "character",
+   "comfyui.",
+   "controlnet",
+   "currently",
+   "directly",
+   "dramas",
+   "ecosystem.",
+   "houdini",
+   "ip-adapter",
+   "layout-preview",
+   "like",
+   "local",
+   "logic"
+  ],
+  "at": "2026-10-23T20:59:09.474423+00:00"
  }
 }

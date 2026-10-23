@@ -1,0 +1,132 @@
+{
+  "verdict": "A quiet day dominated by arXiv research-paper noise and animation-industry press releases; only a handful of items have real pipeline relevance.",
+  "stories": [
+    {
+      "headline": "Lightricks publishes LTX-2.3/2.5 IC-LoRA tools for clean-plate, decompression and character-consistency video work",
+      "body": "Lightricks has released a cluster of IC-LoRA add-ons for its LTX-2.3 and LTX-2.5 video models on Hugging Face: a clean-plate/object-removal LoRA, a union-control LoRA for reference-sheet character consistency, and a decompression/video-restoration LoRA, plus an fp8 build of LTX-2.3 for image-to-video and video-to-video work. All are gated downloads under a custom 'other' licence, so commercial terms need checking before use on client work.",
+      "why": "Clean-plate and restoration LoRAs for an open video model could slot directly into VFX prep and restoration workflows.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Clean-Plate",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Union-Control",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Decompression",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-fp8",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Brahma-style face tech aside, Lanterns VFX breakdown shows Accenture Song's practical approach to power effects",
+      "body": "Art of VFX published a breakdown of how Accenture Song built the energy-construct effects for DC's Lanterns series, covering how specific prop shapes (a dollar bill, a bottle opener) were translated into glowing constructs. The piece is a studio case study with some technical detail on the effects pipeline rather than a tool release.",
+      "why": "Useful reference for build approach on stylised energy-effects work, though not a deployable tool.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/lanterns-accenture-song-showcases-the-vfx-behind-the-green-lantern-powers",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Territory Group launches Lux Meridian, an 'AI-native' feature and series studio using Adobe Firefly Foundry custom models",
+      "body": "David Sheldon-Hicks' Territory Group has launched a new studio collective, Lux Meridian, to produce theatrical features, premium series and animated films using AI-native workflows built on Adobe's Firefly Foundry custom models, already piloted on Brad Peyton's 'Dark Zone.' Details on the actual pipeline (what Firefly Foundry customisation involves, deliverable formats) are not given.",
+      "why": "Signals a major studio formally building production slates around custom Firefly models and licensing terms.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/territory-group-launches-ai-native-studio-lux-meridian",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081596-lux1.jpg?itok=VVVuTjxt"
+    },
+    {
+      "headline": "Ziva-style muscle simulation plug-in for 3ds Max and Maya opens for testing",
+      "body": "Artist Shirzad Bahrami is inviting testers for a muscle-simulation plug-in for 3ds Max and Maya described as Ziva VFX-inspired, ahead of an official release. No pricing, licence or technical specification is given beyond the call for testers, so this is early-stage and unverified vendor claim.",
+      "why": "Worth tracking if it ships, since Ziva-class muscle sim tooling outside Houdini is rare.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/42049/images/6adb488d36df0/cover_800x800.jpg"
+    },
+    {
+      "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+      "body": "Higgsfield's integration as a ChatGPT plugin, enabling a structured workflow from script to multi-shot video while maintaining character and location consistency through reference sheets and saved variables.",
+      "why": "Currently a web-based/plugin ecosystem. For a USD/Houdini pipeline, this workflow serves as a powerful rapid-storyboarding or layout-preview tool. The 'character sheet' logic is directly applicable to training LoRAs or using ControlNet/IP-Adapter setups in more traditional local pipelines like ComfyUI.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=cBxKZcalwkM",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/cBxKZcalwkM/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ChatGPT",
+          "used_for": "Ideation, scriptwriting, and orchestrating the Higgsfield plugin"
+        },
+        {
+          "name": "Higgsfield Soul 2.0",
+          "used_for": "Ultra-realistic image generation for character and location assets"
+        },
+        {
+          "name": "Higgsfield Seedance 2.5",
+          "used_for": "Video generation with cinematic controls for lighting and camera"
+        }
+      ],
+      "whats_transferable": [
+        "Construction of standardized character reference sheets (Front, Back, Face) on neutral gray backgrounds for better model inference.",
+        "Face-erasing technique on full-body front views to force the video model to pull facial features exclusively from the high-resolution close-up reference.",
+        "Prompting strategies for phonetic control of accents (e.g., describing a 'soft uvular r' to achieve a French accent).",
+        "Three-quarter view location generation to provide the model with enough spatial layout to maintain consistency across varying camera angles."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 13356,
+    "output_tokens": 1133
+  },
+  "candidate_count": 59,
+  "editorial_stories": true
+}
