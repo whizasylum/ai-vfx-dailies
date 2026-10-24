@@ -6044,10 +6044,267 @@
    "duration_s": 35,
    "published": false,
    "reason_if_low": "under 90s (35s)"
+  },
+  "ITekavgtB84": {
+   "title": "Recent Satellite Imagery in God\u2019s Eye View",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/ITekavgtB84",
+   "at": "2026-10-24T20:07:45.283802+00:00",
+   "duration_s": 20,
+   "published": false,
+   "reason_if_low": "under 90s (20s)"
+  },
+  "58UpDAnbdkM": {
+   "title": "New Local AI Turns Any Video Into Mixamo Animation",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=58UpDAnbdkM",
+   "at": "2026-10-24T20:07:45.382273+00:00",
+   "duration_s": 1074,
+   "topic_relevance": 9.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "58UpDAnbdkM",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Motion2MixamoRig",
+      "used_for": "Local video-to-motion retargeting for Mixamo-compatible 3D skeletons."
+     },
+     {
+      "name": "Charakuru",
+      "used_for": "Converting 2D character illustrations into rigged VRM avatars with spring bones."
+     },
+     {
+      "name": "Action Forge",
+      "used_for": "Browser-based animation library and editor supporting prop-based character animations."
+     },
+     {
+      "name": "EdenLive",
+      "used_for": "Real-time generative rendering research for interactive 3D environments."
+     },
+     {
+      "name": "GLOSS",
+      "used_for": "Artist-controlled local geometry texturing through a Blender-integrated AI workflow."
+     },
+     {
+      "name": "DirtyMoCap",
+      "used_for": "Recovering clean 4D SMPL-H motion from sparse or noisy marker data."
+     },
+     {
+      "name": "PartLLM",
+      "used_for": "Interactive 3D part segmentation using LLM point-prompting."
+     }
+    ],
+    "whats_new": "A surge of localized AI tools for 3D asset generation and motion capture has emerged, focusing on refining raw AI outputs through LLM-driven scripts and interactive segmentation.",
+    "whats_transferable": [
+     "Using LLM-based refinement passes (Claude/GPT-4o) to fix motion artifacts like leg sliding in raw AI-generated mocap.",
+     "Integrating 3D part segmentation (PartLLM) into asset workflows for selective texturing or rigging.",
+     "Applying local generative rendering (EdenLive) as a style-transfer or 'beauty' layer over low-fidelity interactive proxies."
+    ],
+    "pipeline_notes": "Most tools presented are standalone or Blender-centric. Integration into a USD-based pipeline would require converting the FBX/VRM/GLB outputs into USD. Motion2MixamoRig provides a local Python environment for mocap data generation which could bypass cloud latency but requires manual cleaning.",
+    "visual_quality_notes": "AI-generated motion still suffers from 'sliding' and root motion inaccuracies; raw outputs require a 'refined' pass. Charakuru produces high-quality spring bone rigs for anime-style assets. EdenLive achieves impressive 24FPS real-time rendering at 720p on consumer GPUs (RTX 4090).",
+    "category": "workflow",
+    "topic_relevance": 9.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Motion2MixamoRig allows for local, private video-to-animation processing without cloud-based mocap subscriptions.",
+     "Charakuru automates the 2D illustration to rigged 3D avatar pipeline, specifically targeting the VRM format.",
+     "Action Forge provides a free browser-based alternative to Mixamo with more advanced prop-handling capabilities.",
+     "GLOSS research introduces a method for artists to selectively paint and prompt textures on local geometry using a Blender addon.",
+     "EdenLive demonstrates real-time generative AI rendering capable of transforming proxy geometry into photorealistic or stylized visuals at 24+ FPS."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "New Local AI Turns Any Video Into Mixamo Animation",
+    "body": "A surge of localized AI tools for 3D asset generation and motion capture has emerged, focusing on refining raw AI outputs through LLM-driven scripts and interactive segmentation.",
+    "why": "Most tools presented are standalone or Blender-centric. Integration into a USD-based pipeline would require converting the FBX/VRM/GLB outputs into USD. Motion2MixamoRig provides a local Python environment for mocap data generation which could bypass cloud latency but requires manual cleaning.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=58UpDAnbdkM",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/58UpDAnbdkM/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Motion2MixamoRig",
+      "used_for": "Local video-to-motion retargeting for Mixamo-compatible 3D skeletons."
+     },
+     {
+      "name": "Charakuru",
+      "used_for": "Converting 2D character illustrations into rigged VRM avatars with spring bones."
+     },
+     {
+      "name": "Action Forge",
+      "used_for": "Browser-based animation library and editor supporting prop-based character animations."
+     },
+     {
+      "name": "EdenLive",
+      "used_for": "Real-time generative rendering research for interactive 3D environments."
+     },
+     {
+      "name": "GLOSS",
+      "used_for": "Artist-controlled local geometry texturing through a Blender-integrated AI workflow."
+     },
+     {
+      "name": "DirtyMoCap",
+      "used_for": "Recovering clean 4D SMPL-H motion from sparse or noisy marker data."
+     },
+     {
+      "name": "PartLLM",
+      "used_for": "Interactive 3D part segmentation using LLM point-prompting."
+     }
+    ],
+    "whats_transferable": [
+     "Using LLM-based refinement passes (Claude/GPT-4o) to fix motion artifacts like leg sliding in raw AI-generated mocap.",
+     "Integrating 3D part segmentation (PartLLM) into asset workflows for selective texturing or rigging.",
+     "Applying local generative rendering (EdenLive) as a style-transfer or 'beauty' layer over low-fidelity interactive proxies."
+    ],
+    "topic_relevance": 9.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-24T20:10:56.300188+00:00"
+  },
+  "Lts9yNZKUv4": {
+   "title": "This is why your AI locations never match",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/Lts9yNZKUv4",
+   "at": "2026-10-24T20:09:28.533601+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "wFbgrPmVXb0": {
+   "title": "The Complete AI Filmmaking Masterclass Everyone\u2019s Missing (Full Tutorial)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=wFbgrPmVXb0",
+   "at": "2026-10-24T20:09:28.623671+00:00",
+   "duration_s": 1286,
+   "topic_relevance": 7.0,
+   "transferable_craft": 8.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "wFbgrPmVXb0",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Cinema Studio",
+      "used_for": "Central platform for AI filmmaking, folder-based asset management, and scene generation."
+     },
+     {
+      "name": "Seedream 5.0 Pro",
+      "used_for": "A 'deslop' method for texture refinement, using reference shots for hair, skin, and fabric to clean up AI artifacts."
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Main video generation model for complex scenes, fight choreography, and character performance."
+     },
+     {
+      "name": "Claude 3.5 Sonnet / Fable 5.1",
+      "used_for": "Prompt engineering, expanding high-level creative briefs into detailed scene descriptions including optics, camera movement, and action timing."
+     },
+     {
+      "name": "GPT Image 2.5",
+      "used_for": "Initial character concept generation from source photos."
+     }
+    ],
+    "whats_new": "Introduction of the 'Deslop' method in Seedream 5.0 Pro and multi-pass video workflows in Seedance 2.5, emphasizing texture consistency and complex fight choreography through LLM-expanded prompts.",
+    "whats_transferable": [
+     "The 'Deslop' methodology: providing the AI with specific material reference images (pores, hair strands, fabric weaves) to resolve generic 'AI plastic' skin.",
+     "Draft-based credit optimization: Running initial iterations at 480p to verify blocking and framing before upscaling the winning takes to 1080p.",
+     "Video Elements: Using 10-second video clips (self-recorded or friends) as performance references rather than static images to guide lip-sync and facial dynamics.",
+     "Multi-angle consistency: Using one successful video generation as a reference to re-generate the same action from a different camera position (video-to-video).",
+     "Editing with 'Forward Extend': Using the final frame of a take as a starting point to generate a sequel clip while maintaining continuity."
+    ],
+    "pipeline_notes": "Higgsfield operates as a closed, cloud-based platform. For a USD pipeline, its utility currently lies in rapid previs or generating 2D background plates. It bypasses traditional modeling, rigging, and simulation by using 'Skills' (pre-trained prompt modifiers for things like anamorphic lenses or fight physics).",
+    "visual_quality_notes": "The video highlights a major step forward in skin and hair realism by using the 'Deslop' pass to replace patches with pores. Fight physics show significantly more impact and reactive camera work compared to standard video models.",
+    "category": "tool_release",
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a full AI film workflow from character design to final fight choreography over a two-day production cycle.",
+     "Details the 'Deslop' method for achieving realistic micro-textures (skin pores, hair strands) using Seedream 5.0 Pro and material-specific reference images.",
+     "Explains character performance stabilization using 'Video Elements' which combine visual identity with voice and movement references.",
+     "Showcases hierarchical prompting using Claude to translate action lists into technical cinematographic instructions (optics, camera angles, timing).",
+     "Introduces video-to-video techniques for generating matching action from alternative camera angles and 'Forward Extend' for clip continuation."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "The Complete AI Filmmaking Masterclass Everyone\u2019s Missing (Full Tutorial)",
+    "body": "Introduction of the 'Deslop' method in Seedream 5.0 Pro and multi-pass video workflows in Seedance 2.5, emphasizing texture consistency and complex fight choreography through LLM-expanded prompts.",
+    "why": "Higgsfield operates as a closed, cloud-based platform. For a USD pipeline, its utility currently lies in rapid previs or generating 2D background plates. It bypasses traditional modeling, rigging, and simulation by using 'Skills' (pre-trained prompt modifiers for things like anamorphic lenses or fight physics).",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=wFbgrPmVXb0",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/wFbgrPmVXb0/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Cinema Studio",
+      "used_for": "Central platform for AI filmmaking, folder-based asset management, and scene generation."
+     },
+     {
+      "name": "Seedream 5.0 Pro",
+      "used_for": "A 'deslop' method for texture refinement, using reference shots for hair, skin, and fabric to clean up AI artifacts."
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Main video generation model for complex scenes, fight choreography, and character performance."
+     },
+     {
+      "name": "Claude 3.5 Sonnet / Fable 5.1",
+      "used_for": "Prompt engineering, expanding high-level creative briefs into detailed scene descriptions including optics, camera movement, and action timing."
+     },
+     {
+      "name": "GPT Image 2.5",
+      "used_for": "Initial character concept generation from source photos."
+     }
+    ],
+    "whats_transferable": [
+     "The 'Deslop' methodology: providing the AI with specific material reference images (pores, hair strands, fabric weaves) to resolve generic 'AI plastic' skin.",
+     "Draft-based credit optimization: Running initial iterations at 480p to verify blocking and framing before upscaling the winning takes to 1080p.",
+     "Video Elements: Using 10-second video clips (self-recorded or friends) as performance references rather than static images to guide lip-sync and facial dynamics.",
+     "Multi-angle consistency: Using one successful video generation as a reference to re-generate the same action from a different camera position (video-to-video).",
+     "Editing with 'Forward Extend': Using the final frame of a take as a starting point to generate a sequel clip while maintaining continuity."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-10-24T20:10:56.300213+00:00"
+  },
+  "x7qNJsfSn4I": {
+   "title": "This AI short drama got 60M views and doesn't look like AI",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/x7qNJsfSn4I",
+   "at": "2026-10-24T20:10:53.222372+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
   }
  },
  "quota": {
-  "date": "2026-10-23",
-  "minutes": 20.0
+  "date": "2026-10-24",
+  "minutes": 39.33333333333333
  }
 }

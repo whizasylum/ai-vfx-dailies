@@ -1,125 +1,4 @@
 {
- "87a238415e": {
-  "headline": "Maxon adds an MCP server to Cinema 4D for natural-language scene control",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "r",
-  "terms": [
-   "before",
-   "cinema",
-   "competitors",
-   "control",
-   "dcc",
-   "follow.",
-   "llm",
-   "major",
-   "maxon",
-   "mcp",
-   "native",
-   "natural-language",
-   "scene",
-   "server"
-  ],
-  "at": "2026-10-02T21:49:48.832907+00:00"
- },
- "f4db6c7fa6": {
-  "headline": "Lightricks ships an LTX-2.5 IC-LoRA for video alpha matting and background removal",
-  "sources": [
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "alpha",
-   "background",
-   "clears",
-   "client",
-   "could",
-   "delivery.",
-   "ic-lora",
-   "licence",
-   "lightricks",
-   "lora",
-   "ltx-2.5",
-   "matting",
-   "purpose-built",
-   "removal"
-  ],
-  "at": "2026-10-02T21:49:48.832938+00:00"
- },
- "c86c038208": {
-  "headline": "Tripo's chief scientist discusses SmartMesh and open-source direction after $350M raise",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "after",
-   "already",
-   "chief",
-   "context",
-   "direction",
-   "discusses",
-   "matter",
-   "open-source",
-   "raise",
-   "reader",
-   "retopology",
-   "scientist",
-   "smartmesh",
-   "tripo"
-  ],
-  "at": "2026-10-02T21:49:48.832953+00:00"
- },
- "f51258e136": {
-  "headline": "How to Create a Depth Map Using AI + FREE Tool Download",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "ai-based",
-   "asset",
-   "before",
-   "builds.",
-   "committing",
-   "could",
-   "create",
-   "depth",
-   "download",
-   "explorations",
-   "free",
-   "full",
-   "guide",
-   "houdini"
-  ],
-  "at": "2026-10-02T21:49:48.832974+00:00"
- },
- "933cf560e8": {
-  "headline": "How I Use GPT-6 Astra for My Entire Post-Production (Edit 5X Faster!)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "agent",
-   "agentic",
-   "appropriate",
-   "assembly",
-   "asset",
-   "astra",
-   "automation",
-   "between",
-   "bridge",
-   "constraints.",
-   "context",
-   "could",
-   "dccs.",
-   "edit"
-  ],
-  "at": "2026-10-02T21:49:48.832999+00:00"
- },
  "04ce1345cd": {
   "headline": "LTX-2.5 video model updated on Hugging Face, now at 1.6M downloads",
   "sources": [
@@ -2026,5 +1905,53 @@
    "logic"
   ],
   "at": "2026-10-23T20:59:09.474423+00:00"
+ },
+ "ced1214b1c": {
+  "headline": "New Local AI Turns Any Video Into Mixamo Animation",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "animation",
+   "any",
+   "blender-centric.",
+   "bypass",
+   "cleaning.",
+   "cloud",
+   "converting",
+   "could",
+   "data",
+   "environment",
+   "fbx",
+   "generation",
+   "glb",
+   "integration"
+  ],
+  "at": "2026-10-24T20:10:53.259774+00:00"
+ },
+ "ae88705db4": {
+  "headline": "The Complete AI Filmmaking Masterclass Everyone\u2019s Missing (Full Tutorial)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "r",
+  "terms": [
+   "anamorphic",
+   "background",
+   "bypasses",
+   "closed",
+   "cloud-based",
+   "complete",
+   "currently",
+   "everyone",
+   "fight",
+   "filmmaking",
+   "full",
+   "generating",
+   "higgsfield",
+   "lenses"
+  ],
+  "at": "2026-10-24T20:10:53.259819+00:00"
  }
 }
