@@ -1,28 +1,4 @@
 {
- "04ce1345cd": {
-  "headline": "LTX-2.5 video model updated on Hugging Face, now at 1.6M downloads",
-  "sources": [
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "any",
-   "before",
-   "broad",
-   "checking",
-   "client",
-   "coverage",
-   "downloads",
-   "face",
-   "hugging",
-   "licence",
-   "ltx-2.5",
-   "monitoring",
-   "need",
-   "open"
-  ],
-  "at": "2026-10-03T20:35:58.697484+00:00"
- },
  "46b1bedbea": {
   "headline": "LTX publishes a batch of blog guides for its LTX-2.5 video model",
   "sources": [
@@ -1953,5 +1929,77 @@
    "lenses"
   ],
   "at": "2026-10-24T20:10:53.259819+00:00"
+ },
+ "2fa6a767bd": {
+  "headline": "MiniMax-H3 PTD LoRA pack published on Hugging Face",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "check",
+   "comfyui",
+   "face",
+   "hugging",
+   "licence",
+   "lora",
+   "loras",
+   "minimax-h3",
+   "pack",
+   "pipeline.",
+   "ptd",
+   "published",
+   "video"
+  ],
+  "at": "2026-10-25T20:25:35.568951+00:00"
+ },
+ "3fe586563f": {
+  "headline": "Spy Agencies Had This Tech. Now You Can Build It.",
+  "sources": [
+   "Bilawal Sidhu"
+  ],
+  "channel": "r",
+  "terms": [
+   "adapted",
+   "agencies",
+   "agents",
+   "approach",
+   "automation.",
+   "build",
+   "cesium",
+   "custom",
+   "data-driven",
+   "datasets.",
+   "directly",
+   "environment",
+   "environments.",
+   "gaussian"
+  ],
+  "at": "2026-10-25T20:25:35.568995+00:00"
+ },
+ "e84d473548": {
+  "headline": "The Best Open-Source AI for 3D & Blender Is Here - Kimi K3.1 Pro",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "agentic",
+   "api",
+   "authors",
+   "blender",
+   "cmaya",
+   "code",
+   "commands.",
+   "content",
+   "could",
+   "creation",
+   "describes",
+   "execute",
+   "houdini",
+   "integrate"
+  ],
+  "at": "2026-10-25T20:25:35.569014+00:00"
  }
 }

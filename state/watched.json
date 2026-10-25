@@ -6301,10 +6301,290 @@
    "duration_s": 32,
    "published": false,
    "reason_if_low": "under 90s (32s)"
+  },
+  "PBThLgs2AZc": {
+   "title": "Spy Agencies Had This Tech. Now You Can Build It.",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/watch?v=PBThLgs2AZc",
+   "at": "2026-10-25T20:22:21.565137+00:00",
+   "duration_s": 603,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "PBThLgs2AZc",
+    "channel": "Bilawal Sidhu",
+    "tools_and_platforms": [
+     {
+      "name": "Cesium",
+      "used_for": "Core 3D globe engine and 3D Tiles rendering for geospatial data."
+     },
+     {
+      "name": "Google Geospatial API",
+      "used_for": "Accessing global 3D geometry and photorealistic tiles."
+     },
+     {
+      "name": "3D Gaussian Splats",
+      "used_for": "Integrating ground-level photorealistic captures into the 3D map environment."
+     },
+     {
+      "name": "Claude / Gemini",
+      "used_for": "AI agents used to write glue code and automate data fusion between disparate APIs."
+     },
+     {
+      "name": "MapTheWorld.ai",
+      "used_for": "Alignment of Gaussian Splats to physical locations for 'ground truth' visualization."
+     }
+    ],
+    "whats_new": "The 'God's Eye View' project demonstrates a successful fusion of real-time OSINT data (flight tracking, satellite imagery, maritime traffic) with photorealistic 3D environments, leveraging AI agents to automate the technical integration that previously required large engineering teams.",
+    "whats_transferable": [
+     "Alignment of 3D Gaussian Splats to world-scale geospatial coordinates for environment context.",
+     "Using AI agents as 'vibe-coding' intermediaries to bridge GIS data streams and 3D visualization platforms.",
+     "Workflow for layering dynamic real-time data (JSON/GeoJSON) over static 3D tiles for situational awareness."
+    ],
+    "pipeline_notes": "The use of Cesium and 3D Tiles is directly relevant to Houdini users working with geospatial datasets. Gaussian Splat integration points to a growing trend of hybrid volumetric/mesh environments. The 'vibe-coding' approach with AI agents can be adapted to write custom HDA or Python scripts for data-driven environment automation.",
+    "visual_quality_notes": "Varies from low-resolution satellite data to high-fidelity 3D Gaussian Splats. The integration of Splats provides a significant bridge in visual quality between abstract map data and realistic environment rendering.",
+    "category": "tool_release",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Introduction of 'God's Eye View', an open-source OSINT fusion platform built on Cesium and Google\u2019s geospatial stack.",
+     "Demonstrates the use of AI agents (Claude and Gemini) to rapidly develop complex 3D data-driven applications without a full dev team.",
+     "Shows high-fidelity ground-level views using 3D Gaussian Splatting aligned to physical world coordinates.",
+     "Discusses 'sousveillance'\u2014using top-tier intelligence tools for public-interest reporting and citizen research.",
+     "Provides a roadmap for users to download the source code from GitHub to build their own 4D world-view models."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Spy Agencies Had This Tech. Now You Can Build It.",
+    "body": "The 'God's Eye View' project demonstrates a successful fusion of real-time OSINT data (flight tracking, satellite imagery, maritime traffic) with photorealistic 3D environments, leveraging AI agents to automate the technical integration that previously required large engineering teams.",
+    "why": "The use of Cesium and 3D Tiles is directly relevant to Houdini users working with geospatial datasets. Gaussian Splat integration points to a growing trend of hybrid volumetric/mesh environments. The 'vibe-coding' approach with AI agents can be adapted to write custom HDA or Python scripts for data-driven environment automation.",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Bilawal Sidhu",
+      "url": "https://www.youtube.com/watch?v=PBThLgs2AZc",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/PBThLgs2AZc/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Cesium",
+      "used_for": "Core 3D globe engine and 3D Tiles rendering for geospatial data."
+     },
+     {
+      "name": "Google Geospatial API",
+      "used_for": "Accessing global 3D geometry and photorealistic tiles."
+     },
+     {
+      "name": "3D Gaussian Splats",
+      "used_for": "Integrating ground-level photorealistic captures into the 3D map environment."
+     },
+     {
+      "name": "Claude / Gemini",
+      "used_for": "AI agents used to write glue code and automate data fusion between disparate APIs."
+     },
+     {
+      "name": "MapTheWorld.ai",
+      "used_for": "Alignment of Gaussian Splats to physical locations for 'ground truth' visualization."
+     }
+    ],
+    "whats_transferable": [
+     "Alignment of 3D Gaussian Splats to world-scale geospatial coordinates for environment context.",
+     "Using AI agents as 'vibe-coding' intermediaries to bridge GIS data streams and 3D visualization platforms.",
+     "Workflow for layering dynamic real-time data (JSON/GeoJSON) over static 3D tiles for situational awareness."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-25T20:25:37.784884+00:00"
+  },
+  "D18uUJHykMI": {
+   "title": "Free Houdini: GSplats from a single image (MoGe-2 & SHARP)",
+   "channel": "Entagma",
+   "url": "https://www.youtube.com/shorts/D18uUJHykMI",
+   "at": "2026-10-25T20:22:40.193188+00:00",
+   "duration_s": 19,
+   "published": false,
+   "reason_if_low": "under 90s (19s)"
+  },
+  "cxxGMz-YXU0": {
+   "title": "The Best Open-Source AI for 3D & Blender Is Here - Kimi K3.1 Pro",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=cxxGMz-YXU0",
+   "at": "2026-10-25T20:22:40.330021+00:00",
+   "duration_s": 1536,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "cxxGMz-YXU0",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Kimi K3.1 Pro",
+      "used_for": "LLM coding agent used to generate Blender Python scripts and Three.js code for 3D scenes."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Host application for AI-generated Python scripts for modeling, rigging, and animation."
+     },
+     {
+      "name": "Three.js",
+      "used_for": "WebGL library used to render browser-based 3D games and interactive viewers generated by AI."
+     },
+     {
+      "name": "DeepSeek V4.1 Flash",
+      "used_for": "Comparative LLM used for procedural 3D generation tasks."
+     },
+     {
+      "name": "Claude Code",
+      "used_for": "CLI tool/harness used to run LLM agents for task execution."
+     }
+    ],
+    "whats_new": "Moonshot AI has released Kimi K3.1 Pro, an open-weight model that benchmarks highly against Claude Opus 5.5 and GPT-6 Astra for coding and procedural 3D authoring tasks.",
+    "whats_transferable": [
+     "Authoring Blender Python scripts via LLM for automated hard-surface transformations.",
+     "Using LLM agents to generate basic procedural rigs for character models.",
+     "Prompting strategies for spatial logic in 3D (e.g., assembly of complex machinery from parts)."
+    ],
+    "pipeline_notes": "This represents a move toward 'Agentic' content creation where a TD describes a tool (like a procedural transformer rig) and the AI authors the Python/Blender API code to execute it. This could integrate into Houdini via Python nodes or Maya via CMaya commands.",
+    "visual_quality_notes": "Results are inconsistent; while models like Kimi and Opus can handle complex logic, they often struggle with fine visual details, vertex merging, and clipping in animations without human intervention.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Benchmarking Kimi K3.1 Pro against Claude 5.5 and Gemini 4 in 9 specific 3D tasks ranging from modeling to rigging.",
+     "Evaluation of AI-generated spatial logic for complex tasks like origami folding and modular vehicle assembly.",
+     "Direct comparison of cost-per-task between proprietary and open-weight coding models for 3D production use cases."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "The Best Open-Source AI for 3D & Blender Is Here - Kimi K3.1 Pro",
+    "body": "Moonshot AI has released Kimi K3.1 Pro, an open-weight model that benchmarks highly against Claude Opus 5.5 and GPT-6 Astra for coding and procedural 3D authoring tasks.",
+    "why": "This represents a move toward 'Agentic' content creation where a TD describes a tool (like a procedural transformer rig) and the AI authors the Python/Blender API code to execute it. This could integrate into Houdini via Python nodes or Maya via CMaya commands.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=cxxGMz-YXU0",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/cxxGMz-YXU0/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Kimi K3.1 Pro",
+      "used_for": "LLM coding agent used to generate Blender Python scripts and Three.js code for 3D scenes."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Host application for AI-generated Python scripts for modeling, rigging, and animation."
+     },
+     {
+      "name": "Three.js",
+      "used_for": "WebGL library used to render browser-based 3D games and interactive viewers generated by AI."
+     },
+     {
+      "name": "DeepSeek V4.1 Flash",
+      "used_for": "Comparative LLM used for procedural 3D generation tasks."
+     },
+     {
+      "name": "Claude Code",
+      "used_for": "CLI tool/harness used to run LLM agents for task execution."
+     }
+    ],
+    "whats_transferable": [
+     "Authoring Blender Python scripts via LLM for automated hard-surface transformations.",
+     "Using LLM agents to generate basic procedural rigs for character models.",
+     "Prompting strategies for spatial logic in 3D (e.g., assembly of complex machinery from parts)."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-10-25T20:25:37.784909+00:00"
+  },
+  "FOIxIzaD9bk": {
+   "title": "Kimi K3.1 Pro Is Here: The New King of Open-Source 3D?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/FOIxIzaD9bk",
+   "at": "2026-10-25T20:25:34.034818+00:00",
+   "duration_s": 31,
+   "published": false,
+   "reason_if_low": "under 90s (31s)"
+  },
+  "jofpFg6W9ow": {
+   "title": "How I Make AI Fight Scenes Actually Hit",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/jofpFg6W9ow",
+   "at": "2026-10-25T20:25:34.141815+00:00",
+   "duration_s": 34,
+   "published": false,
+   "reason_if_low": "under 90s (34s)"
+  },
+  "qpKFVd_339s": {
+   "title": "Don't show the answer, end your AI drama like this",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/qpKFVd_339s",
+   "at": "2026-10-25T20:25:34.231353+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
+  },
+  "P019icaneAI": {
+   "title": "The twist that makes people binge short dramas",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/P019icaneAI",
+   "at": "2026-10-25T20:25:34.320059+00:00",
+   "duration_s": 36,
+   "published": false,
+   "reason_if_low": "under 90s (36s)"
+  },
+  "6FvGgxZ8QGg": {
+   "title": "Stop Rendering Every AI Test in HD",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/6FvGgxZ8QGg",
+   "at": "2026-10-25T20:25:34.454220+00:00",
+   "duration_s": 38,
+   "published": false,
+   "reason_if_low": "under 90s (38s)"
+  },
+  "M3IQc3gzyr0": {
+   "title": "Stop Using Photos as AI Actor References",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/M3IQc3gzyr0",
+   "at": "2026-10-25T20:25:34.560798+00:00",
+   "duration_s": 36,
+   "published": false,
+   "reason_if_low": "under 90s (36s)"
+  },
+  "X3E5kBfs5TI": {
+   "title": "One AI Take, Four New Camera Angles",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/X3E5kBfs5TI",
+   "at": "2026-10-25T20:25:34.648831+00:00",
+   "duration_s": 39,
+   "published": false,
+   "reason_if_low": "under 90s (39s)"
   }
  },
  "quota": {
-  "date": "2026-10-24",
-  "minutes": 39.33333333333333
+  "date": "2026-10-25",
+  "minutes": 35.650000000000006
  }
 }
