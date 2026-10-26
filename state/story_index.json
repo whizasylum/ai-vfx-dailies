@@ -1,108 +1,4 @@
 {
- "46b1bedbea": {
-  "headline": "LTX publishes a batch of blog guides for its LTX-2.5 video model",
-  "sources": [
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX",
-   "Lightricks / LTX"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "batch",
-   "blog",
-   "changes",
-   "committed",
-   "decisions.",
-   "guides",
-   "ltx",
-   "ltx-2.5",
-   "nothing",
-   "only",
-   "pipeline",
-   "publishes",
-   "skim"
-  ],
-  "at": "2026-10-04T20:52:46.962474+00:00"
- },
- "76c8cd1e2d": {
-  "headline": "New Open-Source AI Animation is Here!",
-  "sources": [
-   "PixelArtistry"
-  ],
-  "channel": "r",
-  "terms": [
-   "allegedly",
-   "animation",
-   "assets",
-   "blocker",
-   "brought",
-   "commercial",
-   "contains",
-   "data",
-   "deployment",
-   "evil",
-   "exists",
-   "fbx",
-   "games",
-   "glb"
-  ],
-  "at": "2026-10-04T20:52:46.962517+00:00"
- },
- "7c150f6a3e": {
-  "headline": "AI Can Do Everything in Blender Now - Mixar",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "r",
-  "terms": [
-   "allows",
-   "asset",
-   "blend",
-   "blender",
-   "blender.",
-   "blocking",
-   "compatibility",
-   "everything",
-   "export",
-   "feed",
-   "files",
-   "functions",
-   "generation",
-   "high-level"
-  ],
-  "at": "2026-10-04T20:52:46.962539+00:00"
- },
- "46829a3ae0": {
-  "headline": "AI Built My Game in 47 Hours So I Can Destroy Everything",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "adapted",
-   "agent",
-   "agentic",
-   "assembly.",
-   "automate",
-   "based",
-   "brief.",
-   "built",
-   "claude",
-   "code",
-   "could",
-   "destroy",
-   "everything",
-   "game"
-  ],
-  "at": "2026-10-04T20:52:46.962559+00:00"
- },
  "5f3adf76cc": {
   "headline": "ComfyUI 0.39.0 adds MiniMax-H3 VAE support and higher quality default video encoding",
   "sources": [
@@ -2001,5 +1897,74 @@
    "integrate"
   ],
   "at": "2026-10-25T20:25:35.569014+00:00"
+ },
+ "db84f4ff38": {
+  "headline": "LTX publishes technical detail on its VFX production tools",
+  "sources": [
+   "Lightricks / LTX"
+  ],
+  "channel": "r",
+  "terms": [
+   "affect",
+   "ai-assisted",
+   "clients",
+   "could",
+   "detail",
+   "ltx",
+   "offered",
+   "option.",
+   "production",
+   "publishes",
+   "restyle",
+   "roto",
+   "technical",
+   "vfx"
+  ],
+  "at": "2026-10-26T22:22:10.416444+00:00"
+ },
+ "753bcbeffc": {
+  "headline": "CG Channel rounds up new tools including a real-time AI renderer",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "alone",
+   "channel",
+   "deployable",
+   "doesn",
+   "including",
+   "justify",
+   "may",
+   "more.",
+   "quick",
+   "real-time",
+   "renderer",
+   "rounds",
+   "scan",
+   "summary"
+  ],
+  "at": "2026-10-26T22:22:10.416470+00:00"
+ },
+ "c7778b2c8d": {
+  "headline": "Adobe ships Substance 3D Painter 12.2",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "adobe",
+   "annoyance.",
+   "check",
+   "direct",
+   "effort",
+   "fixes",
+   "known",
+   "low",
+   "painter",
+   "pipeline",
+   "substance"
+  ],
+  "at": "2026-10-26T22:22:10.416482+00:00"
  }
 }

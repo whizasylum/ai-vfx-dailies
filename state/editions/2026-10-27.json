@@ -1,0 +1,59 @@
+{
+  "verdict": "A quiet day: one real pipeline-relevant story (LTX's VFX tools), the rest is VFX breakdown PR, academic paper noise, and OpenAI corporate blogging with no production relevance.",
+  "stories": [
+    {
+      "headline": "LTX publishes technical detail on its VFX production tools",
+      "body": "Lightricks posted a blog detailing LTX's pipeline-facing tools, pitched for production use rather than consumer generation. Worth a read to see what integration points they're claiming (roto, restyle, consistency tools) before deciding if it's worth testing against existing comp workflows. Vendor-authored, so treat capability claims as unverified until tested.",
+      "why": "Could affect what's offered to clients as an AI-assisted restyle or roto option.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/ltxs-latest-vfx-tools-built-for-the-production-pipeline",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "CG Channel rounds up new tools including a real-time AI renderer",
+      "body": "CG Channel's regular software roundup for late October includes texturing apps, a Blender animation add-on, and a real-time AI renderer, details thin in the summary. Worth scanning the full roundup for anything that lands as a plugin rather than a demo, but nothing here is confirmed as production-ready from the summary alone.",
+      "why": "Quick scan may surface a deployable tool; summary alone doesn't justify more.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/new-cg-software-you-may-have-missed-25-october-2026",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Adobe ships Substance 3D Painter 12.2",
+      "body": "Adobe released Painter 12.2 with a new brush-based workflow for fixing texture-baking issues. Incremental point release, not a major feature addition, but relevant if Painter is part of the texturing pipeline and bake cleanup is a recurring pain point.",
+      "why": "Direct pipeline tool update, low effort to check if it fixes a known annoyance.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/adobe-releases-substance-3d-painter-12-2",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 11939,
+    "output_tokens": 717
+  },
+  "candidate_count": 59,
+  "editorial_stories": true
+}
