@@ -1,0 +1,75 @@
+{
+  "verdict": "A quiet day: mostly SEO marketing pages, festival listings, and incremental arXiv splatting papers, with one genuine world-model release and one union action worth noting.",
+  "stories": [
+    {
+      "headline": "DeepMind releases Genie 4, a real-time interactive world model",
+      "body": "Google DeepMind announced Genie 4, a world model that generates interactive, controllable environments in real time. Details on availability, licensing, and whether it will be exposed via API or research-only are not yet clear from this announcement. It builds on the earlier Genie line, aimed at simulation and interactive video generation rather than fixed clips. Worth watching for eventual previs or interactive environment use, but currently a research announcement, not a shipped tool.",
+      "why": "Interactive world models could eventually feed previs or virtual production pipelines once productized.",
+      "channel": "g",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://lh3.googleusercontent.com/i7iotPkcMbMubxRzAdriO5wsIsowROonBvjLNnmPbOaRgEb1k4LKTBqay5VrcPpZi0R4il_bYCCsPYQ0Gy_-XbAw66azAGEfE-E6_9Izz5apP0BMJVE=w528-h297-n-nu-rw-lo"
+    },
+    {
+      "headline": "French animation and VFX union calls two-hour walkout over AI and pay",
+      "body": "SNTPCT, France's majority animation union, is calling on all animation and VFX workers nationwide to stop work from 2pm to 4pm on November 18. The action targets AnimFrance and SPI over pay, generative AI use, job titles, and public holidays. This is a direct labour response to AI adoption in production pipelines, not an opinion piece, and signals contractual terms around AI use may be negotiated into French industry agreements.",
+      "why": "A coordinated labour action over AI terms could shape what generative tools are contractually permitted on client work.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/sntpct-calls-2-hour-walkout-french-animation-and-vfx-workers",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081637-sntpct-flyer-1a.jpg?itok=cww88GtF"
+    },
+    {
+      "headline": "ComfyUI v0.43.0 ships with partner-node upscaler and voice-clone integrations",
+      "body": "ComfyUI's latest release adds rope scaling support for MOSS-image, a Crystal Video Upscaler partner node from ClarityAI, HeyGen voice cloning and TTS nodes, renewed partner-node API tokens, and higher-resolution options for BFL FLUX nodes. These are incremental node additions to an actively developed open tool studios already use for generative pipelines.\n",
+      "why": "Direct node-level additions a studio could deploy immediately inside an existing ComfyUI pipeline.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Material Maker 1.8 adds trim sheet export for games",
+      "body": "The free, open-source Substance Designer alternative Material Maker has released version 1.8, adding the ability to export trim sheets for games alongside other procedural material authoring features. It remains a no-cost, open tool for texture and material work, relevant to smaller studios without Substance licensing budgets.",
+      "why": "A free, improving Substance alternative matters for boutique studios watching licensing costs.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/open-source-material-authoring-software-material-maker-1-8-is-out",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 14157,
+    "output_tokens": 1149
+  },
+  "candidate_count": 61,
+  "editorial_stories": true
+}

@@ -6626,10 +6626,92 @@
    "duration_s": 39,
    "published": false,
    "reason_if_low": "under 90s (39s)"
+  },
+  "lX7wTtCsfIg": {
+   "title": "God\u2019s Eye View Is Becoming a 4D Time Machine",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/lX7wTtCsfIg",
+   "at": "2026-10-27T21:52:25.738666+00:00",
+   "duration_s": 30,
+   "published": false,
+   "reason_if_low": "under 90s (30s)"
+  },
+  "tSem-EwECFo": {
+   "title": "Kimi K3.1 Pro 3D Animation: Can It Make a Whale Flip?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/tSem-EwECFo",
+   "at": "2026-10-27T21:54:08.123225+00:00",
+   "duration_s": 30,
+   "published": false,
+   "reason_if_low": "under 90s (30s)"
+  },
+  "2SSBd68Yd2U": {
+   "title": "Kimi K3.1 Pro Is Here: Can It Beat Gemini 4 in 3D?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/2SSBd68Yd2U",
+   "at": "2026-10-27T21:54:08.254679+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
+  },
+  "qXkyH0fYcQE": {
+   "title": "Inside AI | How to Ask a Girl Out (Make No Mistakes)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/qXkyH0fYcQE",
+   "at": "2026-10-27T21:54:08.337202+00:00",
+   "duration_s": 110,
+   "topic_relevance": 2.0,
+   "transferable_craft": 1.0,
+   "category": "industry",
+   "published": false,
+   "reason_if_low": "This is a brand commercial. It contains no technical methodologies, workflow breakdowns, or actionable information that a VFX Technical Artist could test or apply.",
+   "assessment": {
+    "video_id": "qXkyH0fYcQE",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Mobile-first AI video generation platform"
+     }
+    ],
+    "whats_new": "A high-production brand advertisement personifying the internal processes of Higgsfield's AI models, including agents named Astra, Fable, and Opus.",
+    "whats_transferable": [],
+    "pipeline_notes": "Not applicable for a professional VFX pipeline; the video is a metaphorical commercial for a consumer-facing mobile tool and provides no technical integration details.",
+    "visual_quality_notes": "Professional live-action cinematography framing various clips of AI-generated content; intentionally includes artifacts (like the 'six-finger' issue) to differentiate between effort levels.",
+    "category": "industry",
+    "topic_relevance": 2.0,
+    "transferable_craft": 1.0,
+    "reason_if_low": "This is a brand commercial. It contains no technical methodologies, workflow breakdowns, or actionable information that a VFX Technical Artist could test or apply.",
+    "summary_bullets": [
+     "Marketing film personifying the 'internal' world of AI model processing.",
+     "Thematically explores prompt interpretation, token usage, and model compute tiers.",
+     "Provides no software UI demonstrations or technical implementation details."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "Z-UFzX4lsjA": {
+   "title": "Turn One Idea Into a Full Explainer Reel | Higgsfield Content Factory",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/Z-UFzX4lsjA",
+   "at": "2026-10-27T21:55:10.903827+00:00",
+   "duration_s": 76,
+   "published": false,
+   "reason_if_low": "under 90s (76s)"
+  },
+  "9KQm4_NLZto": {
+   "title": "My AI character's entrance felt dead, so I fixed it",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/9KQm4_NLZto",
+   "at": "2026-10-27T21:55:10.981566+00:00",
+   "duration_s": 43,
+   "published": false,
+   "reason_if_low": "under 90s (43s)"
   }
  },
  "quota": {
-  "date": "2026-10-26",
-  "minutes": 28.733333333333334
+  "date": "2026-10-27",
+  "minutes": 30.566666666666666
  }
 }

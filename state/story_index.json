@@ -1,194 +1,4 @@
 {
- "5f3adf76cc": {
-  "headline": "ComfyUI 0.39.0 adds MiniMax-H3 VAE support and higher quality default video encoding",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "comfyui",
-   "default",
-   "direct",
-   "encoding",
-   "higher",
-   "minimax-h3",
-   "path",
-   "pipelines.",
-   "production",
-   "quality",
-   "running",
-   "studios",
-   "support"
-  ],
-  "at": "2026-10-05T23:45:08.123185+00:00"
- },
- "1d7912e535": {
-  "headline": "MiniMax-H3 motion enhancer released on Hugging Face under Apache 2.0",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "apache",
-   "diffusers",
-   "enhancer",
-   "face",
-   "friction.",
-   "hugging",
-   "legal",
-   "licence",
-   "mean",
-   "minimax-h3",
-   "motion",
-   "permissive",
-   "pipelines",
-   "production"
-  ],
-  "at": "2026-10-05T23:45:08.123209+00:00"
- },
- "b3a1660b6e": {
-  "headline": "LTX generative video model adds VFX-oriented features, per CG Channel roundup",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "channel",
-   "features",
-   "first.",
-   "generative",
-   "ltx",
-   "ones",
-   "per",
-   "roundup",
-   "testing",
-   "vfx-oriented",
-   "vfx-specific",
-   "video",
-   "worth"
-  ],
-  "at": "2026-10-05T23:45:08.123224+00:00"
- },
- "6d42158a37": {
-  "headline": "Modeler 26.3 for Houdini reworks subdivision workflow for Houdini 22",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "before",
-   "compatibility",
-   "h22",
-   "houdini",
-   "modeler",
-   "modeling",
-   "need",
-   "reworks",
-   "subdivision",
-   "toolkit",
-   "upgrading.",
-   "users",
-   "workflow"
-  ],
-  "at": "2026-10-05T23:45:08.123236+00:00"
- },
- "bd6c6dc0e0": {
-  "headline": "The Billion Dollar AI Advantage Is Disappearing",
-  "sources": [
-   "Two Minute Papers"
-  ],
-  "channel": "g",
-  "terms": [
-   "advantage",
-   "artist",
-   "before",
-   "billion",
-   "custom",
-   "disappearing",
-   "dollar",
-   "environment",
-   "generate",
-   "houdini",
-   "lightweight",
-   "like",
-   "logic",
-   "maya."
-  ],
-  "at": "2026-10-05T23:45:08.123254+00:00"
- },
- "3b5b01e05d": {
-  "headline": "Free Tutorial: Gaussian Splat Segmentation",
-  "sources": [
-   "Entagma"
-  ],
-  "channel": "a",
-  "terms": [
-   "applicable",
-   "architecture",
-   "between",
-   "bridges",
-   "cleanup",
-   "copernicus",
-   "data",
-   "environment",
-   "feedback",
-   "free",
-   "gap",
-   "gaussian",
-   "highly",
-   "houdini"
-  ],
-  "at": "2026-10-05T23:45:08.123272+00:00"
- },
- "dff23b60bc": {
-  "headline": "From Idea to Game in ONE Day with AI - Fastest Character Workflow",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "assembly",
-   "assets",
-   "between",
-   "blender",
-   "bridges",
-   "brought",
-   "character",
-   "components",
-   "cops",
-   "could",
-   "day",
-   "extraction",
-   "fastest",
-   "game"
-  ],
-  "at": "2026-10-05T23:45:08.123290+00:00"
- },
- "08b855d758": {
-  "headline": "I Tried Fixing Bad VFX Using AI (feat. \u2068\u2068@erikdoesvfx\u2069)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "agent",
-   "api",
-   "assets",
-   "astra",
-   "automate",
-   "bad",
-   "could",
-   "digital",
-   "erikdoesvfx",
-   "feat.",
-   "fixing",
-   "functions",
-   "hdas",
-   "high-level"
-  ],
-  "at": "2026-10-05T23:45:08.123314+00:00"
- },
  "89178cc786": {
   "headline": "SAG-AFTRA TV animation contract with AI guardrails goes to member vote",
   "sources": [
@@ -1966,5 +1776,101 @@
    "substance"
   ],
   "at": "2026-10-26T22:22:10.416482+00:00"
+ },
+ "5ef94984dc": {
+  "headline": "DeepMind releases Genie 4, a real-time interactive world model",
+  "sources": [
+   "Google DeepMind"
+  ],
+  "channel": "g",
+  "terms": [
+   "could",
+   "deepmind",
+   "eventually",
+   "feed",
+   "genie",
+   "interactive",
+   "once",
+   "pipelines",
+   "previs",
+   "production",
+   "productized.",
+   "real-time",
+   "virtual",
+   "world"
+  ],
+  "at": "2026-10-27T21:55:12.025666+00:00"
+ },
+ "ae54b28607": {
+  "headline": "French animation and VFX union calls two-hour walkout over AI and pay",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "action",
+   "animation",
+   "calls",
+   "client",
+   "contractually",
+   "coordinated",
+   "could",
+   "french",
+   "generative",
+   "labour",
+   "over",
+   "pay",
+   "permitted",
+   "shape"
+  ],
+  "at": "2026-10-27T21:55:12.025694+00:00"
+ },
+ "168226f855": {
+  "headline": "ComfyUI v0.43.0 ships with partner-node upscaler and voice-clone integrations",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "additions",
+   "comfyui",
+   "could",
+   "deploy",
+   "direct",
+   "existing",
+   "immediately",
+   "inside",
+   "integrations",
+   "node-level",
+   "partner-node",
+   "pipeline.",
+   "studio",
+   "upscaler"
+  ],
+  "at": "2026-10-27T21:55:12.025705+00:00"
+ },
+ "28cd6e1589": {
+  "headline": "Material Maker 1.8 adds trim sheet export for games",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "alternative",
+   "boutique",
+   "costs.",
+   "export",
+   "free",
+   "games",
+   "improving",
+   "licensing",
+   "maker",
+   "material",
+   "matters",
+   "sheet",
+   "studios",
+   "substance"
+  ],
+  "at": "2026-10-27T21:55:12.025715+00:00"
  }
 }
