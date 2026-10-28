@@ -1,0 +1,256 @@
+{
+  "verdict": "A quiet day for production-relevant news: one solid Nuke release with real AI pipeline integration, a scattering of thin Gaussian splatting research, and a lot of arXiv daily-paper noise and non-technical trade press to cut.",
+  "stories": [
+    {
+      "headline": "Nuke 18.0 open beta adds Griptape bridge for AI workflows in the node graph",
+      "body": "Foundry's Nuke 18.0 open beta introduces a Griptape bridge, letting AI workflows run directly inside the Nuke node graph alongside other new compositing features. This is a primary vendor release, available now as open beta. For a studio already on Nuke, this is the first concrete sign of AI tooling becoming a native part of the comp pipeline rather than a bolt-on script or plugin.",
+      "why": "Direct integration point for AI tools inside the compositing pipeline you already run.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/foundry-releases-nuke-18-0-in-open-beta",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "GraftRay inserts physically lit, shadow-casting objects into Gaussian splat scenes",
+      "body": "A new arXiv paper, GraftRay, proposes path-traced mesh insertion into 2D/3D Gaussian Splatting scenes with physically consistent lighting and shadows, addressing near-field lights like windows and lamps that environment-map approaches miss. It's research stage, no code or availability mentioned, but it targets the exact gap between splat reconstructions and usable VFX compositing: getting inserted CG objects to actually look lit by the scene.",
+      "why": "Points at the missing piece for using splat scans as real compositing plates.",
+      "channel": "g",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "arXiv cs.CV (generative video)",
+          "url": "https://arxiv.org/abs/2610.37036v1",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "ILM details 700-shot creature and environment work for 'The End of Oak Street'",
+      "body": "ILM's VFX supervisors describe building a prehistoric suburbia for David Robert Mitchell's dinosaur thriller: a dozen creature species, multiple biomes stitched from real locations into a 1982 Michigan neighborhood, five blood takes per shot, and the MPA rating constraints that shaped the creature animation. This is a substantive studio breakdown with real technical and production detail, not a marketing puff piece.",
+      "why": "Concrete account of creature pipeline and rating-driven iteration at a major facility.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/ilm-builds-700-shots-prehistoric-suburbia-end-oak-street",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081647-rev-1-nbr-fp-0061rhighresjpeg-1280.jpg?itok=R-ZNp-AN"
+    },
+    {
+      "headline": "Deepseek's New AI Has A Secret",
+      "body": "The release of DeepSeek V4.1 Flash-1017, which utilizes reinforcement learning with self-feedback. This allows the model to critique and iterate on its own code and 3D modeling outputs autonomously to fix errors like collision detection or visual artifacts during generation.",
+      "why": "This would sit in the automation and tool-dev stage of a pipeline. Specifically, it could be used as a 'coding assistant' for generating complex Houdini VEX/Python nodes or Nuke TCL scripts. The model's ability to iterate on 3D scenes (like the Forbidden City example) suggests potential for automated scene assembly or USD layout generation based on high-level descriptions.",
+      "channel": "g",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Two Minute Papers",
+          "url": "https://www.youtube.com/watch?v=pryCaGv8wuo",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/pryCaGv8wuo/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "DeepSeek V4.1 Flash 1017",
+          "used_for": "Large Language Model optimized for coding and project development."
+        },
+        {
+          "name": "Lambda",
+          "used_for": "Cloud GPU infrastructure for model training and inference."
+        }
+      ],
+      "whats_transferable": [
+        "The use of agentic self-feedback loops for automating tool creation, where an LLM checks its generated Python scripts against a compiler or runtime to fix bugs before final delivery.",
+        "Utilizing open-weights models for local fine-tuning on studio-specific APIs and documentation to maintain privacy."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    },
+    {
+      "headline": "One AI Model to RULE THEM ALL (FREE & LOCAL)",
+      "body": "Introduction of local ComfyUI workflows for the MiniMax H3 Ref2VA model, enabling high-quality anime generation guided by multiple references (image, video, audio) without cloud reliance.",
+      "why": "This sits as a 'neural rendering' stage. A TD could export a USD scene from Houdini or Maya as a simple playblast, then use that video as a reference in ComfyUI to 'skin' the motion with high-fidelity anime assets. It bridges the gap between traditional pre-viz and final AI-generated frames.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Mickmumpitz",
+          "url": "https://www.youtube.com/watch?v=xwTJ3E3NU7A",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/xwTJ3E3NU7A/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "MiniMax H3 (Ref2VA)",
+          "used_for": "Local reference-guided video and audio generation with character consistency."
+        },
+        {
+          "name": "ComfyUI",
+          "used_for": "Node-based orchestration of the full AI generation pipeline."
+        },
+        {
+          "name": "Blender",
+          "used_for": "Generating 3D gray-box layouts to guide AI camera motion and composition."
+        },
+        {
+          "name": "NVIDIA RTX Video SDK",
+          "used_for": "AI-accelerated 4K upscaling, frame interpolation (slow-mo), and SDR-to-HDR conversion."
+        },
+        {
+          "name": "GeForce RTX 5080/5090",
+          "used_for": "Local hardware acceleration for low-latency inference and high-resolution upscaling."
+        }
+      ],
+      "whats_transferable": [
+        "3D-to-AI layout guidance: using Blender playblasts to constrain AI motion and perspective.",
+        "Structured asset consistency: generating character sheets and turnarounds to seed the video generation model.",
+        "Reference-based voice cloning: pinning AI character dialogue to a consistent audio reference.",
+        "Integrated RTX Video processing: using specialized nodes for Super Resolution and Frame Generation directly within the generation graph."
+      ],
+      "topic_relevance": 9.0,
+      "transferable_craft": 9.0
+    },
+    {
+      "headline": "I Made UE 5 Game Using Only Free AI in 4 Days",
+      "body": "Integration of DeepSeek V4.1 with the Model Context Protocol (MCP) to allow an AI agent to directly author and execute Python scripts inside Blender and Unreal Engine, bypassing manual code copying.",
+      "why": "The demonstrated workflow uses a direct bridge (MCP) between the reasoning model and the DCC. For a USD-based pipeline, this could be adapted to have agents author USD stage structures, set up variants, or automate Houdini HDA parameters via the HAPI.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=UtY2DsOUCjE",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/UtY2DsOUCjE/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "DeepSeek V4.1",
+          "used_for": "Scripting Blender animations and Unreal Engine blueprints via agentic workflows"
+        },
+        {
+          "name": "Model Context Protocol (MCP)",
+          "used_for": "Connecting cloud-based LLM agents directly to local DCC APIs (Blender/Unreal)"
+        },
+        {
+          "name": "Tripo AI",
+          "used_for": "High-quality 3D model generation with P2.0 Smart Mesh and automated UVing"
+        },
+        {
+          "name": "Hunyuan 3D",
+          "used_for": "Image-to-3D generation for low-poly environmental props"
+        },
+        {
+          "name": "Google Gemini",
+          "used_for": "Generating concept art and environment textures like skyboxes and water"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Manual rigging and validation of AI-authored animation cycles"
+        },
+        {
+          "name": "Unreal Engine 5",
+          "used_for": "Final game logic, level assembly, and blueprint execution"
+        }
+      ],
+      "whats_transferable": [
+        "Authoring complex Blender 'Actions' (keyframed animation cycles) purely through LLM-generated Python code.",
+        "Automating Unreal level assembly by having an agent generate location and transform data for spawned actors.",
+        "Using MCP to bridge the gap between cloud-based reasoning models and local production software for pipeline automation."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "Higgsfield Selected Is Here - MADSEASON",
+      "body": "A cinematic showcase of the 'MADSEASON' project, highlighting the Higgsfield video model's ability to handle avant-garde fashion, complex fabrics, and highly dynamic human motion with high temporal stability.",
+      "why": "The video provides no insight into the pipeline; it is a final-output showcase. For a USD-based TD, this serves as a quality target for what generative models can currently produce for character-driven plates rather than a tool for integration.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/shorts/-s9-pJeyAA8",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/-s9-pJeyAA8/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield",
+          "used_for": "Generative AI video creation"
+        }
+      ],
+      "whats_transferable": [
+        "Visual benchmarks for AI-generated fabric physics including lace, fur, and sequins",
+        "Creative inspiration for stylized character-driven AI cinematography"
+      ],
+      "topic_relevance": 6.0,
+      "transferable_craft": 2.0
+    },
+    {
+      "headline": "Gemini Skills: Full Tutorial for Beginners + Free Skills",
+      "body": "Transition of 'Gems' to 'Skills' for free Google accounts, introducing a standardized Markdown-based file format (SKILL.md) for defining custom AI behaviors, instructions, and triggers.",
+      "why": "While a consumer tool, the 'Skills' framework provides a clear template for managing system prompts. For a VFX TD, this structure is directly applicable when building internal tools that wrap LLMs for automated task descriptions, metadata tagging, or rapid concepting. The .md format makes it easy to version-control prompts.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "AI2Play (pixaroma)",
+          "url": "https://www.youtube.com/watch?v=Gb2338YH_d8",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/Gb2338YH_d8/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Google Gemini",
+          "used_for": "Large Language Model and Image Generation (Nano Banana 2 model mentioned for image tasks)"
+        },
+        {
+          "name": "Gemini Skills",
+          "used_for": "Structured system prompting and persona customization via .md files"
+        }
+      ],
+      "whats_transferable": [
+        "Structured system prompt architecture: dividing prompts into Name, Trigger (When), and Instructions (How).",
+        "Skill Stacking: a workflow for applying multiple specialized AI personas to a single prompt to refine output (e.g., combining a 'layout' skill with a 'render style' skill).",
+        "Iterative prompt refinement based on visual results, focusing on concrete descriptors like line weight, aspect ratio, and composition rules."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 13772,
+    "output_tokens": 870
+  },
+  "candidate_count": 65,
+  "editorial_stories": true
+}

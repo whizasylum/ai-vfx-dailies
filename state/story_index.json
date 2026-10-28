@@ -1,74 +1,4 @@
 {
- "89178cc786": {
-  "headline": "SAG-AFTRA TV animation contract with AI guardrails goes to member vote",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "animation",
-   "changes",
-   "contract",
-   "contractually",
-   "goes",
-   "guardrails",
-   "member",
-   "permitted",
-   "productions.",
-   "sag-aftra",
-   "union",
-   "vote"
-  ],
-  "at": "2026-10-06T22:16:50.355998+00:00"
- },
- "979fbaf6bd": {
-  "headline": "Dark Slope acquires Pixomondo's virtual production LED volume assets",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "acquires",
-   "assets",
-   "dark",
-   "equipment",
-   "landing",
-   "led",
-   "pixomondo",
-   "post-closure.",
-   "production",
-   "signals",
-   "slope",
-   "stages",
-   "usable",
-   "virtual"
-  ],
-  "at": "2026-10-06T22:16:50.356017+00:00"
- },
- "c78c899ffc": {
-  "headline": "LOFTAPPS to show generative AI production system LOFT at VIEW 2026",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "conference.",
-   "generative",
-   "glance",
-   "loft",
-   "loftapps",
-   "only",
-   "production",
-   "show",
-   "specifics",
-   "surface",
-   "system",
-   "technical",
-   "view",
-   "worth"
-  ],
-  "at": "2026-10-06T22:16:50.356029+00:00"
- },
  "befffe6086": {
   "headline": "Enscape adds real-time rendering plugin workflow guide for Revit BIM users",
   "sources": [
@@ -1872,5 +1802,197 @@
    "substance"
   ],
   "at": "2026-10-27T21:55:12.025715+00:00"
+ },
+ "09d497f9e9": {
+  "headline": "Nuke 18.0 open beta adds Griptape bridge for AI workflows in the node graph",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "beta",
+   "bridge",
+   "compositing",
+   "direct",
+   "graph",
+   "griptape",
+   "inside",
+   "integration",
+   "node",
+   "nuke",
+   "open",
+   "pipeline",
+   "point"
+  ],
+  "at": "2026-10-28T22:12:55.636779+00:00"
+ },
+ "389e7fe789": {
+  "headline": "GraftRay inserts physically lit, shadow-casting objects into Gaussian splat scenes",
+  "sources": [
+   "arXiv cs.CV (generative video)"
+  ],
+  "channel": "g",
+  "terms": [
+   "compositing",
+   "gaussian",
+   "graftray",
+   "inserts",
+   "lit",
+   "missing",
+   "objects",
+   "physically",
+   "piece",
+   "plates.",
+   "points",
+   "real",
+   "scans",
+   "scenes"
+  ],
+  "at": "2026-10-28T22:12:55.636807+00:00"
+ },
+ "939bafda6c": {
+  "headline": "ILM details 700-shot creature and environment work for 'The End of Oak Street'",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "account",
+   "concrete",
+   "creature",
+   "details",
+   "end",
+   "environment",
+   "facility.",
+   "ilm",
+   "iteration",
+   "major",
+   "oak",
+   "pipeline",
+   "rating-driven",
+   "shot"
+  ],
+  "at": "2026-10-28T22:12:55.636822+00:00"
+ },
+ "c66d1bea7b": {
+  "headline": "Deepseek's New AI Has A Secret",
+  "sources": [
+   "Two Minute Papers"
+  ],
+  "channel": "g",
+  "terms": [
+   "ability",
+   "assembly",
+   "assistant",
+   "automated",
+   "automation",
+   "based",
+   "city",
+   "coding",
+   "complex",
+   "could",
+   "deepseek",
+   "descriptions.",
+   "example",
+   "forbidden"
+  ],
+  "at": "2026-10-28T22:12:55.636850+00:00"
+ },
+ "98e8446047": {
+  "headline": "One AI Model to RULE THEM ALL (FREE & LOCAL)",
+  "sources": [
+   "Mickmumpitz"
+  ],
+  "channel": "a",
+  "terms": [
+   "ai-generated",
+   "anime",
+   "assets.",
+   "between",
+   "bridges",
+   "comfyui",
+   "could",
+   "export",
+   "final",
+   "frames.",
+   "free",
+   "gap",
+   "high-fidelity",
+   "houdini"
+  ],
+  "at": "2026-10-28T22:12:55.636871+00:00"
+ },
+ "5616e6633a": {
+  "headline": "I Made UE 5 Game Using Only Free AI in 4 Days",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "adapted",
+   "agents",
+   "author",
+   "automate",
+   "between",
+   "bridge",
+   "could",
+   "days",
+   "dcc.",
+   "demonstrated",
+   "direct",
+   "free",
+   "game",
+   "hapi."
+  ],
+  "at": "2026-10-28T22:12:55.636889+00:00"
+ },
+ "2ce2cb9bfc": {
+  "headline": "Higgsfield Selected Is Here - MADSEASON",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "b",
+  "terms": [
+   "character-driven",
+   "currently",
+   "final-output",
+   "generative",
+   "higgsfield",
+   "insight",
+   "integration.",
+   "madseason",
+   "pipeline",
+   "plates",
+   "produce",
+   "provides",
+   "quality",
+   "rather"
+  ],
+  "at": "2026-10-28T22:12:55.636905+00:00"
+ },
+ "fbec7dad39": {
+  "headline": "Gemini Skills: Full Tutorial for Beginners + Free Skills",
+  "sources": [
+   "AI2Play (pixaroma)"
+  ],
+  "channel": "a",
+  "terms": [
+   "applicable",
+   "automated",
+   "beginners",
+   "building",
+   "clear",
+   "concepting.",
+   "consumer",
+   "descriptions",
+   "directly",
+   "easy",
+   "format",
+   "framework",
+   "free",
+   "full"
+  ],
+  "at": "2026-10-28T22:12:55.636926+00:00"
  }
 }

@@ -1406,6 +1406,96 @@
    "issue_ids": [
     54
    ]
+  },
+  {
+   "story_id": "e84d473548",
+   "at": "2026-10-28T22:07:00.662454+00:00",
+   "vote": 1,
+   "headline": "The Best Open-Source AI for 3D & Blender Is Here - Kimi K3.1 Pro",
+   "sources": [
+    "Stefan 3D AI"
+   ],
+   "channel": "a",
+   "terms": [
+    "agentic",
+    "api",
+    "authors",
+    "blender",
+    "cmaya",
+    "code",
+    "commands.",
+    "content",
+    "could",
+    "creation",
+    "describes",
+    "execute",
+    "houdini",
+    "integrate"
+   ],
+   "via": "page",
+   "issue_ids": [
+    59
+   ]
+  },
+  {
+   "story_id": "ae54b28607",
+   "at": "2026-10-28T22:07:00.662481+00:00",
+   "vote": -1,
+   "headline": "French animation and VFX union calls two-hour walkout over AI and pay",
+   "sources": [
+    "Animation World Network"
+   ],
+   "channel": "b",
+   "terms": [
+    "action",
+    "animation",
+    "calls",
+    "client",
+    "contractually",
+    "coordinated",
+    "could",
+    "french",
+    "generative",
+    "labour",
+    "over",
+    "pay",
+    "permitted",
+    "shape"
+   ],
+   "via": "page",
+   "issue_ids": [
+    58
+   ]
+  },
+  {
+   "story_id": "5ef94984dc",
+   "at": "2026-10-28T22:07:00.662489+00:00",
+   "vote": 1,
+   "headline": "DeepMind releases Genie 4, a real-time interactive world model",
+   "sources": [
+    "Google DeepMind"
+   ],
+   "channel": "g",
+   "terms": [
+    "could",
+    "deepmind",
+    "eventually",
+    "feed",
+    "genie",
+    "interactive",
+    "once",
+    "pipelines",
+    "previs",
+    "production",
+    "productized.",
+    "real-time",
+    "virtual",
+    "world"
+   ],
+   "via": "page",
+   "issue_ids": [
+    57
+   ]
   }
  ]
 }
