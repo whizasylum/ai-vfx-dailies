@@ -7218,10 +7218,154 @@
     "transferable_craft": 7.0
    },
    "delivered_at": "2026-10-28T22:12:58.275541+00:00"
+  },
+  "Q6xJOpTylco": {
+   "title": "2026 AI Horror Film Competition Winners!",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=Q6xJOpTylco",
+   "at": "2026-10-29T22:25:21.339851+00:00",
+   "duration_s": 3235,
+   "published": false,
+   "reason_if_low": "over 40min cap (53min)"
+  },
+  "dasm0ta8rIw": {
+   "title": "Turning 3D Scans Into Editable 3D Scenes",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/dasm0ta8rIw",
+   "at": "2026-10-29T22:25:21.423349+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "D-n-zdb59lo": {
+   "title": "Animate ANY 3D Character From Just a Video (Free & Open Source)",
+   "channel": "PixelArtistry",
+   "url": "https://www.youtube.com/watch?v=D-n-zdb59lo",
+   "at": "2026-10-29T22:25:21.482386+00:00",
+   "duration_s": 525,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "tool_release",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "D-n-zdb59lo",
+    "channel": "PixelArtistry",
+    "tools_and_platforms": [
+     {
+      "name": "MoCapAnything V2",
+      "used_for": "Motion capture and retargeting for arbitrary skeletons from single-view video."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Importing GLB/BVH files for animation cleanup and skeleton refinement."
+     },
+     {
+      "name": "Hugging Face",
+      "used_for": "Web-based hosting for the model's interactive demo."
+     },
+     {
+      "name": "Git/Python",
+      "used_for": "Local environment setup and automated installation of the research model."
+     }
+    ],
+    "whats_new": "MoCapAnything V2 is an open-source tool that predicts joint rotations directly from video, skipping the 3D mesh intermediate step used in V1. This architecture change results in a 20x speed increase and better handling of non-humanoid topologies like birds and quadrupeds.",
+    "whats_transferable": [
+     "Direct video-to-rotation prediction for arbitrary 3D rigs",
+     "Local deployment workflow for research models with a custom Python environment",
+     "Protocol for mapping human motion reference to disparate creature topologies",
+     "Standardized BVH/GLB export for cross-DCC animation pipelines"
+    ],
+    "pipeline_notes": "The tool outputs standard BVH and GLB formats, which are easily ingested into Houdini or Maya. For a USD-based pipeline, these files can be converted into UsdSkel clips. The Python-based local installer allows a TD to potentially wrap the inference script into a Houdini TOPs graph or a Maya batch processor for automated reference processing.",
+    "visual_quality_notes": "Quality is suitable for pre-vis or background agents. Manual cleanup is required for hero assets as 'bone flipping' and anatomical artifacts are common, particularly in complex limb orientations like wings or quadruped knees.",
+    "category": "tool_release",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Automates motion capture for animals, creatures, and objects from a single camera view.",
+     "MIT-licensed open-source project with a one-click local installer provided for Windows and Linux.",
+     "Skips the 3D mesh intermediate step of previous versions for a 20x performance boost.",
+     "Supports custom user rigs via FBX, requiring specific joint naming and rest-pose layouts.",
+     "Includes a 'Dance Anything' mode that focuses on retargeting complex human movement to non-humanoid skeletons."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Animate ANY 3D Character From Just a Video (Free & Open Source)",
+    "body": "MoCapAnything V2 is an open-source tool that predicts joint rotations directly from video, skipping the 3D mesh intermediate step used in V1. This architecture change results in a 20x speed increase and better handling of non-humanoid topologies like birds and quadrupeds.",
+    "why": "The tool outputs standard BVH and GLB formats, which are easily ingested into Houdini or Maya. For a USD-based pipeline, these files can be converted into UsdSkel clips. The Python-based local installer allows a TD to potentially wrap the inference script into a Houdini TOPs graph or a Maya batch processor for automated reference processing.",
+    "channel": "r",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "PixelArtistry",
+      "url": "https://www.youtube.com/watch?v=D-n-zdb59lo",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/D-n-zdb59lo/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "MoCapAnything V2",
+      "used_for": "Motion capture and retargeting for arbitrary skeletons from single-view video."
+     },
+     {
+      "name": "Blender",
+      "used_for": "Importing GLB/BVH files for animation cleanup and skeleton refinement."
+     },
+     {
+      "name": "Hugging Face",
+      "used_for": "Web-based hosting for the model's interactive demo."
+     },
+     {
+      "name": "Git/Python",
+      "used_for": "Local environment setup and automated installation of the research model."
+     }
+    ],
+    "whats_transferable": [
+     "Direct video-to-rotation prediction for arbitrary 3D rigs",
+     "Local deployment workflow for research models with a custom Python environment",
+     "Protocol for mapping human motion reference to disparate creature topologies",
+     "Standardized BVH/GLB export for cross-DCC animation pipelines"
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-29T22:26:05.013795+00:00"
+  },
+  "d8dI5TRjIW8": {
+   "title": "Make a Mobile Game From One Prompt | Higgsfield Playable",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/d8dI5TRjIW8",
+   "at": "2026-10-29T22:26:00.979323+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "JBLg9UsbaMA": {
+   "title": "The 4 parts every viral short drama is built on",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/JBLg9UsbaMA",
+   "at": "2026-10-29T22:26:01.058370+00:00",
+   "duration_s": 51,
+   "published": false,
+   "reason_if_low": "under 90s (51s)"
+  },
+  "5fuQnUuu1BM": {
+   "title": "Kling 4.0 makes AI video look like a real film shoot",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/5fuQnUuu1BM",
+   "at": "2026-10-29T22:26:01.150639+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
   }
  },
  "quota": {
-  "date": "2026-10-28",
-  "minutes": 55.63333333333333
+  "date": "2026-10-29",
+  "minutes": 8.75
  }
 }

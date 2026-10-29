@@ -1,100 +1,4 @@
 {
- "befffe6086": {
-  "headline": "Enscape adds real-time rendering plugin workflow guide for Revit BIM users",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "a",
-  "terms": [
-   "alongside",
-   "bim",
-   "enscape",
-   "ever",
-   "guide",
-   "plugin",
-   "real-time",
-   "reference",
-   "rendering",
-   "revit",
-   "studio",
-   "touches",
-   "useful",
-   "users"
-  ],
-  "at": "2026-10-07T22:43:36.478728+00:00"
- },
- "a83c950a76": {
-  "headline": "Flow Studio adds a 3D Editor for staging characters, CG worlds and cameras",
-  "sources": [
-   "befores & afters"
-  ],
-  "channel": "r",
-  "terms": [
-   "act",
-   "already",
-   "cameras",
-   "characters",
-   "detail",
-   "editor",
-   "flow",
-   "glance",
-   "pipeline",
-   "staging",
-   "studio",
-   "technical",
-   "worlds",
-   "worth"
-  ],
-  "at": "2026-10-07T22:43:36.478764+00:00"
- },
- "6d1399bcc2": {
-  "headline": "I turned myself into a pig with AI [Free & Local VFX Tutorial]",
-  "sources": [
-   "Mickmumpitz"
-  ],
-  "channel": "a",
-  "terms": [
-   "between",
-   "bridges",
-   "character",
-   "early",
-   "editing",
-   "evaluation",
-   "free",
-   "full",
-   "functions",
-   "gap",
-   "high-end",
-   "houdini",
-   "integration.",
-   "lighting"
-  ],
-  "at": "2026-10-07T22:43:36.478792+00:00"
- },
- "0aaa3b6b71": {
-  "headline": "3-Step Workflow To Master AI Realism (Full Tutorial)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "any",
-   "applicable",
-   "awareness",
-   "blocking",
-   "currently",
-   "directly",
-   "doesn",
-   "drive",
-   "ecosystem.",
-   "full",
-   "generative",
-   "highly",
-   "ingest",
-   "maps"
-  ],
-  "at": "2026-10-07T22:43:36.478812+00:00"
- },
  "9a762c94c2": {
   "headline": "RizomUV 2027 ships with faster unfolding, headless mode and full UI customization",
   "sources": [
@@ -1994,5 +1898,102 @@
    "full"
   ],
   "at": "2026-10-28T22:12:55.636926+00:00"
+ },
+ "1ff76b7aae": {
+  "headline": "MiniMax-H3 LoRA and distilled variants proliferate on Hugging Face",
+  "sources": [
+   "HF text-to-video",
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "around",
+   "comfyui-compatible",
+   "distilled",
+   "ecosystem",
+   "face",
+   "growing",
+   "hugging",
+   "locally",
+   "lora",
+   "minimax-h3",
+   "proliferate",
+   "restyle",
+   "runnable",
+   "testing"
+  ],
+  "at": "2026-10-29T22:26:02.015717+00:00"
+ },
+ "04f14de171": {
+  "headline": "Autodesk ships Arnold 7.5.4 with new Imager shader and pause/resume renders",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "arnold",
+   "autodesk",
+   "compositing",
+   "effects",
+   "imager",
+   "imager-based",
+   "improvements.",
+   "pause",
+   "post",
+   "practical",
+   "render-farm",
+   "renders",
+   "resume",
+   "shader"
+  ],
+  "at": "2026-10-29T22:26:02.015744+00:00"
+ },
+ "51dfaa161c": {
+  "headline": "Blender gets MetaWrap, an add-on converting sculpts and scans into MetaHumans",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "add-on",
+   "another",
+   "arbitrary",
+   "blender",
+   "converting",
+   "crossover",
+   "game",
+   "geometry",
+   "metahuman",
+   "metahumans",
+   "metawrap",
+   "pipelines",
+   "real-time",
+   "route"
+  ],
+  "at": "2026-10-29T22:26:02.015760+00:00"
+ },
+ "c23cf41c37": {
+  "headline": "Animate ANY 3D Character From Just a Video (Free & Open Source)",
+  "sources": [
+   "PixelArtistry"
+  ],
+  "channel": "r",
+  "terms": [
+   "allows",
+   "animate",
+   "any",
+   "automated",
+   "batch",
+   "bvh",
+   "character",
+   "clips.",
+   "converted",
+   "easily",
+   "files",
+   "formats",
+   "free",
+   "glb"
+  ],
+  "at": "2026-10-29T22:26:02.015785+00:00"
  }
 }

@@ -1,0 +1,108 @@
+{
+  "verdict": "A quiet day: a scatter of MiniMax-H3 LoRA/distillation releases and minor Blender add-ons, with no major controllable-generation or pipeline-integration news worth much reader time.",
+  "stories": [
+    {
+      "headline": "MiniMax-H3 LoRA and distilled variants proliferate on Hugging Face",
+      "body": "Two new MiniMax-H3 derivatives appeared on Hugging Face: a LoRA pack (Hearmeman/minimax-h3-loras, 33.8k downloads, ComfyUI-tagged) and Pika-Labs/Pika-H3-Flex, an image-to-video variant using diffusers. Both carry 'other' licences, meaning terms need checking before client work. This follows the recent MiniMax-H3 PDD ComfyUI node release the reader already flagged as useful, suggesting an active community build-out around this base model for local video generation.",
+      "why": "Growing ComfyUI-compatible ecosystem around a locally runnable video model worth testing for restyle work.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/Hearmeman/minimax-h3-loras",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Autodesk ships Arnold 7.5.4 with new Imager shader and pause/resume renders",
+      "body": "Arnold 7.5.4 adds a new Imager shader for building post effects directly in the renderer, plus the ability to pause and resume in-progress renders. This is a production renderer update with concrete workflow implications rather than a marketing refresh. No pricing or licence change noted; it's an incremental update to an existing paid tool already in many studio pipelines.",
+      "why": "Pause/resume and Imager-based post effects are practical render-farm and compositing workflow improvements.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/autodesk-releases-arnold-7-5-4",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Blender gets MetaWrap, an add-on converting sculpts and scans into MetaHumans",
+      "body": "Character artist Elvis Morelli released MetaWrap, a Blender add-on suite that converts existing sculpts, 3D scans, or AI-generated characters into Unreal Engine MetaHumans. This follows a pattern of similar photo-to-MetaHuman tools (like KeenFace) the reader has previously found useful. Availability and pricing details are not specified in the source.",
+      "why": "Another route into MetaHuman pipelines from arbitrary 3D source geometry, useful for game/real-time crossover work.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/metawrap-turns-your-3d-characters-into-metahumans-in-blender",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Animate ANY 3D Character From Just a Video (Free & Open Source)",
+      "body": "MoCapAnything V2 is an open-source tool that predicts joint rotations directly from video, skipping the 3D mesh intermediate step used in V1. This architecture change results in a 20x speed increase and better handling of non-humanoid topologies like birds and quadrupeds.",
+      "why": "The tool outputs standard BVH and GLB formats, which are easily ingested into Houdini or Maya. For a USD-based pipeline, these files can be converted into UsdSkel clips. The Python-based local installer allows a TD to potentially wrap the inference script into a Houdini TOPs graph or a Maya batch processor for automated reference processing.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "PixelArtistry",
+          "url": "https://www.youtube.com/watch?v=D-n-zdb59lo",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/D-n-zdb59lo/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "MoCapAnything V2",
+          "used_for": "Motion capture and retargeting for arbitrary skeletons from single-view video."
+        },
+        {
+          "name": "Blender",
+          "used_for": "Importing GLB/BVH files for animation cleanup and skeleton refinement."
+        },
+        {
+          "name": "Hugging Face",
+          "used_for": "Web-based hosting for the model's interactive demo."
+        },
+        {
+          "name": "Git/Python",
+          "used_for": "Local environment setup and automated installation of the research model."
+        }
+      ],
+      "whats_transferable": [
+        "Direct video-to-rotation prediction for arbitrary 3D rigs",
+        "Local deployment workflow for research models with a custom Python environment",
+        "Protocol for mapping human motion reference to disparate creature topologies",
+        "Standardized BVH/GLB export for cross-DCC animation pipelines"
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 11850,
+    "output_tokens": 907
+  },
+  "candidate_count": 52,
+  "editorial_stories": true
+}
