@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-29T22:26:05.019890+00:00",
+  "at": "2026-10-30T22:03:16.915551+00:00",
   "ratings": {
     "total": 52,
     "up": 50,
@@ -7,21 +7,21 @@
     "sources_adjusted": 9,
     "terms_learned": 8
   },
-  "raw": 175,
-  "candidates": 51,
-  "stories": 4,
+  "raw": 198,
+  "candidates": 60,
+  "stories": 5,
   "usage": {
-    "input_tokens": 11850,
-    "output_tokens": 907
+    "input_tokens": 13775,
+    "output_tokens": 976
   },
   "video_watch": {
-    "candidates": 16,
-    "watched": 1,
+    "candidates": 11,
+    "watched": 2,
     "published": 1,
     "rejected": 5,
     "deferred": 0,
-    "errors": 0,
-    "already_watched": 10
+    "errors": 1,
+    "already_watched": 4
   },
   "problems": [
     {

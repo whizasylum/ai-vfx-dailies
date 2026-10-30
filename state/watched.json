@@ -7362,10 +7362,187 @@
    "duration_s": 37,
    "published": false,
    "reason_if_low": "under 90s (37s)"
+  },
+  "CWdTBLsbaQs": {
+   "title": "OpenAI Claims It Just Did The Impossible",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=CWdTBLsbaQs",
+   "at": "2026-10-30T21:56:43.107334+00:00",
+   "duration_s": 442,
+   "topic_relevance": 2.0,
+   "transferable_craft": 1.0,
+   "category": "research",
+   "published": false,
+   "reason_if_low": "The video discusses theoretical complexity theory (3-SAT and ETH) which has no direct application to VFX workflows, asset creation, or pipeline development. It contains no tools, code, or methods a TD could implement or test.",
+   "assessment": {
+    "video_id": "CWdTBLsbaQs",
+    "channel": "Two Minute Papers",
+    "tools_and_platforms": [
+     {
+      "name": "OpenAI 3-SAT Algorithm",
+      "used_for": "Theoretical solving of logic constraints"
+     },
+     {
+      "name": "Lambda",
+      "used_for": "Cloud GPU compute (sponsored mention)"
+     }
+    ],
+    "whats_new": "A theoretical refutation of the Exponential Time Hypothesis (ETH) via a new deterministic algorithm for the 3-satisfiability problem.",
+    "whats_transferable": [],
+    "pipeline_notes": "Not applicable to current USD/Houdini production pipelines as the research is in the domain of theoretical computer science and complexity logic.",
+    "visual_quality_notes": "The video features standard 2D animation and archival clips of 3D fluid/light simulations used for illustrative purposes only.",
+    "category": "research",
+    "topic_relevance": 2.0,
+    "transferable_craft": 1.0,
+    "reason_if_low": "The video discusses theoretical complexity theory (3-SAT and ETH) which has no direct application to VFX workflows, asset creation, or pipeline development. It contains no tools, code, or methods a TD could implement or test.",
+    "summary_bullets": [
+     "Overview of the Exponential Time Hypothesis and its implications for hard computational problems.",
+     "Explanation of the 3-satisfiability (3-SAT) problem and why it was previously considered to have an exponential time barrier.",
+     "Summary of OpenAI's paper claiming a deterministic algorithm that beats the standard exponential bounds.",
+     "Brief mention of Karp reductions and how this theoretical breakthrough could theoretically impact various optimization tasks."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "d56aDeBHXgc": {
+   "title": "Your 3D Scan Can Become GPS for a Robot",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/d56aDeBHXgc",
+   "at": "2026-10-30T21:59:38.663279+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "ktGkJfxNN9M": {
+   "title": "I Spent 72 Hours Making This AI Commercial With Seedance 2.5 (Every Prompt I Used)",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=ktGkJfxNN9M",
+   "at": "2026-10-30T21:59:38.753853+00:00",
+   "duration_s": 1675,
+   "topic_relevance": 8.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "ktGkJfxNN9M",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Cinema Studio",
+      "used_for": "Video generation suite including Seedance 2.5/5.0 models and character element management."
+     },
+     {
+      "name": "Claude",
+      "used_for": "Prompt engineering and shot-plan orchestration using custom 'skills' (instruction sets)."
+     },
+     {
+      "name": "C-Dream",
+      "used_for": "Character-consistent image-to-image editing for outfit changes."
+     },
+     {
+      "name": "Soul Cinema",
+      "used_for": "Generating photorealistic character sheets and asset references."
+     }
+    ],
+    "whats_new": "A structured workflow for maintaining character and outfit consistency across complex multi-shot commercials using a combination of LLM 'directing skills' and custom asset elements.",
+    "whats_transferable": [
+     "Using LLM 'skills' (custom system instructions) to translate high-level director intent into structured shot plans for video models.",
+     "The character sheet generation method (front, back, and close-up face) to lock identity for generative consistency.",
+     "Applying low-fidelity video reference (self-recorded) to guide specific, complex physical motions that text-to-video models often fail to capture.",
+     "Creating dedicated reference sheets for every recurring environmental element (stadiums, balls, crowds) to prevent hallucination during shot-to-shot transitions."
+    ],
+    "pipeline_notes": "While Higgsfield is a web-based generative suite, the 'Directing Workflow' skill for Claude is highly transferable to any LLM-driven previz tool. In a USD pipeline, this structured shot planning could be ingested into a shot-tracking system (like ShotGrid) to automatically set up Maya or Houdini scene constraints based on AI-generated layout descriptions.",
+    "visual_quality_notes": "Demonstrates high-fidelity skin textures and physics-consistent clothing, avoiding the 'plastic' AI look through specific model selection (Soul Cinema) and image-led character grounding.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates a complete production pipeline for a 3-hero commercial generated entirely with AI.",
+     "Introduces the concept of 'Directing Skills' for LLMs to automate the generation of camera angles, lighting, and movement instructions.",
+     "Shows how to maintain clothing consistency by generating flat-lay and multi-view outfit sheets used as 'Elements' in the video generator.",
+     "Details a method for blocking character positions using simple hand-drawn sketches uploaded to the AI for spatial layout guidance.",
+     "Highlights the use of 480p 'draft' generations to iterate on motion and timing before committing to 1080p final renders."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "I Spent 72 Hours Making This AI Commercial With Seedance 2.5 (Every Prompt I Used)",
+    "body": "A structured workflow for maintaining character and outfit consistency across complex multi-shot commercials using a combination of LLM 'directing skills' and custom asset elements.",
+    "why": "While Higgsfield is a web-based generative suite, the 'Directing Workflow' skill for Claude is highly transferable to any LLM-driven previz tool. In a USD pipeline, this structured shot planning could be ingested into a shot-tracking system (like ShotGrid) to automatically set up Maya or Houdini scene constraints based on AI-generated layout descriptions.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Higgsfield AI",
+      "url": "https://www.youtube.com/watch?v=ktGkJfxNN9M",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i4.ytimg.com/vi/ktGkJfxNN9M/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Cinema Studio",
+      "used_for": "Video generation suite including Seedance 2.5/5.0 models and character element management."
+     },
+     {
+      "name": "Claude",
+      "used_for": "Prompt engineering and shot-plan orchestration using custom 'skills' (instruction sets)."
+     },
+     {
+      "name": "C-Dream",
+      "used_for": "Character-consistent image-to-image editing for outfit changes."
+     },
+     {
+      "name": "Soul Cinema",
+      "used_for": "Generating photorealistic character sheets and asset references."
+     }
+    ],
+    "whats_transferable": [
+     "Using LLM 'skills' (custom system instructions) to translate high-level director intent into structured shot plans for video models.",
+     "The character sheet generation method (front, back, and close-up face) to lock identity for generative consistency.",
+     "Applying low-fidelity video reference (self-recorded) to guide specific, complex physical motions that text-to-video models often fail to capture.",
+     "Creating dedicated reference sheets for every recurring environmental element (stadiums, balls, crowds) to prevent hallucination during shot-to-shot transitions."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-10-30T22:03:16.908585+00:00"
+  },
+  "bP1Cx3XEKS4": {
+   "title": "Turn a Viral Ad Into a Real Mobile Game | Higgsfield Playable",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/bP1Cx3XEKS4",
+   "at": "2026-10-30T22:03:12.873883+00:00",
+   "duration_s": 47,
+   "published": false,
+   "reason_if_low": "under 90s (47s)"
+  },
+  "27yt0lijSEU": {
+   "title": "3 ways creators monetize AI short dramas",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/27yt0lijSEU",
+   "at": "2026-10-30T22:03:12.971389+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
+  },
+  "-2g5H7gB34c": {
+   "title": "A 100-Year-Old Photo in Colour | Free Gemini Skill #gemini #photorestoration #oldphotos",
+   "channel": "AI2Play (pixaroma)",
+   "url": "https://www.youtube.com/shorts/-2g5H7gB34c",
+   "at": "2026-10-30T22:03:13.051225+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
   }
  },
  "quota": {
-  "date": "2026-10-29",
-  "minutes": 8.75
+  "date": "2026-10-30",
+  "minutes": 46.266666666666666
  }
 }

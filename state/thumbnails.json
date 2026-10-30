@@ -131,6 +131,10 @@
     "2026-10-30": {
       "attempts": 1,
       "paused": true
+    },
+    "2026-10-31": {
+      "attempts": 1,
+      "paused": true
     }
   }
 }

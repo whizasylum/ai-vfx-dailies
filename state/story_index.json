@@ -1,77 +1,4 @@
 {
- "9a762c94c2": {
-  "headline": "RizomUV 2027 ships with faster unfolding, headless mode and full UI customization",
-  "sources": [
-   "CG Channel",
-   "80 Level"
-  ],
-  "channel": "r",
-  "terms": [
-   "batch",
-   "customization",
-   "directly",
-   "faster",
-   "full",
-   "headless",
-   "management",
-   "mode",
-   "pipeline.",
-   "rizomuv",
-   "scene-level",
-   "studio",
-   "unfolding",
-   "usable"
-  ],
-  "at": "2026-10-08T22:50:58.801450+00:00"
- },
- "99420cecf1": {
-  "headline": "LTX-2.5 text/image/video diffusion model updated on Hugging Face",
-  "sources": [
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "checked.",
-   "client",
-   "diffusion",
-   "face",
-   "gated",
-   "hugging",
-   "image",
-   "license",
-   "limits",
-   "ltx-2.5",
-   "non-permissive",
-   "terms",
-   "text",
-   "until"
-  ],
-  "at": "2026-10-08T22:50:58.801482+00:00"
- },
- "ecb8bab1e7": {
-  "headline": "I Fixed Pixal3D's Biggest Weakness (Free Local 3D AI)",
-  "sources": [
-   "PixelArtistry"
-  ],
-  "channel": "a",
-  "terms": [
-   "acts",
-   "asset",
-   "assets",
-   "background",
-   "baking",
-   "base",
-   "biggest",
-   "blocking",
-   "concept",
-   "conversion",
-   "fixed",
-   "free",
-   "generator",
-   "glb"
-  ],
-  "at": "2026-10-08T22:50:58.801506+00:00"
- },
  "9638c6eaa0": {
   "headline": "Apple Studios VFX crew ratifies first IATSE contract",
   "sources": [
@@ -1995,5 +1922,120 @@
    "glb"
   ],
   "at": "2026-10-29T22:26:02.015785+00:00"
+ },
+ "a8edc741da": {
+  "headline": "Foundry brings Nuke Stage to macOS, early access in 2027",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "access",
+   "changes",
+   "comp",
+   "early",
+   "foundry",
+   "hardware",
+   "macos",
+   "nuke",
+   "stage",
+   "standardize",
+   "studios",
+   "workstations."
+  ],
+  "at": "2026-10-30T22:03:13.877632+00:00"
+ },
+ "929ef2bf1b": {
+  "headline": "HairDeck generates animation-ready stylized hair cards from a single image",
+  "sources": [
+   "Hugging Face daily papers"
+  ],
+  "channel": "g",
+  "terms": [
+   "animation-ready",
+   "cards",
+   "character",
+   "direct",
+   "game",
+   "generates",
+   "hair",
+   "hairdeck",
+   "hit",
+   "image",
+   "pipelines",
+   "real-time",
+   "single",
+   "stylized"
+  ],
+  "at": "2026-10-30T22:03:13.877664+00:00"
+ },
+ "6fe9ce29a1": {
+  "headline": "SAG-AFTRA ratifies TV animation contracts with AI protections and wage gains",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "affect",
+   "animated",
+   "animation",
+   "compensation",
+   "contracts",
+   "deliverables",
+   "gains",
+   "protections",
+   "ratifies",
+   "sag-aftra",
+   "sets",
+   "terms",
+   "usage",
+   "wage"
+  ],
+  "at": "2026-10-30T22:03:13.877678+00:00"
+ },
+ "5f307a4c3b": {
+  "headline": "Packer-IO 1.5 speeds up UV packing and ships a free Blender plugin",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "blender",
+   "drops",
+   "existing",
+   "faster",
+   "free",
+   "packer-io",
+   "packing",
+   "pipelines.",
+   "plugin",
+   "speeds",
+   "straight"
+  ],
+  "at": "2026-10-30T22:03:13.877690+00:00"
+ },
+ "09e778e486": {
+  "headline": "I Spent 72 Hours Making This AI Commercial With Seedance 2.5 (Every Prompt I Used)",
+  "sources": [
+   "Higgsfield AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "ai-generated",
+   "any",
+   "automatically",
+   "based",
+   "claude",
+   "commercial",
+   "constraints",
+   "could",
+   "descriptions.",
+   "directing",
+   "every",
+   "generative",
+   "higgsfield",
+   "highly"
+  ],
+  "at": "2026-10-30T22:03:13.877713+00:00"
  }
 }

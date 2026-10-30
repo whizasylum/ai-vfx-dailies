@@ -1,0 +1,118 @@
+{
+  "verdict": "A quiet day for pipeline-relevant news: mostly arXiv research chaff, studio PR, and trade listicles, with one real announcement worth noting for VFX hardware roadmaps.",
+  "stories": [
+    {
+      "headline": "Foundry brings Nuke Stage to macOS, early access in 2027",
+      "body": "Foundry announced early access to Nuke Stage, its virtual production and compositing tool, on macOS in 2027, with ProRes support, genlock, and multi-node sync. A student bundle will ship with a compositing license plus a render node. No Linux-only workflow changes announced, but this widens the hardware options for studios running VP and comp pipelines.",
+      "why": "Changes what hardware studios can standardize on for VP and comp workstations.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/foundry-announces-macos-support-nuke-stage",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081675-nuke-stage-1920x1080-1280.jpg?itok=wOhMOGKJ"
+    },
+    {
+      "headline": "HairDeck generates animation-ready stylized hair cards from a single image",
+      "body": "A research paper proposes HairDeck, a set diffusion transformer that generates stylized hair cards, the artist-placed ribbon geometry used in games and avatars, as an unordered set of tokens rather than an autoregressive sequence. From one image it produces both the hair card geometry and spring-bone chains for animation. This is a research prototype, not a shipping tool, but the output format maps directly onto existing game-hair pipelines.",
+      "why": "A direct hit on game and real-time character pipelines if it ships as a tool.",
+      "channel": "g",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Hugging Face daily papers",
+          "url": "https://huggingface.co/papers/2610.40599",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.gravatar.com/avatar/6c5c1441e3283e7543342e59277ea219?d=retro&size=100"
+    },
+    {
+      "headline": "SAG-AFTRA ratifies TV animation contracts with AI protections and wage gains",
+      "body": "SAG-AFTRA members ratified two TV animation agreements with the AMPTP by a 94.95% to 5.05% vote, securing a 12.6% wage increase, stronger AI protections, and residuals gains through June 2030. This sets contractual terms affecting voice and performance work on animated productions through the decade.",
+      "why": "Sets AI usage and compensation terms that affect deliverables on animated TV work.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/sag-aftra-members-ratify-tv-animation-contracts",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081673-1017570-sag-aftra.jpg?itok=_-JFzBAK"
+    },
+    {
+      "headline": "Packer-IO 1.5 speeds up UV packing and ships a free Blender plugin",
+      "body": "The free standalone UV packing tool Packer-IO released version 1.5, claiming up to 2x faster packing for sequences of similarly shaped UV islands. It now includes a free Blender plugin for direct integration. No pricing change: the tool remains free.",
+      "why": "A free, faster UV tool that drops straight into existing Blender pipelines.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/free-uv-packing-tool-packer-io-now-integrates-directly-in-blender",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "I Spent 72 Hours Making This AI Commercial With Seedance 2.5 (Every Prompt I Used)",
+      "body": "A structured workflow for maintaining character and outfit consistency across complex multi-shot commercials using a combination of LLM 'directing skills' and custom asset elements.",
+      "why": "While Higgsfield is a web-based generative suite, the 'Directing Workflow' skill for Claude is highly transferable to any LLM-driven previz tool. In a USD pipeline, this structured shot planning could be ingested into a shot-tracking system (like ShotGrid) to automatically set up Maya or Houdini scene constraints based on AI-generated layout descriptions.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Higgsfield AI",
+          "url": "https://www.youtube.com/watch?v=ktGkJfxNN9M",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i4.ytimg.com/vi/ktGkJfxNN9M/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Higgsfield Cinema Studio",
+          "used_for": "Video generation suite including Seedance 2.5/5.0 models and character element management."
+        },
+        {
+          "name": "Claude",
+          "used_for": "Prompt engineering and shot-plan orchestration using custom 'skills' (instruction sets)."
+        },
+        {
+          "name": "C-Dream",
+          "used_for": "Character-consistent image-to-image editing for outfit changes."
+        },
+        {
+          "name": "Soul Cinema",
+          "used_for": "Generating photorealistic character sheets and asset references."
+        }
+      ],
+      "whats_transferable": [
+        "Using LLM 'skills' (custom system instructions) to translate high-level director intent into structured shot plans for video models.",
+        "The character sheet generation method (front, back, and close-up face) to lock identity for generative consistency.",
+        "Applying low-fidelity video reference (self-recorded) to guide specific, complex physical motions that text-to-video models often fail to capture.",
+        "Creating dedicated reference sheets for every recurring environmental element (stadiums, balls, crowds) to prevent hallucination during shot-to-shot transitions."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 13775,
+    "output_tokens": 976
+  },
+  "candidate_count": 62,
+  "editorial_stories": true
+}
