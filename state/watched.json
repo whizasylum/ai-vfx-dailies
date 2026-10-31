@@ -7539,10 +7539,169 @@
    "duration_s": 29,
    "published": false,
    "reason_if_low": "under 90s (29s)"
+  },
+  "19ngvIWpK_U": {
+   "title": "The NEW Lighting Workflow Changing Filmmaking (Full AI Tutorial)",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/watch?v=19ngvIWpK_U",
+   "at": "2026-10-31T20:55:57.736353+00:00",
+   "duration_s": 659,
+   "topic_relevance": 8.0,
+   "transferable_craft": 7.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "19ngvIWpK_U",
+    "channel": "Curious Refuge",
+    "tools_and_platforms": [
+     {
+      "name": "Runway",
+      "used_for": "Cloud-based video generation and processing platform."
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Video-to-video generation and style transfer model."
+     },
+     {
+      "name": "GPT Image 2.5 Sunburst",
+      "used_for": "High-resolution image generation used to create the lighting/style reference frame."
+     }
+    ],
+    "whats_new": "A two-stage AI workflow for relighting and color grading existing footage by combining high-resolution image-to-image stills with video-to-video temporal models to maintain movement while changing environment lighting.",
+    "whats_transferable": [
+     "Workflow: Screenshot original footage -> Generate high-quality style/lighting reference frame -> Use still and video in Video-to-Video model for consistent relighting.",
+     "Using AI to 'render' greybox/previz scenes into final-look shots for fast look-development.",
+     "Prompting for additive light sources (e.g., flashlight/spotlight) to be synthesized over existing character performances."
+    ],
+    "pipeline_notes": "In a USD/Houdini pipeline, this could serve as a 'post-render' look-dev tool or a replacement for complex comp-heavy relighting in Nuke for fast turnaround projects. It effectively acts as a neural compositor, taking layout/previz from DCCs and adding complex lighting and textures without traditional shaders.",
+    "visual_quality_notes": "Outputs are currently capped at 1080p, which causes resolution loss if source plates are 4K. Visual artifacts noted include diagonal banding (similar to Google VEO), exposure flickering as the sequence progresses, and occasional 'creative' drift where the AI alters scene geometry.",
+    "category": "workflow",
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates relighting live-action office and cliffside footage using Runway's Seedance 2.5 model.",
+     "Outlines a method to use a high-quality AI-generated still as a 'hero' reference frame to control the look of a full video sequence.",
+     "Tests the ability of AI to interpret rough 3D greybox/previz layouts and generate final cinematic renders with specific lighting (sunset, moonlight, spotlight).",
+     "Highlights critical production issues like 1080p resolution limits, banding artifacts, and bit-depth limitations for traditional post-processing."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "The NEW Lighting Workflow Changing Filmmaking (Full AI Tutorial)",
+    "body": "A two-stage AI workflow for relighting and color grading existing footage by combining high-resolution image-to-image stills with video-to-video temporal models to maintain movement while changing environment lighting.",
+    "why": "In a USD/Houdini pipeline, this could serve as a 'post-render' look-dev tool or a replacement for complex comp-heavy relighting in Nuke for fast turnaround projects. It effectively acts as a neural compositor, taking layout/previz from DCCs and adding complex lighting and textures without traditional shaders.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Curious Refuge",
+      "url": "https://www.youtube.com/watch?v=19ngvIWpK_U",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/19ngvIWpK_U/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Runway",
+      "used_for": "Cloud-based video generation and processing platform."
+     },
+     {
+      "name": "Seedance 2.5",
+      "used_for": "Video-to-video generation and style transfer model."
+     },
+     {
+      "name": "GPT Image 2.5 Sunburst",
+      "used_for": "High-resolution image generation used to create the lighting/style reference frame."
+     }
+    ],
+    "whats_transferable": [
+     "Workflow: Screenshot original footage -> Generate high-quality style/lighting reference frame -> Use still and video in Video-to-Video model for consistent relighting.",
+     "Using AI to 'render' greybox/previz scenes into final-look shots for fast look-development.",
+     "Prompting for additive light sources (e.g., flashlight/spotlight) to be synthesized over existing character performances."
+    ],
+    "topic_relevance": 8.0,
+    "transferable_craft": 7.0
+   },
+   "delivered_at": "2026-10-31T20:58:48.592299+00:00"
+  },
+  "rWY8DYZ1LDk": {
+   "title": "The fastest jet in human history was built in 1964 and remains undefeated to date",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/rWY8DYZ1LDk",
+   "at": "2026-10-31T20:56:33.163042+00:00",
+   "duration_s": 22,
+   "published": false,
+   "reason_if_low": "under 90s (22s)"
+  },
+  "xGM5R7gkkWE": {
+   "title": "He Won $10,000 in the Game I Made With AI",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=xGM5R7gkkWE",
+   "at": "2026-10-31T20:56:33.212309+00:00",
+   "duration_s": 1582,
+   "topic_relevance": 4.0,
+   "transferable_craft": 3.0,
+   "category": "workflow",
+   "published": false,
+   "reason_if_low": "The video is primarily a contest wrap-up and gameplay reveal for an Easter Egg Hunt. While it mentions sophisticated AI orchestration tools (Higgsfield MCP), it focuses on contest results rather than providing actionable technical demonstrations or pipeline steps that a VFX TD could test immediately.",
+   "assessment": {
+    "video_id": "xGM5R7gkkWE",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield",
+      "used_for": "AI-driven generation of 3D models, 2D images, and video assets via API."
+     },
+     {
+      "name": "Claude",
+      "used_for": "Orchestrating game logic and triggering generative asset creation through the Higgsfield MCP."
+     },
+     {
+      "name": "Blender",
+      "used_for": "3D model inspection and asset cleanup."
+     },
+     {
+      "name": "Project 0",
+      "used_for": "A web-based 3D city engine where players can build lots and play mini-games."
+     }
+    ],
+    "whats_new": "Introduction of the Higgsfield MCP (Model Context Protocol) for Claude, which allows LLM agents to interact with 3D environments and generative tools as a centralized supercomputer agent.",
+    "whats_transferable": [
+     "The concept of hiding scene-triggering commands or metadata within model hierarchies for dynamic interactions.",
+     "Using LLM agents as an orchestration layer to trigger generative asset APIs for rapid environment populating."
+    ],
+    "pipeline_notes": "The workflow suggests an agent-based approach where natural language prompts are translated into API calls for generative assets. While demonstrated for web-games, a TD could adapt this by building a Houdini HDA that uses Claude to drive generative modeling tools via API, facilitating rapid layout iterations.",
+    "visual_quality_notes": "The assets are a mix of stylized, real-time web-engine graphics and more complex AI-generated models; visually coherent for an indie game project but not high-end VFX quality.",
+    "category": "workflow",
+    "topic_relevance": 4.0,
+    "transferable_craft": 3.0,
+    "reason_if_low": "The video is primarily a contest wrap-up and gameplay reveal for an Easter Egg Hunt. While it mentions sophisticated AI orchestration tools (Higgsfield MCP), it focuses on contest results rather than providing actionable technical demonstrations or pipeline steps that a VFX TD could test immediately.",
+    "summary_bullets": [
+     "Recap of a $10,000 contest in Project 0 showcasing how players used LLM agents to find hidden keys.",
+     "Mentions Higgsfield's generative capabilities for creating rigged 3D characters and environmental assets.",
+     "Showcases a steganographic approach to gameplay where commands are hidden inside model structures.",
+     "Highlights the use of the Higgsfield MCP for Claude to automate the creation of game mechanics and assets."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
+  },
+  "b6wVWdnN97M": {
+   "title": "Change Everything in Your Video | Seedance 2.5 + Genjutsu",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/b6wVWdnN97M",
+   "at": "2026-10-31T20:58:45.245058+00:00",
+   "duration_s": 56,
+   "published": false,
+   "reason_if_low": "under 90s (56s)"
   }
  },
  "quota": {
-  "date": "2026-10-30",
-  "minutes": 46.266666666666666
+  "date": "2026-10-31",
+  "minutes": 37.35
  }
 }

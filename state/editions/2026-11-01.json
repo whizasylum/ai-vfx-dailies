@@ -1,0 +1,81 @@
+{
+  "verdict": "A quiet day: one real plugin update worth noting, everything else is thin HF model listings, game/animation tutorial filler, or paper-churn with no production hook.",
+  "stories": [
+    {
+      "headline": "Boris FX ships Continuum 2027 with new 3D noise generator and titling tool",
+      "body": "Boris FX released Continuum 2027, its effects plugin suite for compositing and editing apps. The update adds a new 3D noise generator, a new 2D titling tool, and updates to masks and particles. No pricing or platform compatibility details given beyond the release itself.",
+      "why": "Direct plugin update for compositing pipelines using Continuum inside Nuke or editorial tools.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/10/borisfx-releases-continuum-2027",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Foundry adds macOS support and education licensing to Nuke Stage",
+      "body": "Foundry announced Nuke Stage, its virtual production and ICVFX tool, will add macOS support and an education licensing tier. The announcement is vendor marketing with no release date, pricing, or technical specifics on the macOS port or what the education licence covers.",
+      "why": "Widens Nuke Stage access to Mac-based artists and students, but no concrete availability yet.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/macos-support-and-education-licensing-coming-to-foundrys-nuke-stage",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "The NEW Lighting Workflow Changing Filmmaking (Full AI Tutorial)",
+      "body": "A two-stage AI workflow for relighting and color grading existing footage by combining high-resolution image-to-image stills with video-to-video temporal models to maintain movement while changing environment lighting.",
+      "why": "In a USD/Houdini pipeline, this could serve as a 'post-render' look-dev tool or a replacement for complex comp-heavy relighting in Nuke for fast turnaround projects. It effectively acts as a neural compositor, taking layout/previz from DCCs and adding complex lighting and textures without traditional shaders.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=19ngvIWpK_U",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/19ngvIWpK_U/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Runway",
+          "used_for": "Cloud-based video generation and processing platform."
+        },
+        {
+          "name": "Seedance 2.5",
+          "used_for": "Video-to-video generation and style transfer model."
+        },
+        {
+          "name": "GPT Image 2.5 Sunburst",
+          "used_for": "High-resolution image generation used to create the lighting/style reference frame."
+        }
+      ],
+      "whats_transferable": [
+        "Workflow: Screenshot original footage -> Generate high-quality style/lighting reference frame -> Use still and video in Video-to-Video model for consistent relighting.",
+        "Using AI to 'render' greybox/previz scenes into final-look shots for fast look-development.",
+        "Prompting for additive light sources (e.g., flashlight/spotlight) to be synthesized over existing character performances."
+      ],
+      "topic_relevance": 8.0,
+      "transferable_craft": 7.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 3782,
+    "output_tokens": 483
+  },
+  "candidate_count": 11,
+  "editorial_stories": true
+}

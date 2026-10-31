@@ -1,52 +1,4 @@
 {
- "9638c6eaa0": {
-  "headline": "Apple Studios VFX crew ratifies first IATSE contract",
-  "sources": [
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "apple",
-   "bargaining",
-   "changes",
-   "conditions",
-   "contract",
-   "crew",
-   "iatse",
-   "major",
-   "ratifies",
-   "staff",
-   "studio.",
-   "studios",
-   "terms",
-   "vfx"
-  ],
-  "at": "2026-10-09T22:13:05.243344+00:00"
- },
- "c0aee7a2bd": {
-  "headline": "SoulX-FlashHead image-to-video model updated on Hugging Face",
-  "sources": [
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "beyond",
-   "card.",
-   "client",
-   "face",
-   "glance",
-   "hugging",
-   "image-to-video",
-   "licence",
-   "only",
-   "permit",
-   "soulx-flashhead",
-   "terms",
-   "unverified",
-   "work"
-  ],
-  "at": "2026-10-09T22:13:05.243369+00:00"
- },
  "b53ea79cbd": {
   "headline": "Research papers on egocentric video generation and 3D world looping show no pipeline path yet",
   "sources": [
@@ -2037,5 +1989,76 @@
    "highly"
   ],
   "at": "2026-10-30T22:03:13.877713+00:00"
+ },
+ "6b3998accd": {
+  "headline": "Boris FX ships Continuum 2027 with new 3D noise generator and titling tool",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "boris",
+   "compositing",
+   "continuum",
+   "direct",
+   "editorial",
+   "generator",
+   "inside",
+   "noise",
+   "nuke",
+   "pipelines",
+   "plugin",
+   "titling",
+   "tools."
+  ],
+  "at": "2026-10-31T20:58:46.107921+00:00"
+ },
+ "594956ba6b": {
+  "headline": "Foundry adds macOS support and education licensing to Nuke Stage",
+  "sources": [
+   "postPerspective"
+  ],
+  "channel": "b",
+  "terms": [
+   "access",
+   "artists",
+   "availability",
+   "concrete",
+   "education",
+   "foundry",
+   "licensing",
+   "mac-based",
+   "macos",
+   "nuke",
+   "stage",
+   "students",
+   "support",
+   "widens"
+  ],
+  "at": "2026-10-31T20:58:46.107952+00:00"
+ },
+ "68f8661501": {
+  "headline": "The NEW Lighting Workflow Changing Filmmaking (Full AI Tutorial)",
+  "sources": [
+   "Curious Refuge"
+  ],
+  "channel": "a",
+  "terms": [
+   "acts",
+   "adding",
+   "changing",
+   "comp-heavy",
+   "complex",
+   "compositor",
+   "could",
+   "dccs",
+   "effectively",
+   "fast",
+   "filmmaking",
+   "full",
+   "houdini",
+   "layout"
+  ],
+  "at": "2026-10-31T20:58:46.107980+00:00"
  }
 }
