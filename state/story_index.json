@@ -1,125 +1,4 @@
 {
- "b53ea79cbd": {
-  "headline": "Research papers on egocentric video generation and 3D world looping show no pipeline path yet",
-  "sources": [
-   "Hugging Face daily papers",
-   "Hugging Face daily papers"
-  ],
-  "channel": "g",
-  "terms": [
-   "controllable",
-   "egocentric",
-   "generation",
-   "heading",
-   "looping",
-   "nothing",
-   "papers",
-   "path",
-   "pipeline",
-   "research",
-   "show",
-   "signals",
-   "usable",
-   "video"
-  ],
-  "at": "2026-10-10T21:09:18.683978+00:00"
- },
- "dfc97cd847": {
-  "headline": "This New Trick Can Save a Ton on AI Video Generations",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "acts",
-   "approval.",
-   "based",
-   "because",
-   "client",
-   "conceptual",
-   "detail",
-   "draft",
-   "fits",
-   "flipbook",
-   "generations",
-   "high-res",
-   "initial",
-   "layout-to-lighting"
-  ],
-  "at": "2026-10-10T21:09:18.684026+00:00"
- },
- "60acc69cd8": {
-  "headline": "God\u2019s Eye View Just Got a Massive Upgrade",
-  "sources": [
-   "Bilawal Sidhu"
-  ],
-  "channel": "r",
-  "terms": [
-   "ability",
-   "applicable",
-   "approach",
-   "artists.",
-   "change-detection",
-   "construction",
-   "data",
-   "digital",
-   "directly",
-   "environment",
-   "eye",
-   "fusion",
-   "god",
-   "got"
-  ],
-  "at": "2026-10-10T21:09:18.684056+00:00"
- },
- "f2df56f048": {
-  "headline": "I Made a Ready Player One Game And Everyone Can Win $10,000",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "r",
-  "terms": [
-   "agents",
-   "attribute",
-   "building",
-   "constraints",
-   "containing",
-   "everyone",
-   "file",
-   "game",
-   "generate",
-   "generative",
-   "grounding",
-   "highly",
-   "houdini",
-   "internal"
-  ],
-  "at": "2026-10-10T21:09:18.684076+00:00"
- },
- "4685016701": {
-  "headline": "How to Make $3000/Month On Clipping Videos With AI (Full Workflow)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "agentic",
-   "asset",
-   "automating",
-   "bridge",
-   "claude",
-   "clipping",
-   "cloud-based",
-   "demonstrates",
-   "editing",
-   "full",
-   "generation.",
-   "high-level",
-   "houdini",
-   "intent"
-  ],
-  "at": "2026-10-11T21:29:32.750251+00:00"
- },
  "20a35f6125": {
   "headline": "World Creator 4 terrain generator adds full-planet generation",
   "sources": [
@@ -2060,5 +1939,29 @@
    "layout"
   ],
   "at": "2026-10-31T20:58:46.107980+00:00"
+ },
+ "b5361ac8f9": {
+  "headline": "My Dream Game is Finally Ready to Play After 25 Days With AI",
+  "sources": [
+   "Stefan 3D AI"
+  ],
+  "channel": "a",
+  "terms": [
+   "after",
+   "agents",
+   "aligned",
+   "approach",
+   "asset",
+   "assets",
+   "background",
+   "context",
+   "creative",
+   "crowd",
+   "days",
+   "dream",
+   "effective",
+   "finally"
+  ],
+  "at": "2026-11-01T21:40:10.191002+00:00"
  }
 }

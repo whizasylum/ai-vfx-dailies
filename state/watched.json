@@ -7698,10 +7698,173 @@
    "duration_s": 56,
    "published": false,
    "reason_if_low": "under 90s (56s)"
+  },
+  "LNfvjmtY0Qk": {
+   "title": "My Dream Game is Finally Ready to Play After 25 Days With AI",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=LNfvjmtY0Qk",
+   "at": "2026-11-01T21:38:15.380447+00:00",
+   "duration_s": 2315,
+   "topic_relevance": 7.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "LNfvjmtY0Qk",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Tripo AI",
+      "used_for": "3D asset generation, including Smart UV unwrapping and Smart Mesh P2 retopology"
+     },
+     {
+      "name": "Unity",
+      "used_for": "Game engine, terrain sculpting, and VFX assembly"
+     },
+     {
+      "name": "Blender",
+      "used_for": "3D model refinement, rigging, and character animation"
+     },
+     {
+      "name": "Claude 3.5 / GPT-4o",
+      "used_for": "Code generation, level design logic, and project orchestration"
+     },
+     {
+      "name": "ElevenLabs",
+      "used_for": "Unit sound effects and Foley"
+     },
+     {
+      "name": "Gemini 1.5",
+      "used_for": "Character voice lines"
+     },
+     {
+      "name": "Mr. Mak Workspace",
+      "used_for": "Local desktop orchestrator for LLM-based game development available on GitHub"
+     }
+    ],
+    "whats_new": "A 25-day development log of a feature-complete RTS game built solo using an AI-agent-centric pipeline. It demonstrates the use of video-based motion references to drive 3D creature animation for non-humanoids like scorpions and dryads.",
+    "whats_transferable": [
+     "Using a centralized project Wiki (Markdown/HTML) to provide context to LLM agents for consistent character attributes and skill matrices.",
+     "Applying Tripo AI's 'Smart UV' and 'Smart Mesh' for automated retopology and UV unwrapping of generated 3D meshes.",
+     "Chaining video AI (as motion reference) with 3D agents to automate complex creature rigging and animation cycles in Blender.",
+     "Using LLM-generated HTML illustrations to define timing and choreography for VFX before implementation in the game engine."
+    ],
+    "pipeline_notes": "This workflow focuses on rapid asset iteration where AI agents handle the 'heavy lifting' of rigging and retopology. In a USD pipeline, this would be highly effective for generating background assets, crowd agents, or high-fidelity proxies. The 'Context Wiki' approach is a transferable strategy for keeping multi-modal AI tools (textures, sound, model) aligned with a single creative vision.",
+    "visual_quality_notes": "Assets are 'game-ready' with mid-to-low poly counts suitable for RTS environments. Animation quality is functional for movement cycles but lacks the fine polish of hand-keyed cinematic work.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "The creator developed a full RTS game ('Overlord') in one month, including 18 unique units and 2 complete levels, using an AI-first workflow.",
+     "Introduces 'Mr. Mak Workspace', a GitHub tool designed to help developers use Claude and Codex for local file-system project management.",
+     "Demonstrates a creature pipeline where Tripo AI generates the mesh, and agents perform rigging based on video-to-motion references.",
+     "Details a multi-modal approach using ElevenLabs for SFX, Gemini for voices, and Google Lyria for music integration.",
+     "Provides a cost breakdown estimating $500 to $11,000 in API tokens depending on the use of flat subscriptions versus per-token pricing."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "My Dream Game is Finally Ready to Play After 25 Days With AI",
+    "body": "A 25-day development log of a feature-complete RTS game built solo using an AI-agent-centric pipeline. It demonstrates the use of video-based motion references to drive 3D creature animation for non-humanoids like scorpions and dryads.",
+    "why": "This workflow focuses on rapid asset iteration where AI agents handle the 'heavy lifting' of rigging and retopology. In a USD pipeline, this would be highly effective for generating background assets, crowd agents, or high-fidelity proxies. The 'Context Wiki' approach is a transferable strategy for keeping multi-modal AI tools (textures, sound, model) aligned with a single creative vision.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=LNfvjmtY0Qk",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/LNfvjmtY0Qk/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Tripo AI",
+      "used_for": "3D asset generation, including Smart UV unwrapping and Smart Mesh P2 retopology"
+     },
+     {
+      "name": "Unity",
+      "used_for": "Game engine, terrain sculpting, and VFX assembly"
+     },
+     {
+      "name": "Blender",
+      "used_for": "3D model refinement, rigging, and character animation"
+     },
+     {
+      "name": "Claude 3.5 / GPT-4o",
+      "used_for": "Code generation, level design logic, and project orchestration"
+     },
+     {
+      "name": "ElevenLabs",
+      "used_for": "Unit sound effects and Foley"
+     },
+     {
+      "name": "Gemini 1.5",
+      "used_for": "Character voice lines"
+     },
+     {
+      "name": "Mr. Mak Workspace",
+      "used_for": "Local desktop orchestrator for LLM-based game development available on GitHub"
+     }
+    ],
+    "whats_transferable": [
+     "Using a centralized project Wiki (Markdown/HTML) to provide context to LLM agents for consistent character attributes and skill matrices.",
+     "Applying Tripo AI's 'Smart UV' and 'Smart Mesh' for automated retopology and UV unwrapping of generated 3D meshes.",
+     "Chaining video AI (as motion reference) with 3D agents to automate complex creature rigging and animation cycles in Blender.",
+     "Using LLM-generated HTML illustrations to define timing and choreography for VFX before implementation in the game engine."
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-11-01T21:40:13.020737+00:00"
+  },
+  "VaNWoD7JORo": {
+   "title": "Who Won $1,000,000? Higgsfield Global Film Festival Winners",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=VaNWoD7JORo",
+   "at": "2026-11-01T21:40:01.573656+00:00",
+   "duration_s": 1419,
+   "topic_relevance": 4.0,
+   "transferable_craft": 3.0,
+   "category": "tool_release",
+   "published": false,
+   "reason_if_low": "The video is a promotional showcase for a consumer mobile app. It lacks technical depth regarding the underlying model architecture, offers no methods for data extraction (motion vectors, depth maps, or geometry), and provides no workflow for integration into DCCs like Houdini or Maya.",
+   "assessment": {
+    "video_id": "VaNWoD7JORo",
+    "channel": "Higgsfield AI",
+    "tools_and_platforms": [
+     {
+      "name": "Higgsfield Diffuse",
+      "used_for": "Mobile-based video-to-video generation and motion transfer"
+     }
+    ],
+    "whats_new": "Introduction of a mobile-first generative AI app that performs character-consistent video-to-video transformations based on human motion prompts.",
+    "whats_transferable": [
+     "The concept of using low-fidelity mobile video as a motion reference for driving high-fidelity character transformations."
+    ],
+    "pipeline_notes": "The tool is currently a closed, mobile-based ecosystem. It lacks direct integration (USD, FBX, or Alembic) required for a professional VFX pipeline and does not offer API access for Houdini or Nuke automation.",
+    "visual_quality_notes": "Demonstrates high temporal consistency for character features across frames, but exhibits typical 'AI shimmering' and limited control over environment lighting and shadow integration.",
+    "category": "tool_release",
+    "topic_relevance": 4.0,
+    "transferable_craft": 3.0,
+    "reason_if_low": "The video is a promotional showcase for a consumer mobile app. It lacks technical depth regarding the underlying model architecture, offers no methods for data extraction (motion vectors, depth maps, or geometry), and provides no workflow for integration into DCCs like Houdini or Maya.",
+    "summary_bullets": [
+     "Higgsfield Diffuse allows users to re-skin themselves into characters using a 'Social-first' AI video model.",
+     "The system focuses on character consistency, attempting to keep the AI character's identity stable across motion sequences.",
+     "The workflow is entirely mobile-contained, targeting content creators rather than technical artists or VFX pipelines.",
+     "No professional export options or control parameters (like ControlNet weights or seed management) are demonstrated for manual adjustment."
+    ]
+   },
+   "rubric_version": 2,
+   "story": null
   }
  },
  "quota": {
-  "date": "2026-10-31",
-  "minutes": 37.35
+  "date": "2026-11-01",
+  "minutes": 62.233333333333334
  }
 }

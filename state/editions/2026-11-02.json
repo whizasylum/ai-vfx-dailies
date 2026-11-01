@@ -1,0 +1,66 @@
+{
+  "verdict": "1 video workflows worth a closer look.",
+  "stories": [
+    {
+      "headline": "My Dream Game is Finally Ready to Play After 25 Days With AI",
+      "body": "A 25-day development log of a feature-complete RTS game built solo using an AI-agent-centric pipeline. It demonstrates the use of video-based motion references to drive 3D creature animation for non-humanoids like scorpions and dryads.",
+      "why": "This workflow focuses on rapid asset iteration where AI agents handle the 'heavy lifting' of rigging and retopology. In a USD pipeline, this would be highly effective for generating background assets, crowd agents, or high-fidelity proxies. The 'Context Wiki' approach is a transferable strategy for keeping multi-modal AI tools (textures, sound, model) aligned with a single creative vision.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=LNfvjmtY0Qk",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/LNfvjmtY0Qk/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Tripo AI",
+          "used_for": "3D asset generation, including Smart UV unwrapping and Smart Mesh P2 retopology"
+        },
+        {
+          "name": "Unity",
+          "used_for": "Game engine, terrain sculpting, and VFX assembly"
+        },
+        {
+          "name": "Blender",
+          "used_for": "3D model refinement, rigging, and character animation"
+        },
+        {
+          "name": "Claude 3.5 / GPT-4o",
+          "used_for": "Code generation, level design logic, and project orchestration"
+        },
+        {
+          "name": "ElevenLabs",
+          "used_for": "Unit sound effects and Foley"
+        },
+        {
+          "name": "Gemini 1.5",
+          "used_for": "Character voice lines"
+        },
+        {
+          "name": "Mr. Mak Workspace",
+          "used_for": "Local desktop orchestrator for LLM-based game development available on GitHub"
+        }
+      ],
+      "whats_transferable": [
+        "Using a centralized project Wiki (Markdown/HTML) to provide context to LLM agents for consistent character attributes and skill matrices.",
+        "Applying Tripo AI's 'Smart UV' and 'Smart Mesh' for automated retopology and UV unwrapping of generated 3D meshes.",
+        "Chaining video AI (as motion reference) with 3D agents to automate complex creature rigging and animation cycles in Blender.",
+        "Using LLM-generated HTML illustrations to define timing and choreography for VFX before implementation in the game engine."
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 8.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 2078,
+    "output_tokens": 51
+  },
+  "candidate_count": 3,
+  "editorial_stories": false
+}
