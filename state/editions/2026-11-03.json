@@ -1,0 +1,43 @@
+{
+  "verdict": "Quiet day: mostly festival listings, personnel news, and a stack of generic LTX marketing posts, with one gated Flux model release worth noting.",
+  "stories": [
+    {
+      "headline": "Black Forest Labs publishes FLUX.3 Klein image-to-image model on Hugging Face",
+      "body": "FLUX.3 Klein is listed on Hugging Face under a gated 'other' licence requiring acceptance of terms before download, built on the diffusers library with safetensors weights. It has accumulated over 155,000 downloads since first publishing in October 2026. No VRAM figures or technical benchmarks are given in the listing itself, and the licence terms need checking before any client use.",
+      "why": "Licence gating means studios must verify terms before using it on paid client work.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "LTX publishes color management guide for mixing AI-generated footage into ACES pipelines",
+      "body": "Lightricks' LTX blog posted a guide addressing how to bring generative video output into ACES-based color pipelines, a real pain point since most video models output in non-standard color spaces. No new tooling or plugin is announced, just a written explainer. Worth a skim if you're integrating AI shots into a graded VFX pipeline, but treat as vendor content rather than a studio-tested workflow.",
+      "why": "Color pipeline integration is the actual blocker for using generative footage on client deliverables.",
+      "channel": "a",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/aces-color-management",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 11507,
+    "output_tokens": 660
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

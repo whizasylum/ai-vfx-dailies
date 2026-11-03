@@ -1,52 +1,4 @@
 {
- "20a35f6125": {
-  "headline": "World Creator 4 terrain generator adds full-planet generation",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "affect",
-   "could",
-   "creator",
-   "environment",
-   "feeding",
-   "full-planet",
-   "generation",
-   "generator",
-   "houdini",
-   "pipelines.",
-   "terrain",
-   "upgrade",
-   "usd",
-   "workflows"
-  ],
-  "at": "2026-10-13T00:08:30.196996+00:00"
- },
- "1f57b4ef48": {
-  "headline": "Epic Games reportedly tells staff to go 'AI-first', delays unannounced shooter",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "b",
-  "terms": [
-   "ai-first",
-   "around",
-   "delays",
-   "epic",
-   "games",
-   "major",
-   "may",
-   "pipeline",
-   "precedent.",
-   "production",
-   "reportedly",
-   "restructure",
-   "roles",
-   "shooter"
-  ],
-  "at": "2026-10-13T00:08:30.197027+00:00"
- },
  "d5925b076d": {
   "headline": "ComfyUI 0.40.0 adds 3D export API and camera-info node",
   "sources": [
@@ -1963,5 +1915,53 @@
    "finally"
   ],
   "at": "2026-11-01T21:40:10.191002+00:00"
+ },
+ "93fa5d2ce7": {
+  "headline": "Black Forest Labs publishes FLUX.3 Klein image-to-image model on Hugging Face",
+  "sources": [
+   "HF Black Forest Labs"
+  ],
+  "channel": "r",
+  "terms": [
+   "before",
+   "black",
+   "client",
+   "face",
+   "flux.3",
+   "forest",
+   "gating",
+   "hugging",
+   "image-to-image",
+   "klein",
+   "labs",
+   "licence",
+   "means",
+   "must"
+  ],
+  "at": "2026-11-03T00:26:20.355518+00:00"
+ },
+ "4fa22d2f83": {
+  "headline": "LTX publishes color management guide for mixing AI-generated footage into ACES pipelines",
+  "sources": [
+   "Lightricks / LTX"
+  ],
+  "channel": "a",
+  "terms": [
+   "aces",
+   "actual",
+   "ai-generated",
+   "blocker",
+   "client",
+   "color",
+   "deliverables.",
+   "footage",
+   "generative",
+   "guide",
+   "integration",
+   "ltx",
+   "management",
+   "mixing"
+  ],
+  "at": "2026-11-03T00:26:20.355542+00:00"
  }
 }
