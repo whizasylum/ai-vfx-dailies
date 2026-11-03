@@ -1,0 +1,172 @@
+{
+  "verdict": "A quiet day: mostly arXiv paper noise, agent-benchmark churn, and entertainment trade news, with one real model release and a couple of worthwhile production breakdowns.",
+  "stories": [
+    {
+      "headline": "Flux 3 Klein pup model published on Hugging Face under Apache 2.0",
+      "body": "Black Forest Labs published flux-3-image-klein-pup on Hugging Face: an image-text-to-text model built on Qwen3.5-9B, covering text-to-image, image editing and prompt rewriting. Licence is Apache-2.0, so it's usable on client work without the restrictions of research-only licences. Already at 75 likes and roughly 64,000 downloads since its mid-October first publish, suggesting people are integrating it. No VRAM figures given in the listing.\n      ",
+      "why": "A permissively licensed image-editing model is worth testing for client-safe pipeline integration.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-pup",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Chaos publishes guide on hidden costs of switching render engines",
+      "body": "Chaos's blog lays out a transition guide for studios considering a render engine switch, covering retraining time, shader/material conversion, asset library migration, and pipeline rewrites that don't show up in a simple licence-cost comparison. Framed around V-Ray adoption but applicable generally to renderer migration decisions. No new tool or feature announced, just a planning checklist from a major renderer vendor.",
+      "why": "Useful checklist if the studio is evaluating a Karma-to-other-renderer or vice versa migration.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/switching-rendering-software-costs-and-transition-guide",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/2018_Livingroom_Sunset-1920x1080-cf388b8d-e3c4-4e41-971d-d31d8b69d09c%20%281%29.jpg"
+    },
+    {
+      "headline": "Weta FX details animation and FX work on Te Ka and Te Fiti for live-action Moana",
+      "body": "Weta FX published a making-of breakdown on how it built and animated the lava monster Te Ka and the goddess Te Fiti for Disney's live-action Moana, covering the technical approach to bringing large-scale elemental characters into a live-action plate. Studio-sourced breakdown with concrete creature/FX pipeline detail rather than marketing copy.",
+      "why": "Direct look at large-scale creature FX pipeline choices from a top-tier facility.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/moana-weta-fx-explores-the-animation-and-fx-challenges-of-te-ka-and-te-fiti",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "BOT VFX breakdown shows invisible-VFX work on Reacher Season 4",
+      "body": "BOT VFX released a before-and-after breakdown of its work on Reacher Season 4: wire removal, digital blood/gore enhancement, and other invisible compositing fixes. It's a straightforward technical walkthrough of bread-and-butter comp and cleanup work on a live-action episodic show, not a tool announcement.",
+      "why": "Concrete reference for typical invisible-VFX comp tasks and shot counts on episodic TV.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/reacher-season-4-a-closer-look-at-the-invisible-vfx-by-bot-vfx",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Florida Learjet Crash - Final 78 Seconds Reconstructed in God's Eye View",
+      "body": "A comprehensive '4D reconstruction' workflow that fuses real-time flight telemetry (ADS-B), volumetric weather radar (NEXRAD), satellite imagery (GOES-16), and synchronized ATC audio into a single spatial environment.",
+      "why": "For a USD-based pipeline, the ADS-B data serves as a source for Python-driven point transformations in Houdini. NEXRAD data can be converted to OpenVDB for volumetric rendering. This represents a robust framework for forensic animation or highly accurate environment layout based on real-world telemetry.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Bilawal Sidhu",
+          "url": "https://www.youtube.com/watch?v=pMZR4HmziyA",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i1.ytimg.com/vi/pMZR4HmziyA/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "ADS-B Exchange",
+          "used_for": "Flight telemetry and position data acquisition"
+        },
+        {
+          "name": "NEXRAD (KAMX)",
+          "used_for": "3D weather radar data for storm core visualization"
+        },
+        {
+          "name": "GOES-16 Satellite",
+          "used_for": "Satellite imagery and lightning flash data overlays"
+        },
+        {
+          "name": "Google 3D Tiles / Earth",
+          "used_for": "High-fidelity geospatial environment and street-level reconstruction"
+        },
+        {
+          "name": "Cesium / Mapbox",
+          "used_for": "Geospatial engine for syncing 4D data layers"
+        }
+      ],
+      "whats_transferable": [
+        "Synchronizing disparate time-series data (telemetry) with 3D animation paths",
+        "Volumetric visualization of weather radar data in a geospatial context",
+        "Camera matching and reconstruction of bystander footage (dashcam) within a 3D city model",
+        "Integrating lightning flash data into environment lighting for temporal accuracy"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 8.0
+    },
+    {
+      "headline": "Made a Game With a $20 AI Plan and Already Got Sales",
+      "body": "The integration of Model Context Protocol (MCP) allows LLMs to directly invoke 3D generation and video tools within the development environment, significantly speeding up the loop between concept and playable/viewable assets.",
+      "why": "The video-to-animation workflow is highly applicable to Houdini layout and animation pipelines. Generating a Higgsfield video reference allows an animator to quickly establish timing before manual keyframing or physics simulation. Generative 3D assets still require manual retopology before entering a production USD pipeline to ensure correct attribute mapping.",
+      "channel": "a",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Stefan 3D AI",
+          "url": "https://www.youtube.com/watch?v=iJ83GYk2BIA",
+          "discussion": null,
+          "video": true
+        }
+      ],
+      "image": "https://i2.ytimg.com/vi/iJ83GYk2BIA/maxresdefault.jpg",
+      "watched": true,
+      "tools_and_platforms": [
+        {
+          "name": "Claude Opus 5.5",
+          "used_for": "Core game logic and coding assistance"
+        },
+        {
+          "name": "Higgsfield AI",
+          "used_for": "Generating image and video references for animation and concepts"
+        },
+        {
+          "name": "Tripo P2 / Meshy 6",
+          "used_for": "Generative 3D model creation for blocking and assets"
+        },
+        {
+          "name": "Cascadeur",
+          "used_for": "Physics-based animation with AI in-betweening"
+        },
+        {
+          "name": "Blender",
+          "used_for": "Manual authoring and reconciliation of AI assets"
+        },
+        {
+          "name": "Unity / Godot",
+          "used_for": "Target engines for procedural systems and asset integration"
+        }
+      ],
+      "whats_transferable": [
+        "Using AI video generators as ground-truth motion references for manual animation work in Blender",
+        "Hybrid modeling workflow: AI for low-poly blocking followed by manual high-poly sculpting and retopology",
+        "Applying LLM-assisted procedural logic to handle complex spatial adjustments in layout engines"
+      ],
+      "topic_relevance": 7.0,
+      "transferable_craft": 6.0
+    }
+  ],
+  "usage": {
+    "input_tokens": 12408,
+    "output_tokens": 1075
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

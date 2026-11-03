@@ -7861,10 +7861,284 @@
    },
    "rubric_version": 2,
    "story": null
+  },
+  "pMZR4HmziyA": {
+   "title": "Florida Learjet Crash - Final 78 Seconds Reconstructed in God's Eye View",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/watch?v=pMZR4HmziyA",
+   "at": "2026-11-03T22:52:29.149916+00:00",
+   "duration_s": 214,
+   "topic_relevance": 7.0,
+   "transferable_craft": 8.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "pMZR4HmziyA",
+    "channel": "Bilawal Sidhu",
+    "tools_and_platforms": [
+     {
+      "name": "ADS-B Exchange",
+      "used_for": "Flight telemetry and position data acquisition"
+     },
+     {
+      "name": "NEXRAD (KAMX)",
+      "used_for": "3D weather radar data for storm core visualization"
+     },
+     {
+      "name": "GOES-16 Satellite",
+      "used_for": "Satellite imagery and lightning flash data overlays"
+     },
+     {
+      "name": "Google 3D Tiles / Earth",
+      "used_for": "High-fidelity geospatial environment and street-level reconstruction"
+     },
+     {
+      "name": "Cesium / Mapbox",
+      "used_for": "Geospatial engine for syncing 4D data layers"
+     }
+    ],
+    "whats_new": "A comprehensive '4D reconstruction' workflow that fuses real-time flight telemetry (ADS-B), volumetric weather radar (NEXRAD), satellite imagery (GOES-16), and synchronized ATC audio into a single spatial environment.",
+    "whats_transferable": [
+     "Synchronizing disparate time-series data (telemetry) with 3D animation paths",
+     "Volumetric visualization of weather radar data in a geospatial context",
+     "Camera matching and reconstruction of bystander footage (dashcam) within a 3D city model",
+     "Integrating lightning flash data into environment lighting for temporal accuracy"
+    ],
+    "pipeline_notes": "For a USD-based pipeline, the ADS-B data serves as a source for Python-driven point transformations in Houdini. NEXRAD data can be converted to OpenVDB for volumetric rendering. This represents a robust framework for forensic animation or highly accurate environment layout based on real-world telemetry.",
+    "visual_quality_notes": "The reconstruction exhibits high spatial fidelity, blending photorealistic aircraft assets with accurate geospatial tiles and environment-matched volumetric clouds.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Demonstrates the fusion of ADS-B flight data and 3D geospatial environments for high-accuracy reconstruction.",
+     "Showcases the use of NEXRAD radar data to create volumetric storm visualizations that interact with 3D assets.",
+     "Explains the process of 'viewpoint rebuilding' where dashcam footage is spatially matched to a 3D model for validation.",
+     "Integrates GOES-16 satellite data to provide ground-truth lighting (lightning strikes) and cloud coverage.",
+     "Highlights a professional workflow for forensic data visualization applicable to news, documentary, and technical simulation."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Florida Learjet Crash - Final 78 Seconds Reconstructed in God's Eye View",
+    "body": "A comprehensive '4D reconstruction' workflow that fuses real-time flight telemetry (ADS-B), volumetric weather radar (NEXRAD), satellite imagery (GOES-16), and synchronized ATC audio into a single spatial environment.",
+    "why": "For a USD-based pipeline, the ADS-B data serves as a source for Python-driven point transformations in Houdini. NEXRAD data can be converted to OpenVDB for volumetric rendering. This represents a robust framework for forensic animation or highly accurate environment layout based on real-world telemetry.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Bilawal Sidhu",
+      "url": "https://www.youtube.com/watch?v=pMZR4HmziyA",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i1.ytimg.com/vi/pMZR4HmziyA/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "ADS-B Exchange",
+      "used_for": "Flight telemetry and position data acquisition"
+     },
+     {
+      "name": "NEXRAD (KAMX)",
+      "used_for": "3D weather radar data for storm core visualization"
+     },
+     {
+      "name": "GOES-16 Satellite",
+      "used_for": "Satellite imagery and lightning flash data overlays"
+     },
+     {
+      "name": "Google 3D Tiles / Earth",
+      "used_for": "High-fidelity geospatial environment and street-level reconstruction"
+     },
+     {
+      "name": "Cesium / Mapbox",
+      "used_for": "Geospatial engine for syncing 4D data layers"
+     }
+    ],
+    "whats_transferable": [
+     "Synchronizing disparate time-series data (telemetry) with 3D animation paths",
+     "Volumetric visualization of weather radar data in a geospatial context",
+     "Camera matching and reconstruction of bystander footage (dashcam) within a 3D city model",
+     "Integrating lightning flash data into environment lighting for temporal accuracy"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 8.0
+   },
+   "delivered_at": "2026-11-03T22:54:16.185945+00:00"
+  },
+  "pWLvBzOJCug": {
+   "title": "GPT-6 Astra Split My 3D Models So I Could Print Them",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/pWLvBzOJCug",
+   "at": "2026-11-03T22:52:43.727715+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "iJ83GYk2BIA": {
+   "title": "Made a Game With a $20 AI Plan and Already Got Sales",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=iJ83GYk2BIA",
+   "at": "2026-11-03T22:52:43.844601+00:00",
+   "duration_s": 2069,
+   "topic_relevance": 7.0,
+   "transferable_craft": 6.0,
+   "category": "workflow",
+   "published": true,
+   "reason_if_low": null,
+   "assessment": {
+    "video_id": "iJ83GYk2BIA",
+    "channel": "Stefan 3D AI",
+    "tools_and_platforms": [
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Core game logic and coding assistance"
+     },
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generating image and video references for animation and concepts"
+     },
+     {
+      "name": "Tripo P2 / Meshy 6",
+      "used_for": "Generative 3D model creation for blocking and assets"
+     },
+     {
+      "name": "Cascadeur",
+      "used_for": "Physics-based animation with AI in-betweening"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Manual authoring and reconciliation of AI assets"
+     },
+     {
+      "name": "Unity / Godot",
+      "used_for": "Target engines for procedural systems and asset integration"
+     }
+    ],
+    "whats_new": "The integration of Model Context Protocol (MCP) allows LLMs to directly invoke 3D generation and video tools within the development environment, significantly speeding up the loop between concept and playable/viewable assets.",
+    "whats_transferable": [
+     "Using AI video generators as ground-truth motion references for manual animation work in Blender",
+     "Hybrid modeling workflow: AI for low-poly blocking followed by manual high-poly sculpting and retopology",
+     "Applying LLM-assisted procedural logic to handle complex spatial adjustments in layout engines"
+    ],
+    "pipeline_notes": "The video-to-animation workflow is highly applicable to Houdini layout and animation pipelines. Generating a Higgsfield video reference allows an animator to quickly establish timing before manual keyframing or physics simulation. Generative 3D assets still require manual retopology before entering a production USD pipeline to ensure correct attribute mapping.",
+    "visual_quality_notes": "Varies from low-poly stylized games to indie-horror aesthetics. Generally acceptable for pre-viz and indie production, but requires manual authoring for VFX-grade photorealism.",
+    "category": "workflow",
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0,
+    "reason_if_low": null,
+    "summary_bullets": [
+     "Showcase of 100+ indie games developed primarily using Claude and specialized generative AI tools.",
+     "Highlights the use of AI for complex procedural modeling tasks, such as automated wall and tower adjustments in a castle builder.",
+     "Demonstrates a workflow where AI video generation serves as a reference for 3D character animation loops.",
+     "Emphasizes the 'Hybrid Approach': leveraging AI for rapid blocking and brainstorming while manually refining critical production elements in Blender.",
+     "Introduction to Higgsfield's MCP and API integration for chaining image, video, and 3D generation under a single LLM-driven interface."
+    ]
+   },
+   "rubric_version": 2,
+   "story": {
+    "headline": "Made a Game With a $20 AI Plan and Already Got Sales",
+    "body": "The integration of Model Context Protocol (MCP) allows LLMs to directly invoke 3D generation and video tools within the development environment, significantly speeding up the loop between concept and playable/viewable assets.",
+    "why": "The video-to-animation workflow is highly applicable to Houdini layout and animation pipelines. Generating a Higgsfield video reference allows an animator to quickly establish timing before manual keyframing or physics simulation. Generative 3D assets still require manual retopology before entering a production USD pipeline to ensure correct attribute mapping.",
+    "channel": "a",
+    "confidence": "medium",
+    "sources": [
+     {
+      "name": "Stefan 3D AI",
+      "url": "https://www.youtube.com/watch?v=iJ83GYk2BIA",
+      "discussion": null,
+      "video": true
+     }
+    ],
+    "image": "https://i2.ytimg.com/vi/iJ83GYk2BIA/maxresdefault.jpg",
+    "watched": true,
+    "tools_and_platforms": [
+     {
+      "name": "Claude Opus 5.5",
+      "used_for": "Core game logic and coding assistance"
+     },
+     {
+      "name": "Higgsfield AI",
+      "used_for": "Generating image and video references for animation and concepts"
+     },
+     {
+      "name": "Tripo P2 / Meshy 6",
+      "used_for": "Generative 3D model creation for blocking and assets"
+     },
+     {
+      "name": "Cascadeur",
+      "used_for": "Physics-based animation with AI in-betweening"
+     },
+     {
+      "name": "Blender",
+      "used_for": "Manual authoring and reconciliation of AI assets"
+     },
+     {
+      "name": "Unity / Godot",
+      "used_for": "Target engines for procedural systems and asset integration"
+     }
+    ],
+    "whats_transferable": [
+     "Using AI video generators as ground-truth motion references for manual animation work in Blender",
+     "Hybrid modeling workflow: AI for low-poly blocking followed by manual high-poly sculpting and retopology",
+     "Applying LLM-assisted procedural logic to handle complex spatial adjustments in layout engines"
+    ],
+    "topic_relevance": 7.0,
+    "transferable_craft": 6.0
+   },
+   "delivered_at": "2026-11-03T22:54:16.185968+00:00"
+  },
+  "XTee5dUdd2w": {
+   "title": "I Used AI to 3D Print an Entire Playable D&D City",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/XTee5dUdd2w",
+   "at": "2026-11-03T22:54:13.289808+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
+  },
+  "nIsSK5iqr9M": {
+   "title": "He Spent 11 Weeks Making a Game With Claude \u2014 It Feels Complete",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/nIsSK5iqr9M",
+   "at": "2026-11-03T22:54:13.387349+00:00",
+   "duration_s": 32,
+   "published": false,
+   "reason_if_low": "under 90s (32s)"
+  },
+  "fr4iRxpma9s": {
+   "title": "Turn Your Idea Into a Complete Manga | Higgsfield Mangaka",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/fr4iRxpma9s",
+   "at": "2026-11-03T22:54:13.500402+00:00",
+   "duration_s": 63,
+   "published": false,
+   "reason_if_low": "under 90s (63s)"
+  },
+  "OAIZFE03A_k": {
+   "title": "Pixar Co-Founder x Higgsfield: Edwin Catmull about AI and Creativity",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/watch?v=OAIZFE03A_k",
+   "at": "2026-11-03T22:54:13.605413+00:00",
+   "duration_s": 5879,
+   "published": false,
+   "reason_if_low": "over 40min cap (97min)"
+  },
+  "mjY5QEZFaps": {
+   "title": "Turn Any Image Into a Clean SVG | Ideogram Vector & Precise Edit",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/mjY5QEZFaps",
+   "at": "2026-11-03T22:54:13.706967+00:00",
+   "duration_s": 31,
+   "published": false,
+   "reason_if_low": "under 90s (31s)"
   }
  },
  "quota": {
-  "date": "2026-11-01",
-  "minutes": 62.233333333333334
+  "date": "2026-11-03",
+  "minutes": 38.050000000000004
  }
 }
