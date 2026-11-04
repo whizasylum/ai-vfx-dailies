@@ -1,165 +1,4 @@
 {
- "30622d3b18": {
-  "headline": "mGear 5.4, free open-source Maya rigging toolset, adds unified facial rigging",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "deployable",
-   "directly",
-   "facial",
-   "free",
-   "maya",
-   "mgear",
-   "open-source",
-   "pipeline",
-   "rigging",
-   "today.",
-   "toolset",
-   "unified"
-  ],
-  "at": "2026-10-14T21:20:06.399233+00:00"
- },
- "8e323a026b": {
-  "headline": "Chaos publishes framework for using AI rendering in studio client pitches",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "b",
-  "terms": [
-   "addresses",
-   "already",
-   "chaos",
-   "client",
-   "framework",
-   "governance",
-   "pitches",
-   "pitches.",
-   "publishes",
-   "rendering",
-   "renders",
-   "risk",
-   "slipping",
-   "studio"
-  ],
-  "at": "2026-10-14T21:20:06.399260+00:00"
- },
- "e996ee79b9": {
-  "headline": "Hungry: Magic Dust VFX breakdown shows CG hippo creature and water sim work on limited budget",
-  "sources": [
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "boutique-scale",
-   "breakdown",
-   "budget",
-   "case",
-   "concrete",
-   "creature",
-   "dust",
-   "fluid",
-   "hippo",
-   "hungry",
-   "limited",
-   "magic",
-   "production.",
-   "relevant"
-  ],
-  "at": "2026-10-14T21:20:06.399276+00:00"
- },
- "e4696ec440": {
-  "headline": "This Hack Fixes Your AI Character Consistency Issues (Pro Workflow)",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "asset",
-   "before",
-   "character",
-   "consistency",
-   "creation",
-   "fixes",
-   "formal",
-   "generative",
-   "hack",
-   "hand-authoring.",
-   "integrates",
-   "issues",
-   "pre-viz",
-   "pro"
-  ],
-  "at": "2026-10-14T21:20:06.399289+00:00"
- },
- "db5b8382f7": {
-  "headline": "You Can Now Create Modular 3D Character Without Blender",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "ai-generated",
-   "asset",
-   "blender",
-   "character",
-   "cleanup",
-   "create",
-   "current",
-   "direct",
-   "fbx",
-   "generation.",
-   "glb",
-   "intersections",
-   "lack",
-   "limits"
-  ],
-  "at": "2026-10-14T21:20:06.399306+00:00"
- },
- "a0d1d079fb": {
-  "headline": "Wait for the end of this AI office day \ud83d\udc80 #funny #ai #ytshorts",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "r",
-  "terms": [
-   "day",
-   "end",
-   "funny",
-   "integration.",
-   "office",
-   "plate-only",
-   "standalone",
-   "wait",
-   "ytshorts"
-  ],
-  "at": "2026-10-14T21:20:06.399321+00:00"
- },
- "bf05674ce3": {
-  "headline": "22 FREE Halloween Ideas with Nano Banana 2.1 (Google Flow)",
-  "sources": [
-   "AI2Play (pixaroma)"
-  ],
-  "channel": "a",
-  "terms": [
-   "asset",
-   "banana",
-   "closed",
-   "dcc",
-   "direct",
-   "flow",
-   "free",
-   "generation",
-   "google",
-   "halloween",
-   "ideas",
-   "integration",
-   "manual",
-   "nano"
-  ],
-  "at": "2026-10-14T21:20:06.399333+00:00"
- },
  "e4a70a0130": {
   "headline": "Foundry releases Mari 8.0 with Tri-Planar Tiled and Hex Tile nodes",
   "sources": [
@@ -1964,5 +1803,101 @@
    "generating"
   ],
   "at": "2026-11-03T22:54:14.596783+00:00"
+ },
+ "5646560a73": {
+  "headline": "Sparseal ships CozyBlanket Pro, AI-assisted retopology and UV unwrapping tool, on desktop and iPad",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "against",
+   "ai-assisted",
+   "cozyblanket",
+   "current",
+   "desktop",
+   "ipad",
+   "manual",
+   "pro",
+   "real",
+   "retopology",
+   "sparseal",
+   "testing",
+   "unwrapping",
+   "workflows."
+  ],
+  "at": "2026-11-04T23:08:59.784073+00:00"
+ },
+ "8fc09761b5": {
+  "headline": "BiteTheBytes releases World Creator 4 in early access with node-based workflow and macOS support",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "access",
+   "bitethebytes",
+   "could",
+   "creator",
+   "early",
+   "environment",
+   "generation",
+   "macos",
+   "node-based",
+   "output",
+   "pipelines.",
+   "planet-scale",
+   "slot",
+   "support"
+  ],
+  "at": "2026-11-04T23:08:59.784099+00:00"
+ },
+ "62a7c4c9d9": {
+  "headline": "ComfyUI v0.44.0 adds Patina texture nodes and VEED dubbing node from partner integrations",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "checking",
+   "comfyui",
+   "core",
+   "current",
+   "deployable",
+   "dubbing",
+   "fits",
+   "integrations",
+   "node",
+   "nodes",
+   "partner",
+   "patina",
+   "pipelines.",
+   "texture"
+  ],
+  "at": "2026-11-04T23:08:59.784114+00:00"
+ },
+ "da59817943": {
+  "headline": "Enscape November release targets CAD/BIM real-time workflow friction",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "r",
+  "terms": [
+   "alongside",
+   "archviz",
+   "bim",
+   "cad",
+   "does",
+   "enscape",
+   "friction",
+   "marginal",
+   "november",
+   "real-time",
+   "relevance",
+   "studio",
+   "targets",
+   "unless"
+  ],
+  "at": "2026-11-04T23:08:59.784125+00:00"
  }
 }

@@ -1,0 +1,75 @@
+{
+  "verdict": "Quiet day for pipeline-relevant news: a few real tool releases worth a glance, a lot of arXiv paper noise, and a pile of festival/trailer announcements to skip.",
+  "stories": [
+    {
+      "headline": "Sparseal ships CozyBlanket Pro, AI-assisted retopology and UV unwrapping tool, on desktop and iPad",
+      "body": "CozyBlanket Pro is now out for Windows, macOS and iPad after a period of anticipation. It handles AI-assisted retopology, UV unwrapping and baking. No pricing or VRAM details given in this summary, but it's a shipped product rather than a demo, which matters for anyone evaluating retopo tools for production use.",
+      "why": "A real, available retopology tool is worth testing against current manual workflows.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/sparseal-releases-cozyblanket-pro",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "BiteTheBytes releases World Creator 4 in early access with node-based workflow and macOS support",
+      "body": "World Creator 4 is in early access, adding a node-based terrain workflow, native macOS support, and the ability to generate entire planets rather than single terrain tiles. This is a significant architectural change for a tool already used in some production terrain pipelines. Early access means expect instability and incomplete features.",
+      "why": "Node-based terrain generation with planet-scale output could slot into USD-based environment pipelines.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/bitethebytes-unveils-world-creator-4",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "ComfyUI v0.44.0 adds Patina texture nodes and VEED dubbing node from partner integrations",
+      "body": "The latest ComfyUI release adds partner nodes for Patina (texture generation) and VEED (video dubbing), along with routine frontend and workflow template updates. These are vendor partner nodes bundled into core ComfyUI rather than community contributions, meaning they're maintained and likely stable enough for studio pipelines to adopt directly.",
+      "why": "New deployable nodes in ComfyUI core are worth checking if texture or dubbing work fits current pipelines.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Enscape November release targets CAD/BIM real-time workflow friction",
+      "body": "Chaos's Enscape update focuses on reducing friction in everyday CAD/BIM design workflows, cutting tool-switching and output management overhead. This is an archviz/real-time visualization tool, adjacent to but not central to a Houdini/Karma VFX pipeline. Specific new features aren't detailed in the summary beyond general workflow framing.",
+      "why": "Marginal relevance unless the studio does archviz work alongside VFX.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/enscape-november-2026-release",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/archdesign-oct-hero-01-archdesign-oct-hero-1200x600.jpg"
+    }
+  ],
+  "usage": {
+    "input_tokens": 13967,
+    "output_tokens": 1008
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
