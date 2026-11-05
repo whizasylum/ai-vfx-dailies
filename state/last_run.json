@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-04T23:09:02.576734+00:00",
+  "at": "2026-11-05T23:13:18.258467+00:00",
   "ratings": {
     "total": 52,
     "up": 50,
@@ -7,12 +7,12 @@
     "sources_adjusted": 9,
     "terms_learned": 8
   },
-  "raw": 175,
+  "raw": 176,
   "candidates": 60,
-  "stories": 4,
+  "stories": 2,
   "usage": {
-    "input_tokens": 13967,
-    "output_tokens": 1008
+    "input_tokens": 11534,
+    "output_tokens": 687
   },
   "video_watch": {
     "candidates": 0,
@@ -30,6 +30,11 @@
       "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
     },
     {
+      "source": "Corridor Crew",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
       "source": "Curious Refuge",
       "type": "youtube",
       "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
@@ -40,7 +45,7 @@
       "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
     },
     {
-      "source": "Bilawal Sidhu",
+      "source": "Nerdy Rodent",
       "type": "youtube",
       "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
     },

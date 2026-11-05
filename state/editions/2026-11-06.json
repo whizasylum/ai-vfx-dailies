@@ -1,0 +1,43 @@
+{
+  "verdict": "Quiet day: mostly SEO listicle spam and routine making-of pieces, with one genuinely useful item buried in the noise.",
+  "stories": [
+    {
+      "headline": "LoRA for lip-sync and natural facial speech published for MiniMax-H3",
+      "body": "A LoRA adapter trained on MiniMaxAI's MiniMax-H3 text-to-video model, targeting natural face speech generation, is live on Hugging Face under Apache 2.0. It supports both text-to-video and image-to-video. Modest adoption so far (44 likes, 177 downloads) but it's open weights, permissively licensed, and drops directly into existing H3-based ComfyUI workflows without a new base model download.",
+      "why": "Cheap, droppable upgrade for dialogue-driven shots in any existing MiniMax-H3 ComfyUI pipeline.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/vpakarinen/natural-face-speech-h3-lora",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Avid adds plugin extension format to Pro Tools 2026.11",
+      "body": "Avid shipped Pro Tools 2026.11, introducing Pro Tools Extensions, a new plugin architecture letting Avid and third parties build session-wide workflow tools directly inside the app, alongside other audio post and music creation updates. Availability and pricing are per standard Pro Tools licensing; details on API scope for third-party extension developers weren't specified in the announcement.",
+      "why": "New extension surface may let post studios build custom Pro Tools tooling, worth watching for third-party uptake.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/avid-updates-pro-tools-faster-music-creation-and-audio-post",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 11534,
+    "output_tokens": 687
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
