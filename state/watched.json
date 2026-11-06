@@ -8135,10 +8135,118 @@
    "duration_s": 31,
    "published": false,
    "reason_if_low": "under 90s (31s)"
+  },
+  "XgC1QTs6A2U": {
+   "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
+   "channel": "Two Minute Papers",
+   "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
+   "at": "2026-11-06T22:42:19.852216+00:00",
+   "duration_s": 2779,
+   "published": false,
+   "reason_if_low": "over 40min cap (46min)"
+  },
+  "TBwMkFJzsgo": {
+   "title": "Why I Used Two 3D Printers for One AI-Generated D&D Building",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/TBwMkFJzsgo",
+   "at": "2026-11-06T22:42:20.901725+00:00",
+   "duration_s": 25,
+   "published": false,
+   "reason_if_low": "under 90s (25s)"
+  },
+  "wrqO6YldDEo": {
+   "title": "I Built an Unreal Engine Game Using Only Free AI Tools",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/wrqO6YldDEo",
+   "at": "2026-11-06T22:42:21.004807+00:00",
+   "duration_s": 43,
+   "published": false,
+   "reason_if_low": "under 90s (43s)"
+  },
+  "wiQbxTfdxww": {
+   "title": "GPT-6 Made My 3D Printed D&D Walls Fit Together",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/wiQbxTfdxww",
+   "at": "2026-11-06T22:42:21.085063+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "FUtSCIt-g6Y": {
+   "title": "Tripo AI or Hi3D? Here\u2019s How I Choose for 3D Printing",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/FUtSCIt-g6Y",
+   "at": "2026-11-06T22:42:21.161003+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "ZC-67GLNXbg": {
+   "title": "I 3D Printed a D&D City With AI \u2014 How Much Did It Cost?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/ZC-67GLNXbg",
+   "at": "2026-11-06T22:42:21.278050+00:00",
+   "duration_s": 24,
+   "published": false,
+   "reason_if_low": "under 90s (24s)"
+  },
+  "LDSqzHp0g60": {
+   "title": "What If Your Video Editor Knew the Real World? | Higgsfield Miracle",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/LDSqzHp0g60",
+   "at": "2026-11-06T22:42:21.353041+00:00",
+   "duration_s": 55,
+   "published": false,
+   "reason_if_low": "under 90s (55s)"
+  },
+  "LODH1_y_64I": {
+   "title": "A Kid's Drawing Came to Life and Met the Dog | Gemini Omni 1.2 Flash",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/LODH1_y_64I",
+   "at": "2026-11-06T22:42:21.436340+00:00",
+   "duration_s": 17,
+   "published": false,
+   "reason_if_low": "under 90s (17s)"
+  },
+  "vNFro6Ec4kE": {
+   "title": "How to Fix Where AI Puts Your Characters With One Sketch",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/vNFro6Ec4kE",
+   "at": "2026-11-06T22:42:21.528007+00:00",
+   "duration_s": 41,
+   "published": false,
+   "reason_if_low": "under 90s (41s)"
+  },
+  "YMRN_9PLSNk": {
+   "title": "How to Get the Exact Movement You Want From AI Video",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/YMRN_9PLSNk",
+   "at": "2026-11-06T22:42:21.604267+00:00",
+   "duration_s": 55,
+   "published": false,
+   "reason_if_low": "under 90s (55s)"
+  },
+  "EuiPGmarCxs": {
+   "title": "She Made the Diner's New Billboard With GPT Image 2.6",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/EuiPGmarCxs",
+   "at": "2026-11-06T22:42:21.700680+00:00",
+   "duration_s": 70,
+   "published": false,
+   "reason_if_low": "under 90s (70s)"
+  },
+  "iUAnRRGBZfY": {
+   "title": "Your Birth Month as a Dragon | Nano Banana #nanobanana #birthmonth #dragon",
+   "channel": "AI2Play (pixaroma)",
+   "url": "https://www.youtube.com/shorts/iUAnRRGBZfY",
+   "at": "2026-11-06T22:42:21.773973+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
   }
  },
  "quota": {
-  "date": "2026-11-03",
-  "minutes": 38.050000000000004
+  "date": "2026-11-06",
+  "minutes": 43.58333333333333
  }
 }

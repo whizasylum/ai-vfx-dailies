@@ -1,0 +1,43 @@
+{
+  "verdict": "A quiet day: mostly academic arXiv/HF paper dumps and VFX breakdown PR, with one genuinely useful free-asset story and nothing that lands as a new pipeline tool.",
+  "stories": [
+    {
+      "headline": "Quixel Megascans library now permanently free",
+      "body": "The entire Quixel Megascans library is available at no cost, and according to the report this is a permanent change rather than a limited promotion. Megascans is widely used for photogrammetry-sourced surfaces, props and environment kit assets in Houdini and USD pipelines. No licence terms beyond 'free' are detailed in the source, so studios should verify usage rights for client work before relying on it.",
+      "why": "Removes a cost barrier for high-quality scan assets used directly in production pipelines.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/entire-quixel-megascans-library-now-available-for-free",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/42174/images/6aedb18c40f35/cover_800x800.jpg"
+    },
+    {
+      "headline": "Chaos compares its Veras AI rendering agent against standalone GPT-6 Astra and Claude Opus 5.5",
+      "body": "Chaos published a comparison arguing Veras 5.2's value is the integration layer around the same underlying LLMs available standalone: native typed-geometry handling, bake-in to Revit, Rhino and SketchUp, and a render-to-built-asset pipeline. This is a vendor blog, not an independent benchmark, and the architectural claims are unverified beyond Chaos's own description.\nRelevant mainly for AEC-adjacent viz pipelines rather than VFX/Houdini work directly.",
+      "why": "Shows how AEC viz tools are wrapping LLMs with DCC-native geometry handling, a pattern worth tracking.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Chaos",
+          "url": "https://blog.chaos.com/veras-vs-gpt-6-astra-claude-opus-5-5",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://blog.chaos.com/hubfs/veras-sep-hero-cgconnetct.jpg"
+    }
+  ],
+  "usage": {
+    "input_tokens": 14308,
+    "output_tokens": 621
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

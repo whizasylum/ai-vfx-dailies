@@ -1,105 +1,4 @@
 {
- "f930bda976": {
-  "headline": "ComfyUI 0.41.0 adds ImageSDRToHDR and ReferenceMultiLatent nodes",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "comfyui",
-   "comfyui-based",
-   "extend",
-   "generation",
-   "imagesdrtohdr",
-   "nodes",
-   "packs.",
-   "pipelines",
-   "referencemultilatent",
-   "studio",
-   "third-party",
-   "waiting",
-   "wire",
-   "without"
-  ],
-  "at": "2026-10-16T20:28:30.521587+00:00"
- },
- "7d5a484f43": {
-  "headline": "lightx2v ships a wave of Apache-2.0 distilled Wan and HunyuanVideo variants",
-  "sources": [
-   "HF image-to-video",
-   "HF image-to-video",
-   "HF image-to-video",
-   "HF image-to-video",
-   "HF text-to-video",
-   "HF text-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "apache-2.0",
-   "checkpoints",
-   "comfyui.",
-   "cost",
-   "cut",
-   "distilled",
-   "hunyuanvideo",
-   "inference",
-   "lightx2v",
-   "pipelines",
-   "running",
-   "variants",
-   "wan"
-  ],
-  "at": "2026-10-16T20:28:30.521614+00:00"
- },
- "adb27dd047": {
-  "headline": "Nvidia details RTX Spark local-AI desktops and laptops at Editor's Day",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "b",
-  "terms": [
-   "act",
-   "day",
-   "desktops",
-   "details",
-   "editor",
-   "hardware",
-   "inference",
-   "laptops",
-   "local",
-   "local-ai",
-   "matters",
-   "nvidia",
-   "rtx",
-   "spark"
-  ],
-  "at": "2026-10-16T20:28:30.521629+00:00"
- },
- "e69d83eb25": {
-  "headline": "This AI Camera Control Trick is HUGE",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "adapted",
-   "assembly",
-   "automate",
-   "camera",
-   "control",
-   "could",
-   "description.",
-   "diffusion-based",
-   "director",
-   "early",
-   "houdini",
-   "huge",
-   "input",
-   "layout"
-  ],
-  "at": "2026-10-16T20:28:30.521648+00:00"
- },
  "e8f266e332": {
   "headline": "Free & Open Source Design with Ming Image in ComfyUI!",
   "sources": [
@@ -1801,5 +1700,53 @@
    "tooling"
   ],
   "at": "2026-11-05T23:13:16.690903+00:00"
+ },
+ "20dc8a76ae": {
+  "headline": "Quixel Megascans library now permanently free",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "b",
+  "terms": [
+   "assets",
+   "barrier",
+   "cost",
+   "directly",
+   "free",
+   "high-quality",
+   "library",
+   "megascans",
+   "permanently",
+   "pipelines.",
+   "production",
+   "quixel",
+   "removes",
+   "scan"
+  ],
+  "at": "2026-11-06T22:42:21.788096+00:00"
+ },
+ "3e64ef6037": {
+  "headline": "Chaos compares its Veras AI rendering agent against standalone GPT-6 Astra and Claude Opus 5.5",
+  "sources": [
+   "Chaos"
+  ],
+  "channel": "r",
+  "terms": [
+   "aec",
+   "against",
+   "agent",
+   "astra",
+   "chaos",
+   "claude",
+   "compares",
+   "dcc-native",
+   "geometry",
+   "gpt-6",
+   "handling",
+   "llms",
+   "opus",
+   "pattern"
+  ],
+  "at": "2026-11-06T22:42:21.788122+00:00"
  }
 }
