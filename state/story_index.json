@@ -1,28 +1,4 @@
 {
- "e8f266e332": {
-  "headline": "Free & Open Source Design with Ming Image in ComfyUI!",
-  "sources": [
-   "Nerdy Rodent"
-  ],
-  "channel": "a",
-  "terms": [
-   "applicable",
-   "assets",
-   "automated",
-   "comfyui",
-   "design",
-   "free",
-   "generation",
-   "image",
-   "ming",
-   "open",
-   "replacement",
-   "screen",
-   "source",
-   "texture"
-  ],
-  "at": "2026-10-17T20:05:08.328729+00:00"
- },
  "e02c3e9f20": {
   "headline": "Redshift 2027.0 adds fur procedural, ACES 2 support, Redshift Live updates",
   "sources": [
@@ -1748,5 +1724,53 @@
    "pattern"
   ],
   "at": "2026-11-06T22:42:21.788122+00:00"
+ },
+ "c4e7948ddf": {
+  "headline": "Flame 2027.2 adds USD scene import and AI-generated normal maps from video",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "ai-generated",
+   "between",
+   "comp",
+   "flame",
+   "gap",
+   "houdini",
+   "import",
+   "karma",
+   "maps",
+   "narrows",
+   "normal",
+   "pipeline.",
+   "scene",
+   "usd"
+  ],
+  "at": "2026-11-07T21:23:16.758212+00:00"
+ },
+ "534a80bbc7": {
+  "headline": "Epic makes Megascans library free again, permanently",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "again",
+   "assets",
+   "cut",
+   "environment",
+   "epic",
+   "free",
+   "high-quality",
+   "library",
+   "megascans",
+   "permanently",
+   "scan",
+   "set-dressing",
+   "sourcing",
+   "time"
+  ],
+  "at": "2026-11-07T21:23:16.758238+00:00"
  }
 }

@@ -1,0 +1,43 @@
+{
+  "verdict": "A thin day: one concrete pipeline tool update worth noting, the rest is event listings, show promo, and academic papers outside scope.",
+  "stories": [
+    {
+      "headline": "Flame 2027.2 adds USD scene import and AI-generated normal maps from video",
+      "body": "Autodesk's Flame 2027.2 release adds the ability to import USD scenes directly into the compositor, plus a new AI model that generates normal maps from video footage. No pricing or licence changes mentioned. This is a direct pipeline feature for facilities already on Flame and moving toward USD-based workflows between DCCs.",
+      "why": "USD import in Flame narrows the gap between comp and a USD-centric Houdini/Karma pipeline.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/autodesk-releases-flame-2027",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Epic makes Megascans library free again, permanently",
+      "body": "Epic has restored free access to Megascans, over 23,000 scanned environment assets, buildings, plants and materials, usable in games, VFX and visualization. The library had previously been pulled behind a paywall; Epic says this reversal is permanent. No licence restrictions on commercial VFX use are mentioned beyond the standard terms.",
+      "why": "Free high-quality scan assets cut sourcing time for environment and set-dressing work.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/epic-has-made-megascans-free-again-for-good-this-time",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 3743,
+    "output_tokens": 508
+  },
+  "candidate_count": 10,
+  "editorial_stories": true
+}

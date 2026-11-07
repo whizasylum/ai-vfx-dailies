@@ -8243,10 +8243,46 @@
    "duration_s": 28,
    "published": false,
    "reason_if_low": "under 90s (28s)"
+  },
+  "be-HEOodFy4": {
+   "title": "Claude Used Blender MCP to Build This Fishing Game\u2019s World",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/be-HEOodFy4",
+   "at": "2026-11-07T21:23:15.140208+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
+  },
+  "vqcFEvK8TIc": {
+   "title": "GPT-6.1 Built My Horror Game \u2014 Can I Hide From Its Monster?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/vqcFEvK8TIc",
+   "at": "2026-11-07T21:23:15.264880+00:00",
+   "duration_s": 25,
+   "published": false,
+   "reason_if_low": "under 90s (25s)"
+  },
+  "pFdWB9tIjkM": {
+   "title": "Would You Cast This AI Actor?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/pFdWB9tIjkM",
+   "at": "2026-11-07T21:23:15.566775+00:00",
+   "duration_s": 43,
+   "published": false,
+   "reason_if_low": "under 90s (43s)"
+  },
+  "_8X3aSkR27U": {
+   "title": "How Much Did This AI Commercial Cost?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/_8X3aSkR27U",
+   "at": "2026-11-07T21:23:15.846687+00:00",
+   "duration_s": 40,
+   "published": false,
+   "reason_if_low": "under 90s (40s)"
   }
  },
  "quota": {
-  "date": "2026-11-06",
-  "minutes": 43.58333333333333
+  "date": "2026-11-07",
+  "minutes": 78.15
  }
 }
