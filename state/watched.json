@@ -8279,10 +8279,37 @@
    "duration_s": 40,
    "published": false,
    "reason_if_low": "under 90s (40s)"
+  },
+  "VA7qGKDDtrs": {
+   "title": "Watching Air Traffic Dodging Volcanic Ash Plumes from Orbit in God\u2019s Eye View",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/VA7qGKDDtrs",
+   "at": "2026-11-08T21:40:30.325946+00:00",
+   "duration_s": 13,
+   "published": false,
+   "reason_if_low": "under 90s (13s)"
+  },
+  "mAxQehdhifY": {
+   "title": "My AI Dinosaur Ran Like a Robot, So I Made It Study an Ostrich",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/mAxQehdhifY",
+   "at": "2026-11-08T21:40:30.880626+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "FXiAj8U9Sls": {
+   "title": "How to Stop AI From Turning Your Text Into All Caps",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/FXiAj8U9Sls",
+   "at": "2026-11-08T21:40:31.022961+00:00",
+   "duration_s": 53,
+   "published": false,
+   "reason_if_low": "under 90s (53s)"
   }
  },
  "quota": {
-  "date": "2026-11-07",
-  "minutes": 78.15
+  "date": "2026-11-08",
+  "minutes": 73.93333333333334
  }
 }

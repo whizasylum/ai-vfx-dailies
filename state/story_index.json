@@ -1,26 +1,4 @@
 {
- "e02c3e9f20": {
-  "headline": "Redshift 2027.0 adds fur procedural, ACES 2 support, Redshift Live updates",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "aces",
-   "already",
-   "changes",
-   "colour-management",
-   "decisions",
-   "fur",
-   "live",
-   "procedural",
-   "redshift",
-   "redshift.",
-   "studios",
-   "support"
-  ],
-  "at": "2026-10-18T20:02:25.316122+00:00"
- },
  "242c2b52a4": {
   "headline": "ComfyUI 0.42.1 adds Krea 3 Image and MOSS-Image partner nodes",
   "sources": [
@@ -1772,5 +1750,97 @@
    "time"
   ],
   "at": "2026-11-07T21:23:16.758238+00:00"
+ },
+ "2895eed1a4": {
+  "headline": "Runway ships Gen-4.5 video model and GWM-1 world model",
+  "sources": [
+   "Runway",
+   "Runway",
+   "Runway",
+   "Runway",
+   "Runway",
+   "Runway"
+  ],
+  "channel": "r",
+  "terms": [
+   "announcement",
+   "currently",
+   "future",
+   "gen-4.5",
+   "gwm-1",
+   "potential",
+   "runway",
+   "specifics.",
+   "usable",
+   "video",
+   "video-gen",
+   "world"
+  ],
+  "at": "2026-11-08T21:40:31.311228+00:00"
+ },
+ "27d326b407": {
+  "headline": "Black Forest Labs posts FLUX 3 video and on-device Klein model recaps",
+  "sources": [
+   "Black Forest Labs",
+   "Black Forest Labs",
+   "Black Forest Labs",
+   "Black Forest Labs",
+   "Black Forest Labs"
+  ],
+  "channel": "r",
+  "terms": [
+   "black",
+   "confirmed.",
+   "cost",
+   "flux",
+   "forest",
+   "inference",
+   "klein",
+   "labs",
+   "local",
+   "matters",
+   "on-device",
+   "once",
+   "only",
+   "posts"
+  ],
+  "at": "2026-11-08T21:40:31.311250+00:00"
+ },
+ "cf90cf7bac": {
+  "headline": "ElevenLabs corporate news dump: ARR, hires, market expansions",
+  "sources": [
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs",
+   "ElevenLabs"
+  ],
+  "channel": "b",
+  "terms": [
+   "arr",
+   "company",
+   "corporate",
+   "detail.",
+   "dump",
+   "elevenlabs",
+   "expansions",
+   "funding",
+   "hires",
+   "market",
+   "news",
+   "production",
+   "pure",
+   "relevance"
+  ],
+  "at": "2026-11-08T21:40:31.311260+00:00"
  }
 }

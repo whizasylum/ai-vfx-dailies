@@ -1,0 +1,191 @@
+{
+  "verdict": "A noisy, low-substance day: mostly vendor PR blog dumps (ElevenLabs corporate news, Luma AI SEO filler, BFL back-catalog posts) with only a couple of items offering any real technical detail worth a working TD's time.",
+  "stories": [
+    {
+      "headline": "Runway ships Gen-4.5 video model and GWM-1 world model",
+      "body": "Runway announced Gen-4.5, pitched as its top video generation model for motion quality and prompt adherence, alongside GWM-1, a general world model aimed at interactive simulation, plus a second GWM Worlds release. Details are vendor-supplied with no independent benchmarks, pricing, API specifics, or licence terms given in the source material. Worth tracking once third parties test controllability and integration, not yet actionable.",
+      "why": "Potential future video-gen tool but currently just an announcement with no usable specifics.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Runway",
+          "url": "https://runwayml.com/research/introducing-runway-gwm-1",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Runway",
+          "url": "https://runwayml.com/research/introducing-runway-gen-4.5",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Runway",
+          "url": "https://runwayml.com/research/introducing-general-world-models",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Runway",
+          "url": "https://runwayml.com/research/introducing-gwm-worlds-2",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Runway",
+          "url": "https://runwayml.com/research/publications",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Runway",
+          "url": "https://runwayml.com/research/how-real-time-video-generation-is-changing-online-interaction",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://d3phaj0sisr2ct.cloudfront.net/site/research/gwm-worlds-2/images/gwm-worlds-2-card.webp"
+    },
+    {
+      "headline": "Black Forest Labs posts FLUX 3 video and on-device Klein model recaps",
+      "body": "BFL's feed surfaces several older posts: FLUX 3 video generation research, a FLUX 3 x mimic video-action model, and FLUX.2 Klein models now running on ASUS ProArt laptops on-device. No new technical detail, VRAM figures, or licence terms accompany these summaries beyond what was previously published; this reads as a backlog of existing posts rather than new news.\n",
+      "why": "On-device Klein support matters for local inference cost only once specs are confirmed.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux-3-video",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux-3",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux-3-mimic",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux2-klein-on-device",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux-video-upscale",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://bfl.ai/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F2gpum2i6%2Fproduction%2F281b2003f8a62e07391c6085a69ed91eb574d08c-1900x1264.png&w=3840&q=100"
+    },
+    {
+      "headline": "ElevenLabs corporate news dump: ARR, hires, market expansions",
+      "body": "A batch of ElevenLabs posts cover a $500M ARR milestone with new investors including BlackRock and NVIDIA, new CFO and CRO hires, market expansions into Canada, Spain, Australia/NZ, Poland, Greece and the UK, plus product posts on CLI v1, Dubbing v2, Music v2, and ElevenMusic. None include technical specifics, licence changes, or pipeline-relevant integration details.",
+      "why": "No production relevance; pure company and funding news with no tool-level detail.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/500m-arr-and-new-investors",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/cfo",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/cro",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/expanding-in-california",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/poland-invests-in-elevenlabs",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/uk-mou-and-expansion",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/elevenlabs-expands-presence-in-australia-new-zealand",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/expanding-in-spain",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/voice-ai-for-greece",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/canada",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/introducing-dubbing-v2",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/introducing-music-v2",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/introducing-elevenmusic",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/elevenlabs-cli-v1",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://elevenlabs.io/_next/image?url=https%3A%2F%2Feleven-public-cdn.elevenlabs.io%2Fpayloadcms%2FBlog%201920x1920.jpg&w=3840&q=80"
+    }
+  ],
+  "usage": {
+    "input_tokens": 7787,
+    "output_tokens": 918
+  },
+  "candidate_count": 47,
+  "editorial_stories": true
+}

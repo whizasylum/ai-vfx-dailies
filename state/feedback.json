@@ -1496,6 +1496,97 @@
    "issue_ids": [
     57
    ]
+  },
+  {
+   "story_id": "534a80bbc7",
+   "at": "2026-11-08T21:37:32.574355+00:00",
+   "vote": 1,
+   "headline": "Epic makes Megascans library free again, permanently",
+   "sources": [
+    "CG Channel"
+   ],
+   "channel": "r",
+   "terms": [
+    "again",
+    "assets",
+    "cut",
+    "environment",
+    "epic",
+    "free",
+    "high-quality",
+    "library",
+    "megascans",
+    "permanently",
+    "scan",
+    "set-dressing",
+    "sourcing",
+    "time"
+   ],
+   "via": "page",
+   "issue_ids": [
+    60,
+    63
+   ]
+  },
+  {
+   "story_id": "3b134417f1",
+   "at": "2026-11-08T21:37:32.574370+00:00",
+   "vote": 1,
+   "headline": "Weta FX details animation and FX work on Te Ka and Te Fiti for live-action Moana",
+   "sources": [
+    "Art of VFX"
+   ],
+   "channel": "b",
+   "terms": [
+    "animation",
+    "choices",
+    "creature",
+    "details",
+    "direct",
+    "facility.",
+    "fiti",
+    "large-scale",
+    "live-action",
+    "moana",
+    "pipeline",
+    "top-tier",
+    "weta",
+    "work"
+   ],
+   "via": "page",
+   "issue_ids": [
+    62
+   ]
+  },
+  {
+   "story_id": "20dc8a76ae",
+   "at": "2026-11-08T21:37:32.574375+00:00",
+   "vote": 1,
+   "headline": "Quixel Megascans library now permanently free",
+   "sources": [
+    "80 Level"
+   ],
+   "channel": "b",
+   "terms": [
+    "assets",
+    "barrier",
+    "cost",
+    "directly",
+    "free",
+    "high-quality",
+    "library",
+    "megascans",
+    "permanently",
+    "pipelines.",
+    "production",
+    "quixel",
+    "removes",
+    "scan"
+   ],
+   "via": "page",
+   "issue_ids": [
+    61
+   ]
   }
  ]
 }
