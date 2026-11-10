@@ -1,76 +1,4 @@
 {
- "bf5a04c174": {
-  "headline": "MiniMax-H3 PDD distilled ComfyUI node published on Hugging Face",
-  "sources": [
-   "HF text-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "ambiguity",
-   "another",
-   "before",
-   "comfyui",
-   "distilled",
-   "face",
-   "hugging",
-   "integration",
-   "licence",
-   "means",
-   "minimax-h3",
-   "node",
-   "pdd",
-   "point"
-  ],
-  "at": "2026-10-20T21:11:59.516239+00:00"
- },
- "7b5af40d27": {
-  "headline": "Plasticity 2026.2 CAD tool adds curvature analysis and reusable asset libraries",
-  "sources": [
-   "CG Channel",
-   "80 Level"
-  ],
-  "channel": "r",
-  "terms": [
-   "analysis",
-   "asset",
-   "cad",
-   "curvature",
-   "feeding",
-   "houdini",
-   "libraries",
-   "modelers",
-   "pipelines.",
-   "plasticity",
-   "relevant",
-   "reusable",
-   "surfacing"
-  ],
-  "at": "2026-10-20T21:11:59.516270+00:00"
- },
- "c217769d1c": {
-  "headline": "Chaos Arena used to previsualize unbuilt Miami residential tower",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "b",
-  "terms": [
-   "arena",
-   "chaos",
-   "cloud",
-   "detail",
-   "miami",
-   "previsualize",
-   "production",
-   "real",
-   "rendering",
-   "residential",
-   "shows",
-   "studio",
-   "thin.",
-   "though"
-  ],
-  "at": "2026-10-20T21:11:59.516287+00:00"
- },
  "dd2d0bf07b": {
   "headline": "MiniMax-H3-Turbo weights published on Hugging Face, ComfyUI-tagged",
   "sources": [
@@ -1819,5 +1747,197 @@
    "sky"
   ],
   "at": "2026-11-10T01:07:41.410945+00:00"
+ },
+ "aa8a6e5567": {
+  "headline": "Blender 5.3 ships with node-powered physics and remote asset library access",
+  "sources": [
+   "Blender"
+  ],
+  "channel": "r",
+  "terms": [
+   "access",
+   "adopt",
+   "asset",
+   "blender",
+   "free",
+   "friction.",
+   "library",
+   "licence",
+   "likely",
+   "node-powered",
+   "open-source",
+   "physics",
+   "remote",
+   "studios"
+  ],
+  "at": "2026-11-10T22:49:15.411940+00:00"
+ },
+ "89cc0a7c8c": {
+  "headline": "Chaos Corona 16 adds relighting of Gaussian Splats for 3ds Max and Cinema 4D",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "asset",
+   "becoming",
+   "chaos",
+   "cinema",
+   "commercial",
+   "corona",
+   "dcc",
+   "format.",
+   "gaussian",
+   "lit",
+   "max",
+   "relighting",
+   "renderable",
+   "renderers"
+  ],
+  "at": "2026-11-10T22:49:15.411963+00:00"
+ },
+ "83942bbb26": {
+  "headline": "OctaneRender 2027.1 beta adds an MCP server for AI tool scene building",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "agent-driven",
+   "assembly",
+   "beta",
+   "building",
+   "inside",
+   "mcp",
+   "octanerender",
+   "opens",
+   "path",
+   "production",
+   "real",
+   "renderer.",
+   "scene",
+   "server"
+  ],
+  "at": "2026-11-10T22:49:15.411977+00:00"
+ },
+ "16bad01b11": {
+  "headline": "ComfyUI v0.45.0 adds Pika H3 Flex and soundtrack/SFX partner nodes",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "audio",
+   "comfyui",
+   "deployable",
+   "existing",
+   "flex",
+   "generation",
+   "inside",
+   "nodes",
+   "partner",
+   "pika",
+   "pipeline.",
+   "sfx",
+   "soundtrack",
+   "v0.45.0"
+  ],
+  "at": "2026-11-10T22:49:15.411989+00:00"
+ },
+ "00eb54db2d": {
+  "headline": "Adobe ships After Effects 27.0 with agentic AI Assistant and updated 3D toolset",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "adobe",
+   "affects",
+   "after",
+   "agentic",
+   "assistant",
+   "before",
+   "checking",
+   "client",
+   "comp",
+   "data-handling",
+   "details",
+   "effects",
+   "licence",
+   "need"
+  ],
+  "at": "2026-11-10T22:49:15.412002+00:00"
+ },
+ "ef1f99d6f7": {
+  "headline": "Adobe ships Photoshop 28.0 with AI relighting and trace erase",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "adobe",
+   "could",
+   "erase",
+   "fixup",
+   "holds",
+   "matte",
+   "painting",
+   "photoshop",
+   "relighting",
+   "scrutiny.",
+   "speed",
+   "texture",
+   "trace",
+   "under"
+  ],
+  "at": "2026-11-10T22:49:15.412012+00:00"
+ },
+ "ae567f8590": {
+  "headline": "Framestore details VFX and animation work on Project Hail Mary",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "animation",
+   "breakdown",
+   "concrete",
+   "detail",
+   "details",
+   "facility",
+   "framestore",
+   "hail",
+   "kind",
+   "major",
+   "mary",
+   "project",
+   "studio",
+   "studying."
+  ],
+  "at": "2026-11-10T22:49:15.412022+00:00"
+ },
+ "5cb1c08acc": {
+  "headline": "DNEG wins appeal in Coyote vs. Acme legal dispute",
+  "sources": [
+   "VFX Voice"
+  ],
+  "channel": "b",
+  "terms": [
+   "acme",
+   "affect",
+   "appeal",
+   "assess",
+   "contract",
+   "could",
+   "coyote",
+   "detail",
+   "dispute",
+   "dneg",
+   "facility",
+   "impact.",
+   "involving",
+   "legal"
+  ],
+  "at": "2026-11-10T22:49:15.412035+00:00"
  }
 }

@@ -1620,6 +1620,67 @@
    "issue_ids": [
     64
    ]
+  },
+  {
+   "story_id": "e9f631ad14",
+   "at": "2026-11-10T22:46:08.613148+00:00",
+   "vote": 1,
+   "headline": "MiniMax-H3 video model gets ComfyUI workflows and LoRA speed/detail sliders",
+   "sources": [
+    "HF image-to-video",
+    "HF text-to-video"
+   ],
+   "channel": "r",
+   "terms": [
+    "comfyui",
+    "controlnet",
+    "detail",
+    "kind",
+    "last-frame",
+    "lora",
+    "minimax-h3",
+    "node",
+    "pipeline",
+    "quickly.",
+    "sliders",
+    "speed",
+    "support",
+    "thing"
+   ],
+   "via": "page",
+   "issue_ids": [
+    66
+   ]
+  },
+  {
+   "story_id": "15c7caa5a2",
+   "at": "2026-11-10T22:46:08.613165+00:00",
+   "vote": 1,
+   "headline": "Framestore builds in-house AI tools for Sky Christmas campaign VFX",
+   "sources": [
+    "Animation World Network"
+   ],
+   "channel": "b",
+   "terms": [
+    "bespoke",
+    "builds",
+    "campaign",
+    "christmas",
+    "delivery",
+    "details",
+    "even",
+    "facility",
+    "framestore",
+    "in-house",
+    "real",
+    "shipping",
+    "signal",
+    "sky"
+   ],
+   "via": "page",
+   "issue_ids": [
+    65
+   ]
   }
  ]
 }

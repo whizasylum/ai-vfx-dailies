@@ -8306,10 +8306,82 @@
    "duration_s": 53,
    "published": false,
    "reason_if_low": "under 90s (53s)"
+  },
+  "MQtIBBQsfBM": {
+   "title": "Claude Fable 5.2 Just Dropped - Can Any AI Beat It in Blender?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/MQtIBBQsfBM",
+   "at": "2026-11-10T22:49:12.933228+00:00",
+   "duration_s": 25,
+   "published": false,
+   "reason_if_low": "under 90s (25s)"
+  },
+  "eC7id8a-hJ0": {
+   "title": "I Gave GPT-6 My Table Size. It Planned My 3D Printed D&D City",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/eC7id8a-hJ0",
+   "at": "2026-11-10T22:49:13.075291+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "CN6N6cJO1z0": {
+   "title": "3D Printing My D&D City With ChatGPT Wore Me Out",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/CN6N6cJO1z0",
+   "at": "2026-11-10T22:49:13.178392+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
+  },
+  "u2fX1lNsPq8": {
+   "title": "Claude Built a Flying Machine From Da Vinci's Sketches | Fable 5.2",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/u2fX1lNsPq8",
+   "at": "2026-11-10T22:49:13.508406+00:00",
+   "duration_s": 74,
+   "published": false,
+   "reason_if_low": "under 90s (74s)"
+  },
+  "N9oYJrz95-k": {
+   "title": "Pro VFX Artist vs 8 Hours of AI: You Decide",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/N9oYJrz95-k",
+   "at": "2026-11-10T22:49:13.944807+00:00",
+   "duration_s": 24,
+   "published": false,
+   "reason_if_low": "under 90s (24s)"
+  },
+  "urW6j11CbjE": {
+   "title": "My Friend Acted Out a Dinosaur Run for My AI Shot",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/urW6j11CbjE",
+   "at": "2026-11-10T22:49:14.082446+00:00",
+   "duration_s": 23,
+   "published": false,
+   "reason_if_low": "under 90s (23s)"
+  },
+  "nvjHFQTSQjI": {
+   "title": "We Turned a Hot Sauce Into a Soap Opera | Higgsfield Drama Ads",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/nvjHFQTSQjI",
+   "at": "2026-11-10T22:49:14.202320+00:00",
+   "duration_s": 62,
+   "published": false,
+   "reason_if_low": "under 90s (62s)"
+  },
+  "jpRvZR4BXYU": {
+   "title": "How I Put Myself Into Someone Else's Footage With AI",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/jpRvZR4BXYU",
+   "at": "2026-11-10T22:49:14.371686+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
   }
  },
  "quota": {
-  "date": "2026-11-08",
-  "minutes": 73.93333333333334
+  "date": "2026-11-10",
+  "minutes": 23.333333333333332
  }
 }

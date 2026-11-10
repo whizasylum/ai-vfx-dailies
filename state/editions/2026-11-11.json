@@ -1,0 +1,139 @@
+{
+  "verdict": "A quiet day for genuinely production-relevant AI news, but a dense release day for DCC and renderer tooling: Blender 5.3, Corona 16, OctaneRender, After Effects, Photoshop and ComfyUI all shipped updates worth a scan.",
+  "stories": [
+    {
+      "headline": "Blender 5.3 ships with node-powered physics and remote asset library access",
+      "body": "Blender Foundation released Blender 5.3 (labelled as 5.2 LTS lineage in the announcement), adding node-based physics, remote access to asset libraries, and rendering improvements. Two years of LTS updates follow. Free and open source as always. No AI-specific claims here, this is core DCC tooling that affects any Houdini-adjacent pipeline using Blender for asset prep or lookdev.",
+      "why": "Free, open-source update that studios will likely adopt without licence friction.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Blender",
+          "url": "https://www.blender.org/press/blender-5-3-release",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Chaos Corona 16 adds relighting of Gaussian Splats for 3ds Max and Cinema 4D",
+      "body": "Chaos released Corona 16, adding support for relighting 3D Gaussian Splats directly inside the renderer, plus a new parallax interiors system for architectural visualization. This is one of the first mainstream commercial renderers to treat splats as a relightable asset type rather than a static capture, signalling splats are moving from capture format toward a first-class renderable asset.",
+      "why": "Shows splats becoming a lit, renderable asset type in commercial DCC renderers, not just a viewer format.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/chaos-releases-corona-16-for-3ds-max-and-cinema-4d",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "OctaneRender 2027.1 beta adds an MCP server for AI tool scene building",
+      "body": "Otoy's OctaneRender 2027.1 beta introduces an MCP (Model Context Protocol) server, allowing external AI tools and agents to build and render scenes programmatically. Details on what operations are exposed and what's required to run it are thin in the vendor note. Worth watching to see if this becomes a real agentic-scene-assembly path or stays a marketing bullet.",
+      "why": "If the MCP surface is real, it opens a path for agent-driven scene assembly inside a production renderer.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/otoy-releases-octanerender-2027-1",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "ComfyUI v0.45.0 adds Pika H3 Flex and soundtrack/SFX partner nodes",
+      "body": "ComfyUI's latest release adds official partner nodes for Pika H3 Flex video generation and Pika's soundtrack/SFX/music tools, plus a Tencent Hunyuan LLM node, adaptive VAE memory slicing for SeedVR2, and frontend bumps. These are deployable nodes a studio could wire into an existing ComfyUI pipeline today, not research previews.",
+      "why": "New deployable nodes for video and audio generation inside an existing ComfyUI pipeline.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Adobe ships After Effects 27.0 with agentic AI Assistant and updated 3D toolset",
+      "body": "Adobe's After Effects 27.0 release adds a new agentic AI Assistant alongside changes to the 3D toolset. CG Channel's coverage is a features rundown without deep technical detail on what the Assistant actually automates or what data it touches, which matters for client-work usability questions. Worth a look if you touch comp pipelines, but treat specifics as unverified until tested.",
+      "why": "Affects comp pipelines studio-wide; licence and data-handling details for the AI Assistant need checking before client use.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/adobe-releases-after-effects-27-0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Adobe ships Photoshop 28.0 with AI relighting and trace erase",
+      "body": "Photoshop 28.0 adds AI-driven relighting and a trace erase feature, per Adobe's release notes as summarized by CG Channel. Technical depth on the relighting method, whether it's diffusion-based, and performance/VRAM cost are not detailed in available coverage. Relevant to anyone doing matte painting or texture cleanup touchups in a VFX pipeline.",
+      "why": "Relighting tool could speed matte painting and texture fixup work if it holds up under scrutiny.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/adobe-releases-photoshop-28-0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Framestore details VFX and animation work on Project Hail Mary",
+      "body": "Art of VFX interviewed Framestore's VFX supervisors Stuart Penn and Bob Winter and senior animation supervisor Arslan Elver about their work on Project Hail Mary, following prior interviews on Mickey 17 and Fantastic Four: First Steps. Coverage is a technical breakdown of their process, not a marketing puff piece, consistent with the kind of studio-technique reporting this reader has valued before.\n\nNote: no AI tooling specifics given here beyond general process.",
+      "why": "Concrete studio technique breakdown from a major facility, the kind of detail worth studying.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/project-hail-mary-stuart-penn-bob-winter-and-arslan-elver-framestore",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "DNEG wins appeal in Coyote vs. Acme legal dispute",
+      "body": "VFX Voice reports a legal outcome favorable to DNEG in the long-running Coyote vs. Acme film dispute. The summary provided lacks specifics on the legal mechanism, what was ruled, or what it means for deliverables and payment terms, so the practical implications can't be confirmed from available detail.",
+      "why": "Legal precedent involving a major facility could affect contract and liability norms, but detail is too thin to assess impact.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "VFX Voice",
+          "url": "https://vfxvoice.com/justice-prevails-for-dneg-and-coyote-vs-acme",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 13202,
+    "output_tokens": 2105
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
