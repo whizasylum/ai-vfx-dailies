@@ -1,33 +1,83 @@
 {
-  "at": "2026-11-08T21:40:33.176822+00:00",
+  "at": "2026-11-10T01:07:43.355658+00:00",
   "ratings": {
-    "total": 55,
-    "up": 53,
+    "total": 56,
+    "up": 54,
     "down": 2,
-    "sources_adjusted": 9,
+    "sources_adjusted": 10,
     "terms_learned": 9
   },
-  "raw": 135,
-  "candidates": 47,
-  "stories": 3,
+  "raw": 149,
+  "candidates": 53,
+  "stories": 2,
   "usage": {
-    "input_tokens": 7787,
-    "output_tokens": 918
+    "input_tokens": 11107,
+    "output_tokens": 642
   },
   "video_watch": {
-    "candidates": 12,
+    "candidates": 0,
     "watched": 0,
     "published": 0,
-    "rejected": 3,
+    "rejected": 0,
     "deferred": 0,
-    "errors": 5,
-    "already_watched": 4
+    "errors": 0,
+    "already_watched": 0
   },
   "problems": [
     {
-      "source": "postPerspective",
-      "type": "rss",
-      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
+      "source": "Two Minute Papers",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Corridor Crew",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Curious Refuge",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Mickmumpitz",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Nerdy Rodent",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Bilawal Sidhu",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Entagma",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "PixelArtistry",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Stefan 3D AI",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "Higgsfield AI",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
+    },
+    {
+      "source": "AI2Play (pixaroma)",
+      "type": "youtube",
+      "error": "unparseable feed: <unknown>:3:11: not well-formed (invalid token)"
     }
   ]
 }

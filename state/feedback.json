@@ -1587,6 +1587,39 @@
    "issue_ids": [
     61
    ]
+  },
+  {
+   "story_id": "2895eed1a4",
+   "at": "2026-11-10T01:07:05.215649+00:00",
+   "vote": 1,
+   "headline": "Runway ships Gen-4.5 video model and GWM-1 world model",
+   "sources": [
+    "Runway",
+    "Runway",
+    "Runway",
+    "Runway",
+    "Runway",
+    "Runway"
+   ],
+   "channel": "r",
+   "terms": [
+    "announcement",
+    "currently",
+    "future",
+    "gen-4.5",
+    "gwm-1",
+    "potential",
+    "runway",
+    "specifics.",
+    "usable",
+    "video",
+    "video-gen",
+    "world"
+   ],
+   "via": "page",
+   "issue_ids": [
+    64
+   ]
   }
  ]
 }

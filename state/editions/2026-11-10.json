@@ -1,0 +1,49 @@
+{
+  "verdict": "A quiet day: mostly arXiv paper churn and AWN press-release filler, with a couple of ComfyUI/MiniMax-H3 tool drops the only items worth a working TD's ten minutes.",
+  "stories": [
+    {
+      "headline": "MiniMax-H3 video model gets ComfyUI workflows and LoRA speed/detail sliders",
+      "body": "Two community releases around MiniMax-H3: a ComfyUI workflow package (javawock7618) supporting first/last-frame bridging, reference-to-video and ControlNet-Union, plus a LoRA (siraxe) adding speed and detail sliders on top of the base model via diffusers. Both are community uploads on Hugging Face, not vendor-official tooling; download counts are low to moderate (6392 for the LoRA) and no VRAM or licence figures are given.",
+      "why": "First/last-frame and ControlNet support in ComfyUI is the kind of thing that turns into a pipeline node quickly.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/javawock7618/comfy-MiniMax-H3-workflows",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/siraxe/H3_slider_experiments",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Framestore builds in-house AI tools for Sky Christmas campaign VFX",
+      "body": "Framestore's 'That's Christmas Sorted' for Sky Creative used new internally built AI tools alongside standard CG pipeline work: previs assistance, character removal, and self-animating costume effects. CG warehouse environments were built conventionally. Details are limited to AWN's trade coverage; no specifics on which models, software, or whether any of it is shared outside the studio.",
+      "why": "A tier-one facility shipping bespoke AI tooling into a real delivery is a signal worth tracking, even if details are thin.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/framestore-brings-hybrid-aivfx-skys-christmas-campaign",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081755-skyxmsstill015-1280.jpg?itok=-1OUlavl"
+    }
+  ],
+  "usage": {
+    "input_tokens": 11107,
+    "output_tokens": 642
+  },
+  "candidate_count": 53,
+  "editorial_stories": true
+}
