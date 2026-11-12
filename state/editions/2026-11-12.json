@@ -1,0 +1,43 @@
+{
+  "verdict": "A quiet day: one real pipeline-relevant item (Blender 5.3 with Gaussian splatting support) plus a MiniMax-H3 ComfyUI update, surrounded by academic paper noise, festival listings, and trade-press filler worth skipping.",
+  "stories": [
+    {
+      "headline": "Blender 5.3 adds native 3D Gaussian Splatting and DLSS denoising",
+      "body": "Blender 5.3 ships with built-in 3D Gaussian Splatting support, DLSS-based denoising, and a layered compositing system, according to CG Channel's feature rundown. This puts splat import/editing directly into a free, open-source DCC rather than requiring third-party plugins, and brings GPU denoising parity with commercial renderers. No pricing or licence change since Blender remains GPL.",
+      "why": "Splatting support inside Blender lowers the barrier to bringing Gaussian scenes into existing asset pipelines.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/blender-5-3-is-here-discover-its-5-key-features",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "MiniMax-H3 long-video ComfyUI build updated with LoRA sliders",
+      "body": "The community MiniMax-H3-Longvideos repo on Hugging Face has been updated, bundling ComfyUI nodes and LoRA-based speed/detail sliders for the MiniMax-H3 video model. It carries a non-standard licence (listed as 'other'), has seen 683 downloads, and is tagged for long-form text-to-video with audio. Usable today by anyone running ComfyUI with the right hardware, but licence terms need checking before client work.",
+      "why": "A deployable ComfyUI workflow for long-form video generation, but licence terms still need clearing for commercial use.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/Smite79/MiniMax-H3-Longvideos",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 11953,
+    "output_tokens": 655
+  },
+  "candidate_count": 57,
+  "editorial_stories": true
+}

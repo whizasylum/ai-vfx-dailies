@@ -8378,10 +8378,82 @@
    "duration_s": 28,
    "published": false,
    "reason_if_low": "under 90s (28s)"
+  },
+  "1ZS1kRuxboo": {
+   "title": "Check Out My Adobe Creator Playbook Episode",
+   "channel": "Curious Refuge",
+   "url": "https://www.youtube.com/shorts/1ZS1kRuxboo",
+   "at": "2026-11-12T00:02:10.270575+00:00",
+   "duration_s": 59,
+   "published": false,
+   "reason_if_low": "under 90s (59s)"
+  },
+  "f0mPL2NjY_0": {
+   "title": "\ud83d\udd34Epic AI MegaJam Theme Reveal - Warm-Up Stream",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=f0mPL2NjY_0",
+   "at": "2026-11-12T00:02:10.365108+00:00",
+   "duration_s": 5180,
+   "published": false,
+   "reason_if_low": "over 40min cap (86min)"
+  },
+  "G-DpYaAF2a8": {
+   "title": "Claude Fable 5.2 vs Opus 5.5: Who Brought the Colosseum to Life?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/G-DpYaAF2a8",
+   "at": "2026-11-12T00:02:10.494386+00:00",
+   "duration_s": 21,
+   "published": false,
+   "reason_if_low": "under 90s (21s)"
+  },
+  "0KhqNH0Vhvs": {
+   "title": "New Claude Fable 5.2 vs Opus 5.5: Same Castle, Different League",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/0KhqNH0Vhvs",
+   "at": "2026-11-12T00:02:10.583906+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
+  },
+  "uxz6HeWbQuo": {
+   "title": "Claude Fable 5.2 Is Here. It Made This Blender Cinematic",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/uxz6HeWbQuo",
+   "at": "2026-11-12T00:02:11.213458+00:00",
+   "duration_s": 26,
+   "published": false,
+   "reason_if_low": "under 90s (26s)"
+  },
+  "qPmmsXbuIxA": {
+   "title": "Don't Miss the Biggest Higgsfield Discount of the Year | Up to 60% Off",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/qPmmsXbuIxA",
+   "at": "2026-11-12T00:02:11.696627+00:00",
+   "duration_s": 34,
+   "published": false,
+   "reason_if_low": "under 90s (34s)"
+  },
+  "sBF7NexsLyA": {
+   "title": "The AI Killed My Joke, So I Fixed It With One Plank",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/sBF7NexsLyA",
+   "at": "2026-11-12T00:02:11.929045+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
+  },
+  "JCXlhlXmKwI": {
+   "title": "I Swapped a Wolf for a Human in My AI Scene Without Starting Over",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/JCXlhlXmKwI",
+   "at": "2026-11-12T00:02:12.022973+00:00",
+   "duration_s": 49,
+   "published": false,
+   "reason_if_low": "under 90s (49s)"
   }
  },
  "quota": {
-  "date": "2026-11-10",
-  "minutes": 23.333333333333332
+  "date": "2026-11-12",
+  "minutes": 41.71666666666666
  }
 }

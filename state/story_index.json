@@ -1,147 +1,4 @@
 {
- "dd2d0bf07b": {
-  "headline": "MiniMax-H3-Turbo weights published on Hugging Face, ComfyUI-tagged",
-  "sources": [
-   "HF text-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "another",
-   "before",
-   "comfyui",
-   "comfyui-tagged",
-   "face",
-   "hugging",
-   "licence",
-   "minimax-h3",
-   "minimax-h3-turbo",
-   "moving",
-   "need",
-   "published",
-   "studio",
-   "terms"
-  ],
-  "at": "2026-10-21T21:16:18.636854+00:00"
- },
- "a9e3f4c0d7": {
-  "headline": "Substance 3D Painter 12.2 adds cage painting directly on the model",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "a",
-  "terms": [
-   "artists",
-   "baking",
-   "cage",
-   "cages",
-   "change",
-   "direct",
-   "directly",
-   "painter",
-   "painting",
-   "shipping",
-   "substance",
-   "texture",
-   "update.",
-   "workflow"
-  ],
-  "at": "2026-10-21T21:16:18.636884+00:00"
- },
- "615e7a644a": {
-  "headline": "Moho 14.5 adds live webcam-driven rig performance mode",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "a",
-  "terms": [
-   "animation",
-   "concrete",
-   "feature",
-   "implications.",
-   "live",
-   "mode",
-   "moho",
-   "niche",
-   "performance",
-   "pipeline",
-   "reader",
-   "real-time",
-   "rig",
-   "shipping"
-  ],
-  "at": "2026-10-21T21:16:18.636898+00:00"
- },
- "7aa39a8939": {
-  "headline": "I Used AI to Create a Massive 3D Printed D&D City",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "adapted",
-   "assembly.",
-   "city",
-   "create",
-   "drive",
-   "houdini",
-   "kit-bashing",
-   "llms",
-   "massive",
-   "methodology",
-   "modular",
-   "printed",
-   "procedural",
-   "scene-management"
-  ],
-  "at": "2026-10-21T21:16:18.636910+00:00"
- },
- "59e6612966": {
-  "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "dramas",
-   "hosted",
-   "ingestion",
-   "limited",
-   "look-development",
-   "previs",
-   "proprietary",
-   "reference.",
-   "short",
-   "step",
-   "views",
-   "viral",
-   "workflow"
-  ],
-  "at": "2026-10-21T21:16:18.636921+00:00"
- },
- "df41cabaaa": {
-  "headline": "Nano Banana 2.1 in Google Flow: Full Tutorial for Beginners",
-  "sources": [
-   "AI2Play (pixaroma)"
-  ],
-  "channel": "a",
-  "terms": [
-   "art",
-   "banana",
-   "before",
-   "beginners",
-   "concept",
-   "flow",
-   "full",
-   "google",
-   "high-speed",
-   "hosted",
-   "integration.",
-   "layout.",
-   "limits",
-   "local"
-  ],
-  "at": "2026-10-21T21:16:18.636936+00:00"
- },
  "ea41a4d416": {
   "headline": "Lightricks ships a wide set of LTX-2.3/2.5 IC-LoRAs for video-to-video tasks",
   "sources": [
@@ -1939,5 +1796,53 @@
    "legal"
   ],
   "at": "2026-11-10T22:49:15.412035+00:00"
+ },
+ "8ac8462162": {
+  "headline": "Blender 5.3 adds native 3D Gaussian Splatting and DLSS denoising",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "r",
+  "terms": [
+   "asset",
+   "barrier",
+   "blender",
+   "bringing",
+   "denoising",
+   "dlss",
+   "existing",
+   "gaussian",
+   "inside",
+   "lowers",
+   "native",
+   "pipelines.",
+   "scenes",
+   "splatting"
+  ],
+  "at": "2026-11-12T00:02:13.526381+00:00"
+ },
+ "28148da600": {
+  "headline": "MiniMax-H3 long-video ComfyUI build updated with LoRA sliders",
+  "sources": [
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "build",
+   "clearing",
+   "comfyui",
+   "commercial",
+   "deployable",
+   "generation",
+   "licence",
+   "long-form",
+   "long-video",
+   "lora",
+   "minimax-h3",
+   "need",
+   "sliders",
+   "still"
+  ],
+  "at": "2026-11-12T00:02:13.526404+00:00"
  }
 }
