@@ -1,130 +1,4 @@
 {
- "ea41a4d416": {
-  "headline": "Lightricks ships a wide set of LTX-2.3/2.5 IC-LoRAs for video-to-video tasks",
-  "sources": [
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "comfyui",
-   "fast.",
-   "ic-loras",
-   "kind",
-   "lightricks",
-   "loras",
-   "ltx-2.3",
-   "open",
-   "pipeline",
-   "restyle",
-   "set",
-   "task-specific",
-   "tasks",
-   "thing"
-  ],
-  "at": "2026-10-22T21:12:42.668903+00:00"
- },
- "9abfdafa0f": {
-  "headline": "Brahma AI's Emmy-winning face replacement tech is heading into Nuke",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "brahma",
-   "budget",
-   "change",
-   "client",
-   "de-aging",
-   "emmy-winning",
-   "face",
-   "face-replacement",
-   "heading",
-   "jobs.",
-   "nuke",
-   "nuke-native",
-   "plugin",
-   "replacement"
-  ],
-  "at": "2026-10-22T21:12:42.668927+00:00"
- },
- "7f918991c1": {
-  "headline": "KeenTools launches KeenFace, photo-to-MetaHuman head generator",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "r",
-  "terms": [
-   "character",
-   "cleanup",
-   "could",
-   "direct",
-   "game",
-   "generator",
-   "head",
-   "keenface",
-   "keentools",
-   "manual",
-   "photo-to-metahuman",
-   "pipeline",
-   "previs",
-   "replace"
-  ],
-  "at": "2026-10-22T21:12:42.668938+00:00"
- },
- "dcc9c52819": {
-  "headline": "OpenUSD 26.11.1 released",
-  "sources": [
-   "OpenUSD"
-  ],
-  "channel": "r",
-  "terms": [
-   "across",
-   "affect",
-   "any",
-   "compatibility",
-   "hydra",
-   "openusd",
-   "point",
-   "schema",
-   "studio",
-   "toolchain.",
-   "usd",
-   "whole"
-  ],
-  "at": "2026-10-22T21:12:42.668945+00:00"
- },
- "c092efd3c9": {
-  "headline": "I Reverse Engineered Mario 64 to Make My Own Game",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "agentic",
-   "api",
-   "assemble",
-   "based",
-   "building.",
-   "could",
-   "data",
-   "engineered",
-   "extracted",
-   "game",
-   "houdini",
-   "language",
-   "legacy",
-   "level"
-  ],
-  "at": "2026-10-22T21:12:42.668958+00:00"
- },
  "701c1a9dff": {
   "headline": "Lightricks publishes LTX-2.3/2.5 IC-LoRA tools for clean-plate, decompression and character-consistency video work",
   "sources": [
@@ -1844,5 +1718,80 @@
    "still"
   ],
   "at": "2026-11-12T00:02:13.526404+00:00"
+ },
+ "5f556c0c5e": {
+  "headline": "Hexagon launches Mantis, a camera-mounted on-set 3D capture system for VFX",
+  "sources": [
+   "befores & afters",
+   "postPerspective"
+  ],
+  "channel": "b",
+  "terms": [
+   "augment",
+   "camera-mounted",
+   "capture",
+   "could",
+   "handoff",
+   "hexagon",
+   "lidar",
+   "mantis",
+   "on-set",
+   "passes",
+   "photogrammetry",
+   "replace",
+   "speed",
+   "system"
+  ],
+  "at": "2026-11-12T23:09:30.157045+00:00"
+ },
+ "7905c59c29": {
+  "headline": "Adobe adds AI agents to After Effects and Premiere, launches Disney partnership",
+  "sources": [
+   "Animation World Network",
+   "Animation World Network",
+   "postPerspective"
+  ],
+  "channel": "b",
+  "terms": [
+   "adobe",
+   "after",
+   "agentic",
+   "agents",
+   "already",
+   "cloud",
+   "creative",
+   "disney",
+   "editing",
+   "effects",
+   "heading",
+   "licenses.",
+   "likely",
+   "partnership"
+  ],
+  "at": "2026-11-12T23:09:30.157076+00:00"
+ },
+ "e92dda1142": {
+  "headline": "Avid pairs Google Gemini and Veo with Media Composer via Ready to Play",
+  "sources": [
+   "postPerspective"
+  ],
+  "channel": "r",
+  "terms": [
+   "already",
+   "avid",
+   "composer",
+   "delivery",
+   "directly",
+   "editors",
+   "gemini",
+   "generative",
+   "google",
+   "inside",
+   "media",
+   "nle",
+   "pairs",
+   "pipelines."
+  ],
+  "at": "2026-11-12T23:09:30.157089+00:00"
  }
 }

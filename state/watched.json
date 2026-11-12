@@ -8450,10 +8450,82 @@
    "duration_s": 49,
    "published": false,
    "reason_if_low": "under 90s (49s)"
+  },
+  "pWv1HI5qZrM": {
+   "title": "Gemini 4 Carbon vs Fable 5.2: Only One Hero Shooter Was Playable",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/pWv1HI5qZrM",
+   "at": "2026-11-12T23:09:28.064063+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "Ibf_ZPNf9Mo": {
+   "title": "\ud83d\udd34Epic AI MegaJam Day 1 - Building a UE5 Game with AI Agents",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=Ibf_ZPNf9Mo",
+   "at": "2026-11-12T23:09:28.131770+00:00",
+   "duration_s": 13361,
+   "published": false,
+   "reason_if_low": "over 40min cap (222min)"
+  },
+  "p4BLVOLEmAQ": {
+   "title": "Free DeepSeek V4.1 Flash Won My Blender Walk Cycle Test",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/p4BLVOLEmAQ",
+   "at": "2026-11-12T23:09:28.202111+00:00",
+   "duration_s": 40,
+   "published": false,
+   "reason_if_low": "under 90s (40s)"
+  },
+  "LvW6m20kYvM": {
+   "title": "ChatGPT Turned My 3D Model Into a Reprint Tracker",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/LvW6m20kYvM",
+   "at": "2026-11-12T23:09:28.266210+00:00",
+   "duration_s": 39,
+   "published": false,
+   "reason_if_low": "under 90s (39s)"
+  },
+  "phBN9WSCicA": {
+   "title": "ChatGPT Made IKEA-Style Instructions for My 3D Printed D&D City",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/phBN9WSCicA",
+   "at": "2026-11-12T23:09:28.327020+00:00",
+   "duration_s": 36,
+   "published": false,
+   "reason_if_low": "under 90s (36s)"
+  },
+  "fHxNbhwN41M": {
+   "title": "Don't Regenerate the Whole AI Image for One Small Mistake",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/fHxNbhwN41M",
+   "at": "2026-11-12T23:09:28.637186+00:00",
+   "duration_s": 55,
+   "published": false,
+   "reason_if_low": "under 90s (55s)"
+  },
+  "xP8GNKtML0s": {
+   "title": "I Made the AI Bear Act First and Picked His Voice Last",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/xP8GNKtML0s",
+   "at": "2026-11-12T23:09:28.706760+00:00",
+   "duration_s": 53,
+   "published": false,
+   "reason_if_low": "under 90s (53s)"
+  },
+  "LWmKMXykHaU": {
+   "title": "Where Do You Put the Camera When a Deer Blocks the Movie?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/LWmKMXykHaU",
+   "at": "2026-11-12T23:09:28.764958+00:00",
+   "duration_s": 39,
+   "published": false,
+   "reason_if_low": "under 90s (39s)"
   }
  },
  "quota": {
   "date": "2026-11-12",
-  "minutes": 41.71666666666666
+  "minutes": 100.81666666666666
  }
 }

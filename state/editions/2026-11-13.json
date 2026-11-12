@@ -1,0 +1,77 @@
+{
+  "verdict": "A quiet day for genuinely new tools: the one real story is a new on-set 3D capture system for VFX, surrounded by Adobe MAX press releases, SEO listicles, and arXiv paper noise with no production relevance.",
+  "stories": [
+    {
+      "headline": "Hexagon launches Mantis, a camera-mounted on-set 3D capture system for VFX",
+      "body": "Hexagon's Leica Geosystems division has launched Mantis, a camera-mounted device that captures scene geometry and camera tracking simultaneously while filming, producing a spatial record aligned to the footage. Intended for VFX previs, tracking and layout work on set. Befores & Afters got a hands-on demo; details on pricing and output format (USD/Alembic compatibility) are not yet confirmed.",
+      "why": "Could replace or augment on-set lidar/photogrammetry passes and speed up tracking handoff to VFX.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "befores & afters",
+          "url": "https://beforesandafters.com/2026/11/13/ive-seen-a-demo-of-a-new-way-to-capture-3d-scene-data-while-your-cinema-camera-is-rolling-and-its-very-cool",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/hexagons-new-mantis-on-set-3d-capture-system-for-vfx",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Adobe adds AI agents to After Effects and Premiere, launches Disney partnership",
+      "body": "At Adobe MAX 2026, Adobe rolled Creative Agent into After Effects, Premiere, Illustrator, InDesign and Frame.io, with a Plan Mode letting users approve an agent's steps before execution. Separately, Adobe and Disney announced a multi-year deal giving Disney early access to Adobe AI tools plus custom Firefly Foundry models trained on Disney's own characters and visual styles. No pricing or rollout dates given.",
+      "why": "Signals where agentic editing is heading in the Creative Cloud tools this reader's studio likely already licenses.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/adobe-brings-ai-agents-after-effects-premiere-adobe-max-2026",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/adobe-and-disney-announce-multi-year-ai-alliance",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/adobe-max-2026-updates-ai-and-creative-cloud",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081786-ff-aia-planmode-no-logo-4-1280.jpg?itok=WVjiTlmB"
+    },
+    {
+      "headline": "Avid pairs Google Gemini and Veo with Media Composer via Ready to Play",
+      "body": "Avid has introduced Ready to Play, an AI feature for Media Composer built with Google's Gemini and Veo models, pitched for generating or patching footage that's missing, unclear or unfinished. Vendor-announced with no independent technical detail on licensing terms, output resolution, or whether generated frames are production-usable versus offline reference.",
+      "why": "Puts a generative video model directly inside an NLE editors already use on delivery pipelines.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/avids-ready-to-play-brings-google-ai-models-to-media-composer",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 12812,
+    "output_tokens": 881
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

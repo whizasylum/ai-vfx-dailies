@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-12T00:02:15.165027+00:00",
+  "at": "2026-11-12T23:09:31.827178+00:00",
   "ratings": {
     "total": 58,
     "up": 56,
@@ -7,32 +7,21 @@
     "sources_adjusted": 10,
     "terms_learned": 9
   },
-  "raw": 187,
-  "candidates": 57,
-  "stories": 2,
+  "raw": 177,
+  "candidates": 60,
+  "stories": 3,
   "usage": {
-    "input_tokens": 11953,
-    "output_tokens": 655
+    "input_tokens": 12812,
+    "output_tokens": 881
   },
   "video_watch": {
-    "candidates": 15,
+    "candidates": 19,
     "watched": 0,
     "published": 0,
     "rejected": 8,
     "deferred": 0,
-    "errors": 4,
-    "already_watched": 3
+    "errors": 5,
+    "already_watched": 6
   },
-  "problems": [
-    {
-      "source": "postPerspective",
-      "type": "rss",
-      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
-    },
-    {
-      "source": "arXiv cs.CV (generative video)",
-      "type": "arxiv",
-      "error": "The read operation timed out"
-    }
-  ]
+  "problems": []
 }
