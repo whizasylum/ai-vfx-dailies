@@ -1,0 +1,59 @@
+{
+  "verdict": "A quiet day for production-relevant news: no major model or tooling releases, mostly arXiv research chatter and routine VFX-credit press, with two studio breakdowns worth a skim.",
+  "stories": [
+    {
+      "headline": "Framestore details creature and environment VFX for 'Heart of the Beast'",
+      "body": "Framestore has revealed its work on David Ayer's survival thriller Heart of the Beast, starring Brad Pitt. Under VFX supervisor François Dumoulin, the team built photorealistic creatures including a German Shepherd named Odin alongside detailed CG environments. The piece covers creature animation approach and environment pipeline rather than just outcome, giving some technical grounding on how the shots were built.",
+      "why": "Useful reference for creature/animation pipeline decisions on photorealistic animal work.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/heart-of-the-beast-framestore-reveals-its-creature-and-environment-vfx-work",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Weta FX explains rig and animation workaround for 'Resident Evil' creature shots",
+      "body": "Weta FX detailed its 343 shots on the Resident Evil reboot, including the Pedestrian, a creature built from stacked generic rigs after physical gymnast reference tests failed in snow conditions. VFX supervisors Kevin Smith and Jo Davison and animation supervisor Eric Reynolds describe the practical problem-solving behind the creature's locomotion and animation approach.",
+      "why": "Concrete rigging and animation workaround applicable to multi-limb or composite-creature setups.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/vfxworld/w-t-fx-goes-out-29-limbs-create-resident-evil-vfx",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081810-df-07602r-2-1280.jpg?itok=BTF_Mo8S"
+    },
+    {
+      "headline": "Digital Domain's previs/postvis team on 'Spider-Man: Brand New Day'",
+      "body": "Digital Domain's Visualization team spent over a year on previs and postvis for major action sequences in Spider-Man: Brand New Day, including a tank chase. The piece is a studio-supplied breakdown with limited technical detail on tools or pipeline, mostly describing scope and sequences covered.",
+      "why": "Thin on technical substance but shows current scale of previs/postvis commitments at a major facility.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/spider-man-brand-new-day-digital-domain-reveals-its-visualization-work",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 14355,
+    "output_tokens": 802
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

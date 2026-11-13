@@ -8522,10 +8522,46 @@
    "duration_s": 39,
    "published": false,
    "reason_if_low": "under 90s (39s)"
+  },
+  "m7v6vYsphNU": {
+   "title": "My $0 Unreal Engine 5 Game: AI Made the Props. I Built the Level",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/m7v6vYsphNU",
+   "at": "2026-11-13T23:11:31.653412+00:00",
+   "duration_s": 40,
+   "published": false,
+   "reason_if_low": "under 90s (40s)"
+  },
+  "-GtbcOkUtH8": {
+   "title": "\ud83d\udd34Epic AI MegaJam Day 2 - Building a UE5 Game with AI Agents",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=-GtbcOkUtH8",
+   "at": "2026-11-13T23:11:31.775665+00:00",
+   "duration_s": 9575,
+   "published": false,
+   "reason_if_low": "over 40min cap (159min)"
+  },
+  "hR9yfNphtt0": {
+   "title": "I Made My Dream Game With AI: 15 Years Dreaming, 1 Month Building",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/hR9yfNphtt0",
+   "at": "2026-11-13T23:11:31.891935+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "cTHeTWQJ0tg": {
+   "title": "Generate Anything You Imagine | Unlimited Seedance 2.5 for Up to 14 Days",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/cTHeTWQJ0tg",
+   "at": "2026-11-13T23:11:32.620736+00:00",
+   "duration_s": 48,
+   "published": false,
+   "reason_if_low": "under 90s (48s)"
   }
  },
  "quota": {
-  "date": "2026-11-12",
-  "minutes": 100.81666666666666
+  "date": "2026-11-13",
+  "minutes": 113.69999999999999
  }
 }

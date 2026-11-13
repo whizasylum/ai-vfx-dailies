@@ -1,127 +1,4 @@
 {
- "701c1a9dff": {
-  "headline": "Lightricks publishes LTX-2.3/2.5 IC-LoRA tools for clean-plate, decompression and character-consistency video work",
-  "sources": [
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)",
-   "HF Lightricks (LTX)"
-  ],
-  "channel": "r",
-  "terms": [
-   "character-consistency",
-   "clean-plate",
-   "could",
-   "decompression",
-   "directly",
-   "ic-lora",
-   "lightricks",
-   "loras",
-   "ltx-2.3",
-   "open",
-   "prep",
-   "publishes",
-   "restoration",
-   "slot"
-  ],
-  "at": "2026-10-23T20:59:09.474342+00:00"
- },
- "0608dcadb8": {
-  "headline": "Brahma-style face tech aside, Lanterns VFX breakdown shows Accenture Song's practical approach to power effects",
-  "sources": [
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "accenture",
-   "approach",
-   "aside",
-   "brahma-style",
-   "breakdown",
-   "build",
-   "deployable",
-   "effects",
-   "energy-effects",
-   "face",
-   "lanterns",
-   "power",
-   "practical",
-   "reference"
-  ],
-  "at": "2026-10-23T20:59:09.474373+00:00"
- },
- "0410d25203": {
-  "headline": "Territory Group launches Lux Meridian, an 'AI-native' feature and series studio using Adobe Firefly Foundry custom models",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "adobe",
-   "ai-native",
-   "around",
-   "building",
-   "custom",
-   "feature",
-   "firefly",
-   "formally",
-   "foundry",
-   "group",
-   "licensing",
-   "lux",
-   "major",
-   "meridian"
-  ],
-  "at": "2026-10-23T20:59:09.474391+00:00"
- },
- "3813afe13b": {
-  "headline": "Ziva-style muscle simulation plug-in for 3ds Max and Maya opens for testing",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "r",
-  "terms": [
-   "houdini",
-   "max",
-   "maya",
-   "muscle",
-   "opens",
-   "outside",
-   "plug-in",
-   "rare.",
-   "sim",
-   "simulation",
-   "since",
-   "testing",
-   "tooling",
-   "tracking"
-  ],
-  "at": "2026-10-23T20:59:09.474403+00:00"
- },
- "b14e7f0af6": {
-  "headline": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "applicable",
-   "character",
-   "comfyui.",
-   "controlnet",
-   "currently",
-   "directly",
-   "dramas",
-   "ecosystem.",
-   "houdini",
-   "ip-adapter",
-   "layout-preview",
-   "like",
-   "local",
-   "logic"
-  ],
-  "at": "2026-10-23T20:59:09.474423+00:00"
- },
  "ced1214b1c": {
   "headline": "New Local AI Turns Any Video Into Mixamo Animation",
   "sources": [
@@ -1793,5 +1670,77 @@
    "pipelines."
   ],
   "at": "2026-11-12T23:09:30.157089+00:00"
+ },
+ "667d06285d": {
+  "headline": "Framestore details creature and environment VFX for 'Heart of the Beast'",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "animal",
+   "animation",
+   "beast",
+   "creature",
+   "decisions",
+   "details",
+   "environment",
+   "framestore",
+   "heart",
+   "photorealistic",
+   "pipeline",
+   "reference",
+   "useful",
+   "vfx"
+  ],
+  "at": "2026-11-13T23:11:33.719628+00:00"
+ },
+ "78f3919215": {
+  "headline": "Weta FX explains rig and animation workaround for 'Resident Evil' creature shots",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "animation",
+   "applicable",
+   "composite-creature",
+   "concrete",
+   "creature",
+   "evil",
+   "explains",
+   "multi-limb",
+   "resident",
+   "rig",
+   "rigging",
+   "setups.",
+   "shots",
+   "weta"
+  ],
+  "at": "2026-11-13T23:11:33.719656+00:00"
+ },
+ "f18078d3d5": {
+  "headline": "Digital Domain's previs/postvis team on 'Spider-Man: Brand New Day'",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "brand",
+   "commitments",
+   "current",
+   "day",
+   "digital",
+   "domain",
+   "facility.",
+   "major",
+   "postvis",
+   "previs",
+   "scale",
+   "shows",
+   "spider-man",
+   "substance"
+  ],
+  "at": "2026-11-13T23:11:33.719671+00:00"
  }
 }
