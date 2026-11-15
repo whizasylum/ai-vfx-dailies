@@ -1,0 +1,10 @@
+{
+  "verdict": "A thin, low-signal day: mostly SEO listicles, research-paper noise, and obituary/trivia items, with nothing that lands in a pipeline this week.",
+  "stories": [],
+  "usage": {
+    "input_tokens": 5090,
+    "output_tokens": 79
+  },
+  "candidate_count": 21,
+  "editorial_stories": false
+}

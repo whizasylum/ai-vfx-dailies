@@ -8558,10 +8558,73 @@
    "duration_s": 48,
    "published": false,
    "reason_if_low": "under 90s (48s)"
+  },
+  "ddbDyWZkMW8": {
+   "title": "Epic AI MegaJam Final - Finishing and Submitting UE5 Game",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=ddbDyWZkMW8",
+   "at": "2026-11-15T22:28:46.553063+00:00",
+   "duration_s": 3937,
+   "published": false,
+   "reason_if_low": "over 40min cap (65min)"
+  },
+  "23SSHqGVAwo": {
+   "title": "\ud83d\udd34Epic AI MegaJam Final - Finishing and Submitting UE5 Game",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=23SSHqGVAwo",
+   "at": "2026-11-15T22:28:46.759186+00:00",
+   "duration_s": 5076,
+   "published": false,
+   "reason_if_low": "over 40min cap (84min)"
+  },
+  "eVbKtxeKB-Y": {
+   "title": "\ud83d\udd34 Epic AI MegaJam Day 3 - UE5 Game with AI Agents (+ Giveaway)",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/watch?v=eVbKtxeKB-Y",
+   "at": "2026-11-15T22:28:46.829117+00:00",
+   "duration_s": 8290,
+   "published": false,
+   "reason_if_low": "over 40min cap (138min)"
+  },
+  "f_Ix9kN_uho": {
+   "title": "Gemini 4 Carbon vs Fable 5.2: Why Am I Stuck on the Prettier Map?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/f_Ix9kN_uho",
+   "at": "2026-11-15T22:28:46.915940+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "2j80x17sRVQ": {
+   "title": "Gemini 4 Carbon vs Fable 5.2: Why Is My Hero\u2019s Weapon Floating?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/2j80x17sRVQ",
+   "at": "2026-11-15T22:28:47.038168+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "G3Blhpev-Q0": {
+   "title": "Can You Tell Which Shot Is AI? | Seedance 2.5 4K",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/G3Blhpev-Q0",
+   "at": "2026-11-15T22:28:47.150917+00:00",
+   "duration_s": 51,
+   "published": false,
+   "reason_if_low": "under 90s (51s)"
+  },
+  "ECS0rouFyqg": {
+   "title": "Why Shoot 3 Camera Angles When AI Can Make Them From One Clip?",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/ECS0rouFyqg",
+   "at": "2026-11-15T22:28:47.482272+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
   }
  },
  "quota": {
-  "date": "2026-11-13",
-  "minutes": 113.69999999999999
+  "date": "2026-11-15",
+  "minutes": 40.8
  }
 }
