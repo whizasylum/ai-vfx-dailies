@@ -1,0 +1,71 @@
+{
+  "verdict": "Quiet day: no major model or pipeline-tool releases, mostly routine studio-credit roundups and SEO-style vendor blog posts; only a couple of items carry real substance.",
+  "stories": [
+    {
+      "headline": "Manchester Animation Festival bans generative AI entries starting 2027",
+      "body": "The UK's only Oscar- and BAFTA-qualifying animation festival announced it will refuse films made with generative AI from its 2027 edition. This year's winners, including 'In Waves' and 'When the Sea Was Calm', were announced alongside the policy. It is one of the first qualifying festivals to set an explicit gen-AI eligibility rule, a signal other festivals and guilds may follow.",
+      "why": "Festival eligibility rules like this can affect delivery and marketing decisions for AI-assisted work.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/manchester-animation-festival-names-2026-winners-bans-gen-ai-entries",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081828-maf1.jpg?itok=Z_bt56XQ"
+    },
+    {
+      "headline": "Image Engine breaks down creature work for The Mandalorian & Grogu",
+      "body": "Image Engine released a breakdown reel detailing its creature VFX on the Star Wars feature, covering toothy reptilians, a spiny beast, and a tunnel brawler shown progressing from grey model to finished frame. The piece is a vendor-supplied making-of with shot progression detail rather than a tool announcement, but offers concrete creature-pipeline reference for comparable facility work.",
+      "why": "Useful reference for creature-shot pipeline and grey-model-to-final progression on a tentpole show.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/image-engine-unleashes-creatures-mandalorian-grogu",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081831-posterthe-mandalorian-and-grogu-image-engine.jpg?itok=j_Uh2GJK"
+    },
+    {
+      "headline": "Framestore and The Mill detail period-recreation VFX on three features",
+      "body": "Framestore rebuilt turn-of-the-century California for Netflix's 'East of Eden', including a CG house burn, while The Mill delivered 163 invisible VFX shots recreating occupied France for 'The Rays and Shadows' and 35 shots of multiplying CG wild boars for 'Too Many Beasts'. All three are studio-supplied breakdowns with some shot-count and technique detail but no new tooling disclosed.",
+      "why": "Shows current invisible-VFX and environment-recreation workload sizing at two major facilities.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/framestore-recreates-steinbecks-california-east-eden",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/the-rays-and-shadows-les-rayons-et-les-ombres-the-mill-recreates-occupied-france-with-invisible-vfx",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/mill-sets-cg-wild-boars-loose-too-many-beasts",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081827-postereast-eden-framestore.jpg?itok=39W5Lxx8"
+    }
+  ],
+  "usage": {
+    "input_tokens": 12144,
+    "output_tokens": 1060
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

@@ -1,73 +1,4 @@
 {
- "db84f4ff38": {
-  "headline": "LTX publishes technical detail on its VFX production tools",
-  "sources": [
-   "Lightricks / LTX"
-  ],
-  "channel": "r",
-  "terms": [
-   "affect",
-   "ai-assisted",
-   "clients",
-   "could",
-   "detail",
-   "ltx",
-   "offered",
-   "option.",
-   "production",
-   "publishes",
-   "restyle",
-   "roto",
-   "technical",
-   "vfx"
-  ],
-  "at": "2026-10-26T22:22:10.416444+00:00"
- },
- "753bcbeffc": {
-  "headline": "CG Channel rounds up new tools including a real-time AI renderer",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "alone",
-   "channel",
-   "deployable",
-   "doesn",
-   "including",
-   "justify",
-   "may",
-   "more.",
-   "quick",
-   "real-time",
-   "renderer",
-   "rounds",
-   "scan",
-   "summary"
-  ],
-  "at": "2026-10-26T22:22:10.416470+00:00"
- },
- "c7778b2c8d": {
-  "headline": "Adobe ships Substance 3D Painter 12.2",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "adobe",
-   "annoyance.",
-   "check",
-   "direct",
-   "effort",
-   "fixes",
-   "known",
-   "low",
-   "painter",
-   "pipeline",
-   "substance"
-  ],
-  "at": "2026-10-26T22:22:10.416482+00:00"
- },
  "5ef94984dc": {
   "headline": "DeepMind releases Genie 4, a real-time interactive world model",
   "sources": [
@@ -1622,5 +1553,79 @@
    "substance"
   ],
   "at": "2026-11-13T23:11:33.719671+00:00"
+ },
+ "6cb0290473": {
+  "headline": "Manchester Animation Festival bans generative AI entries starting 2027",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "affect",
+   "ai-assisted",
+   "animation",
+   "bans",
+   "decisions",
+   "delivery",
+   "eligibility",
+   "entries",
+   "festival",
+   "generative",
+   "like",
+   "manchester",
+   "marketing",
+   "rules"
+  ],
+  "at": "2026-11-17T01:30:21.859668+00:00"
+ },
+ "575ad52410": {
+  "headline": "Image Engine breaks down creature work for The Mandalorian & Grogu",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "breaks",
+   "creature",
+   "creature-shot",
+   "down",
+   "engine",
+   "grey-model-to-final",
+   "grogu",
+   "image",
+   "mandalorian",
+   "pipeline",
+   "progression",
+   "reference",
+   "show.",
+   "tentpole"
+  ],
+  "at": "2026-11-17T01:30:21.859694+00:00"
+ },
+ "dd7b3b530b": {
+  "headline": "Framestore and The Mill detail period-recreation VFX on three features",
+  "sources": [
+   "Animation World Network",
+   "Art of VFX",
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "current",
+   "detail",
+   "environment-recreation",
+   "facilities.",
+   "features",
+   "framestore",
+   "invisible-vfx",
+   "major",
+   "mill",
+   "period-recreation",
+   "shows",
+   "sizing",
+   "three",
+   "two"
+  ],
+  "at": "2026-11-17T01:30:21.859704+00:00"
  }
 }
