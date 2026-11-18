@@ -1,100 +1,4 @@
 {
- "5ef94984dc": {
-  "headline": "DeepMind releases Genie 4, a real-time interactive world model",
-  "sources": [
-   "Google DeepMind"
-  ],
-  "channel": "g",
-  "terms": [
-   "could",
-   "deepmind",
-   "eventually",
-   "feed",
-   "genie",
-   "interactive",
-   "once",
-   "pipelines",
-   "previs",
-   "production",
-   "productized.",
-   "real-time",
-   "virtual",
-   "world"
-  ],
-  "at": "2026-10-27T21:55:12.025666+00:00"
- },
- "ae54b28607": {
-  "headline": "French animation and VFX union calls two-hour walkout over AI and pay",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "action",
-   "animation",
-   "calls",
-   "client",
-   "contractually",
-   "coordinated",
-   "could",
-   "french",
-   "generative",
-   "labour",
-   "over",
-   "pay",
-   "permitted",
-   "shape"
-  ],
-  "at": "2026-10-27T21:55:12.025694+00:00"
- },
- "168226f855": {
-  "headline": "ComfyUI v0.43.0 ships with partner-node upscaler and voice-clone integrations",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "additions",
-   "comfyui",
-   "could",
-   "deploy",
-   "direct",
-   "existing",
-   "immediately",
-   "inside",
-   "integrations",
-   "node-level",
-   "partner-node",
-   "pipeline.",
-   "studio",
-   "upscaler"
-  ],
-  "at": "2026-10-27T21:55:12.025705+00:00"
- },
- "28cd6e1589": {
-  "headline": "Material Maker 1.8 adds trim sheet export for games",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "alternative",
-   "boutique",
-   "costs.",
-   "export",
-   "free",
-   "games",
-   "improving",
-   "licensing",
-   "maker",
-   "material",
-   "matters",
-   "sheet",
-   "studios",
-   "substance"
-  ],
-  "at": "2026-10-27T21:55:12.025715+00:00"
- },
  "09d497f9e9": {
   "headline": "Nuke 18.0 open beta adds Griptape bridge for AI workflows in the node graph",
   "sources": [
@@ -1627,5 +1531,77 @@
    "two"
   ],
   "at": "2026-11-17T01:30:21.859704+00:00"
+ },
+ "9b82549de0": {
+  "headline": "MiniMax-H3 Turbo gets a dedicated ComfyUI LoRA node",
+  "sources": [
+   "HF text-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "already-adopted",
+   "comfyui",
+   "dedicated",
+   "deployable",
+   "extends",
+   "lora",
+   "minimax-h3",
+   "node",
+   "open",
+   "option",
+   "pipelines.",
+   "speed",
+   "studio",
+   "turbo"
+  ],
+  "at": "2026-11-18T00:29:13.274846+00:00"
+ },
+ "5b17a4f29a": {
+  "headline": "Framestore details year-long virtual production build for Project Hail Mary",
+  "sources": [
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "account",
+   "build",
+   "concrete",
+   "details",
+   "end",
+   "end.",
+   "engagement",
+   "facility",
+   "framestore",
+   "hail",
+   "major",
+   "mary",
+   "production",
+   "project"
+  ],
+  "at": "2026-11-18T00:29:13.274870+00:00"
+ },
+ "f97690af8f": {
+  "headline": "Proof's London studio details Coyote vs. Acme postvis workflow",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "acme",
+   "animation",
+   "coyote",
+   "data",
+   "details",
+   "gives",
+   "hybrid",
+   "live-action",
+   "london",
+   "point",
+   "postvis",
+   "proof",
+   "rare",
+   "shot"
+  ],
+  "at": "2026-11-18T00:29:13.274881+00:00"
  }
 }

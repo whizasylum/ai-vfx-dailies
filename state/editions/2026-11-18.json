@@ -1,0 +1,59 @@
+{
+  "verdict": "A quiet day: one small but real ComfyUI tool update for MiniMax-H3, two solid studio virtual-production/VFX breakdowns, and otherwise mostly research-paper noise and entertainment trade news with nothing to act on.",
+  "stories": [
+    {
+      "headline": "MiniMax-H3 Turbo gets a dedicated ComfyUI LoRA node",
+      "body": "A Hugging Face repo packages a MiniMax-H3-Turbo LoRA as a ComfyUI-ready node under Apache-2.0 licence. It builds on the existing MiniMax-H3 text-to-video pipeline the reader already tracks, adding a turbo/speed variant that studios could drop into existing ComfyUI workflows. Low download count so far and no independent benchmarks; treat as early and unverified until someone reports real VRAM numbers and output quality.",
+      "why": "Extends an already-adopted open video model with a deployable speed option for studio ComfyUI pipelines.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/QrusherZA/H3_Turbo_ComfyUI",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Framestore details year-long virtual production build for Project Hail Mary",
+      "body": "Framestore describes how a six-week visualisation assignment on Project Hail Mary grew into a year-long virtual production collaboration at Shepperton, including immersive virtual environments and camera technology integrated directly with the live shoot. The piece is vendor-sourced but goes into the actual production workflow rather than marketing language, covering how the team worked alongside directors Lord and Miller.",
+      "why": "Concrete account of how a major facility scopes and scales a VP engagement end to end.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/how-framestore-used-virtual-production-for-project-hail-mary",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Proof's London studio details Coyote vs. Acme postvis workflow",
+      "body": "Proof's London team spent seven weeks producing 92 postvis ('Sketch-Vis') shots across five sequences for the Looney Tunes live-action/hybrid feature Coyote vs. Acme. The studio also opened a New York office, with Ari Aster's next film as its first project. Technical detail is thin but the shot-count and timeline figures are specific and primary-sourced.",
+      "why": "Gives a rare data point on postvis shot throughput and turnaround for hybrid live-action/animation work.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/proof-shares-coyote-vs-acme-postvis-reel",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081835-coyotevsacmepostvisstill015-1280.jpg?itok=WClkGzez"
+    }
+  ],
+  "usage": {
+    "input_tokens": 13856,
+    "output_tokens": 974
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

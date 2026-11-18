@@ -8621,10 +8621,37 @@
    "duration_s": 33,
    "published": false,
    "reason_if_low": "under 90s (33s)"
+  },
+  "6e7ly85bZB8": {
+   "title": "I Didn't Leave My Room for Any of These Shots",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/6e7ly85bZB8",
+   "at": "2026-11-18T00:29:11.818140+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "fFYIn6rG3GM": {
+   "title": "Why This AI Creature Looks Like a Movie Shot",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/fFYIn6rG3GM",
+   "at": "2026-11-18T00:29:11.908378+00:00",
+   "duration_s": 41,
+   "published": false,
+   "reason_if_low": "under 90s (41s)"
+  },
+  "7cJc-WLXV2w": {
+   "title": "Don't Miss the $1,000,000 Higgsfield Talent Contest",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/7cJc-WLXV2w",
+   "at": "2026-11-18T00:29:12.196199+00:00",
+   "duration_s": 69,
+   "published": false,
+   "reason_if_low": "under 90s (69s)"
   }
  },
  "quota": {
-  "date": "2026-11-17",
-  "minutes": 33.900000000000006
+  "date": "2026-11-18",
+  "minutes": 22.03333333333333
  }
 }
