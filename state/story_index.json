@@ -1,196 +1,4 @@
 {
- "09d497f9e9": {
-  "headline": "Nuke 18.0 open beta adds Griptape bridge for AI workflows in the node graph",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "already",
-   "beta",
-   "bridge",
-   "compositing",
-   "direct",
-   "graph",
-   "griptape",
-   "inside",
-   "integration",
-   "node",
-   "nuke",
-   "open",
-   "pipeline",
-   "point"
-  ],
-  "at": "2026-10-28T22:12:55.636779+00:00"
- },
- "389e7fe789": {
-  "headline": "GraftRay inserts physically lit, shadow-casting objects into Gaussian splat scenes",
-  "sources": [
-   "arXiv cs.CV (generative video)"
-  ],
-  "channel": "g",
-  "terms": [
-   "compositing",
-   "gaussian",
-   "graftray",
-   "inserts",
-   "lit",
-   "missing",
-   "objects",
-   "physically",
-   "piece",
-   "plates.",
-   "points",
-   "real",
-   "scans",
-   "scenes"
-  ],
-  "at": "2026-10-28T22:12:55.636807+00:00"
- },
- "939bafda6c": {
-  "headline": "ILM details 700-shot creature and environment work for 'The End of Oak Street'",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "account",
-   "concrete",
-   "creature",
-   "details",
-   "end",
-   "environment",
-   "facility.",
-   "ilm",
-   "iteration",
-   "major",
-   "oak",
-   "pipeline",
-   "rating-driven",
-   "shot"
-  ],
-  "at": "2026-10-28T22:12:55.636822+00:00"
- },
- "c66d1bea7b": {
-  "headline": "Deepseek's New AI Has A Secret",
-  "sources": [
-   "Two Minute Papers"
-  ],
-  "channel": "g",
-  "terms": [
-   "ability",
-   "assembly",
-   "assistant",
-   "automated",
-   "automation",
-   "based",
-   "city",
-   "coding",
-   "complex",
-   "could",
-   "deepseek",
-   "descriptions.",
-   "example",
-   "forbidden"
-  ],
-  "at": "2026-10-28T22:12:55.636850+00:00"
- },
- "98e8446047": {
-  "headline": "One AI Model to RULE THEM ALL (FREE & LOCAL)",
-  "sources": [
-   "Mickmumpitz"
-  ],
-  "channel": "a",
-  "terms": [
-   "ai-generated",
-   "anime",
-   "assets.",
-   "between",
-   "bridges",
-   "comfyui",
-   "could",
-   "export",
-   "final",
-   "frames.",
-   "free",
-   "gap",
-   "high-fidelity",
-   "houdini"
-  ],
-  "at": "2026-10-28T22:12:55.636871+00:00"
- },
- "5616e6633a": {
-  "headline": "I Made UE 5 Game Using Only Free AI in 4 Days",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "adapted",
-   "agents",
-   "author",
-   "automate",
-   "between",
-   "bridge",
-   "could",
-   "days",
-   "dcc.",
-   "demonstrated",
-   "direct",
-   "free",
-   "game",
-   "hapi."
-  ],
-  "at": "2026-10-28T22:12:55.636889+00:00"
- },
- "2ce2cb9bfc": {
-  "headline": "Higgsfield Selected Is Here - MADSEASON",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "b",
-  "terms": [
-   "character-driven",
-   "currently",
-   "final-output",
-   "generative",
-   "higgsfield",
-   "insight",
-   "integration.",
-   "madseason",
-   "pipeline",
-   "plates",
-   "produce",
-   "provides",
-   "quality",
-   "rather"
-  ],
-  "at": "2026-10-28T22:12:55.636905+00:00"
- },
- "fbec7dad39": {
-  "headline": "Gemini Skills: Full Tutorial for Beginners + Free Skills",
-  "sources": [
-   "AI2Play (pixaroma)"
-  ],
-  "channel": "a",
-  "terms": [
-   "applicable",
-   "automated",
-   "beginners",
-   "building",
-   "clear",
-   "concepting.",
-   "consumer",
-   "descriptions",
-   "directly",
-   "easy",
-   "format",
-   "framework",
-   "free",
-   "full"
-  ],
-  "at": "2026-10-28T22:12:55.636926+00:00"
- },
  "1ff76b7aae": {
   "headline": "MiniMax-H3 LoRA and distilled variants proliferate on Hugging Face",
   "sources": [
@@ -1603,5 +1411,123 @@
    "shot"
   ],
   "at": "2026-11-18T00:29:13.274881+00:00"
+ },
+ "585d922524": {
+  "headline": "ComfyUI 0.46.0 adds partner nodes for LTX and MiniMax H3",
+  "sources": [
+   "ComfyUI"
+  ],
+  "channel": "r",
+  "terms": [
+   "comfyui",
+   "drop",
+   "existing",
+   "ltx",
+   "minimax",
+   "nodes",
+   "partner",
+   "pipeline",
+   "production-ready",
+   "studio",
+   "today."
+  ],
+  "at": "2026-11-18T23:53:14.798849+00:00"
+ },
+ "63dcf4d33d": {
+  "headline": "Autodesk adds agentic AI assistant and MCP servers to Maya and 3ds Max",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "r",
+  "terms": [
+   "access",
+   "agent",
+   "agentic",
+   "assistant",
+   "autodesk",
+   "automation",
+   "inside",
+   "max",
+   "max.",
+   "maya",
+   "mcp",
+   "servers",
+   "task",
+   "third-party"
+  ],
+  "at": "2026-11-18T23:53:14.798882+00:00"
+ },
+ "6f06a2856d": {
+  "headline": "Apple releases FastFrames-L text-to-video model, built on Wan 2.1",
+  "sources": [
+   "HF text-to-video",
+   "arXiv cs.CV (generative video)"
+  ],
+  "channel": "r",
+  "terms": [
+   "apple",
+   "built",
+   "commercial",
+   "fast",
+   "fastframes-l",
+   "latency-sensitive",
+   "licence",
+   "named",
+   "pipelines",
+   "restricts",
+   "shipping",
+   "text-to-video",
+   "tracking",
+   "use."
+  ],
+  "at": "2026-11-18T23:53:14.798907+00:00"
+ },
+ "cbebcb0e4f": {
+  "headline": "Envato survey: most creatives use AI on client work without disclosure, few have policies",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "address",
+   "client",
+   "contractual",
+   "creatives",
+   "deliverables",
+   "disclosure",
+   "envato",
+   "exposure",
+   "few",
+   "legal",
+   "most",
+   "now.",
+   "policies",
+   "should"
+  ],
+  "at": "2026-11-18T23:53:14.798927+00:00"
+ },
+ "5b64aa9331": {
+  "headline": "DNEG building stereo 3D conversions for Meta's cinema-grade VR glasses",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "building",
+   "cinema-grade",
+   "committing",
+   "conversion",
+   "conversions",
+   "delivery",
+   "dneg",
+   "facility",
+   "format",
+   "glasses",
+   "heading.",
+   "major",
+   "meta",
+   "pipeline"
+  ],
+  "at": "2026-11-18T23:53:14.798945+00:00"
  }
 }

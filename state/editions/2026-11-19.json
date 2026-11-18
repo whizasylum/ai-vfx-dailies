@@ -1,0 +1,97 @@
+{
+  "verdict": "A quiet day for genuine production news: a handful of ComfyUI/tooling updates and a Maya/3ds Max agentic AI rollout matter, but most of the arXiv pile and generic VFX showreels are noise.",
+  "stories": [
+    {
+      "headline": "ComfyUI 0.46.0 adds partner nodes for LTX and MiniMax H3",
+      "body": "ComfyUI's latest release adds official partner nodes: LTX gets AlphaGen, SDR-to-HDR, Reframe and Upscale nodes, and MiniMax gets an H3 Image node. Wan nodes were also reorganized. This is a direct, deployable addition to a studio ComfyUI pipeline rather than a research demo, shipped by the Comfy-Org team itself.",
+      "why": "New production-ready nodes a studio can drop into an existing ComfyUI pipeline today.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Autodesk adds agentic AI assistant and MCP servers to Maya and 3ds Max",
+      "body": "Autodesk Assistant can now run tasks like scene checks and UV mapping inside Maya and 3ds Max, gated by an explicit 'Allow' step before any script executes. New MCP servers let artists connect third-party AI agents to the DCCs. Arnold's DLSS-powered viewport has also shipped. This is a vendor feature landing directly in two production DCCs.",
+      "why": "Agentic task automation and third-party agent access now ship inside Maya and 3ds Max.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/autodesk-adds-agentic-ai-and-mcp-servers-maya-and-3ds-max",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081848-3dsmax-assistant-shirzad-still-2-1280.jpg?itok=9qFNSeGZ"
+    },
+    {
+      "headline": "Apple releases FastFrames-L text-to-video model, built on Wan 2.1",
+      "body": "Apple published FastFrames-L on Hugging Face, a text-to-video model based on Wan-AI's Wan2.1-T2V-14B, under Apple's own AMLR licence rather than a fully open licence. It accompanies an arXiv paper on fast autoregressive video diffusion that cuts VAE decoding and KV-cache overhead to approach interactive latency. No download numbers yet; licence terms need checking before any commercial use.\n",
+      "why": "A named vendor shipping a fast, Wan-based video model is worth tracking for latency-sensitive pipelines, but licence restricts commercial use.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF text-to-video",
+          "url": "https://huggingface.co/apple/FastFrames-L",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "arXiv cs.CV (generative video)",
+          "url": "https://arxiv.org/abs/2611.23226v1",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Envato survey: most creatives use AI on client work without disclosure, few have policies",
+      "body": "Envato's second annual AI report surveyed 1,033 creatives: 58% use AI daily, and 53% of those have used it on client work without telling the client. Most team-based creatives report no written AI policy at their studio. This is a usage/governance data point rather than a product announcement, but it quantifies a risk area for studios doing client-facing work.",
+      "why": "Undisclosed AI use on client deliverables is a contractual and legal exposure studios should address now.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/envatos-2nd-annual-ai-report-finds-adoption-has-outrun-rules",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081855-envato1.jpg?itok=KVJPxbIJ"
+    },
+    {
+      "headline": "DNEG building stereo 3D conversions for Meta's cinema-grade VR glasses",
+      "body": "DNEG, the stereo team behind Gravity and Mission: Impossible - Fallout, is converting its film catalog to 3D for Meta's upcoming 5K micro-OLED glasses, starting with The Hunger Games: Sunrise on the Reaping, ahead of a spring 2027 launch. This is a concrete pipeline commitment from a major facility to a new display format, not a marketing teaser.",
+      "why": "A major facility committing pipeline resources to a new stereo delivery format signals where conversion work is heading.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/dneg-converting-film-catalog-3d-meta-vr-glasses",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081853-solstice-final-trailer-grab-00001rc-1280.jpg?itok=yzEitdlK"
+    }
+  ],
+  "usage": {
+    "input_tokens": 14372,
+    "output_tokens": 1370
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

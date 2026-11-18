@@ -8648,10 +8648,46 @@
    "duration_s": 69,
    "published": false,
    "reason_if_low": "under 90s (69s)"
+  },
+  "r73B3JU2xBc": {
+   "title": "Vellum201 - Ep11: Custom Constraints",
+   "channel": "Entagma",
+   "url": "https://www.youtube.com/shorts/r73B3JU2xBc",
+   "at": "2026-11-18T23:53:13.292966+00:00",
+   "duration_s": 15,
+   "published": false,
+   "reason_if_low": "under 90s (15s)"
+  },
+  "iPZlaTa4UWo": {
+   "title": "Why the War Rhino Looks Like It Survived a Battle",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/iPZlaTa4UWo",
+   "at": "2026-11-18T23:53:13.637678+00:00",
+   "duration_s": 39,
+   "published": false,
+   "reason_if_low": "under 90s (39s)"
+  },
+  "6TZn1dSR3dg": {
+   "title": "How I Pick the Best AI Take Before Going 4K",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/6TZn1dSR3dg",
+   "at": "2026-11-18T23:53:13.745639+00:00",
+   "duration_s": 44,
+   "published": false,
+   "reason_if_low": "under 90s (44s)"
+  },
+  "o9zVslma8zg": {
+   "title": "Get Curious, Get It Wrong, Get Better",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/o9zVslma8zg",
+   "at": "2026-11-18T23:53:13.825375+00:00",
+   "duration_s": 69,
+   "published": false,
+   "reason_if_low": "under 90s (69s)"
   }
  },
  "quota": {
   "date": "2026-11-18",
-  "minutes": 22.03333333333333
+  "minutes": 58.6
  }
 }
