@@ -8765,10 +8765,28 @@
    "duration_s": 38,
    "published": false,
    "reason_if_low": "under 90s (38s)"
+  },
+  "jJhfBevWZdE": {
+   "title": "Emotions We Carry | Higgsfield",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/jJhfBevWZdE",
+   "at": "2026-11-20T23:40:18.609615+00:00",
+   "duration_s": 70,
+   "published": false,
+   "reason_if_low": "under 90s (70s)"
+  },
+  "kWiL-rGekoc": {
+   "title": "Introducing Higgsfield MCP 2.0 for Claude",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/kWiL-rGekoc",
+   "at": "2026-11-20T23:40:18.670770+00:00",
+   "duration_s": 85,
+   "published": false,
+   "reason_if_low": "under 90s (85s)"
   }
  },
  "quota": {
   "date": "2026-11-20",
-  "minutes": 64.53333333333333
+  "minutes": 95.98333333333333
  }
 }

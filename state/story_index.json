@@ -1,119 +1,4 @@
 {
- "a8edc741da": {
-  "headline": "Foundry brings Nuke Stage to macOS, early access in 2027",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "access",
-   "changes",
-   "comp",
-   "early",
-   "foundry",
-   "hardware",
-   "macos",
-   "nuke",
-   "stage",
-   "standardize",
-   "studios",
-   "workstations."
-  ],
-  "at": "2026-10-30T22:03:13.877632+00:00"
- },
- "929ef2bf1b": {
-  "headline": "HairDeck generates animation-ready stylized hair cards from a single image",
-  "sources": [
-   "Hugging Face daily papers"
-  ],
-  "channel": "g",
-  "terms": [
-   "animation-ready",
-   "cards",
-   "character",
-   "direct",
-   "game",
-   "generates",
-   "hair",
-   "hairdeck",
-   "hit",
-   "image",
-   "pipelines",
-   "real-time",
-   "single",
-   "stylized"
-  ],
-  "at": "2026-10-30T22:03:13.877664+00:00"
- },
- "6fe9ce29a1": {
-  "headline": "SAG-AFTRA ratifies TV animation contracts with AI protections and wage gains",
-  "sources": [
-   "Animation World Network"
-  ],
-  "channel": "b",
-  "terms": [
-   "affect",
-   "animated",
-   "animation",
-   "compensation",
-   "contracts",
-   "deliverables",
-   "gains",
-   "protections",
-   "ratifies",
-   "sag-aftra",
-   "sets",
-   "terms",
-   "usage",
-   "wage"
-  ],
-  "at": "2026-10-30T22:03:13.877678+00:00"
- },
- "5f307a4c3b": {
-  "headline": "Packer-IO 1.5 speeds up UV packing and ships a free Blender plugin",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "blender",
-   "drops",
-   "existing",
-   "faster",
-   "free",
-   "packer-io",
-   "packing",
-   "pipelines.",
-   "plugin",
-   "speeds",
-   "straight"
-  ],
-  "at": "2026-10-30T22:03:13.877690+00:00"
- },
- "09e778e486": {
-  "headline": "I Spent 72 Hours Making This AI Commercial With Seedance 2.5 (Every Prompt I Used)",
-  "sources": [
-   "Higgsfield AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "ai-generated",
-   "any",
-   "automatically",
-   "based",
-   "claude",
-   "commercial",
-   "constraints",
-   "could",
-   "descriptions.",
-   "directing",
-   "every",
-   "generative",
-   "higgsfield",
-   "highly"
-  ],
-  "at": "2026-10-30T22:03:13.877713+00:00"
- },
  "6b3998accd": {
   "headline": "Boris FX ships Continuum 2027 with new 3D noise generator and titling tool",
   "sources": [
@@ -1510,5 +1395,54 @@
    "pipeline"
   ],
   "at": "2026-11-20T00:14:28.077392+00:00"
+ },
+ "1ca38f78dd": {
+  "headline": "Academy Software Foundation names Andrew Pearce as new Executive Director",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "academy",
+   "andrew",
+   "aswf",
+   "backbone",
+   "director",
+   "executive",
+   "foundation",
+   "governs",
+   "houdini",
+   "materialx",
+   "names",
+   "ocio",
+   "open-source",
+   "openvdb"
+  ],
+  "at": "2026-11-20T23:40:19.815522+00:00"
+ },
+ "295d12a242": {
+  "headline": "CoSA VFX breaks down Backrooms Threshold Chamber, built from creator's original Blender file",
+  "sources": [
+   "CG Channel",
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "backrooms",
+   "big-vfx",
+   "blender",
+   "breaks",
+   "built",
+   "chamber",
+   "cosa",
+   "creator",
+   "down",
+   "example",
+   "file",
+   "handoffs.",
+   "indie-asset-to-studio-pipeline",
+   "original"
+  ],
+  "at": "2026-11-20T23:40:19.815555+00:00"
  }
 }

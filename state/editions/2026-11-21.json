@@ -1,0 +1,49 @@
+{
+  "verdict": "A quiet day: mostly incremental research papers and routine studio news, with one notable org-leadership change and a couple of VFX breakdowns worth a glance.",
+  "stories": [
+    {
+      "headline": "Academy Software Foundation names Andrew Pearce as new Executive Director",
+      "body": "Andrew Pearce, former DreamWorks Animation technology chief and a founding board member who led the studio's OpenVDB contribution, takes over the Academy Software Foundation on January 1, 2027, succeeding David Morin. ASWF stewards OpenVDB, USD, MaterialX, OpenColorIO and other pipeline-critical open source projects, so leadership here affects roadmap direction for tools this reader depends on daily.",
+      "why": "ASWF governs OpenVDB, USD, MaterialX and OCIO, the open-source backbone of a Houdini/USD pipeline.",
+      "channel": "b",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/andrew-pearce-named-academy-software-foundation-executive-director",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081885-andrew-pearce-1-1280.jpg?itok=DjW-RyJl"
+    },
+    {
+      "headline": "CoSA VFX breaks down Backrooms Threshold Chamber, built from creator's original Blender file",
+      "body": "CoSA VFX, Roxel Creative and Mr Wolf detail CG environment work for the Backrooms film. The Threshold Chamber set was recreated directly from a Blender file that creator Kane Parsons made at age 16 for his original YouTube series, giving a concrete case of fan-asset-to-studio-pipeline continuity rather than a rebuild from scratch.",
+      "why": "A real example of indie-asset-to-studio-pipeline workflow, useful reference for small-studio to big-VFX handoffs.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/watch-vfx-breakdowns-for-backrooms-in-one-place",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/backrooms-cosa-vfx-reveals-the-visual-effects-behind-the-threshold-chamber",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 15815,
+    "output_tokens": 676
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}
