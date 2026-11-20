@@ -1,0 +1,95 @@
+{
+  "verdict": "A quiet day dominated by arXiv research noise and press-junket VFX breakdowns; the only real pipeline news is Autodesk's Maya/3ds Max 2027.3 update.",
+  "stories": [
+    {
+      "headline": "Autodesk ships Maya and 3ds Max 2027.3 with MCP servers and Arnold viewport updates",
+      "body": "Autodesk released Maya 2027.3 and 3ds Max 2027.3, adding an expanded Autodesk Assistant, new Model Context Protocol (MCP) servers for connecting external AI agents to the software, an updated Arnold viewport, and support for importing 4D Gaussian Splats in 3ds Max. The MCP servers extend to Flow Capture and Flow Production Tracking. Vendor-supplied details, availability confirmed through standard Autodesk release channels.",
+      "why": "MCP support means studios can wire external AI agents directly into Maya/Max scene graphs now.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/autodesk-releases-maya-2027-3-with-new-agentic-ai-features",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/autodesk-releases-3ds-max-2027-3",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/autodesk-adds-ai-assistant-mcp-servers-and-arnold-viewport-updates",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "FLUX.2-klein-9B quietly becomes the most-downloaded Black Forest Labs model on Hugging Face",
+      "body": "Black Forest Labs' FLUX.2-klein-9B, an image-to-image/editing model, has passed 106,000 downloads and 1,861 likes on Hugging Face, far outpacing sibling releases like FLUX.1-Redux-dev and FLUX.1-Canny-dev-onnx. Licence is the standard gated BFL 'other' licence requiring acceptance of terms before download. No new technical capability is announced here, just adoption signal for a 9B-parameter image model that's diffusers-compatible.\n      ",
+      "why": "Worth knowing which FLUX variant has pipeline traction if building ComfyUI image-editing workflows.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-9B",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/FLUX.1-Canny-dev-onnx",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Black Forest Labs",
+          "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Digital Domain and EDI publish VFX breakdowns for Spielberg's Disclosure Day and creature feature Ferine",
+      "body": "Digital Domain released a behind-the-scenes video on Disclosure Day covering crop-circle and vehicle-collision sequences with VFX supervisor Matthew Butler. Separately, EDI Effetti Digitali Italiani detailed its digital panther creature work for Ferine. Both are standard studio promotional breakdowns with no disclosed tooling, pipeline, or technical specifics beyond artist commentary.",
+      "why": "Context only, no reusable technique or tool disclosed for pipeline decisions.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/disclosure-day-digital-domain-explores-the-visual-effects-behind-steven-spielbergs-film",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "Art of VFX",
+          "url": "https://www.artofvfx.com/ferine-edi-effetti-digitali-italiani-reveals-more-about-its-digital-panther",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 14414,
+    "output_tokens": 980
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

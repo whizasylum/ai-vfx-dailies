@@ -1,101 +1,4 @@
 {
- "1ff76b7aae": {
-  "headline": "MiniMax-H3 LoRA and distilled variants proliferate on Hugging Face",
-  "sources": [
-   "HF text-to-video",
-   "HF image-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "around",
-   "comfyui-compatible",
-   "distilled",
-   "ecosystem",
-   "face",
-   "growing",
-   "hugging",
-   "locally",
-   "lora",
-   "minimax-h3",
-   "proliferate",
-   "restyle",
-   "runnable",
-   "testing"
-  ],
-  "at": "2026-10-29T22:26:02.015717+00:00"
- },
- "04f14de171": {
-  "headline": "Autodesk ships Arnold 7.5.4 with new Imager shader and pause/resume renders",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "arnold",
-   "autodesk",
-   "compositing",
-   "effects",
-   "imager",
-   "imager-based",
-   "improvements.",
-   "pause",
-   "post",
-   "practical",
-   "render-farm",
-   "renders",
-   "resume",
-   "shader"
-  ],
-  "at": "2026-10-29T22:26:02.015744+00:00"
- },
- "51dfaa161c": {
-  "headline": "Blender gets MetaWrap, an add-on converting sculpts and scans into MetaHumans",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "add-on",
-   "another",
-   "arbitrary",
-   "blender",
-   "converting",
-   "crossover",
-   "game",
-   "geometry",
-   "metahuman",
-   "metahumans",
-   "metawrap",
-   "pipelines",
-   "real-time",
-   "route"
-  ],
-  "at": "2026-10-29T22:26:02.015760+00:00"
- },
- "c23cf41c37": {
-  "headline": "Animate ANY 3D Character From Just a Video (Free & Open Source)",
-  "sources": [
-   "PixelArtistry"
-  ],
-  "channel": "r",
-  "terms": [
-   "allows",
-   "animate",
-   "any",
-   "automated",
-   "batch",
-   "bvh",
-   "character",
-   "clips.",
-   "converted",
-   "easily",
-   "files",
-   "formats",
-   "free",
-   "glb"
-  ],
-  "at": "2026-10-29T22:26:02.015785+00:00"
- },
  "a8edc741da": {
   "headline": "Foundry brings Nuke Stage to macOS, early access in 2027",
   "sources": [
@@ -1529,5 +1432,83 @@
    "pipeline"
   ],
   "at": "2026-11-18T23:53:14.798945+00:00"
+ },
+ "766bf14138": {
+  "headline": "Autodesk ships Maya and 3ds Max 2027.3 with MCP servers and Arnold viewport updates",
+  "sources": [
+   "CG Channel",
+   "CG Channel",
+   "postPerspective"
+  ],
+  "channel": "r",
+  "terms": [
+   "agents",
+   "arnold",
+   "autodesk",
+   "directly",
+   "external",
+   "graphs",
+   "max",
+   "maya",
+   "mcp",
+   "means",
+   "now.",
+   "scene",
+   "servers",
+   "studios"
+  ],
+  "at": "2026-11-20T00:14:28.077359+00:00"
+ },
+ "19678e4a42": {
+  "headline": "FLUX.2-klein-9B quietly becomes the most-downloaded Black Forest Labs model on Hugging Face",
+  "sources": [
+   "HF Black Forest Labs",
+   "HF Black Forest Labs",
+   "HF Black Forest Labs",
+   "HF Black Forest Labs"
+  ],
+  "channel": "r",
+  "terms": [
+   "becomes",
+   "black",
+   "building",
+   "comfyui",
+   "face",
+   "flux",
+   "flux.2-klein-9b",
+   "forest",
+   "hugging",
+   "image-editing",
+   "knowing",
+   "labs",
+   "most-downloaded",
+   "pipeline"
+  ],
+  "at": "2026-11-20T00:14:28.077381+00:00"
+ },
+ "da6c6ed98e": {
+  "headline": "Digital Domain and EDI publish VFX breakdowns for Spielberg's Disclosure Day and creature feature Ferine",
+  "sources": [
+   "Art of VFX",
+   "Art of VFX"
+  ],
+  "channel": "b",
+  "terms": [
+   "breakdowns",
+   "context",
+   "creature",
+   "day",
+   "decisions.",
+   "digital",
+   "disclosed",
+   "disclosure",
+   "domain",
+   "edi",
+   "feature",
+   "ferine",
+   "only",
+   "pipeline"
+  ],
+  "at": "2026-11-20T00:14:28.077392+00:00"
  }
 }
