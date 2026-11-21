@@ -1,75 +1,4 @@
 {
- "6b3998accd": {
-  "headline": "Boris FX ships Continuum 2027 with new 3D noise generator and titling tool",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "boris",
-   "compositing",
-   "continuum",
-   "direct",
-   "editorial",
-   "generator",
-   "inside",
-   "noise",
-   "nuke",
-   "pipelines",
-   "plugin",
-   "titling",
-   "tools."
-  ],
-  "at": "2026-10-31T20:58:46.107921+00:00"
- },
- "594956ba6b": {
-  "headline": "Foundry adds macOS support and education licensing to Nuke Stage",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "b",
-  "terms": [
-   "access",
-   "artists",
-   "availability",
-   "concrete",
-   "education",
-   "foundry",
-   "licensing",
-   "mac-based",
-   "macos",
-   "nuke",
-   "stage",
-   "students",
-   "support",
-   "widens"
-  ],
-  "at": "2026-10-31T20:58:46.107952+00:00"
- },
- "68f8661501": {
-  "headline": "The NEW Lighting Workflow Changing Filmmaking (Full AI Tutorial)",
-  "sources": [
-   "Curious Refuge"
-  ],
-  "channel": "a",
-  "terms": [
-   "acts",
-   "adding",
-   "changing",
-   "comp-heavy",
-   "complex",
-   "compositor",
-   "could",
-   "dccs",
-   "effectively",
-   "fast",
-   "filmmaking",
-   "full",
-   "houdini",
-   "layout"
-  ],
-  "at": "2026-10-31T20:58:46.107980+00:00"
- },
  "b5361ac8f9": {
   "headline": "My Dream Game is Finally Ready to Play After 25 Days With AI",
   "sources": [
@@ -1444,5 +1373,29 @@
    "original"
   ],
   "at": "2026-11-20T23:40:19.815555+00:00"
+ },
+ "a6373de107": {
+  "headline": "3DCoat adds CADQuader beta to convert CAD models into polygon meshes",
+  "sources": [
+   "80 Level"
+  ],
+  "channel": "r",
+  "terms": [
+   "beta",
+   "bottleneck",
+   "cad",
+   "cad-to-poly",
+   "cadquader",
+   "conversion",
+   "convert",
+   "dcoat",
+   "low",
+   "meshes",
+   "only",
+   "otherwise",
+   "pipeline",
+   "polygon"
+  ],
+  "at": "2026-11-21T22:43:38.911478+00:00"
  }
 }

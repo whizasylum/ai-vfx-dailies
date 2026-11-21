@@ -1,0 +1,27 @@
+{
+  "verdict": "A quiet day: nothing here clears the bar for a working VFX/pipeline reader, mostly papers with no tool angle and routine trade news.",
+  "stories": [
+    {
+      "headline": "3DCoat adds CADQuader beta to convert CAD models into polygon meshes",
+      "body": "3DCoat's developer has launched CADQuader, a beta tool that converts CAD models into polygon meshes. Useful for studios dealing with hard-surface or product assets originating in CAD formats, but details here are thin: no pricing, licence terms, or workflow integration specifics given beyond it being in beta.",
+      "why": "Relevant only if CAD-to-poly conversion is a recurring pipeline bottleneck; otherwise low urgency.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "80 Level",
+          "url": "https://80.lv/articles/3dcoat-dev-launches-new-tool-to-convert-cad-models-into-polygon-meshes",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://cdn.80.lv/api/upload/post/42329/images/6b005c88c4fe5/cover_800x800.jpg"
+    }
+  ],
+  "usage": {
+    "input_tokens": 2916,
+    "output_tokens": 301
+  },
+  "candidate_count": 6,
+  "editorial_stories": true
+}

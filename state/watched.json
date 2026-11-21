@@ -8783,10 +8783,46 @@
    "duration_s": 85,
    "published": false,
    "reason_if_low": "under 90s (85s)"
+  },
+  "6W4netBhBA0": {
+   "title": "GPT 6.2 Astra vs Gemini 4: Is This Game Worth $16 in API Costs?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/6W4netBhBA0",
+   "at": "2026-11-21T22:43:37.851942+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
+  },
+  "e5ev5zkesiE": {
+   "title": "Tripo AI Made This 3D Bunny \u2014 Is the Mesh Good Enough?",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/e5ev5zkesiE",
+   "at": "2026-11-21T22:43:37.981050+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "Dj5685Hm840": {
+   "title": "5 Days Left: $1,000,000 Higgsfield Talent Contest | Meet Judge Jama Jurabaev",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/Dj5685Hm840",
+   "at": "2026-11-21T22:43:38.272404+00:00",
+   "duration_s": 52,
+   "published": false,
+   "reason_if_low": "under 90s (52s)"
+  },
+  "UAwuVrrd4Xo": {
+   "title": "Introducing Higgsfield GPU Harness in Claude & ChatGPT",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/UAwuVrrd4Xo",
+   "at": "2026-11-21T22:43:38.588425+00:00",
+   "duration_s": 85,
+   "published": false,
+   "reason_if_low": "under 90s (85s)"
   }
  },
  "quota": {
-  "date": "2026-11-20",
-  "minutes": 95.98333333333333
+  "date": "2026-11-21",
+  "minutes": 60.1
  }
 }
