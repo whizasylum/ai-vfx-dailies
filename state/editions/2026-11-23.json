@@ -1,0 +1,10 @@
+{
+  "verdict": "Today's feed is almost entirely SEO content-farm listicles from LTX and Luma AI with no new product, technique, or pipeline information; nothing here merits the reader's time.",
+  "stories": [],
+  "usage": {
+    "input_tokens": 5078,
+    "output_tokens": 79
+  },
+  "candidate_count": 25,
+  "editorial_stories": false
+}

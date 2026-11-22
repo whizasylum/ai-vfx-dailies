@@ -8819,10 +8819,55 @@
    "duration_s": 85,
    "published": false,
    "reason_if_low": "under 90s (85s)"
+  },
+  "kEZuq-CGoTg": {
+   "title": "Tesla Reality View is GTA 6 in real life (no game engine)",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/kEZuq-CGoTg",
+   "at": "2026-11-22T23:12:10.791774+00:00",
+   "duration_s": 59,
+   "published": false,
+   "reason_if_low": "under 90s (59s)"
+  },
+  "rIOiOWpjHNg": {
+   "title": "Tesla New Reality View Feels Like GTA 6 In Real Life - gives your car a virtual drone view!",
+   "channel": "Bilawal Sidhu",
+   "url": "https://www.youtube.com/shorts/rIOiOWpjHNg",
+   "at": "2026-11-22T23:12:11.567990+00:00",
+   "duration_s": 29,
+   "published": false,
+   "reason_if_low": "under 90s (29s)"
+  },
+  "wGDnyCskq5U": {
+   "title": "This Claude Opus 5.5 Game Needs to Be on Steam",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/wGDnyCskq5U",
+   "at": "2026-11-22T23:12:11.941324+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
+  },
+  "v0vmP7UfEcM": {
+   "title": "He Built a Game With 6 Claude Max Subscriptions in Under a Month",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/v0vmP7UfEcM",
+   "at": "2026-11-22T23:12:12.051489+00:00",
+   "duration_s": 36,
+   "published": false,
+   "reason_if_low": "under 90s (36s)"
+  },
+  "YH9M8CsQwGw": {
+   "title": "He Built His Dream Game With Claude \u2014 Zero Experience, One Month",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/YH9M8CsQwGw",
+   "at": "2026-11-22T23:12:12.181253+00:00",
+   "duration_s": 28,
+   "published": false,
+   "reason_if_low": "under 90s (28s)"
   }
  },
  "quota": {
-  "date": "2026-11-21",
-  "minutes": 60.1
+  "date": "2026-11-22",
+  "minutes": 100.31666666666666
  }
 }
