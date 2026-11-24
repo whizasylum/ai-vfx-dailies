@@ -8864,10 +8864,46 @@
    "duration_s": 28,
    "published": false,
    "reason_if_low": "under 90s (28s)"
+  },
+  "uBFlM3Cf2TQ": {
+   "title": "I Made a Full 3D Character With Tripo and GPT-6 in One Day",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/uBFlM3Cf2TQ",
+   "at": "2026-11-24T03:45:14.899051+00:00",
+   "duration_s": 35,
+   "published": false,
+   "reason_if_low": "under 90s (35s)"
+  },
+  "o2f9FWii8ds": {
+   "title": "Why I Kept Switching Between Claude and GPT for My RTS Game",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/o2f9FWii8ds",
+   "at": "2026-11-24T03:45:15.182287+00:00",
+   "duration_s": 38,
+   "published": false,
+   "reason_if_low": "under 90s (38s)"
+  },
+  "vlUizfAoIq4": {
+   "title": "I Was Scared to Animate My Game. Then GPT-6 Astra Did This",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/vlUizfAoIq4",
+   "at": "2026-11-24T03:45:15.267425+00:00",
+   "duration_s": 40,
+   "published": false,
+   "reason_if_low": "under 90s (40s)"
+  },
+  "QGVYZqfjUtA": {
+   "title": "Rent NVIDIA GPUs From a Chat | Higgsfield GPU Harness",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/QGVYZqfjUtA",
+   "at": "2026-11-24T03:45:15.324298+00:00",
+   "duration_s": 53,
+   "published": false,
+   "reason_if_low": "under 90s (53s)"
   }
  },
  "quota": {
-  "date": "2026-11-22",
-  "minutes": 100.31666666666666
+  "date": "2026-11-24",
+  "minutes": 49.25
  }
 }

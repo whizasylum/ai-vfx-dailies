@@ -1,52 +1,4 @@
 {
- "93fa5d2ce7": {
-  "headline": "Black Forest Labs publishes FLUX.3 Klein image-to-image model on Hugging Face",
-  "sources": [
-   "HF Black Forest Labs"
-  ],
-  "channel": "r",
-  "terms": [
-   "before",
-   "black",
-   "client",
-   "face",
-   "flux.3",
-   "forest",
-   "gating",
-   "hugging",
-   "image-to-image",
-   "klein",
-   "labs",
-   "licence",
-   "means",
-   "must"
-  ],
-  "at": "2026-11-03T00:26:20.355518+00:00"
- },
- "4fa22d2f83": {
-  "headline": "LTX publishes color management guide for mixing AI-generated footage into ACES pipelines",
-  "sources": [
-   "Lightricks / LTX"
-  ],
-  "channel": "a",
-  "terms": [
-   "aces",
-   "actual",
-   "ai-generated",
-   "blocker",
-   "client",
-   "color",
-   "deliverables.",
-   "footage",
-   "generative",
-   "guide",
-   "integration",
-   "ltx",
-   "management",
-   "mixing"
-  ],
-  "at": "2026-11-03T00:26:20.355542+00:00"
- },
  "8849352bd5": {
   "headline": "Flux 3 Klein pup model published on Hugging Face under Apache 2.0",
   "sources": [
@@ -1373,5 +1325,30 @@
    "polygon"
   ],
   "at": "2026-11-21T22:43:38.911478+00:00"
+ },
+ "84ee60264e": {
+  "headline": "Maxon launches Maxon Plus, an opt-in AI add-on sold separately from Cinema 4D and ZBrush subscriptions",
+  "sources": [
+   "Animation World Network",
+   "postPerspective"
+  ],
+  "channel": "r",
+  "terms": [
+   "add-on",
+   "cinema",
+   "core",
+   "dcc",
+   "features",
+   "gating",
+   "licensing",
+   "major",
+   "maxon",
+   "opt-in",
+   "plus",
+   "separately",
+   "signals",
+   "sold"
+  ],
+  "at": "2026-11-24T03:45:15.339016+00:00"
  }
 }

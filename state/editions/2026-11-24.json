@@ -1,0 +1,33 @@
+{
+  "verdict": "A quiet day for production-relevant AI tooling; the only story with real pipeline substance is Maxon's opt-in AI add-on, surrounded mostly by trailers, listicles, and VFX-breakdown PR.",
+  "stories": [
+    {
+      "headline": "Maxon launches Maxon Plus, an opt-in AI add-on sold separately from Cinema 4D and ZBrush subscriptions",
+      "body": "Maxon Plus adds AI-generated base models, texture exploration, and browser-based 3D review on top of Cinema 4D and ZBrush. It is sold as a separate add-on rather than bundled into Maxon One, and CEO David McGavran told AWN this is deliberate so generative AI stays opt-in rather than forced into the main subscription. No pricing or licence terms for generated assets were detailed in either report.\n      ",
+      "why": "Signals how a major DCC vendor is gating AI features and licensing them separately from core tools.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/maxon-plus-brings-opt-ai-cinema-4d-and-zbrush",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "postPerspective",
+          "url": "https://postperspective.com/maxon-plus-intros-new-ai-assisted-tools-and-3d-review-services",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081896-maxonplus-1-1280.jpg?itok=MrlP0ckz"
+    }
+  ],
+  "usage": {
+    "input_tokens": 9618,
+    "output_tokens": 380
+  },
+  "candidate_count": 38,
+  "editorial_stories": true
+}
