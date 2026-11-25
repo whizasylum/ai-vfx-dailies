@@ -1,0 +1,43 @@
+{
+  "verdict": "A quiet day for production-relevant news: one studio pipeline writeup worth reading, a lot of arXiv research noise, and a pile of festival/awards/press-junket items that don't change anyone's week.",
+  "stories": [
+    {
+      "headline": "BOT VFX used FLUX.2 Klein and Wan inside a Maya-Nuke pipeline for Young Washington",
+      "body": "CG Channel details how BOT VFX combined FLUX.2 Klein and Wan generative models with a conventional Maya/Nuke pipeline on the historical drama Young Washington. The piece describes a hybrid approach rather than a wholesale AI replacement, with generative tools slotted into specific steps alongside traditional CG and compositing work. Technical specifics on exactly which shots and what the models handled are limited in the summary.",
+      "why": "Concrete example of generative models integrated into an existing Maya/Nuke pipeline rather than replacing it.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "CG Channel",
+          "url": "https://www.cgchannel.com/2026/11/discover-bot-vfxs-hybrid-ai-vfx-pipeline-for-young-washington",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Black Forest Labs announces FLUX 3 Action",
+      "body": "Black Forest Labs posted a blog announcement for FLUX 3 Action, a new entry in its FLUX model line. The input provided is a bare announcement link with no technical detail on architecture, licence, VRAM requirements, or availability beyond the title. Worth tracking once BFL publishes specifics, since prior FLUX releases have shipped with open weights and ComfyUI support.",
+      "why": "BFL releases have historically become usable local tools, but this one needs technical detail before acting.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Black Forest Labs",
+          "url": "https://bfl.ai/blog/flux-3-action",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://bfl.ai/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F2gpum2i6%2Fproduction%2F9ec3f0747858f7660bd7bb465328c040748b5880-3800x2528.png&w=3840&q=100"
+    }
+  ],
+  "usage": {
+    "input_tokens": 14878,
+    "output_tokens": 605
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

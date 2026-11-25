@@ -1,148 +1,4 @@
 {
- "8849352bd5": {
-  "headline": "Flux 3 Klein pup model published on Hugging Face under Apache 2.0",
-  "sources": [
-   "HF Black Forest Labs"
-  ],
-  "channel": "r",
-  "terms": [
-   "apache",
-   "client-safe",
-   "face",
-   "flux",
-   "hugging",
-   "image-editing",
-   "integration.",
-   "klein",
-   "licensed",
-   "permissively",
-   "pipeline",
-   "published",
-   "pup",
-   "testing"
-  ],
-  "at": "2026-11-03T22:54:14.596720+00:00"
- },
- "8e4ce5793c": {
-  "headline": "Chaos publishes guide on hidden costs of switching render engines",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "b",
-  "terms": [
-   "chaos",
-   "checklist",
-   "costs",
-   "engines",
-   "evaluating",
-   "guide",
-   "hidden",
-   "karma-to-other-renderer",
-   "migration.",
-   "publishes",
-   "render",
-   "studio",
-   "switching",
-   "useful"
-  ],
-  "at": "2026-11-03T22:54:14.596740+00:00"
- },
- "3b134417f1": {
-  "headline": "Weta FX details animation and FX work on Te Ka and Te Fiti for live-action Moana",
-  "sources": [
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "animation",
-   "choices",
-   "creature",
-   "details",
-   "direct",
-   "facility.",
-   "fiti",
-   "large-scale",
-   "live-action",
-   "moana",
-   "pipeline",
-   "top-tier",
-   "weta",
-   "work"
-  ],
-  "at": "2026-11-03T22:54:14.596749+00:00"
- },
- "3f56dc60f5": {
-  "headline": "BOT VFX breakdown shows invisible-VFX work on Reacher Season 4",
-  "sources": [
-   "Art of VFX"
-  ],
-  "channel": "b",
-  "terms": [
-   "bot",
-   "breakdown",
-   "comp",
-   "concrete",
-   "counts",
-   "episodic",
-   "invisible-vfx",
-   "reacher",
-   "reference",
-   "season",
-   "shot",
-   "shows",
-   "tasks",
-   "tv."
-  ],
-  "at": "2026-11-03T22:54:14.596756+00:00"
- },
- "3a33eda45d": {
-  "headline": "Florida Learjet Crash - Final 78 Seconds Reconstructed in God's Eye View",
-  "sources": [
-   "Bilawal Sidhu"
-  ],
-  "channel": "a",
-  "terms": [
-   "accurate",
-   "ads-b",
-   "animation",
-   "based",
-   "converted",
-   "crash",
-   "data",
-   "environment",
-   "eye",
-   "final",
-   "florida",
-   "forensic",
-   "framework",
-   "god"
-  ],
-  "at": "2026-11-03T22:54:14.596769+00:00"
- },
- "876659cb4b": {
-  "headline": "Made a Game With a $20 AI Plan and Already Got Sales",
-  "sources": [
-   "Stefan 3D AI"
-  ],
-  "channel": "a",
-  "terms": [
-   "allows",
-   "already",
-   "animation",
-   "animator",
-   "applicable",
-   "assets",
-   "attribute",
-   "before",
-   "correct",
-   "ensure",
-   "entering",
-   "establish",
-   "game",
-   "generating"
-  ],
-  "at": "2026-11-03T22:54:14.596783+00:00"
- },
  "5646560a73": {
   "headline": "Sparseal ships CozyBlanket Pro, AI-assisted retopology and UV unwrapping tool, on desktop and iPad",
   "sources": [
@@ -1350,5 +1206,53 @@
    "sold"
   ],
   "at": "2026-11-24T03:45:15.339016+00:00"
+ },
+ "dee5b1be14": {
+  "headline": "BOT VFX used FLUX.2 Klein and Wan inside a Maya-Nuke pipeline for Young Washington",
+  "sources": [
+   "CG Channel"
+  ],
+  "channel": "b",
+  "terms": [
+   "bot",
+   "concrete",
+   "example",
+   "existing",
+   "flux.2",
+   "generative",
+   "inside",
+   "integrated",
+   "it.",
+   "klein",
+   "maya",
+   "maya-nuke",
+   "nuke",
+   "pipeline"
+  ],
+  "at": "2026-11-25T01:54:51.924619+00:00"
+ },
+ "cc52519b5c": {
+  "headline": "Black Forest Labs announces FLUX 3 Action",
+  "sources": [
+   "Black Forest Labs"
+  ],
+  "channel": "r",
+  "terms": [
+   "acting.",
+   "action",
+   "become",
+   "before",
+   "bfl",
+   "black",
+   "detail",
+   "flux",
+   "forest",
+   "historically",
+   "labs",
+   "local",
+   "needs",
+   "one"
+  ],
+  "at": "2026-11-25T01:54:51.924649+00:00"
  }
 }
