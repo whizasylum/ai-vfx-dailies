@@ -1,0 +1,59 @@
+{
+  "verdict": "A quiet day dominated by raw arXiv papers and awards/press-tour filler; only a handful of items have any pipeline or production relevance.",
+  "stories": [
+    {
+      "headline": "Unreal Engine 6 drops Blueprints, Epic bets on AI to port visual scripting to Verse",
+      "body": "Epic confirmed UE6 will ship without Blueprints, the visual scripting system underpinning most UE5 games. Epic is relying on AI tooling to migrate existing projects, pointing to a prototype that ported over 20,000 of Fortnite's visual scripts to Verse. New AI conversion tools arrive first in UE 5.9. Vendor-supplied claim, unverified at scale on third-party projects.",
+      "why": "Studios with UE Blueprint-dependent pipelines need to plan migration tooling and timelines now.",
+      "channel": "b",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/unreal-engine-6-will-ship-without-blueprints",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081923-unreal-engine-x-uefn-2-1280.jpg?itok=ojINRNok"
+    },
+    {
+      "headline": "Luma AI adds Brand Kit and Character Library for consistent generation",
+      "body": "Luma AI launched Brand Kit and Character Library features aimed at keeping visual identity and character appearance consistent across generated outputs. Details on underlying model, licensing, and whether this reaches API or local deployment are thin in the announcement. Treat as a product feature update rather than a new capability until technical specifics or pricing surface.",
+      "why": "Character consistency tools matter for production use but this needs more detail before adoption.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Luma AI",
+          "url": "https://lumalabs.ai/news/brand-kit-character-library",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "LTX makes the case for on-premise deployment of its video models",
+      "body": "Lightricks published a blog post on private, on-premise deployment of its LTX video generation models, framing it around data control and compliance for studios wary of cloud processing of client footage. No new model, pricing, or VRAM figures disclosed; this is a positioning piece rather than a product release.",
+      "why": "On-prem deployment is the deciding factor for whether a studio can touch client work at all.",
+      "channel": "b",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "Lightricks / LTX",
+          "url": "https://ltx.studio/blog/private-deployment-ai-video-models",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 14581,
+    "output_tokens": 754
+  },
+  "candidate_count": 60,
+  "editorial_stories": true
+}

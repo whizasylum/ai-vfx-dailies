@@ -1,100 +1,4 @@
 {
- "5646560a73": {
-  "headline": "Sparseal ships CozyBlanket Pro, AI-assisted retopology and UV unwrapping tool, on desktop and iPad",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "against",
-   "ai-assisted",
-   "cozyblanket",
-   "current",
-   "desktop",
-   "ipad",
-   "manual",
-   "pro",
-   "real",
-   "retopology",
-   "sparseal",
-   "testing",
-   "unwrapping",
-   "workflows."
-  ],
-  "at": "2026-11-04T23:08:59.784073+00:00"
- },
- "8fc09761b5": {
-  "headline": "BiteTheBytes releases World Creator 4 in early access with node-based workflow and macOS support",
-  "sources": [
-   "CG Channel"
-  ],
-  "channel": "r",
-  "terms": [
-   "access",
-   "bitethebytes",
-   "could",
-   "creator",
-   "early",
-   "environment",
-   "generation",
-   "macos",
-   "node-based",
-   "output",
-   "pipelines.",
-   "planet-scale",
-   "slot",
-   "support"
-  ],
-  "at": "2026-11-04T23:08:59.784099+00:00"
- },
- "62a7c4c9d9": {
-  "headline": "ComfyUI v0.44.0 adds Patina texture nodes and VEED dubbing node from partner integrations",
-  "sources": [
-   "ComfyUI"
-  ],
-  "channel": "r",
-  "terms": [
-   "checking",
-   "comfyui",
-   "core",
-   "current",
-   "deployable",
-   "dubbing",
-   "fits",
-   "integrations",
-   "node",
-   "nodes",
-   "partner",
-   "patina",
-   "pipelines.",
-   "texture"
-  ],
-  "at": "2026-11-04T23:08:59.784114+00:00"
- },
- "da59817943": {
-  "headline": "Enscape November release targets CAD/BIM real-time workflow friction",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "r",
-  "terms": [
-   "alongside",
-   "archviz",
-   "bim",
-   "cad",
-   "does",
-   "enscape",
-   "friction",
-   "marginal",
-   "november",
-   "real-time",
-   "relevance",
-   "studio",
-   "targets",
-   "unless"
-  ],
-  "at": "2026-11-04T23:08:59.784125+00:00"
- },
  "9bccb9ead0": {
   "headline": "LoRA for lip-sync and natural facial speech published for MiniMax-H3",
   "sources": [
@@ -1254,5 +1158,77 @@
    "one"
   ],
   "at": "2026-11-25T01:54:51.924649+00:00"
+ },
+ "bb7b0e7c50": {
+  "headline": "Unreal Engine 6 drops Blueprints, Epic bets on AI to port visual scripting to Verse",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "b",
+  "terms": [
+   "bets",
+   "blueprint-dependent",
+   "blueprints",
+   "drops",
+   "engine",
+   "epic",
+   "migration",
+   "need",
+   "now.",
+   "pipelines",
+   "plan",
+   "port",
+   "scripting",
+   "studios"
+  ],
+  "at": "2026-11-26T01:29:46.052444+00:00"
+ },
+ "02ac470c59": {
+  "headline": "Luma AI adds Brand Kit and Character Library for consistent generation",
+  "sources": [
+   "Luma AI"
+  ],
+  "channel": "r",
+  "terms": [
+   "adoption.",
+   "before",
+   "brand",
+   "character",
+   "consistency",
+   "consistent",
+   "detail",
+   "generation",
+   "kit",
+   "library",
+   "luma",
+   "matter",
+   "needs",
+   "production"
+  ],
+  "at": "2026-11-26T01:29:46.052469+00:00"
+ },
+ "af2f871c14": {
+  "headline": "LTX makes the case for on-premise deployment of its video models",
+  "sources": [
+   "Lightricks / LTX"
+  ],
+  "channel": "b",
+  "terms": [
+   "all.",
+   "case",
+   "client",
+   "deciding",
+   "deployment",
+   "factor",
+   "ltx",
+   "on-prem",
+   "on-premise",
+   "studio",
+   "touch",
+   "video",
+   "whether",
+   "work"
+  ],
+  "at": "2026-11-26T01:29:46.052482+00:00"
  }
 }

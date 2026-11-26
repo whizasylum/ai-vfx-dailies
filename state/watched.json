@@ -8900,10 +8900,19 @@
    "duration_s": 53,
    "published": false,
    "reason_if_low": "under 90s (53s)"
+  },
+  "TxWZb2RpT6Y": {
+   "title": "GPT-6.2 Astra Beat Gemini 4 in My Blender Test. $0 on Assets",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/TxWZb2RpT6Y",
+   "at": "2026-11-26T01:29:44.411257+00:00",
+   "duration_s": 31,
+   "published": false,
+   "reason_if_low": "under 90s (31s)"
   }
  },
  "quota": {
-  "date": "2026-11-25",
-  "minutes": 81.6
+  "date": "2026-11-26",
+  "minutes": 87.19999999999999
  }
 }
