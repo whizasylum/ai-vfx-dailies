@@ -1,0 +1,57 @@
+{
+  "verdict": "A quiet day: a batch of Lightricks LTX-2 IC-LoRA tool releases for ComfyUI-style video-to-video work is the only real pipeline-relevant news, everything else is arXiv noise or non-production trade filler.",
+  "stories": [
+    {
+      "headline": "Lightricks publishes a set of LTX-2 IC-LoRA video-to-video tools: colorization, day-to-night, deblur, in/outpainting, detail refinement, cinemagraph",
+      "body": "Lightricks has released six IC-LoRA add-ons for its LTX-2.3/2.5-22b video models on Hugging Face, covering colorization, day-to-night relighting, deblur with character-consistency reference sheets, in/outpainting, detail refinement and upscaling, and cinemagraph-style selective motion. All are gated (require accepting licence terms), licence listed as \"other\" (not fully permissive), built on the 22b LTX-2 base. Download counts range from hundreds to nearly 19,000, suggesting active community use.",
+      "why": "These are near-production-ready video-to-video building blocks a studio could wire into a ComfyUI pipeline for restyle, relighting and cleanup.",
+      "channel": "r",
+      "confidence": "high",
+      "sources": [
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Colorization",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Day-To-Night",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Deblur",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-In-Outpainting",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Refine-Details",
+          "discussion": null,
+          "video": false
+        },
+        {
+          "name": "HF Lightricks (LTX)",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-LoRA-Cinemagraph",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    }
+  ],
+  "usage": {
+    "input_tokens": 14589,
+    "output_tokens": 472
+  },
+  "candidate_count": 57,
+  "editorial_stories": true
+}

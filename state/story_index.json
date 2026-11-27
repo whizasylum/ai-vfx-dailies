@@ -1,52 +1,4 @@
 {
- "9bccb9ead0": {
-  "headline": "LoRA for lip-sync and natural facial speech published for MiniMax-H3",
-  "sources": [
-   "HF text-to-video"
-  ],
-  "channel": "r",
-  "terms": [
-   "any",
-   "cheap",
-   "comfyui",
-   "dialogue-driven",
-   "droppable",
-   "existing",
-   "facial",
-   "lip-sync",
-   "lora",
-   "minimax-h3",
-   "natural",
-   "pipeline.",
-   "published",
-   "shots"
-  ],
-  "at": "2026-11-05T23:13:16.690880+00:00"
- },
- "8aad4c679c": {
-  "headline": "Avid adds plugin extension format to Pro Tools 2026.11",
-  "sources": [
-   "postPerspective"
-  ],
-  "channel": "r",
-  "terms": [
-   "avid",
-   "build",
-   "custom",
-   "extension",
-   "format",
-   "let",
-   "may",
-   "plugin",
-   "post",
-   "pro",
-   "studios",
-   "surface",
-   "third-party",
-   "tooling"
-  ],
-  "at": "2026-11-05T23:13:16.690903+00:00"
- },
  "20dc8a76ae": {
   "headline": "Quixel Megascans library now permanently free",
   "sources": [
@@ -1230,5 +1182,34 @@
    "work"
   ],
   "at": "2026-11-26T01:29:46.052482+00:00"
+ },
+ "1238ab7c39": {
+  "headline": "Lightricks publishes a set of LTX-2 IC-LoRA video-to-video tools: colorization, day-to-night, deblur, in/outpainting, detail refinement, cinemagraph",
+  "sources": [
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)",
+   "HF Lightricks (LTX)"
+  ],
+  "channel": "r",
+  "terms": [
+   "blocks",
+   "building",
+   "cinemagraph",
+   "cleanup.",
+   "colorization",
+   "comfyui",
+   "could",
+   "day-to-night",
+   "deblur",
+   "detail",
+   "ic-lora",
+   "lightricks",
+   "ltx-2",
+   "near-production-ready"
+  ],
+  "at": "2026-11-27T01:30:06.415229+00:00"
  }
 }

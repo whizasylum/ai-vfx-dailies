@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-26T01:29:47.881514+00:00",
+  "at": "2026-11-27T01:30:08.508967+00:00",
   "ratings": {
     "total": 58,
     "up": 56,
@@ -7,21 +7,27 @@
     "sources_adjusted": 10,
     "terms_learned": 9
   },
-  "raw": 185,
-  "candidates": 60,
-  "stories": 3,
+  "raw": 202,
+  "candidates": 57,
+  "stories": 1,
   "usage": {
-    "input_tokens": 14581,
-    "output_tokens": 754
+    "input_tokens": 14589,
+    "output_tokens": 472
   },
   "video_watch": {
-    "candidates": 9,
+    "candidates": 6,
     "watched": 0,
     "published": 0,
-    "rejected": 1,
+    "rejected": 0,
     "deferred": 0,
-    "errors": 8,
-    "already_watched": 0
+    "errors": 5,
+    "already_watched": 1
   },
-  "problems": []
+  "problems": [
+    {
+      "source": "postPerspective",
+      "type": "rss",
+      "error": "unparseable feed: <urlopen error [Errno 110] Connection timed out>"
+    }
+  ]
 }
