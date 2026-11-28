@@ -8909,10 +8909,55 @@
    "duration_s": 31,
    "published": false,
    "reason_if_low": "under 90s (31s)"
+  },
+  "X5HuvFEB6sw": {
+   "title": "Claude Opus 5.6 Is in Early Access. Look at These 3D Results",
+   "channel": "Stefan 3D AI",
+   "url": "https://www.youtube.com/shorts/X5HuvFEB6sw",
+   "at": "2026-11-28T01:02:48.774034+00:00",
+   "duration_s": 40,
+   "published": false,
+   "reason_if_low": "under 90s (40s)"
+  },
+  "zIhZ3r0VJ6Q": {
+   "title": "This Cheap AI Video Model Made a Cartoon From Two Pictures | Higgsfield MAGI-2",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/zIhZ3r0VJ6Q",
+   "at": "2026-11-28T01:02:48.912062+00:00",
+   "duration_s": 33,
+   "published": false,
+   "reason_if_low": "under 90s (33s)"
+  },
+  "4Km5UtY701Y": {
+   "title": "This Cheap AI Model Turned One Photo Into a K-Drama for $2.40 | Higgsfield MAGI-2",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/4Km5UtY701Y",
+   "at": "2026-11-28T01:02:48.973193+00:00",
+   "duration_s": 36,
+   "published": false,
+   "reason_if_low": "under 90s (36s)"
+  },
+  "E2MMW7BHYxQ": {
+   "title": "This Quality for $0.08 a Second? Blender Boxes to a Car Chase | Higgsfield MAGI-2",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/E2MMW7BHYxQ",
+   "at": "2026-11-28T01:02:49.293842+00:00",
+   "duration_s": 34,
+   "published": false,
+   "reason_if_low": "under 90s (34s)"
+  },
+  "FxUbzd_DNTw": {
+   "title": "Higgsfield Black Friday Is LIVE \u2014 Up to 75% OFF",
+   "channel": "Higgsfield AI",
+   "url": "https://www.youtube.com/shorts/FxUbzd_DNTw",
+   "at": "2026-11-28T01:02:49.395562+00:00",
+   "duration_s": 37,
+   "published": false,
+   "reason_if_low": "under 90s (37s)"
   }
  },
  "quota": {
-  "date": "2026-11-27",
-  "minutes": 66.7
+  "date": "2026-11-28",
+  "minutes": 90.69999999999999
  }
 }

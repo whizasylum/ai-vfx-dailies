@@ -1,0 +1,43 @@
+{
+  "verdict": "A thin day: mostly trade-press filler and a dump of unrelated arxiv papers, with one genuine signal around MiniMax-H3 tooling.",
+  "stories": [
+    {
+      "headline": "MiniMax-H3 world-model variant spotted on Hugging Face with LoRA support",
+      "body": "A community model, H3-World, based on MiniMaxAI/MiniMax-H3, appeared on Hugging Face tagged as an interactive world model with action-conditioning and LoRA support. 96 likes, zero downloads logged, licence listed only as 'other' (unspecified, needs checking before production use). First published August, updated this week, suggesting active iteration on the MiniMax-H3 ecosystem that already has ComfyUI workflows.",
+      "why": "Confirms MiniMax-H3 is becoming a live open ecosystem worth tracking for ComfyUI pipelines.",
+      "channel": "r",
+      "confidence": "low",
+      "sources": [
+        {
+          "name": "HF image-to-video",
+          "url": "https://huggingface.co/DANNY621/H3-World",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": null
+    },
+    {
+      "headline": "Cascadeur 2026.3 adds MetaHuman face support and lets Claude Code edit scenes directly",
+      "body": "Nekki's physics-assisted animation tool now supports MetaHuman facial rigs and tentacle rigging, cleans up mocap jitter automatically, and exposes scene editing to external AI coding assistants including Claude Code. Discount of 40% on annual plans runs through December 7. No pricing or VRAM details given beyond the promotion.",
+      "why": "An agent-editable animation tool is a new integration pattern worth watching, not yet proven in pipeline.",
+      "channel": "r",
+      "confidence": "medium",
+      "sources": [
+        {
+          "name": "Animation World Network",
+          "url": "https://www.awn.com/news/cascadeur-20263-adds-metahuman-faces-and-tentacle-rigging",
+          "discussion": null,
+          "video": false
+        }
+      ],
+      "image": "https://www.awn.com/sites/default/files/styles/large_featured/public/image/attached/1081930-cascadeur1.jpg?itok=6NDE6dNP"
+    }
+  ],
+  "usage": {
+    "input_tokens": 9574,
+    "output_tokens": 702
+  },
+  "candidate_count": 44,
+  "editorial_stories": true
+}

@@ -1,52 +1,4 @@
 {
- "20dc8a76ae": {
-  "headline": "Quixel Megascans library now permanently free",
-  "sources": [
-   "80 Level"
-  ],
-  "channel": "b",
-  "terms": [
-   "assets",
-   "barrier",
-   "cost",
-   "directly",
-   "free",
-   "high-quality",
-   "library",
-   "megascans",
-   "permanently",
-   "pipelines.",
-   "production",
-   "quixel",
-   "removes",
-   "scan"
-  ],
-  "at": "2026-11-06T22:42:21.788096+00:00"
- },
- "3e64ef6037": {
-  "headline": "Chaos compares its Veras AI rendering agent against standalone GPT-6 Astra and Claude Opus 5.5",
-  "sources": [
-   "Chaos"
-  ],
-  "channel": "r",
-  "terms": [
-   "aec",
-   "against",
-   "agent",
-   "astra",
-   "chaos",
-   "claude",
-   "compares",
-   "dcc-native",
-   "geometry",
-   "gpt-6",
-   "handling",
-   "llms",
-   "opus",
-   "pattern"
-  ],
-  "at": "2026-11-06T22:42:21.788122+00:00"
- },
  "c4e7948ddf": {
   "headline": "Flame 2027.2 adds USD scene import and AI-generated normal maps from video",
   "sources": [
@@ -1211,5 +1163,53 @@
    "near-production-ready"
   ],
   "at": "2026-11-27T01:30:06.415229+00:00"
+ },
+ "2541d10877": {
+  "headline": "MiniMax-H3 world-model variant spotted on Hugging Face with LoRA support",
+  "sources": [
+   "HF image-to-video"
+  ],
+  "channel": "r",
+  "terms": [
+   "becoming",
+   "comfyui",
+   "confirms",
+   "ecosystem",
+   "face",
+   "hugging",
+   "live",
+   "lora",
+   "minimax-h3",
+   "open",
+   "pipelines.",
+   "spotted",
+   "support",
+   "tracking"
+  ],
+  "at": "2026-11-28T01:02:50.597744+00:00"
+ },
+ "fdb6c68757": {
+  "headline": "Cascadeur 2026.3 adds MetaHuman face support and lets Claude Code edit scenes directly",
+  "sources": [
+   "Animation World Network"
+  ],
+  "channel": "r",
+  "terms": [
+   "agent-editable",
+   "animation",
+   "cascadeur",
+   "claude",
+   "code",
+   "directly",
+   "edit",
+   "face",
+   "integration",
+   "lets",
+   "metahuman",
+   "pattern",
+   "pipeline.",
+   "proven"
+  ],
+  "at": "2026-11-28T01:02:50.597776+00:00"
  }
 }
